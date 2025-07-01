@@ -47,35 +47,66 @@ jobs:
       - name: Fetch Service Messages
         id: fetch-messages
         run: |
-          # Fetch service messages from Microsoft Graph
-          response=$(curl -s -X GET "https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages" \
-            -H "Authorization: Bearer ${{ steps.get-token.outputs.access_token }}" \
-            -H "Content-Type: application/json")
+          # Initialize empty array for all messages
+          all_messages="[]"
+          next_link="https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages"
+          total_messages=0
           
-          # Check if the response contains an error
-          if echo "$response" | jq -e '.error' > /dev/null; then
-            echo "Error fetching service messages:"
-            echo "$response" | jq '.error'
-            exit 1
-          fi
+          # Loop through all pages
+          while [ -n "$next_link" ] && [ "$next_link" != "null" ]; do
+            echo "Fetching: $next_link"
+            
+            # Fetch service messages from Microsoft Graph
+            response=$(curl -s -X GET "$next_link" \
+              -H "Authorization: Bearer ${{ steps.get-token.outputs.access_token }}" \
+              -H "Content-Type: application/json")
+            
+            # Check if the response contains an error
+            if echo "$response" | jq -e '.error' > /dev/null; then
+              echo "Error fetching service messages:"
+              echo "$response" | jq '.error'
+              exit 1
+            fi
+            
+            # Extract the value array from current page
+            current_messages=$(echo "$response" | jq '.value // []')
+            current_count=$(echo "$current_messages" | jq 'length')
+            total_messages=$((total_messages + current_count))
+            
+            # Merge current messages with all messages
+            all_messages=$(echo "$all_messages" "$current_messages" | jq -s 'add')
+            
+            # Get next link for pagination
+            next_link=$(echo "$response" | jq -r '."@odata.nextLink" // null')
+            
+            echo "Fetched $current_count messages from this page (Total: $total_messages)"
+          done
           
-          # Save the response to a file
-          echo "$response" > service-messages.json
+          # Save only the messages array to the file
+          echo "$all_messages" > service-messages.json
           
-          # Pretty print for verification (optional)
-          echo "Successfully fetched $(echo "$response" | jq '.value | length') messages"
-          echo "$response"
+          echo "Successfully fetched $total_messages total messages across all pages"
 
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Add the file if there are changes
-          if git diff --exit-code service-messages.json > /dev/null; then
+          # Check if the file exists and has changes
+          if [ ! -f service-messages.json ]; then
+            echo "service-messages.json file not found"
+            exit 1
+          fi
+          
+          # Add the file to git staging
+          git add service-messages.json
+          
+          # Check if there are staged changes
+          if git diff --cached --exit-code service-messages.json > /dev/null; then
             echo "No changes to commit"
           else
-            git add service-messages.json
+            echo "Changes detected, committing..."
             git commit -m "Update service messages - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
             git push
+            echo "Successfully committed and pushed changes"
           fi
