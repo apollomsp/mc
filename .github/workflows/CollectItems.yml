@@ -64,6 +64,7 @@ jobs:
           
           # Pretty print for verification (optional)
           echo "Successfully fetched $(echo "$response" | jq '.value | length') messages"
+          echo "$response"
 
       - name: Commit and push changes
         run: |
