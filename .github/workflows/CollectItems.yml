@@ -14,6 +14,14 @@ on:
         options:
         - 'true'
         - 'false'
+      notify:
+        description: 'Send notifications on changes'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+        - 'true'
+        - 'false'
 
 # Security: Restrict permissions to minimum required
 permissions:
@@ -58,7 +66,7 @@ jobs:
             exit 1
           fi
           
-          echo "✅ All required secrets are present and properly formatted"
+          echo "All required secrets are present and properly formatted"
 
       - name: Get Microsoft Graph Access Token
         id: get-token
@@ -108,7 +116,7 @@ jobs:
           
           echo "::add-mask::$access_token"
           echo "access_token=$access_token" >> $GITHUB_OUTPUT
-          echo "✅ Successfully obtained access token"
+          echo "Successfully obtained access token"
 
       - name: Fetch Service Messages
         id: fetch-messages
@@ -199,6 +207,7 @@ jobs:
           echo "Successfully fetched $total_messages total messages across $page_count pages"
 
       - name: Commit and push changes
+        id: commit-changes
         run: |
           # Security: Set strict error handling
           set -euo pipefail
@@ -234,6 +243,7 @@ jobs:
           # Check if there are staged changes
           if git diff --cached --exit-code service-messages.json > /dev/null; then
             echo "No changes to commit"
+            echo "changes_detected=false" >> $GITHUB_OUTPUT
           else
             echo "Changes detected, committing..."
             
@@ -244,7 +254,75 @@ jobs:
             git commit -m "$commit_message"
             git push
             echo "Successfully committed and pushed changes"
+            echo "changes_detected=true" >> $GITHUB_OUTPUT
+            echo "commit_message=$commit_message" >> $GITHUB_OUTPUT
           fi
           
           # Security: Clean up any temporary files
           rm -f temp_*.json || true
+
+      - name: Send Notifications
+        if: steps.commit-changes.outputs.changes_detected == 'true' && (github.event.inputs.notify != 'false' || github.event_name == 'schedule')
+        run: |
+          set -euo pipefail
+          
+          # Notification details
+          timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+          message_count=$(jq 'length' service-messages.json)
+          repo_url="https://github.com/${{ github.repository }}"
+          data_url="https://raw.githubusercontent.com/${{ github.repository }}/main/service-messages.json"
+          
+          echo "Preparing to send notifications..."
+          echo "Messages collected: $message_count"
+          echo "Repository: $repo_url"
+          echo "Data URL: $data_url"
+          
+          # Teams Notification
+          if [ -n "${{ secrets.TEAMS_WEBHOOK_URL }}" ]; then
+            echo "Sending Teams notification..."
+            curl -X POST "${{ secrets.TEAMS_WEBHOOK_URL }}" \
+              -H "Content-Type: application/json" \
+              -d "{
+                \"type\": \"AdaptiveCard\",
+                \"$schema\": \"https://adaptivecards.io/schemas/adaptive-card.json\",
+                \"version\": \"1.5\",
+                \"body\": [
+                    {
+                        \"type\": \"TextBlock\",
+                        \"text\": \"Microsoft Message Center Updated\",
+                        \"wrap\": true,
+                        \"style\": \"heading\"
+                    },
+                    {
+                        \"type\": \"TextBlock\",
+                        \"text\": \"New Microsoft 365 service messages have been collected and are now available for DeltaPulse integration.\",
+                        \"wrap\": true
+                    },
+                    {
+                        \"type\": \"FactSet\",
+                        \"facts\": [
+                            {
+                                \"title\": \"Messages Collected\",
+                                \"value\": \"$message_count\"
+                            },
+                            {
+                                \"title\": \"Updated At\",
+                                \"value\": \"$timestamp\"
+                            }
+                        ]
+                    }
+                ],
+                \"actions\": [
+                    {
+                        \"type\": \"Action.OpenUrl\",
+                        \"title\": \"View Repo\",
+                        \"url\": \"$repo_url\"
+                    },
+                    {
+                        \"type\": \"Action.OpenUrl\",
+                        \"title\": \"View Data\",
+                        \"url\": \"$data_url\"
+                    }
+                ]
+            }" && echo "Teams notification sent" || echo "Teams notification failed"
+          fi
