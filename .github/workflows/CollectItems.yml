@@ -4,29 +4,7 @@ on:
   schedule:
     # Run every 8 hours at minutes 0 (00:00, 08:00, 16:00 UTC)
     - cron: '0 */8 * * *'
-  workflow_dispatch: # Allow manual trigger (only from main branch)
-    inputs:
-      debug:
-        description: 'Enable debug logging'
-        required: false
-        default: 'false'
-        type: choice
-        options:
-        - 'true'
-        - 'false'
-      notify:
-        description: 'Send notifications on changes'
-        required: false
-        default: 'true'
-        type: choice
-        options:
-        - 'true'
-        - 'false'
-
-# Security: Restrict permissions to minimum required
-permissions:
-  contents: write
-  actions: read
+  workflow_dispatch: # Allow manual trigger
 
 env:
   TENANT_ID: ${{ secrets.TENANT_ID }}
@@ -36,206 +14,89 @@ env:
 jobs:
   collect-messages:
     runs-on: ubuntu-latest
-    # Security: Only run on main branch and with required secrets
-    if: github.ref == 'refs/heads/main' && github.repository_owner != '' && github.actor != 'dependabot[bot]'
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          persist-credentials: false
-
-      # Security: Validate required secrets exist
-      - name: Validate required secrets
-        run: |
-          if [ -z "${{ secrets.TENANT_ID }}" ] || [ -z "${{ secrets.CLIENT_ID }}" ] || [ -z "${{ secrets.CLIENT_SECRET }}" ]; then
-            echo "::error::Required secrets are missing. Please configure TENANT_ID, CLIENT_ID, and CLIENT_SECRET."
-            exit 1
-          fi
-          
-          # Validate TENANT_ID format (should be a GUID)
-          if ! echo "${{ secrets.TENANT_ID }}" | grep -qE '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'; then
-            echo "::error::TENANT_ID does not appear to be a valid GUID format"
-            exit 1
-          fi
-          
-          # Validate CLIENT_ID format (should be a GUID)
-          if ! echo "${{ secrets.CLIENT_ID }}" | grep -qE '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'; then
-            echo "::error::CLIENT_ID does not appear to be a valid GUID format"
-            exit 1
-          fi
-          
-          echo "All required secrets are present and properly formatted"
 
       - name: Get Microsoft Graph Access Token
         id: get-token
         run: |
-          # Security: Set strict error handling
-          set -euo pipefail
-          
-          # Security: Validate inputs before making requests
-          if [ ${#TENANT_ID} -ne 36 ] || [ ${#CLIENT_ID} -ne 36 ]; then
-            echo "::error::Invalid credential format detected"
-            exit 1
-          fi
-          
           # Get access token using client credentials flow
-          echo "Requesting access token..."
-          response=$(curl -s -w "%{http_code}" -X POST "https://login.microsoftonline.com/${{ env.TENANT_ID }}/oauth2/v2.0/token" \
+          response=$(curl -s -X POST "https://login.microsoftonline.com/${{ env.TENANT_ID }}/oauth2/v2.0/token" \
             -H "Content-Type: application/x-www-form-urlencoded" \
             -d "client_id=${{ env.CLIENT_ID }}" \
             -d "client_secret=${{ env.CLIENT_SECRET }}" \
             -d "scope=https://graph.microsoft.com/.default" \
             -d "grant_type=client_credentials")
           
-          # Extract HTTP status code and response body
-          http_code="${response: -3}"
-          response_body="${response%???}"
-          
-          # Security: Check for successful authentication
-          if [ "$http_code" != "200" ]; then
-            echo "::error::Authentication failed with HTTP $http_code"
-            # Don't log the full response as it might contain sensitive info
-            exit 1
-          fi
-          
           # Extract access token from response
-          access_token=$(echo "$response_body" | jq -r '.access_token // empty')
+          access_token=$(echo "$response" | jq -r '.access_token')
           
-          if [ -z "$access_token" ] || [ "$access_token" = "null" ]; then
-            echo "::error::Failed to extract access token from response"
-            exit 1
-          fi
-          
-          # Security: Validate token format (JWT should have 3 parts separated by dots)
-          if [ $(echo "$access_token" | tr -cd '.' | wc -c) -ne 2 ]; then
-            echo "::error::Invalid token format received"
+          if [ "$access_token" = "null" ] || [ -z "$access_token" ]; then
+            echo "Failed to get access token"
+            echo "Response: $response"
             exit 1
           fi
           
           echo "::add-mask::$access_token"
           echo "access_token=$access_token" >> $GITHUB_OUTPUT
-          echo "Successfully obtained access token"
 
       - name: Fetch Service Messages
         id: fetch-messages
         run: |
-          # Security: Set strict error handling
-          set -euo pipefail
-          
           # Initialize empty array for all messages
           all_messages="[]"
           next_link="https://graph.microsoft.com/v1.0/admin/serviceAnnouncement/messages"
           total_messages=0
-          page_count=0
-          max_pages=50  # Security: Prevent infinite loops
-          
-          echo "Starting to fetch service messages..."
           
           # Loop through all pages
-          while [ -n "$next_link" ] && [ "$next_link" != "null" ] && [ $page_count -lt $max_pages ]; do
-            page_count=$((page_count + 1))
-            
-            # Security: Only log the base URL, not full URL with potential tokens
-            base_url=$(echo "$next_link" | cut -d'?' -f1)
-            echo "Fetching page $page_count from: $base_url"
+          while [ -n "$next_link" ] && [ "$next_link" != "null" ]; do
+            echo "Fetching: $next_link"
             
             # Fetch service messages from Microsoft Graph
-            response=$(curl -s -w "%{http_code}" -X GET "$next_link" \
+            response=$(curl -s -X GET "$next_link" \
               -H "Authorization: Bearer ${{ steps.get-token.outputs.access_token }}" \
-              -H "Content-Type: application/json" \
-              -H "User-Agent: GitHubActions-MessageCenterCollector/1.0")
-            
-            # Extract HTTP status code and response body
-            http_code="${response: -3}"
-            response_body="${response%???}"
-            
-            # Security: Check HTTP status
-            if [ "$http_code" != "200" ]; then
-              echo "::error::API request failed with HTTP $http_code"
-              exit 1
-            fi
+              -H "Content-Type: application/json")
             
             # Check if the response contains an error
-            if echo "$response_body" | jq -e '.error' > /dev/null; then
-              echo "::error::Graph API returned an error"
-              # Don't log the full error as it might contain sensitive info
+            if echo "$response" | jq -e '.error' > /dev/null; then
+              echo "Error fetching service messages:"
+              echo "$response" | jq '.error'
               exit 1
             fi
             
             # Extract the value array from current page
-            current_messages=$(echo "$response_body" | jq '.value // []')
+            current_messages=$(echo "$response" | jq '.value // []')
             current_count=$(echo "$current_messages" | jq 'length')
             total_messages=$((total_messages + current_count))
-            
-            # Security: Validate message count is reasonable
-            if [ $current_count -gt 1000 ]; then
-              echo "::warning::Unusually large page size: $current_count messages"
-            fi
             
             # Merge current messages with all messages
             all_messages=$(echo "$all_messages" "$current_messages" | jq -s 'add')
             
             # Get next link for pagination
-            next_link=$(echo "$response_body" | jq -r '."@odata.nextLink" // null')
+            next_link=$(echo "$response" | jq -r '."@odata.nextLink" // null')
             
-            echo "Fetched $current_count messages from page $page_count (Total: $total_messages)"
+            echo "Fetched $current_count messages from this page (Total: $total_messages)"
           done
-          
-          # Security: Check if we hit the page limit
-          if [ $page_count -ge $max_pages ]; then
-            echo "::warning::Reached maximum page limit ($max_pages). There may be more data available."
-          fi
-          
-          # Security: Validate final message count
-          if [ $total_messages -eq 0 ]; then
-            echo "::warning::No messages were fetched. This might indicate an issue."
-          elif [ $total_messages -gt 10000 ]; then
-            echo "::warning::Unusually large number of messages: $total_messages"
-          fi
           
           # Save only the messages array to the file
           echo "$all_messages" > service-messages.json
           
-          # Security: Validate output file
-          if ! jq empty service-messages.json 2>/dev/null; then
-            echo "::error::Generated JSON file is invalid"
-            exit 1
-          fi
-          
-          echo "Successfully fetched $total_messages total messages across $page_count pages"
+          echo "Successfully fetched $total_messages total messages across all pages"
 
       - name: Commit and push changes
-        id: commit-changes
         run: |
-          # Security: Set strict error handling
-          set -euo pipefail
-          
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           
-          # Security: Validate file exists and is valid JSON
+          # Check if the file exists and has changes
           if [ ! -f service-messages.json ]; then
-            echo "::error::service-messages.json file not found"
+            echo "service-messages.json file not found"
             exit 1
           fi
-          
-          if ! jq empty service-messages.json 2>/dev/null; then
-            echo "::error::service-messages.json contains invalid JSON"
-            exit 1
-          fi
-          
-          # Security: Check file size (prevent extremely large files)
-          file_size=$(stat -f%z service-messages.json 2>/dev/null || stat -c%s service-messages.json 2>/dev/null || echo "0")
-          max_size=$((50 * 1024 * 1024))  # 50MB limit
-          
-          if [ "$file_size" -gt "$max_size" ]; then
-            echo "::error::Generated file is too large: ${file_size} bytes (max: ${max_size})"
-            exit 1
-          fi
-          
-          echo "File size: $file_size bytes"
           
           # Add the file to git staging
           git add service-messages.json
@@ -243,86 +104,9 @@ jobs:
           # Check if there are staged changes
           if git diff --cached --exit-code service-messages.json > /dev/null; then
             echo "No changes to commit"
-            echo "changes_detected=false" >> $GITHUB_OUTPUT
           else
             echo "Changes detected, committing..."
-            
-            # Security: Create safe commit message
-            timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-            commit_message="Update service messages - $timestamp"
-            
-            git commit -m "$commit_message"
+            git commit -m "Update service messages - $(date -u +"%Y-%m-%d %H:%M:%S UTC")"
             git push
             echo "Successfully committed and pushed changes"
-            echo "changes_detected=true" >> $GITHUB_OUTPUT
-            echo "commit_message=$commit_message" >> $GITHUB_OUTPUT
-          fi
-          
-          # Security: Clean up any temporary files
-          rm -f temp_*.json || true
-
-      - name: Send Notifications
-        if: steps.commit-changes.outputs.changes_detected == 'true' && (github.event.inputs.notify != 'false' || github.event_name == 'schedule')
-        run: |
-          set -euo pipefail
-          
-          # Notification details
-          timestamp=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-          message_count=$(jq 'length' service-messages.json)
-          repo_url="https://github.com/${{ github.repository }}"
-          data_url="https://raw.githubusercontent.com/${{ github.repository }}/main/service-messages.json"
-          
-          echo "Preparing to send notifications..."
-          echo "Messages collected: $message_count"
-          echo "Repository: $repo_url"
-          echo "Data URL: $data_url"
-          
-          # Teams Notification
-          if [ -n "${{ secrets.TEAMS_WEBHOOK_URL }}" ]; then
-            echo "Sending Teams notification..."
-            curl -X POST "${{ secrets.TEAMS_WEBHOOK_URL }}" \
-              -H "Content-Type: application/json" \
-              -d "{
-                \"type\": \"AdaptiveCard\",
-                \"$schema\": \"https://adaptivecards.io/schemas/adaptive-card.json\",
-                \"version\": \"1.5\",
-                \"body\": [
-                    {
-                        \"type\": \"TextBlock\",
-                        \"text\": \"Microsoft Message Center Updated\",
-                        \"wrap\": true,
-                        \"style\": \"heading\"
-                    },
-                    {
-                        \"type\": \"TextBlock\",
-                        \"text\": \"New Microsoft 365 service messages have been collected and are now available for DeltaPulse integration.\",
-                        \"wrap\": true
-                    },
-                    {
-                        \"type\": \"FactSet\",
-                        \"facts\": [
-                            {
-                                \"title\": \"Messages Collected\",
-                                \"value\": \"$message_count\"
-                            },
-                            {
-                                \"title\": \"Updated At\",
-                                \"value\": \"$timestamp\"
-                            }
-                        ]
-                    }
-                ],
-                \"actions\": [
-                    {
-                        \"type\": \"Action.OpenUrl\",
-                        \"title\": \"View Repo\",
-                        \"url\": \"$repo_url\"
-                    },
-                    {
-                        \"type\": \"Action.OpenUrl\",
-                        \"title\": \"View Data\",
-                        \"url\": \"$data_url\"
-                    }
-                ]
-            }" && echo "Teams notification sent" || echo "Teams notification failed"
           fi
