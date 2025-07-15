@@ -21166,6 +21166,30 @@
     }
   },
   {
+    "startDateTime": "2025-07-15T17:01:16.23Z",
+    "endDateTime": "2026-07-15T17:01:16.183Z",
+    "lastModifiedDateTime": "2025-07-15T17:01:17.103Z",
+    "title": "Hotpatching now available for 64-bit Arm architecture",
+    "id": "MC1115741",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>More enterprise environments can now experience the power of security updates that don’t require a restart. Hotpatching is now available for Windows 11, version 24H2 Arm64 devices. All you need to do is check your prerequisites, disable Compiled Hybrid PE (CHPE), and enroll these devices into a quality update policy with hotpatching enabled.&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>Hotpatching for 64-bit Arm architecture is now generally available.&nbsp;</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>With hotpatching, your organization can benefit from:&nbsp;</div><ul><li><b>Faster compliance</b>: Security updates are applied immediately, reducing the window of vulnerability.&nbsp;</li><li><b>No downtime</b>: Users stay productive—no forced restarts or interruptions.&nbsp;</li><li><b>Smaller update payloads</b>: Faster installs and easier update orchestration.&nbsp;</li><li><b>Enterprise-grade control</b>: Integrated with Microsoft Intune and Windows Autopatch for streamlined management.&nbsp;</li></ul><div><br></div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>Read <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatching-now-available-for-64-bit-arm-architecture/4430949\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatching now available for 64-bit Arm architecture</a><em> </em>to check if you meet the prerequisites and additional guidance to get started.&nbsp;&nbsp;</div><div>&nbsp;</div><div>A unique prerequisite for Arm64 devices is disabling Compiled Hybrid PE (CHPE). Do this in one of the following ways:&nbsp;</div><ul><li><b>Use the DisableCHPE policy.</b> Apply the following configuration service provider (CSP) setting via Microsoft Intune or Group Policy, then restart the device once: ./Device/Vendor/MSFT/Policy/Config/Hotpatch/DisableCHPE = 1&nbsp;</li><li><b>Use registry keys.</b> You can also set the following registry key value to 1 and then restart the device once: HKLM\\SYSTEM\\CurrentControlSet\\Control\\Session Manager\\Memory Management\\HotPatchRestrictions = 1&nbsp;</li></ul><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><ul><li>Read <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatching-now-available-for-64-bit-arm-architecture/4430949\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatching now available for 64-bit Arm architecture</a> for the complete announcement and technical guide.&nbsp;</li><li>Find the DisableCHPE policy at <a href=\"https://learn.microsoft.com/windows/client-management/mdm/policy-csp-system#disablechpe\" rel=\"noopener noreferrer\" target=\"_blank\">System Policy CSP</a>.&nbsp;</li><li>Learn how to <a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates\" rel=\"noopener noreferrer\" target=\"_blank\">Enroll devices to receive hotpatch updates</a>.&nbsp;</li><li>Consult our comprehensive documentation on <a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatch updates</a>.</li></ul>"
+    }
+  },
+  {
     "startDateTime": "2021-06-16T22:53:37Z",
     "endDateTime": "2025-11-28T08:00:00Z",
     "lastModifiedDateTime": "2021-06-16T22:54:13.617Z",
@@ -22809,30 +22833,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated March 17, 2025: Please note - The T1 removal will happen in Worldwide only.</p><p>In MC718748 <i>New Teams rollout schedule for Commercial and EDU customers</i> (February 28, 2024), we informed customers about the new Microsoft Teams rollout schedule with updated timelines.\n</p><p>This is a reminder that classic Teams reaches the end of support on July 1, 2024, and end of availability on July 1, 2025, and to confirm our plans to automatically uninstall classic Teams for Mac.\n</p><p>Learn more: <a href=\"https://learn.microsoft.com/microsoftteams/teams-classic-client-end-of-availability\" target=\"_blank\">End of availability for classic Teams client - Microsoft Teams | Microsoft Learn</a></p><p>[How this will affect your organization:]\n</p><p>As Microsoft transitions users to new Teams on Mac, we will also attempt to uninstall classic Teams <b>starting from early August 2024 to end of August 2024</b>. The uninstall will be attempted after users update to the latest version of new Teams (24193.1704.3003.3641). The uninstall attempt will happen immediately after the Mac users have updated to new Teams. If this uninstallation is blocked for any reason (for example, by machine configuration, etc.), we will not attempt uninstallation again, and admins will be expected to manually remove classic Teams. The uninstallation guide can be found here: <a href=\"https://learn.microsoft.com/microsoftteams/teams-classic-client-uninstall#removing-classic-teams-on-macoswill\" target=\"_blank\">How to uninstall the classic Teams client - Microsoft Teams | Microsoft Learn</a></p><p>[What you need to do to prepare:]\n</p><p>The uninstall of classic Teams will be automatic when users receive an update to the specific build with this functionality—no admin action is required. You may want to notify your users about this change and update any relevant documentation as appropriate.</p>"
-    }
-  },
-  {
-    "startDateTime": "2024-07-15T16:59:30.643Z",
-    "endDateTime": "2025-07-15T16:59:30.613Z",
-    "lastModifiedDateTime": "2024-07-15T16:59:31.58Z",
-    "title": "90-Day Reminder: The second phase of Kerberos PAC signature validation vulnerability mitigation begins October 15, 2024",
-    "id": "MC814189",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>Starting October 15, 2024, the <b>Enforced by Default</b> phase of <a href=\"https://learn.microsoft.com/openspecs/windows_protocols/ms-apds/82b7b7c6-413d-4d66-b6b7-4a9224549782\" rel=\"noopener noreferrer\" target=\"_blank\">Kerberos&nbsp;PAC signature validation</a> mitigation begins. Updates released on or after this date will move all Windows domain controllers and clients in the environment to&nbsp;<b>Enforced</b>&nbsp;mode, enforcing the secure behavior by default. The&nbsp;<b>Enforced by Default</b>&nbsp;settings can be overridden by an Administrator to revert to&nbsp;<b>Compatibility</b>&nbsp;mode.</div><div><br></div><div><b>When will this happen:</b>&nbsp;</div><ul><li>October 15, 2024: The <b>Enforced by Default</b> phase starts where Windows domain controllers and clients will move to <b>Enforced </b>mode. Note that during this phase, the&nbsp;<b>Enforced by Default</b>&nbsp;settings can be overridden by an Administrator to revert to&nbsp;<b>Compatibility</b>&nbsp;mode.</li><li>April 8, 2025: <b>Enforcement</b> phase begins with no option to revert the new secure behavior.</li></ul><div><br></div><div><b>How this will affect your organization:</b>&nbsp;</div><div>To mitigate vulnerabilities described in&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26248\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-26248</a>&nbsp;and&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29056\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-29056</a>, you must make sure your entire Windows environment (including both domain controllers and clients) is updated. Environments that are not updated will not recognize this new request structure after <b>Enforcement </b>mode begins. This will cause the security check to fail.</div><div><br></div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>To help protect your environment and prevent outages, we recommend the following steps:</div><ol><li><b>UPDATE:</b>&nbsp;Windows domain controllers and Windows clients must be updated with a Windows security update released on or after April 9, 2024.</li><li><b>MONITOR:</b>&nbsp;Audit events will be visible in&nbsp;<b>Compatibility</b>&nbsp;mode to identify devices not updated.</li><li><b>ENABLE:</b>&nbsp;After&nbsp;<b>Enforcement</b>&nbsp;mode&nbsp;is fully enabled in your environment, the vulnerabilities described in&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26248\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-26248</a>&nbsp;and&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29056\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-29056</a>&nbsp;will be mitigated.</li></ol><div><br></div><div><b>Additional information:</b>&nbsp;</div><ul><li><a href=\"https://support.microsoft.com/help/5037754\" rel=\"noopener noreferrer\" target=\"_blank\">KB5037754: How to manage PAC Validation changes related to CVE-2024-26248 and CVE-2024-29056</a></li><li><a href=\"https://support.microsoft.com/help/5020805\" rel=\"noopener noreferrer\" target=\"_blank\">KB5020805: How to manage Kerberos protocol changes related to CVE-2022-37967</a></li></ul>"
     }
   },
   {
@@ -24751,7 +24751,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"415249\":[{\"RoadmapId\":415249,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1779507Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":415249,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2024-10-29T15:29:37.2744839Z\",\"LatestRing\":null},{\"RoadmapId\":415249,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1779493Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":415249,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2024-10-29T15:29:37.2744835Z\",\"LatestRing\":null},{\"RoadmapId\":415249,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1779521Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"415249\":[{\"RoadmapId\":415249,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1779493Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":415249,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2024-10-29T15:29:37.2744835Z\",\"LatestRing\":null},{\"RoadmapId\":415249,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1779507Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":415249,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2024-10-29T15:29:37.2744839Z\",\"LatestRing\":null},{\"RoadmapId\":415249,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1779521Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
