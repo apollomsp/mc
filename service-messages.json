@@ -12806,12 +12806,13 @@
   {
     "startDateTime": "2025-05-29T23:12:42Z",
     "endDateTime": "2025-09-29T07:00:00Z",
-    "lastModifiedDateTime": "2025-05-29T23:13:13.473Z",
-    "title": "Important Notice: TLS Deprecation for Fabric Platform",
+    "lastModifiedDateTime": "2025-07-17T20:32:40.657Z",
+    "title": "(Updated) Important Notice: TLS Deprecation for Fabric Platform",
     "id": "MC1085131",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "User impact",
       "Admin impact",
       "Retirement"
@@ -12826,12 +12827,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "TLS 1.1 and earlier versions will no longer be supported for Fabric Platform connections to customer data sources after July 31, 2025. Ensure all systems use TLS 1.2 or later. For more details, refer to the blog post [here](https://blog.fabric.microsoft.com/en-US/blog/tls-deprecation-for-fabric/)."
+        "value": "Support for TLS 1.1 on the Fabric Platform ends on July 31, 2025. Ensure all connections use TLS 1.2 or later to avoid service interruptions. Review and update your systems and verify compliance. For more details, refer to the provided blog post and support links."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>We are writing to inform you about an important update regarding the Transport Layer Security (TLS) protocols used by the Fabric Platform. To provide secure connections and align with other Microsoft products, Fabric Platform will soon require TLS 1.2 or later versions for all outbound connections from Fabric to customer data sources.</p><p>Support for TLS 1.1 and earlier versions will end on <b>July 31, 2025</b>. After this date, TLS 1.2 or later will be required for all connections from Fabric to customer data sources.\n</p><p>[What you need to do to prepare:]</p><ol><li>Review Your Connections: Ensure that all your resources interacting with Azure services are using TLS 1.2 or later, especially if you are using Fabric to connect to outside data sources.\n</li><li>Update Your Systems: If any of your systems are still using TLS 1.1 or earlier, please update them to TLS 1.2 or later as soon as possible to avoid any disruptions.\n</li><li>Verify Compliance: Check that your TLS policies and configurations are compliant with the new requirements.\n</li></ol><p>For more details, please refer to the blog post on TLS deprecation for Fabric <a href=\"https://blog.fabric.microsoft.com/en-US/blog/tls-deprecation-for-fabric/\" target=\"_blank\">here</a>.\n</p><p>If you have questions, get answers from community experts in <a href=\"https://aka.ms/azureqa\" target=\"_blank\">Microsoft Q&amp;A</a>. If you have a support plan and you need technical help, please create a <a href=\"https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request\" target=\"_blank\">support request</a>.</p><p><br></p><p>\n</p><p>\n</p><p>\n</p>"
+      "content": "<p>Updated July 17, 2025: We are updating this message as a reminder of the upcoming end of support for TLS 1.1 on July 31, 2025. Please review and take action as appropriate to mitigate potential service interruptions.</p><p>We are writing to inform you about an important update regarding the Transport Layer Security (TLS) protocols used by the Fabric Platform. To provide secure connections and align with other Microsoft products, Fabric Platform will soon require TLS 1.2 or later versions for all outbound connections from Fabric to customer data sources.</p><p>Support for TLS 1.1 and earlier versions will end on <b>July 31, 2025</b>. After this date, TLS 1.2 or later will be required for all connections from Fabric to customer data sources.\n</p><p>[What you need to do to prepare:]</p><ol><li>Review Your Connections: Ensure that all your resources interacting with Azure services are using TLS 1.2 or later, especially if you are using Fabric to connect to outside data sources.\n</li><li>Update Your Systems: If any of your systems are still using TLS 1.1 or earlier, please update them to TLS 1.2 or later as soon as possible to avoid any disruptions.\n</li><li>Verify Compliance: Check that your TLS policies and configurations are compliant with the new requirements.\n</li></ol><p>For more details, please refer to the blog post on TLS deprecation for Fabric <a href=\"https://blog.fabric.microsoft.com/en-US/blog/tls-deprecation-for-fabric/\" target=\"_blank\">here</a>.\n</p><p>If you have questions, get answers from community experts in <a href=\"https://aka.ms/azureqa\" target=\"_blank\">Microsoft Q&amp;A</a>. If you have a support plan and you need technical help, please create a <a href=\"https://learn.microsoft.com/en-us/azure/azure-portal/supportability/how-to-create-azure-support-request\" target=\"_blank\">support request</a>.</p><p><br></p><p>\n</p><p>\n</p><p>\n</p>"
     }
   },
   {
@@ -19502,35 +19503,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>We’re improving how admins manage agents in the Microsoft 365 admin center. Agent management is moving from the Integrated apps page to a new, dedicated Agents &amp; connectors page under the Copilot section. This update is part of the broader Copilot Control System and offers a more streamlined experience for discovering, configuring, and managing agents. The update will be available to Copilot for Microsoft 365 users on the Web platform.&nbsp;</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=481829\" target=\"_blank\">481829</a>.</p><p>[When this will happen:]</p><p>General Availability (Worldwide): We will begin rolling out mid-July 2025 and expect to complete by late August 2025.</p><p>[How this will affect your organization:]</p><p>Admins will no longer manage agents from the Integrated apps page. Instead, agents will be accessible via <i>Copilot &gt; Agents &amp; connectors</i> in the Microsoft 365 admin center. This new page enhances visibility and control for extensibility scenarios.\n</p><p>This change does not affect the behavior or availability of existing agents. It also does not impact store apps or add-ins, which will continue to be managed under Integrated apps.</p><p>[What you need to do to prepare:]\n</p><p>Inform your IT admins about this change.\n</p><p>Update any internal documentation or workflows that reference agent management under Integrated apps.\n</p><p>Familiarize yourself with the new <i>Agents &amp; connectors</i> page by navigating to <i>Copilot &gt; Agents &amp; connectors</i> in the Microsoft 365 admin center.\n</p><p>No user action is required.</p><p>Learn more: </p><ul><li><a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide\" target=\"_blank\">Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center | Microsoft Learn</a></li><li><a href=\"https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/new-agent-management-experience-in-microsoft-365-admin-center/4422483\" target=\"_blank\">New Agent Management Experience in Microsoft 365 Admin Center | Healthcare and Life Sciences Blog</a>&nbsp;</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-07-03T20:45:23.923Z",
-    "endDateTime": "2025-07-17T20:45:23.923Z",
-    "lastModifiedDateTime": "2025-07-03T20:45:24.723Z",
-    "title": "Updates available for Microsoft 365 Apps for Current Channel",
-    "id": "MC1108784",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "ExternalLink",
-        "value": "https://docs.microsoft.com/officeupdates/"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We&#39;ve released updates to the following update channel for Microsoft 365 Apps:</p>\r\n<ul><li>Current Channel</li></ul>\r\n<p>[When this will happen:]</p>\r\n<p>We&#39;ll be gradually rolling out this update of Microsoft 365 Apps to users on that update channel starting July 3rd, 2025 (PST).</p>\r\n<p>[How this will affect your organization:]</p>\r\n<p>If your Microsoft 365 Apps clients are configured to automatically update from the Office Content Delivery Network (CDN), then no action is required.</p>\r\n<p>If you manage updates directly you can now download this latest update and begin deployment.</p>\r\n<p>[What you need to do to prepare:]</p>\r\n<p>To get more details about this update view the following release notes:</p>\r\n<ul><li><a href=\"https://docs.microsoft.com/officeupdates/current-channel#version-2506-july-03\" target=\"_blank\" rel=\"noopener noreferrer\">Current Channel</a></li></ul>"
     }
   },
   {
