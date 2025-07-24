@@ -16453,36 +16453,6 @@
     }
   },
   {
-    "startDateTime": "2025-06-23T23:53:07Z",
-    "endDateTime": "2025-07-23T23:53:07Z",
-    "lastModifiedDateTime": "2025-06-23T23:54:18.573Z",
-    "title": "Microsoft Entra ID access reviews: Updated historical data retention policy for access reviews",
-    "id": "MC1101895",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "Admin impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2025-08-14T07:00:00Z",
-    "services": [
-      "Microsoft Entra"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Entra ID is updating its data retention policy for access reviews. Starting August 15, 2025, only the last 12 months of access review data will be available via the user interface and APIs. Organizations should export historical data before this date and establish a routine for annual data storage."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We’re updating the data retention policy for access reviews in Microsoft Entra ID Governance to improve performance and align with data minimization principles. Starting August 15, 2025, only access review data from the last 12 months will be available via the user interface and APIs.\n</p><p>[How this affects your organization:]</p><p>Access review data older than 12 months will no longer be accessible through the Microsoft Entra portal or APIs. The <i>Review history</i> report will also be limited to the past 12 months. This change is on by default and does not affect audit logs. There are no admin controls for this change.</p><p>You are receiving this message because our telemetry indicates your organization may be using access reviews and relying on historical data exports beyond the new retention window. \n</p><p>[What you need to do to prepare:]</p><p>To avoid data loss, we recommend the following actions before August 15, 2025:</p><ul><li>Export all historical review data using Microsoft Graph APIs before August 15, 2025. \n</li><li>To transfer historical data for compliance or audit purposes, use the script in the section called <i>Example: Various queries that use access reviews</i> in <a href=\"https://learn.microsoft.com/entra/id-governance/custom-entitlement-report-with-adx-and-entra-id#example-various-queries-that-use-access-reviews\" target=\"_blank\">Create Custom Reports Using Microsoft Entra and Application Data - Microsoft Entra ID Governance | Microsoft Learn</a>.</li><li>Establish a routine for generating and securely storing review reports annually to ensure uninterrupted access to necessary data.</li><li>Notify relevant admins and update internal documentation.</li></ul><p>We’re committed to supporting your transition and ensuring continuity in your governance processes.\n</p><p>[Compliance considerations:]</p><ul><li>Does the change alter how existing customer data is processed, stored, or accessed (e.g. documents, emails, chats, etc.)? Yes, data will be stored for only 1 year and not more than that</li><li>Does the change alter how admins can monitor, report on, or demonstrate compliance activities e.g. Purview or admin reporting? Yes. Before this rollout, APIs provide data for longer than 12 months. After this rollout, customers can only pull the data for the last 12 months.</li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-06-23T23:59:48Z",
     "endDateTime": "2025-10-31T07:00:00Z",
     "lastModifiedDateTime": "2025-06-24T00:00:01.523Z",
@@ -21639,6 +21609,129 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to re-enable locked customer managed key environments in  \n\nPower Platform admin center. This public preview feature will begin rolling out globally on July 23, 2025, with an anticipated rollout completion of July 30, 2025.<br><br><b>How does this affect me?</b><br>Previously, if customer-managed key environments were deactivated due to the revocation of key access of the enterprise policy, you needed to submit a support ticket to activate these environments once the key access was restored.<br><br>Now, administrators can unlock and activate environments directly through the Power Platform admin center. They can also identify which environments were deactivated due to unhealthy enterprise policies and proactively manage these environments to ensure smooth operations.<br><br><b>What action do I need to take?</b><br>This message is for awareness and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/ADO11590\">Lock and unlock environments through key vaults access – Power Platform</a>."
+    }
+  },
+  {
+    "startDateTime": "2025-07-24T00:13:37Z",
+    "endDateTime": "2025-09-22T07:00:00Z",
+    "lastModifiedDateTime": "2025-07-24T00:14:36.523Z",
+    "title": "Planned Maintenance: Windows 365 Service",
+    "id": "MC1120807",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows 365"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Windows 365 will undergo planned maintenance from August 4 to 9, 2025, during regional non-peak hours with no downtime. Users may experience brief reconnections lasting under a minute, occurring 1-2 times within a 4-hour window. No action is required, but notifying users is advised."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>To improve performance and reliability, we have scheduled planned maintenance for the Windows 365 service. This maintenance will occur during non-peak hours, based on the Client Device’s local time zone, to minimize potential impact on your organization. For organizations with users across multiple regions, we recognize that non-peak hours may vary. Maintenance will take place separately in each region, affecting only users connecting from that location during the scheduled time. The times listed below indicate the actual maintenance start times for each region, not adjusted for different time zones.\n</p><p>During this period, there will be no service downtime. Users are expected to experience little to no disruption.\n</p><p><b>Maintenance Schedule: \n</b></p><ul><li>Start Date: August 4, 2025\n</li><li>End Date: August 9, 2025\n</li></ul><p><b>Daily Maintenance Window Start Times: \n</b></p><ul><li>Africa: 23:00 UTC \n</li><li>Asia Pacific: 16:30 UTC \n</li><li>Australia: 14:00 UTC \n</li><li>Europe: 00:00 UTC \n</li><li>India: 19:30 UTC \n</li><li>Middle East: 22:00 UTC\n</li><li>North America: 06:00 UTC \n</li><li>South America: 05:00 UTC \n</li></ul><p><b>Daily Maintenance Window End Times:\n</b></p><ul><li>Africa: 03:00 UTC \n</li><li>Asia Pacific: 20:30 UTC\n</li><li>Australia: 18:00 UTC\n</li><li>Europe: 04:00 UTC \n</li><li>India: 23:30 UTC\n</li><li>Middle East 02:00 UTC\n</li><li>North America: 10:00 UTC\n</li><li>South America: 09:00 UTC \n</li></ul><p>[How does this affect my organization?] \n</p><ul><li>During the maintenance window, users actively connected via UDP relay may experience brief, automatic reconnections, with each disconnection lasting less than a minute. \n</li><li>While the total planned impact duration is up to 4 hours within the maintenance window, disconnections will only occur 1-2 times and will not persist throughout the entire 4-hour period. \n</li><li>Users can establish new connections without impact during the maintenance window. The service will remain fully available without any downtime. \n</li></ul><p>[What do I need to do to prepare for this change?] \n</p><p>No further action is required, as systems will automatically recover from any temporary interruptions. You may want to notify your helpdesk and end-users of the scheduled maintenance and the potential for brief disruptions.  \n</p><p>We are committed to providing a seamless experience and appreciate your understanding as we carry out this necessary maintenance to enhance the reliability of Windows 365 services. \n</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-07-24T00:14:55Z",
+    "endDateTime": "2025-10-28T07:00:00Z",
+    "lastModifiedDateTime": "2025-07-24T00:16:08.493Z",
+    "title": "Network Analytics Updates in Viva Engage",
+    "id": "MC1120808",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Viva Engage Premium now offers Organizational Data Filters to analyze Network Analytics by employee attributes. New metrics—Enabled and Activated users—enhance engagement insights. Network-wide data can be exported via CSV. Admins can manage filters using Entra ID or CSV uploads. Rollout begins late July 2025."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Organizational Data Filters</b> is a Viva Engage Premium feature that enables users to filter analytics by employee attributes such as country, department, and job title. Starting at the end of July, this capability will be available to admins and corporate communicators through the ‘All filters’ panel in Network Analytics.</p><p>These filters offer insight into how different employee segments interact with Viva Engage. To support deeper analysis on onboarding and adoption, the dashboard also now includes two new metrics: <b>Enabled users</b> and <b>Activated users</b>. When paired with existing engagement metrics, these values provide a view of the engagement funnel across segments.\n</p><p>To further support data exploration, network-wide analytics can now be exported via the new <b>Network Analytics CSV export</b>, allowing networks to dive deeper into their data.\n</p><p>[When this will happen:]</p><p>General Availability (list environments on the same schedule here): We will begin rolling out late July 2025 and expect to complete by mid-August 2025.</p><p>[How this will affect your organization:]</p><p>Admins and corporate communicators can filter Network Analytics by country, department, and job title. These filters apply to all metrics and tables except retention, benchmarks, themes, and sentiment.\n</p><p>Each filter category shows the top 200 values based on enabled users, with counts shown in the dropdown. Values with fewer than 10 users or outside the top 200 are grouped under “Other.” Admins can manage this feature in the Viva Engage Admin Dashboard under Analytics and AI.\n</p><p>New metrics:</p><ul><li>Enabled users: Users with Viva Engage enabled as a service (premium or seeded).</li><li>Activated users: Subset of Enabled users who performed at least one action in the past 18 months.</li></ul><p>These metrics, along with People reached, People engaged, and People posted, provide a complete view on engagement. In addition, network-wide data can be exported via a CSV.</p><p>[What you need to do to prepare:]</p><p>Organizational data is based on M365 user profiles and can be uploaded in two ways:\n</p><p><b>Entra ID Directory (Default):</b> Viva Engage uses Entra ID to populate filters. We recommend reviewing the country, department, and job title fields to ensure accuracy.\n</p><p><b>CSV Upload via M365 Admin Center: </b>If your network does not use Entra ID or is looking for more flexibility, M365 admins can upload a CSV via the M365 Admin Center. The file must include Microsoft_PersonEmail, and we recommend adding:\n</p><ul><li>Microsoft_Organization</li><li>Microsoft_JobTitle</li><li>Microsoft_CompanyOfficeCountryOrRegion</li></ul><p>Templates are available in the M365 Admin Center and can be uploaded via SharePoint (5GB limit) or locally (25MB limit). To override Entra ID data, email <u>orgdatainm365Support@microsoft.com</u> with the subject: <i>Request to give organizational data precedence over Microsoft Entra data in Microsoft 365 User Profile for Tenant [Name][Tenant ID]</i>. Changes may take up to four days.\n</p><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-07-24T00:27:33Z",
+    "endDateTime": "2025-08-15T07:00:00Z",
+    "lastModifiedDateTime": "2025-07-24T00:27:45.153Z",
+    "title": "Outlook for iOS and Android | Browse conversation files",
+    "id": "MC1120868",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Exchange Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Outlook for iOS and Android now features a \"Browse Files\" button in conversation threads (with \"Newest on Top\" view) to quickly access all classic attachments. This mobile-only feature rolled out worldwide in July 2025, requires no admin setup, and excludes OneDrive or SharePoint links."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction:\n</b></p><p>We're introducing a new feature in Outlook that helps users quickly find and access all files shared within a conversation thread. Instead of scrolling through individual messages to locate attachments, users will see a <b>Browse Files</b> button at the top of the conversation view that opens a consolidated list of all shared files. This feature is supported exclusively on Outlook for iOS and Android.</p><p><b></b><b>When this will happen:\n</b><b></b></p><p><b>General Availability (Worldwide, DoD, GCC, GCCH):</b> Rollout began in early July 2025 and completed in late July 2025.</p><p><b>How this affects your organization:\n</b></p><p>Once this feature is available, users who have set their Mail view to “Newest on Top” will see a new Browse Files button at the top of conversation threads. Selecting this button will display all classic attachments shared in that conversation, improving discoverability and productivity.\n</p><ul><li>The <b>Browse Files </b>button is <b>always visible</b> when the <b>“Newest on Top”</b> setting is enabled.\n</li><li>This feature is <b>exclusive to mobile clients</b>—only available in <b>Outlook for iOS and Outlook for Android</b>. It is <b>not supported</b> in Outlook on the web or desktop.\n</li><li>Users can only reference <b>local files</b> (classic attachments); links to files in <b>OneDrive or SharePoint </b>are not supported.\n</li><li>This feature is <b>on by default</b> and requires<b> no admin configuration</b>.</li></ul><p><i>New “Browse Files” button in conversation view:</i><i></i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/745a274e-5df6-45ff-b50a-10cf8f705b1c/d1ca48f19d28ef152833c9d9dfeae799940ee3c1.png\" style=\"width: 400px;\" alt=\"user settings\"><i></i></p><p><b></b></p><p><b></b></p><p><b></b></p><p></p><p></p><p><b>What you can do to prepare:</b></p><p>No admin action is required before the rollout.\n</p><p>Consider notifying your users about this update and updating any relevant training or documentation to reflect:\n</p><ul><li>The feature’s availability only on mobile clients.\n</li><li>The visibility condition tied to the “Newest on Top” setting.\n</li><li>The limitation to classic attachments (no cloud file links).</li></ul><p><b>Compliance considerations:\n</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p><i></i></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-07-24T00:28:12Z",
+    "endDateTime": "2026-01-12T08:00:00Z",
+    "lastModifiedDateTime": "2025-07-24T00:28:38.093Z",
+    "title": "Important Update: Teams Meeting Join URL Validation",
+    "id": "MC1120871",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will validate meeting join URLs starting September 30, 2025 (November 30 for GCC/DoD) to prevent altered or rewritten links from being used. Security products must avoid rewriting these URLs to prevent users from being blocked. No admin action is needed, but organizations should update security policies accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>What and Who</b></p><p></p><p>To enhance the security and integrity of Microsoft Teams meetings, we are introducing a new feature that validates Teams meeting join URLs. This update helps ensure that meeting links are not altered or rewritten by security products in ways that could render them unusable or flagged as malicious.<b><br></b>\n\n</p><p><b>Rollout Schedule</b></p><p></p><ul><li><b>Worldwide:</b> September 30, 2025</li>\n<li><b>GCC, GCC High, DoD:</b> November 30, 2025</li>\n</ul>\n\n<p></p><p><b>Impact on Your Organization</b><b><br></b></p><ul><li><b>Who is affected:</b> <ul><li>Organizations using security products that inspect or rewrite URLs, and users who join Microsoft Teams meetings via meeting links.</li></ul></li></ul><p></p><ul>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Microsoft Teams will validate join URLs to ensure they have not been modified.</li>\n    <li>If a join URL is rewritten or altered by a security product, it may be marked as malicious.</li>\n    <li>Users may be prevented from joining meetings if URLs are not in their original format.</li>\n    <li>This feature is enabled by default and does not require admin configuration.</li></ul></li></ul><p><b>Action Required/Recommendations</b></p><ul><li>Ensure that your security products do <b>not</b> rewrite Microsoft Teams meeting join URLs.</li>\n<li>Whitelist Microsoft Teams join URLs in your security software.</li>\n<li>Review your organization’s URL rewriting or inspection policies before the rollout date.</li>\n<li>Communicate this change to your helpdesk and security teams.</li>\n</ul>\n\n<p></p><p><b>Compliance Considerations</b></p><p></p><p>No compliance considerations identified, review as appropriate for your organization.</p>\n<p></p>"
     }
   },
   {
