@@ -20774,7 +20774,7 @@
   {
     "startDateTime": "2025-07-15T22:52:54Z",
     "endDateTime": "2025-10-06T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-15T22:53:01.893Z",
+    "lastModifiedDateTime": "2025-07-25T00:20:30.517Z",
     "title": "New Copilot setting for pinning the Microsoft 365 Copilot app to the Windows Taskbar",
     "id": "MC1115982",
     "category": "planForChange",
@@ -20787,6 +20787,7 @@
     "isMajorChange": false,
     "actionRequiredByDateTime": null,
     "services": [
+      "Microsoft 365 suite",
       "Microsoft Copilot (Microsoft 365)"
     ],
     "hasAttachments": false,
@@ -21760,6 +21761,67 @@
     "body": {
       "contentType": "html",
       "content": "<div>On July 28,&nbsp;you&nbsp;can&nbsp;participate&nbsp;in three hours of live Q&amp;A with the&nbsp;engineering teams behind the latest Windows deployment, servicing, and management capabilities.&nbsp;The agenda features three hours of Ask Microsoft Anything (AMA) sessions:&nbsp;</div><ul><li>8:00 AM PT -&nbsp;<a href=\"https://aka.ms/AMA/Autopilot\" rel=\"noopener noreferrer\" target=\"_blank\">AMA: Windows Autopilot</a>&nbsp;</li><li>9:00 AM PT -&nbsp;<a href=\"https://aka.ms/AMA/WindowsUpdates\" rel=\"noopener noreferrer\" target=\"_blank\">AMA: Windows update and driver management</a>&nbsp;</li><li>9:30 AM PT -&nbsp;<a href=\"https://aka.ms/AMA/ConnectedCache\" rel=\"noopener noreferrer\" target=\"_blank\">AMA Microsoft Connected Cache and Delivery Optimization</a>&nbsp;</li><li>10:00 AM PT -&nbsp;<a href=\"https://aka.ms/AMA/WindowsAI\" rel=\"noopener noreferrer\" target=\"_blank\">AMA: Windows and AI experiences</a>&nbsp;</li></ul><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>This live event will take place&nbsp;on&nbsp;the Microsoft Tech Community&nbsp;on Monday, July 28 from 8:00 to 11:00 AM PT (3:00 to&nbsp;6:00 PM UTC).&nbsp;All sessions will be recorded so they can be viewed on demand.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>No registration is&nbsp;required&nbsp;for this event.&nbsp;To participate,&nbsp;visit&nbsp;<a href=\"https://aka.ms/TCL/Windows\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/TCL/Windows</a>,&nbsp;sign in with your Microsoft account, then select the sessions you are interested in.&nbsp;Add&nbsp;sessions to your calendar&nbsp;or&nbsp;select “Attend” to receive&nbsp;reminders. You can post your questions in advance&nbsp;or&nbsp;during&nbsp;the&nbsp;live&nbsp;event. To post a question, scroll down to the bottom of the session page&nbsp;and select “Comment”.&nbsp;</div><div>&nbsp;</div><div><b>Additional&nbsp;information:</b>&nbsp;</div><div>Auto-generated captions will be&nbsp;utilized&nbsp;during the live event.&nbsp;Human-generated&nbsp;captions, and a time-coded list of the questions asked and answered on camera, will be&nbsp;added later in the week.</div>"
+    }
+  },
+  {
+    "startDateTime": "2025-07-25T00:27:30Z",
+    "endDateTime": "2025-09-30T07:00:00Z",
+    "lastModifiedDateTime": "2025-07-25T00:27:52.78Z",
+    "title": "Plan for Change: Removing 'Incomplete user enrollment' report from Intune",
+    "id": "MC1121495",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Intune"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The \"Incomplete user enrollment\" report and related Graph APIs will be removed from Intune in the August (2508) release. Users must update documentation and automation, and switch to the \"Enrollment failures\" report for enrollment failure details."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>As mentioned in MC979816, expected with Intune's August (2508) service release, we are removing the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/enrollment-report-company-portal-abandon\" target=\"_blank\">Incomplete user enrollment report</a> (<i>Devices </i>&gt; <i>Monitor </i>&gt; <i>Incomplete user enrollment</i>) from the Intune admin center, along with the corresponding Graph APIs; getEnrollmentAbandonmentDetailsReport, getEnrollmentAbandonmentSummaryReport, and getEnrollmentFailureDetailsReport.</p><p>[How this will affect your organization:]\n</p><p>If you use the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/enrollment-report-company-portal-abandon\" target=\"_blank\">Incomplete user enrollment report</a>, you will no longer be able to access the report within the Intune admin center. Additionally, scripts or automation using the Graph APIs listed above will stop working soon after the report is removed.</p><p>[What you need to do to prepare:]\n</p><p>Update your documentation and reporting automation as needed and notify your admins. We recommend using the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/view-enrollment-reports#enrollment-failures-report\" target=\"_blank\">Enrollment failures report</a> (<i>Devices </i>&gt; <i>Monitor </i>&gt; <i>Enrollment failures</i>) for details on enrollment failures, including those caused by abandonment during enrollment.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-07-25T00:28:12Z",
+    "endDateTime": "2025-08-09T07:00:00Z",
+    "lastModifiedDateTime": "2025-07-25T00:28:18.673Z",
+    "title": "What’s new in the Microsoft Intune Service Update for July 2025",
+    "id": "MC1121496",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Intune"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Microsoft Intune service update for July 2025 is now live with a new service build. The release number will appear in the Tenant Status blade. Users should review the latest features and updates on the Intune What's New and service update blogs to prepare."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Your Microsoft Intune account has been updated to the latest service build.</p><p>[How this will affect your organization:]\n</p><p>You will see the service release number updated in the Tenant Status blade of the Intune admin center soon. We have introduced some changes that we are excited for you to try out.</p><p>[What you need to do to prepare:]\n</p><p>Review the additional information below to learn more about what’s new in this service release. We will continue to update the What’s new page with any features that are released between now and the next monthly service update. Learn more by reviewing features highlighted in the latest Intune <a href=\"https://aka.ms/IntuneWN2507\" target=\"_blank\">What's new 2507 (July) blog</a> and how the Intune service updates each month is described in the Microsoft Intune Service Updates blog. \n</p><p>[Additional Information:]\n</p><p><a href=\"https://aka.ms/IntuneWN\" target=\"_blank\">Intune What's new</a></p><p><a href=\"https://aka.ms/IntuneWN2507\" target=\"_blank\">What's new 2507 (July) blog</a></p><p><a href=\"https://aka.ms/Intune/ServiceChangeBlog\" target=\"_blank\">Staying up to date on Intune new features, service changes, and service health</a></p>"
     }
   },
   {
