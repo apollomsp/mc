@@ -5809,7 +5809,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -16809,45 +16809,6 @@
     }
   },
   {
-    "startDateTime": "2025-06-26T00:32:42Z",
-    "endDateTime": "2025-07-26T00:32:42Z",
-    "lastModifiedDateTime": "2025-06-26T00:32:48.817Z",
-    "title": "New file format support for SharePoint Online Content AI document translation",
-    "id": "MC1103606",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online",
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "492984"
-      },
-      {
-        "name": "Summary",
-        "value": "New file format support for SharePoint Online Content AI document translation includes Markdown, web archive, open formats, structured data, and localization formats. This update, rolling out in mid-July 2025, enables broader translation capabilities and reduces manual effort. No admin action is required."
-      },
-      {
-        "name": "Platforms",
-        "value": "Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We are expanding the range of file formats supported by the Content AI document translation feature in SharePoint Online (formerly known as Microsoft Syntex). This update aligns with Azure Document Translation and enables new scenarios for translating technical, web, and structured data content.</p><p>The following formats are now supported:</p><ul><li>Markdown files: <code>.mdown</code>, <code>.mdtext</code>, <code>.mdtxt</code>, <code>.mdwn</code>, <code>.mkd</code>, <code>.mkdn</code></li><li>Web archive formats: <code>.mht</code>, <code>.mhtml</code></li><li>Open formats: <code>.odt</code> (OpenDocument Text), <code>.rmd</code> (R Markdown)</li><li>Structured data: <code>.tab</code>, <code>.tsv</code></li><li>Localization formats: <code>.xlf</code> (XLIFF)</li></ul><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=492984\" target=\"_blank\">492984</a></p><p>[When this will happen:]</p><p>General Availability (Worldwide): We will begin rolling out on mid-July 2025 and expect to complete by mid-July 2025.</p><p>[How this will affect your organization:]</p><p>This update enables users to:</p><ul><li>Translate developer documentation and technical content written in Markdown</li><li>Support translation of content exported from open-source tools such as LibreOffice</li><li>Localize eLearning and software files using <code>.xlf</code></li><li>Translate structured data files such as <code>.tsv</code> and <code>.tab</code> without file conversion</li></ul><p>These capabilities reduce manual effort and expand translation coverage to more file types already in use across many organizations.</p><p>[What you need to do to prepare:]</p><p>No admin action is required. The new format support will be available automatically in environments where Content AI Document Translation is enabled. You may wish to notify relevant teams (e.g., documentation, localization, or compliance teams) that these formats are now supported.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-06-26T00:34:18Z",
     "endDateTime": "2026-02-27T08:00:00Z",
     "lastModifiedDateTime": "2025-06-26T00:35:27.643Z",
@@ -16876,30 +16837,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>This message only applies to tenants that use B2B (business-to-business) collaboration.\n</p><p>We will start rolling out an update to the authentication experience for guest users signing in to your tenant for collaboration via Microsoft Entra ID B2B collaboration.\n</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide, GCC, GCC High, DoD): We will begin rolling out early July 2025 and expect to complete by late December 2025.\n</p><p>[How this will affect your organization:]</p><p>After this rollout, guest users will begin signing in on your branded sign-in screen. After entering their email and clicking Next, they will be redirected to their home organization’s sign-in page to enter their credentials. This ensures they see the branding and URL endpoint of their home tenant, making clearer whose credentials to use. After successful authentication, they will be redirected back to your organization to complete the sign-in process.\n</p><p>This change enhances usability and reduces user confusion during cross-tenant sign-in. \n</p><p>[What you need to do to prepare:]\n</p><p> No administrative action is required prior to this rollout. We recommend you review your current B2B collaboration configuration to understand the potential impact and update any relevant documentation to guide users.\n</p><p>Before rollout, we will update this post with new documentation.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-06-26T00:34:17Z",
-    "endDateTime": "2025-07-26T00:34:17Z",
-    "lastModifiedDateTime": "2025-06-26T00:37:08.873Z",
-    "title": "Power Platform - Information regarding the ability to re-enable customer-managed key locked environments",
-    "id": "MC1103611",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to manually re-enable customer-managed keys locked environments will reach public preview starting on June 30, 2025, reaching all regions by July 30, 2025.<br><br>\n<b>How does this affect me? </b><br>\nWith this functionality administrators can manually re-enable locked environments directly through the Power Platform admin center. Additionally, administrators can identify which environments were deactivated due to unhealthy Enterprise policies and proactively manage these environments to ensure smooth operations. <br><br>\n<b>What action do I need to take? </b><br>\nThis message is for awareness and no action is required. <br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/10920/cmk-lock-unlock\" target=\"_blank\">Lock and unlock environments through key vault access - Power Platform</a>."
     }
   },
   {
@@ -18262,7 +18199,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"496175\":[{\"RoadmapId\":496175,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775553Z\",\"LatestRing\":null},{\"RoadmapId\":496175,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-10T23:26:38.577555Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":496175,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775554Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"496175\":[{\"RoadmapId\":496175,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-10T23:26:38.577555Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":496175,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775553Z\",\"LatestRing\":null},{\"RoadmapId\":496175,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775554Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
