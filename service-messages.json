@@ -7045,6 +7045,38 @@
     }
   },
   {
+    "startDateTime": "2025-04-24T00:50:29Z",
+    "endDateTime": "2025-09-29T07:00:00Z",
+    "lastModifiedDateTime": "2025-07-30T20:07:08.303Z",
+    "title": "(Updated) New Feature: Role-based access controls for Windows Autopatch",
+    "id": "MC1061099",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows Autopatch"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Windows Autopatch introduces role-based access controls starting May 27, 2025, allowing assignment of specific update management roles—Administrator and Reader—reducing reliance on Intune Service administrator privileges. Custom roles and Intune scope tags are supported. Some legacy Entra groups will be removed; review user permissions accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Updated July 30, 2025: We have updated the timeline below. Thank you for your patience.</p><p>Windows Autopatch will now provide role-based access controls to access key update management features, previously limited to Intune Service administrators. With this change, administrators can assign specific roles and permissions, so that only authorized personnel can perform update management actions and read reports. With this change you will be able to grant appropriate access rights to individuals, resulting in far fewer privileges for update management, therefore minimizing the need for Intune Service administrator privileges.  \n</p><p>[When will this happen:]  \n</p><p>General Availability will take place starting May 27, 2025, Pacific Standard Time, and the change will be completed on August 4, 2025.</p><p> [How will this affect your organization:]  \n</p><p>This release includes the following \n</p><p><b>Built-in roles \n</b></p><ol><li><b>Windows Autopatch Administrator:</b> This includes full permissions necessary for Autopatch Groups, Autopatch reports and Messages.  \n</li><li><b>Windows Autopatch Reader:</b> This includes read permissions necessary for Autopatch Groups, Autopatch reports and Messages but does not permit any changes. \n</li></ol><p>IT admins have been using the Intune role <b>Policy and Profile Manager</b> or an Intune custom role with equivalent permissions that include Device configuration permissions for managing Intune policies. To fully access advanced update management features such as Autopatch Groups, a user must be assigned to both Policy and Profile Manager and Windows Autopatch administrator.  \n</p><p>The roles will be available at  <a href=\"https://go.microsoft.com/fwlink/?linkid=2109431\" target=\"_blank\"><u>Microsoft Intune admin center</u></a> -&gt; Tenant Administration -&gt; Roles -&gt; All roles \n</p><p>Custom roles – you can create a custom Autopatch role and include just the permissions required for update related activities. You can access this from <a href=\"https://go.microsoft.com/fwlink/?linkid=2109431\" target=\"_blank\"><u>Microsoft Intune admin center</u></a> -&gt; Tenant Administration -&gt; Roles -&gt; All roles -&gt; Create -&gt; Windows Autopatch role.   \n</p><p>You will be able to assign <b>Intune scope tags</b> to Autopatch Groups and filter Autopatch reports based on scope tags.  \n</p><p><b>Windows Autopatch reports</b> – You will be able to access the Windows Autopatch reports with the above built-in roles, or grant permissions to custom roles.  Learn more about which current roles can access reports at <a href=\"https://learn.microsoft.com/en-us/windows/deployment/windows-autopatch/monitor/windows-autopatch-windows-quality-and-feature-update-reports-overview#who-can-access-the-reports\" target=\"_blank\"><u>Who can access Windows Autopatch reports</u></a> \n</p><p>In addition to Global administrator and Intune Service administrator, the following Microsoft Entra roles will have access to various Autopatch features. \n</p><ol><li>Service Support Administrator \n</li><li>Security Admin \n</li><li>Security Reader \n</li><li>Billing Administrator \n</li><li>Helpdesk Administrator \n</li></ol><p>We will also remove the <b>\"Modern Workplace Roles - Service Administrator\"</b> and <b>\"Modern Workplace Roles - Service Reader”</b> Microsoft Entra groups, that Autopatch no longer uses, and if they are present in your tenant. Autopatch will not migrate the group membership to any of the above roles, at release.  \n</p><p>[What you need to do to prepare:]  \n</p><p>Review your environment for users in <b>\"Modern Workplace Roles - Service Administrator”</b> or <b>\"Modern Workplace Roles - Service Reader\"</b>. Configure their permission to view Autopatch reports using the roles included in <b>\"Who can access Windows Autopatch reports\"</b>, to prevent loss of access.  \n</p><p>If you have any questions or concerns, or need assistance, file a service request by visiting the <a href=\"https://go.microsoft.com/fwlink/?linkid=2109431\" target=\"_blank\"><u>Microsoft Intune admin center</u></a>.  \n</p>"
+    }
+  },
+  {
     "startDateTime": "2025-04-24T00:51:01Z",
     "endDateTime": "2025-09-08T07:00:00Z",
     "lastModifiedDateTime": "2025-07-02T17:28:01.113Z",
@@ -20875,7 +20907,7 @@
   {
     "startDateTime": "2025-07-25T22:32:28Z",
     "endDateTime": "2025-10-01T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-25T22:32:42.037Z",
+    "lastModifiedDateTime": "2025-07-30T21:57:19.093Z",
     "title": "New Tools feature coming to the Microsoft Copilot Chat prompt box",
     "id": "MC1122153",
     "category": "planForChange",
@@ -20900,7 +20932,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Beginning mid-August 2025, we're introducing a new Tools feature in the Copilot Chat prompt box. Tools acts as a lightweight entry point into high-value, task-specific Copilot features and capabilities directly from the prompt box. By selecting Tools, users get a menu where they can easily discover and trigger the right Copilot feature or capability for their current task, while also providing consistent interactions across tools. Based on the user's license, Tools provides easy access to features and capabilities like Researcher, Analyst, Pages, and image generation.</p><p><b>When this will happen</b><br></p><p>General Availability (Worldwide): We will begin rollout mid-August 2025 and expect to complete by late August 2025.</p><p><b>How this affects your organization</b></p><p>Once this update is rolled out, users will see a new Tools button in the Copilot Chat prompt box. Selecting this button opens a menu of AI-powered features tailored to the user’s license. This enhancement improves discoverability and usability of Copilot capabilities, helping users complete tasks more efficiently.</p><p>This feature is on by default and does not require admin configuration.</p><p><b>What you can do to prepare</b><br></p><p>No admin action is required. However, you may want to:</p><ul><li>Inform users about the new Tools experience in Copilot Chat.</li><li>Update internal documentation or training materials if needed.</li></ul><ul></ul><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
+      "content": "<p>Beginning mid-August 2025, we're introducing a new Tools feature in the Copilot Chat prompt box. Tools acts as a lightweight entry point into high-value, task-specific Copilot features and capabilities directly from the prompt box. By selecting Tools, users get a menu where they can easily discover and trigger the right Copilot feature or capability for their current task, while also providing consistent interactions across tools. Based on the user's license, Tools provides easy access to features and capabilities like Researcher, Analyst, Pages, and image generation.</p><p><b>When this will happen</b><br></p><p>General Availability (Worldwide): We will begin rollout mid-August 2025 and expect to complete by late August 2025.</p><p><b>How this affects your organization</b></p><p>Once this update is rolled out, users will see a new Tools button in the Copilot Chat prompt box. Selecting this button opens a menu of AI-powered features tailored to the user’s license. This enhancement improves discoverability and usability of Copilot capabilities, helping users complete tasks more efficiently.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/5d805de7-b16b-48ae-92e7-afc0df17e66c  \" width=\"400\" height=\"\"></p><p>This feature is on by default and does not require admin configuration.</p><p><b>What you can do to prepare</b><br></p><p>No admin action is required. However, you may want to:</p><ul><li>Inform users about the new Tools experience in Copilot Chat.</li><li>Update internal documentation or training materials if needed.</li></ul><ul></ul><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
     }
   },
   {
@@ -20969,7 +21001,7 @@
   {
     "startDateTime": "2025-07-25T22:36:04Z",
     "endDateTime": "2025-09-29T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-25T22:36:09.757Z",
+    "lastModifiedDateTime": "2025-07-30T20:17:17.503Z",
     "title": "Microsoft 365 Copilot Chat: Set budget limits for \"Pay-as-you-go billing\" in Microsoft 365 admin center",
     "id": "MC1122160",
     "category": "stayInformed",
@@ -21003,7 +21035,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>What and Why</b></p><p>\nTo help organizations better manage and monitor their Microsoft 365 Copilot Chat pay-as-you-go spending, we’re introducing budget controls in the Microsoft 365 Admin Center. This new capability allows global and billing admins to set budget thresholds, receive alerts, and view historical spending data—supporting financial oversight and proactive cost management.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=497417\" target=\"_blank\">497417</a></p>\n\n<p><b>Rollout Schedule</b></p><p>\nGeneral Availability (Worldwide): Rollout begins mid-July 2025 and is expected to complete by early August 2025.</p>\n\n<p><b>Impact on Your Organization</b></p>\n<ul>\n<li><b>Who is affected:</b> <ul><li>Global and billing administrators managing Microsoft 365 Copilot Chat pay-as-you-go billing policies.</li></ul></li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>A new budget setting will be available in the Microsoft 365 Admin Center for Copilot Chat billing policies.</li>\n    <li>Admins can:\n      <ul>\n        <li>Set a dollar-based budget limit per billing policy.</li>\n        <li>Configure email alerts at customizable thresholds (e.g., 50%, 80%, 90%, 100% of budget).</li>\n        <li>View up to 6 months of historical pay-as-you-go spending data.</li>\n      </ul>\n    </li>\n    <li>Alerts will initially be sent from Azure and transition to Microsoft 365 Admin Center in a future update.</li>\n    <li>Budgets can only be created and edited in the Microsoft 365 Admin Center.</li>\n    <li>Billing will <b>not</b> automatically stop when the budget is reached; admins must manually disconnect the payment method or service if needed.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>Action Required / Recommendations</b></p>\n<ul>\n  <li>No action is required to prepare.</li>\n  <li>Once available, you may:\n    <ul>\n      <li>Set budget limits for Copilot Chat billing policies in the Microsoft 365 Admin Center.</li>\n      <li>Configure alert thresholds to notify mail-enabled security groups.</li>\n      <li>Monitor historical spending data to inform future budgeting decisions.</li></ul></li>\n</ul>\n\n<p><b>Compliance Considerations</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p><b>What and Why</b></p><p>\nTo help organizations better manage and monitor their Microsoft 365 Copilot Chat pay-as-you-go spending, we’re introducing budget controls in the Microsoft 365 Admin Center. This new capability allows global and billing admins to set budget thresholds, receive alerts, and view historical spending data—supporting financial oversight and proactive cost management.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=497417\" target=\"_blank\">497417</a></p>\n\n<p><b>Rollout Schedule</b></p><p>\nGeneral Availability (Worldwide): Rollout begins mid-July 2025 and is expected to complete by early August 2025.</p>\n\n<p><b>Impact on Your Organization</b></p>\n<ul>\n<li><b>Who is affected:</b> <ul><li>Global and billing administrators managing Microsoft 365 Copilot Chat pay-as-you-go billing policies.</li></ul></li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>A new budget setting will be available in the Microsoft 365 Admin Center for Copilot Chat billing policies.<p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/801b49f9-8196-41e1-9ef2-9d4ca8ab2aae \" width=\"400\" height=\"\"></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8349dcd4-e651-421d-a818-0af57c2ce7d9 \" width=\"400\" height=\"\"></p></li>\n    <li>Admins can:\n      <ul>\n        <li>Set a dollar-based budget limit per billing policy.</li>\n        <li>Configure email alerts at customizable thresholds (e.g., 50%, 80%, 90%, 100% of budget).</li>\n        <li>View up to 6 months of historical pay-as-you-go spending data.</li>\n      </ul>\n    </li>\n    <li>Alerts will initially be sent from Azure and transition to Microsoft 365 Admin Center in a future update.</li>\n    <li>Budgets can only be created and edited in the Microsoft 365 Admin Center.</li>\n    <li>Billing will <b>not</b> automatically stop when the budget is reached; admins must manually disconnect the payment method or service if needed.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>Action Required / Recommendations</b></p>\n<ul>\n  <li>No action is required to prepare.</li>\n  <li>Once available, you may:\n    <ul>\n      <li>Set budget limits for Copilot Chat billing policies in the Microsoft 365 Admin Center.</li>\n      <li>Configure alert thresholds to notify mail-enabled security groups.</li>\n      <li>Monitor historical spending data to inform future budgeting decisions.</li></ul></li>\n</ul>\n\n<p><b>Compliance Considerations</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
