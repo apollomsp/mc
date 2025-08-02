@@ -11523,30 +11523,6 @@
     }
   },
   {
-    "startDateTime": "2025-06-02T21:03:17Z",
-    "endDateTime": "2025-08-02T21:03:00Z",
-    "lastModifiedDateTime": "2025-06-02T21:33:57.353Z",
-    "title": "Business Central - Use Continia as a service provider for e-documents",
-    "id": "MC1087029",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Business Central"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing support for the Corinia connector with the E-Document framework for business-to-business communications in Business Central. This feature will reach general availability on July 1, 2025. <br><br><b>How does this affect me?</b><br> \n\nThe E-Document framework supports more external service providers for easier business-to-business communications. With multiple external service provider options available for electronic invoice exchanges during business-to-business (B2B) or business-to-government (B2G) communication, businesses can now select the provider that best aligns with their specific needs. This flexibility enhance operational efficiency, reduces costs, and mitigates risks associated with a dependency on a single provider. Businesses can improve their invoice processing times, ensure compliance with diverse regulatory requirements, and streamline their financial workflows.<br><br> \n\nUsers will have more options to use as access points for electronic invoicing because we've added more electronic document service providers to Business Central. In addition to Avalara and Pagero, users can now choose to use the <b>Continia</b> connector for electronic invoices. After selecting <b>Continia</b> as the service provider and consenting to using non-Microsoft systems, you can set up the connection with the <b>Setup Service Integration</b> action to start your onboarding process and get credentials from Continia. By integrating the new service provider, users can automate the receipt and delivery of electronic invoices as the provider serves as the endpoint for e-document exchanges.<br><br>Although the <b>E-Document Services</b> page has several global service integrations already, partners can easily add their own global service integration to their list by publishing a connector app on AppSource following our technical documentation.<br><br><b>What action do I need to take?</b><br> This message is for awareness and no action is required.<br><br> If you would like more information on this feature, please visit <a href=\"https://aka.ms/10350/use-continia-as-service-provider-e-documents\" target=\"_blank\">Use Continia as a service provider for e-documents</a>."
-    }
-  },
-  {
     "startDateTime": "2025-06-02T23:43:49Z",
     "endDateTime": "2025-09-01T07:00:00Z",
     "lastModifiedDateTime": "2025-06-02T23:44:06.52Z",
@@ -16673,30 +16649,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-02T21:24:04Z",
-    "endDateTime": "2025-08-02T21:24:04Z",
-    "lastModifiedDateTime": "2025-07-02T21:26:46.817Z",
-    "title": "Power Platform admin center – The agent inventory page is now available for Public Preview",
-    "id": "MC1108089",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing that the agent inventory page for the Power Platform admin center is now available for Public Preview. This page allows administrators to effortlessly discover, search, filter, and sort the entire inventory of agents by owner, creation date, region, and other key attributes, streamlining common administrative tasks.<br><br><b>How does this affect me?</b><br>The agent inventory page grants administrators the ability to:<ul style=\"margin-top: 0px\"><li><b>Accelerate support:</b> Quickly locate agents referenced in support tickets to improve response times.</li><li><b>Prevent orphaned agents:</b> Identify agents owned by departing users to proactively transfer ownership and maintain continuity.</li><li><b>Enforce compliance standards:</b> Easily detect agents created in nonapproved regions, ensuring adherence to organizational compliance policies.</li></ul><b>What do I need to do to prepare?</b><br>The <a href=\"https://aka.ms/11287/1\" target=\"_blank\">agent inventory page</a> requires tenant-level analytics to be enabled and can only be accessed by tenant administrators.<br><br><b>Learn more:</b><br><ul style=\"margin-top: 0px\"><li><a href=\"https://aka.ms/11287/2\" target=\"_blank\">How do I turn on tenant-level analytics?</a></li><ul>"
-    }
-  },
-  {
     "startDateTime": "2025-07-02T22:21:19Z",
     "endDateTime": "2025-09-29T07:00:00Z",
     "lastModifiedDateTime": "2025-07-02T22:23:52.753Z",
@@ -21371,6 +21323,102 @@
     "body": {
       "contentType": "html",
       "content": "<p>Starting September 1, 2025, Microsoft 365 Copilot will introduce Enhanced Personalization for Copilot-licensed enterprise users through a new feature called communication memory. This AI-powered capability improves the relevance and quality of Copilot responses by summarizing and learning from previous communications the user has access to. Communication memory is private to each user and designed to enhance productivity across Microsoft 365 apps.</p><div>\n\n<p><b>When this will happen</b></p>\n<ul><li><b>General Availability (Worldwide):</b> Rollout begins early September 2025 and is expected to complete by late October 2025.</li></ul>\n\n<p><b>How this affects your organization</b></p>\n<p>Communication memory uses AI to analyze and summarize digital communications—such as emails, chats, and meeting transcripts—to build a live memory of key highlights. This enables Copilot to deliver more personalized and context-aware responses across Microsoft 365 apps.</p>\n<p>Unlike existing personalization features that operate within a single app (e.g., Outlook, Teams Recap, or Facilitator), communication memory provides a unified view across communication channels. Summaries are generated by large language models (LLMs) and may occasionally be inaccurate; each memory includes source links for user review.</p>\n<p>This feature is <b>on by default</b> for Copilot-licensed users.</p>\n\n\n<p><b>What you can do to prepare</b></p>\n<p>Admins can manage communication memory through the <b>Enhanced Personalization admin control</b>, available via <b>Microsoft Graph</b>. Disabling Enhanced Personalization will turn off all Copilot memory and personalization features across your organization.</p>\n\n<p><b>Compliance considerations</b></p>\n<table>\n<tbody><tr>\n<td>Does the change store new customer data, if so, where, and is the data cached or permanently stored?</td>\n<td>Communication memory stores AI-generated summaries based on user-accessible communications (e.g., emails, chats, meetings). These summaries are stored securely and privately per user.</td>\n</tr>\n<tr>\n<td>Does the change alter how existing customer data is processed, stored, or accessed (e.g. documents, emails, chats, etc.), if so how and to what extent?</td>\n<td>Existing communications are processed by large language models (LLMs) to generate summaries that improve Copilot personalization.</td>\n</tr>\n<tr>\n<td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data, if so summarize changes?</td>\n<td>Introduces new AI summarization across communication channels using LLMs, expanding personalization beyond single-app contexts.</td>\n</tr>\n<tr>\n<td>Does the change provide end users any new way of interacting with generative AI, if so how?</td>\n<td>Users receive personalized Copilot responses based on communication memory, representing a new interaction model with generative AI.</td>\n</tr>\n<tr>\n<td>Does the change include an admin control and, can it be controlled through Entra ID group membership?</td>\n<td>Admins can disable Enhanced Personalization (and all Copilot memory features) via Microsoft Graph. Control via Entra ID group membership is supported.</td>\n</tr>\n<tr>\n<td>Does the change allow a user to enable and disable the feature themselves?</td>\n<td>Users can view and manage their communication memory, including reviewing linked sources for accuracy.</td>\n</tr>\n</tbody></table>\n</div>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-02T21:39:00Z",
+    "endDateTime": "2025-09-02T21:39:00Z",
+    "lastModifiedDateTime": "2025-08-02T21:39:23.75Z",
+    "title": "Dynamics 365 Contact Center – Use intent to consult with a user",
+    "id": "MC1127830",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability for customer service representatives to use Copilot-powered intent suggestions to consult with another representative in Dynamics 365 Contact Center. This feature will reach general availability on September 1, 2025.<br><br><b>How does this affect me?</b><br>Users can select from both queues and user groups when they start the consultation process and with intent to consult with a user enabled, Copilot will effectively help the service representative choose the right user to consult with.<br><br><b>What action do I need to take?</b><br>This message is for awareness and no action is required.<br><br>If you would like more information on this feature, please visit the <a target=\"_blank\" href=\"https://aka.ms/11227Link1\">Use intent to consult with a user</a> article."
+    }
+  },
+  {
+    "startDateTime": "2025-08-02T21:41:18Z",
+    "endDateTime": "2025-10-02T21:41:00Z",
+    "lastModifiedDateTime": "2025-08-02T21:59:54.927Z",
+    "title": "Microsoft Copilot Studio - Analyze business impact of copilot studio agents in Viva Insights advanced insights",
+    "id": "MC1127831",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to Analyze business impact of copilot studio agents in Viva Insights advanced insights in Microsoft Copilot Studio. This feature provides an aggregated view for Insights Analysts to understand how their copilot studio agents perform and what business value they provide. This feature will reach general availability on September 1, 2025.<br><br><b>How does this affect me?</b><br>Insights Analysts will receive an aggregated business impact report for all their published custom copilot agents in Viva Insights. This will allow users to drill down to specific agent level reports to understand usage and value of each agent. The Copilot Studio agent report in Viva Insights Advanced Insights feature is enabled by default in Copilot Studio. Environment admins can disable it from the Power Platform Admin center.<br><br>Below is a description of how the integration works:<ul><li>Copilot Studio sends published custom copilot agent data and aggregated metrics on a daily basis to M365.</li><li>Viva Insights uses this data to generate an aggregated tenant level report.</li><li>The report includes aggregated copilot agents' usage data, business impact and ROI analysis.</li><li>Analysts can drill down to specific agents to view detailed usage and ROI information such as estimated hours saved, revenue increase, cost reduction, etc.</li></ul><b>What action do I need to take?</b><br> This message is for awareness and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2025-08-02T21:45:45Z",
+    "endDateTime": "2025-09-02T21:45:45Z",
+    "lastModifiedDateTime": "2025-08-02T21:46:12.033Z",
+    "title": "Power Automate - Configure and manage SLA with work queues",
+    "id": "MC1127833",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Power Automate"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to configure and manage SLA with work queues in Power Automate. This feature will reach general availability on September 1, 2025.<br><br><b>How does this affect me?</b><br>With this feature, you can configure SLA at-risk and violation thresholds for work queues, enabling reporting of work queue items that are at-risk and in violation that you can action on to ensure SLA adherence.<br><br><b>What action do I need to take?</b><br>This message is for awareness and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2025-08-02T21:57:47Z",
+    "endDateTime": "2025-10-02T21:57:00Z",
+    "lastModifiedDateTime": "2025-08-02T21:58:34.767Z",
+    "title": "Microsoft Copilot Studio - Analyze quality of responses that use generative AI",
+    "id": "MC1127836",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to analyze the quality of responses that use generative AI in Microsoft Copilot Studio. This feature will reach general availability on September 1, 2025.<br><br><b>How does this affect me?</b><br> This feature analyzes a sample set of successfully answered generative AI questions to provide insights about the overall quality of generative AI responses. The feature uses AI to check the relevance, completeness, and grounding of each response in the sample set. It assigns a quality score for each response. <br><br><b>What action do I need to take?</b><br>This message is for awareness and no action is required.<br><br>If you would like more information on this feature, please visit <a href=\"https://aka.ms/11569\" target=\"_blank\">Analyze quality of responses that use generative AI</a>."
     }
   },
   {
