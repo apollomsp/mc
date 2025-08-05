@@ -26,7 +26,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"369345\":[{\"RoadmapId\":369345,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775949Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775946Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775966Z\",\"LatestRing\":null}]}"
+        "value": "{\"369345\":[{\"RoadmapId\":369345,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775946Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775949Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775966Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -422,7 +422,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
+        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -1739,7 +1739,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"470600\":[{\"RoadmapId\":470600,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-03-31T15:49:03.0897049Z\",\"LatestRing\":null},{\"RoadmapId\":470600,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-03-31T15:49:03.0897047Z\",\"LatestRing\":null},{\"RoadmapId\":470600,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-03-31T15:49:03.089705Z\",\"LatestRing\":null}]}"
+        "value": "{\"470600\":[{\"RoadmapId\":470600,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-03-31T15:49:03.0897047Z\",\"LatestRing\":null},{\"RoadmapId\":470600,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-03-31T15:49:03.0897049Z\",\"LatestRing\":null},{\"RoadmapId\":470600,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-03-31T15:49:03.089705Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -3030,12 +3030,13 @@
   {
     "startDateTime": "2025-04-04T02:54:35Z",
     "endDateTime": "2025-09-29T07:00:00Z",
-    "lastModifiedDateTime": "2025-04-04T02:54:45.637Z",
-    "title": "Outlook: open attachments while offline in the new Outlook for Windows",
+    "lastModifiedDateTime": "2025-08-05T19:48:53.103Z",
+    "title": "(Updated) Outlook: open attachments while offline in the new Outlook for Windows",
     "id": "MC1047925",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "Admin impact"
     ],
@@ -3052,13 +3053,17 @@
         "value": "472026"
       },
       {
+        "name": "Summary",
+        "value": "The new Outlook for Windows will allow opening and saving classic email attachments offline, starting mid-May 2025 rollout. This requires enabling offline mode and attachment sync in settings and depends on the existing OWAMailboxPolicy OfflineEnabledWin configuration. OneDrive and SharePoint links still need internet access."
+      },
+      {
         "name": "Platforms",
         "value": "Desktop"
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><span style=\"font-family: Aptos, sans-serif; font-size: 11pt;\">We are adding more functionality to offline mode in the new\nOutlook for Windows. You will now be able to open and save attachments from\nyour emails without an internet connection.&nbsp; &nbsp;</span></p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">Please note that this is only scoped to classic file\nattachments. OneDrive and SharePoint links in the body of the emails will still\nneed a connection to be opened.&nbsp;&nbsp;&nbsp;</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">For this functionality to work you need to make sure Offline\nis enabled and offline attachments are enabled.&nbsp;&nbsp;&nbsp;</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">At the user level you can verify this by checking two\nsettings in new Outlook Settings - General - Offline:&nbsp;&nbsp;&nbsp;</p><ol type=\"1\" start=\"1\" style=\"margin-top:0in\">\n <li style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif;mso-list:l0 level1 lfo1;tab-stops:list .5in\">Enable\n     offline email, calendar and people&nbsp;&nbsp;</li>\n <li style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif;mso-list:l0 level1 lfo1;tab-stops:list .5in\">Include\n     file attachments&nbsp;&nbsp;</li></ol><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">This functionality will also be enabled or disabled based on\nthe True/False behavior of the already existing Mailbox Policy:\nOWAMailboxPolicy-&nbsp;<b>OfflineEnabledWin.&nbsp;</b></p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">Attachments from emails within the timeframe and folder\nscope selected in the \"Settings - General - Offline\" will be synced\nand available locally for users to open without an internet connection.&nbsp;&nbsp;</p><p></p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=472026\" target=\"_blank\">472026</a></p><p>[When this will happen:]</p><p>Targeted Release (Worldwide): We will begin rolling out on mid-May 2025 and expect to complete by late May 2025.</p><p>General Availability (Worldwide): We will begin rolling out on late June 2025 and expect to complete by mid-July 2025.</p><p>General Availability (GCC): We will begin rolling out on mid-July 2025 and expect to complete by late July 2025.</p><p>[How this will affect your organization:]</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">Classic attachments from emails within the timeframe and\nfolder scope selected in the \"Settings - General - Offline\" will be\nsynced and available locally for users to open without an internet\nconnection:</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\"><br></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/b6890a8e-0a9a-42ea-b317-0fc95a024f33\" width=\"400\" height=\"\"></p><p></p><br><p>[What you need to do to prepare:]</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">The default on or off of this feature will depend on your\nexisting Offline configuration in the new Outlook via the following policy:\nOWAMailboxPolicy-&nbsp;<b>OfflineEnabledWin.&nbsp;</b>&nbsp;This feature will\nnot change the default of this Policy. You can find more information about this Policy here: <a href=\"https://learn.microsoft.com/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps#-offlineenabledwin\" target=\"_blank\">Set-OwaMailboxPolicy</a>&nbsp;&nbsp;</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">If you have not made any changes to this Policy, then the\ndefault of this feature will be&nbsp;<b>on.</b>&nbsp;</p>"
+      "content": "<p><span style=\"font-family: Aptos, sans-serif; font-size: 11pt;\">Updated August 5, 2025: We have updated the timeline. Thank you for your patience.</span></p><p><span style=\"font-family: Aptos, sans-serif; font-size: 11pt;\">We are adding more functionality to offline mode in the new\nOutlook for Windows. You will now be able to open and save attachments from\nyour emails without an internet connection.&nbsp; &nbsp;</span></p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">Please note that this is only scoped to classic file\nattachments. OneDrive and SharePoint links in the body of the emails will still\nneed a connection to be opened.&nbsp;&nbsp;&nbsp;</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">For this functionality to work you need to make sure Offline\nis enabled and offline attachments are enabled.&nbsp;&nbsp;&nbsp;</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">At the user level you can verify this by checking two\nsettings in new Outlook Settings - General - Offline:&nbsp;&nbsp;&nbsp;</p><ol type=\"1\" start=\"1\" style=\"margin-top:0in\">\n <li style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif;mso-list:l0 level1 lfo1;tab-stops:list .5in\">Enable\n     offline email, calendar and people&nbsp;&nbsp;</li>\n <li style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif;mso-list:l0 level1 lfo1;tab-stops:list .5in\">Include\n     file attachments&nbsp;&nbsp;</li></ol><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">This functionality will also be enabled or disabled based on\nthe True/False behavior of the already existing Mailbox Policy:\nOWAMailboxPolicy-&nbsp;<b>OfflineEnabledWin.&nbsp;</b></p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">Attachments from emails within the timeframe and folder\nscope selected in the \"Settings - General - Offline\" will be synced\nand available locally for users to open without an internet connection.&nbsp;&nbsp;</p><p></p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=472026\" target=\"_blank\">472026</a></p><p>[When this will happen:]</p><p>Targeted Release (Worldwide): We will begin rolling out on mid-May 2025 and expect to complete by late May 2025.</p><p>General Availability (Worldwide): We will begin rolling out on late June 2025 and expect to complete by mid-August 2025.\n</p><p>General Availability (GCC): We will begin rolling out on late August 2025and expect to complete by mid-August 2025.</p><p>[How this will affect your organization:]</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">Classic attachments from emails within the timeframe and\nfolder scope selected in the \"Settings - General - Offline\" will be\nsynced and available locally for users to open without an internet\nconnection:</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\"><br></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/b6890a8e-0a9a-42ea-b317-0fc95a024f33\" width=\"400\" height=\"\"></p><p></p><br><p>[What you need to do to prepare:]</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">The default on or off of this feature will depend on your\nexisting Offline configuration in the new Outlook via the following policy:\nOWAMailboxPolicy-&nbsp;<b>OfflineEnabledWin.&nbsp;</b>&nbsp;This feature will\nnot change the default of this Policy. You can find more information about this Policy here: <a href=\"https://learn.microsoft.com/powershell/module/exchange/set-owamailboxpolicy?view=exchange-ps#-offlineenabledwin\" target=\"_blank\">Set-OwaMailboxPolicy</a>&nbsp;&nbsp;</p><p style=\"margin:0in 0in 8pt;font-size:11pt;font-family:Aptos, sans-serif\">If you have not made any changes to this Policy, then the\ndefault of this feature will be&nbsp;<b>on.</b>&nbsp;</p>"
     }
   },
   {
@@ -4510,7 +4515,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08846Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08846Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -4592,7 +4597,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -4793,7 +4798,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487432\":[{\"RoadmapId\":487432,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703628Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703625Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470363Z\",\"LatestRing\":null}]}"
+        "value": "{\"487432\":[{\"RoadmapId\":487432,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703625Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703628Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470363Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -6040,7 +6045,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"486694\":[{\"RoadmapId\":486694,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4709305Z\",\"LatestRing\":null},{\"RoadmapId\":486694,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4709304Z\",\"LatestRing\":null},{\"RoadmapId\":486694,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4709306Z\",\"LatestRing\":null}]}"
+        "value": "{\"486694\":[{\"RoadmapId\":486694,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4709304Z\",\"LatestRing\":null},{\"RoadmapId\":486694,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4709305Z\",\"LatestRing\":null},{\"RoadmapId\":486694,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4709306Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -7541,7 +7546,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"480716\":[{\"RoadmapId\":480716,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3564653Z\",\"LatestRing\":null},{\"RoadmapId\":480716,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3564651Z\",\"LatestRing\":null},{\"RoadmapId\":480716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-27T14:51:02.773967Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":480716,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.77397Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"480716\":[{\"RoadmapId\":480716,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3564651Z\",\"LatestRing\":null},{\"RoadmapId\":480716,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3564653Z\",\"LatestRing\":null},{\"RoadmapId\":480716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-27T14:51:02.773967Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":480716,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.77397Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -7892,7 +7897,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"482537\":[{\"RoadmapId\":482537,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-05-21T16:05:35.356927Z\",\"LatestRing\":null},{\"RoadmapId\":482537,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3569266Z\",\"LatestRing\":null},{\"RoadmapId\":482537,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3569271Z\",\"LatestRing\":null}]}"
+        "value": "{\"482537\":[{\"RoadmapId\":482537,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3569266Z\",\"LatestRing\":null},{\"RoadmapId\":482537,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-05-21T16:05:35.356927Z\",\"LatestRing\":null},{\"RoadmapId\":482537,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3569271Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -9836,7 +9841,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"491468\":[{\"RoadmapId\":491468,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093795Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093792Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.509379Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093788Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177803Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":491468,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177816Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"491468\":[{\"RoadmapId\":491468,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177803Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":491468,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093788Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.509379Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093792Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093795Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177816Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -9981,7 +9986,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"491018\":[{\"RoadmapId\":491018,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096907Z\",\"LatestRing\":null},{\"RoadmapId\":491018,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096905Z\",\"LatestRing\":null},{\"RoadmapId\":491018,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096908Z\",\"LatestRing\":null}]}"
+        "value": "{\"491018\":[{\"RoadmapId\":491018,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096905Z\",\"LatestRing\":null},{\"RoadmapId\":491018,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096907Z\",\"LatestRing\":null},{\"RoadmapId\":491018,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096908Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11193,7 +11198,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"494843\":[{\"RoadmapId\":494843,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5778471Z\",\"LatestRing\":null},{\"RoadmapId\":494843,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.577847Z\",\"LatestRing\":null},{\"RoadmapId\":494843,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5778472Z\",\"LatestRing\":null}]}"
+        "value": "{\"494843\":[{\"RoadmapId\":494843,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.577847Z\",\"LatestRing\":null},{\"RoadmapId\":494843,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5778471Z\",\"LatestRing\":null},{\"RoadmapId\":494843,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5778472Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -13697,7 +13702,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"483506\":[{\"RoadmapId\":483506,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875184Z\",\"LatestRing\":null},{\"RoadmapId\":483506,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875181Z\",\"LatestRing\":null},{\"RoadmapId\":483506,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875186Z\",\"LatestRing\":null}]}"
+        "value": "{\"483506\":[{\"RoadmapId\":483506,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875181Z\",\"LatestRing\":null},{\"RoadmapId\":483506,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875184Z\",\"LatestRing\":null},{\"RoadmapId\":483506,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875186Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -14243,7 +14248,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -14575,7 +14580,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"496369\":[{\"RoadmapId\":496369,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744824Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744823Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744822Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-27T14:51:02.774482Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744819Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744826Z\",\"LatestRing\":null}]}"
+        "value": "{\"496369\":[{\"RoadmapId\":496369,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744819Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-27T14:51:02.774482Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744822Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744823Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744824Z\",\"LatestRing\":null},{\"RoadmapId\":496369,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.7744826Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -15559,7 +15564,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"496175\":[{\"RoadmapId\":496175,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775553Z\",\"LatestRing\":null},{\"RoadmapId\":496175,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-10T23:26:38.577555Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":496175,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775554Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"496175\":[{\"RoadmapId\":496175,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-10T23:26:38.577555Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":496175,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775553Z\",\"LatestRing\":null},{\"RoadmapId\":496175,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775554Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18101,7 +18106,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T18:10:40.4820299Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T18:10:40.4820302Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T18:10:40.4820303Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T20:08:06.096722Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T20:08:06.0967223Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T20:08:06.0967224Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -20939,7 +20944,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783811Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783808Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783804Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783816Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783804Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783808Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783811Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783816Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21437,7 +21442,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -22071,8 +22076,8 @@
   },
   {
     "startDateTime": "2024-08-01T22:51:48Z",
-    "endDateTime": "2025-09-15T08:00:00Z",
-    "lastModifiedDateTime": "2025-06-04T15:46:11.847Z",
+    "endDateTime": "2025-10-06T08:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T19:39:46.94Z",
     "title": "Microsoft Outlook: Replace quick compose pop-up with inline appointment creation in new Outlook for Windows and web",
     "id": "MC846387",
     "category": "planForChange",
@@ -22098,7 +22103,7 @@
       },
       {
         "name": "Summary",
-        "value": "In the new Outlook for Windows and web, single-clicking an empty calendar slot will now allow inline appointment creation instead of a quick compose pop-up. This change will roll out from April to July 2025. No admin action is required, but user notification and documentation updates are recommended."
+        "value": "In new Outlook for Windows and web, single-clicking an empty calendar slot now allows inline appointment creation instead of a quick compose pop-up. Double-click behavior remains unchanged. Rollout starts April 2025, completing by August 2025, with no admin action needed."
       },
       {
         "name": "Platforms",
@@ -22107,7 +22112,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated June 4, 2025: We have updated the timeline below. Thank you for your patience.</p><p>In new Outlook for Windows and web, when single-clicking on an empty time slot on the calendar surface, the quick compose pop-up will no longer appear. Instead, you will be able to create an appointment by typing directly in the time slot on the calendar grid, just as you can in classic Outlook for Windows. There will be no change to double-click behavior; the full compose form will still open as it does today.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=406948\" target=\"_blank\">406948</a>.\n</p><p>[When this will happen:]\n</p><p>Targeted Release: We will begin rolling out early April 2025 (previously early March) and expect to complete by late April 2025 (previously late March).\n</p><p>General Availability (Worldwide): We will begin rolling out early May 2025 (previously late March) and expect to complete by late July 2025 (previously late May).</p><p>[How this will affect your organization:]</p><p>This may affect how users create appointments quickly on the calendar surface. We expect this to be a better experience, especially for those familiar with classic Outlook inline appointment creation.\n</p><p>This update is available by default.\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically with no admin action required. You may want to notify your users about this change and update any relevant documentation.</p>"
+      "content": "<p>Updated August 5, 2025: We have updated the content. Thank you for your patience.</p><p>In new Outlook for Windows and web, when single-clicking on an empty time slot on the calendar surface, the quick compose pop-up will no longer appear. Instead, you will be able to create an appointment by typing directly in the time slot on the calendar grid, just as you can in classic Outlook for Windows. There will be no change to double-click behavior; the full compose form will still open as it does today.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=406948\" target=\"_blank\">406948</a>.\n</p><p>[When this will happen:]\n</p><p>Targeted Release: We will begin rolling out early April 2025 (previously early March) and expect to complete by late April 2025 (previously late March).\n</p><p>General Availability (Worldwide): We will begin rolling out early May 2025 (previously late March) and expect to complete by late August 2025 (previously late July).</p><p>[How this will affect your organization:]</p><p>This may affect how users create appointments quickly on the calendar surface. We expect this to be a better experience, especially for those familiar with classic Outlook inline appointment creation.\n</p><p>This update is available by default.\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically with no admin action required. You may want to notify your users about this change and update any relevant documentation.</p>"
     }
   },
   {
@@ -26183,7 +26188,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"472913\":[{\"RoadmapId\":472913,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.6910528Z\",\"LatestRing\":null},{\"RoadmapId\":472913,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.6910524Z\",\"LatestRing\":null},{\"RoadmapId\":472913,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.691053Z\",\"LatestRing\":null}]}"
+        "value": "{\"472913\":[{\"RoadmapId\":472913,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.6910524Z\",\"LatestRing\":null},{\"RoadmapId\":472913,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.6910528Z\",\"LatestRing\":null},{\"RoadmapId\":472913,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.691053Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
