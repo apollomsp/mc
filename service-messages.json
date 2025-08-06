@@ -14820,8 +14820,8 @@
   {
     "startDateTime": "2025-06-26T23:19:13Z",
     "endDateTime": "2025-09-29T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-08T23:42:56.06Z",
-    "title": "Expanded Copilot in Viva Engage updates",
+    "lastModifiedDateTime": "2025-08-05T22:18:00.82Z",
+    "title": "Microsoft 365 Copilot in Viva Engage",
     "id": "MC1104316",
     "category": "planForChange",
     "severity": "normal",
@@ -17552,7 +17552,7 @@
   {
     "startDateTime": "2025-07-15T22:52:54Z",
     "endDateTime": "2025-10-06T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-25T00:20:30.517Z",
+    "lastModifiedDateTime": "2025-08-05T22:26:34.22Z",
     "title": "New Copilot setting for pinning the Microsoft 365 Copilot app to the Windows Taskbar",
     "id": "MC1115982",
     "category": "planForChange",
@@ -17566,6 +17566,7 @@
     "actionRequiredByDateTime": null,
     "services": [
       "Microsoft 365 suite",
+      "Microsoft Intune",
       "Microsoft Copilot (Microsoft 365)"
     ],
     "hasAttachments": false,
@@ -18107,7 +18108,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T22:07:31.5733969Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T22:07:31.5733986Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-05T22:07:31.5733987Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-06T00:33:47.7808528Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-06T00:33:47.7808531Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-06T00:33:47.7808532Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18246,35 +18247,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>Introduction</b></p><p>Microsoft Viva Amplify now supports custom themes and fonts published to SharePoint’s Brand Center, empowering communicators to align campaigns with organizational branding and maintain visual consistency across channels like Outlook and SharePoint.</p><p>Custom fonts allow organizations to apply their own typography to Viva Amplify communications. These fonts are managed via SharePoint’s Brand Center and can be applied to campaigns for a consistent and professional appearance.\n</p><p>Custom themes enable personalization of communications by applying branded color palettes. Whether sending newsletters, announcements, or event updates, custom themes help ensure your message is polished and on-brand.\n</p><p>This update is associated with Microsoft 365 Roadmap ID<span style=\"background-color: rgb(255, 255, 255);\">&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=498322\" target=\"_blank\">498322</a>.</span></p><p><span style=\"background-color: rgb(255, 255, 255);\"><b>When this will happen</b></span></p><p><span style=\"background-color: rgb(255, 255, 255);\"><b>Targeted Release (Worldwide): </b>We began rolling out in mid-July 2025 and expect to complete by late July 2025.\n</span></p><p><span style=\"background-color: rgb(255, 255, 255);\"><b>General Availability (Worldwide &amp; GCC):</b> We will begin rolling out late July 2025 and expect to complete by early August 2025.</span></p><p><span style=\"background-color: rgb(255, 255, 255);\"><b>How this will affect your organization</b></span></p><ul><li>Previously, Viva Amplify campaigns used a default blue theme. If your organization has set a new default SharePoint theme, that theme will now automatically apply to existing Viva Amplify campaigns.\n</li><li>Campaign owners can override the default theme and revert to the original \"Blue\" if desired.\n</li><li>Custom themes created in SharePoint’s Brand Center will now be available to all Viva Amplify campaigns.\n</li><li>Custom fonts can be applied to Viva Amplify communications but must be deployed to user devices via endpoint management tools. Fonts are not embedded in emails.\n</li><li>Font customization is supported only in SharePoint pages and Outlook emails.\n</li><li>Only Viva Amplify campaign owners can change themes or apply custom fonts.\n</li><li>Typically, users will not see changes unless a new default SharePoint theme has been applied.\n</li><li>This feature is on by default for campaign owners.\n</li><li>This feature is available in all languages/locales supported by Viva Amplify.\n</li><li>There are no tenant-level controls to disable custom themes or fonts, but tenant admins can set the default theme via SharePoint.</li></ul><p><b>Visual examples of theme and font customization in Viva Amplify -</b></p><p>Screenshot 1. <i>Campaign site showing default SharePoint theme applied:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/e273412d-b531-4c13-b600-0045632aa95f/0c9021f77f84f24e1a01b8403cb45fc01bbe6c6e.png\" style=\"width: 285.995px;\"></p><p></p><p>Screenshot 2. <i>Theme selection menu with Blue and Cobalt options:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/fcb62498-aa13-43ea-ab28-ca54ae7f1067/9b11450e523b8d996085fcf9c56af7478b17b8a9.png\" style=\"width: 325.995px;\"></p><p>Screenshot 3. <i>Font customization panel in Viva Amplify campaign settings:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/7b38d5c3-5adb-4382-8597-ffa72ec7670a/86c51aa0a85fc59cb2ccba1dbf1b1356c98f2c71.png\" style=\"width: 340px;\"></p><p>Screenshot 4 - <i>Some of the available color palettes for custom themes in Viva Amplify:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/942e3b3b-d0d8-4f16-a81b-4108acfdd2ac/36c62b4001bd515ea2a1a8f5a3948ccf0624a5c6.png\" style=\"width: 250.995px;\"></p><p></p><p><b>What you need to do to prepare</b></p><ul><li>Review your organization's SharePoint theme settings. If a new default has been applied, it will now reflect in Viva Amplify campaigns.\n</li><li>If unpublished content appears visually different, campaign owners can manually switch back to the \"Blue\" or \"Cobalt\" theme.\n</li><li>Ensure endpoint management tools are configured to distribute custom fonts to user devices.\n</li><li>Educate campaign owners on how to apply themes and fonts via the Viva Amplify interface.</li></ul><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-07-22T23:30:29.24Z",
-    "endDateTime": "2025-08-05T23:30:29.24Z",
-    "lastModifiedDateTime": "2025-07-22T23:30:30Z",
-    "title": "Updates available for Microsoft 365 Apps for Current Channel",
-    "id": "MC1120175",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "ExternalLink",
-        "value": "https://docs.microsoft.com/officeupdates/"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We&#39;ve released updates to the following update channel for Microsoft 365 Apps:</p>\r\n<ul><li>Current Channel</li></ul>\r\n<p>[When this will happen:]</p>\r\n<p>We&#39;ll be gradually rolling out this update of Microsoft 365 Apps to users on that update channel starting July 22nd, 2025 (PST).</p>\r\n<p>[How this will affect your organization:]</p>\r\n<p>If your Microsoft 365 Apps clients are configured to automatically update from the Office Content Delivery Network (CDN), then no action is required.</p>\r\n<p>If you manage updates directly you can now download this latest update and begin deployment.</p>\r\n<p>[What you need to do to prepare:]</p>\r\n<p>To get more details about this update view the following release notes:</p>\r\n<ul><li><a href=\"https://docs.microsoft.com/officeupdates/current-channel#version-2506-july-22\" target=\"_blank\" rel=\"noopener noreferrer\">Current Channel</a></li></ul>"
     }
   },
   {
@@ -20503,6 +20475,369 @@
     "body": {
       "contentType": "html",
       "content": "<p>The new Outlook for Windows and Outlook for the Web now support email templates, enabling users to create, save, and reuse templates for faster, more consistent communication. This update also supports importing existing templates saved as .oft files, streamlining the transition from classic Outlook experiences.</p><p>This message is associated with Microsoft 365 Roadmap ID: <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=485757\" target=\"_blank\">485757</a></p>\n\n<b>When this will happen:</b><p></p><p>\n</p><p><b>Targeted Release (Worldwide): </b>Rollout will begin in late August 2025 and is expected to complete by early September 2025.</p><p><b>General Availability (Worldwide, GCC, GCC High, DoD):</b> Rollout will begin in early-October 2025 and is expected to complete by late-November 2025.</p>\n\n<b>How this affects your organization:</b><p></p><p>\n</p><ul>\n  <li>Create, edit, and use templates directly from the compose window.</li>\n  <li>Manage templates via the Settings page.</li>\n  <li>Access saved templates across devices and between the new Outlook and Outlook on the web.</li>\n</ul>\n<p>Templates are stored in the user’s account, allowing them to roam with the user for a consistent experience across devices. This feature is on by default and requires no admin configuration.</p>\n\n<b>What you can do to prepare:</b><p></p><p>\n</p><p>No action is required to prepare for this change. You may wish to inform your users about the new template functionality to help them take advantage of it once available.</p>\n<p>#newoutlookforwindows</p><p>\n</p><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T22:44:05Z",
+    "endDateTime": "2025-12-31T08:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T22:44:33.573Z",
+    "title": "Simplifying Microsoft 365 Copilot app web experiences",
+    "id": "MC1129706",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 suite",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot Chat web access is being simplified by consolidating entry points from copilot.cloud.microsoft to m365.cloud.microsoft/chat, reducing user confusion. The change starts mid-September with automatic redirection, requires no admin action, and does not affect data processing or AI capabilities."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Based on your feedback, we’re simplifying how users access Copilot Chat on the web by consolidating entry points.&nbsp;</p><p>Today, users without chat pinned in the Microsoft 365 Copilot app access Copilot Chat in a standalone experience on copilot.cloud.microsoft, while users with chat pinned access Copilot Chat on m365.cloud.microsoft.\n</p><p>To simplify and improve the Microsoft 365 Copilot Chat experience, we’re consolidating the chat functionality into the Microsoft 365 Copilot app. Having two separate entry points has created customer confusion and extra effort for our customers. By unifying the experience, we’re making it easier to access the full value of Copilot in one place.</p><p>Below is the new experience on m365.cloud.microsoft for users without chat pinned in the Microsoft 365 Copilot app who visit Microsoft 365 Copilot app via a direct chat link (m365.cloud.microsoft/chat). Users with pinning disabled will continue to see chat unpinned by default on m365.cloud.microsoft, on mobile, and on desktop. Users who continue to navigate to copilot.cloud.microsoft will automatically be redirected to the below chat experience on m365.cloud.microsoft/chat.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/629b644a-e18c-4971-aa90-e0ae9b7ca627\" width=\"400\" height=\"\"></p><p>If users come to chat via a direct link (m365.cloud.microsoft/chat) they will see chat in a transient state in their navigation. If a user navigates away from chat, it will disappear from the navigation unless the user chooses to pin it.&nbsp;</p><p>\n&nbsp;Below is the default experience on m365.cloud.microsoft for users with chat pinned in the Microsoft 365 Copilot app. No change to the end users’ experience.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/795cc2f3-289a-4316-a97e-f2054ff8683f  \" width=\"400\" height=\"\"></p><p>There is no change for users with a Microsoft 365 Copilot license and no change for users whose access to Copilot has been blocked in Integrated Apps.\n</p><p>Users with bookmarks or favorites saved to copilot.cloud.microsoft will be redirected to m365.cloud.microsoft/chat automatically.\n</p><p><b>How this will affect your organization:\n</b></p><ul><li>Users who previously landed on copilot.cloud.microsoft for chat access will now be automatically directed to m365.cloud.microsoft/chat for chat access. \n</li><li>There is no change for users who do not have access to Copilot. \n</li><li>There is no change for users who already access Copilot Chat via the Microsoft 365 Copilot app.</li></ul><p><b>When this will happen: </b></p><p>The rollout begins with 301 traffic redirections in mid-September. The copilot.cloud.microsoft will be deprecated at the end of September. Users with bookmarks or favorites saved to copilot.cloud.microsoft or who navigate directly to copilot.cloud.microsoft will be redirected to m365.cloud.microsoft/chat automatically going forward.</p><p><b>What you need to do to prepare: </b></p><p>No admin action is required. If you would like to inform users of this update, you could consider the following message:</p><p>“Copilot Chat is now available in the <a href=\"https://m365.cloud.microsoft/chat/\" target=\"_blank\">Microsoft 365 Copilot app</a>. This change simplifies access and ensures a consistent experience across Microsoft 365 Copilot app web entry points.” \n</p><p>To learn more about your options for managing Microsoft 365 Copilot Chat, see <a href=\"https://learn.microsoft.com/en-us/copilot/manage\" target=\"_blank\">Manage Microsoft 365 Copilot Chat | Microsoft Learn.</a></p><p><b>Compliance considerations:\n</b></p><ul><li>Does the change alter how existing customer data is processed, stored, or accessed? No.\n</li><li>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data? No.\n</li><li>Does the change provide a new way of communicating between users, tenants, or subscriptions? No.\n</li><li>Does the change provide end users any new way of interacting with generative AI? No – it improves access to existing capabilities\n</li></ul><p><br></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T22:47:00Z",
+    "endDateTime": "2025-10-31T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T22:49:21.517Z",
+    "title": "Microsoft Purview | ​Retirement of the classic eDiscovery (Premium) experience",
+    "id": "MC1129711",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact",
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The classic eDiscovery (Premium) experience in Microsoft Purview will retire on August 31, 2025, replaced by the unified Cases section. Users must transition to the new eDiscovery experience to avoid disruption, update documentation, and prepare for enhanced capabilities."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>The following features/ experiences will be retired from the Microsoft Purview portal starting August 31, 2025. We strongly recommend transitioning to the alternative management method outlined below.  \n</p><p>The Premium Cases experience in the classic eDiscovery section of the Microsoft Purview portal will be retired and replaced by Cases in Microsoft Purview eDiscovery.  All your existing eDiscovery (premium) cases in the classic eDiscovery experience will be managed in the Cases section in the left-navigation.</p><p>[image]</p><p>We strongly encourage you to begin planning your transition to help ensure a smooth migration and minimal disruption to your current processes. These changes are part of our ongoing commitment to delivering a secure and intuitive user experience to you and your organization.  \n</p><p>[How this will affect your organization:] \n</p><p>You are receiving this message because one or more users in your organization are using these eDiscovery features.  \n</p><p>After the retirement of these features, users won’t be able to use the classic eDiscovery (Premium) experience to manage cases.   \n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/87c352bd-0e6b-4ce1-be15-c6fc4e29e9be \" width=\"300\" height=\"\">\n</p><p>[What you need to do to prepare:] \n</p><p>This update will start on August 31, 2025. Please notify your users about these changes, update relevant documentation or guidance in your organization, and familiarize your teams with the upcoming changes and enhanced capabilities of the new unified eDiscovery experience in the Microsoft Purview Portal.  \n</p><p>To learn more about the new eDiscovery experience in the Microsoft Purview portal, see <a href=\"https://learn.microsoft.com/en-us/purview/edisc\" target=\"_blank\">Learn about eDiscovery solutions</a>.&nbsp;</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T22:51:20Z",
+    "endDateTime": "2025-09-29T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T22:51:30.303Z",
+    "title": "Microsoft Teams: Regional Settings Separation",
+    "id": "MC1129712",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "498895"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will allow users to independently set UI language, date, and time formats, separate from their operating system settings, starting August 2025. This enhances personalization without changing current behavior unless users adjust settings. No admin action is needed; users can configure preferences in Teams settings."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, Desktop, iOS, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction\n</b></p><p>We're introducing the Regional Settings Separation feature in Microsoft Teams to improve the globalization experience and provide users with greater control over their regional preferences. With this update, users can independently configure UI language, date format, and time format within Teams, either by syncing with their operating system or manually selecting their preferences. This change helps eliminate synchronization issues and ensures a more personalized and consistent experience across devices.\n</p><p>This update is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=498895\" target=\"_blank\">498895</a>.\n</p><p><b>When this will happen\n</b></p><ul><li>Targeted Release: Begins early August 2025; expected to complete by mid-August 2025.\n</li><li>General Availability (Worldwide): Begins mid-August 2025; expected to complete by late August 2025.\n</li><li>General Availability (GCC, GCC High, DoD): Begins mid-August 2025; expected to complete by late August 2025.\n</li></ul><p><b>How this affects your organization\n</b></p><p>Once this feature is rolled out, users on Teams Desktop Client for Windows and Mac will be able to view and modify their date and time format settings directly in Teams by navigating to:\n</p><p style=\"margin-left: 25px;\"><i>Settings </i>&gt; <i>General </i>&gt; <i>Language and regional formats\n</i></p><p>By default, Teams will continue to follow the operating system settings unless users choose to override them manually. This update does not change existing behavior unless users take action.\n</p><p><b>What you can do to prepare\n</b></p><p>No admin action is required. The feature will be available automatically once users update to the supported Teams client build. There are no admin controls or configuration options for this feature.\n</p><p>You may consider notifying your users about this update to help them take advantage of the new customization options.\n</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T22:51:51Z",
+    "endDateTime": "2025-09-22T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T22:52:23.12Z",
+    "title": "Microsoft Clipchamp video hub start page update",
+    "id": "MC1129713",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 suite"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "498229"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Clipchamp is updating its video hub start page to a streamlined, AI-enhanced experience for video creation, discovery, and consumption. Rollout begins late August 2025, with no URL or functionality changes. Users will see a banner guiding them to the new hub; no admin action is required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction\n</b></p><p>We're introducing a new, streamlined Microsoft Clipchamp video hub start page experience—a single destination for video creation, discovery, and consumption. This update includes new AI-powered video consumption features designed to enhance productivity and engagement.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=498229\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">498229</a>.</p><p><b>When this will happen\n</b></p><p>General Availability (Worldwide): Rollout will begin in late August 2025 and is expected to complete by late September 2025.\n</p><p><b>How this will affect your organization\n</b></p><p>Starting in late August, users will see a new banner on both the Stream and Clipchamp start pages, guiding them to explore the revamped Clipchamp video hub experience.\n</p><ul><li>The URLs for Stream and Clipchamp will remain unchanged.\n</li><li>A banner will be added to redirect users to the new Clipchamp video hub.\n</li><li>No changes to existing functionality or workflows—users can continue working as usual.\n</li></ul><p>This update is designed to be low-impact, with no disruption to current usage patterns.</p><p><i>Figure i. Clipchamp Video Hub start page</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/c72547e6-4a89-435f-8833-599e5c68418d\" style=\"width: 100%;\" alt=\"user settings\"><br></p><p><b>What you can do to prepare</b></p><p>No admin action is required before rollout. However, we recommend:\n</p><ul><li>Reviewing your current configuration to assess any potential impact.\n</li><li>Notifying users about the upcoming change.\n</li><li>Updating internal documentation as needed.\n</li></ul><p>Learn more:\n</p><ul><li><a href=\"https://techcommunity.microsoft.com/blog/microsoft_365blog/the-future-of-video-in-microsoft-365/4338960\" target=\"_blank\">The future of video in Microsoft 365 | Microsoft Community Hub</a> (November 2024)</li><li><font style=\"\"><a href=\"https://techcommunity.microsoft.com/blog/microsoft_365blog/microsoft-stream-and-microsoft-clipchamp-brand-unification-update-for-microsoft-/4433155\" target=\"_blank\" style=\"\">Microsoft Stream and Microsoft Clipchamp: Brand unification update for Microsoft 365 video</a>&nbsp;(July 2025)</font></li><li><a href=\"https://support.microsoft.com/clipchamp\" target=\"_blank\">Clipchamp help and learning</a> (check out the new section: <i>Player, homepage</i>)\n</li><li><a href=\"https://learn.microsoft.com/stream/\" target=\"_blank\">Microsoft Stream documentation - Microsoft Stream | Microsoft Learn</a> (will be updated before rollout)\n</li></ul><p>We will update this post with new documentation before rollout.\n</p><p><b>Compliance considerations\n</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T22:56:30Z",
+    "endDateTime": "2025-10-04T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T22:56:38.493Z",
+    "title": "Microsoft Outlook Mobile adds support for DLP policy tips and enforcement",
+    "id": "MC1129716",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "496146"
+      },
+      {
+        "name": "Summary",
+        "value": "Outlook Mobile for iOS and Android will support Microsoft Purview DLP policy tips and enforcement starting mid-August 2025, aligning with desktop and web versions. This enhances data protection by alerting users to sensitive content based on existing DLP rules, requiring no extra configuration or licensing."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, iOS"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction\n</b></p><p>Outlook Mobile for iOS and Android will soon support Data Loss Prevention (DLP) policy tips and enforcement. This update helps users avoid accidental data leaks by providing inline alerts or pop-ups when sensitive content is detected—based on admin-configured DLP rules. This enhancement brings DLP behavior in Outlook Mobile in line with Outlook for desktop and web, ensuring consistent compliance enforcement across platforms.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&amp;searchterms=496146\" target=\"_blank\">496146</a>.</p><p>\n</p><p><b>When this will happen\n</b></p><p>General Availability rollout will begin in mid-August 2025 and is expected to complete by early September 2025.\n</p><p><b>How this affects your organization\n</b></p><p>With this update, organizations using Microsoft Purview DLP policies will see those policies enforced in Outlook Mobile. When users attempt to send messages containing sensitive information—such as credit card numbers or national IDs—they will receive policy tips or blocking dialogs, depending on how the policy is configured.\n</p><p>This change enhances your organization’s data protection posture and supports regulatory compliance. If DLP policies are already in place for Outlook desktop or web, no additional configuration is required. The feature is on by default and requires no admin action to enable.\n</p><p>What you can do to prepare</p><p style=\"box-sizing: border-box; margin: 0px 0px 10px; color: rgb(0, 0, 0); font-family: sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial;\"><b style=\"box-sizing: border-box; font-weight: bold;\">What you can do to prepare</b></p><p><b></b></p><ul><li>Review existing DLP policies in Microsoft Purview to ensure they are scoped to include mobile clients.\n</li><li>No new policies are required if DLP is already in use for Outlook desktop or web.\n</li><li>No additional licensing is needed beyond what is already in place for Microsoft Purview DLP.\n</li></ul><p>Find more on this topic:&nbsp;<a href=\"https://learn.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies\" target=\"_blank\">Learn about data loss prevention</a>.</p><p><b>Compliance considerations</b></p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">\n<tbody><tr><th>Compliance Area</th><th>Explanation</th></tr>\n<tr><td>DLP policies or enforcement</td><td>This release introduces DLP enforcement in Microsoft Outlook Mobile.</td></tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T22:57:27Z",
+    "endDateTime": "2025-11-30T08:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T22:57:56.853Z",
+    "title": "New Event Scheduling User Experience for Outlook and Teams",
+    "id": "MC1129717",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Outlook and Teams will get a refreshed Event scheduling interface with new Copilot features to enhance meeting creation. Rolling out from mid-August to mid-November 2025, it will be enabled by default without admin action. Prepare by informing users, providing training, and updating documentation. No compliance issues noted."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p></p><p>We’re updating the Event scheduling experience with a refreshed user interface and new Copilot capabilities to streamline meeting creation and improve usability for end users.</p><p></p><p>\n\n</p><p><b>When this will happen:</b></p><p></p><p>\n</p><ul>\n  <li><b>Public Preview:</b> Rolling out mid-August 2025 – mid-September 2025</li>\n  <li><b>Targeted Release:</b> Rolling out mid-August 2025 – mid-September 2025</li>\n  <li><b>General Availability:</b> Rolling out mid-September 2025 – mid-November 2025</li>\n</ul>\n\n<b>How this affects your organization:</b><p></p><p>\n</p><p>The updated Event form introduces a modernized layout with relocated controls and entry points for common actions. It also includes new Copilot capabilities designed to assist users in setting up and managing meetings more efficiently.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/4f10f2ba-fd73-4170-9390-d4507790dab9 \" width=\"400\" height=\"\"></p>\n<p>The update will be enabled by default and does not require admin configuration.</p>\n\n<b>What you can do to prepare:</b><p></p><p>\n</p><ul>\n  <li>Inform users about the updated layout and new entry points for scheduling meetings.</li>\n  <li>Provide guidance or training on how to use the new Copilot features.</li>\n  <li>Review internal documentation or help desk materials to reflect the updated experience.</li>\n</ul>\n<p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>\n<p></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T22:58:57Z",
+    "endDateTime": "2025-10-20T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T22:59:04.903Z",
+    "title": "New Feature: Account Manager in Outlook for Windows",
+    "id": "MC1129718",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Exchange Online",
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "497546"
+      },
+      {
+        "name": "Summary",
+        "value": "Outlook for Windows will introduce a new Account Manager in August 2025, showing profile pictures, enabling account switching, and providing quick access to account details. This feature is on by default, requires no admin action, and aligns with classic Outlook to enhance productivity."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We're introducing a new Account Manager experience in Outlook for Windows. This feature helps users better manage their Microsoft accounts by providing quick access to account details, displaying their profile picture, and enabling account switching (if permitted by your organization). This update aligns the experience with classic Outlook and enhances user productivity.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=497546\" target=\"_blank\">497546</a></p><p>\n</p><p><b>When this will happen:</b></p><p>General Availability (Worldwide): Rollout will begin in early August 2025 and is expected to complete by late August 2025.\n</p><p><b>How this affects your organization:</b></p><p>Once the rollout is complete, users will see the new Account Manager in the title bar of Outlook for Windows. Key capabilities include:\n</p><ul><li>Displaying the user’s profile picture, automatically synced from their Microsoft account.\n</li><li>Providing access to the Microsoft account page, consistent with the experience in classic Outlook.\n</li><li>Allowing users to add and manage accounts, if permitted by your organization’s policies.\n</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/247488ea-bdb2-41a1-8d3f-dcfa09277cc7/9164161523e2b6d45434c6b5f72210e3161d45b6.png\" width=\"300\" height=\"\"></p><p>This feature is on by default and does not require admin configuration.\n</p><p><b>What you can do to prepare:</b></p><p>No admin action is required. You may wish to inform your helpdesk and users about the new experience to reduce potential confusion.</p><p><b>Compliance considerations:</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T23:00:45Z",
+    "endDateTime": "2025-10-13T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T23:00:59.873Z",
+    "title": "Microsoft To Do ending support for iOS 16 and macOS 12",
+    "id": "MC1129721",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft To Do will stop supporting iOS 16 and macOS 12 starting late August to mid-September 2025. Updates will require iOS 17 or macOS 13 and later. Users on older versions won't receive updates, potentially affecting app performance and security. Organizations should encourage OS upgrades and update device policies."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction\n</b></p><p>To maintain app performance, security, and access to the latest features, Microsoft To Do will soon require updated operating systems. The iOS version of To Do will support only iOS 17 and later, and the Mac version will support only macOS 13 and later. Users on earlier versions will no longer receive app updates.\n</p><p><b>When this will happen\n</b></p><p>This change will begin rolling out in late August 2025 and end mid-September 2025.\n</p><p><b>How this affects your organization\n</b></p><p>Users running iOS 16 or earlier and macOS 12 or earlier will no longer receive updates to the Microsoft To Do app. This may impact app performance, security, and access to new features for those users.\n</p><p>This change does not affect users already on supported OS versions. No functionality will be removed from existing installations, but users on unsupported versions will not receive future updates.\n</p><p><b>What you can do to prepare\n</b></p><p>To ensure users continue receiving updates and support:\n</p><ul><li>Encourage users to update their devices to iOS 17 or later and macOS 13 or later.\n</li><li>Review your organization's device management policies to ensure compatibility with these OS versions.\n</li><li>Communicate this change to affected users in advance to minimize disruption.\n</li><li>For more information about supported platforms, visit the <a href=\"https://support.microsoft.com/todo\" target=\"_blank\">https://support.microsoft.com/todo</a>.\n</li></ul><p><b>Compliance considerations\n</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T23:17:32Z",
+    "endDateTime": "2025-12-01T08:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T23:17:40.023Z",
+    "title": "Sentence-Level Rewrite Suggestions Deprecation in Microsoft Word",
+    "id": "MC1129729",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Retirement"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Rewrite Suggestions feature in Microsoft Word will be deprecated after October 1, 2025, and replaced by the more advanced Copilot experience, offering context-aware rewriting, prompt-based editing, and iterative refinement. Users are encouraged to transition to Copilot's Auto-Rewrite for enhanced writing assistance."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We want to inform you that the <b>Rewrite Suggestions</b> preview feature in Microsoft Word—previously available via right-click on selected sentences—is being deprecated and will no longer be supported after <b>October 1, 2025</b>.\n</p><p><b>Why This Change?\n</b></p><p>The Rewrite Suggestions feature was introduced to help users improve sentence clarity, grammar, and tone by offering AI-generated alternatives. While it has been a valuable tool for many, we are evolving our writing assistance capabilities to better align with how users write and revise content today.\n</p><p><b>What’s Replacing It?\n</b></p><p>We are transitioning to a more advanced and integrated experience through Copilot in Word, which offers:\n</p><ul><li><b>Context-aware rewriting:</b> Highlight text and use Copilot to generate refined alternatives.\n</li><li><b>Prompt-based editing:</b> Ask Copilot to rewrite, summarize, or adjust tone using natural language.\n</li><li><b>Iterative refinement:</b> Use “Fine tune your rewrite” to guide Copilot through multiple revision rounds \n</li></ul><p>These enhancements provide greater flexibility, accuracy, and control—empowering you to write with confidence and efficiency.\n</p><p><b>What You Need to Do\n</b></p><p>No action is required. If you currently use Rewrite Suggestions, we encourage you to explore the Auto-Rewrite capability via Copilot in Word:\n</p><ol><li>Highlight the text you want to revise.\n</li><li>Click the Rewrite with Copilot icon in canvas.\n</li><li>Choose Auto-Rewrite.\n</li><li>Review and apply the suggestion.\n</li></ol><p>For more guidance, visit the <a href=\"https://support.microsoft.com/word\" target=\"_blank\">Word help &amp; learning.</a><font color=\"#000000\" style=\"\">&nbsp;</font></p><p>We appreciate your feedback and look forward to supporting your writing journey with even more powerful tools.\n</p><p><br></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-05T23:18:10Z",
+    "endDateTime": "2026-02-02T08:00:00Z",
+    "lastModifiedDateTime": "2025-08-05T23:18:34.627Z",
+    "title": "Remove toggle for Calendar in Teams",
+    "id": "MC1129730",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact",
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will remove the toggle for the legacy calendar, making the new integrated Microsoft 365 calendar the default. This update rolls out from September to December 2025 across various environments. No admin action is needed, but users should be informed and documentation updated accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><p>We’re introducing the new Microsoft Teams calendar experience, designed to unify and enhance productivity across Microsoft 365. This calendar integrates familiar features with innovations like Microsoft Copilot and Microsoft Places, enabling seamless collaboration from anywhere. It works consistently across Teams, the new Outlook for Windows, Outlook on the web, and Places. As part of this update, the legacy calendar experience will be deprecated, and the toggle to switch between old and new calendars will be removed.</p>\n<p><b>When this will happen</b></p></p><p>\n<ul>\n<li><b>Public Preview:</b> Early September 2025 – Mid September 2025</li>\n<li><b>Targeted Release:</b> Early September 2025 – Mid-September 2025</li>\n<li><b>General Availability (Worldwide):</b> Mid-September 2025 – End September 2025</li>\n<li><b>General Availability (Gallatin, GCC, GCC High, DoD, USSec):</b> Mid-November 2025 – Late November 2025</li>\n<li><b>General Availability (USNat):</b> Late November 2025 – Early December 2025</li>\n</ul>\n\n<b>How this affects your organization</b></p><p>\n<p>Once this update is deployed, users accessing the Calendar app in Microsoft Teams will see the new calendar experience by default. The toggle to switch between the old and new calendar will be removed, and only the new Microsoft 365 calendar will be available. This change may impact users accustomed to the legacy calendar interface.</p>\n\n<b>What you can do to prepare</b></p><p>\n<p>No admin action is required. We recommend informing your users about the upcoming change and updating any internal documentation or training materials that reference the legacy calendar experience.</p>\n<p>For more information about the new calendar experience, visit the <a href=\"https://learn.microsoft.com/microsoftteams/teams-calendar-overview\">Microsoft Teams documentation</a>.</p><p><b>Compliance considerations</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>\n</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-06T00:30:59.67Z",
+    "endDateTime": "2025-08-20T00:30:59.657Z",
+    "lastModifiedDateTime": "2025-08-06T00:31:00.947Z",
+    "title": "Updates available for Microsoft 365 Apps for Current Channel",
+    "id": "MC1129753",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "ExternalLink",
+        "value": "https://docs.microsoft.com/officeupdates/"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We&#39;ve released updates to the following update channel for Microsoft 365 Apps:</p>\r\n<ul><li>Current Channel</li></ul>\r\n<p>[When this will happen:]</p>\r\n<p>We&#39;ll be gradually rolling out this update of Microsoft 365 Apps to users on that update channel starting August 5th, 2025 (PST).</p>\r\n<p>[How this will affect your organization:]</p>\r\n<p>If your Microsoft 365 Apps clients are configured to automatically update from the Office Content Delivery Network (CDN), then no action is required.</p>\r\n<p>If you manage updates directly you can now download this latest update and begin deployment.</p>\r\n<p>[What you need to do to prepare:]</p>\r\n<p>To get more details about this update view the following release notes:</p>\r\n<ul><li><a href=\"https://docs.microsoft.com/officeupdates/current-channel#version-2507-august-05\" target=\"_blank\" rel=\"noopener noreferrer\">Current Channel</a></li></ul>"
     }
   },
   {
