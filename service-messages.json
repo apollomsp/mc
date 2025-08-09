@@ -7407,7 +7407,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"480716\":[{\"RoadmapId\":480716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-27T14:51:02.773967Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":480716,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3564651Z\",\"LatestRing\":null},{\"RoadmapId\":480716,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3564653Z\",\"LatestRing\":null},{\"RoadmapId\":480716,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.77397Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"480716\":[{\"RoadmapId\":480716,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3564651Z\",\"LatestRing\":null},{\"RoadmapId\":480716,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-21T16:05:35.3564653Z\",\"LatestRing\":null},{\"RoadmapId\":480716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-27T14:51:02.773967Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":480716,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-27T14:51:02.77397Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -17787,7 +17787,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-09T06:09:14.157183Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1571832Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1571834Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0484593Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0484595Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0484596Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18197,38 +18197,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>As mentioned in MC979816, expected with Intune's August (2508) service release, we are removing the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/enrollment-report-company-portal-abandon\" target=\"_blank\">Incomplete user enrollment report</a> (<i>Devices </i>&gt; <i>Monitor </i>&gt; <i>Incomplete user enrollment</i>) from the Intune admin center, along with the corresponding Graph APIs; getEnrollmentAbandonmentDetailsReport, getEnrollmentAbandonmentSummaryReport, and getEnrollmentFailureDetailsReport.</p><p>[How this will affect your organization:]\n</p><p>If you use the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/enrollment-report-company-portal-abandon\" target=\"_blank\">Incomplete user enrollment report</a>, you will no longer be able to access the report within the Intune admin center. Additionally, scripts or automation using the Graph APIs listed above will stop working soon after the report is removed.</p><p>[What you need to do to prepare:]\n</p><p>Update your documentation and reporting automation as needed and notify your admins. We recommend using the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/view-enrollment-reports#enrollment-failures-report\" target=\"_blank\">Enrollment failures report</a> (<i>Devices </i>&gt; <i>Monitor </i>&gt; <i>Enrollment failures</i>) for details on enrollment failures, including those caused by abandonment during enrollment.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-07-25T00:28:12Z",
-    "endDateTime": "2025-08-09T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-25T00:28:18.673Z",
-    "title": "What’s new in the Microsoft Intune Service Update for July 2025",
-    "id": "MC1121496",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The Microsoft Intune service update for July 2025 is now live with a new service build. The release number will appear in the Tenant Status blade. Users should review the latest features and updates on the Intune What's New and service update blogs to prepare."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Your Microsoft Intune account has been updated to the latest service build.</p><p>[How this will affect your organization:]\n</p><p>You will see the service release number updated in the Tenant Status blade of the Intune admin center soon. We have introduced some changes that we are excited for you to try out.</p><p>[What you need to do to prepare:]\n</p><p>Review the additional information below to learn more about what’s new in this service release. We will continue to update the What’s new page with any features that are released between now and the next monthly service update. Learn more by reviewing features highlighted in the latest Intune <a href=\"https://aka.ms/IntuneWN2507\" target=\"_blank\">What's new 2507 (July) blog</a> and how the Intune service updates each month is described in the Microsoft Intune Service Updates blog. \n</p><p>[Additional Information:]\n</p><p><a href=\"https://aka.ms/IntuneWN\" target=\"_blank\">Intune What's new</a></p><p><a href=\"https://aka.ms/IntuneWN2507\" target=\"_blank\">What's new 2507 (July) blog</a></p><p><a href=\"https://aka.ms/Intune/ServiceChangeBlog\" target=\"_blank\">Staying up to date on Intune new features, service changes, and service health</a></p>"
     }
   },
   {
@@ -20246,7 +20214,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1570098Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1570101Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1570102Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1570103Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1570105Z\",\"LatestRing\":null}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0487316Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0487317Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0487319Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T08:08:27.048732Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0487321Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21192,7 +21160,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1573073Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1573075Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T06:09:14.1573076Z\",\"LatestRing\":null}]}"
+        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0483966Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T08:08:27.0483968Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-09T08:08:27.048397Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
