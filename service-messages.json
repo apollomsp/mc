@@ -4119,7 +4119,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -7820,12 +7820,13 @@
   {
     "startDateTime": "2025-05-13T16:32:40Z",
     "endDateTime": "2026-09-28T07:00:00Z",
-    "lastModifiedDateTime": "2025-05-13T16:32:57.35Z",
+    "lastModifiedDateTime": "2025-08-12T16:25:40.483Z",
     "title": "SharePoint Alerts retirement",
     "id": "MC1072889",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "User impact",
       "Admin impact",
       "Retirement"
@@ -7840,12 +7841,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft is retiring the SharePoint Alerts feature to modernize notifications. Key dates include the gradual phase-out starting July 2025, with complete removal by July 2026. Organizations should transition to Power Automate or SharePoint Rules. Update training materials and support resources accordingly. More details are available in the provided support article."
+        "value": "Microsoft is retiring SharePoint Alerts by July 2026, phasing out new alert creation starting January 2026 and expiring existing alerts after 30 days from October 2025. Users should transition to Power Automate or SharePoint Rules. Admins should assess impact and update training and support accordingly."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Microsoft is retiring the <a href=\"https://support.microsoft.com/en-us/office/create-an-alert-to-get-notified-when-a-file-or-folder-changes-in-sharepoint-e5a79e7b-a146-46da-a9ef-d65409ba8918#Pick_tab=Online\" target=\"_blank\">SharePoint Alerts feature</a> to streamline and modernize user notifications. With Power Automate, organizations can benefit from an enhanced, versatile solution that goes beyond traditional alerts, offering seamless integration across Microsoft 365 services and more.</p><p><b>Key Points\n</b></p><ul><li>Major: Retirement\n</li><li>Timeline:\n<ul><li>Starting from July 2025, the creation of new SharePoint Alerts will be gradually turned off for newly onboarding tenants.\n</li><li>Starting from September 2025, the creation of new SharePoint Alerts will be gradually turned off for all tenants.\n</li><li>Starting from October 2025, the SharePoint Alert expiration feature will be gradually activated. Once activated, any SharePoint Alert will have a validity of 30 days starting from its first run, then it will expire. Users can self-service re-enable expired SharePoint Alerts and extend their expiration for another 30 days. Re-enabling and extending SharePoint Alerts can be done by using the “<a href=\"https://support.microsoft.com/en-us/office/manage-view-or-delete-sharepoint-alerts-99dfb19c-9a90-4a8c-aba1-aa8c8afb0de2\" target=\"_blank\">Manage my alerts</a>” list/library menu item, opening the SharePoint Alert to update, extending its expiration date and clicking OK. For more details refer to this <a href=\"https://aka.ms/retirement/alerts/support\" target=\"_blank\">support article</a>.\n</li><li>Starting July 2026, Microsoft will remove the ability to use SharePoint Alerts, existing SharePoint Alerts cannot be extended anymore and will not work anymore.\n</li></ul></li><li>Action: Review and assess impact\n</li></ul><p><b>How this will affect your organization\n</b></p><p>If your organization still uses SharePoint Alerts, they will no longer function from July 2026 onwards. We recommend customers to port their SharePoint Alerts to the <a href=\"https://www.microsoft.com/en-us/power-platform/products/power-automate/\" target=\"_blank\">Power Automate platform</a> or alternatively create a <a href=\"https://support.microsoft.com/en-us/office/create-a-rule-to-automate-a-list-or-library-151ea008-7fa6-409b-b0bd-b04a3b3cacd5\" target=\"_blank\">SharePoint Rule</a>.\n</p><p><b>What you need to do to prepare\n</b></p><p>It’s recommended to update your user training content and prepare your help desk to support your organization with this retirement. SharePoint Alerts users will be notified of this feature retirement via banners in both the relevant SharePoint Online page and Alert emails and users can self-service extend the alerts they deem required. \n</p><p>For admins:\n</p><ul><li>Optionally use the <a href=\"https://aka.ms/assessment/alerts\" target=\"_blank\">Microsoft 365 Assessment</a> tool to scan your tenants for SharePoint Alerts.\n</li><li>Review the <a href=\"https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers\" target=\"_blank\">documentation on using Power Automate with SharePoint Online</a>.\n</li><li>Review the documentation on using <a href=\"https://support.microsoft.com/en-us/office/create-a-rule-to-automate-a-list-or-library-151ea008-7fa6-409b-b0bd-b04a3b3cacd5\" target=\"_blank\">SharePoint Rules</a>.\n</li><li><b>Note:</b> There will not be an option to extend SharePoint Alerts beyond July 2026.\n</li></ul><p>Learn more:</p><ul><li>Detailed <a href=\"https://aka.ms/retirement/alerts/support\" target=\"_blank\">support article</a> with additional resources.</li></ul>"
+      "content": "<p>Updated August 12, 2025: Turning off the creation of new SharePoint Alerts has been postponed from September 2025 to January 2026.</p><p>Microsoft is retiring the <a href=\"https://support.microsoft.com/en-us/office/create-an-alert-to-get-notified-when-a-file-or-folder-changes-in-sharepoint-e5a79e7b-a146-46da-a9ef-d65409ba8918#Pick_tab=Online\" target=\"_blank\">SharePoint Alerts feature</a> to streamline and modernize user notifications. With Power Automate, organizations can benefit from an enhanced, versatile solution that goes beyond traditional alerts, offering seamless integration across Microsoft 365 services and more.</p><p><b>Key Points\n</b></p><ul><li>Major: Retirement\n</li><li>Timeline:\n<ul><li>Starting from July 2025, the creation of new SharePoint Alerts will be gradually turned off for newly onboarding tenants.</li><li>Starting from October 2025, the SharePoint Alert expiration feature will be gradually activated. Once activated, any SharePoint Alert will have a validity of 30 days starting from its first run, then it will expire. Users can self-service re-enable expired SharePoint Alerts and extend their expiration for another 30 days. Re-enabling and extending SharePoint Alerts can be done by using the “<a href=\"https://support.microsoft.com/en-us/office/manage-view-or-delete-sharepoint-alerts-99dfb19c-9a90-4a8c-aba1-aa8c8afb0de2\" target=\"_blank\">Manage my alerts</a>” list/library menu item, opening the SharePoint Alert to update, extending its expiration date and clicking OK. For more details refer to this <a href=\"https://aka.ms/retirement/alerts/support\" target=\"_blank\">support article</a>.</li><li>Starting from January 2026, the creation of new SharePoint Alerts will be gradually turned off for all tenants.</li><li>Starting July 2026, Microsoft will remove the ability to use SharePoint Alerts, existing SharePoint Alerts cannot be extended anymore and will not work anymore.\n</li></ul></li><li>Action: Review and assess impact\n</li></ul><p><b>How this will affect your organization\n</b></p><p>If your organization still uses SharePoint Alerts, they will no longer function from July 2026 onwards. We recommend customers to port their SharePoint Alerts to the <a href=\"https://www.microsoft.com/en-us/power-platform/products/power-automate/\" target=\"_blank\">Power Automate platform</a> or alternatively create a <a href=\"https://support.microsoft.com/en-us/office/create-a-rule-to-automate-a-list-or-library-151ea008-7fa6-409b-b0bd-b04a3b3cacd5\" target=\"_blank\">SharePoint Rule</a>.\n</p><p><b>What you need to do to prepare\n</b></p><p>It’s recommended to update your user training content and prepare your help desk to support your organization with this retirement. SharePoint Alerts users will be notified of this feature retirement via banners in both the relevant SharePoint Online page and Alert emails and users can self-service extend the alerts they deem required. \n</p><p>For admins:\n</p><ul><li>Optionally use the <a href=\"https://aka.ms/assessment/alerts\" target=\"_blank\">Microsoft 365 Assessment</a> tool to scan your tenants for SharePoint Alerts.\n</li><li>Review the <a href=\"https://learn.microsoft.com/en-us/sharepoint/dev/business-apps/power-automate/sharepoint-connector-actions-triggers\" target=\"_blank\">documentation on using Power Automate with SharePoint Online</a>.\n</li><li>Review the documentation on using <a href=\"https://support.microsoft.com/en-us/office/create-a-rule-to-automate-a-list-or-library-151ea008-7fa6-409b-b0bd-b04a3b3cacd5\" target=\"_blank\">SharePoint Rules</a>.\n</li><li><b>Note:</b> There will not be an option to extend SharePoint Alerts beyond July 2026.\n</li></ul><p>Learn more:</p><ul><li>Detailed <a href=\"https://aka.ms/retirement/alerts/support\" target=\"_blank\">support article</a> with additional resources.</li></ul>"
     }
   },
   {
@@ -9404,7 +9405,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"491018\":[{\"RoadmapId\":491018,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096907Z\",\"LatestRing\":null},{\"RoadmapId\":491018,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096905Z\",\"LatestRing\":null},{\"RoadmapId\":491018,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096908Z\",\"LatestRing\":null}]}"
+        "value": "{\"491018\":[{\"RoadmapId\":491018,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096905Z\",\"LatestRing\":null},{\"RoadmapId\":491018,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096907Z\",\"LatestRing\":null},{\"RoadmapId\":491018,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5096908Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -16704,7 +16705,7 @@
   {
     "startDateTime": "2025-07-15T00:00:02Z",
     "endDateTime": "2025-11-10T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-24T15:54:35.29Z",
+    "lastModifiedDateTime": "2025-08-12T17:58:14.437Z",
     "title": "(Updated) Microsoft Copilot in Teams: Visual Insight for intelligent recap",
     "id": "MC1115314",
     "category": "planForChange",
@@ -16728,7 +16729,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Copilot in Teams will soon provide intelligent meeting recaps that include shared-screen content for richer summaries. Rolling out worldwide from mid to late September 2025, this feature requires a Microsoft 365 Copilot license and will be enabled by default with no admin action needed."
+        "value": "Microsoft Copilot in Teams will soon provide intelligent meeting recaps that include shared-screen content for richer summaries. This feature, requiring a Microsoft 365 Copilot license, will roll out globally from late October to early November 2025, with no admin action needed and no compliance issues identified."
       },
       {
         "name": "Platforms",
@@ -16737,7 +16738,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated July 24, 2025: We have updated the content Thank you for your patience.</p><p>Coming soon for Microsoft Copilot in Teams: Intelligent meeting recap will be able to incorporate content shared on screen into the AI-based summary provided after the meeting, providing a richer and more comprehensive recap of the meeting. Intelligent meeting recap will capture details shown when a participant shares their screen, ensuring those unspoken insights become part of the meeting recap.</p><p>This message applies to Teams for Windows desktop, Teams for Mac desktop, Teams for the web, and Teams for iOS/Android.\n</p><p>This feature requires a Microsoft 365 Copilot license.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=490052\" target=\"_blank\">490052</a>.\n</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide): We will begin rolling out mid-September2025 and expect to complete by late-September 2025.</p><p>[How this will affect your organization:]\n</p><p>Copilot users will receive intelligent recap summaries that incorporate shared-screen content, preserving every detail and its context.\n</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/7bde06de-1fbc-4dec-971d-9a7a4f69c049/47b855a67fcd2be2462653425593013589afff90.png\" style=\"width: 50%;\"><br></p><p>This feature will be available by default with no admin controls.\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your users about this change and update any relevant documentation.\n</p><p>Learn more: <a href=\"https://learn.microsoft.com/microsoftteams/intelligent-recap-calls-meetings\" target=\"_blank\">Intelligent recap for Teams calls, meetings, and events - Microsoft Teams | Microsoft Learn</a> (will be updated before rollout)</p><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated August 12, 2025: We have updated the timeline. Thank you for your patience.</p><p>Coming soon for Microsoft Copilot in Teams: Intelligent meeting recap will be able to incorporate content shared on screen into the AI-based summary provided after the meeting, providing a richer and more comprehensive recap of the meeting. Intelligent meeting recap will capture details shown when a participant shares their screen, ensuring those unspoken insights become part of the meeting recap.</p><p>This message applies to Teams for Windows desktop, Teams for Mac desktop, Teams for the web, and Teams for iOS/Android.\n</p><p>This feature requires a Microsoft 365 Copilot license.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=490052\" target=\"_blank\">490052</a>.\n</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide): We will begin rolling out late October 2025 and expect to complete by early November 2025.</p><p>[How this will affect your organization:]\n</p><p>Copilot users will receive intelligent recap summaries that incorporate shared-screen content, preserving every detail and its context.\n</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/7bde06de-1fbc-4dec-971d-9a7a4f69c049/47b855a67fcd2be2462653425593013589afff90.png\" style=\"width: 50%;\"><br></p><p>This feature will be available by default with no admin controls.\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your users about this change and update any relevant documentation.\n</p><p>Learn more: <a href=\"https://learn.microsoft.com/microsoftteams/intelligent-recap-calls-meetings\" target=\"_blank\">Intelligent recap for Teams calls, meetings, and events - Microsoft Teams | Microsoft Learn</a> (will be updated before rollout)</p><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -17414,7 +17415,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7997579Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7997581Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7997583Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9911064Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9911073Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9911074Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -19841,7 +19842,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7993573Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7993577Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7993579Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T16:08:23.799358Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7993582Z\",\"LatestRing\":null}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9912723Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9912724Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9912725Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9912727Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9912727Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20789,7 +20790,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7998983Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7998985Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T16:08:23.7998987Z\",\"LatestRing\":null}]}"
+        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9911929Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T18:09:41.991193Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-12T18:09:41.9911931Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21424,6 +21425,102 @@
     }
   },
   {
+    "startDateTime": "2025-08-12T17:01:27.267Z",
+    "endDateTime": "2026-08-12T17:01:27.22Z",
+    "lastModifiedDateTime": "2025-08-12T17:01:27.953Z",
+    "title": "The August 2025 Windows security update is now available",
+    "id": "MC1133897",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>The August&nbsp;2025 security update is now available for all supported versions of Windows. We recommend that you install these updates promptly. For more information about the contents of this update, see the release notes, which are easily accessible from the&nbsp;<a href=\"https://support.microsoft.com/help/5063878\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a> and&nbsp;<a href=\"https://support.microsoft.com/help/5063709\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 10</a> update history pages. To learn more about the different types of monthly quality updates, see <a href=\"https://aka.ms/Windows/MonthlyUpdates\" rel=\"noopener noreferrer\" target=\"_blank\">Windows monthly updates explained</a>.</div><div>&nbsp;&nbsp;</div><div><b>Highlights for the Windows 11, version 24H2 update:&nbsp;</b></div><ul><li>This security update includes improvements that were a part of update&nbsp;<a href=\"https://support.microsoft.com/help/5062660\" rel=\"noopener noreferrer\" target=\"_blank\">KB5062660</a> (released July 22, 2025).</li><li>This update makes quality improvements to the servicing stack, which is the component that installs Windows updates.</li><li>This update addresses security issues for your Windows operating system.&nbsp;</li><li>This update addresses an issue that caused long delays during sign-in on new devices.</li></ul><div><br></div><div>Short on time? Watch our<b> </b><a href=\"https://aka.ms/Windows11/ReleaseNotesVideo/2508\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 release notes video</a> for this month's tips.</div><div><br></div><div>For instructions on how to install this update, see the KB for your operating system listed below:&nbsp;</div><ul><li>Windows 11, version 24H2: <a href=\"https://support.microsoft.com/help/5063878\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063878</a></li><li>Windows 11, versions 23H2 and 22H2: <a href=\"https://support.microsoft.com/help/5063875\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063875</a>&nbsp;</li><li>Windows 11 Enterprise LTSC 2024: Hotpatch <a href=\"https://support.microsoft.com/topic/170357a3-5c69-4402-9014-7b24ea84ac28\" rel=\"noopener noreferrer\" target=\"_blank\">KB5064010</a></li><li>Windows 10, versions 22H2 and 21H2: <a href=\"https://support.microsoft.com/help/5063709\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063709</a></li><li>Windows 10 Enterprise LTSC 2019 and Windows Server 2019: <a href=\"https://support.microsoft.com/help/5063877\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063877</a></li><li>Windows 10 LTSB 2016 and Windows Server 2016: <a href=\"https://support.microsoft.com/help/5063871\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063871</a></li><li>Windows 10 LTSB 2015: <a href=\"https://support.microsoft.com/help/5063889\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063889</a></li><li>Windows Server 2025: <a href=\"https://support.microsoft.com/topic/69b2de20-e07d-404a-a19f-fd8c4ae27e0f\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063878</a></li><li>Windows Server 2025 Datacenter: Azure Edition: Hotpatch <a href=\"https://support.microsoft.com/topic/33d7ac46-35d6-406b-a4a0-ef1d00bc590f\" rel=\"noopener noreferrer\" target=\"_blank\">KB5064010</a></li><li>Windows Server 2022: <a href=\"https://support.microsoft.com/help/5063880\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063880</a></li><li>Windows Server 2022 Datacenter: Azure Edition: Hotpatch <a href=\"https://support.microsoft.com/topic/1130f0f2-3470-43bf-8457-0f375a2c583a\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063812</a></li><li>Windows Server 2012 R2: Monthly Rollup: <a href=\"https://support.microsoft.com/help/5063950\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063950</a></li><li>Windows Server 2012: Monthly Rollup: <a href=\"https://support.microsoft.com/help/5063906\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063906</a></li><li>Windows Server 2008 R2 Service Pack 1: Monthly Rollup: <a href=\"https://support.microsoft.com/help/5063947\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063947</a>&nbsp;/ Security Only: <a href=\"https://support.microsoft.com/help/5063927\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063927</a></li><li>Windows Server 2008 SP2: Monthly Rollup: <a href=\"https://support.microsoft.com/help/5063888\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063888</a>&nbsp;/ Security Only: <a href=\"https://support.microsoft.com/help/5063948\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063948</a></li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-12T17:01:27.267Z",
+    "endDateTime": "2026-08-12T17:01:27.267Z",
+    "lastModifiedDateTime": "2025-08-12T17:01:29.953Z",
+    "title": "PowerShell 2.0 removal in Windows",
+    "id": "MC1133898",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Windows PowerShell 2.0 is removed from Windows 11, version 24H2 starting with the August 2025 non-security update. It’s also removed from Windows Server 2025 starting with the September 2025 security update. Windows Insider preview builds already reflect this change as of July 2025. Windows PowerShell 2.0 is over 14 years old, lacks many security enhancements of the later versions, and has been deprecated since 2017. By using the newer and supported PowerShell 7 or PowerShell 5.1, you can help ensure that scripts run safer. If you have legacy scripts or software that explicitly depend on PowerShell 2.0, you’ll need to either update them or use a workaround to prevent disruptions.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><ul><li>2017: PowerShell 2.0 was <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">deprecated</a>.&nbsp;</li><li>July 2025: PowerShell 2.0 is removed from <a href=\"https://blogs.windows.com/windows-insider/2025/07/03/announcing-windows-11-insider-preview-build-27891-canary-channel/\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Insider preview builds</a>.&nbsp;</li><li>August 2025 Windows non-security update: PowerShell 2.0 is removed from Windows 11, version 24H2 and later.&nbsp;</li><li>September 2025 Windows security update: PowerShell 2.0 is removed from Windows Server 2025 and later.&nbsp;</li></ul><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>This removal is part of a <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">broader effort</a> to clean up legacy code, reduce the complexity of the PowerShell ecosystem, and improve Windows security. For most users and organizations, this change will be uneventful – newer versions of PowerShell (5.1 and 7.x) continue to be available and supported. However, if you have legacy scripts or software that explicitly depends on PowerShell 2.0, you will need to take action (update them or use a workaround) to prevent any disruptions.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><ul><li>Recommended: Migrate scripts and tools to newer PowerShell versions. Microsoft primary guidance is to update anything using PowerShell 2.0 to use PowerShell 5.1 or PowerShell 7. PowerShell 5.x introduced many improvements and is backward-compatible for almost all commands and modules. The PowerShell team <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/#i%E2%80%99m-a-powershell-expert-just-give-me-the-quick-version\" rel=\"noopener noreferrer\" target=\"_blank\">article</a> provides a guide for this migration.&nbsp;</li><li>Update or replace outdated software. In some cases, the fix might be to upgrade the software that needed PowerShell 2.0. For example, if an old installer fails, look for a newer version of that product.&nbsp;</li><li>See Additional information for more resources.&nbsp;</li></ul><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><ul><li>Read <a href=\"https://support.microsoft.com/topic/fe6d1edc-2ed2-4c33-b297-afe82a64200a\" rel=\"noopener noreferrer\" target=\"_blank\">PowerShell 2.0 removal in Windows</a> for further details.&nbsp;</li><li>Developers’ <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/#i%E2%80%99m-a-powershell-expert-just-give-me-the-quick-version\" rel=\"noopener noreferrer\" target=\"_blank\">quick guide</a> to PowerShell migration.&nbsp;</li><li>Consult the comprehensive list of <a href=\"https://learn.microsoft.com/windows/whats-new/deprecated-features\" rel=\"noopener noreferrer\" target=\"_blank\">deprecated features for Windows client</a>.&nbsp;</li><li>Visit the <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">original 2017 deprecation announcement</a>.&nbsp;</li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-12T17:05:55Z",
+    "endDateTime": "2025-09-12T17:05:55Z",
+    "lastModifiedDateTime": "2025-08-12T17:07:36.617Z",
+    "title": "Dynamics 365 Project Operations - Post expenses on the expense report posting date",
+    "id": "MC1133900",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to post expenses on the expense report posting date instead of the transaction date in Dynamics 365 Project Operations. This feature will reach general availability on September 12, 2025.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature provides a parameter (<a href=\"https://aka.ms/ADO10578a\"target=\"_blank\">Enable posting of expenses on posting date</a>) that, when enabled, allows businesses to post expense transactions on the posting date instead of the expense transaction date.<br><br> \n\n<b>What action do I need to take?</b><br> \nThis message is for awareness and no action is required.<br><br> \n\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO10578\"target=\"_blank\">Post expenses on the expense report posting date</a>."
+    }
+  },
+  {
+    "startDateTime": "2025-08-12T17:18:44Z",
+    "endDateTime": "2025-09-12T17:18:44Z",
+    "lastModifiedDateTime": "2025-08-12T17:19:42.68Z",
+    "title": "Microsoft Dataverse - Manage system views with security roles",
+    "id": "MC1134006",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Dataverse"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to manage system views with security roles in Microsoft Dataverse. This feature will reach general availability on August 18, 2025.<br><br> \n<b>How does this affect me?</b><br> \nWith this feature, admins can select the appropriate system views for their respective users by security role. Users with the selected security roles will only see the system views that were shared with their security role.<br><br> \n<b>What action do I need to take?</b><br> \nThis message is for awareness and no action is required."
+    }
+  },
+  {
     "startDateTime": "2021-06-16T22:53:37Z",
     "endDateTime": "2025-11-28T08:00:00Z",
     "lastModifiedDateTime": "2021-06-16T22:54:13.617Z",
@@ -21657,8 +21754,8 @@
   },
   {
     "startDateTime": "2023-09-25T23:31:30Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-28T21:12:45.05Z",
+    "endDateTime": "2025-10-06T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-12T17:28:47.807Z",
     "title": "(Updated) Whiteboard: existing Azure board migration to ODB storage",
     "id": "MC677236",
     "category": "planForChange",
@@ -21682,7 +21779,7 @@
       },
       {
         "name": "Summary",
-        "value": "The migration of existing Whiteboards from Azure to OneDrive storage began in December 2024 and will complete by August 2025. Users must launch Whiteboard clients to trigger migration, which improves features, performance, and security. Admins can monitor migration status via PowerShell. No delays are possible."
+        "value": "The migration of existing Whiteboards from Azure to OneDrive storage began in December 2024 and will complete by late August 2025. Users must launch Whiteboard clients to trigger migration, which improves features, performance, and security. Admins can monitor migration status via PowerShell. No delay is possible."
       },
       {
         "name": "Platforms",
@@ -21691,7 +21788,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated July 28, 2025: We have updated the timeline. Thank you for your patience.</p><p>As outlined in MC677236 (July 2024), Azure to OneDrive migration of existing Whiteboards has now started and will reach your tenant (if you haven’t received it already) in the coming months, before June 2025. Complete details can be found in this support article: <a href=\"https://support.microsoft.com/office/migration-of-whiteboards-from-azure-to-onedrive-6ddc6df1-540e-4b70-8e6a-541fafdc24f4\" target=\"_blank\">Migration of Whiteboards from Azure to OneDrive - Microsoft Support</a>.\n</p><p><i>Action for admins</i>: The migration affects only Microsoft Azure-based Whiteboards. If your tenant does not have any Azure Whiteboards, this migration does not impact you. Check if your tenant has Azure Whiteboards using this PowerShell cmdlet: <a href=\"https://learn.microsoft.com/powershell/module/whiteboard/get-whiteboardsfortenant?view=whiteboard-ps\" target=\"_blank\">- Get-WhiteboardsForTenant</a>\n</p><p><i>Action item for users:</i> Until the migration completes. When your tenant receives the migration code, users can trigger a migration by starting a Whiteboard session from a web browser by simply going to <a href=\"https://whiteboard.microsoft.com/\" target=\"_blank\">https://whiteboard.microsoft.com/</a> or by using a Whiteboard in their Teams meetings.</p><p>Whiteboard previously stored whiteboard files in Azure storage. In 2022, Whiteboard switched to OneDrive as the storage location for most newly created boards. We made a client-based migration available for your organization, which is currently rolling out gradually.&nbsp;</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=117394%2C\" target=\"_blank\">117394</a>.\n</p><p>[When this will happen]\n</p><p>The client-based migration experience started in December 2024 (previously July), and we expect to complete the migration by early August 2025 (previously early June).</p><p>[How this will affect your organization]\n</p><p>Any user who launches an eligible Whiteboard client (Whiteboard on Windows, Whiteboard in Teams desktop/web) will automatically kick off a non-blocking migration of all their whiteboards. Depending on how many whiteboards they have, on average the process will take between a few seconds to a few minutes.\n</p><p>The migration will provide many benefits for your organization and users on the migrated boards, including:\n</p><ul><li>Features unique to whiteboards stored in OneDrive, such as Follow, Commenting, and more.\n</li><li>Improved performance on whiteboards now stored in OneDrive.\n</li><li>Improved compliance and security associated with whiteboard being stored in OneDrive.\n</li></ul><p>There is no possibility to delay the migration.\n</p><p>[What you need to do to prepare]\n</p><p>The migration will happen naturally and automatically for most users in your organization with no disruption, but please ensure that users are aware they need to launch Whiteboard in one of the previously mentioned clients in order to keep their content prior to the conclusion of the migration.\n</p><p>In the unlikely case that a user’s whiteboards fail to migrate, they will see an error banner. We will attempt to migrate the board again in 30 days. If the board contains important information, we recommend the user copy the content to a new whiteboard.\n</p><p>Users will be able to see which boards have not migrated in a dedicated section on the board picker. Admins will be able to verify what whiteboard content remains in Azure and obtain the userIDs via our PowerShell cmdlets, if you wish to proactively notify users to get their content.\n</p><p>Complete details about the migration can be found in <a href=\"https://support.microsoft.com/office/migration-of-whiteboards-from-azure-to-onedrive-6ddc6df1-540e-4b70-8e6a-541fafdc24f4\" target=\"_blank\">Migration of Whiteboards from Azure to OneDrive - Microsoft Support</a>, including how start and completion of migration will be notified, how errors will be communicated, and the new PowerShell cmdlets.</p>"
+      "content": "<p>Updated August 12, 2025: We have updated the timeline. Thank you for your patience.</p><p>As outlined in MC677236 (July 2024), Azure to OneDrive migration of existing Whiteboards has now started and will reach your tenant (if you haven’t received it already) in the coming months, before June 2025. Complete details can be found in this support article: <a href=\"https://support.microsoft.com/office/migration-of-whiteboards-from-azure-to-onedrive-6ddc6df1-540e-4b70-8e6a-541fafdc24f4\" target=\"_blank\">Migration of Whiteboards from Azure to OneDrive - Microsoft Support</a>.\n</p><p><i>Action for admins</i>: The migration affects only Microsoft Azure-based Whiteboards. If your tenant does not have any Azure Whiteboards, this migration does not impact you. Check if your tenant has Azure Whiteboards using this PowerShell cmdlet: <a href=\"https://learn.microsoft.com/powershell/module/whiteboard/get-whiteboardsfortenant?view=whiteboard-ps\" target=\"_blank\">- Get-WhiteboardsForTenant</a>\n</p><p><i>Action item for users:</i> Until the migration completes. When your tenant receives the migration code, users can trigger a migration by starting a Whiteboard session from a web browser by simply going to <a href=\"https://whiteboard.microsoft.com/\" target=\"_blank\">https://whiteboard.microsoft.com/</a> or by using a Whiteboard in their Teams meetings.</p><p>Whiteboard previously stored whiteboard files in Azure storage. In 2022, Whiteboard switched to OneDrive as the storage location for most newly created boards. We made a client-based migration available for your organization, which is currently rolling out gradually.&nbsp;</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=117394%2C\" target=\"_blank\">117394</a>.\n</p><p>[When this will happen]\n</p><p>The client-based migration experience started in December 2024 (previously July), and we expect to complete the migration by late August 2025 (previously early August).</p><p>[How this will affect your organization]\n</p><p>Any user who launches an eligible Whiteboard client (Whiteboard on Windows, Whiteboard in Teams desktop/web) will automatically kick off a non-blocking migration of all their whiteboards. Depending on how many whiteboards they have, on average the process will take between a few seconds to a few minutes.\n</p><p>The migration will provide many benefits for your organization and users on the migrated boards, including:\n</p><ul><li>Features unique to whiteboards stored in OneDrive, such as Follow, Commenting, and more.\n</li><li>Improved performance on whiteboards now stored in OneDrive.\n</li><li>Improved compliance and security associated with whiteboard being stored in OneDrive.\n</li></ul><p>There is no possibility to delay the migration.\n</p><p>[What you need to do to prepare]\n</p><p>The migration will happen naturally and automatically for most users in your organization with no disruption, but please ensure that users are aware they need to launch Whiteboard in one of the previously mentioned clients in order to keep their content prior to the conclusion of the migration.\n</p><p>In the unlikely case that a user’s whiteboards fail to migrate, they will see an error banner. We will attempt to migrate the board again in 30 days. If the board contains important information, we recommend the user copy the content to a new whiteboard.\n</p><p>Users will be able to see which boards have not migrated in a dedicated section on the board picker. Admins will be able to verify what whiteboard content remains in Azure and obtain the userIDs via our PowerShell cmdlets, if you wish to proactively notify users to get their content.\n</p><p>Complete details about the migration can be found in <a href=\"https://support.microsoft.com/office/migration-of-whiteboards-from-azure-to-onedrive-6ddc6df1-540e-4b70-8e6a-541fafdc24f4\" target=\"_blank\">Migration of Whiteboards from Azure to OneDrive - Microsoft Support</a>, including how start and completion of migration will be notified, how errors will be communicated, and the new PowerShell cmdlets.</p>"
     }
   },
   {
