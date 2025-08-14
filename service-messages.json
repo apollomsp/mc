@@ -4080,7 +4080,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -16105,10 +16105,10 @@
     }
   },
   {
-    "startDateTime": "2025-07-10T18:46:00.917Z",
-    "endDateTime": "2026-07-10T18:46:00.823Z",
-    "lastModifiedDateTime": "2025-07-10T18:46:01.733Z",
-    "title": "Security hardening for Microsoft RPC Netlogon protocol",
+    "startDateTime": "2025-08-13T22:12:08.95Z",
+    "endDateTime": "2026-08-13T22:12:08.903Z",
+    "lastModifiedDateTime": "2025-08-13T22:12:10.317Z",
+    "title": "(Updated) Security hardening for Microsoft RPC Netlogon protocol",
     "id": "MC1113050",
     "category": "planForChange",
     "severity": "normal",
@@ -16125,7 +16125,7 @@
     "details": [],
     "body": {
       "contentType": "html",
-      "content": "<div>As part of our ongoing commitment to security, we’re introducing a hardening change to the <a href=\"https://learn.microsoft.com/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft RPC Netlogon protocol</a>.&nbsp;This update strengthens access controls by blocking anonymous RPC requests that could previously be used to locate domain controllers.&nbsp;This change is&nbsp;<b>not configurable</b>&nbsp;and&nbsp;<b>cannot be reverted</b>&nbsp;via policy.</div><div>&nbsp;</div><div><b>When this will happen</b></div><ul><li>This change was introduced in the&nbsp;<b>July 2025 Windows security update</b>&nbsp;for all supported versions of Windows Server from Windows Server&nbsp;2008 R2 through Window Server 2022.</li><li>For&nbsp;<b>Windows Server 2025</b>, the change was included in the&nbsp;<b>February 2025 Windows security update </b>and subsequent updates.</li></ul><div><br></div><div><b>How this affects your organization</b></div><div>After installing the applicable Windows security update,&nbsp;<b>Active Directory domain controllers will reject certain anonymous RPC requests</b>&nbsp;made through the Netlogon RPC server.&nbsp;These requests are typically used for domain controller location and may impact interoperability with some third-party file and print services, including&nbsp;<b>Samba</b>.</div><div>&nbsp;</div><div>If your organization uses Samba or similar services, you may experience disruptions unless those services are updated to comply with the new access requirements.&nbsp;</div><div><br></div><div><b>What you can do to prepare</b></div><ul><li>Review your environment for dependencies on anonymous Netlogon RPC requests.</li><li>If your organization uses Samba, please refer to the&nbsp;<a href=\"https://www.samba.org/samba/history/samba-4.22.3.html\" rel=\"noopener noreferrer\" target=\"_blank\">Samba release notes</a>&nbsp;​​​​​​for guidance on compatibility.</li><li>Test the update in a staging environment before broad deployment to identify any potential service disruptions.</li></ul><div>&nbsp;</div><div><b>Additional information</b></div><div>This change has been documented in the KB articles associated to the updates introducing the new security hardening:</div><div>&nbsp;</div><ul><li><b>Windows Server 2025</b>:&nbsp;<a href=\"https://support.microsoft.com/help/5051987\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5051987</a></li><li><b>Windows Server 2025 Datacenter: Azure Edition (Hotpatch Baseline)</b>:&nbsp;<a href=\"https://support.microsoft.com/help/5051987\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5051987</a></li><li><b>Windows Server 2022</b>:&nbsp;<a href=\"https://support.microsoft.com/help/5062572\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5062572</a></li><li><b>Windows Server 2022 Datacenter: Azure Edition (Hotpatch Baseline)</b>:&nbsp;<a href=\"https://support.microsoft.com/help/5062572\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5062572</a></li><li><b>Windows Server 2012 R2</b>:&nbsp;<a href=\"https://support.microsoft.com/help/5062597\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5062597</a></li><li><b>Windows Server 2012</b>:&nbsp;<a href=\"https://support.microsoft.com/help/5062592\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5062592</a></li><li><b>Windows Server 2008 R2 SP1</b>:&nbsp;<a href=\"https://support.microsoft.com/topic/july-8-2025-kb5062632-monthly-rollup-6b00fd29-2f8e-4167-8633-bd081870d49e\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5062632</a> /&nbsp;<a href=\"https://support.microsoft.com/topic/july-8-2025-kb5062619-security-only-update-3bde872d-c66a-45e5-8d3c-a1e2608ccfde\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5062619</a></li><li><b>Windows Server 2008: SP2</b>:&nbsp;<a href=\"https://support.microsoft.com/topic/july-8-2025-kb5062624-monthly-rollup-ef8674af-85d1-49dd-8ba0-9535c77bfff1\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5062624</a> /&nbsp;<a href=\"https://support.microsoft.com/topic/july-8-2025-kb5062618-security-only-update-34a3726e-1e9b-4f72-a61b-b2d6f8c59835\" rel=\"noopener noreferrer\" target=\"_blank\">https://support.microsoft.com/help/5062618</a></li></ul>"
+      "content": "<div><em>(Update: This post was updated to clarify that the&nbsp;change was Enabled by Default on Windows Server 2025 in May 2025 and to add information about how to configure this change.)&nbsp;</em></div><div><br></div><div>Microsoft has introduced a hardening change to strengthen the&nbsp;<a href=\"https://learn.microsoft.com/openspecs/windows_protocols/ms-nrpc/ff8f970f-3e37-40f7-bd4b-af7336e4792f\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Microsoft RPC Netlogon protocol</u></a>&nbsp;by blocking RPC anonymous requests used to locate domain controllers. This change&nbsp;was&nbsp;Enabled by Default in the&nbsp;<a href=\"https://support.microsoft.com/topic/may-13-2025-kb5058411-os-build-26100-4061-57181688-a692-49e5-b6cd-6e3919da12ca\" rel=\"noopener noreferrer\" target=\"_blank\"><u>May 2025 Windows security update</u></a> for Windows Server 2025, and in the&nbsp;<a href=\"https://support.microsoft.com/topic/july-8-2025-kb5062572-os-build-20348-3932-d78a2b2a-1ce8-45ee-85a0-e51a897ec67f\" rel=\"noopener noreferrer\" target=\"_blank\"><u>July 2025 Windows security update</u></a>&nbsp;for all supported versions from Windows Server 2008 R2 through Windows Server 2022.&nbsp;This change is configurable by policy after installing the August 2025 Windows security update.&nbsp;See the article,&nbsp;<a href=\"https://support.microsoft.com/topic/kb5066014-netlogon-rpc-hardening-cve-2025-49716-38a0bc06-507c-47d4-be0f-ca1acab02c68\" rel=\"noopener noreferrer\" target=\"_blank\">KB5066014—Netlogon RPC Hardening (CVE-2025-49716)</a>,&nbsp;for details.&nbsp;</div><div>&nbsp;</div><div>After applying these updates and subsequent updates, Active Directory domain controllers will reject certain anonymous RPC requests. This may affect interoperability with services like Samba unless they are updated to meet the new access requirements.</div><div>&nbsp;</div><div>To prepare for this update, review your environment for any dependencies on anonymous Netlogon RPC requests. If your organization uses Samba, refer to the&nbsp;<a href=\"https://www.samba.org/samba/history/samba-4.22.3.html\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Samba release notes</u></a>&nbsp;for guidance on compatibility. It is also recommended to test the update in a staging environment to identify and address any potential disruptions before full deployment.</div><div>&nbsp;</div><div>For more information, see the&nbsp;May&nbsp;or July KB update article that matches your server version’s security update.</div>"
     }
   },
   {
@@ -17380,7 +17380,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2132616Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2132618Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-13T22:07:26.213262Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4016925Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4016926Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4016927Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18769,35 +18769,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-30T22:46:09.873Z",
-    "endDateTime": "2025-08-13T22:46:09.873Z",
-    "lastModifiedDateTime": "2025-07-30T22:46:10.623Z",
-    "title": "Updates available for Microsoft 365 Apps for Current Channel",
-    "id": "MC1125449",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "ExternalLink",
-        "value": "https://docs.microsoft.com/officeupdates/"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We&#39;ve released updates to the following update channel for Microsoft 365 Apps:</p>\r\n<ul><li>Current Channel</li></ul>\r\n<p>[When this will happen:]</p>\r\n<p>We&#39;ll be gradually rolling out this update of Microsoft 365 Apps to users on that update channel starting July 30th, 2025 (PST).</p>\r\n<p>[How this will affect your organization:]</p>\r\n<p>If your Microsoft 365 Apps clients are configured to automatically update from the Office Content Delivery Network (CDN), then no action is required.</p>\r\n<p>If you manage updates directly you can now download this latest update and begin deployment.</p>\r\n<p>[What you need to do to prepare:]</p>\r\n<p>To get more details about this update view the following release notes:</p>\r\n<ul><li><a href=\"https://docs.microsoft.com/officeupdates/current-channel#version-2507-july-30\" target=\"_blank\" rel=\"noopener noreferrer\">Current Channel</a></li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-07-30T23:45:39Z",
     "endDateTime": "2025-09-30T07:00:00Z",
     "lastModifiedDateTime": "2025-08-13T19:56:03.713Z",
@@ -19810,7 +19781,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2131762Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2131764Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2131766Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2131768Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2131769Z\",\"LatestRing\":null}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4016761Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4016762Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4016763Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4016763Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4016764Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20760,7 +20731,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2133854Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2133857Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-13T22:07:26.2133858Z\",\"LatestRing\":null}]}"
+        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4017733Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4017734Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T00:31:16.4017735Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21922,6 +21893,230 @@
     "body": {
       "contentType": "html",
       "content": "<div>On November 11, 2025, Windows 11, version 23H2 (<a href=\"https://learn.microsoft.com/lifecycle/products/windows-11-home-and-pro\" rel=\"noopener noreferrer\" target=\"_blank\">Home</a> and&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/products/windows-11-home-and-pro\" rel=\"noopener noreferrer\" target=\"_blank\">Pro</a> editions) will reach&nbsp;<a href=\"https://learn.microsoft.com/windows/release-health/windows11-release-information\" rel=\"noopener noreferrer\" target=\"_blank\">end of servicing</a>. The November 2025 monthly security update will be the last update available for these editions. After this date, devices running these editions will no longer receive monthly security and preview updates containing protections from the latest security threats.</div><div><br></div><div>As always, we recommend that you update&nbsp;your&nbsp;devices to the latest version of&nbsp;<a href=\"https://aka.ms/how-to-get-24H2\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a>. For detailed information, see the&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/announcements/windows-11-23h2-end-of-updates-home-pro\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11, version 23H2 reaching end of updates (Home, Pro)</a></div><div>lifecycle page. For information about servicing timelines and lifecycle, see&nbsp;<a href=\"https://learn.microsoft.com/windows/release-health/windows11-release-information\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 release information</a>,&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/faq/windows\" rel=\"noopener noreferrer\" target=\"_blank\">Lifecycle FAQ - Windows</a>, and&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/products/?terms=windows\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Lifecycle Policy search tool</a>.</div>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-13T23:09:13Z",
+    "endDateTime": "2025-10-30T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-13T23:09:19.367Z",
+    "title": "Quarantine experience update in Microsoft Defender and Exchange Online: Restore temporarily deleted items",
+    "id": "MC1134736",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Exchange Online",
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Defender and Exchange Online will allow users to view and restore temporarily deleted quarantine messages starting mid-August 2025 (worldwide). This feature is on by default, requires no configuration, and helps improve message recovery without affecting permanently deleted items."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction</b></p><p>We're enhancing the quarantine experience in Microsoft Defender and Exchange Online to improve visibility and control over items that have been temporarily deleted. With this update, users will be able to view and restore messages that were previously removed from the quarantine view but still exist in the system.</p><p><b>When this will happen</b></p><ul><li>General Availability (Worldwide): Rollout will begin mid-August 2025 and is expected to complete by mid-September 2025.</li><li>General Availability (GCC, GCC High, DoD): Rollout will begin early September 2025 and is expected to complete by late September 2025.</li></ul><p><b>How this affects your organization</b></p><p>Users in both Microsoft Defender and Exchange Online quarantine portals will gain the ability to:</p><ul><li>View messages that were temporarily deleted from quarantine using the new Temporarily deleted filter under Release Status.</li><li>Restore these messages back to the quarantine view using the new Restore temporarily deleted option.</li></ul><p>Messages that have been permanently deleted will remain inaccessible. This feature is on by default and applies only to temporarily deleted items.</p><p><b>What you can do to prepare</b></p><ul><li>Inform users about the new filter and restore option to reduce confusion and potential help desk calls.</li><li>Update internal documentation or training materials to reflect the new functionality.</li><li>Monitor user feedback and usage to determine if additional guidance or support is needed.</li></ul><p>No configuration changes are required to enable this feature.</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-13T23:09:57Z",
+    "endDateTime": "2026-02-09T08:00:00Z",
+    "lastModifiedDateTime": "2025-08-13T23:10:45.703Z",
+    "title": "Microsoft Teams: Private channels increased limits and transition to group compliance",
+    "id": "MC1134737",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams is enhancing private channels by increasing limits to 1000 channels per team and 5000 members per channel, enabling meetings, and shifting compliance policies from user mailboxes to team group mailboxes. Migration starts late September 2025; admins must update policies by September 20, 2025."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>In response to customer feedback, we are introducing enhanced flexibility, greater scalability, and streamlined compliance management for private channels in Microsoft Teams.\n</p><p>Note: It is important for compliance managers to review and take appropriate action before migration starts for these changes to private channels. \n</p><p>[What's changing?]</p><p>Private channels will transition use a channel mailbox instead of individual user mailboxes. \n</p><p>Organizations with compliance policies (retention, legal hold, data loss prevention, or eDiscovery) for private channels must review these policies and must apply policies to the Microsoft 365 group for the channel’s team before migration begins to ensure continuity of the policy for a private channel.  Existing policies will continue to apply to user mailboxes; post-migration, new data will be governed by policies on the group. Note that policies applied to the team’s group can apply to all channels in the team.\n</p><p>After the transition to updated private channels in your organization, private channels will be updated as follows.\n</p><ol><li>Private channels are no longer limited to 30 per team. Instead, private channels can be added up to the limit of 1000 total channels per team.\n</li><li>Private channels can now have up to 5000 members, instead of 250.\n</li><li>Meetings can now be scheduled in private channels.\n</li><li>Compliance policies for private channels are part of the team’s group policies instead of the individual user level.\n</li></ol><p>The migration of private channels to the updated capabilities will begin in late September 2025 and continue through December 2025. During this period, private channels will continue to operate normally. Admins and compliance managers should complete any required policy changes by September 20, 2025, before the migration begins. Migration can start or end at different times for each tenant during the rollout period. To track progress, a new PowerShell command will be available for tenants to check whether their migration has started or is completed. This post will be updated soon with details on the PowerShell command.\n</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide): We will begin rolling out late September 2025 and expect to complete by mid-December 2025.\n</p><p>[Action required by compliance managers and admins]</p><ol><li>Purview eDiscovery and Legal Hold</li>\n<p></p><p>With this change, private channel data will move from user mailboxes to the group mailbox, aligning with how shared channels data is stored. Previously, legal holds were applied to user mailboxes since private channel data resided in each member’s mailbox. Post-migration, the latest version of private channel message data from each user’s mailbox is moved to the private channel’s group mailbox. Message edits and deleted messages will not be copied into the group mailbox.\n</p><p>Note: For users on hold, copies of message edits and deleted messages will remain in the user’s preserved library folder until the hold expires, while the latest version of private channel message data from each user’s mailbox is copied to the private channel’s group mailbox. \n</p><p>Before migration\n</p><p>If a legal hold exists for a private channel, admins must also apply the policy to the team’s group, in addition to the policy already applied to users’ mailboxes, in order for a hold to apply to new data generated and stored in the private channel’s mailbox. Note that policies applied to the team’s group can apply to all channels in the team.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/752d2d97-48d7-4491-a3e7-ecc866373a44  \" width=\"400\" height=\"\"></p><p>Screenshot 1: Setting up a new hold in Microsoft Purview compliance portal.\n</p><p>After migration\n</p><p>For existing holds admins will need to ensure that the hold is applied to the user mailbox as well as the new group mailbox, in order for a hold to apply to existing and new message data. Any new legal holds will need to be applied to the group.\n</p><p>For complete eDiscovery, include both the private channel’s users’ mailboxes and the team’s group mailbox to retrieve pre-migration messages, message history, and post-migration new content.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/0de1f667-c352-400b-8a94-57237676a30d  \" width=\"400\" height=\"\"></p><p>Screenshot 2: Configuring an eDiscovery search in Microsoft Purview compliance portal.\n</p><li>Purview Data Loss Prevention (DLP)</li> \n<p></p><p>With this change, private channel messages will be included as a part of the DLP policy scoped to the private channel’s team’s group, as opposed to the user mailbox. \n</p><p>Before migration\n</p><p>Admins must modify the “Teams chat and channel messages” policy for private channels to add the team’s group containing the private channel, in addition to the user mailbox, in order to include new private channel messages in a policy. Note that policies applied to the team’s group can apply to all channels in the team.\n</p><p>After migration\n</p><p>Ensure that “Teams chat and channel messages” policy for private channels is scoped to the team’s group containing the private channel. \n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/96d2a6b8-fdf0-402c-8475-d8631fe4ae2b \" width=\"400\" height=\"\"></p><p>Screenshot 3: Configuring a data loss prevention policy in Microsoft Purview compliance portal.\n</p><li>Purview Retention Policy</li>\n<p></p><p>After this change, creation of new private channel-specific policies will not be possible in the Purview portal. Instead, “Teams channel messages” policies applied to the team’s group will now include private channels. Existing private channel policies will remain in effect and preserve all held message data in user mailboxes. Editing of existing policies will not be supported but policies can be removed.\n</p><p>Before migration\n</p><p>Apply current private channel retention policies (previously on user mailboxes) to Teams channel messages to include the team’s group, in order to include new private channel messages in a policy. In Microsoft Purview compliance portal, go to solutions &gt; Data Lifecycle Management &gt; Retention policies. Note that policies applied to the team’s group can apply to all channels in the team. \n</p><p>After migration\n</p><p>If the parent team’s group retention policy differs from the private channel’s policy, create a new or equivalent policy to ensure consistent retention.</p><p> \n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/c565bdcb-1dbc-4f94-b060-b5bbc96d368a \" width=\"400\" height=\"\"></p><p>Screenshot 4: Configuring “Teams channel messages” for a retention policy in Microsoft Purview compliance portal.\n</p></ol><p>Frequently asked questions\n</p><ol><li>How can admins identify a user’s private channel memberships?\n<ul><li>Use Teams Admin Center under team settings, or run PowerShell: Get-TeamChannelUser to list members.\n</li></ul></li><li>When is compliance manager action required?\n<ul><li>If a policy (legal hold, eDiscovery, retention, DLP) applied to a user’s mailbox, in order to include private channel messages, differs from the team policies for the team hosting the private channel. Policies must be applied to the team’s group in order to include new private channel messages in a policy. Note that policies applied to the team’s group can apply to all channels in the team.</li><li>During eDiscovery for users on hold or during migration, search both user mailbox and group mailbox for complete data on a private channel.</li></ul></li><li>What if no action is taken?\n<ul><li>User-level policies will not apply to a private channel’s new message data. Team-level policies will apply to private channels. \n</li></ul></li><li>Why isn’t Microsoft automatically applying policies from user mailboxes to a private channel’s team?\n<ul><li>Tenant admins and compliance managers must assess and apply policies as needed. Group policies apply to all channels in the Team. Some user mailbox policies are intended for all of a user’s messages, and some are intended for private channel messages. Each organization must review and decide on policies.\n</li></ul></li><li>Is there any impact to end users?\n<ul><li>During migration, users may see duplicate search results in Teams searches—both links will navigate to the same content in Microsoft Teams.\n</li></ul></li></ol><p>Please refer to this blog post for more information: <a href=\"https://techcommunity.microsoft.com/blog/microsoftteamsblog/unlocking-the-full-potential-of-private-channels-in-microsoft-teams/4438767\" target=\"_blank\">New enhancements in Private Channels in Microsoft Teams unlock their full potential</a>&nbsp;</p><p>We appreciate your attention to this important update.\n</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-13T23:11:29Z",
+    "endDateTime": "2025-10-01T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-13T23:12:13.6Z",
+    "title": "New request and approval experience for Microsoft agents in the Microsoft 365 admin center",
+    "id": "MC1134738",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "494809"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 admin center introduces a new request and approval system for agent access, allowing users to request agents directly from the Agent Store. Admins can centrally manage and control approvals via the Copilot > Agents & connectors page. Rollout starts mid-August through early September, with no setup needed."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction\n</b></p><p>We’re introducing a new request and approval experience in the Microsoft 365 admin center for Microsoft agents. This update enables users to request access to agents—even those currently unavailable due to your organization’s configuration—directly from the Agent Store.\n</p><p>You can manage these requests centrally from the <i>Copilot </i>&gt; <i>Agents &amp; connectors</i> page in the Microsoft 365 admin center, streamlining access control and improving visibility into user interest.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=494809\" target=\"_blank\">494809</a>.\n</p><p><b>When this will happen\n</b></p><p>Rollout will begin mid-August and complete in early September.</p><p><b>How this affects your organization</b></p><p>This update enhances flexibility and transparency in agent access management:\n</p><ul><li>Admins retain full control over access decisions and benefit from:<ul><li>Centralized management of agent access requests.</li><li>Granular control to approve or reject requests at the individual user level.</li></ul></li></ul><p>This feature is on by default and requires no configuration to enable.\n</p><p><b>What you can do to prepare\n</b></p><p>No setup is required—this feature will roll out automatically.\n</p><p>To prepare:\n</p><ul><li>Visit the <i>Copilot </i>&gt; <i>Agents &amp; connectors</i> page in the Microsoft 365 admin center to view and manage agent access requests.\n</li><li>Approve or reject requests based on your organization’s policies.</li></ul><p><b>Compliance considerations\n</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-13T23:12:31Z",
+    "endDateTime": "2025-09-14T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-13T23:13:23.157Z",
+    "title": "Streamlining SMS campaign approvals in Teams admin center",
+    "id": "MC1134740",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams Calling Plans SMS now offers self-service campaign rejection handling, a proactive Microsoft validation layer, and clearer status updates like \"Customer Update Pending.\" Admins can view rejection reasons, resubmit campaigns up to four times, and manage approvals directly in the Teams Admin Center, improving transparency and efficiency."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<b>Introduction</b>\n<p>We’re improving the admin experience for Microsoft Teams Calling Plans SMS by introducing new self-service capabilities, a proactive validation layer, and clearer campaign status flows. These updates reduce delays, improve transparency, and help organizations meet industry requirements more efficiently.</p>\n\n<b>When this will happen</b>\n<p>This feature update is available now.</p><p><b>How this affects your organization</b></p><p>If your organization uses Microsoft Teams Calling Plans SMS in the United States (including Puerto Rico) or Canada, excluding GCCH and sovereign clouds, this update enhances the campaign management experience in the Teams Admin Center:</p>\n\n<ul>\n  <li><b>New self-service rejection handling</b>\n    <ul>\n      <li>Rejected campaigns are no longer routed to Microsoft support by default.</li>\n      <li>You can now view rejection reasons and resubmit campaigns—up to <b>four times</b>—directly in the Teams Admin Center.</li>\n      <li>A new campaign status, <b>Customer Update Pending</b>, indicates that admin action is required. Admins can open the campaign side panel, review rejection reasons, update the form, and resubmit.</li>\n      <li>The <b>brand main contact</b> will continue to receive email notifications for all campaign status changes, including the new Customer Update Pending status.</li>\n    </ul>\n    <p><b style=\"\">Note:</b><i> </i>Existing campaigns currently being handled by Microsoft support will continue to be processed. In the coming days, remaining campaigns will be handed over to customers for self-service management.</p>\n  </li>\n\n  <li><b>Submission attempt logic clarified</b>\n    <ul>\n      <li>A submission attempt is only counted after Microsoft validates the campaign and forwards it to the SMS aggregator.</li>\n      <li>After four valid submission attempts, the campaign enters a <b>Denied</b> state and cannot be resubmitted.</li>\n      <li>We strongly recommend reviewing the Microsoft Learn article&nbsp;<a href=\"https://learn.microsoft.com/microsoftteams/sms-setup-campaign\" target=\"_blank\">Create a Campaign for SMS in Microsoft Teams&nbsp;elements</a> before resubmitting.</li>\n    </ul>\n  </li>\n\n  <li><b>New Microsoft Validation layer</b>\n    <ul>\n      <li>Campaigns now pass through a Microsoft Validation layer before being submitted to its downstream partners.</li>\n      <li>This proactive screening helps catch issues earlier and accelerate time to approval.</li>\n    </ul>\n    <p><b style=\"\">Note<i>:</i></b><i> </i>A few rejection scenarios will continue to be processed by Microsoft support.</p>\n  </li>\n</ul>\n\n<p><i>Figure i. Submission Updated campaign flow</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/291f1cfb-50a7-416b-8126-7e1a881f2ae4\" style=\"width: 400px;\" alt=\"user settings\"></p><p>These changes apply only to the <b>campaign management</b> step. Brand registration and phone number activation remain unchanged.</p>\n\n<b>What you can do to prepare</b>\n<ul>\n  <li>Review the updated documentation: <a href=\"https://learn.microsoft.com/microsoftteams/sms-setup-campaign\" target=\"_blank\">Create a Campaign for SMS in Microsoft Teams.</a>.</li>\n  <li>If you are the brand contact, you will receive an email with the new <b>Customer Update Pending</b> status and the rejection reasons.</li>\n  <li>Careful review rejection reasons and campaign requirements before resubmitting.</li>\n</ul>\n\n<b>Compliance considerations</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-13T23:13:41Z",
+    "endDateTime": "2025-12-01T08:00:00Z",
+    "lastModifiedDateTime": "2025-08-13T23:14:09.973Z",
+    "title": "Microsoft Copilot: filter chat history for easier context recall",
+    "id": "MC1134741",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 suite",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "497910"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Copilot will add a chat history filtering feature to help users quickly find relevant past conversations. Rollout begins late August 2025 worldwide, with no admin action needed. Users can filter chats for easier context recall, improving navigation and workflow efficiency."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction</b></p><p>We’re introducing a new filtering capability in Microsoft Copilot that allows users to refine their view of past conversations. This enhancement helps users quickly locate relevant chats aligned with their workflows, making it easier to revisit prior prompts, responses, and context.</p><p><i>i. example of new filtering experience in Microsoft Copilot</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/581a0a7b-5b20-4d2d-ac96-3d92dded3619/ecba97de9db8b44a2b50aa6a51f0299d1eb75801.png\" style=\"width: 400px;&quot;\" =\"\"=\"\" alt=\"Screenshot of a Copilot chat window highlighting the Filter feature.\"><i><br></i></p><p><br></p><p>For more information, refer to Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=497910\" target=\"_blank\">497910</a>.&nbsp;</p><p>\n</p><p><b>When this will happen</b></p><ul><li><b>General Availability (Worldwide): </b>We will begin rollout in&nbsp;late August&nbsp;2025 and expect to complete by early September 2025.\n</li><li><b>General Availability (GCC and GCC High): </b>We will begin rollout in late September 2025 and expect to complete by early October 2025.\n</li><li><b>General Availability (DoD):</b> We will begin rollout in late September&nbsp;2025 and expect to complete by late October 2025.\n</li></ul><p><b>How this affects your organization</b></p><p>Previously, users could only browse their full Copilot chat history without filtering options. With this update, selecting <i>All conversations</i> in the navigation pane will display the full history, and users can apply filters to narrow results based on their current needs.\n</p><p>This feature is on by default and requires no admin configuration.\n</p><p><b>What you can do to prepare</b></p><p>No admin action is required. We recommend informing your users about this new capability so they can take full advantage of the improved navigation experience in Copilot. If your organization provides training or onboarding for Copilot, consider including this update in your materials.\n</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-13T23:14:36Z",
+    "endDateTime": "2025-10-18T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-13T23:14:51.62Z",
+    "title": "Build and analyze surveys with Surveys Agent in Microsoft 365 Copilot",
+    "id": "MC1134742",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Surveys Agent in Microsoft 365 Copilot enables users to create, distribute, and analyze surveys via chat, powered by Microsoft Forms. Launching mid-August 2025 (preview) and September 2025 (general), it is off by default and requires admin configuration and licensing for access."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction\n</b></p><p>Surveys Agent is a new Copilot agent in Microsoft 365 that helps users build, run, and analyze surveys with ease. It streamlines the entire survey lifecycle—from creation to analysis—enabling faster, insight-driven decisions with less manual effort.\n</p><p><b>When this will happen\n</b></p><ul><li><span style=\"background-color: rgb(255, 255, 255);\"><b style=\"\">Public Preview (Frontier): </b>Beginning mid-August 2025</span></li><li><span style=\"background-color: rgb(255, 255, 255);\"><b>General Availability (Worldwide):</b>&nbsp;Rollout is expected to begin in early September 2025 and complete mid-September 2025</span></li></ul><p><b>How this affects your organization\n</b></p><p>Surveys Agent enables users to create and manage surveys directly through chat in Microsoft 365 Copilot. It simplifies survey creation, distribution, and analysis, reducing time spent on manual tasks. Surveys are powered by Microsoft Forms and adhere to existing admin policies for the Forms service.\n</p><p>This feature is <b>off by default</b>. Users can choose to install the agent from the Microsoft 365 Copilot Agent Store under the \"Built by Microsoft\" section.\n</p><p><b>What you can do to prepare\n</b></p><p><span style=\"background-color: rgb(255, 255, 255);\">To ensure users can access Surveys Agent in the Frontier preview program, admins can take the following steps:</span></p><ul><li><span style=\"background-color: rgb(255, 255, 255);\">Verify users or user groups have a Microsoft 365 Copilot license.</span></li><li><span style=\"background-color: rgb(255, 255, 255);\">Ensure the setting \"Allow the following users access to Copilot agents\" is configured.</span></li><li><span style=\"background-color: rgb(255, 255, 255);\">Ensure the tenant-level setting \"Let users access Microsoft apps\" is configured.</span></li><li><span style=\"background-color: rgb(255, 255, 255);\">(Recommended/optional) Deploy Surveys Agent automatically to users or groups via the Deploy action in Integrated Apps. </span></li></ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center</a></p><p><span style=\"background-color: rgb(255, 255, 255);\">Surveys Agent creates surveys via Microsoft Forms. Admins should review Microsoft Forms policies to</span> ensure they align with organizational standards.</p><p>Once installed, users can:\n</p><ul><li>Create and send surveys via chat\n</li><li>Monitor responses and send reminders\n</li><li>Analyze results in chat or export to Excel</li></ul><p><b>Compliance considerations</b>\n</p><table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">\n<tbody><tr><th>Compliance Area</th><th>Response</th><th>Explanation</th></tr>\n<tr><td>Does the change store new customer data?</td><td>Yes</td><td>Survey responses are stored in Microsoft Forms and follow existing data retention and admin policies.</td></tr>\n<tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Maybe</td><td>Surveys Agent uses Microsoft Forms to collect and process data, which may include new access patterns via Copilot chat.</td></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes</td><td>Introduces a new Copilot agent that uses generative AI to help users create and analyze surveys.</td></tr>\n<tr><td>Does the change provide users any new way of interacting with generative AI?</td><td>Yes</td><td>Users interact with generative AI via chat to build, send, and analyze surveys.</td></tr>\n<tr><td>Does the change include an admin control and, can it be controlled through Entra ID group membership?</td><td>Yes</td><td>Admins can manage access to the agent using Entra ID group membership.</td></tr>\n<tr><td>Does the change allow a user to enable and disable the feature themselves?</td><td>Yes</td><td>Users can choose to install or remove the agent from the Copilot Agent Store.</td></tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-13T23:31:21Z",
+    "endDateTime": "2025-10-15T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-13T23:31:34.07Z",
+    "title": "Security Update: New Authentication Requirements for integration with Microsoft Teams PowerShell Module",
+    "id": "MC1134747",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": "2025-09-14T07:00:00Z",
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams PowerShell Module requires updated application permissions—RoleManagement.Read.Directory and GroupMember.Read.All—for Entra app authentication starting September 15, 2025. Organizations must review and update these permissions in Entra ID to avoid service disruption. No changes needed for delegated permissions."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction</b></p><p>We are reaching out to inform you of an <b>important security and authentication update</b> that may impact your integration with the Microsoft Teams PowerShell Module. As part of our ongoing commitment to strengthening security across Microsoft 365 services, we are updating the authentication requirements for <b>application-based authentication</b> in the Teams PowerShell Module.</p><p>These changes are designed to ensure that Entra applications used for backend access to Teams PowerShell are properly scoped and secured. If your organization uses Entra applications to automate or manage Teams via PowerShell, action is required to avoid service disruption.&nbsp;</p><p><b>When will this happen</b></p><p>This change will take effect on Monday, September 15, 2025.</p><p><b>How this affects your organization</b></p><p>If your organization uses Entra applications to authenticate against the Microsoft Teams PowerShell Module, you must update the <b><i>Application</i></b> permissions to avoid disruption. </p><p>Specifically:</p><ul><li><b>RoleManagement.Read.Directory</b>: Required for all Entra applications to verify association with an Administrative Unit.</li><li><b>GroupMember.Read.All</b>: Required if your application uses the following cmdlets:<ul><li><code>*-CsGroupPolicyAssignment</code></li><li><code>*-CsGroupPolicyPackageAssignment</code></li></ul></li></ul><p>No changes are required for delegated permissions.</p><p><b>What you can do to prepare</b></p><p>To ensure uninterrupted access:</p><p>1. Review your Entra applications:</p><p></p><ul><li>Go to <i>Microsoft Entra ID</i> &gt; <i>Roles and administrators</i>.</li><li>Check the <i>Global Administrator</i>, <i>Teams Administrator</i>, and <i>Skype for Business Administrator</i> roles for any Entra applications or service principals used with Teams PowerShell.</li></ul><p>2. Update API permissions:</p><ul><li>Navigate to <i>Microsoft Entra ID</i> &gt; <i>App registrations</i>.</li><li>Locate the relevant application and add the following permissions:<ul><li><code>GroupMember.Read.All</code></li><li><code>RoleManagement.Read.Directory</code></li></ul></li></ul><p></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/b34dd591-e907-4af1-b6c4-45d5bff1e6f4\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p>3. Test your integrations to confirm continued functionality.</p><p>Learn more: <a href=\"https://learn.microsoft.com/microsoftteams/teams-powershell-application-authentication\" target=\"_blank\">Application-based authentication in Teams PowerShell Module</a>.</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
