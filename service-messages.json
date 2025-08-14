@@ -3028,13 +3028,14 @@
   },
   {
     "startDateTime": "2025-04-07T22:57:59Z",
-    "endDateTime": "2025-09-08T08:00:00Z",
-    "lastModifiedDateTime": "2025-07-01T20:31:33.64Z",
+    "endDateTime": "2025-11-17T08:00:00Z",
+    "lastModifiedDateTime": "2025-08-14T16:32:02.947Z",
     "title": "Microsoft Purview | Data Loss Prevention: Support for Microsoft Fabric lakehouses & KQL and mirrored databases (preview",
     "id": "MC1050193",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -3053,7 +3054,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Purview is introducing Data Loss Prevention (DLP) policy support for Microsoft Fabric lakehouses, KQL databases, and mirrored databases. Public Preview for lakehouses is available since October 2024, and for KQL and mirrored databases, it will roll out in mid-April 2025. General Availability is expected by August 2025. No admin action is required before the rollout."
+        "value": "Microsoft Purview Data Loss Prevention (DLP) now supports Microsoft Fabric lakehouses, KQL, and mirrored databases. Public preview began October 2024; full rollout completes by September 2025. DLP policies will automatically apply to these Fabric assets, requiring no admin action unless policy scope changes are needed."
       },
       {
         "name": "Platforms",
@@ -3062,7 +3063,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated July 1, 2025: We have updated the timeline below. Thank you for your patience.\n</p><p>Coming soon: Microsoft Purview | Data Loss Prevention (DLP) policy support for Microsoft Fabric allows admins to scope DLP policies to lakehouses, in addition to Microsoft Power BI (also supported today). In other words, in Fabric lakehouses, DLP policies can help audit and notify users through policy tips based on sensitive content. We will also extend DLP policy support Fabric KQL databases and mirrored databases.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=420332\" target=\"_blank\">420332</a>.</p><p>[When this will happen:] \n</p><p>Public Preview: </p><ul><li>DLP policy support for Fabric lakehouses is available in Public Preview as of October 2024. </li><li>For KQL databases and mirrored databases, we will begin rolling out mid-April 2025 and expect to complete by late April 2025&nbsp;</li></ul><p>\n</p><p>General Availability (Worldwide): We will begin rolling out early August 2025 and expect to complete by late August 2025.</p><p>[How this will affect your organization:]</p><p>After this rollout, when admins configure DLP policies on Fabric workspaces, DLP policies will scan and identify sensitive information (as well as semantic models) in lakehouses, KQL databases, and mirrored databases. Mirrored databases include Mirrored Azure Cosmos databases, Mirrored Azure databases for PostgreSQL, Mirrored Azure SQL databases, Mirrored Azure SQL Managed Instance, Mirrored databases, Mirrored Snowflake, and Mirrored SQL Server databases.  \n</p><p>If you already have a Fabric or Power BI location selected in your DLP policy today, the policy will automatically start applying to these assets as well (as long as the lakehouse, KQL, and mirror database is in the scope of the DLP policy).</p><p>You can configure a policy to apply to Fabric in Purview at <i>Data Loss Prevention &gt; Create policy &gt; Locations:\n</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/93da23d4-5a32-4fea-9abc-231fa7f6c430\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>[What you need to do to prepare:] \n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your users about this change and update any relevant documentation.\n</p><p>No action is required from admins. Both existing and new DLP policies will be on by default and will automatically start evaluating Fabric lakehouses, KQL, and mirrored databases.</p><p>If you do not want to include Fabric lakehouses, KQL, and mirrored databases in your DLP policies, please review your policies and update the location scopes appropriately.  \n</p><p>DLP policy support for Fabric is subject to the new <a href=\"https://learn.microsoft.com/purview/purview-billing-models\" target=\"_blank\">Microsoft Purview pay-as-you-go billing model</a>&nbsp;(will be updated before rollout).</p><p>Learn more: <a href=\"https://learn.microsoft.com/purview/dlp-powerbi-get-started\" target=\"_blank\" style=\"\">Get started with DLP for Fabric and Power BI | Microsoft Learn</a></p>"
+      "content": "<p>Updated August 14, 2025: We have updated the content. Thank you for your patience.&nbsp;</p><p>&nbsp;Coming soon: Microsoft Purview | Data Loss Prevention (DLP) policy support for Microsoft Fabric allows admins to scope DLP policies to lakehouses, in addition to Microsoft Power BI (also supported today). In other words, in Fabric lakehouses, DLP policies can help audit and notify users through policy tips based on sensitive content. We will also extend DLP policy support Fabric KQL databases and mirrored databases.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=420332\" target=\"_blank\">420332</a>.</p><p>[When this will happen:] \n</p><p>Public Preview: </p><ul><li>DLP policy support for Fabric lakehouses is available in Public Preview as of October 2024. </li><li>For KQL databases and mirrored databases, we will begin rolling out mid-April 2025 and expect to complete by late April 2025&nbsp;</li></ul><p>\n</p><p>General Availability (Worldwide): We will begin rolling out mid-August 2025 (previously early August) and expect to complete by early September 2025 (previously late August ).</p><p>[How this will affect your organization:]</p><p>After this rollout, when admins configure DLP policies on Fabric workspaces, DLP policies will scan and identify sensitive information (as well as semantic models) in lakehouses, KQL databases, and mirrored databases. Mirrored databases include Mirrored Azure Cosmos databases, Mirrored Azure databases for PostgreSQL, Mirrored Azure SQL databases, Mirrored Azure SQL Managed Instance, Mirrored databases, Mirrored Snowflake, and Mirrored SQL Server databases.  \n</p><p>If you already have a Fabric or Power BI location selected in your DLP policy today, the policy will automatically start applying to these assets as well (as long as the lakehouse, KQL, and mirror database is in the scope of the DLP policy).</p><p>You can configure a policy to apply to Fabric in Purview at <i>Data Loss Prevention &gt; Create policy &gt; Locations:\n</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/93da23d4-5a32-4fea-9abc-231fa7f6c430\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>[What you need to do to prepare:] \n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your users about this change and update any relevant documentation.\n</p><p>No action is required from admins. Both existing and new DLP policies will be on by default and will automatically start evaluating Fabric lakehouses, KQL, and mirrored databases.</p><p>If you do not want to include Fabric lakehouses, KQL, and mirrored databases in your DLP policies, please review your policies and update the location scopes appropriately.  \n</p><p>DLP policy support for Fabric is subject to the new <a href=\"https://learn.microsoft.com/purview/purview-billing-models\" target=\"_blank\">Microsoft Purview pay-as-you-go billing model</a>&nbsp;(will be updated before rollout).</p><p>Learn more: <a href=\"https://learn.microsoft.com/purview/dlp-powerbi-get-started\" target=\"_blank\" style=\"\">Get started with DLP for Fabric and Power BI | Microsoft Learn</a></p>"
     }
   },
   {
@@ -5436,6 +5437,46 @@
     }
   },
   {
+    "startDateTime": "2025-04-24T00:56:21Z",
+    "endDateTime": "2025-10-06T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-14T16:41:14.183Z",
+    "title": "(Updated) Microsoft SharePoint and Microsoft OneDrive: New PDF compression feature",
+    "id": "MC1061109",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online",
+      "Microsoft OneDrive"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "487440"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft is rolling out a new PDF compression feature in OneDrive and SharePoint starting July 2025, allowing users to reduce PDF file sizes with three compression levels. The feature is automatic, supports files under 300 MB, and maintains visual quality using lossy compression and chroma subsampling."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Updated August 14, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>Coming soon: Users will be able to use the new Compress feature to reduce the file sizes of PDFs stored on Microsoft OneDrive for the web or Microsoft SharePoint. Users can choose from three different compression levels.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=487440\" target=\"_blank\">487440</a>.\n</p><p>[When this will happen:]\n</p><p>Targeted Release: We will begin rolling out early July 2025 (previously late April) and expect to complete by late July 2025 (previously early May).</p><p>General Availability (Worldwide, GCC, GCC High, DoD): We will begin rolling out late July 2025 (previously late May) and expect to complete by late August 2025 (previously early August).</p><p>[How this will affect your organization:]</p><p>To compress PDF files for a smaller size:\n</p><p>1. Open a PDF in OneDrive for the web (in SharePoint, go to the document library and choose <i>Preview</i>):\n</p><p>2. Select the <i>Compress</i> button at the top of the screen:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/66fdc740-0992-45bd-9ef9-996744fcbc1b\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>3. Select a compression level and then select <i>Save a copy</i> to save the compressed file:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/55ba79c2-ef00-4df6-a86a-908346dee3eb\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>A progress notification will appear at the bottom of the screen. After the compression is complete, select <i>Open </i>from the notification to view the compressed file:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8a3953ab-9cc2-449a-9347-8d89e55f09b1\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p><i>FAQ</i>\n</p><p><i>What is the quality and subsampling for each compression level?</i></p><p>We offer three levels of image compression. All use lossy compression and chroma subsampling to reduce file sizes while maintaining visual quality. The options are:&nbsp;</p><ul><li>Light compression: Apply 4:2:0 color subsampling and reduce 25% of image pixels.&nbsp;</li><li>Medium compression: Apply 4:2:0 color subsampling and reduce 50% of image pixels.&nbsp;</li><li>Heavy compression: Apply 4:2:0 color subsampling and reduce 75% of image pixels.</li></ul><p>Users can compress one PDF at a time. The original file must be smaller than 300 MB.</p><p>This feature is on by default.</p><p>[What you need to do to prepare:]\n</p><p><b>Note:</b> Some users may see this feature before other users in your organization.\n</p>\n<p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. You may want to notify your users about this change and update any relevant documentation.\n</p><p>Before rollout, we will update this post with new documentation.</p>"
+    }
+  },
+  {
     "startDateTime": "2025-04-24T23:15:11Z",
     "endDateTime": "2025-08-29T07:00:00Z",
     "lastModifiedDateTime": "2025-04-24T23:15:58.263Z",
@@ -7083,7 +7124,7 @@
   {
     "startDateTime": "2025-05-07T23:45:55Z",
     "endDateTime": "2025-10-27T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-28T16:43:33.883Z",
+    "lastModifiedDateTime": "2025-08-14T17:22:59.373Z",
     "title": "(Updated) Microsoft SharePoint: Updated Page Analytics",
     "id": "MC1069561",
     "category": "stayInformed",
@@ -7107,7 +7148,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft SharePoint Page Analytics will upgrade starting mid-August 2025, initially for News posts, adding long-term data (365 days), channel breakdowns, new metrics (Reactions, Promotions), export options, audience calculation, chart copying, and a modern design. Available fully with Microsoft Viva licenses; no admin action needed."
+        "value": "Microsoft SharePoint Page Analytics will be upgraded starting September 2025 for News posts, adding features like 365-day data, distribution channel breakdown, new metrics (Reactions, Promotions), data export, audience calculation, chart image copying, and a modern design. No admin action is required."
       },
       {
         "name": "Platforms",
@@ -7116,7 +7157,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated July 28, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>Microsoft SharePoint <i>Page Analytics</i> will soon be upgraded with new capabilities. This rollout will be targeted to SharePoint News posts only. All these capabilities will be made available to all SharePoint pages in future releases.</p><p>If you have a license for <a href=\"https://www.microsoft.com/microsoft-viva/pricing\" target=\"_blank\">Microsoft Viva Suite or Microsoft Viva Employee Communications and Communities</a>, you will have all the new capabilities. If you do not have one of these licenses, you will continue to see the existing metrics and charts in <i>Page Analytics</i> with a modern page design.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=488502\" target=\"_blank\">488502</a>.</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide): We will begin rolling out mid-August 2025 (previously late July) and expect to complete by mid-September 2025 (previously late August).</p><p>[How this will affect your organization:]\n\n</p><p>This rollout will provide these new capabilities: \n</p><ul><li>Long-term data: Up to 365 days from current limit of up to 90 days.</li><li>Breakdown by distribution channels: For all <i>Page Analytics</i> charts (including <i>Unique viewers, Total views, </i>and <i>Average time spent per user)</i>, you will be able to see the breakdown by distribution channels (Microsoft Outlook, SharePoint, Microsoft Teams, Microsoft Viva Engage) where a news post was shared. \n</li><li>Two new metrics called <i>Reactions </i>and <i>Promotions</i>. <i>Reactions </i>will indicate how many times have users reacted to a post and a breakdown of reactions by positive, negative, and others to gauge user sentiment for a post. <i>Promotions </i>will indicate the total number of shares, @mentions, and email forwards that a news post has received. \n</li><li>Export analytics data: You will be able to export the analytics data to Excel or PowerPoint. \n</li><li>Audience calculation: Unique viewers as a percentage of number of users to which the post was shared. \n</li><li>Copy a chart as image\n</li><li>Upgraded page design</li></ul><p>\n</p><p>This change will be on by default.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/0b480c7b-bf92-47a8-85d7-e3d60935d489\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your users about this change and update any relevant documentation.</p><p>Learn more: <a href=\"https://support.microsoft.com/office/view-usage-data-for-sharepoint-pages-and-news-e3186199-ccc8-4445-9162-bb1bcec8b7ee\" target=\"_blank\">View usage data for SharePoint pages and news - Microsoft Support</a> (will be updated before rollout)</p>"
+      "content": "<p>Updated August 14, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>Microsoft SharePoint <i>Page Analytics</i> will soon be upgraded with new capabilities. This rollout will be targeted to SharePoint News posts only. All these capabilities will be made available to all SharePoint pages in future releases.</p><p>If you have a license for <a href=\"https://www.microsoft.com/microsoft-viva/pricing\" target=\"_blank\">Microsoft Viva Suite or Microsoft Viva Employee Communications and Communities</a>, you will have all the new capabilities. If you do not have one of these licenses, you will continue to see the existing metrics and charts in <i>Page Analytics</i> with a modern page design.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=488502\" target=\"_blank\">488502</a>.</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide): We will begin rolling out early September 2025 (previously mid-August) and expect to complete by late September 2025 (previously mid-September).</p><p>[How this will affect your organization:]\n\n</p><p>This rollout will provide these new capabilities: \n</p><ul><li>Long-term data: Up to 365 days from current limit of up to 90 days.</li><li>Breakdown by distribution channels: For all <i>Page Analytics</i> charts (including <i>Unique viewers, Total views, </i>and <i>Average time spent per user)</i>, you will be able to see the breakdown by distribution channels (Microsoft Outlook, SharePoint, Microsoft Teams, Microsoft Viva Engage) where a news post was shared. \n</li><li>Two new metrics called <i>Reactions </i>and <i>Promotions</i>. <i>Reactions </i>will indicate how many times have users reacted to a post and a breakdown of reactions by positive, negative, and others to gauge user sentiment for a post. <i>Promotions </i>will indicate the total number of shares, @mentions, and email forwards that a news post has received. \n</li><li>Export analytics data: You will be able to export the analytics data to Excel or PowerPoint. \n</li><li>Audience calculation: Unique viewers as a percentage of number of users to which the post was shared. \n</li><li>Copy a chart as image\n</li><li>Upgraded page design</li></ul><p>\n</p><p>This change will be on by default.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/0b480c7b-bf92-47a8-85d7-e3d60935d489\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your users about this change and update any relevant documentation.</p><p>Learn more: <a href=\"https://support.microsoft.com/office/view-usage-data-for-sharepoint-pages-and-news-e3186199-ccc8-4445-9162-bb1bcec8b7ee\" target=\"_blank\">View usage data for SharePoint pages and news - Microsoft Support</a> (will be updated before rollout)</p>"
     }
   },
   {
@@ -8527,8 +8568,8 @@
   },
   {
     "startDateTime": "2025-05-19T23:44:35Z",
-    "endDateTime": "2025-09-26T07:00:00Z",
-    "lastModifiedDateTime": "2025-06-27T13:39:13.99Z",
+    "endDateTime": "2025-10-27T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-14T16:58:47.147Z",
     "title": "(Updated) Microsoft OneDrive and Microsoft SharePoint: Use the table of contents in a PDF to navigate",
     "id": "MC1077863",
     "category": "stayInformed",
@@ -8553,7 +8594,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft OneDrive and SharePoint will display a table of contents for PDFs starting mid-July 2025, completing by early August 2025. Users can navigate PDFs using this feature, which will be enabled by default. No admin action is required, but notifying users and updating documentation is recommended."
+        "value": "Starting mid-July to mid-September 2025, OneDrive and SharePoint Online will display a PDF's table of contents for easy navigation. Users can jump to sections directly, with the feature enabled by default and no admin action needed. Some users may see it earlier."
       },
       {
         "name": "Platforms",
@@ -8562,7 +8603,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated June 27, 2025: We have updated the timeline below. Thank you for your patience.</p><p>Microsoft OneDrive for the web and Microsoft SharePoint Online will be able to display a table of contents if a PDF already has one. Users can select an item in the table of contents to jump directly to the location of that item in the PDF.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=486859\" target=\"_blank\">486859</a>.</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide, GCC, GCC High, DoD): We will begin rolling out mid-July 2025 (previously mid-June) and expect to complete by early August 2025 (early July).</p><p>\n</p><p>[How this will affect your organization:]</p><p>1. Open a PDF in OneDrive for the web or in SharePoint. If your PDF contains a table of contents, it will show up on the left side of your screen:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/b7ddec0d-0f1c-445c-965b-e924f06f6ea2\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>2. Select any line item to jump directly to the page</p><p>3. To close the table of contents, select the X in the top right of the panel. Select the <i>View the table of contents</i> icon in the top left of the panel to open it again:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/2f47441c-d063-4072-9a86-913339f723e9\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>This feature will be on by default.</p><p>[What you need to do to prepare:]\n</p><p>Note: Some users may see this feature before other users within your organization. \n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. You may want to notify your users about this change and update any relevant documentation.</p>"
+      "content": "<p>Updated August 14, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>Microsoft OneDrive for the web and Microsoft SharePoint Online will be able to display a table of contents if a PDF already has one. Users can select an item in the table of contents to jump directly to the location of that item in the PDF.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=486859\" target=\"_blank\">486859</a>.</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide, GCC, GCC High, DoD): We will begin rolling out mid-July 2025 (previously mid-June) and expect to complete by mid-September 2025 (previously early August).</p><p>\n</p><p>[How this will affect your organization:]</p><p>1. Open a PDF in OneDrive for the web or in SharePoint. If your PDF contains a table of contents, it will show up on the left side of your screen:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/b7ddec0d-0f1c-445c-965b-e924f06f6ea2\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>2. Select any line item to jump directly to the page</p><p>3. To close the table of contents, select the X in the top right of the panel. Select the <i>View the table of contents</i> icon in the top left of the panel to open it again:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/2f47441c-d063-4072-9a86-913339f723e9\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>This feature will be on by default.</p><p>[What you need to do to prepare:]\n</p><p>Note: Some users may see this feature before other users within your organization. \n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. You may want to notify your users about this change and update any relevant documentation.</p>"
     }
   },
   {
@@ -13608,8 +13649,8 @@
   },
   {
     "startDateTime": "2025-06-25T00:16:11Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-10T19:33:43.557Z",
+    "endDateTime": "2025-10-06T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-14T17:32:38.507Z",
     "title": "(Updated) Microsoft 365 admin center: New Multi-admin notifications for Microsoft 365 Backup",
     "id": "MC1102791",
     "category": "stayInformed",
@@ -13633,7 +13674,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft 365 is introducing Multi-admin notifications for Microsoft 365 Backup, allowing centralized backup notifications for key stakeholders. The rollout starts in early August 2025 and completes by mid-August 2025. Organizations can configure notification lists for important backup events. No action is required before the rollout."
+        "value": "Microsoft 365 Backup will introduce Multi-admin notifications starting late August 2025, allowing centralized email alerts for key backup events to designated admins. Users can configure notification lists by admin roles or custom groups. No action is needed before rollout, but configuration is required to activate notifications."
       },
       {
         "name": "Platforms",
@@ -13642,7 +13683,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated July 10, 2025: We have updated the timeline below. Thank you for your patience.</p><p>We’re introducing a new feature—Multi-admin notifications for Microsoft 365 Backup. This feature enables organizations to configure a centralized backup notifications list to ensure key stakeholders are regularly alerted about important backup events and routine actions. This feature enhances visibility and administrative awareness by sending email notifications to designated admins and stakeholders, helping protect against malicious or accidental changes to backup settings and restores.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=464993\" target=\"_blank\">464993</a>.</p><p>[When this will happen:]</p><p>General Availability (Worldwide): We will begin rolling out early August 2025 (previously early July) and expect to complete by mid-August 2025 (previously mid-July).</p><p>[How this will affect your organization:]</p><p>This feature applies only to the Microsoft 365 Backup tool. If your organization is not currently using or planning to use this tool, no action is required.\n</p><p>After this rollout, if you are using Microsoft 365 Backup, you’ll be able to configure the notification list in one of four ways:\n</p><ul><li>Include all global and Microsoft 365 Backup admins\n</li><li>Include only global admins\n</li><li>Include only Microsoft 365 Backup admins\n</li><li>Define a custom list (individual users, distribution lists, or security groups)\n</li></ul><p>Notifications will be triggered for important backup events, such as:\n</p><ul><li>Backup disablement\n</li><li>Offboarding\n</li><li>Restore initiation\n</li><li>Policy updates\n</li></ul><p>You can also choose to receive notifications for routine backup job completions.\n</p><p>To access this feature:</p><ol><li>Go to the <i><a href=\"https://admin.microsoft.com/Adminportal/Home#/orgsettings/payasyougo/storage/Backup\" target=\"_blank\">Backup enablement</a></i><a href=\"https://admin.microsoft.com/Adminportal/Home#/orgsettings/payasyougo/storage/Backup\" target=\"_blank\"> page</a> in the Microsoft 365 admin center.\n</li><li>Configure the backup notification list to include the appropriate stakeholders.</li></ol><p>This feature will be available by default but requires configuration to activate notifications.\n\n</p><p>[What you need to do to prepare:]</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your admins and/or users about this change and update internal documentation.</p><p><i>Learn more</i></p><p>\n</p><ul><li><a href=\"https://learn.microsoft.com/microsoft-365/backup/backup-setup?view=o365-worldwide\" target=\"_blank\">Set up Microsoft 365 Backup | Microsoft Learn</a> (will be updated before rollout begins)</li><li><a href=\"https://learn.microsoft.com/microsoft-365/backup/backup-overview?view=o365-worldwide\" target=\"_blank\">Overview of Microsoft 365 Backup | Microsoft Learn</a> (will be updated before rollout begins)</li></ul><p></p>"
+      "content": "<p>Updated August 14, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>We’re introducing a new feature—Multi-admin notifications for Microsoft 365 Backup. This feature enables organizations to configure a centralized backup notifications list to ensure key stakeholders are regularly alerted about important backup events and routine actions. This feature enhances visibility and administrative awareness by sending email notifications to designated admins and stakeholders, helping protect against malicious or accidental changes to backup settings and restores.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=464993\" target=\"_blank\">464993</a>.</p><p>[When this will happen:]</p><p>General Availability (Worldwide): We will begin rolling out late August 2025 (previously early August) and expect to complete by late August 2025 (previously mid-August).</p><p>[How this will affect your organization:]</p><p>This feature applies only to the Microsoft 365 Backup tool. If your organization is not currently using or planning to use this tool, no action is required.\n</p><p>After this rollout, if you are using Microsoft 365 Backup, you’ll be able to configure the notification list in one of four ways:\n</p><ul><li>Include all global and Microsoft 365 Backup admins\n</li><li>Include only global admins\n</li><li>Include only Microsoft 365 Backup admins\n</li><li>Define a custom list (individual users, distribution lists, or security groups)\n</li></ul><p>Notifications will be triggered for important backup events, such as:\n</p><ul><li>Backup disablement\n</li><li>Offboarding\n</li><li>Restore initiation\n</li><li>Policy updates\n</li></ul><p>You can also choose to receive notifications for routine backup job completions.\n</p><p>To access this feature:</p><ol><li>Go to the <i><a href=\"https://admin.microsoft.com/Adminportal/Home#/orgsettings/payasyougo/storage/Backup\" target=\"_blank\">Backup enablement</a></i><a href=\"https://admin.microsoft.com/Adminportal/Home#/orgsettings/payasyougo/storage/Backup\" target=\"_blank\"> page</a> in the Microsoft 365 admin center.\n</li><li>Configure the backup notification list to include the appropriate stakeholders.</li></ol><p>This feature will be available by default but requires configuration to activate notifications.\n\n</p><p>[What you need to do to prepare:]</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your admins and/or users about this change and update internal documentation.</p><p><i>Learn more</i></p><p>\n</p><ul><li><a href=\"https://learn.microsoft.com/microsoft-365/backup/backup-setup?view=o365-worldwide\" target=\"_blank\">Set up Microsoft 365 Backup | Microsoft Learn</a> (will be updated before rollout begins)</li><li><a href=\"https://learn.microsoft.com/microsoft-365/backup/backup-overview?view=o365-worldwide\" target=\"_blank\">Overview of Microsoft 365 Backup | Microsoft Learn</a> (will be updated before rollout begins)</li></ul><p></p>"
     }
   },
   {
@@ -17350,7 +17391,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0535577Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0535578Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0535579Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0367906Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0367907Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0367908Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -19751,7 +19792,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T16:08:38.053732Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0537321Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0537322Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0537323Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0537324Z\",\"LatestRing\":null}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0369575Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0369577Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0369578Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0369578Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0369579Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20701,7 +20742,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0534165Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0534167Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T16:08:38.0534168Z\",\"LatestRing\":null}]}"
+        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0366711Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0366713Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-14T18:09:35.0366715Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22087,6 +22128,78 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>Introduction</b></p><p>We are reaching out to inform you of an <b>important security and authentication update</b> that may impact your integration with the Microsoft Teams PowerShell Module. As part of our ongoing commitment to strengthening security across Microsoft 365 services, we are updating the authentication requirements for <b>application-based authentication</b> in the Teams PowerShell Module.</p><p>These changes are designed to ensure that Entra applications used for backend access to Teams PowerShell are properly scoped and secured. If your organization uses Entra applications to automate or manage Teams via PowerShell, action is required to avoid service disruption.&nbsp;</p><p><b>When will this happen</b></p><p>This change will take effect on Monday, September 15, 2025.</p><p><b>How this affects your organization</b></p><p>If your organization uses Entra applications to authenticate against the Microsoft Teams PowerShell Module, you must update the <b><i>Application</i></b> permissions to avoid disruption. </p><p>Specifically:</p><ul><li><b>RoleManagement.Read.Directory</b>: Required for all Entra applications to verify association with an Administrative Unit.</li><li><b>GroupMember.Read.All</b>: Required if your application uses the following cmdlets:<ul><li><code>*-CsGroupPolicyAssignment</code></li><li><code>*-CsGroupPolicyPackageAssignment</code></li></ul></li></ul><p>No changes are required for delegated permissions.</p><p><b>What you can do to prepare</b></p><p>To ensure uninterrupted access:</p><p>1. Review your Entra applications:</p><p></p><ul><li>Go to <i>Microsoft Entra ID</i> &gt; <i>Roles and administrators</i>.</li><li>Check the <i>Global Administrator</i>, <i>Teams Administrator</i>, and <i>Skype for Business Administrator</i> roles for any Entra applications or service principals used with Teams PowerShell.</li></ul><p>2. Update API permissions:</p><ul><li>Navigate to <i>Microsoft Entra ID</i> &gt; <i>App registrations</i>.</li><li>Locate the relevant application and add the following permissions:<ul><li><code>GroupMember.Read.All</code></li><li><code>RoleManagement.Read.Directory</code></li></ul></li></ul><p></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/b34dd591-e907-4af1-b6c4-45d5bff1e6f4\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p>3. Test your integrations to confirm continued functionality.</p><p>Learn more: <a href=\"https://learn.microsoft.com/microsoftteams/teams-powershell-application-authentication\" target=\"_blank\">Application-based authentication in Teams PowerShell Module</a>.</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-14T17:10:54.563Z",
+    "endDateTime": "2026-08-14T17:10:54.5Z",
+    "lastModifiedDateTime": "2025-08-14T17:10:55.543Z",
+    "title": "Windows Office Hours: August 21, 2025",
+    "id": "MC1135158",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>If you are an IT admin with questions about managing and updating Windows, we want to help. Every third Thursday of the month, we host a live chat-based event on the Tech Community called Windows Office Hours. Members of the Windows, Microsoft&nbsp;Intune, Windows Autopilot, Windows Autopatch, and Windows 365 engineering teams will be standing by to answer your questions. We also have experts from FastTrack, the Customer Acceleration Team, and Microsoft public sector teams.&nbsp;</div><div><br></div><div>Want to attend the August 21 session of Office Hours?&nbsp;<a href=\"https://techcommunity.microsoft.com/t5/s/gxcuf89792/attachments/gxcuf89792/WindowsEvents/6055/1/Windows-Office-Hours-August-21-2025.ics\" rel=\"noopener noreferrer\" target=\"_blank\">Add it to your calendar</a> and select Attend on the <a href=\"https://techcommunity.microsoft.com/event/windowsevents/windows-office-hours-august-21-2025/4426487\" rel=\"noopener noreferrer\" target=\"_blank\">event page</a> to let us know you’re coming.&nbsp;There is no video or live meeting component. Simply visit the event page, log in to the Tech Community, and leave your questions in the Comments section. You can also bookmark&nbsp;<a href=\"https://aka.ms/Windows/OfficeHours\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/Windows/OfficeHours</a>&nbsp;for upcoming dates (and the ability to add this event to your calendar). We look forward to helping you.</div>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-14T17:10:54.563Z",
+    "endDateTime": "2026-08-14T17:10:54.563Z",
+    "lastModifiedDateTime": "2025-08-14T17:10:58.677Z",
+    "title": "60-Day Reminder: Windows 10, version 22H2 will reach end of servicing on October 14, 2025",
+    "id": "MC1135159",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>On October 14, 2025, Windows 10, version 22H2 (<a href=\"https://learn.microsoft.com/lifecycle/products/windows-10-home-and-pro\" rel=\"noopener noreferrer\" target=\"_blank\">Home</a>, <a href=\"https://learn.microsoft.com/lifecycle/products/windows-10-home-and-pro\" rel=\"noopener noreferrer\" target=\"_blank\">Pro</a>, <a href=\"https://learn.microsoft.com/lifecycle/products/windows-10-enterprise-and-education\" rel=\"noopener noreferrer\" target=\"_blank\">Enterprise</a>, <a href=\"https://learn.microsoft.com/lifecycle/products/windows-10-enterprise-and-education\" rel=\"noopener noreferrer\" target=\"_blank\">Education</a>, and <a href=\"https://learn.microsoft.com/lifecycle/products/windows-10-iot-enterprise\" rel=\"noopener noreferrer\" target=\"_blank\">IoT Enterprise</a> editions) will reach end of servicing. October 14, 2025 will also mark the end of support for <a href=\"https://learn.microsoft.com/lifecycle/products/windows-10-2015-ltsb\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 10 2015 LTSB</a> and <a href=\"https://learn.microsoft.com/lifecycle/products/windows-10-iot-enterprise-ltsb-2015\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 10 IoT Enterprise LTSB 2015</a>. The October 2025 monthly security update will be the last update available for these versions. After this date, devices running these versions will no longer receive monthly security and preview updates containing protections from the latest security threats.</div><div><br></div><div><b>When this will happen</b></div><div>Windows 10, version 22H2 will reach end of servicing on October 14, 2025. Windows 10 2015 LTSB and Windows 10 IoT Enterprise LTSB 2015 will reach end of support on October 14, 2025.</div><div><br></div><div><b>How this will affect your organization</b></div><div>The October 2025 monthly security update will be the last update available for these versions. After this date, no further security updates, bug fixes, or technical support will be provided. Devices running these versions will become unsupported and may become vulnerable to security threats, compliance risks, and increased exposure to cyberattacks.</div><div><br></div><div>Organizations relying on Windows 10 should plan for migration to <a href=\"https://aka.ms/how-to-get-24H2\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a>. Organizations with devices running Windows 10, version 22H2 have the option to enroll in the <a href=\"https://learn.microsoft.com/windows/whats-new/enable-extended-security-updates\" rel=\"noopener noreferrer\" target=\"_blank\">Extended Security Updates (ESU) program</a> to maintain security coverage.</div><div><br></div><div><b>What you need to do to prepare</b></div><ol><li><b>Inventory your devices</b> to identify those still running Windows 10, version 22H2, Windows 10 2015 LTSB, and Windows 10 IoT Enterprise LTSB 2015.</li><li><b>Upgrade eligible devices</b> to Windows 11 using solutions like Microsoft Intune, Windows Autopatch, or Windows Autopilot.</li><li><b>Enroll eligible devices in the Windows 10 ESU program, </b>if they cannot be upgraded in time, to continue receiving critical security updates.</li></ol><div><br></div><div><b>Additional information:</b></div><ul><li><a href=\"https://blogs.windows.com/windowsexperience/2025/06/24/stay-secure-with-windows-11-copilot-pcs-and-windows-365-before-support-ends-for-windows-10/\" rel=\"noopener noreferrer\" target=\"_blank\">Stay secure with Windows 11, Copilot+ PCs and Windows 365 before support ends for Windows 10</a></li><li><a href=\"https://learn.microsoft.com/windows/whats-new/enable-extended-security-updates\" rel=\"noopener noreferrer\" target=\"_blank\">Enable Extended Security Updates (ESU)</a></li><li><a href=\"https://learn.microsoft.com/windows/release-health/release-information\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 10 release information</a></li><li><a href=\"https://learn.microsoft.com/windows/release-health/windows11-release-information\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 release information</a></li><li><a href=\"https://learn.microsoft.com/lifecycle/faq/windows\" rel=\"noopener noreferrer\" target=\"_blank\">Lifecycle FAQ - Windows</a></li><li><a href=\"https://learn.microsoft.com/lifecycle/products/?terms=windows\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Lifecycle Policy search tool</a></li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2025-08-14T17:10:54.563Z",
+    "endDateTime": "2026-08-14T17:10:54.563Z",
+    "lastModifiedDateTime": "2025-08-14T17:11:00.71Z",
+    "title": "60-Day Reminder: Windows 11, version 22H2 (Enterprise & Education editions) will reach end of servicing on October 14",
+    "id": "MC1135160",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>On October 14, 2025, Windows 11, version 22H2 (<a href=\"https://learn.microsoft.com/lifecycle/products/windows-11-enterprise-and-education\" rel=\"noopener noreferrer\" target=\"_blank\">Enterprise</a>,&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/products/windows-11-enterprise-and-education\" rel=\"noopener noreferrer\" target=\"_blank\">Education</a>, and&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/products/windows-11-iot-enterprise\" rel=\"noopener noreferrer\" target=\"_blank\">IoT Enterprise</a>&nbsp;editions) will reach <a href=\"https://learn.microsoft.com/lifecycle/announcements/windows-11-22h2-end-of-updates-enterprise-education\" rel=\"noopener noreferrer\" target=\"_blank\">end of servicing</a>. The October 2025 monthly security update will be the last update available for this version. After this date, devices running this version will no longer receive monthly security and preview updates containing protections from the latest security threats.</div><div><br></div><div>As always, we recommend that you update&nbsp;your&nbsp;devices to the latest version of&nbsp;<a href=\"https://aka.ms/how-to-get-24H2\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a>. For detailed information, see the <a href=\"https://learn.microsoft.com/lifecycle/announcements/windows-11-22h2-end-of-updates-enterprise-education\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11, version 22H2 reaching end of updates (Enterprise, Education, IoT Enterprise)</a>&nbsp;lifecycle page. For information about servicing timelines and lifecycle, see&nbsp;<a href=\"https://learn.microsoft.com/windows/release-health/windows11-release-information\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 release information</a>,&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/faq/windows\" rel=\"noopener noreferrer\" target=\"_blank\">Lifecycle FAQ - Windows</a>, and&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/products/?terms=windows\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Lifecycle Policy search tool</a>.</div>"
     }
   },
   {
