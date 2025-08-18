@@ -16748,30 +16748,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-18T21:03:05Z",
-    "endDateTime": "2025-08-18T21:03:05Z",
-    "lastModifiedDateTime": "2025-07-18T21:04:48.71Z",
-    "title": "AI Builder – Invoice processing and Invoices document type to begin using Azure",
-    "id": "MC1117659",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "Starting on July 21, 2025, the prebuilt model invoice processing and invoices document type (built on Azure Document Intelligence 4.0) will begin using v4.0 (GA) in AI Builder.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThe updated Invoice Processing model introduces the following new fields:<ul> \n\n<li>TotalDiscount – Captures any Total discount field identified on the invoice.</li> \n\n<li>KVKNumber – Includes the unique identifier for businesses registered in the Netherlands.</li> \n\n<li>PaymentDetails – Provides a List of payment details (IBAN, SWIFT and more).</li> \n\n<li>TaxDetails – Provides a List of tax details (amount, rate of the tax detail).</li> \n\n<li>PaidInFourInstallments – Provides a List of tax details (amount, due date).</li> \n\n<li>Items – Provides a List of line items.</li></ul> \n<b>What action do I need to take?</b><br> \n\nIf your flows use dynamic content (e.g., \"All detected text*, Line item all*\"), or if you're using custom parsing logic (e.g. via JSON schema or expressions), you may want to review the new fields and ensure they don't unintentionally affect any conditions, mappings, or downstream actions.<br><br> \n \n\nIf your flows reference specific fields from the model (e.g. AmountDue, VendorName), and do not utilize the new fields, your existing flows will continue to run as expected and no action is required."
-    }
-  },
-  {
     "startDateTime": "2025-07-18T23:38:18Z",
     "endDateTime": "2025-11-30T08:00:00Z",
     "lastModifiedDateTime": "2025-08-05T16:39:39.66Z",
@@ -17025,7 +17001,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0818317Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0818318Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0818319Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9296854Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9296855Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9296856Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -19366,7 +19342,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-18T20:07:53.081662Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0816622Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0816623Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0816623Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0816624Z\",\"LatestRing\":null}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9296569Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9296571Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9296572Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9296573Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9296573Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20317,7 +20293,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0819125Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0819126Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T20:07:53.0819127Z\",\"LatestRing\":null}]}"
+        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9297879Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9297881Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-18T22:06:40.9297882Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22422,6 +22398,30 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to enable auto-cleanup for jobs and logs to manage storage in Microsoft Dataverse. This feature will reach general availability on September 15, 2025.<br><br>\n<b>How does this affect me?</b><br>\nThis feature introduces a new deletion service which automatically deletes completed system jobs. It also allows admins to set a retention period to retain different type of completion status jobs.  This will improve system performance and saves on storage by cleaning up system jobs and plug-in trace logs to comply with your company's retention policy.<br><br> \n<b>What action do I need to take?</b><br> \nPlease review your record retention policy and adjust the default retention periods to ensure they meet your retention policy."
+    }
+  },
+  {
+    "startDateTime": "2025-08-18T21:26:17Z",
+    "endDateTime": "2025-09-18T21:26:17Z",
+    "lastModifiedDateTime": "2025-08-18T21:33:05.347Z",
+    "title": "Power Platform – Public Preview of the Alerts feature in Power Platform Monitor",
+    "id": "MC1137567",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the Public Preview of the Alerts feature in Power Platform Monitor, available in the Power Platform admin center. This feature will be available in all public clouds starting on August 18, 2025.<br><br><b>How does this affect me?</b><br>Alerts enable both tenant and environment administrators to define threshold-based rules on operational health metrics and receive proactive notifications when conditions are met. This capability complements the existing Monitor experience by helping you take timely action when apps or automations fall below expected performance standards.<br><br>Alerts support the following resource types:<ul><li>Canvas apps</li><li>Model-driven apps</li><li>Cloud flows</li><li>Desktop flows</li></ul>Notifications can be delivered via email, ensuring you stay informed without constantly checking dashboards.<br><br><b>What action do I need to take?</b><br>This message is for awareness and no action is required. No configuration or set up is needed to use the feature.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/ADO11850\">Create alerts for your resources (preview)</a>."
     }
   },
   {
