@@ -17003,7 +17003,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1411004Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1411005Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1411006Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-19T22:06:26.017913Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0179136Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0179137Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -19345,7 +19345,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1410847Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1410848Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1410849Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T20:07:23.141085Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1410851Z\",\"LatestRing\":null}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0180698Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0180699Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T22:06:26.01807Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0180701Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0180702Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20296,7 +20296,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1411835Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1411836Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T20:07:23.1411837Z\",\"LatestRing\":null}]}"
+        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0180005Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0180007Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-19T22:06:26.0180008Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22901,6 +22901,30 @@
     }
   },
   {
+    "startDateTime": "2025-08-19T21:25:17.643Z",
+    "endDateTime": "2026-08-19T21:25:17.613Z",
+    "lastModifiedDateTime": "2025-08-19T21:25:19.407Z",
+    "title": "Take Action: Out-of-band update to address an issue affecting reset and recovery operations",
+    "id": "MC1138193",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Microsoft has identified an issue where some attempts to reset or recover Windows devices might fail. This issue is observed after installing the August 2025 Windows security update on some client versions of Windows. For more information on this issue, see <a href=\"https://learn.microsoft.com/windows/release-health/status-windows-11-23h2#3640msgdesc\" rel=\"noopener noreferrer\" target=\"_blank\">Reset and recovery operations on some Windows versions might fail</a>.</div><div><br></div><div>A non-security out-of-band (OOB) update was released today, August 19, 2025, to address this issue. This is a cumulative update, so you do not need to apply any previous updates before installing this update, as it supersedes all previous updates for affected versions. If you haven’t installed the August 2025 Windows security update yet, we recommend you apply this OOB update instead. If your device is not affected by this issue, you do not need to install this OOB update.</div><div><br></div><div>For more information and instructions on how to install this update on your device, consult the below resources for your version of Windows:</div><ul><li>Windows 11, versions 23H2 and 22H2 - <a href=\"https://support.microsoft.com/topic/ce99f225-f523-4d85-8039-54965e97d0ff\" rel=\"noopener noreferrer\" target=\"_blank\">August 19, 2025—KB5066189 (OS Builds 22621.5771 and 22631.5771) Out-of-band</a></li><li>Windows 10, version 22H2 - <a href=\"https://support.microsoft.com/topic/decbec0f-fddb-4dc0-b91b-ed59001ce0d8\" rel=\"noopener noreferrer\" target=\"_blank\">August 19, 2025—KB5066188 (OS Builds 19044.6218 and 19045.6218) Out-of-band</a></li><li>Windows 10 Enterprise LTSC 2021 and Windows 10 IoT Enterprise LTSC 2021 - <a href=\"https://support.microsoft.com/topic/decbec0f-fddb-4dc0-b91b-ed59001ce0d8\" rel=\"noopener noreferrer\" target=\"_blank\">August 19, 2025—KB5066188 (OS Builds 19044.6218 and 19045.6218) Out-of-band</a></li><li>Windows 10 Enterprise LTSC 2019&nbsp;and Windows 10 IoT Enterprise LTSC 2019 - <a href=\"https://support.microsoft.com/topic/57a2518a-df8b-440d-9f1e-d7cd4a4af4d8\" rel=\"noopener noreferrer\" target=\"_blank\">August 19, 2025—KB5066187 (OS Build 17763.7683) Out-of-band</a></li></ul>"
+    }
+  },
+  {
     "startDateTime": "2021-06-16T22:53:37Z",
     "endDateTime": "2025-11-28T08:00:00Z",
     "lastModifiedDateTime": "2021-06-16T22:54:13.617Z",
@@ -23752,7 +23776,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
