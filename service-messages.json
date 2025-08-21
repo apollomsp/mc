@@ -3888,7 +3888,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08846Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08846Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -13106,13 +13106,14 @@
   },
   {
     "startDateTime": "2025-06-25T00:07:25Z",
-    "endDateTime": "2025-10-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-06-25T00:08:05.723Z",
-    "title": "Microsoft Purview | Insider Risk Management: Priority content support for risky AI usage",
+    "endDateTime": "2025-11-10T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-21T15:57:22.977Z",
+    "title": "(Updated) Microsoft Purview | Insider Risk Management: Priority content support for risky AI usage",
     "id": "MC1102775",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -13131,7 +13132,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Purview Insider Risk Management is enhancing the Risky AI usage policy template to support priority content, enabling targeted risk detection. Public preview starts mid-July 2025, with general availability in mid-August 2025. Admins can define high-priority content, and alerts will trigger only for risky AI activities involving that content. No admin action is required before rollout."
+        "value": "Microsoft Purview Insider Risk Management will enhance the Risky AI usage policy to support priority content, allowing alerts only for sensitive content involvement. Public preview starts mid-July 2025; general availability begins mid-September 2025. No admin action is needed before rollout; review policies to define priority content."
       },
       {
         "name": "Platforms",
@@ -13140,7 +13141,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Coming soon: Microsoft Purview Insider Risk Management is enhancing the <i>Risky AI usage</i> policy template with support for priority content. This allows organizations to define what content is most sensitive—such as <i>Sensitive Info Types (SITs), Trainable Classifiers, </i>and <i>Sensitivity Labels</i>—and receive alerts only when risky AI activity involves that content.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=484085\" target=\"_blank\">484085</a>.</p><p>[When this will happen:]\n</p><p>Public Preview: We will begin rolling out mid-July 2025 and expect to complete by late July 2025.\n</p><p>General Availability (Worldwide): We will begin rolling out mid-August 2025 and expect to complete by late August 2025.\n</p><p>[How this will affect your organization:]\n</p><p>This update enables more targeted risk detection by allowing admins to specify content to be considered high priority. Alerts will only trigger when risky AI activity involves this defined content, reducing noise and improving signal clarity.\n</p><p>The feature will be available by default and configurable by admins.\n</p><p>No changes will be made to existing policies unless updated by your organization.</p><p>Priority content matched in Insider Risk Management &gt; <i>Alerts:</i>\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/3920ce53-42fa-484b-9355-ec0256f34091\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>Define priority content in the policy at Insider Risk Management &gt; <i>Content to prioritize &gt; New insider risk policy &gt; Decide whether to prioritize content:</i>\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/1b732827-704c-4bc5-9479-90859c9ec596\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your admins and/or users about this change and update internal documentation.\n</p><p>Review your current Insider Risk Management policies and identify content that should be marked as priority.</p><p>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p><p>Learn more: The <i>Prioritize content in policies</i> section of <a href=\"https://learn.microsoft.com/purview/insider-risk-management-policies#prioritize-content-in-policies\" target=\"_blank\">Create and manage insider risk management policies | Microsoft Learn</a> (will be updated before rollout)</p>"
+      "content": "<p>Updated August 21, 2025: We have updated the timeline. Thank you for your patience.</p><p>Coming soon: Microsoft Purview Insider Risk Management is enhancing the <i>Risky AI usage</i> policy template with support for priority content. This allows organizations to define what content is most sensitive—such as <i>Sensitive Info Types (SITs), Trainable Classifiers, </i>and <i>Sensitivity Labels</i>—and receive alerts only when risky AI activity involves that content.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=484085\" target=\"_blank\">484085</a>.</p><p>[When this will happen:]\n</p><p>Public Preview: We will begin rolling out mid-July 2025 and expect to complete by late July 2025.\n</p><p>General Availability (Worldwide): We will begin rolling out mid-September 2025 (previously mid-August) and expect to complete by late September 2025 (previously late August).\n</p><p>[How this will affect your organization:]\n</p><p>This update enables more targeted risk detection by allowing admins to specify content to be considered high priority. Alerts will only trigger when risky AI activity involves this defined content, reducing noise and improving signal clarity.\n</p><p>The feature will be available by default and configurable by admins.\n</p><p>No changes will be made to existing policies unless updated by your organization.</p><p>Priority content matched in Insider Risk Management &gt; <i>Alerts:</i>\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/3920ce53-42fa-484b-9355-ec0256f34091\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>Define priority content in the policy at Insider Risk Management &gt; <i>Content to prioritize &gt; New insider risk policy &gt; Decide whether to prioritize content:</i>\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/1b732827-704c-4bc5-9479-90859c9ec596\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your admins and/or users about this change and update internal documentation.\n</p><p>Review your current Insider Risk Management policies and identify content that should be marked as priority.</p><p>Microsoft Purview Insider Risk Management correlates various signals to identify potential malicious or inadvertent insider risks, such as IP theft, data leakage, and security violations. Insider Risk Management enables customers to create policies based on their own internal policies, governance, and organizational requirements. Built with privacy by design, users are pseudonymized by default, and role-based access controls and audit logs are in place to help ensure user-level privacy.</p><p>Learn more: The <i>Prioritize content in policies</i> section of <a href=\"https://learn.microsoft.com/purview/insider-risk-management-policies#prioritize-content-in-policies\" target=\"_blank\">Create and manage insider risk management policies | Microsoft Learn</a> (will be updated before rollout)</p>"
     }
   },
   {
@@ -15354,13 +15355,14 @@
   },
   {
     "startDateTime": "2025-07-03T23:39:14Z",
-    "endDateTime": "2025-10-27T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-03T23:39:19.53Z",
-    "title": "Changing output format for some database properties in Exchange Online cmdlets",
+    "endDateTime": "2026-01-05T07:00:00Z",
+    "lastModifiedDateTime": "2025-08-21T14:27:32.23Z",
+    "title": "(Updated) Changing output format for some database properties in Exchange Online cmdlets",
     "id": "MC1108848",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "Feature update",
       "Admin impact"
     ],
@@ -15374,12 +15376,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Changing output format for some database properties in Exchange Online cmdlets to improve performance and consistency. Rollout starts August 2025. The update affects string format of specific properties, but no action is required. Review scripts for compatibility if they parse these values. On-premises Exchange is not affected."
+        "value": "Exchange Online PowerShell cmdlets will update certain database property formats starting October 2025 to improve performance and consistency. The change affects only Exchange Online, not on-premises. No action is required, but review scripts parsing these values for compatibility."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>We're updating the output format of certain properties returned by Exchange Online PowerShell cmdlets to improve performance and align with backend service optimizations. This change reduces unnecessary data retrieval and enhances consistency across services.\n</p><p>[When this will happen:]</p><p>Rollout will begin in August 2025.\n</p><p>[How this affects your organization:]</p><p>This update changes the string format of specific properties returned by Exchange Online cmdlets. For example, the Database property in the output of Get-Mailbox will change from:\n</p><p><code>Database : APCP153DG038-db080</code>\n</p><p>to:\n</p><p><code>Database : APCP153.PROD.OUTLOOK.COM/7ad9dea1-26b7-4088-ad73-708c219faff6</code>\n</p><p>This change applies only to <i>Exchange Online</i>. On-premises Exchange environments are not affected.\n</p><p>We do not expect organizations to have dependencies on these output formats. These values are informational only and not intended for admin control or automation. No changes to user workflows, admin configurations, or help desk processes are expected.\n</p><p>[What you can do to prepare:]</p><p>No action is required. There are no settings or controls to manage this change. If you have scripts that parse these property values, we recommend reviewing them to ensure compatibility.</p>"
+      "content": "<p>Updated August 21, 2025: We have updated the timeline. Thank you for your patience.</p><p>We're updating the output format of certain properties returned by Exchange Online PowerShell cmdlets to improve performance and align with backend service optimizations. This change reduces unnecessary data retrieval and enhances consistency across services.\n</p><p>[When this will happen:]</p><p>Rollout will begin in October 2025 (previously August) and complete by November 2025.\n</p><p>[How this affects your organization:]</p><p>This update changes the string format of specific properties returned by Exchange Online cmdlets. For example, the Database property in the output of Get-Mailbox will change from:\n</p><p><code>Database : APCP153DG038-db080</code>\n</p><p>to:\n</p><p><code>Database : APCP153.PROD.OUTLOOK.COM/7ad9dea1-26b7-4088-ad73-708c219faff6</code>\n</p><p>This change applies only to <i>Exchange Online</i>. On-premises Exchange environments are not affected.\n</p><p>We do not expect organizations to have dependencies on these output formats. These values are informational only and not intended for admin control or automation. No changes to user workflows, admin configurations, or help desk processes are expected.\n</p><p>[What you can do to prepare:]</p><p>No action is required. There are no settings or controls to manage this change. If you have scripts that parse these property values, we recommend reviewing them to ensure compatibility.</p>"
     }
   },
   {
@@ -16932,7 +16934,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6548927Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6548929Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6548931Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"328282\":[{\"RoadmapId\":328282,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3688584Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3688588Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":328282,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-21T16:07:52.368859Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -19276,7 +19278,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6544532Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6544536Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6544539Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6544542Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6544545Z\",\"LatestRing\":null}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3691332Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3691334Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3691335Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3691336Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3691337Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20199,7 +20201,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6550403Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6550406Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T14:07:03.6550408Z\",\"LatestRing\":null}]}"
+        "value": "{\"498490\":[{\"RoadmapId\":498490,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T16:07:52.368946Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3689462Z\",\"LatestRing\":null},{\"RoadmapId\":498490,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-21T16:07:52.3689463Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24285,7 +24287,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
