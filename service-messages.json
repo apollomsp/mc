@@ -12358,36 +12358,6 @@
     }
   },
   {
-    "startDateTime": "2025-06-27T23:09:40Z",
-    "endDateTime": "2025-08-27T07:00:00Z",
-    "lastModifiedDateTime": "2025-06-27T23:10:07.957Z",
-    "title": "Planned Maintenance: Windows 365 Service",
-    "id": "MC1105001",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Planned maintenance for Windows 365 will occur from July 7 to July 12, 2025, during non-peak hours in each region. Users may experience brief reconnections, but no service downtime is expected. No action is required, but notifying helpdesk and end-users of potential brief disruptions is recommended."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>To improve performance and reliability, we have scheduled planned maintenance for the Windows 365 service. This maintenance will occur during non-peak hours, based on the Client Device’s local time zone, to minimize potential impact on your organization. For organizations with users across multiple regions, we recognize that non-peak hours may vary. Maintenance will take place separately in each region, affecting only users connecting from that location during the scheduled time. The times listed below indicate the actual maintenance start times for each region, not adjusted for different time zones.\n</p><p>During this period, there will be no service downtime. Users are expected to experience little to no disruption.\n</p><p><b>Maintenance Schedule:\n</b></p><ul><li>Start Date: July 7, 2025\n</li><li>End Date: July 12, 2025\n</li></ul><p>Daily Maintenance Window Start Times:\n</p><ul><li>Africa: 23:00 UTC\n</li><li>Asia Pacific: 16:30 UTC\n</li><li>Australia: 14:00 UTC\n</li><li>Europe: 00:00 UTC\n</li><li>India: 19:30 UTC\n</li><li>North America: 06:00 UTC\n</li><li>South America: 05:00 UTC\n</li></ul><p>Daily Maintenance Window End Times:\n</p><ul><li>Africa: 03:00 UTC\n</li><li>Asia Pacific: 20:30 UTC\n</li><li>Australia: 18:00 UTC\n</li><li>Europe: 04:00 UTC\n</li><li>India: 23:30 UTC\n</li><li>North America: 10:00 UTC\n</li><li>South America: 09:00 UTC\n</li></ul><p>[How does this affect my organization?]\n</p><ul><li>During the maintenance window, users actively connected via UDP relay may experience brief, automatic reconnections, with each disconnection lasting less than a minute.\n</li><li>While the total planned impact duration is up to 4 hours within the maintenance window, disconnections will only occur 1-2 times and will not persist throughout the entire 4-hour period.\n</li><li>Users can establish new connections without impact during the maintenance window. The service will remain fully available without any downtime.\n</li></ul><p>[What do I need to do to prepare for this change?]\n</p><p>No further action is required, as systems will automatically recover from any temporary interruptions. You may want to notify your helpdesk and end-users of the scheduled maintenance and the potential for brief disruptions.\n</p><p>We are committed to providing a seamless experience and appreciate your understanding as we carry out this necessary maintenance to enhance the reliability of Windows 365 services.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-06-27T23:12:21Z",
     "endDateTime": "2025-09-01T07:00:00Z",
     "lastModifiedDateTime": "2025-06-27T23:12:42.55Z",
@@ -25324,46 +25294,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated May 30, 2025: We have updated the timeline below. Thank you for your patience.</p><p>We’re excited to announce the rollout of a new feature in the Teams admin center: Activity log for Teams Phone device management. This feature empowers Teams administrators to actively monitor and track device operations, providing greater control over remote operations on Teams devices.</p><p>Updated December 3, 2024: We have updated the rollout timeline below. Thank you for your patience.</p><p>Currently, the Activity log supports only the remote management of contacts on Teams Phones; however, we’re working to expand this feature to other device types and additional operation categories.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=420326\" target=\"_blank\">420326</a>.\n</p><p>[When this will happen:]</p><p>General Availability (Worldwide, GCC, GCC High, DoD): We will begin rolling out this feature in mid-July 2025 and expect to complete by late September 2025.</p><p>[How this will affect your organization:]\n</p><p>Admins can access the new Activity log by navigating to the Teams admin center <i>&gt; Teams Devices &gt; Phones &gt; Activity log</i>\n</p><p>Because only remote management of contacts for Teams Phones is currently supported, admins will be able to track operations such as <i>Add contacts</i> or <i>Delete contacts</i> and details like created time, impacted users, operation status, and more. By selecting an operation name, admins can view status updates at a granular level for each device involved in that operation.\n</p><p>The Activity log will be available by default.\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified date with no admin action required before the rollout. If you have questions or need further assistance regarding this feature, please reach out to our support team.</p><p>Before rollout, we will update this post with revised documentation.</p>"
-    }
-  },
-  {
-    "startDateTime": "2024-11-26T23:48:49Z",
-    "endDateTime": "2025-12-15T08:00:00Z",
-    "lastModifiedDateTime": "2025-08-20T14:36:20.14Z",
-    "title": "(Updated) Microsoft Teams Phones: Remotely manage contacts in Teams admin center",
-    "id": "MC942831",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "81379"
-      },
-      {
-        "name": "Summary",
-        "value": "Admins can soon remotely manage contacts for common area Teams Phones via the Teams admin center. The feature is rolling out globally through November 2025, allowing contact addition, review, and deletion with mailbox permissions required. No prior admin action is needed for the automatic rollout."
-      },
-      {
-        "name": "Platforms",
-        "value": "TeamsAndSurfaceDevices"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated August 20, 2025: We have updated the timeline. Thank you for your patience.</p><p>Coming soon to the Microsoft Teams admin center: Admins will be able to remotely manage contacts to ensure crucial contacts are available for users on their Teams Phone devices. This feature is only available for common area phones.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=81379\" target=\"_blank\">81379</a>.\n</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide, GCC): This feature is currently rolling out and will complete by late August 2025\n</p><p>General Availability (GCC High): We will begin rolling out this feature in late September 2025 and expect to complete by early October 2025.\n</p><p>General Availability (DoD): We will begin rolling out this feature in late October 2025 and expect to complete by early November  2025.</p><p> [How this will affect your organization:]\n</p><p>Find the detailed public documentation for this feature <a href=\"https://learn.microsoft.com/microsoftteams/phones/remote-contacts-management\" target=\"_blank\">here</a>.\n</p><p>IT admins can access the Manage contacts feature from Teams admin center &gt; Teams Devices &gt; Phones &gt; Common area phones. Select the applicable devices and then select Manage contacts.\n</p><p>In the right panel, use the Search box to search for and select contacts to add to selected devices. You can upload a CSV file for contacts not found through Search. Newly added contacts will be synchronized to the Calls app and People app on the Teams phones devices under the group name Company contacts within 24 hours.\n</p><p>For any device, admins can review or delete the added contacts from the Manage contacts right panel.\n</p><p>Note: Admins must have mailbox permissions to manage contacts for Teams Devices accounts. Without these permissions, there will be an error in Teams admin center when attempting to view or add contacts. In these situations, Admins need to refer to the Mailbox Permission Script Execution Guide available in the public documentation  and add the necessary permissions to the relevant accounts.\n</p><p>Track the progress and status of contact operations with the Activity log in the Teams phone inventory.\n</p><p>This new feature will be available by default.</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified date with no admin action required before the rollout. If you have questions or need further assistance regarding this feature, please reach out to our support team.</p>"
     }
   },
   {
