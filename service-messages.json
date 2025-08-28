@@ -11435,7 +11435,7 @@
   {
     "startDateTime": "2025-06-24T23:46:35Z",
     "endDateTime": "2025-11-10T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-11T21:14:28.347Z",
+    "lastModifiedDateTime": "2025-08-28T16:25:37.87Z",
     "title": "(Updated) Updates to user and group assignment views on the Microsoft Admin Center",
     "id": "MC1102762",
     "category": "stayInformed",
@@ -11455,12 +11455,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft Admin Center will update product licensing pages by late September 2025, separating direct license assignments (User tab) from group-based assignments (Groups tab) to improve clarity and performance. Admins should update documentation and training to reflect this new layout."
+        "value": "Microsoft Admin Center will update licensing pages by late September 2025, separating direct license assignments (User tab) from group-based ones (Groups tab). Product names are improved for multilingual support. This enhances clarity, performance, and requires updating related documentation and training."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated August 11, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>We’re updating the product licensing experience in the Microsoft Admin Center to make it easier for admins to distinguish between direct and group-based license assignments. This update improves clarity and performance on the product licensing pages (Billing &gt; Licenses), helping you quickly understand how licenses are assigned and to whom.</p><p>[When this will happen:]\n</p><p>Rollout will begin in late June 2025 and is expected to complete by late September 2025 (previously late July).&nbsp;</p><p>[How this will affect your organization:]\n</p><p>Admins will see a new layout on the product licensing pages:\n</p><ul><li>Users with directly assigned licenses will appear in the User tab.\n</li><li>Users assigned via Group-Based Licensing (GBL) will appear in the Groups tab.\n</li></ul><p>To view users assigned via GBL, select the group name from the list of group assignments for that product, then navigate to the Successfully assigned tab.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ee8b2edf-39de-43c0-a98c-3821b3dce9a6/e41d44e562a72a16ade566381b6e9fb2fa341718.png\" width=\"400\" height=\"\"></p><p>\n</p><p>This change is designed to improve page load performance and make license assignment paths more intuitive.\n</p><p>[What you can do to prepare:]\n</p><p>Review and update any internal documentation, training materials, or processes that assume all license assignments appear in the User tab. After this update, license assignments will be split between the User and Groups tabs based on how the license was assigned.</p>"
+      "content": "<p>Updated August 28, 2025: We have updated the content. Thank you for your patience.\n</p><p>We’re updating the product licensing experience in the Microsoft Admin Center to make it easier for admins to distinguish between direct and group-based license assignments. This update improves clarity and performance on the product licensing pages (Billing &gt; Licenses), helping you quickly understand how licenses are assigned and to whom.</p><p>[When this will happen:]\n</p><p>Rollout will begin in late June 2025 and is expected to complete by late September 2025 (previously late July).&nbsp;</p><p>[How this will affect your organization:]\n</p><p>Admins will see a new layout on the product licensing pages:\n</p><ul><li>Users with directly assigned licenses will appear in the User tab.\n</li><li>Users assigned via Group-Based Licensing (GBL) will appear in the Groups tab.</li><li>Product names have been updated and now offer improved multilingual support.</li></ul><p>To view users assigned via GBL, select the group name from the list of group assignments for that product, then navigate to the Successfully assigned tab.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ee8b2edf-39de-43c0-a98c-3821b3dce9a6/e41d44e562a72a16ade566381b6e9fb2fa341718.png\" width=\"400\" height=\"\"></p><p>\n</p><p>This change is designed to improve page load performance and make license assignment paths more intuitive.\n</p><p>[What you can do to prepare:]\n</p><p>Review and update any internal documentation, training materials, or processes that assume all license assignments appear in the User tab. After this update, license assignments will be split between the User and Groups tabs based on how the license was assigned.</p>"
     }
   },
   {
@@ -15674,30 +15674,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-28T18:04:25Z",
-    "endDateTime": "2025-08-28T18:04:25Z",
-    "lastModifiedDateTime": "2025-07-28T18:09:32.533Z",
-    "title": "Dynamics 365 Marketing – The public IP addresses of Dynamics 365 Marketing service are updating",
-    "id": "MC1123571",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "The public IP addresses of Dynamics 365 Marketing services in all regions are being updated. These new IPs are already available for allowlisting, and Dynamics 365 Marketing services will begin using them beginning August 4, 2025.<br><br><b> How does this affect me?</b><br>If you use custom analytics, as detailed in <a target=\"_blank\" href=\"https://aka.ms/ADO11610\">Prepare for analytic reporting with Power BI</a>, and restrict access to your storage accounts by firewall rules <b>using IP addresses</b>, you will be affected by the change.<br><br> If your custom analytics meet these criteria and are impacted, the marketing analytics export will be stopped due to unauthorized access to customer blob storage from Dynamics 365 Marketing services.<br><br>To verify if this affects your Analytics configuration, you can review the entity <i>Analytics configuration and check Service status</i>.<b> If your organization is using allowlisting by VNets (subnets), you will not be affected by this change</b>.<br><br><b>What action do I need to take?</b><br>Administrators with firewalls or network rights should adjust their allowlists accordingly. A list of all public IP addresses divided by geo is available here: <a target=\"_blank\" href=\"https://aka.ms/ADO11610/2\">Dynamics 365 Customer Insights - Journeys public IP addresses</a>"
-    }
-  },
-  {
     "startDateTime": "2025-07-28T18:44:27Z",
     "endDateTime": "2025-08-28T18:44:27Z",
     "lastModifiedDateTime": "2025-07-28T18:45:19.66Z",
@@ -17082,7 +17058,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-25T22:06:52.3795265Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979992Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979993Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979994Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T22:06:52.3795277Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979992Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979993Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979994Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-25T22:06:52.3795265Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T22:06:52.3795277Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -23803,7 +23779,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
