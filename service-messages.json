@@ -1275,38 +1275,6 @@
     }
   },
   {
-    "startDateTime": "2025-03-26T05:10:38Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-16T15:32:48.64Z",
-    "title": "(Updated) New Startup Boost task from Microsoft Office installer for Office applications",
-    "id": "MC1041470",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Office is introducing a new Startup Boost task to enhance performance and load-time for Office applications, starting with Word. The rollout begins in late June 2025 and completes by late September 2025. Startup Boost is optional, can be disabled, and requires specific system resources to function effectively. No admin action is required for the rollout."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated June 16, 2025: We have updated the timeline below. Thank you for your patience.\n</p><p>We are introducing a new Startup Boost task from the Microsoft Office installer to optimize performance and load-time of experiences within Office applications. &nbsp;After the system performs the task, the app remains in a paused state until the app launches and the sequence resumes, or the system removes the app from memory to reclaim resources. The system can perform this task for an app after a device reboot and periodically as system conditions allow.</p><p>[When this will happen:]</p><p>General Availability (Worldwide, GCC, GCC High, DoD): We will begin rolling out late June 2025 (previously late May) and expect to complete by late September 2025 (previously late July).</p><p>[How this will affect your organization:]</p><p>New tasks will be publicly visible in the Windows Task Scheduler.&nbsp;</p><ul><li>Task Names: Office Startup Boost and Office Startup Boost Logon.</li><li>Task Description: This task ensures that Office applications can take advantage of preloading performance enhancements.&nbsp;</li></ul><p>Initial roll-out will be on Microsoft Word. We have no announcements to make at this time regarding support for additional applications.</p><p>Startup Boost is only available when your PC has enough resources to run without impacting system performance. This includes having at least 8 GB of available RAM, and at least 5 GB of available disk space. When Startup Boost is active, the scheduled task will not run immediately at login to avoid slowing down your PC — it will wait 10 minutes to ensure the system is in a steady idle state. Additionally, Startup Boost will be disabled when Energy Saver mode is active. Startup Boost only runs if you have launched Word recently, and if you have not launched Word recently it will automatically disable itself.</p><p>Startup Boost is an optional performance feature. It is safe to disable. When disabled, Microsoft Office applications will be fully functional but may take longer to load. Customers can disable Startup Boost entirely by preventing the process from starting. To disable the feature, use the in-app setting, e.g., <i>Word &gt; Options &gt; General &gt; Startup Boost (under Start up Options)</i>.</p><p>Scheduled task entry in Task Scheduler:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/da011aba-1d94-42a5-8bb7-507075d26620\" style=\"width: 450px;\"></p><p><br></p><p>End-user UI to enable/disable Startup Boost in Word:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/e038abb2-c032-48ed-a891-5bfcba1bad8e\" style=\"width: 450px;\"><br></p><p>[What you need to do to prepare:]</p><p>This rollout will happen automatically with no admin action required.&nbsp;</p><p>You can disable this Startup Boost task like any other scheduled task. Please note that Office Installer will automatically recreate all scheduled tasks when it applies an update, so users who disable this task will need to disable it again after an Office update. Admins can disable this feature via Group Policy without needing to do so after each Office update.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-03-26T16:50:50Z",
     "endDateTime": "2025-09-26T07:00:00Z",
     "lastModifiedDateTime": "2025-05-21T17:23:39.32Z",
@@ -2794,7 +2762,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"487433\":[{\"RoadmapId\":487433,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470789Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707891Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707892Z\",\"LatestRing\":null},{\"RoadmapId\":487433,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707889Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":487433,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4707893Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -4867,7 +4835,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"489808\":[{\"RoadmapId\":489808,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961854Z\",\"LatestRing\":null},{\"RoadmapId\":489808,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961856Z\",\"LatestRing\":null},{\"RoadmapId\":489808,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961857Z\",\"LatestRing\":null}]}"
+        "value": "{\"489808\":[{\"RoadmapId\":489808,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0222Z\",\"LatestRing\":null},{\"RoadmapId\":489808,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0222002Z\",\"LatestRing\":null},{\"RoadmapId\":489808,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0222003Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -5555,46 +5523,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated September 9, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>Coming soon for Microsoft Viva Insights: The Skills landscape report, a new Microsoft Power BI report in the advanced insights app that introduces the skills landscape in your organization, powered by People Skills data. With this report, analysts and leaders can understand People Skills data and its usage in the organization, browse commonly used skills and areas of skills specialization, see how groups of skills are distributed across your groups, and explore the skills hierarchy.</p><p>A Microsoft 365 Copilot, Viva Suite, or Viva Insights license is required to enable People Skills data in Viva Insights.</p><p>This message applies to the Viva Insights web app.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?searchterms=491022\" target=\"_blank\">491022</a>.</p><p>[When this will happen]</p><p>Public Preview: We will begin rolling out late June 2025 and expect to complete by late July 2025.</p><p>General Availability (Worldwide): We will begin rolling out late September 2025 (previously early August) and expect to complete by late October 2025 (previously early September).&nbsp;</p><p>[How this will affect your organization]</p><p>Insights analysts will have access to a new <i>Skills landscape</i> Power BI template in the advanced insights app:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8c46c7ef-55ed-4624-bbea-17ac5a891b49\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>After setting up the report in Power BI, users will be able to access aggregated skills insights for their organization and use these to support use cases such as identifying skill gaps, optimizing workforce distribution, and promoting upskilling:</p><p>With this report, users can:</p><p> \n</p><ul><li>Understand People Skills data and its usage \n</li><li>Browse commonly used skills and areas of skills specialization \n</li><li>See how groups of skills are distributed in your organization \n</li><li>Explore skills hierarchy \n</li></ul><p></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/a171ef72-7b97-455f-a377-7c7261428d6e\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>[What you need to do to prepare]</p><p>This report template will be available in the advanced insights app with no admin action required, but the following steps are required for the Skills landscape report to process successfully:</p><ul><li>Before users in your organization can run this report, you must set up People Skills and enable the People Skills data in Viva Insights. Most organizations can quickly set up People Skills using the out-of-the-box skills library. You also have the option to curate your own library by importing custom skills. During the setup, make sure to select the option to allow People Skills in Viva Insights. After these settings are confirmed, it can take a few days for People Skills data to be processed and ingested in Viva Insights.</li><li>To enable People Skills data in one or more of your Viva Insights partitions, make sure your Insights administrator include this dataset when creating or editing a partition. This will become available once public preview starts.\n</li><li>Please make sure Insights analysts and users in your organization are aware of this upcoming change and direct them to the Skills landscape report documentation to learn more about how to use this report.</li></ul><p></p><p><i>Learn more</i></p><ul><li><a href=\"https://learn.microsoft.com/viva/insights/advanced/analyst/templates/skills-landscape\" target=\"_blank\">Skills landscape report | Microsoft Learn</a></li><li><a href=\"https://go.microsoft.com/fwlink/?linkid=2313228&amp;clcid=0x409\" target=\"_blank\">Overview of People Skills | Microsoft Learn</a></li><li>Blog: <a href=\"https://techcommunity.microsoft.com/blog/microsoft365copilotblog/announcing-people-skills-general-availability-and-new-skills-agent/4406364\" target=\"_blank\">Announcing People Skills general availability and new Skills agent | Microsoft Community Hub</a></li></ul><p></p>"
-    }
-  },
-  {
-    "startDateTime": "2025-05-16T22:24:43Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-12T16:02:01.197Z",
-    "title": "(Updated) OneDrive: Prompt for permitted users to sign in to OneDrive app with personal Microsoft account",
-    "id": "MC1075910",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft OneDrive"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "490064"
-      },
-      {
-        "name": "Summary",
-        "value": "Starting mid-July 2025, OneDrive will prompt users on corporate Windows devices to sign in to the app with their personal Microsoft account if already signed in on the device. This prompt does not merge files or accounts and can be disabled by administrators via policy."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated August 12, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>Users have long been able to use personal Microsoft accounts with the OneDrive app on corporate Windows devices—unless restricted by admin policy. This new feature introduces a prompt only when a personal account is already signed in on the device, encouraging users to also sign in to the OneDrive app with that account.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/e1f16d1f-e7ef-4d35-896d-183bffaa1015/032e219799e6662eff1cd20b1c150acb98cb5818.png\" style=\"width: 600px;\"><br></p><p>This message is associated with Microsoft 365 Roadmap ID<a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=490064\" target=\"_blank\"> 490064.</a></p><p>[When this will happen]</p><p>General Availability (Worldwide): We will begin rolling out in mid-July 2025 (previously mid-June) and expect to complete by early September 2025 (previously early August).</p><p>[How this will affect your organization]</p><p>This new feature introduces a prompt only when a personal account is already signed in on the device, encouraging users to also sign in to the OneDrive app with that account. This update does not “sync” personal files with corporate accounts or vice versa. It simply allows access to separate OneDrive accounts on the same device without merging content – similar to checking both work and personal emails on one device without combining inboxes. Administrators who have already restricted personal accounts on corporate devices can continue to manage this as before.\n</p><p>Importantly, this prompt does not combine or transfer files between personal and corporate accounts. Users must take deliberate action to move or save files between accounts, and Microsoft blocks the move of known folders to personal OneDrive accounts from domain joined devices by default. Additionally, data protection features such as sensitivity labels and data loss prevention (DLP) policies continue to apply.\n</p><p>Devices in regions where the Digital Markets Act is applicable will not see this prompt.\n</p><p>[What you need to do to prepare]</p><p>If you don’t want the message prompting users to sign into the OneDrive app with a personal account, you can use policies to disable the prompt.\n</p><p>Organizations that have already disabled personal OneDrive accounts on corporate devices with the <a href=\"https://learn.microsoft.com/en-us/sharepoint/use-group-policy#prevent-users-from-syncing-personal-onedrive-accounts\" target=\"_blank\">DisablePersonalSync</a> policy will not see this prompt. Administrators can also suppress it using the <a href=\"https://learn.microsoft.com/en-us/sharepoint/use-group-policy#hide-the-messages-to-sync-consumer-onedrive-files\" target=\"_blank\">DisableNewAccountDetection</a> policy. More information on configuring policies can be found <a href=\"https://learn.microsoft.com/en-us/sharepoint/use-group-policy#manage-onedrive-using-group-policy\" target=\"_blank\">here</a>.\n</p><p><br></p>"
     }
   },
   {
@@ -8673,45 +8601,6 @@
     }
   },
   {
-    "startDateTime": "2025-06-19T23:22:57Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-06-19T23:23:55.443Z",
-    "title": "Microsoft Defender for Office 365: AI-powered submissions response for improved result explainability",
-    "id": "MC1098943",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "488098"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Defender for Office 365 is introducing AI-powered explanations for email submission results, enhancing clarity on why messages are classified as spam, phishing, or clean. This feature will roll out globally from late June to mid-July 2025 and is available by default. No admin action is required."
-      },
-      {
-        "name": "Platforms",
-        "value": "Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We’re introducing a new AI-powered capability in Microsoft Defender for Office 365 that enhances the explainability of email submission results. This feature uses large language models (LLMs) to generate clear, human-readable rationales for why a submitted message was classified as spam, phishing, or clean.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=488098\" target=\"_blank\">488098</a>.</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide): We will begin rolling out late June 2025 and expect to complete by mid-July 2025.</p><p>[How this will affect your organization:]</p><p>This feature applies only to email submissions in the Microsoft Defender portal and does not include files, Teams messages, URLs, or user-submitted content at this time. This feature is available by default.</p><p>To view the new explanations:\n</p><ol><li>Go to <a href=\"https://security.microsoft.com\" target=\"_blank\">https://security.microsoft.com</a></li><li>Navigate to <i>Actions &amp; Submissions &gt; Submissions</i> or directly to <a href=\"https://security.microsoft.com/reportsubmission\" target=\"_blank\">https://security.microsoft.com/reportsubmission</a>\n</li><li>Select the <i>Emails </i>tab and open a submission\n</li><li>In the <i>Result Details</i> section, you’ll see an AI-generated explanation (when available)\n</li></ol><p>These AI-generated explanations may include:\n</p><ul><li>The reasoning behind the classification\n</li><li>Key indicators used in the decision\n</li><li>Optional behavioral insights</li></ul><p>If the AI explanation is unavailable, the system will revert to the standard explanation.</p><p>\n</p>Table: Supported result types with LLM explanations:<p></p><p></p><table>\n  <tbody>\n    <tr>\n      <th>Result Type</th>\n      <th>Description</th>\n    </tr>\n    <tr>\n      <td>Unknown</td>\n      <td>Microsoft could not reach a decision. May be due to inaccessible content or analyst disagreement.</td>\n    </tr>\n    <tr>\n      <td>Bulk</td>\n      <td>Sender classified as bulk. Future similar items may be blocked based on BCL.</td>\n    </tr>\n    <tr>\n      <td>Spam</td>\n      <td>Classified as spam. Future similar items may be blocked based on SCL.</td>\n    </tr>\n    <tr>\n      <td>No threats found</td>\n      <td>Item found clean. Filters may be updated.</td>\n    </tr>\n    <tr>\n      <td>Threats found</td>\n      <td>Item found malicious. Filters may be updated.</td>\n    </tr>\n  </tbody>\n</table>\n\n<p></p><p>Screenshot: AI-generated explanation for email submission results in Microsoft Defender portal:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/cc926151-0d54-45fb-8ed6-9dbb2c5c3d59\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review submission workflows to take advantage of the new explanations. You may want to notify your admins and/or users about this change and update internal documentation.\n</p><p>Learn more: <a href=\"https://learn.microsoft.com/defender-office-365/submissions-result-definitions\" target=\"_blank\">Submission result definitions - Microsoft Defender for Office 365 | Microsoft Learn</a>\n</p><p></p>"
-    }
-  },
-  {
     "startDateTime": "2025-06-19T23:25:03Z",
     "endDateTime": "2025-10-06T07:00:00Z",
     "lastModifiedDateTime": "2025-06-19T23:25:25.457Z",
@@ -8956,7 +8845,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"483506\":[{\"RoadmapId\":483506,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875181Z\",\"LatestRing\":null},{\"RoadmapId\":483506,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875184Z\",\"LatestRing\":null},{\"RoadmapId\":483506,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875186Z\",\"LatestRing\":null}]}"
+        "value": "{\"483506\":[{\"RoadmapId\":483506,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875184Z\",\"LatestRing\":null},{\"RoadmapId\":483506,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875181Z\",\"LatestRing\":null},{\"RoadmapId\":483506,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0875186Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10307,48 +10196,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-01T23:22:31Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-01T23:22:36.303Z",
-    "title": "Microsoft Teams: Compact notification size for users",
-    "id": "MC1107491",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "496175"
-      },
-      {
-        "name": "FeatureStatusJson",
-        "value": "{\"496175\":[{\"RoadmapId\":496175,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-10T23:26:38.577555Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":496175,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775553Z\",\"LatestRing\":null},{\"RoadmapId\":496175,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775554Z\",\"LatestRing\":\"StandardRelease\"}]}"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams is introducing a compact toast notification size for Windows users, available from July 2025. Users can enable it via Settings > Notifications > Choose Compact. This feature aims to reduce screen clutter and distractions. No admin action is required."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We’re introducing a new compact toast notification size in Microsoft Teams for Windows. This update gives users the option to reduce the visual footprint of notifications, offering a cleaner, more minimalist experience that helps reduce screen clutter and distractions.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=496175\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">496175</a>.</p><p>\n</p><p>[When this will happen:]</p><p>Targeted Release: Rolling out early July 2025, expected to complete by mid-July 2025.\n</p><p>General Availability (Worldwide): Rolling out mid-July 2025, expected to complete by late July 2025.\n</p><p>General Availability (GCC, GCC High, DoD): Rolling out late July 2025, expected to complete by late July 2025.</p><p>[How this will affect your organization:]</p><p>After this rollout, Windows users will be able to choose between the standard and compact toast notification sizes in Teams by navigating to:\n</p><p><i>Settings &gt; Notifications &gt; Choose Compact\n</i></p><p>This feature is off by default and must be enabled by the user. It is designed to improve focus and reduce screen clutter, especially in high-notification environments.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/7f4f2d6e-3594-48fb-b40c-47a495122492\" width=\"400\" height=\"\"></p><p>[What you need to do to prepare:]</p><p>No admin action is required. The feature will be available to all users once their Teams client updates to the supported build. There are no admin controls for this feature.\n</p><p>You may consider notifying your users about this new option to help them tailor their notification experience.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-07-01T23:22:59Z",
     "endDateTime": "2025-11-03T08:00:00Z",
     "lastModifiedDateTime": "2025-07-01T23:23:10.517Z",
@@ -10540,45 +10387,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated August 6, 2025: We have updated the timeline. Thank you for your patience.</p><p>We're introducing two new ways for users to engage with Microsoft 365 Copilot directly within Microsoft Edge for Business. These entry points are designed to enhance productivity by enabling quick, contextual access to Copilot from within the browser.</p><p>This change is associated with Microsoft 365 Roadmap IDs: <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=491473\" target=\"_blank\">491473</a> &amp; <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=489222\" target=\"_blank\">489222</a></p><p>\n</p><p>[When this will happen:]</p><p>General Availability (Worldwide): Find on Page Integration - rollout has begun and is expected to complete by late July 2025.</p><p>General Availability (Worldwide): Context Menu - roll out will begin mid-August and is expected to complete by late August 2025.</p><p>[How this will affect your organization:]\n</p><p>Once available, Entra ID users will automatically have access to these new Copilot entry points in Microsoft Edge for Business:\n</p><ul><li>Context Menu: Users can right-click on a webpage and select the Copilot option to generate a summary of the open page. Copilot will open in the side pane with the response.\n<ul><li>Microsoft 365 Roadmap ID 491473\n</li></ul></li><li>Find on Page Integration: When users type into the \"Find on Page\" input box, they can trigger Copilot to generate a response based on the entered text. The result will appear in the side pane.\n<ul><li>Microsoft 365 Roadmap ID 489222\n</li></ul></li></ul><p>These features are on by default. However, if your organization restricts Copilot from accessing page content via Data Loss Prevention (DLP), Copilot will not process the page content. If Copilot is disabled in your tenant, these features will not function as intended.\n</p><p>[What you can do to prepare:]\n</p><p>No admin action is required before the rollout. We recommend:\n</p><ul><li>Reviewing your current DLP and Copilot configurations to understand the impact.\n</li><li>Notifying users about the new capabilities.\n</li><li>Updating internal documentation as needed.\n</li></ul><p>For more information, refer to <a href=\"https://learn.microsoft.com/DeployEdge/edge-learnmore-copilot-page-summary-results\" target=\"_blank\">Microsoft 365 Copilot Chat in Edge and Access to Page Content</a>.</p><p>[Compliance considerations:]</p><ul><li>Changes to data processing/storage/access?\tMaybe - If Copilot is allowed to access page content, it processes that content to generate responses. While the data isn't stored long-term, it is accessed and processed in new ways, especially if DLP policies are not in place.\n</li><li>New or modified AI/ML capabilities?\tYes - This update introduces new generative AI interactions via Copilot in the browser, including summarization and contextual responses based on user input or page content.\n</li><li>New generative AI interaction for end users?\tYes - Users can now interact with Copilot directly from the browser via context menu and Find on Page, representing a new surface for generative AI engagement.</li><li>Modifies Purview capabilities (DLP, labels, etc.)?\tMaybe - If DLP policies are configured to block Copilot from accessing page content, this feature will be restricted. However, the feature itself does not modify DLP—it respects existing configurations.\n</li></ul><p><br></p>"
-    }
-  },
-  {
-    "startDateTime": "2025-07-02T22:41:21Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-09-04T19:06:41.397Z",
-    "title": "(Updated) Microsoft Copilot (Microsoft 365): Copilot Chat now offers meeting series selection on CIQ Menu",
-    "id": "MC1108138",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "481137"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Copilot Chat now allows users to select entire meeting series from the Calendar Insights Queue for more contextual prompts. This feature, rolling out worldwide by late September 2025, enhances Copilot’s understanding and requires no admin action. Meeting series data access and AI capabilities are updated accordingly."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated September 4, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>We're enhancing the meeting experience in Copilot Chat. Users will now be able to select both individual meeting instances and entire meeting series from the Calendar Insights Queue (CIQ) to include in their prompts to Copilot Chat. This provides more context and continuity for Copilot responses, improving productivity and relevance.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=481137\" target=\"_blank\">481137</a></p><p>\n</p><p>[When this will happen:]</p><p>General Availability (Worldwide): Rollout has begun and is expected to complete by late September 2025 (previously late July).\n</p><p>[How this affects your organization:]</p><p>Users can now insert meeting series—alongside individual meeting instances—into their Copilot Chat prompts. This enhancement enables more comprehensive context for Copilot, especially when referencing recurring discussions or decisions.\n</p><p>This feature is on by default and requires no admin action.\n</p><p>[What you can do to prepare:]</p><p>No preparation is required. This is a standard feature rollout.</p><p>[Compliance considerations:]</p><ul><li>Alters how existing data is processed/stored/accessed?\tYes - Meeting series data is now accessible to Copilot</li><li>Introduces/modifies AI/ML capabilities?\tYes - Enhances Copilot’s contextual understanding\n</li><li>New way of interacting with generative AI?\tYes - Users can now reference meeting series in prompts</li></ul>"
     }
   },
   {
@@ -12641,37 +12449,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>As mentioned in MC979816, expected with Intune's August (2508) service release, we are removing the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/enrollment-report-company-portal-abandon\" target=\"_blank\">Incomplete user enrollment report</a> (<i>Devices </i>&gt; <i>Monitor </i>&gt; <i>Incomplete user enrollment</i>) from the Intune admin center, along with the corresponding Graph APIs; getEnrollmentAbandonmentDetailsReport, getEnrollmentAbandonmentSummaryReport, and getEnrollmentFailureDetailsReport.</p><p>[How this will affect your organization:]\n</p><p>If you use the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/enrollment-report-company-portal-abandon\" target=\"_blank\">Incomplete user enrollment report</a>, you will no longer be able to access the report within the Intune admin center. Additionally, scripts or automation using the Graph APIs listed above will stop working soon after the report is removed.</p><p>[What you need to do to prepare:]\n</p><p>Update your documentation and reporting automation as needed and notify your admins. We recommend using the <a href=\"https://learn.microsoft.com/mem/intune/enrollment/view-enrollment-reports#enrollment-failures-report\" target=\"_blank\">Enrollment failures report</a> (<i>Devices </i>&gt; <i>Monitor </i>&gt; <i>Enrollment failures</i>) for details on enrollment failures, including those caused by abandonment during enrollment.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-07-25T00:39:27Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-25T18:54:42.16Z",
-    "title": "Updates to SharePoint video sharing",
-    "id": "MC1121509",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "SharePoint now auto-generates secure sharing links for videos on pages or news posts, improving accessibility for users without site access. New dialogs offer control over creating shareable links or copying videos. The feature is on by default, rolling out from mid-July to early August 2025."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated July 25, 2025: We have updated the supporting documentation. Thank you for your patience.</p><p>We're introducing <b>Sharing Links for Videos</b> in SharePoint to improve video accessibility when pages or news posts are shared. This enhancement ensures that videos remain viewable to users—even if they don’t have direct access to the site—by automatically generating secure sharing links for videos stored on the site. Additionally, users will see updated dialogs that provide more control and transparency when adding videos from external sources.</p>\n\n<b>When this will happen</b><p></p><p>\n</p><ul>\n  <li><b>Targeted Release:</b> Available now.</li>\n  <li><b>General Availability:</b> Rollout begins mid-July 2025 and is expected to complete by early August 2025.</li>\n</ul>\n\n<b>How this affects your organization</b><p></p><p>\n</p><p>Users will experience new dialogs when adding videos to SharePoint pages or news posts:</p>\n<ul>\n  <li><b>Create a shareable link for this video?</b>\n    <ul>\n      <li><b>Create link:</b> Generates a sharing link allowing anyone in the organization to view the video.</li>\n      <li><b>Don't create:</b> No sharing link is created; access remains restricted to users with existing permissions.</li>\n    </ul>\n  </li>\n  <li><b>Copy video to this page?</b>\n    <ul>\n      <li><b>Copy:</b> Copies the video to the site asset folder and creates a sharing link.</li>\n      <li><b>Don't copy:</b> Leaves the video in its original location; only users with existing permissions can view it.</li>\n    </ul>\n  </li>\n</ul>\n<p>This feature is <b>on by default</b> and applies to videos added via the File and media web part or the Stream web part.</p>\n\n<b>What you can do to prepare</b><p></p><p>\n</p><ul>\n  <li>Notify users about the new video sharing experience.</li>\n  <li>Update training materials to reflect the new dialogs and options.</li>\n  <li>Prepare your help desk to support questions related to video sharing and permissions.</li>\n  <li>For more information, refer to https://learn.microsoft.com/sharepoint.</li>\n</ul>\n\n<b>Compliance considerations</b><p></p><p>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p><p>Additional information:<a href=\"https://support.microsoft.com/office/using-videos-on-sharepoint-pages-5a0eb37c-81a8-45b7-875e-ff0515dd2e5f\" target=\"_blank\"> Using videos on SharePoint pages - Microsoft Support</a></p><p><br></p>\n<p></p>"
     }
   },
   {
@@ -17662,7 +17439,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"500634\":[{\"RoadmapId\":500634,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7957773Z\",\"LatestRing\":null},{\"RoadmapId\":500634,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7957775Z\",\"LatestRing\":null}]}"
+        "value": "{\"500634\":[{\"RoadmapId\":500634,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0216526Z\",\"LatestRing\":null},{\"RoadmapId\":500634,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0216529Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18572,36 +18349,6 @@
     }
   },
   {
-    "startDateTime": "2025-08-25T22:51:38Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-25T22:51:57.29Z",
-    "title": "Upcoming Retirement of Sub-Domains Feature in Defender for Cloud Apps – Cloud Discovery",
-    "id": "MC1141957",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The sub-domains feature in Microsoft Defender for Cloud Apps – Cloud Discovery will be retired starting September 22, 2025, and fully deprecated by December 31, 2025, due to low usage. No admin action is needed, but sub-domain insights will no longer be available after deprecation."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Due to low usage, we’re retiring the <b>sub-domains feature</b> in Microsoft Defender for Cloud Apps – Cloud Discovery. This change simplifies the Cloud Discovery experience and aligns with broader improvements in app discovery and reporting.</p>\n\n<b>When this will happen</b><p></p><p>\n</p><ul>\n<li><b>Start of retirement</b>: September 22, 2025</li>\n<li><b>Full deprecation</b>: December 31, 2025</li>\n</ul>\n<p>This change will be applied automatically. No admin action is required.</p>\n\n<b>How this affects your organization</b><p></p><p>\n</p><p>If your organization currently uses sub-domain discovery insights in Cloud Discovery, these insights will no longer be available after the deprecation date. This may impact how administrators view and analyze discovered apps at the sub-domain level.</p>\n<p>The feature is currently <b>on by default</b> for organizations using Cloud Discovery.</p>\n\n<b>What you can do to prepare</b><p></p><p>\n</p><p>We recommend reviewing your current Cloud Discovery configurations and adjusting any workflows or reports that rely on sub-domain insights. For more information on discovered apps and alternative insights, visit:</p>\n<ul>\n<li><a href=\"https://learn.microsoft.com/en-us/defender-cloud-apps/discovered-apps\">Learn more about discovered apps</a></li></ul>\n<p><b>Compliance considerations</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-08-25T22:53:21Z",
     "endDateTime": "2025-11-10T07:00:00Z",
     "lastModifiedDateTime": "2025-09-03T16:16:24.767Z",
@@ -18741,37 +18488,6 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability for admins to enforce the use of end-user credentials by managing how authentication is handled. This feature will be generally available starting September 19, 2025.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature provides admins with enhanced control over authentication by allowing them to restrict the use of maker-provided credentials across all tools within an agent. With this control in place, only end-user credentials can be used for authentication, ensuring a more secure and user-specific connection experience.<br><br> \n\nBy default, this feature is turned off, giving organizations the flexibility to enable it selectively through the Power Platform admin center for specific environments or managed environment groups.<br><br> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2025-08-26T21:59:11Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-26T21:59:35.437Z",
-    "title": "Microsoft Intune In Development for September 2025 is now available",
-    "id": "MC1142617",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The Microsoft Intune In Development page for September 2025 has been updated with upcoming features. Organizations should review the changes to prepare IT staff and update user guidance accordingly, as these features will appear in the next month or later releases."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>The <a href=\"https://aka.ms/Intune_InDevelopment\" target=\"_blank\">In development for Microsoft Intune</a> page in our documentation has been updated.</p><p>[How this will affect your organization:]\n</p><p>The <a href=\"https://aka.ms/Intune_InDevelopment\" target=\"_blank\">In development page</a> provides a list of features in upcoming releases of Microsoft Intune to assist in your readiness and planning. The list has now been updated. You will start seeing these changes in the next month or in a subsequent release.</p><p>[What you need to do to prepare:]\n</p><p>You can inform your IT staff and helpdesk of the upcoming changes listed on this page. Plan to update your user guidance, if you feel any of these features would be important to your users.</p>"
     }
   },
   {
@@ -21681,7 +21397,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"499893\":[{\"RoadmapId\":499893,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7956886Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":499893,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7956888Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7956889Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7956891Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7956892Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"499893\":[{\"RoadmapId\":499893,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0215345Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":499893,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0215349Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.021535Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0215351Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0215352Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21725,7 +21441,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"499892\":[{\"RoadmapId\":499892,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961927Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":499892,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961929Z\",\"LatestRing\":null},{\"RoadmapId\":499892,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.796193Z\",\"LatestRing\":null},{\"RoadmapId\":499892,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961931Z\",\"LatestRing\":null},{\"RoadmapId\":499892,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961932Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"499892\":[{\"RoadmapId\":499892,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0222055Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":499892,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0222057Z\",\"LatestRing\":null},{\"RoadmapId\":499892,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0222058Z\",\"LatestRing\":null},{\"RoadmapId\":499892,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0222059Z\",\"LatestRing\":null},{\"RoadmapId\":499892,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0222059Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -22718,7 +22434,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7955308Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7955312Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7955313Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7955315Z\",\"LatestRing\":\"TargetedRelease\"}]}"
+        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0221738Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.022174Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0221742Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0221744Z\",\"LatestRing\":\"TargetedRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -22995,7 +22711,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"499889\":[{\"RoadmapId\":499889,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961612Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961614Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T06:10:57.7961615Z\",\"LatestRing\":null}]}"
+        "value": "{\"499889\":[{\"RoadmapId\":499889,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0221628Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T08:09:54.022163Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-15T08:09:54.0221632Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23889,45 +23605,6 @@
     "body": {
       "contentType": "html",
       "content": "<p style=\"\">Updated September 10, 2025: We have updated the content. Thank you for your patience.&nbsp;</p><p style=\"\">&nbsp;Today, users can see Outlook contacts created with their Entra ID (AAD) account in Teams, but contacts created in Teams are not available in Outlook. To provide a consistent experience we are making changes to allow Teams contacts, created with a user's&nbsp;Entra ID (AAD) account, to be visible in Outlook as well.</p><p style=\"\"><b>Upcoming changes to contacts in Teams and Outlook:</b></p><p>Currently, Teams and Outlook maintain separate contact lists for enterprise users. Based on your feedback, we plan to introduce a unified contact experience, ensuring a consistent contacts experience across Outlook and Teams. In future, changes to contacts in users’ organization (Entra ID) account in Teams will reflect in Outlook and vice versa.&nbsp;</p><p>What's Happened so far:&nbsp;</p><ul><li>We have completed one round of migration of all Teams contacts to Outlook in January 2024.&nbsp;</li><li>As a result, users may see more contacts in Outlook, namely those created in Teams and potentially Skype for Business contacts (if enabled).&nbsp;</li><li>Existing Outlook contacts may also be enriched with additional details from corresponding Teams contacts.&nbsp;</li><li>Teams users can see Outlook contacts but cannot edit them inside Teams.&nbsp;</li></ul><p><b>What's Coming:</b>&nbsp;</p><p>Users will gradually upgrade to the new unified experience from December 2024. The new experience will be enabled for each user across all endpoints (Desktop, Mobile, Devices etc.) simultaneously. Once the new experience is enabled for a user, they will see same set of contacts in Outlook and Teams. Any change in Outlook will reflect in Teams and vice versa.&nbsp;</p><p>All Teams contact changes (creations and edits) made since January will be included in the unified store. During creations, a small set of users may see duplicate contacts in the unified store. To help users navigate the transition, category label ‘Teams Conflict’ will be applied to duplicate contacts. This label will help users see any conflicts (duplicates or inconsistencies) that need their attention.&nbsp;</p><p> [When this will happen:]</p><p>This activity is expected to be completed for all active users by September 2025 (previously August) tentatively (previously June). Once this activity is complete, users will work with a single contact list across Teams and Outlook.&nbsp;</p><p>[How this will affect your organization]<br></p><p>Once this change is complete, users will be able to see created contacts across both Outlook and Teams and vice versa.<br></p><p>[What you need to do to prepare]</p><p>Action Required: Update your organisation documentation and training materials to reflect the upcoming changes for the new unified contact experience.</p><p>You may consider updating your training and documentation as appropriate. If users wish to retain a snapshot of their existing contacts in Outlook, please encourage users to back-up their existing contacts using the export capability in Outlook.</p>"
-    }
-  },
-  {
-    "startDateTime": "2024-02-10T01:27:40Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-18T16:35:18.57Z",
-    "title": "(Updated) Apps for the web: Grid view for tasks in Microsoft To Do web version and To Do inside Microsoft Outlook",
-    "id": "MC714520",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 for the web"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "381749"
-      },
-      {
-        "name": "Summary",
-        "value": "Users will see tasks in a grid view in Microsoft To Do on the web and within Microsoft Outlook. The rollout starts in late April 2024 and completes by early August 2025. No action is needed, but notifying users and updating documentation is recommended."
-      },
-      {
-        "name": "Platforms",
-        "value": "Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p style=\"\">Updated June 18, 2025: We have updated the timeline below. Thank you for your patience.\n</p><p style=\"\">In Microsoft 365 apps for the web, users can see their tasks in a grid view and can update details inline in To Do on web and To Do app inside Microsoft Outlook.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=381749\" target=\"_blank\" style=\"\">381749</a></p>\n<p>[When this will happen:]</p><p>General Availability (Worldwide, GCC, GCC High, and DoD): We will begin rolling out late April 2024 (previously early April) and expect to complete by early August 2025 (previously early July).</p>\n\n<p>[How this will affect your organization:]</p>\n\n<p>When users open To Do on web within Microsoft Outlook, they will see their tasks in a tabular format or grid. They can continue to have the list view if preferred.</p><p><img src=\"https://cxcs.microsoft.net/file/messagecenter/en-us/ce9edee5-8464-4eaf-a78c-503e6f0dcc23\" style=\"width: 450px;\"><br></p>\n<p>[What you need to do to prepare:]</p>\n<p>There is no action needed to prepare for this change. You may want to notify your users about this change and update any relevant documentation as appropriate.</p>"
     }
   },
   {
@@ -26823,49 +26500,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>The January 2025 non-security preview update is now available for Windows 11, versions 23H2 and 22H2. Information about the contents of this update is available from the release notes, which are accessible from the <a href=\"https://support.microsoft.com/help/5050092\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a> update history page. To learn more about the different types of monthly quality updates, see <a href=\"https://aka.ms/Windows/MonthlyUpdates\" rel=\"noopener noreferrer\" target=\"_blank\">Windows monthly updates explained</a>.</div><div><br></div><div><b>Highlights for the Windows 11, versions 23H2 and 22H2 update:&nbsp;</b></div><ul><li>This update improves the previews that show when your cursor hovers over apps on the taskbar. The update also improves their animations.</li><li>An icon will appear in the system tray when you use an app that supports&nbsp;<a href=\"https://learn.microsoft.com/windows/ai/studio-effects/\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Studio Effects</a>. This only occurs on a device that has a neural processing unit (NPU).</li><li>In File Explorer, when you right-click items in the left pane, the “New Folder” command appears on the context menu.</li><li>You can now share directly to apps that support sharing in Windows. Just right-click local files in File Explorer or on the desktop.</li><li>This update adds a new keyboard shortcut in the Magnifier app: CTRL+ALT+Minus sign. Use it to quickly switch between the current zoom and 1X zoom.</li></ul><div><br></div><div>For instructions on how to install this update, see the KB for your operating system listed below:&nbsp;</div><ul><li>Windows 11, versions 23H2 and 22H2: <a href=\"https://support.microsoft.com/help/5050092\" rel=\"noopener noreferrer\" target=\"_blank\">KB5050092</a></li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-01-30T00:32:41Z",
-    "endDateTime": "2025-09-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-09T13:55:33.35Z",
-    "title": "(Updated) Microsoft Teams: Third-party chat and meeting keyboard shortcut support",
-    "id": "MC992216",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "472913"
-      },
-      {
-        "name": "FeatureStatusJson",
-        "value": "{\"472913\":[{\"RoadmapId\":472913,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.6910524Z\",\"LatestRing\":null},{\"RoadmapId\":472913,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.6910528Z\",\"LatestRing\":null},{\"RoadmapId\":472913,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-01-31T20:15:29.691053Z\",\"LatestRing\":null}]}"
-      },
-      {
-        "name": "Summary",
-        "value": "Users can now use third-party chat and meeting keyboard shortcuts in Microsoft Teams by selecting a layout in the settings. The rollout will start in May 2025 for targeted release and in July 2025 for general availability. No admin action is required, but notifying users is recommended."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop, Mac"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated July 9, 2025: We have updated the timeline below. Thank you for your patience.\n</p><p>Users familiar with keyboard shortcuts from third-party chat and meeting applications can use those same shortcuts in Microsoft Teams. To enable this, go to the <i>Settings and </i>more button in the upper right, access the keyboard shortcuts dialog, and select a communication or meeting layout. This allows users to apply the shortcuts they are used to from other applications.</p><p>\nThis message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&amp;searchterms=472913\" target=\"_blank\">472913</a>.\n</p><p>\n[When this will happen:]\n</p><p>Targeted Release: We will begin rolling out early May 2025 and expect to complete by mid-May 2025.</p><p>General Availability (Worldwide): We will begin rolling out late July 2025 (previously mid-June) and expect to complete by early August 2025 (previously late June). </p><p>[How this will affect your organization:]\n</p><p>Users in your organization can now customize their keyboard shortcut layout to better suit their preferences in Teams.</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically with no admin action required. You may want to notify your users about this change and update any relevant documentation as appropriate.</p>"
     }
   },
   {
