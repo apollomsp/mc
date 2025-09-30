@@ -22585,7 +22585,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"500702\":[{\"RoadmapId\":500702,\"Platform\":\"Android\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-30T04:08:20.7022976Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500702,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-30T04:08:20.7022978Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"500702\":[{\"RoadmapId\":500702,\"Platform\":\"Android\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-30T06:10:54.1868645Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500702,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-30T06:10:54.1868651Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -22628,7 +22628,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503109\":[{\"RoadmapId\":503109,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-30T04:08:20.7022182Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503109,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-30T04:08:20.7022184Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"503109\":[{\"RoadmapId\":503109,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-30T06:10:54.1869049Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503109,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-09-30T06:10:54.186905Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -23141,6 +23141,30 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>Introduction</b></p><p>\nWe’re introducing support for manual uploads of historical HR data in Organizational Data in Microsoft 365. Admins can now specify whether uploaded data is current or historical using a new toggle in the CSV upload experience. For historical data, an effective date can be assigned to ensure accurate processing by downstream apps such as Viva Insights. This enhancement improves data consistency across Microsoft 365 and supports retroactive updates for organizational reporting.</p><p><i>Figure i. Historical upload in Organizational Data in Microsoft 365</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/31925bcb-3cb3-4b44-a75e-d409cbdef935\" style=\"width: 400px;\" alt=\"user settings\"><b><br></b></p><p><b>When this will happen</b></p><p>\nGeneral Availability (Worldwide): Rollout will begin in late September 2025 and is expected to complete by late October 2025.</p>\n\n<p><b>How this affects your organization</b></p><p>\nOrganizations using Organizational Data to manage HR information will gain greater flexibility and control over user record updates. Historical uploads allow you to:\n</p><ul>\n<li>Correct past data errors</li>\n<li>Build comprehensive user histories</li>\n<li>Align data ingestion with behavioral processing timelines in Viva Insights</li>\n</ul><i>\nNote</i>: Historical data uploads are supported only via manual CSV uploads. Automated connectors will continue to support current data only. This feature is off by default and requires admin action to use.<p></p>\n\n<p><b>What you can do to prepare</b></p><p>\nYou can begin preparing by:\n</p><ul>\n<li>Reviewing internal HR data sources for historical records</li>\n<li>Preparing CSV files with accurate effective dates for upload</li>\n<li>Understanding how MODIS and Viva Insights process backdated attributes</li>\n</ul><b>Compliance considerations</b><p></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-09-30T04:07:35Z",
+    "endDateTime": "2025-10-30T04:07:35Z",
+    "lastModifiedDateTime": "2025-09-30T04:21:21.363Z",
+    "title": "Power Platform admin center - Copilot Settings being added for in-app agent features",
+    "id": "MC1162460",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "Starting October 6, 2025, we will begin gradually rolling out a change to start honoring the five new Copilot Settings listed below for admins in Power Platform admin center.<ul>\n<li><a href=\"https://aka.ms/12555/use-copilot-model-driven-apps\" target=\"_blank\">Chat Agent</a>\n<li><a href=\"https://aka.ms/12555/use-smart-paste-preview\" target=\"_blank\">Data Entry Agent</a>\n<li><a href=\"https://aka.ms/12555/find-data-with-ai\" target=\"_blank\">Data Exploration Agent</a>\n<li><a href=\"https://aka.ms/12555/visualize-data-in-copilot\" target=\"_blank\">Data Visualization Agent</a>\n<li><a href=\"https://aka.ms/12555/record-summaries\" target=\"_blank\">Summary Agent</a></ul>\n<b>How does this affect me? </b><br>\nThese new admin settings are in addition to the existing Environment Settings but are being kept in place to avoid the need for setting changes. The new admin setting location provides more control to admins with management at scale using Environment Groups and Rules. The existing settings will focus more on app specific settings. <br><br>\n<b>What do I need to do to prepare? </b><br>\nNo action will be required, but after the rollout is completed, admins will be encouraged to use the Copilot Settings to control access to the in-app agent features. <br><br>\nIf you would like more information on these settings, please visit <a href=\"https://aka.ms/12555/new-settings\" target=\"_blank\">Copilot Settings</a>."
     }
   },
   {
