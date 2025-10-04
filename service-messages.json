@@ -18338,7 +18338,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"499889\":[{\"RoadmapId\":499889,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.684275Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842748Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842752Z\",\"LatestRing\":null}]}"
+        "value": "{\"499889\":[{\"RoadmapId\":499889,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842748Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.684275Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842752Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23771,6 +23771,30 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing new timeout rules logic for <b>Representative Non-Response Time</b> and open state conversations in Dynamics 365 Customer Service. This feature will reach general availability on November 3, 2025.<br><br>\n<b>How does this affect me?</b><br>\nWe are updating the logic for the <b>Representative Non-Response Time</b> event to encompass a more holistic approach. The following describes the new logic for the <b>Representative Non-Response Time</b> trigger event:<br><br>\nOn initial contact between the service representative and the customer, if the customer has sent a message and started the chat, the system will calculate the time that the customer has been waiting after the representative is actively on the conversation:<ol type=\"a\">\n    <li>Once Representative Notification accepted, auto-assign Notification timeout, or Force Assign via Supervisor occurs, then:<ol type=\"i\"><li><b>Representative Non-Response Time</b> = <i>Current Time - Representative assignment time</i></li></ol></li><br>\n    <li>Once there is rapport (back and forth messages), the Representative Mid-conversation Logic will be used:<ol type=\"i\"><li><b>Representative Non-Response Time</b> = <i>Current Time - Last customer message</i></li>\n        <li>The <i>Last customer message</i> is determined by the duration the service representative has not responded to the customer's most recent message.</li></ol></li>\n</ol>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2025-10-04T19:04:57Z",
+    "endDateTime": "2025-11-04T19:04:57Z",
+    "lastModifiedDateTime": "2025-10-04T19:06:03.353Z",
+    "title": "Microsoft Copilot Studio – Draft with Copilot",
+    "id": "MC1165633",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are introducing the Draft with Copilot feature for Copilot Studio. This feature will help write or rewrite your prompts using Copilot to produce better outcomes. This feature will be available on November 3, 2025.<br><br> \n<b>How does this affect me?</b><br> \nWhen authoring a prompt, the prompt builder will allow you to trigger Copilot to assist in turning your intent into a more effective prompt that follows best practices and produces better outcomes. Additionally, Copilot can also generate sample test data to assist in running your validations quicker.<br><br> \n<b>What action do I need to take?</b><br> \nThis message is for awareness and no action is required."
     }
   },
   {
