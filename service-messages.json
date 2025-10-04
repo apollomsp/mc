@@ -20743,7 +20743,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"500702\":[{\"RoadmapId\":500702,\"Platform\":\"Android\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-10-03T21:47:40.1616504Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500702,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-10-03T21:47:40.1616505Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"500702\":[{\"RoadmapId\":500702,\"Platform\":\"Android\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-10-04T00:26:35.059885Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500702,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-10-04T00:26:35.0598854Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -20786,7 +20786,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503109\":[{\"RoadmapId\":503109,\"Platform\":\"iOS\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-03T21:47:40.1616137Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503109,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-03T21:47:40.1616141Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"503109\":[{\"RoadmapId\":503109,\"Platform\":\"iOS\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-04T00:26:35.0601355Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503109,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-04T00:26:35.0601357Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -23640,6 +23640,113 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to integrate advanced quality management capabilities across the supply chain in Dynamics 365 Supply Chain Management. This feature reached general availability on September 15, 2025.<br><br><b>How does this affect me?</b><br>Advanced quality management minimizes reliance on third-party quality management solutions and integrates throughout the Supply Chain Management solution. Key features include:<ul><li><b>Optimized testing strategies</b>: Flexible sampling plans, skip-lot testing, quality order creation triggers, sample management, instrument calibration, and acceptable quality limits (AQL) testing.</li><li><b>Regulatory compliance</b>: Approved customer lists, customer-specific certificates of analysis (COA), and enhancements to electronic signatures.</li><li><b>Digitized manufacturing for precision and compliance</b>: Electronic batch records and production dispensing.</li><li><b>Continuous improvement and risk mitigation</b>: Corrective and preventive actions (CAPA) management and enhancements to nonconformance.</li><li><b>Enhanced user experience</b>: Simplified entry of quality test results and new workspaces for quality management.</li></ul><b>What action do I need to take?</b><br>This message is for awareness and no action is required.<br><br>If you would like more information on this feature, please visit the <a target=\"_blank\" href=\"https://aka.ms/ADO12539\">Achieve regulatory compliance and quality excellence</a> article."
+    }
+  },
+  {
+    "startDateTime": "2025-10-03T23:01:22Z",
+    "endDateTime": "2025-12-15T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-03T23:01:42.523Z",
+    "title": "Plan for change: Update firewall and network settings for new Fully Qualified Domain Names for Windows 365",
+    "id": "MC1165051",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows 365"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft introduces three new wildcard FQDNs (*.windows.cloud.microsoft, *.service.windows.cloud.microsoft, *.windows.static.microsoft) for Windows 365 to simplify endpoints. Update firewall and network settings to allow outbound traffic to these domains by late 2025 to ensure Cloud PC functionality and avoid disruptions."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>To streamline and future-proof endpoint requirements for Windows 365, Microsoft is introducing <b>three new wildcard Fully Qualified Domain Names (FQDNs)</b> essential for service operation:</p><ul><li>*.windows.cloud.microsoft \n</li><li>*.service.windows.cloud.microsoft \n</li><li>*.windows.static.microsoft \n</li></ul><p>These <a href=\"https://learn.microsoft.com/azure/virtual-desktop/required-fqdn-endpoint?tabs=azure%22%20%5Cl%20%22session-host-virtual-machines%22%20%5Ct%20%22_blank\" target=\"_blank\">new endpoints</a> will reduce complexity, minimize future changes, and consolidate service traffic under unified domains. Existing FQDNs will gradually transition to these new domains as part of Microsoft’s<a href=\"https://learn.microsoft.com/microsoft-365/enterprise/cloud-microsoft-domain?view=o365-worldwide\" target=\"_blank\"> unified domain approach</a> used across Microsoft 365 services. \n</p><p><b>[When this will happen:]</b></p><p>The new endpoints are available now. The related Azure Network Connection (ANC) health check will begin rolling out in late October 2025 and is expected to complete by mid-November 2025. \n</p><p><b>[How will this affect your organization?]</b></p><p>You’ll need to update network access rules in your Windows 365 environment to allow traffic to the new endpoints. Ensure that any Proxy, VPN, or Secure Web Gateway configurations permit access to these endpoints, which are required only for outbound traffic from Cloud PCs. For optimal performance, route this traffic directly to Microsoft’s network without interception.  \n</p><p>Customers using <a href=\"https://learn.microsoft.com/windows-365/enterprise/azure-network-connections\" target=\"_blank\">Azure Network Connection (ANC)</a> should confirm these domains are allowed in firewall rules and not blocked by proxy or Secure Web Gateway policies. The new ANC health check will help identify accessibility issues once it becomes available.  \n</p><p>For <a href=\"https://learn.microsoft.com/windows-365/enterprise/deployment-options#microsoft-hosted-network\" target=\"_blank\">Microsoft Hosted Network</a> deployments, no underlying network changes are required, but local Cloud PC configurations must not block these domains. \n</p><p>Update your network configurations to ensure the new domains are accessible. These domains are required for service-critical traffic, and if they are not allowed, Cloud PC provisioning or operations may be disrupted. While no direct user impact is expected, inaccessible endpoints can affect Cloud PC functionality.  \n</p><p><b>[What you need to do to prepare]</b></p><ul><li>Notify your IT administrators about this change and update any internal guides or documentation to reflect the new requirements. </li><li>Make the necessary updates to your environment based on the guidance provided above. \n</li></ul><p><b>Additional Information \n</b></p><p>For detailed documentation, please see:  \n</p><ul><li><a href=\"https://learn.microsoft.com/azure/virtual-desktop/required-fqdn-endpoint?tabs=azure\" target=\"_blank\">Required FQDNs for Azure Virtual Desktop and Windows 365</a> \n</li><li><a href=\"https://learn.microsoft.com/microsoft-365/enterprise/cloud-microsoft-domain?view=o365-worldwide\" target=\"_blank\">Unified Domain Approach</a> \n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/azure-network-connections\" target=\"_blank\">Azure Network Connection</a> \n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/deployment-options#microsoft-hosted-network\" target=\"_blank\">Microsoft Hosted Network&nbsp;</a></li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-03T23:02:34Z",
+    "endDateTime": "2026-02-01T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-03T23:02:46.31Z",
+    "title": "Microsoft Defender for Office 365: Modernization of AIR platform for user submission investigation playbook",
+    "id": "MC1165053",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "503108"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Defender for Office 365 Plan 2+ is upgrading its Automated Investigations and Response (AIR) platform, starting with the user submission playbook, to improve speed and scalability. Rollout begins October 2025, with faster investigations, no downtime, unchanged workflows, and no admin action required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction:]</b></p><p><b>Applies to Defender for Office 365 Plan 2 or above customers:</b></p><p>We’re rolling out a <b>major upgrade to </b>the <b>Automated Investigations and Response (AIR) capability</b> in <i>Microsoft Defender for Office 365</i>. One of the key areas of feedback from customers has been latency in AIR’s automated investigations—particularly in the user submission investigation playbook, where fast and reliable automation is essential to reducing Security Operations Center (SOC) workload and enabling focus on higher-severity incidents.</p><p>In response to this feedback and as part of ongoing efforts to improve the end-to-end email submission response workflow in<i> Defender for Office 365</i>, AIR is being migrated from a legacy platform to a modernized infrastructure to improve performance, scalability, and speed. In this first phase, the user submission playbook (triggered by the alert policy “<i>Email reported by user as malware or phish</i>”) will be migrated. A separate communication will follow for the migration of other playbooks.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=503108\" target=\"_blank\">503108</a>.</p><p><b>[When this will happen:]</b></p><p><b>General Availability (Worldwide, GCC, GCCH, and DoD): </b>Rollout begins in early October 2025 and completes by late December 2025.</p><p><b>[How this affects your organization:]</b></p><p><i>Who is affected:</i></p><p>Organizations using Microsoft Defender for Office 365 with Automated Investigations and Response (AIR) enabled, specifically those leveraging the user submission investigation playbook.</p><p><i>What will happen:</i></p><ul><li>AIR investigations for user submissions will complete in minutes instead of hours, even during surge loads.</li><li>AIR is rebuilt on Microsoft Azure for flexibility and improved tenant-level isolation and load distribution.</li><li>The modernized platform enables faster development and deployment of new AIR features.</li><li>No disruptions or downtime during rollout.</li><li>User workflows remain unchanged.</li><li>This change is enabled by default.</li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>No admin action is required before rollout.</li><li>Review your current AIR configuration to assess impact.</li><li>Notify users and update internal documentation if needed.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/defender-office-365/air-about?view=o365-worldwide\" target=\"_blank\">Automated investigation and response (AIR) in Microsoft Defender for Office 365 Plan 2 | Microsoft Defender for Office 365 | Microsoft Defender | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/defender-office-365/air-auto-remediation?view=o365-worldwide\" target=\"_blank\">Automated remediation in Automated investigation and response (AIR) | Microsoft Defender for Office 365 | Microsoft Defender | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/defender-office-365/air-examples?view=o365-worldwide#example-a-user-reported-phishing-message-launches-an-investigation-playbook\" target=\"_blank\">Example: A user-reported phishing message launches an investigation playbook | Microsoft Defender for Office 365 | Microsoft Defender | Microsoft Learn</a>&nbsp; &nbsp;</li></ul><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-03T23:03:03Z",
+    "endDateTime": "2025-12-01T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-03T23:03:09.517Z",
+    "title": "Microsoft 365 Copilot: Teams channels available in Context IQ prompts",
+    "id": "MC1165054",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "429645"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot will integrate Teams channels into Context IQ prompts, allowing users to search and insert relevant channel data when writing prompts. This feature, enabled by default, rolls out worldwide from mid to late October 2025, requiring no admin action but user notification is recommended."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction:]</b></p><p>Microsoft is enhancing Copilot (Microsoft 365) with <b>Context IQ (CIQ)</b>, a set of AI capabilities that allows users to search for, select, and insert relevant enterprise or personal data directly into their prompts or conversations. When writing Copilot prompts in the chat box, users will be able to use Context IQ to search for and select Teams channels. This helps ground prompts in contextually relevant data, improving the accuracy and usefulness of Copilot responses.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=429645\" target=\"_blank\">429645</a>.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): Rollout begins mid-October 2025 and is expected to complete by late October 2025.</p><p><b>[How this affects your organization:]</b></p><p>Who is affected: All users of Microsoft Copilot (Microsoft 365) with access to Teams channels.</p><p>What will happen:</p><ul><li>Users will begin seeing their recent Teams channels in <i>Context IQ</i> (only the channels they have access to) when writing Copilot prompts:&nbsp;</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ba90de78-8070-4f67-913f-81221afeab6d/ac31d2cc5b8c770bc0b30aac0cd298cbd4a510ed.png\" style=\"width: 400px;\" alt=\"user settings\"></p><li>This feature is <b>enabled by default</b>.</li><li>Only channels the user has access to will be surfaced.</li><li>No impact to tenant admins or existing configurations.</li></ul><p><b>[What you can do to prepare:]</b></p><p>No admin action is required before or after rollout. However, you may want to:</p><ul><li>Notify users about this change.</li><li>Update internal documentation if you reference Copilot or Context IQ capabilities</li></ul><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/topic/using-context-iq-to-refer-to-specific-files-people-and-more-in-microsoft-365-copilot-and-copilot-chat-272ac2c1-c5f7-49c9-8a42-2a8a87846fa0\" target=\"_blank\">Using Context IQ to refer to specific files, people, and more in Microsoft 365 Copilot and Copilot Chat | Microsoft Support</a></p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
