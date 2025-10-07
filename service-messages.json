@@ -4720,7 +4720,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"491468\":[{\"RoadmapId\":491468,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177803Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":491468,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093788Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.509379Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093792Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093795Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177816Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"491468\":[{\"RoadmapId\":491468,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.509379Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093792Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093795Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177803Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":491468,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093788Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177816Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -20577,13 +20577,14 @@
   },
   {
     "startDateTime": "2025-09-30T23:08:23Z",
-    "endDateTime": "2025-11-30T08:00:00Z",
-    "lastModifiedDateTime": "2025-09-30T23:08:28.963Z",
-    "title": "Reminder: Update Email Configurations for Viva Engage Email Domain Migration",
+    "endDateTime": "2025-10-08T13:00:00Z",
+    "lastModifiedDateTime": "2025-10-07T20:48:06.223Z",
+    "title": "(Updated) Reminder: Update Email Configurations for Viva Engage Email Domain Migration",
     "id": "MC1162950",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "Feature update"
     ],
     "isMajorChange": false,
@@ -20596,12 +20597,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Starting October 6, 2025, Viva Engage emails will switch from @yammer.com domains to tenant-specific @engage.mail.microsoft domains. Admins must update mail flow rules, spam filters, and safe sender lists accordingly to ensure proper email delivery and filtering. Users should update personal inbox rules if needed."
+        "value": "Updated October 7, 2025: We have determined that this message was not published to the appropriate audience. You can safely disregard this message. Thank you for your feedback."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>[Introduction]</p><p>This is a reminder based on our previous communication (<a href=\"https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC1117814\" target=\"_blank\">MC1117814</a>) regarding the Viva Engage email sender domain update. Please ensure your email configurations are updated, as we plan to roll out the new email domains for your tenant starting Monday, October 6, 2025.</p><p>[When this will happen:]</p><ul><li>Rollout begins: Monday, October 6, 2025</li><li>Expected completion: Tuesday, October 7, 2025</li><li>Applies to U.S. and EU tenants currently receiving messages from @yammer.com and @eu.yammer.com.</li></ul><p><br></p><p>[How this will affect your organization:]\n</p><p>All emails from Viva Engage will now come from a new domain instead of yammer.com or eu.yammer.com The exact sender domain depends on the data residency for your Viva Engage network:</p><ul><li>US geo: from @yammer.com to @engage.mail.microsoft\n</li><li>EU geo: from EU​.yammer.com to @eu.engage.mail.microsoft</li></ul><p>In addition to the domain change, Viva Engage email addresses will now include a tenant-specific prefix to help differentiate your organization’s environment such as test and production tenants. For example, fabrikam.onmicrosoft.com will result in a “fabrikam” prefix. Continuing with this example, sender addresses may include:</p><ul><li>noreply_fabrikam@engage.mail.microsoft – for digest emails, leader identification, community expert identification, delegate notifications and others.\n</li><li>notifications_fabrikam@engage.mail.microsoft – for community posts, storyline updates, and other user activity notifications.\n</li><li>announcements_fabrikam@engage.mail.microsoft – for leadership announcements and other broad communications.\n</li></ul><p>For networks in the EU geo, you should change the sender domain in the examples above to noreply_fabrikam@eu.engage.mail.microsoft, etc.</p><p>These changes affect all Viva Engage emails, including notifications, announcements, and digests.</p><p></p><p>[What you need to do to prepare:]\n</p><p>Admins should review these configurations before and during rollout:</p><ul><li>Email Transport / Mail Flow Rules: Update any rules referencing @yammer.com (or EU.yammer.com) to also include @engage.mail.microsoft (and EU.engage.mail.microsoft) so encryption, forwarding, or redirection rules keep working.</li><li>Security Filters: Add the new domains to spam filters or allowlists if they were previously trusted.&nbsp;</li><li>Outlook Inbox Rules: Notify users to update personal rules that filter by domain (e.g., moving Yammer emails to a folder). Otherwise, Engage emails may land directly in their inbox.</li><li>Safe Senders / Allow Lists: Add the new domains to org-level and user safe sender lists to prevent misclassification as junk.</li></ul><p>Please communicate these changes in advance so users know how their rules or filters may be affected. If you don’t use custom rules, no changes are needed; the switch will occur automatically.</p>\n<p></p><p>Learn more: <a href=\"https://techcommunity.microsoft.com/blog/viva_engage_blog/viva-engage-email-sender-domain-update/4442161\" target=\"_blank\">Viva Engage Email Sender Domain Update</a></p><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated October 7, 2025: We have determined that this message was not published to the appropriate audience. You can safely disregard this message. Thank you for your feedback.</p><p>[Introduction]</p><p>This is a reminder based on our previous communication (<a href=\"https://admin.microsoft.com/Adminportal/Home?ref=MessageCenter/:/messages/MC1117814\" target=\"_blank\">MC1117814</a>) regarding the Viva Engage email sender domain update. Please ensure your email configurations are updated, as we plan to roll out the new email domains for your tenant starting Monday, October 6, 2025.</p><p>[When this will happen:]</p><ul><li>Rollout begins: Monday, October 6, 2025</li><li>Expected completion: Tuesday, October 7, 2025</li><li>Applies to U.S. and EU tenants currently receiving messages from @yammer.com and @eu.yammer.com.</li></ul><p><br></p><p>[How this will affect your organization:]\n</p><p>All emails from Viva Engage will now come from a new domain instead of yammer.com or eu.yammer.com The exact sender domain depends on the data residency for your Viva Engage network:</p><ul><li>US geo: from @yammer.com to @engage.mail.microsoft\n</li><li>EU geo: from EU​.yammer.com to @eu.engage.mail.microsoft</li></ul><p>In addition to the domain change, Viva Engage email addresses will now include a tenant-specific prefix to help differentiate your organization’s environment such as test and production tenants. For example, fabrikam.onmicrosoft.com will result in a “fabrikam” prefix. Continuing with this example, sender addresses may include:</p><ul><li>noreply_fabrikam@engage.mail.microsoft – for digest emails, leader identification, community expert identification, delegate notifications and others.\n</li><li>notifications_fabrikam@engage.mail.microsoft – for community posts, storyline updates, and other user activity notifications.\n</li><li>announcements_fabrikam@engage.mail.microsoft – for leadership announcements and other broad communications.\n</li></ul><p>For networks in the EU geo, you should change the sender domain in the examples above to noreply_fabrikam@eu.engage.mail.microsoft, etc.</p><p>These changes affect all Viva Engage emails, including notifications, announcements, and digests.</p><p></p><p>[What you need to do to prepare:]\n</p><p>Admins should review these configurations before and during rollout:</p><ul><li>Email Transport / Mail Flow Rules: Update any rules referencing @yammer.com (or EU.yammer.com) to also include @engage.mail.microsoft (and EU.engage.mail.microsoft) so encryption, forwarding, or redirection rules keep working.</li><li>Security Filters: Add the new domains to spam filters or allowlists if they were previously trusted.&nbsp;</li><li>Outlook Inbox Rules: Notify users to update personal rules that filter by domain (e.g., moving Yammer emails to a folder). Otherwise, Engage emails may land directly in their inbox.</li><li>Safe Senders / Allow Lists: Add the new domains to org-level and user safe sender lists to prevent misclassification as junk.</li></ul><p>Please communicate these changes in advance so users know how their rules or filters may be affected. If you don’t use custom rules, no changes are needed; the switch will occur automatically.</p>\n<p></p><p>Learn more: <a href=\"https://techcommunity.microsoft.com/blog/viva_engage_blog/viva-engage-email-sender-domain-update/4442161\" target=\"_blank\">Viva Engage Email Sender Domain Update</a></p><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -23029,7 +23030,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T20:07:30.6097395Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T20:07:30.6097397Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T20:07:30.6097398Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T20:07:30.6097399Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T20:07:30.6097399Z\",\"LatestRing\":null}]}"
+        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T22:06:33.202357Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T22:06:33.2023575Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T22:06:33.2023577Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T22:06:33.2023578Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-07T22:06:33.2023579Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23115,6 +23116,35 @@
     "body": {
       "contentType": "html",
       "content": "On November 1, 2025, we are releasing an update that introduces a change for Solution entity permissions. This change enforces WRITE permissions on the Solution entity, allowing users to add or remove solution components within a solution.<br><br>\n\n<b>What action do I need to take? </b><br>\nPlease grant WRITE permissions on your Solution entity if your users are required to add or remove solution components. <br><br>\n\n<b>Why is this action needed? </b><br>\nCurrently, users with READ permissions for the Solution entity can perform CRUD operations in Dataverse with solution components. <br><br> \n\nIf no action is taken prior to November 1, 2025, solution components may not be added nor removed from the Solution entity."
+    }
+  },
+  {
+    "startDateTime": "2025-10-07T21:01:02.41Z",
+    "endDateTime": "2025-10-21T21:01:02.41Z",
+    "lastModifiedDateTime": "2025-10-07T21:01:03.183Z",
+    "title": "Updates available for Microsoft 365 Apps for Current Channel",
+    "id": "MC1167587",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "ExternalLink",
+        "value": "https://docs.microsoft.com/officeupdates/"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We&#39;ve released updates to the following update channel for Microsoft 365 Apps:</p>\r\n<ul><li>Current Channel</li></ul>\r\n<p>[When this will happen:]</p>\r\n<p>We&#39;ll be gradually rolling out this update of Microsoft 365 Apps to users on that update channel starting October 7th, 2025 (PST).</p>\r\n<p>[How this will affect your organization:]</p>\r\n<p>If your Microsoft 365 Apps clients are configured to automatically update from the Office Content Delivery Network (CDN), then no action is required.</p>\r\n<p>If you manage updates directly you can now download this latest update and begin deployment.</p>\r\n<p>[What you need to do to prepare:]</p>\r\n<p>To get more details about this update view the following release notes:</p>\r\n<ul><li><a href=\"https://docs.microsoft.com/officeupdates/current-channel#version-2509-october-07\" target=\"_blank\" rel=\"noopener noreferrer\">Current Channel</a></li></ul>"
     }
   },
   {
