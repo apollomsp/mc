@@ -3720,35 +3720,6 @@
     }
   },
   {
-    "startDateTime": "2025-05-12T23:27:54Z",
-    "endDateTime": "2025-10-11T07:00:00Z",
-    "lastModifiedDateTime": "2025-05-12T23:28:17.657Z",
-    "title": "Microsoft Planner being added Planner premium subscriptions.",
-    "id": "MC1072394",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Project for the web"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Planner will be added to subscriptions that include Project for the web and Project in Teams starting June 11, 2025. This includes various Planner and Project plans. From June 30, 2025, Planner premium email notifications will require Planner to be enabled and managed through Planner web. Review the provided documentation if needed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>To support the move to Planner for the web and Planner in Teams (MC1068905), Planner is being added to subscriptions that include access to Project for the web and Project in Teams.&nbsp;</p><p>On or after June 11th, 2025, the Planner service plans&nbsp;</p><ul><li>Microsoft Planner (PROJECTWORKMANAGEMENT) for all environments (except GCC)&nbsp;</li><li>Office 365 Planner for Government (PROJECTWORKMANAGEMENT_GOV) for GCC </li></ul><p>will be added to the following subscriptions:</p><ul><li>Planner Plan 1 (including GCC and GCCH counterparts)&nbsp;</li><li>Planner and Project Plan 3 (including faculty, student, GCC and GCCH counterparts)&nbsp;</li><li>Planner and Project Plan 5 (including faculty, student, GCC and GCCH counterparts)&nbsp;</li></ul><p>Subscriptions that include Dynamics Project Operations and Dynamics Project Operations Attach like Dynamics 365 Plan 1 Enterprise Edition&nbsp;</p><p>The Planner service plans directly support the infrastructure required to run Microsoft Planner and Planner premium.&nbsp; After June 30th, Planner premium email notification will require Planner to be enabled in your organization and email notifications settings can be managed only through Planner web.\n</p><p>[How this affects your organization:]</p><p>If your organization already has a subscription that includes Planner and it is enabled, there will be no impact to you.\n</p><p>On or after June 11th, 2025, the service plans will be “on” by default for the subscriptions referenced above and Microsoft Planner will be available in your organization. &nbsp; On or after June 30th, Planner premium email notifications will require Planner to be enabled for your organization to continue to work. Email notification settings can be managed only through Planner web.\n</p><p>[Wha you can do to prepare:]</p><p>Review the documentation on the Microsoft Planner service if your organization doesn't use Microsoft Planner today&nbsp;<a href=\"https://learn.microsoft.com/planner/planner-for-admins\" target=\"_blank\" style=\"font-family: sans-serif; font-weight: 400; background-color: rgb(255, 255, 255);\">Microsoft Planner for admins - Microsoft Planner | Microsoft Learn</a>.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-05-12T23:39:09Z",
     "endDateTime": "2026-01-02T08:00:00Z",
     "lastModifiedDateTime": "2025-05-12T23:39:18.337Z",
@@ -11305,38 +11276,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Windows PowerShell 2.0 is removed from Windows 11, version 24H2 starting with the August 2025 non-security update. It’s also removed from Windows Server 2025 starting with the September 2025 security update. Windows Insider preview builds already reflect this change as of July 2025. Windows PowerShell 2.0 is over 14 years old, lacks many security enhancements of the later versions, and has been deprecated since 2017. By using the newer and supported PowerShell 7 or PowerShell 5.1, you can help ensure that scripts run safer. If you have legacy scripts or software that explicitly depend on PowerShell 2.0, you’ll need to either update them or use a workaround to prevent disruptions.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><ul><li>2017: PowerShell 2.0 was <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">deprecated</a>.&nbsp;</li><li>July 2025: PowerShell 2.0 is removed from <a href=\"https://blogs.windows.com/windows-insider/2025/07/03/announcing-windows-11-insider-preview-build-27891-canary-channel/\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Insider preview builds</a>.&nbsp;</li><li>August 2025 Windows non-security update: PowerShell 2.0 is removed from Windows 11, version 24H2 and later.&nbsp;</li><li>September 2025 Windows security update: PowerShell 2.0 is removed from Windows Server 2025 and later.&nbsp;</li></ul><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>This removal is part of a <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">broader effort</a> to clean up legacy code, reduce the complexity of the PowerShell ecosystem, and improve Windows security. For most users and organizations, this change will be uneventful – newer versions of PowerShell (5.1 and 7.x) continue to be available and supported. However, if you have legacy scripts or software that explicitly depends on PowerShell 2.0, you will need to take action (update them or use a workaround) to prevent any disruptions.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><ul><li>Recommended: Migrate scripts and tools to newer PowerShell versions. Microsoft primary guidance is to update anything using PowerShell 2.0 to use PowerShell 5.1 or PowerShell 7. PowerShell 5.x introduced many improvements and is backward-compatible for almost all commands and modules. The PowerShell team <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/#i%E2%80%99m-a-powershell-expert-just-give-me-the-quick-version\" rel=\"noopener noreferrer\" target=\"_blank\">article</a> provides a guide for this migration.&nbsp;</li><li>Update or replace outdated software. In some cases, the fix might be to upgrade the software that needed PowerShell 2.0. For example, if an old installer fails, look for a newer version of that product.&nbsp;</li><li>See Additional information for more resources.&nbsp;</li></ul><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><ul><li>Read <a href=\"https://support.microsoft.com/topic/fe6d1edc-2ed2-4c33-b297-afe82a64200a\" rel=\"noopener noreferrer\" target=\"_blank\">PowerShell 2.0 removal in Windows</a> for further details.&nbsp;</li><li>Developers’ <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/#i%E2%80%99m-a-powershell-expert-just-give-me-the-quick-version\" rel=\"noopener noreferrer\" target=\"_blank\">quick guide</a> to PowerShell migration.&nbsp;</li><li>Consult the comprehensive list of <a href=\"https://learn.microsoft.com/windows/whats-new/deprecated-features\" rel=\"noopener noreferrer\" target=\"_blank\">deprecated features for Windows client</a>.&nbsp;</li><li>Visit the <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">original 2017 deprecation announcement</a>.&nbsp;</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-08-12T23:00:20Z",
-    "endDateTime": "2025-10-11T07:00:00Z",
-    "lastModifiedDateTime": "2025-09-18T15:18:24.48Z",
-    "title": "(Updated) Teams app versions 1.12 and earlier will no longer appear in Microsoft 365 admin center",
-    "id": "MC1134169",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 suite"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Teams apps version 1.12 and earlier will be removed from the Microsoft 365 admin center's Integrated apps view starting late August 2025, completing by late September. These apps remain fully manageable in the Teams admin center, with no impact on user experience or compliance. No action is required."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated September 18, 2025: We have updated the timeline. Thank you for your patience.</p><p><b>Introduction</b></p>\n<p>To streamline app management and reduce clutter, Teams apps with version numbers below 1.12 will be removed from the Integrated apps view in the Microsoft 365 admin center. These apps will continue to be fully visible and manageable in the Teams admin center.</p>\n\n<p><b>When this will happen</b></p>\n<p><b>General Availability (Worldwide):</b> We will begin rolling out in late August 2025 and expect to complete by late September 2025 (previously mid-September).</p>\n\n<p><b>How this affects your organization</b></p>\n<p>Apps below version 1.12 will no longer appear in the Microsoft 365 admin center. However, there is no change to how these apps are managed—they remain fully supported in the Teams admin center, and the upgrade path and user experience are unchanged.</p>\n\n<p><b>What you can do to prepare</b></p>\n<ul>\n<li>No action is required.\n</li><li>If your organization relies on the Microsoft 365 admin center for app visibility, consider updating apps to supported versions to retain visibility there.\n</li><li>There is no required timeline for upgrading apps to version 1.12 or higher. Admins may choose to upgrade at their discretion.\n</li><li>There is no change to the user experience—apps below version 1.12 will simply not appear in MAC &gt; Settings &gt; Integrated apps.</li><liadmins should=\"\" continue=\"\" using=\"\" the=\"\" teams=\"\" admin=\"\" center=\"\" to=\"\" manage=\"\" apps=\"\" with=\"\" version=\"\" 1.12=\"\" and=\"\" below.<=\"\" li=\"\">\n</liadmins></ul>\n\n<p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide\" target=\"_blank\">Manage agents for Microsoft 365 Copilot in the Microsoft 365 admin center | Microsoft 365 | Microsoft Learn</a></p><p><b>Compliance considerations</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -22696,7 +22635,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T06:08:51.3251544Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T06:08:51.3251547Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T06:08:51.3251548Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T06:08:51.3251549Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T06:08:51.3251551Z\",\"LatestRing\":null}]}"
+        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T08:07:49.7975817Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T08:07:49.7975824Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T08:07:49.7975825Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T08:07:49.7975826Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T08:07:49.7975828Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
