@@ -4514,7 +4514,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"491468\":[{\"RoadmapId\":491468,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093795Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177803Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":491468,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093788Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.509379Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093792Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177816Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"491468\":[{\"RoadmapId\":491468,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177803Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":491468,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093788Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.509379Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093792Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-03T16:02:03.5093795Z\",\"LatestRing\":null},{\"RoadmapId\":491468,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-11T17:09:24.6177816Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -9420,38 +9420,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-30T00:08:51Z",
-    "endDateTime": "2025-10-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-14T21:44:01.307Z",
-    "title": "(Updated) Power BI Cognitive Services and Azure Machine Learning features retiring; transition to Fabric AI services",
-    "id": "MC1124567",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power BI"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Power BI is retiring Cognitive Services and Azure Machine Learning features between August 11 and September 15, 2025. New model creation is disabled from August 11; existing models refresh until September 15, after which support ends. Users should transition to Fabric AI services and update documentation accordingly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated August 14, 2025: The retirement began on August 11, 2025, and will be complete by September 15, 2025. The retirement in August will NOT impact your current models that use these services, we will still refresh and support items until September 15&nbsp; when it will be deprecated. As of August 11, the ability to add new models that leverage these services has been removed.</p><p><b>Introduction\n</b></p><p>We’re retiring Cognitive Services and Azure Machine Learning (Azure ML) features in Power BI. This change supports our investment in Microsoft Fabric, where Auto ML and other AI capabilities will continue to evolve and improve.\n</p><p><b>When this will happen\n</b></p><p>The retirement will begin on August 11, 2025, and complete by September 15, 2025. The retirement starting in August will NOT impact your current models that use these services, we will still refresh and support items until Sept 15th when it will be deprecated. In August, we will remove the ability to add new models that leverage these services.</p><p><b>How this affects your organization\n</b></p><p>If your organization is using Cognitive Services or Azure ML in Power BI, please note:</p><p>Starting August 11:\n</p><ul><li>Users will no longer be able to create new models using Cognitive Services or Azure ML.\n</li><li>The UI entry point for these features will be removed.</li><li>Existing models will continue to refresh</li></ul><p>Until September 15:\n</p><ul><li>Existing models that use AI services will continue to refresh.\n</li><li>After September 15, refresh support for these models will be discontinued.\n</li></ul><p>These changes will happen automatically. No admin action is required. Please notify your users, update internal documentation, and share information about AI services in Fabric.\n</p><p><b>What you can do to prepare\n</b></p><ul><li>Review existing Dataflows for dependencies on Cognitive Services or Azure ML.\n</li><li>Transition to Auto ML in Fabric for supported AI scenarios.\n</li><li>Learn more: <a href=\"https://learn.microsoft.com/en-us/fabric/data-science/ai-services/ai-services-overview\" target=\"_blank\">AI services in Fabric (preview)</a></li><li>Learn more: <a href=\"http://Learn more: https://powerbi.microsoft.com/en-us/blog/cognitive-services-and-azure-ml-for-dataflows-will-be-fully-retired-by-september-15th-2025/\" target=\"_blank\">Microsoft Power BI Updates Blog: Cognitive services and Azure ML will be fully retired by September 15th, 2025</a></li></ul><p><b>Compliance considerations\n</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-07-30T23:45:39Z",
     "endDateTime": "2025-10-27T07:00:00Z",
     "lastModifiedDateTime": "2025-09-05T16:12:10.61Z",
@@ -11143,44 +11111,6 @@
     }
   },
   {
-    "startDateTime": "2025-08-12T23:00:50Z",
-    "endDateTime": "2025-10-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-12T23:02:00.41Z",
-    "title": "[Copilot Extensibility] Admins can manage ownerless Copilot agents with new lifecycle controls",
-    "id": "MC1134170",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 suite",
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "481519"
-      },
-      {
-        "name": "Summary",
-        "value": "Admins will gain lifecycle controls to identify, review, delete, or block ownerless Copilot agents created by departed users, improving security and governance. The feature rolls out globally from late August to mid-September 2025, with owner assignment for agents coming in October. No prior configuration is needed."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>Introduction</b></p><p>We're introducing a new lifecycle management feature that helps admins identify and take action on ownerless agents—those created by users who have left the organization. This update improves visibility and control over agent inventory, helping maintain security and governance across your tenant.</p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=481519\" target=\"_blank\">481519</a>.</p><p><b>When this will happen</b></p><p>General Availability (Worldwide): Rollout begins in late August 2025 and is expected to complete by mid-September 2025.</p><p><b>How this affects your organization</b></p><p>Admins will be able to:</p><ul><li>Use the Missing an Owner dashboard card to filter and view agents without valid owners.</li><li>Select individual agents to review details and choose to delete or block them.</li><li>Ability for admin to assign an owner for a ownerless agent is coming soon in October.<p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/dfa2d5ed-27ab-4755-bf2a-ed0fb32c2089\" style=\"width: 400px;\" alt=\"Screenshot of Ownerless agents count view.\"></p></li></ul><p><i>Note: </i>Only agents created using <i>Agent Builder</i> or <i>Agents Toolkit</i> can be deleted or blocked from within the MAC portal.</p><p>This feature enhances security and ensures proper lifecycle management of Copilot agents when creators exit the organization.</p><p></p><p></p><p><b>What you can do to prepare</b></p><p>Inform your admin team about this upcoming capability so they’re ready to manage ownerless agents once the feature becomes available. No configuration is required prior to rollout.</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-08-12T23:02:18Z",
     "endDateTime": "2025-12-08T07:00:00Z",
     "lastModifiedDateTime": "2025-09-09T19:16:07.907Z",
@@ -11277,35 +11207,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>Introduction</b></p><p>To help reduce accidental message sends, Outlook mobile is updating the placement of the Send button in the compose view. The button will move from the bottom toolbar to the header area, placing it in a less crowded location. This change supports a more intentional and error-free messaging experience for mobile users by minimizing the likelihood of accidental taps.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=499900\" target=\"_blank\">499900</a>.</p><p><b>When this will happen</b></p><p><b>General Availability (Worldwide, GCC, GCC High, and DoD):&nbsp;</b>We will begin rolling out in early September 2025 and expect to complete by early March 2026.</p><p><b>How this will affect your organization</b></p><p>Once this change is deployed, users on <b>Outlook mobile clients (Android and iOS)</b> will see the Send button relocated to the top of the compose view. This update is designed to reduce accidental taps and improve usability. The feature will be <b>enabled by default</b>.</p><p>The following screenshots illustrate the updated Send button placement in the compose view on Outlook mobile.</p><p><i>Image 1 - New Send button placement in Outlook for iOS – full compose view:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/c33e40e1-d34f-486a-896a-1d5c7ee1ff7b/09c2ffc6070adc243487147ca8cc483802da9856.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Image 2 - New Send button placement in Outlook for iOS – small compose view:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/58e48622-30d3-44ab-8a7e-b5a4892c0892/45010350909549feed85806c99cd2f43b101a58c.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Image 3 - New Send button placement in Outlook for Android – full compose view:&nbsp;</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/6511f543-36b4-495a-be61-6ce85eea12e6/e146f0b843e6e9ca7f73bc3b4bbbaf8af87d43a9.png\" alt=\"user settings\" style=\"width: 400px;\"></p><p>\n</p><p>This change does <b>not affect Outlook on the web or desktop clients</b>.</p><ul><li><b>Add-ins and customizations: </b>This change does not affect existing add-ins or customizations in the compose view.\n</li><li><b>Accessibility tools and keyboard shortcuts:</b> There will be no impact.\n</li><li><b>Consistency: </b>The new placement is consistent across screen sizes and supported browsers.</li></ul><p><b>What you can do to prepare</b></p><p>No admin action is required.\n</p><p>We recommend notifying your users about this change and updating any relevant training materials or documentation to reflect the new button placement.</p><p>If applicable, test any custom add-ins or UI extensions in the compose view to ensure compatibility, although no known impact is expected.</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-08-12T23:04:54Z",
-    "endDateTime": "2025-10-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-12T23:04:59.893Z",
-    "title": "Microsoft Teams: “Summarize thread” replaces “Highlights from this conversation” in post/reply channels",
-    "id": "MC1134178",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams will replace \"Highlights from this conversation\" with \"Summarize Thread\" in post/reply channels starting mid-August 2025. This new feature, enabled by default, summarizes conversations over 1000 characters for a consistent experience across channels, requiring no admin setup. Inform users and update training accordingly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>Introduction</b></p><p>We're enhancing threaded channel experiences by extending the thread summarization feature to post/reply channels. This update replaces the <i>Highlights from this conversation</i>&nbsp;option in the <i>More options menu</i>&nbsp;with <i>Summarize Thread</i>, providing a consistent and improved way to generate conversation summaries across all channel types.\n</p><p><b>When this will happen</b></p><p>General Availability: Rollout will begin in mid-August 2025 and is expected to complete by mid-September 2025.\n</p><p><b>How this affects your organization</b></p><p>Previously, users could select <i>Highlights from this conversation</i>&nbsp;to summarize posts and replies. This option is now replaced with <i>Summarize Thread</i>, which shows up for conversations with more than 1000 characters. This new option offers a more intuitive and consistent experience across threaded and post/reply channels. The feature is enabled by default on both desktop and mobile and does not require admin configuration.</p><p><i style=\"\">Figure i. Find the Summarize Thread option in the More Options menu if there are a minimum of 1000 characters in a conversation</i></p><p></p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/e9ff56cd-854b-4cda-ae17-515c658fa06a\" style=\"width: 269px;\" alt=\"user settings\"><i style=\"background-color: rgb(255, 255, 0);\"></i><p></p><p></p><p></p><p><i>Figure ii: Your summary shows up on both desktop and mobile</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/53c073e6-6592-4c9b-964c-d51d16530fdf\" style=\"width: 100%;\" alt=\"user settings\"></p><p></p><p>\n</p><p><b>What you can do to prepare</b></p><ul><li>Inform users about the updated summarization option.\n</li><li>Update internal training materials or documentation to reflect the new label and functionality.\n</li></ul><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -11612,37 +11513,6 @@
     }
   },
   {
-    "startDateTime": "2025-08-13T23:31:21Z",
-    "endDateTime": "2025-10-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-09-02T13:37:14.843Z",
-    "title": "(Updated) Security Update: New Authentication Requirements for integration with Microsoft Teams PowerShell Module",
-    "id": "MC1134747",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "Admin impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2025-09-14T07:00:00Z",
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting September 15, 2025, Microsoft Teams PowerShell Module requires updated application permissions for Entra applications using Administrative Units: RoleManagement.Read.Directory for all and GroupMember.Read.All for specific cmdlets. Organizations must review and update these permissions to avoid service disruption."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated September 2, 2025: We have updated the content. Thank you for your patience.</p><p><b>Introduction</b></p><p>We are reaching out to inform you of an <b>important security and authentication update</b> that may impact your integration with the Microsoft Teams PowerShell Module. As part of our ongoing commitment to strengthening security across Microsoft 365 services, we are updating the authentication requirements for <b>application-based authentication with Administrative Units</b>&nbsp;in the Teams PowerShell Module.</p><p>These changes are designed to ensure that Entra applications with Administrative Units used for backend access to Teams PowerShell are properly scoped and secured. If your organization uses Entra applications to automate or manage Teams via PowerShell, action is required to avoid service disruption.&nbsp;</p><p><b>When will this happen</b></p><p>This change will take effect on Monday, September 15, 2025.</p><p><b>How this affects your organization</b></p><p>If your organization uses Entra applications to authenticate against the Microsoft Teams PowerShell Module, you must update the <b><i>Application&nbsp;</i></b> permissions to avoid disruption. </p><p>Specifically:</p><ul><li><b>RoleManagement.Read.Directory</b>: Required for all Entra applications to verify association with an Administrative Unit.</li><li><b>GroupMember.Read.All</b>: Required if your application with Administrative Units uses the following cmdlets:<ul><li><code>*-CsGroupPolicyAssignment</code></li><li><code>*-CsGroupPolicyPackageAssignment</code></li></ul></li></ul><p>No changes are required for delegated permissions.</p><p><b>What you can do to prepare</b></p><p>To ensure uninterrupted access:</p><p>1. Review your Entra applications:</p><p></p><ul><li>Go to <i>Microsoft Entra ID</i> &gt; <i>Roles and administrators</i>.</li><li>Check the <i>Teams Administrator</i>&nbsp;roles for any Entra applications or service principals, under the scope of Administrative Units, used with Teams PowerShell.</li></ul><p>2. Update API permissions:</p><ul><li>Navigate to <i>Microsoft Entra ID</i> &gt; <i>App registrations</i>.</li><li>•\tLocate the relevant application under the scope of Administrative Units and add the following permissions:<br><ul><li><code>GroupMember.Read.All</code></li><li><code>RoleManagement.Read.Directory</code></li></ul></li></ul><p></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/b34dd591-e907-4af1-b6c4-45d5bff1e6f4\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p>3. Test your integrations to confirm continued functionality.</p><p>Learn more: <a href=\"https://learn.microsoft.com/microsoftteams/teams-powershell-application-authentication\" target=\"_blank\">Application-based authentication in Teams PowerShell Module</a>.</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-08-14T17:10:54.563Z",
     "endDateTime": "2026-08-14T17:10:54.5Z",
     "lastModifiedDateTime": "2025-08-14T17:10:55.543Z",
@@ -11944,37 +11814,6 @@
     "body": {
       "contentType": "html",
       "content": "<div><b>IMPORTANT</b>: This notice is only relevant for environments where:</div><ul><li><a href=\"https://learn.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Server Update Services (WSUS)</a> is used to deploy Windows security updates to Windows 11, version 24H2 devices.</li><li>Scan Cab is used to check for update compliance</li><li>The August 2025 Scan Cab was deployed before 9:15 AM PT on August 15, 2025.</li></ul><div>&nbsp;</div><div>An updated version of the August 2025 Scan Cab was made available at 9:15 AM PT on August 15, 2025. This Scan Cab includes new metadata corresponding to the republished August 2025 security update for Windows 11, version 24H2 (KB5063878). The new Scan Cab only needs to be re-deployed in the environments where Windows Server Update Services (WSUS) is used for installing updates.&nbsp;</div><div>&nbsp;</div><div>The&nbsp;republished&nbsp;update for Windows 11, version 24H2 addresses an issue where the August 2025 Windows security update (<a href=\"https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fsupport.microsoft.com%2Fhelp%2F5063878&amp;data=05%7C02%7CMabel.Gomes%40microsoft.com%7Caa88877b46cb4903764b08dddb79427a%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638908036044196649%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=gYXXLQhRWJ6jvABU4WKcyYzIdR%2FSLMMXCsUW2BfgXDI%3D&amp;reserved=0\" rel=\"noopener noreferrer\" target=\"_blank\">KB5063878</a>)&nbsp;failed&nbsp;to&nbsp;install with error code 0x80240069 when installed via WSUS.&nbsp;The issue was not related to any content in&nbsp;KB5063878, but to how the update was published itself.&nbsp;&nbsp;</div><div><br></div><div>See the Additional Information section of this message for&nbsp;details.&nbsp;</div><div><br></div><div><b>How this affects your organization:</b></div><div>IT administrators who downloaded the Scan Cab before 9:15 AM PT on August 15, 2025, should re-acquire and re-deploy it if the Scan Cab is used to assess updates for environments where WSUS is used to deploy Windows security updates to Windows 11, version 24H2 devices.</div><div>&nbsp;</div><div>No action is required on environments where Scan Cab is not employed and does not use WSUS to deploy updates to Windows 11, version 24H2 devices. However, please note that there might be non-Microsoft applications which utilize Scan Cab. Review the documentation for any software and update deployment tools which might be in use for your organization, to understand if this is applicable in your environment.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><div>Administrators can re-deploy the updated Scan Cab via their usual processes. For detailed guidance, see the Additional Information section below.</div><div>&nbsp;</div><div><b>Additional information:</b></div><ul><li><a href=\"https://go.microsoft.com/fwlink/?LinkID=74689\" rel=\"noopener noreferrer\" target=\"_blank\">Updated Scan Cab: Download the new Scan Cab here</a></li><li><a href=\"https://learn.microsoft.com/windows/release-health/status-windows-11-24h2#3635msgdesc\" rel=\"noopener noreferrer\" target=\"_blank\">August 2025 security update might fail to install via WSUS with Error 0x80240069</a></li><li><a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-a-smaller-wsus-scan-cab/ba-p/2928256?msclkid=256145ccd0c011ec9266b53af8d0aca1\" rel=\"noopener noreferrer\" target=\"_blank\">Announcing a smaller WSUS Scan Cab - Microsoft Tech Community</a>: Learn more about WSUS and the Scan Cab process</li><li><a href=\"https://learn.microsoft.com/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline?tabs=vbscript\" rel=\"noopener noreferrer\" target=\"_blank\">Using WUA to Scan for Updates Offline - Win32 apps | Microsoft Docs</a>: Windows Update Agent (WUA) can be used to scan computers for security updates without connecting to Windows Update</li><li><a href=\"https://learn.microsoft.com/windows-server/administration/windows-server-update-services/manage/wsus-and-the-catalog-site\" rel=\"noopener noreferrer\" target=\"_blank\">WSUS and the Catalog Site | Microsoft Docs</a>: The Catalog Site used by WSUS to import updates and drivers</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-08-15T22:43:06Z",
-    "endDateTime": "2025-10-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-15T22:43:28.377Z",
-    "title": "Update for unattended robotic process automation (RPA) scenarios in Windows 365 Enterprise",
-    "id": "MC1136031",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Windows 365 Enterprise now requires a Microsoft 365 Unattended License for running unattended robotic process automation (RPA) or bot scenarios on Cloud PCs. Each bot instance must have this license, in addition to existing Windows 11/10 Enterprise, Intune, and Entra ID P1 user licenses."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We’re updating our guidance for Windows 365 Enterprise to include licensing requirements for robotic process automation (RPA) and bot scenarios. This functionality is available only for Windows 365 Enterprise. \n</p><p>[How will this affect your organization:] </p><p>While the core requirements for Windows 365 Enterprise remain the same, organizations that plan to run unattended bots or UI-based automation on Windows 365 Enterprise Cloud PCs will now need an additional <a href=\"https://learn.microsoft.com/microsoft-365-apps/licensing-activation/overview-unattended\" target=\"_blank\">Microsoft 365 Unattended License</a>. \n</p><p>Windows 365 Enterprise is designed for organizations that want to manage their Cloud PCs with Microsoft Intune and take advantage of integrations with other Microsoft services, including Microsoft Entra ID and Microsoft Defender for Endpoint. Windows 365 Enterprise has no license limit. To use Windows 365 Enterprise, each user must be licensed for Windows 11 Enterprise or Windows 10 Enterprise, Microsoft Intune, and Microsoft Entra ID P1. \n</p><p>[What you need to do to prepare:]</p><p>If your organization uses, or plans to use, unattended RPA or bot workloads on Windows 365 Enterprise Cloud PCs: \n</p><ul><li>Assign a Microsoft 365 Unattended License to each bot instance. \n</li></ul><p><b>Additional information: \n</b></p><ul><li><a href=\"https://learn.microsoft.com/windows-365/overview\" target=\"_blank\">Windows 365 overview</a> \n</li><li><a href=\"https://learn.microsoft.com/microsoft-365-apps/licensing-activation/overview-unattended\" target=\"_blank\">Microsoft 365 unattended license documentation&nbsp;</a></li></ul>"
     }
   },
   {
@@ -12943,36 +12782,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated August 26, 2025: We have updated the content. Thank you for your patience.</p><p><b>Introduction</b></p><p>Coming soon to Microsoft Teams: a new control for users to turn off Microsoft Copilot when it is active in a meeting. This control will also turn off recording, transcript, and Facilitator if they are active. Copilot will not have access to what was said or shown in the meeting while it was turned off.  After the meeting ends, Copilot will have access to all chat content and any recordings or transcripts created while it was active.</p>\n\n<b>When this will happen</b><ul>\n<li><b>Targeted Release:</b> Rollout will begin mid-September 2025 and is expected to complete by late September 2025.</li>\n<li><b>General Availability:</b> Rollout will begin late September 2025 and is expected to complete by early October 2025.</li>\n</ul>\n\n<b>How this affects your organization</b>\n<p>This feature will be available to users by default.</p>\n<p>After rollout, users can turn off Copilot during a meeting using the following methods:</p>\n<ul>\n<li><b>Teams for desktop and web:</b> Select the Copilot icon at the top of the screen to open Copilot, then select <i>Turn off for everyone</i> from the <i>More options</i> (three-dot) menu in the top-right corner of the Copilot panel.</li>\n<li><b>Teams for iOS/Android:</b> Tap the meeting screen, tap the Copilot icon at the top, then tap the gear icon on the Copilot sheet.</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/1940275e-0618-468f-9dc6-0d9778dd9195/7ea3b7965bbcf0585a0f66217fafac31e21766bd.png\" style=\"width: 50%;\"><br></p><ul>\n</ul>\n\n<b>What you can do to prepare</b>\n\n<ul><li>No admin action is required.</li><li>We recommend reviewing your current meeting configurations and notifying users about this change. </li><li>Update any relevant training materials or documentation to reflect the new Copilot controls.</li></ul>\n<p><b>Compliance considerations</b></p>\n<p>\n</p><p></p><table border=\"1\"><tbody><tr>\n<th>Compliance Area</th>\n<th>Explanation</th>\n</tr>\n<tr>\n<td>Alters how existing customer data is processed, stored, or accessed</td><td>When Copilot is turned off during a meeting where it is active, it will not process or store any spoken or shared content during that time.&nbsp;</td></tr><tr><td>Modifies how users can interact with generative AI</td><td>This control limits Copilot's generative AI capabilities temporarily.</td></tr><tr><td>Allows users to enable/disable the feature themselves</td><td>Users have a unified control to turn Copilot, Facilitator, recording, and/or transcription off in their meetings. Users can turn these features back on after using this control.</td></tr></tbody></table>\n<p></p>\nAdditional Resources: <a href=\"https://support.microsoft.com/office/use-copilot-in-microsoft-teams-meetings-0bf9dd3c-96f7-44e2-8bb8-790bedf066b1\" target=\"_blank\">Use Copilot in Microsoft Teams meetings - Microsoft Support&nbsp;</a><p></p>"
-    }
-  },
-  {
-    "startDateTime": "2025-08-22T00:05:06Z",
-    "endDateTime": "2025-10-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-22T00:05:12.773Z",
-    "title": "Feature Retirement: Tonal Rewrite in Outlook Web Access (OWA)",
-    "id": "MC1139486",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 suite"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The Tonal Rewrite feature in Outlook Web Access will retire on September 15, 2025. Users will transition to using Copilot in Outlook for advanced, context-aware rewriting and tone adjustments, requiring no admin action. This change enhances writing flexibility and efficiency with AI-powered tools."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>Introduction</b></p><p>Starting September 15, 2025, the <i>Tonal Rewrite</i> preview feature in Outlook Web Access (OWA) will be retired.&nbsp;</p><p><b>Why This Change?</b></p><p>The <i>Tonal Rewrite</i> experimental feature was introduced to help users improve sentences tone in emails by proactively offering AI-generated alternatives. While it has been a valuable tool for many, we are evolving our writing assistance capabilities to better align with how users write and revise content today using modern Copilot capabilities.</p><p><b>When this will happen</b></p><p>This feature will no longer be supported after September 15, 2025.</p><p>\n</p><p><b>How this affects your organization</b></p><p>Tonal Rewrite was introduced as an experimental feature to help users improve the tone of their email content using AI-generated suggestions. With its retirement, users will no longer see tonal suggestions in OWA.</p><p>Instead, users can leverage Copilot in Outlook, which offers:</p><ul><li><b>Context-aware rewriting: </b>Highlight text and generate refined alternatives.</li><li><b>Prompt-based editing: </b>Ask Copilot to rewrite, summarize, or adjust tone using natural language.</li><li><b>Iterative refinement: </b>Use <i>Fine tune your rewrite</i>&nbsp;to guide Copilot through multiple revision rounds.</li></ul><p>These enhancements provide greater flexibility and control, improving writing efficiency and confidence.</p><p><b>What you can do\n</b></p><p>No admin action is required.</p><p>We recommend encouraging users to explore the Auto-Rewrite capability via Copilot in Outlook:</p><ul><li>Highlight the text to revise.</li><li>Click the Copilot icon.</li><li>Select <i>Auto-Rewrite</i> or <i>Change Tone</i>.</li><li>Review and apply the suggestion.</li></ul><p>We appreciate your feedback and look forward to supporting your writing journey with even more powerful tools.</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p><p></p>"
     }
   },
   {
@@ -14477,36 +14286,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>If you’re an IT professional or decision maker, start using the newest Windows 11 capabilities with helpful tips and actionable steps summarized in one place. Discover enhancements to the Windows out-of-box experience (OOBE) for quality updates, hotpatching, productivity features, update and driver management, AI, and more. Learn how to get started with these and other improvements across Microsoft Intune, Windows Server, and Windows security.&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>Improvements summarized in this <a href=\"https://aka.ms/WindowsNewsYouCanUse/August2025\" rel=\"noopener noreferrer\" target=\"_blank\">monthly recap</a> are already available. Note that some of them are rolling out gradually.&nbsp;</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>You can start seeing improvements across various workflows in your organization with:&nbsp;</div><ul><li>Windows Backup for Organizations&nbsp;</li><li>Enabling virtualization-based security (VBS) for hotpatch readiness&nbsp;</li><li>Integrating Zero Trust with cloud-native Windows&nbsp;</li><li>Using GPT-5 in Microsoft 365 Copilot or Microsoft Copilot Studio&nbsp;&nbsp;</li><li>Pull print capability in Universal Print anywhere&nbsp;</li><li>Additional improvements released in August&nbsp;</li></ul><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>Read the <a href=\"https://aka.ms/WindowsNewsYouCanUse/August2025\" rel=\"noopener noreferrer\" target=\"_blank\">new monthly recap</a> and additional information to start benefiting from the latest improvements.&nbsp;</div><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><div>Read the monthly recap at <a href=\"https://aka.ms/WindowsNewsYouCanUse/August2025\" rel=\"noopener noreferrer\" target=\"_blank\">Windows news you can use: August 2025</a>. It includes highlights from the following channels:&nbsp;&nbsp;</div><ul><li><a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/bg-p/Windows-ITPro-blog\" rel=\"noopener noreferrer\" target=\"_blank\">Windows IT Pro Blog</a>&nbsp;</li><li><a href=\"https://techcommunity.microsoft.com/t5/microsoft-intune-blog/bg-p/MicrosoftEndpointManagerBlog\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Intune Blog</a>&nbsp;</li><li><a href=\"https://www.microsoft.com/security/blog/?msockid=0a62a344849c68fe1290b07a85ff6967\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Security Blog</a>&nbsp;</li><li><a href=\"https://support.microsoft.com/topic/windows-11-version-24h2-update-history-0929c747-1815-4543-8461-0160d16f15e5\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 update history</a>&nbsp;</li><li><a href=\"https://support.microsoft.com/topic/windows-server-2025-update-history-10f58da7-e57b-4a9d-9c16-9f1dcd72d7d7\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Server update history</a>&nbsp;</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-09-02T23:11:40Z",
-    "endDateTime": "2025-10-15T07:00:00Z",
-    "lastModifiedDateTime": "2025-09-02T23:12:01.353Z",
-    "title": "Plan for Change: Update your iOS/iPadOS Company Portal minimum version to v5.2509.0",
-    "id": "MC1146807",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Update the iOS/iPadOS Company Portal minimum version to v5.2509.0 by September 15, 2025. Most users will update automatically; those with app installation blocked may need manual updates. Inform helpdesk about update prompts if applicable."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "We will soon release an updated Company Portal for iOS/iPadOS (v5.2509.0) to the Apple Store that is a required app update. Starting on September 15, 2025, or soon after, the minimum supported version of the iOS/iPadOS Company Portal will change to v5.2509.0.<p>[How this will affect your organization:]\n</p><p><b>User impact:</b> Most users have app updates set to automatic, so they receive the updated Company Portal app without taking any action. Users that have an earlier app version will be prompted to update to the latest Company Portal app.</p><p><b>Note:</b> If you have enabled the ‘Block installing apps using App Store’ device restriction setting, you may need to manually push an update to devices.</p><p>[What you need to do to prepare:]\n</p><p>If you have enabled the above device restriction setting you will likely need to push an update to devices. Otherwise, no action is needed, but if you have a helpdesk, you may want to make them aware of the prompt to update the Company Portal app.</p><p><br></p>"
     }
   },
   {
@@ -23703,7 +23482,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503557\":[{\"RoadmapId\":503557,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T06:10:51.9119887Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T06:10:51.9119889Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T06:10:51.9119891Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T06:10:51.9119893Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T06:10:51.9119894Z\",\"LatestRing\":null}]}"
+        "value": "{\"503557\":[{\"RoadmapId\":503557,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T08:09:58.5818453Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T08:09:58.5818456Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T08:09:58.5818457Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T08:09:58.5818459Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T08:09:58.5818461Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
