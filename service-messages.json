@@ -23430,7 +23430,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503557\":[{\"RoadmapId\":503557,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T22:06:03.9325282Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T22:06:03.9325285Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T22:06:03.9325287Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T22:06:03.9325288Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-15T22:06:03.932529Z\",\"LatestRing\":null}]}"
+        "value": "{\"503557\":[{\"RoadmapId\":503557,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-16T00:29:40.9474247Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-16T00:29:40.9474253Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-16T00:29:40.9474254Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-16T00:29:40.9474256Z\",\"LatestRing\":null},{\"RoadmapId\":503557,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-16T00:29:40.9474261Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23836,6 +23836,310 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing enhanced supervisor actions in Dynamics 365 Contact Center. This feature will reach general availability on November 14, 2025.<br><br> \n\n<b>How does this affect me?</b><br> \nThis feature enables contact center supervisors to manage operations by assigning and transferring cases or chats. Key functionality of this feature includes:<ul><li><b>Assign Open Case/Chat</b>: Supervisors can assign open cases or chats to available agents.</li> \n<li><b>Transfer Active Case/Chat</b>: Supervisors can transfer active cases or chats to another agent.</li> \n<li><b>Reassign Case/Chat to Another Queue</b>: Supervisors can reassign cases or chats to different queues.</li> \n<li><b>Release Case to Queue</b>: Supervisors can release cases back to the queue, making them available for reassignment.</li></ul> \n\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2025-10-15T23:05:06Z",
+    "endDateTime": "2025-11-15T23:05:06Z",
+    "lastModifiedDateTime": "2025-10-15T23:06:20.683Z",
+    "title": "Dynamics 365 Customer Service - Intent-based suggestions has been disabled",
+    "id": "MC1173185",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "Due to reports of unintended token consumption in the Copilot Service workspace app, we have modified the default state of intent-based to be disabled.<br><br><b>How does this affect me? </b><br>All existing Intent-based suggestions customers will need to manually enable the feature.<br><br><b>What action do I need to take? </b><br>To reenable intent-based suggestion functionality: <ol><li>Go to the Copilot Service workspace > Workspaces > Experience profiles</li> <ol type=\"A\"><li>Select an editable experience profile (no lock symbol)</li> <li>Scroll down to configuration</li> <li><b>There are two situations that may be encountered due to delayed uptake of solutions:</b></li><ol type=\"I\"> <li>Intent-based suggestions shows false.</li> <ol><li>Simply enable and save, the feature will become available on CSW refresh.</li></ol> <li>Intent-based suggestions shows true but is not showing up in the AICopilot pane of the CSW page.</li> <ol><li>Toggle the feature to off, then toggle it back on to \"On\".</li> <li>Feature will now display again in the AICopilotPane.</li></ol></ol></ol></ol> For experience profiles, please note that the above steps must applied to all agents in which you intend to enable intent-based suggestions for."
+    }
+  },
+  {
+    "startDateTime": "2025-10-15T23:38:00Z",
+    "endDateTime": "2025-12-15T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-15T23:38:37.633Z",
+    "title": "Plan for Change: Intune Company Portal app for iOS/iPadOS minimum required version changing to v5.2509.2 in November",
+    "id": "MC1173192",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Intune"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Intune Company Portal app for iOS/iPadOS will require version 5.2509.2 by November 15, 2025. Most users will update automatically, but those with the \"Block installing apps using App Store\" restriction must have updates pushed manually. Prepare by informing helpdesk if needed."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We will soon release an update to the Intune Company Portal for iOS/iPadOS (v5.2509.2). This update will be required by <b>November 15, 2025</b>.</p><p>[How this will affect your organization:]\n</p><p><b>User impact:</b> Most users have app updates set to automatic, so they receive Company Portal app updates without taking any action. Users that have an earlier version of the Company Portal app will be prompted to update to the latest version.</p><p><b>Note:</b> If you have enabled the ‘<a href=\"https://learn.microsoft.com/intune/intune-service/configuration/device-restrictions-ios#settings-apply-to-automated-device-enrollment-supervised\" target=\"_blank\">Block installing apps using App Store</a>’ device restriction setting, you will likely need to manually push an update to devices.</p><p>[What you need to do to prepare:]\n</p><p>If you have enabled the ‘Block installing apps using App Store’ device restriction setting, you will likely need to push an update to the related devices. Otherwise, no action is needed, but if you have a helpdesk, you may want to make them aware of the prompt to update the Company Portal app.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-15T23:41:56Z",
+    "endDateTime": "2026-01-02T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-15T23:42:37.997Z",
+    "title": "Microsoft 365 Copilot: Graph APIs for agent and app management",
+    "id": "MC1173195",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)",
+      "Microsoft 365 Copilot Chat"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "502875"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 is launching two new Graph APIs in November 2025 for admins to manage Copilot agents and apps programmatically. These APIs enable automated reporting and integration without UI changes or extra licenses. Admins should review the Microsoft Graph API documentation to prepare."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b>\n</p><p>We are introducing two new <b>Microsoft Graph APIs</b> that enable admins to programmatically access and manage agents and apps within their organization. These APIs provide greater flexibility for reporting and integration scenarios without relying on manual UI workflows.</p><p>\nThis message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com//microsoft-365/roadmap?filters=&amp;searchterms=502875\" target=\"_blank\">502875</a>.</p>\n\n<p><b>[When this will happen:]</b><b>\n</b></p><p><b>General Availability (Worldwide): </b>Rollout will begin in mid-November 2025 and is expected to complete by late November 2025.</p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:</b>\nAdmins managing Copilot agents and apps within Microsoft 365 environments.\n</p><p><b>What will happen:</b>\n</p><ul>\n<li>New Graph API endpoints will be available:<ul><li><b>GET graph.microsoft.com/copilot/admin/catalog/packages</b> – Retrieves a complete inventory of all agents and apps (Microsoft, External, Shared, and Custom).</li><li><b>GET graph.microsoft.com/copilot/admin/catalog/packages/{id} </b>– Fetches detailed metadata for a specific agent or app, including properties and manifest details.</li></ul></li></ul><ul>\n<li>These APIs allow for automated reporting and integration workflows.</li>\n<li>No changes to existing UI workflows or admin policies.</li><li>These Graph API endpoints are available to users with an existing Microsoft 365 license; no additional license or add-on is required.</li>\n</ul><ul>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>Review the <a href=\"https://learn.microsoft.com/graph/api/overview\">Microsoft Graph API documentation</a> to familiarize yourself with usage and capabilities at this time.</li>\n</ul>\n<p></p>\n\n<p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-15T23:43:03Z",
+    "endDateTime": "2025-12-15T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-15T23:44:00.347Z",
+    "title": "Microsoft 365 Copilot: Edit in Outlook from Copilot Chat",
+    "id": "MC1173196",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "494510"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot introduces an \"Edit in Outlook\" button for drafting emails from Copilot Chat prompts. Available to all licensed users across multiple platforms, it opens Outlook with a pre-filled draft. Rollout starts late October 2025, requires no extra licenses or admin changes, and is enabled by default."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Developer, Linux, Mac, TeamsAndSurfaceDevices, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b>\n</p><p>To streamline the process of drafting emails from Copilot prompts, we’re introducing an <b><i>Edit in Outlook</i> </b>button. When a user’s prompt indicates a strong intent to draft an email (such as “Draft an email to my team thanking them for their hard work on Project K”), the button will appear. Clicking it will open Outlook with a pre-populated draft email, including subject and body fields.</p><p>This feature is available to all users licensed with Microsoft 365 Copilot, with no need for additional licenses or add-ons.</p><p>It works across a broad range of platforms, including Windows Desktop, Mobile, Mac, Web, Teams and Surface Devices, and Linux.</p><p>\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=494510\" target=\"_blank\">494510</a>.</p>\n\n<p><b>[When this will happen:]</b>\n</p><p><b>General Availability (Worldwide):</b> Rollout begins in late October 2025 and is expected to complete by mid-November 2025.\n</p><p><b>MSIT Deployment:</b> Began in late September 2025.</p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:</b>\nAll users of Microsoft 365 Copilot Chat integrated with Outlook.\n</p><p><b>What will happen:</b>\n</p><ul>\n<li>Users will see an <i><b>Edit in Outlook</b></i> button when Copilot detects email drafting intent:</li><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a5323ac9-889b-40ba-9d05-3c63ee2a57cc/dd75c210ab1e1fb18993ed3ea02aeb63c7eebd7d.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>Clicking the button opens Outlook with a draft email pre-filled with subject and body.</li>\n<li>No changes to existing admin policies or configurations.</li>\n<li>Feature is <b>enabled by default</b>.</li><li>No additional licensing or add-on is required.</li><li>Supported platforms include:<ul><li>Desktop</li><li>Developer</li><li>Linux</li><li>Mac</li><li>Teams and Surface Devices</li><li>Web</li></ul></li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b>&nbsp;</p><p>No action is required at this time. You may choose to:\n</p><ul>\n<li>Communicate this change to helpdesk staff.</li>\n<li>Update internal documentation if you detail this feature.</li></ul><p>Learn more:&nbsp;<a href=\"https://techcommunity.microsoft.com/blog/Microsoft365CopilotBlog/what%E2%80%99s-new-in-microsoft-365-copilot--september-2025/4457317?previewMessage=true\" target=\"_blank\">What’s new in Microsoft 365 Copilot | September 2025 | Microsoft Community Hub</a></p><ul>\n</ul>\n<p></p>\n\n<p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-15T23:48:49Z",
+    "endDateTime": "2025-12-31T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-15T23:49:02.467Z",
+    "title": "Reminder: Support for the Word Mobile, Excel Mobile, and PowerPoint Mobile UWP applications ended on October 14, 2025",
+    "id": "MC1173198",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "Admin impact",
+      "Retirement"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Support for Word Mobile, Excel Mobile, and PowerPoint Mobile UWP apps ended on October 14, 2025. Organizations should remove these apps to avoid security risks and switch to Microsoft 365 Copilot, web versions, or desktop apps. Use Microsoft Intune to identify devices running these apps."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>Reminder: Support for the mobile Universal Windows Platform (UWP) apps (Microsoft Word, Microsoft Excel and Microsoft PowerPoint) ended on October 14, 2025. No further updates, security fixes, or technical support will be available for these applications.\n</p><p>We communicated this retirement in MC921113 <i>Support for the Word Mobile, Excel Mobile, and PowerPoint Mobile UWP applications will end on October 14, 2025</i> (published October 2024).</p><p><b>[When this will happen:]\n</b></p><p>This retirement occurred on October 14, 2025.\n</p><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b></p><p>Organizations with users running Word Mobile, Excel Mobile, or PowerPoint Mobile on Windows-based devices.</p><p><b>What will happen:</b></p><p>If Microsoft Windows-based devices within your organization are running Word Mobile, Excel Mobile, or PowerPoint Mobile, we recommend that the applications be removed. While they may continue to function, using unsupported software could lead to potential security risks and other issues.\n</p><p>If you’re using Microsoft Intune, you can run a report to identify devices running these applications. In the Microsoft Intune admin center, go to <i>All services &gt; Apps | Monitor &gt; Discovered apps</i> and search for <code>\"office.word\"</code>, <code>“office.excel”</code>, or <code>“office.powerpoint”</code>. The application version will start with <code>\"16001.14326.xxxxx.x\"</code>.\n</p><p><b>[What you can do to prepare:]\n</b></p><p>To mitigate these risks and ensure your organization remains secure and compliant, we recommend removing these three UWP applications and switching to alternatives:\n</p><ul><li><a href=\"https://www.microsoft.com/microsoft-365/mobile?ocid=oo_support_mix_marvel_ups_support_smcofficemobile_inline\" target=\"_blank\">Microsoft 365 Copilot app</a> for Windows, iOS, or Android devices.</li><li>Word, Excel, and PowerPoint on the web.</li><li>Windows desktop versions of Word, Excel, and PowerPoint in a Microsoft 365 plan. <a href=\"https://www.microsoft.com/microsoft-365/enterprise/microsoft365-plans-and-pricing\" target=\"_blank\">Compare Microsoft 365 Enterprise Plans</a>.</li></ul><p>Learn more about the end of support for the OneNote UWP application (OneNote for Windows 10): <a href=\"https://support.microsoft.com/office/moving-to-onenote-on-windows-4ba7b498-aafc-44b1-8326-a582a6c71196\" target=\"_blank\">Moving to OneNote on Windows - Microsoft Support</a>.</p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-16T00:07:33Z",
+    "endDateTime": "2026-03-19T07:00:00Z",
+    "lastModifiedDateTime": "2025-10-16T00:07:45.24Z",
+    "title": "Microsoft Purview compliance portal: Insider Risk Management – Introduction of pay-as-you-go feature usage report",
+    "id": "MC1173203",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "511816"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Purview Insider Risk Management introduces a pay-as-you-go feature usage report by mid-February 2026, offering detailed billing insights by data source and activity. This default report helps admins optimize costs and policies without requiring setup, enhancing compliance visibility and access control via Entra ID."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing a new <b>pay-as-you-go feature usage report</b> in Microsoft Purview Insider Risk Management. This report provides detailed insights into billed processing unit usage across data source categories and activity indicators. It’s designed to help Insider Risk Management (IRM) admins improve budget planning, identify cost-saving opportunities, and fine-tune policy configurations.</p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=511816\" target=\"_blank\">511816</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Public Preview (Worldwide):</b> Begins mid-November 2025 and completes by mid-November 2025.</li>\n<li><b>General Availability (Worldwide):</b> Begins mid-February 2026 and completes by mid-February 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> Admins managing Microsoft Purview Insider Risk Management in tenants using pay-as-you-go billing.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>A new report will be available in the <i>Reports </i>section of <i>Insider Risk Management</i>.</li>\n    <li>The report provides a granular breakdown of billed processing unit usage by data source and activity indicator.</li>\n    <li>Admins can use this report to identify high-cost areas and optimize policy configurations.</li>\n    <li>The report is available by default; no configuration is required to enable it.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required to enable the report.</li>\n<li>To access the report go to the <i>Reports </i>section in Insider Risk Management.</li><li>Learn more: <a href=\"https://learn.microsoft.com/purview/insider-risk-management-reports\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Use reports in Insider Risk Management</a></li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\">\n<tbody><tr><th>Question</th><th>Explanation</th></tr>\n<tr><td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td><td>The new report enhances visibility into usage patterns, supporting compliance reporting and cost management.</td></tr>\n<tr><td>Does the change include an admin control and, can it be controlled through Entra ID group membership?</td><td>Access to Insider Risk Management reports can be scoped using role-based access control and Entra ID group membership.</td></tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-16T00:08:21Z",
+    "endDateTime": "2025-12-31T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-16T00:08:48.437Z",
+    "title": "Microsoft Copilot Notebooks will be available to 13-17 year-olds",
+    "id": "MC1173204",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "510105"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Copilot Notebooks will be available to 13–17 year-olds with Microsoft 365 Copilot plans and Entra ID accounts starting mid-November 2025. The feature will be on by default across supported platforms, with admin policies and Cloud Policy controls applicable for managing access."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p></p><p><b>[Introduction]</b></p>\nMicrosoft is expanding availability of the <b>Copilot Notebooks</b> feature to younger users. Previously limited to users aged 18 and older, this update allows <b>13–17 year-olds with Microsoft 365 Copilot plans and Entra ID accounts</b> to use Copilot Notebooks across supported platforms.&nbsp;<p></p><p></p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=510105\" target=\"_blank\">510105</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\nRollout will begin <b>mid-November 2025</b> and is expected to complete by <b>late November 2025</b>.<p></p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:&nbsp;</b>Organizations with <b>13–17 year-old users</b> (e.g., students) who have <b>Microsoft 365 Copilot plans</b> and <b>Entra ID accounts</b>.</li>\n\n<li><b>What will happen:</b>\n<ul>\n<li>Copilot Notebooks will become available to eligible 13–17 year-old users.</li>\n<li>The feature will be accessible in the <b>Microsoft 365 Copilot app</b> and <b>OneNote app</b> across Web, Windows, Mac, iOS, iPadOS, and Android.</li>\n<li>By default, the feature will be <b style=\"\">ON</b> for all eligible users.</li>\n<li>Existing admin policies will continue to apply.</li>\n<li>Admins can restrict access using <b>Cloud Policy</b>.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Review and configure your organization’s <b>Cloud Policy settings</b> to manage access for younger users: <a href=\"https://learn.microsoft.com/microsoft-365/loop/cpcn-admin-configuration\">Configure Copilot Notebooks access</a>.</li><li>Communicate this change to helpdesk and education support staff.</li><li>Update internal documentation if you include guidance on Copilot Notebooks.</li>\n</ul><p><b>[Compliance considerations:]</b></p>\nNo compliance considerations identified, review as appropriate for your organization.<p></p>\n<p></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-16T00:11:07Z",
+    "endDateTime": "2026-03-31T07:00:00Z",
+    "lastModifiedDateTime": "2025-10-16T00:11:24.213Z",
+    "title": "Microsoft Copilot Analytics: Data export public preview for Copilot metrics in the Copilot dashboard",
+    "id": "MC1173208",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft is introducing a public preview of data export in the Copilot Dashboard, allowing users with company-level access to download de-identified weekly Copilot usage metrics from the past six months. Available late November 2025, it supports adoption analysis and licensing optimization for organizations with 50+ Copilot licenses."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction:]</b></p><p>To support deeper analysis of Copilot adoption, Microsoft is introducing a <b>new export capability in the <i>Copilot Dashboard</i></b>. This feature allows dashboard users with company-level access to download de-identified Copilot usage metrics, aggregated by user and week, from the past six months. Organizations can use this data to track adoption trends, optimize licensing, and support AI transformation strategies.</p><p>This feature requires at least 50 Microsoft 365 Copilot licenses and applies to the Viva Insights web app.</p><p><b>[When this will happen:]</b></p><ul><li><b>Public Preview:</b> Begins in late November 2025, completes by late December 2025.</li><li><b>General Availability (Worldwide):</b> Begins in early February 2026, completes by late February 2026.</li></ul><p><b>[How this affects your organization:]</b></p><p>Who is affected:</p><p>Copilot Dashboard users with <b>full company-level data access</b>, including senior leaders (as <a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard#using-entra-id-data\" target=\"_blank\">identified in Entra ID</a>), admin-assigned company-level users, delegates with company-level access, as well as global analysts and admins.&nbsp;</p><p>Note: Group managers with data access limited to their own teams will <b>not </b>have access to this feature.</p><p>What will happen:</p><ul><li>Users will be able to export de-identified, row-level Copilot usage metrics from the dashboard.</li><li>The dataset includes weekly, user-level metrics from the past six months.</li><li>The export supports Copilot usage analysis across apps (such as Word, Excel, Teams), and includes two attributes: Organization, and Job function.</li><li>Organizations can use the data to track usage patterns, generate insights to inform adoption strategies, optimize licensing, and measure ROI.</li><li>The feature is <b>enabled by default</b> for eligible users.</li><li>Admins can manage access via Viva Feature Access Management (VFAM) settings, under <i>Module: Viva Insights; Feature: Copilot Metrics Export</i>.</li><li>No impact to user workflow unless accessed by eligible users.</li></ul><p><i>Screenshot 1 - View of the new Microsoft Copilot dashboard:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d3b1ff4d-e865-4735-99fe-89a85a92adae/c6b2526f8b2d42d219252086e589436f216baccb.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot 2 - Example of output:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ed28db4c-5c0c-42f4-a9fc-ce5d61fd13a4/eadf652eb77fa2338ecc3cc2f0623643ba7ca107.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare:]</b></p><ul><li>Review the assignment of the Copilot dashboard users with full company-wide data access and adjust VFAM policies as needed.</li><li>Communicate the upcoming feature to eligible users so they know what to expect.</li><li>No admin setup is required to start using the export.</li><li>Admins can disable the feature at the tenant or group level at any time using VFAM settings.</li></ul><p>Learn more:&nbsp;</p><p><a href=\"https://learn.microsoft.com/viva/feature-access-management#viva-features-management\" target=\"_blank\">Microsoft Viva Feature access management | Microsoft Learn</a></p><p><a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard\" target=\"_blank\">Connect to the Microsoft Copilot Dashboard for Microsoft 365 customers | Microsoft Learn</a>\n</p><p></p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-16T00:11:47Z",
+    "endDateTime": "2025-12-17T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-16T00:12:42.547Z",
+    "title": "Viva Insights web app: Behavioral insights control",
+    "id": "MC1173209",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting mid-November 2025, Viva Insights will disable Behavioral insights by default for new and some existing customers, focusing on Copilot and AI agent analytics. Admins can enable or disable Behavioral insights via VFAM or PowerShell. Behavioral insights provide deeper organizational work patterns but are separate from AI usage data."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p></p><p></p><p><b>[Introduction]</b></p><p>We’re launching a new Viva Insights experience focused solely on Microsoft Copilot and AI agent analytics in the Copilot Analytics Viva Insights web app. By default, <i>Behavioral insights</i>&nbsp;will be disabled for all new customers, and existing customers who haven't previously accessed them. <i>Behavioral insights</i> do not measure Copilot or AI agent usage but provide a deeper understanding of how an organization gets work done such as focus, learning, network, collaboration, and meetings etc. The AI or Viva Insights (VI)&nbsp;admin can enable <i>Behavioral insights</i>&nbsp;via Viva Feature Access Management (VFAM)  User Experience or PowerShell. More details about what's included in <i>Behavioral insights</i> are provided in the table below.</p>\n\n<p><b>[When this will happen:]</b></p><ul><li><b>Mid-October 2025: </b>VFAM policy and PowerShell cmdlet available to all customers.</li><li><b>Mid-November 2025: </b>Experience changes begin rolling out to all customers.</li></ul><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:&nbsp;</b>All Copilot Analytics - Viva insights customers</p><p></p><p><b>What will happen:</b></p><ul><li><b>For existing Viva Insights web app users prior to October 15th, 2025:</b> <i>Behavioral insights</i> will be disabled if one of the following criteria is met. For others, there will be no change.<ul><li>No Analyst assigned since May 2025 and no reports or queries were ever created or published by analyst on Advanced Insights.</li></ul></li><li><b>For new customers post October 15th, 2025: </b><i>Behavioral insights</i> will be disabled by default.</li><li>There may be slight delay between the availability of the VFAM control and the disable policy being set.&nbsp;</li><li>For all customers, this change will begin to have an impact on the experience in mid-November 2025. Until then, the AI or VI admin can enable or disable <i>Behavioral insights</i> as needed. When experience changes roll out in mid-November 2025, updates to the policy will be honored.&nbsp;</li><li><i>Note: </i>This change does not impact data sent to Insights from Viva Skills, Learning, Glint, Organizational data in Microsoft 365. To leverage Insights from these data sets, an Analyst must be assigned in Viva Insights. </li><li>The AI Admin or VI Admin can enable or disable behavioral insights at any time at the tenant level using the <i>Behavioral insights</i>&nbsp;policy in <a href=\"https://learn.microsoft.com/viva/feature-access-management\" target=\"_blank\">VFAM</a>&nbsp;UX or using PowerShell: </li><li>The following table details what’s visible and to whom, when behavioral data is enabled and disabled.&nbsp; &nbsp;</li></ul><table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Role</th>\n    <th>Behavioral Insights OFF</th>\n    <th>Behavioral Insights ON</th>\n  </tr>\n  <tr>\n    <td>CXO, GM or delegate</td>\n    <td>\n      <ul>\n        <li>Access only Copilot and AI agent reports (e.g., Microsoft Copilot Dashboard, Custom studio agent report)</li>\n        <li>Access reports shared with them</li>\n        <li>No behavioral insights (e.g., Ways of Working, Meeting Effectiveness)</li>\n      </ul>\n    </td>\n    <td>\n      <ul>\n        <li>Access only Copilot and AI agent reports (e.g., Microsoft Copilot Dashboard, Custom studio agent report)</li>\n        <li>Access reports shared with them</li>\n        <li>No behavioral insights (e.g., Ways of Working, Meeting Effectiveness)</li>\n      </ul>\n    </td>\n  </tr>\n  <tr>\n    <td>Analyst</td>\n    <td>\n      <ul>\n        <li>Access only Copilot and AI agent reports (e.g., Microsoft Copilot Dashboard, Custom studio agent report)</li>\n        <li>No behavioral insights (e.g., Ways of Working, Meeting Effectiveness)</li>\n        <li>Visual customization of PowerBI reports</li>\n        <li>Publish reports to others in the organization</li>\n      </ul>\n    </td>\n    <td>\n      <ul>\n        <li>Full Advanced analysis access to all Copilot and behavioral metrics and reports</li>\n        <li>Create custom queries, set up PowerBI reports, do visual customization</li>\n        <li>Publish reports to others in the organization</li>\n      </ul>\n    </td>\n  </tr>\n  <tr>\n    <td>Admin</td>\n    <td>\n      <ul>\n        <li>Can manage the <i>Behavioral insights</i>&nbsp;policy in VFAM</li>\n        <li>Sees in-product banners about the state of <i>Behavioral insights</i></li>\n      </ul>\n    </td>\n    <td>\n      <ul>\n        <li>Can manage the <i>Behavioral insights</i> policy in VFAM</li>\n        <li>Sees in-product banners about the state of <i>Behavioral insights</i></li>\n      </ul>\n    </td>\n  </tr>\n</tbody></table><p><b>[What you can do to prepare:]</b></p><ul><li>Review your privacy and compliance requirements to determine if behavioral insights should be enabled for your organization.</li><li>Use the available VFAM control to enable behavioral insights if that is needed for your organization.&nbsp;</li><li>Inform your admins, analysts, and leaders about the new control and its impact on available reports and metrics.&nbsp;</li><li>Update internal documentation and training materials to reflect the new Copilot-only experience if B<i>ehavioral insights</i> is turned off.&nbsp; </li></ul><p><b>[Compliance considerations]</b></p><table border=\"1\">\n<tbody><tr><th>Question</th><th>Explanation</th></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>introduces a Copilot-only experience in Viva Insights, separating behavioral data from AI agent analytics.</td></tr>\n<tr><td>Does the change include an admin control and, can it be controlled through Entra ID group membership?</td><td>Admins can manage the <i>Behavioral insights</i> policy via VFAM UX or PowerShell.</td></tr>\n<tr><td>Does the change allow a user to enable and disable the feature themselves?</td><td>Admins can enable or disable <i>Behavioral insights</i> at the tenant level.</td></tr>\n</tbody></table><p></p><p></p><p></p>"
     }
   },
   {
