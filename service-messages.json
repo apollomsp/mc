@@ -19336,7 +19336,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-23T06:10:45.101012Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-23T06:10:45.1010122Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-23T08:10:04.1847048Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-23T08:10:04.1847051Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -25702,37 +25702,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated February 3, 2025: We have updated the content.&nbsp;</p><p>This is a reminder that starting February 17th, legacy Exchange Online <a href=\"https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#exchange-user-identity-token\" target=\"_blank\">user identity </a>and <a href=\"https://learn.microsoft.com/office/dev/add-ins/outlook/authentication#callback-tokens\" target=\"_blank\">callback </a>tokens will be turned off across all Microsoft 365 tenants. This impacts all Outlook add-ins that request a legacy Exchange Online token to identify the user or make Exchange web services (EWS) calls. This change only applies to Exchange Online and doesn’t apply to Exchange on-premises. \n</p><p><b>Recommended actions\n</b></p><ul><li><b>Identify any add-ins that are impacted.</b> Determine if your tenant has any deployed Outlook add-ins that are impacted by this change. For more information, see <a href=\"https://learn.microsoft.com/office/dev/add-ins/outlook/faq-nested-app-auth-outlook-legacy-tokens#which-add-ins-in-my-organization-are-impacted\" target=\"_blank\">Which add-ins in my Organization are impacted.</a>\n</li><li><b>Contact add-in publishers.</b> Microsoft has worked with many Outlook add-in publishers to update their add-ins to use Entra ID tokens and Microsoft Graph. If you identify any impacted add-ins on your tenant, we recommend that you reach out to the publishers of those add-ins to learn more about their plans to update.\n</li></ul><p><b>Can I opt out of this change?\n</b></p><p>You can opt out of the February 17th change if all the following are true.\n</p><ul><li>Your tenant has add-ins impacted by this change.\n</li><li>The impacted add-ins will not be updated to no longer use legacy Exchange Online tokens by February 17th.\n</li><li>The add-ins are necessary for your organization.\n</li></ul><p>To opt out, <a href=\"https://learn.microsoft.com/en-us/office/dev/add-ins/outlook/turn-exchange-tokens-on-off\" target=\"_blank\">run a command to set legacy Exchange Online tokens to remain on</a>. It takes up to 24 hours for the command to take effect. If you turn tokens on before February 17th, your tenant will be exempt from the February 17th change. Tokens will remain on until June 2025 or until you explicitly turn them off.\n</p><p><b>What happens on February 17th? \n</b></p><p>Microsoft will begin deploying a change to all users worldwide in Microsoft 365 tenants that will turn off the issuance of legacy Exchange online tokens. The deployment will take several weeks to deploy to all users. If an Outlook add-in requests a legacy Exchange token, and token issuance is turned off, the add-in will receive an error. Outlook add-ins that still request legacy Exchange Online tokens will be broken by this change. Please note that even after legacy tokens are turned off, already issued legacy tokens will continue to be valid for approximately 24 hours.\n</p><p>Note that since the change is applied per user, and deployed over several weeks, you could see some user’s affected while others are not.\n</p><p><b>Where do I get more information?\n</b></p><p>The <a href=\"https://aka.ms/naafaq/\" target=\"_blank\">Outlook legacy tokens deprecation FAQ</a> is updated regularly and contains information about tools and how to upgrade add-ins. We recommend you refer to the Q&amp;A section for Microsoft 365 administrators. We also recommend you share the FAQ with any developers in your organization that need to update LOB Outlook add-ins using legacy Exchange Online tokens.\n</p><p><b>Additional resources\n</b></p><ul><li><a href=\"https://learn.microsoft.com/office/dev/add-ins/outlook/turn-exchange-tokens-on-off\" target=\"_blank\">Turn legacy Exchange Online tokens on or off</a>\n</li><li><a href=\"https://aka.ms/NAAFAQ\" target=\"_blank\">Legacy Exchange Online token deprecation FAQ</a>\n</li><li><a href=\"https://aka.ms/NAAdocs\" target=\"_blank\">Enable single sign-on in an Office Add-in with nested app authentication</a>\n</li><li><a href=\"https://aka.ms/NAAsampleOutlook\" target=\"_blank\">NAA Outlook sample</a>  \n</li></ul><p><br></p><ul></ul>"
-    }
-  },
-  {
-    "startDateTime": "2024-10-02T23:43:43Z",
-    "endDateTime": "2025-10-23T07:00:00Z",
-    "lastModifiedDateTime": "2024-10-02T23:44:01.42Z",
-    "title": "Microsoft Viva Insights: Business Leader role removal",
-    "id": "MC903633",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Viva"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "In January 2025, Microsoft Viva Insights will discontinue the Business Leader role, maintaining Manager, Analyst, and Delegate roles. Affected users can retain access through delegation by a Manager. The \"whole company\" view will also be removed, but can be accessed via top leader delegation. Preparation involves assigning affected users as delegates."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Microsoft Viva Insights leader experiences will stop supporting the Business Leader role in January 2025.\n</p><p>Removing support for the Business Leader role within Viva Insights allows for clearer deployment of roles and admin management of roles. Manager, Analyst, and Delegate roles will remain in their current state.\n</p><p>Learn more about <a href=\"https://learn.microsoft.com/viva/insights/advanced/setup-maint/user-roles\" target=\"_blank\">roles in Viva Insights</a>.\n</p><p>[When this will happen:]\n</p><p>The Viva Insights Business Leader role removal will occur throughout January 2025.\n</p><p>[How this will affect your organization:]</p><p>Those with current Viva Insights Business Leader roles can still access leader experiences if someone with a Manager role assigns them as a delegate to enable access to their organizational insights. Learn more about how to <a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/delegate-access\" target=\"_blank\">delegate access to organizational insights and Copilot Dashboard</a>.\n</p><p>Once the Viva Insights Business Leader role is removed, the user’s ability to see the entire company, referred to interchangeably as the “your company” or “myorg” view, will no longer be supported. Should a user need \"whole company\" view access, the top leader in your organization can assign that user delegate access to see the entire company.</p><p>[What you need to do to prepare:]\n</p><p>For those with Viva Insights Business Leader roles within the organization, ensure that someone with a Manager role assigns them as a delegate if they wish to maintain access.</p>"
     }
   },
   {
