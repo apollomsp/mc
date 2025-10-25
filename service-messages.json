@@ -19239,7 +19239,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-24T22:06:34.0365527Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-24T22:06:34.0365533Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-25T00:29:02.425621Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-25T00:29:02.4256213Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -24673,6 +24673,228 @@
     "body": {
       "contentType": "html",
       "content": "<div>You’re now more in control of provisioned Microsoft Store apps than ever. Starting this month, you can remove select in-box apps using straightforward policy on Windows 11 Enterprise or Windows 11 Education, version 25H2. The new policy, called&nbsp;<b>Remove default Microsoft Store packages from the system</b>, is disabled by default. Learn more about how it works, why it matters, the apps it applies to, and how you can configure it with Microsoft Intune or using Group Policy.&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>This policy is already available.&nbsp;</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>If&nbsp;you’ve&nbsp;ever needed to remove pre-installed Microsoft Store apps,&nbsp;you might have&nbsp;encountered&nbsp;scripts that break when apps change, making your job more time-consuming.&nbsp;The new policy&nbsp;lets you select and remove apps according to your&nbsp;organization’s requirements&nbsp;with&nbsp;reduce&nbsp;operational overhead.&nbsp;By using policy, you can create a cleaner, work-ready experience for users&nbsp;at your organization.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>Read additional information for&nbsp;complete details.&nbsp;</div><ol><li>In&nbsp;<a href=\"https://go.microsoft.com/fwlink/?linkid=2109431\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Intune admin center</a>, go to&nbsp;<b>Devices</b>&nbsp;&gt;&nbsp;<b>Manage devices</b>&nbsp;&gt;&nbsp;<b>Configuration</b>&nbsp;&gt;&nbsp;<b>Create</b>&nbsp;&gt;&nbsp;<b>New policy</b>&nbsp;to&nbsp;<a href=\"https://learn.microsoft.com/mem/intune/configuration/settings-catalog\" rel=\"noopener noreferrer\" target=\"_blank\">create a settings catalog policy</a>.&nbsp;</li><li>Use the following settings:&nbsp;</li><li class=\"ql-indent-1\"><b>Category:&nbsp;</b>Administrative Templates\\Windows Components\\App Package Deployment&nbsp;</li><li class=\"ql-indent-1\"><b>Setting name:&nbsp;</b>Remove default Microsoft Store packages from the system&nbsp;</li><li class=\"ql-indent-1\"><b>Value:&nbsp;</b>Enabled&nbsp;</li><li>Set the toggle to&nbsp;<b>True</b>&nbsp;for each app to remove it.&nbsp;</li><li>Assign the policy to the desired group, or groups, of devices.&nbsp;<em>Note</em>: Intune&nbsp;won’t&nbsp;apply this policy to unsupported devices and will instead show a status of “Not applicable” for those devices.&nbsp;</li></ol><div>&nbsp;</div><div><b>Additional&nbsp;information:</b>&nbsp;</div><ul><li>Read the announcement in&nbsp;<a href=\"https://aka.ms/PolicyRemovalofApps\" rel=\"noopener noreferrer\" target=\"_blank\">Policy-based removal of pre-installed Microsoft Store apps</a>.&nbsp;</li><li>Visit official documentation at&nbsp;<a href=\"https://learn.microsoft.com/windows/configuration/policy-based-inbox-app-removal/policy-based-inbox-app-removal?tabs=intune\" rel=\"noopener noreferrer\" target=\"_blank\">Policy-based in-box app removal</a>.</li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-24T22:08:24Z",
+    "endDateTime": "2026-05-31T07:00:00Z",
+    "lastModifiedDateTime": "2025-10-24T22:09:11.963Z",
+    "title": "Microsoft Authenticator app: Upcoming changes to jailbreak and root detection",
+    "id": "MC1179154",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Entra"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting February 2026, Microsoft Authenticator will block Entra credentials on jailbroken/rooted iOS and Android devices through a phased rollout: warning, blocking, then wiping credentials. This security feature requires no admin setup. Users on compliant devices remain unaffected. Organizations should notify users and update documentation accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b>\n</p><p>Starting February 2026, we will introduce<b> jailbreak and root detection for Entra credentials</b> in the <i>Microsoft Authenticator app</i> on both <i>iOS and Android platforms</i>. This change enhances security by preventing Entra credentials from functioning on jailbroken/rooted devices. All existing Entra credentials on jailbroken or rooted devices will be wiped to protect your organization. This capability is secure by default and does not require any admin configuration or control.</p>\n\n<p><b>[When this will happen]</b>&nbsp;</p><p>General Availability (Worldwide) rollout begins in <b>February 2026</b> and is expected to complete in April 2026.</p>\n\n<p><b>[How this affects your organization]</b>\n</p><p><i>Who is affected: </i>All users of Microsoft Authenticator on<i> iOS and Android</i> whose Entra credentials are registered on jailbroken or rooted device.</p><p><i>What will happen:\n</i></p><ul>\n<li>The feature is secure by default.</li>\n<li>Users on jailbroken or rooted devices will experience the following phased rollout:\n  <ul>\n    <li><b>Phase 1 – Warning Mode:</b> Users receive a warning that their device is jailbroken or rooted and will be blocked in the future (s<i>creenshots 1-4):&nbsp;</i></li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/0d5bba85-f0fa-4778-8cfe-07a20df67d0a/b89470e94de6dc9e7c3bcfdee20a3ea880bf99f4.png\" style=\"width: 400px;\" alt=\"user settings\"><i></i></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/e96664e1-316d-4f3f-a0d3-a991adcff91b/613a783257cbf0d59adf2174021a95410909730d.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/2853c8ca-a174-4ce4-9abb-ab6d525827c9/2b53ed22753bca7517ef5d0c0ad238e02ff2c041.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/2f888e3c-0e56-4e74-ae32-7688ffac7194/dc0dabc19fcac41f554b3fa0afad357ac520914b.png\" style=\"width: 400px;\" alt=\"user settings\"><i></i></p>\n    <li><b>Phase 2 – Blocking Mode:</b> Users are blocked from registering Entra credentials or signing in via Authenticat<i>or (screenshots 5-6):</i></li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/03c7c543-673d-459f-8560-f3209033340e/dbb1775ac2d54b87bd72c82f9e71118c1e5d6a64.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/bae85191-7f10-4ae2-8662-388b12c11d83/4578ef9cec6f9e0bc7a63d04c8bbccd127d90b33.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n    <li><b>Phase 3 – Wipe Mode:</b> Existing Entra credentials are wiped from jailbroken or rooted dev<i>ices (screenshots 7-10):</i></li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/6c4ab2c5-3e63-451d-b943-1d534ad2bae4/93789ce64a8b0b6c9ce48108982e2eb6e351750f.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/5f0bd4bc-ecd4-4f47-93a2-4beeeaa0b0f8/78a6473762add6a1aa8143b8f8f9f328fa177d4f.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/20777765-a2f0-41d3-a655-eaa7f0f0af8b/3851d16a0f020994abe26be742700f248d06ad59.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/b8e50708-7d51-48f6-93c3-b6e369b64ebc/37ea29601b4f45c38545cb1973d43f6a17a2a7aa.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n  </ul>\n</li>\n<li>Users on compliant (non-Jailbroken or non-rooted) devices will not be affected.</li></ul><ul>\n</ul><p></p>\n\n<p><b>[What you can do to prepare]</b>\n</p><ul>\n<li>Notify users about this upcoming change.</li>\n<li>Communicate to helpdesk staff that Authenticator will become unusable for Entra accounts on jailbroken or rooted devices.</li>\n<li>Update internal documentation if you reference Authenticator usage.</li>\n<li>No admin action is required to enable or configure this feature.</li>\n</ul><p></p>\n\n<p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/account-billing/about-microsoft-authenticator-9783c865-0308-42fb-a519-8cf666fe0acc\" target=\"_blank\">About Microsoft Authenticator | Microsoft Support</a></p><p><b>[Compliance considerations]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-24T22:09:40Z",
+    "endDateTime": "2026-01-16T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-24T22:09:48.947Z",
+    "title": "Microsoft Defender for Identity: New recommendation added to Microsoft Secure Score",
+    "id": "MC1179155",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Secure Score will add a new improvement action from Microsoft Defender for Identity to prompt password changes for accounts with potentially leaked credentials. Rolling out November to December 2025, it requires no admin action and appears only if Defender for Identity sensors are deployed."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction</b></p>\n<p>To help organizations better assess and improve their identity security posture, Microsoft Secure Score is being enhanced with new improvement actions based on Microsoft Defender for Identity recommendations. These updates provide more accurate insights and actionable guidance to strengthen your security configuration.</p>\n\n<p><b>When this will happen:</b></p>\n<ul>\n<li><b>Public Preview:</b> Rollout begins early November 2025, completes by mid-December 2025</li>\n<li><b>General Availability (Worldwide, GCC, GCC High, and DoD):</b>&nbsp;Rollout begins early November 2025, completes by mid-December 2025</li>\n</ul>\n\n<p><b>How this affects your organization:</b></p>\n<ul>\n<li><b>Who is affected:</b> Admins managing Microsoft Secure Score and organizations with Microsoft Defender for Identity sensors deployed.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>A new improvement action will appear in Microsoft Secure Score:&nbsp;<i>Change password for accounts with potentially leaked credentials</i></li>\n<li>This recommendation is visible only if your tenant has a Defender for Identity sensor deployed.</li>\n<li>The update is <b>enabled by default</b> and requires no configuration changes.</li>\n<li>No impact to end-user workflow unless acted upon by the admin.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>No admin action is required before or after rollout.</li>\n<li>Review your current identity configuration to assess potential impact.</li>\n<li>Notify relevant administrators and update internal documentation as needed.</li>\n<li>Regularly review Microsoft Secure Score to monitor and act on new improvement suggestions.</li>\n<li>Learn more: <a href=\"https://learn.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score\" target=\"_blank\">Microsoft Secure Score</a>&nbsp;</li>\n</ul>\n\n<p><b>Compliance considerations:</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-24T22:10:28Z",
+    "endDateTime": "2026-03-02T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-24T22:10:34.007Z",
+    "title": "Updated SharePoint document library user experience",
+    "id": "MC1179157",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft is updating SharePoint document libraries with a simplified command bar, improved breadcrumb navigation, more visible custom views, filter pills, and a new options button. Changes begin November 2025, preserving existing customizations except for updated command bar formatter behavior. No action required to prepare."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>Microsoft is introducing a refreshed user experience for SharePoint document libraries to improve usability and navigation. These updates are based on customer feedback and aim to streamline common actions, enhance visibility of filters and views, and improve folder navigation—all without disrupting existing customizations.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/2838b8da-5ba1-4382-bdae-9e58a719ccb3\" style=\"width: 400px;\" alt=\"user settings\"></p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&amp;searchterms=500870\" target=\"_blank\">500870</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Targeted Release:</b> Begins early November 2025 and completes by late November 2025.</li>\n<li><b>General Availability (Worldwide, GCC, GCC High, and DoD):</b> Begins early January 2026 and completes by late January 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> <ul><li>All users of SharePoint document libraries across Microsoft 365 tenants.</li><li><i>Note</i>: Some users may have access to this feature before other users within your organization.</li></ul></li><li><b>What will happen:</b></li><ul>\n  <li><b>Simplified command bar:</b> The command bar has been reorganized for clarity and efficiency. The \"New\" and \"Upload\" actions are now combined into a single \"Create or Upload\" hero button, docked at the upper right.</li>\n  \n  <li><b>Improved breadcrumb navigation:</b> The breadcrumb has been redesigned to make navigating between folders faster and more intuitive. Users can now:\n    <ul>\n      <li>See their current folder context clearly.</li>\n      <li>Jump back to any parent folder with a single click.</li>\n      <li>Use the dropdown next to the folder name in the breadcrumb to create folders or upload files directly into the current folder.</li>\n      <li>When at the root of a library, use the \"Other Libraries\" sub-menu to navigate between libraries in the same site.</li>\n    </ul>\n  </li>\n\n  <li><b>More visible custom views, view creation, and view saving:</b> Custom views and view creation are now displayed more prominently inside pills directly under the breadcrumb. When sorts, filters, or groups are applied but not saved to the view, a visual indicator shows that others won’t see these changes until they’re saved.</li>\n\n  <li><b>Filter pills: </b>Filter pills provide a faster way to refine your view. Instead of opening the full filter pane, users can:\n    <ul>\n      <li>Apply file type filters directly from the pill bar at the top of the document library.</li>\n      <li>See all active filters as pills in this bar.</li>\n      <li>Use the clear button to remove all filters and return to the saved view.</li>\n    </ul>\n  </li>\n\n  <li><b>View options button: </b>Common view customization options are now surfaced under a new \"Options\" button, including:\n    <ul>\n      <li>Layout options</li>\n      <li>Sort and group options</li>\n      <li>Field visibility and formatting</li>\n    </ul>\n  </li>\n\n  <li><b>Command bar custom formatter behavior:</b> Any command configured with the following attributes will now appear in a distinguished area on the far right (or far left for right-to-left locales) of the command bar:\n    <ul>\n      <li><code>\"primary\": true</code></li>\n      <li><code>\"position\": 0</code></li>\n    </ul>\n    Full details are documented here: <a href=\"https://learn.microsoft.com/sharepoint/dev/declarative-customization/view-commandbar-formatting\">View command bar formatting documentation</a>\n  </li>\n\n  <li><b>No impact to other customizations: </b>Other than the command bar custom formatter behavior described above, this change will not affect existing customizations made through SPFX, column formatting, or view formatting.</li>\n</ul></ul>\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required to prepare for this change.</li>\n<li>If you use custom command bar formatters, review the updated placement behavior: <a href=\"https://learn.microsoft.com/sharepoint/dev/declarative-customization/view-commandbar-formatting\" target=\"_blank\">View command bar formatting documentation</a>.</li><li>Before rollout, we will update this post with new documentation.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-24T22:11:09Z",
+    "endDateTime": "2025-11-20T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-24T22:11:17.093Z",
+    "title": "Microsoft Defender for Identity: Activate the Unified Sensor now generally available",
+    "id": "MC1179159",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Defender for Identity's Unified Sensor is now generally available, enabling identity protections on qualifying domain controllers via the existing Defender for Endpoint agent without extra installation. Activation requires Windows Server 2019+, specific updates, and licensing. It simplifies identity alerts and attack disruption with no downtime."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re excited to announce the general availability (GA) of the <b>Unified Sensor</b> <b>for Microsoft Defender for Identity</b>. This milestone simplifies the activation of identity protections on qualifying domain controllers by extending the existing Microsoft Defender for Endpoint agent. With just a few clicks, you can enable identity alerts, posture recommendations, and automatic attack disruption—no additional agent installation required.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide, GCC, GCCH, and DoD):</b> Available now.</p><p><b>[How this affects your organization]</b></p><p>Who is affected: Admins managing domain controllers with Microsoft Defender for Endpoint deployed.</p><p>What will happen:</p><ul><li>The Unified Sensor can be activated on qualifying domain controllers.</li><li>Identity-specific alerts and posture recommendations will begin flowing shortly after activation.</li><li>No downtime is required for domain controllers.</li><li>Existing licenses, capabilities, and alerts remain unaffected.</li><li>Activation does not require additional installations.</li><li>The Unified Sensor v3.x:<ul><li>Cannot be activated on servers with Defender for Identity sensor v2.x already deployed.</li><li>Does not currently support VPN integration or ExpressRoute.</li><li>Does not yet offer full functionality for health alerts, posture recommendations, security alerts, or advanced hunting data.</li></ul></li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Review <a href=\"https://learn.microsoft.com/defender-for-identity/deploy/prerequisites-sensor-version-3\" target=\"_blank\">deployment prerequisites</a> to ensure your environment is ready.</li><li>Go to the <b><i>Activation page</i></b> in the <i>Microsoft Defender portal</i>.</li><li>Review all your eligible domain controllers (those onboarded with Microsoft Defender for Endpoint, version 2019 or above).</li><li>Activate the new sensor on your domain controllers.</li><li>Ensure your domain controllers meet the following minimum requirements:<ul><li>Windows Server 2019 or later.</li><li>June 2025 Cumulative Update or later.</li><li>Defender for Endpoint must be deployed.</li><li>Domain controller must not already have Defender for Identity sensor v2.x installed.</li><li>Server must have at least 2 cores and 6 GB RAM.</li><li>Power Option should be set to High Performance.</li><li>Time synchronization across servers must be within five minutes.</li></ul></li><li>If using virtualization:<ul><li>For Hyper-V: Disable Dynamic Memory.</li><li>For VMware: Reserve all guest memory.</li></ul></li><li>Licensing requirements include one of the following:<ul><li>Microsoft 365 E5/A5/G5/F5 Security</li><li>EMS E5/A5</li><li>Standalone Defender for Identity license</li></ul></li><li>To support advanced identity detections, consider applying the <b><a href=\"https://learn.microsoft.com/defender-for-identity/deploy/prerequisites-sensor-version-3#configure-unified-sensor-to-support-advanced-identity-detections-preview\" target=\"_blank\">Unified Sensor RPC Audit tag</a></b> via Asset Rule Management in the <i>Microsoft Defender portal</i>.</li><li>Configure Windows auditing to support enhanced detections. You may use the <b>Set-MDIConfiguration </b>PowerShell command to automate audit policy setup.</li><li>Run the <b>Test-MdiReadiness.ps1</b> script to validate your environment before deployment.</li><li>Communicate this update to your security operations team.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/defender-for-identity/deploy/prerequisites-sensor-version-3\" target=\"_blank\">Microsoft Defender for Identity sensor v3.x prerequisites (Preview)</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-24T22:11:40Z",
+    "endDateTime": "2026-01-10T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-24T22:11:54.407Z",
+    "title": "Microsoft 365 Copilot (web and mobile): Sharing Copilot Notebooks and mobile app rollout",
+    "id": "MC1179160",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "506851"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot introduces shared Copilot Notebooks for team collaboration and a new mobile app for on-the-go access. Rolling out from October to December 2025, these features enhance cross-functional workflows, require Copilot licenses, and maintain data security and compliance. Admins manage availability via Office Cloud Policy Service."
+      },
+      {
+        "name": "Platforms",
+        "value": "Mobile, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b>\n</p><p>Microsoft is introducing two new ways for users to engage with Microsoft 365 Copilot:</p><ul><li><b>Sharing Copilot Notebooks on the web</b>, enabling teams to collaborate in a single notebook with shared enterprise content</li><li>A <b>new Microsoft 365 Copilot mobile app</b>, allowing users to access Copilot experiences on the go</li></ul><p>Sharing Copilot Notebooks enables teams to collaborate in a single notebook, combining Pages, Loops, OneNote Notebooks, SharePoint Sites, and other Microsoft 365 content with Copilot intelligence. This feature provides shared insights while maintaining data security and permissions, helping admins enable cross-functional collaboration with confidence.</p><p>These updates are designed to improve cross-functional collaboration and extend Microsoft 365 Copilot’s value across platforms.</p>\n\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=506851\" target=\"_blank\">506851</a>.</p>\n\n<p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide):&nbsp; </b></p><ul><li><b>Web: </b>Will begin rolling out in <b>late October 2025</b> and expect to complete in December 2025 based on telemetry.</li><li><b>Mobile: </b>Will begin rolling out in <b>early November 2025</b> and expect to complete in December 2025 based on telemetry.</li></ul>\n\n<p><b>[How this affects your organization]</b></p>\n<ul>\n<li><b>Who is affected:</b>&nbsp;Users with a Microsoft 365 Copilot license (Copilot $30 SKU). Users without a Microsoft 365 Copilot license can be invited to a shared notebook, but they will not be able to access or interact with the content. Instead, they will see a prompt to acquire a Copilot license.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Users will be able to share a notebook they created with other Copilot-licensed users:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/f0cb35e5-21bf-47ad-b267-127bf81d4c28/b958d6f4984d651b5b1956f8109b6b4712dbfcbc.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n    </li><li>Users can create and collaborate on shared notebook pages.</li>\n    <li>Copilot responses will be grounded in shared enterprise content.</li>\n    <li>Chats within shared notebooks remain private to each user.</li>\n    <li>Access to linked files is granted only when the sharer has permission to share further.</li>\n    <li>Copilot ensures data sensitivity is protected when content is brought from chat into the notebook.</li><li>This feature improves cross-functional workflows and enables Copilot to deliver answers based on shared context.</li><li>Sharing is enabled by default when Copilot Notebooks is turned on via Office Cloud Policy Service (OCPS).</li>\n    <li>There is currently no admin control to disable sharing independently; the only way to prevent sharing is to disable Copilot Notebooks entirely via OCPS.</li><li>A new <b>Copilot mobile app</b> will be available in November 2025, allowing users to access Copilot experiences from their mobile devices.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare]</b></p>\n<ul>\n<li>Review your OCPS settings to manage Copilot Notebook availability.</li><li>Notify users who will receive the feature (everyone with a Copilot license by default).</li>\n<li>Update user training materials to reflect the new collaboration capabilities and mobile access.</li><li>Prepare your help desk to support questions about shared notebooks and the mobile app.</li><li>Confirm licensing eligibility for users in EDU, GCC, and other sovereign cloud environments.</li><li>Documentation links are being updated and will be provided when available.</li></ul><p><b>[Compliance considerations]</b>\n</p><p>No <a href=\"https://learn.microsoft.com/microsoft-365/loop/cpcn-compliance-summary?view=o365-worldwide\" target=\"_blank\">compliance considerations</a> identified, all compliance capabilities will be the same as the <a href=\"https://support.microsoft.com/topic/get-started-with-microsoft-365-copilot-notebooks-0775e693-11c6-4d80-8aba-fcc81a737a06\" target=\"_blank\">Microsoft 365 Copilot Notebooks experience</a>.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-24T22:12:41Z",
+    "endDateTime": "2026-02-05T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-24T22:12:47.857Z",
+    "title": "Microsoft PowerPoint: \"Reuse Slides\" feature will retire starting 2026",
+    "id": "MC1179161",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Retirement"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting January 2026, PowerPoint will retire the \"Reuse Slides\" feature on Windows and Mac desktops, removing it from the ribbon with no option to re-enable. Users should update documentation and consider alternative slide reuse methods. No compliance issues are noted."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>Starting in January 2026, Microsoft will retire the <i style=\"\">Reuse Slides</i> feature from PowerPoint for Windows and Mac desktops. This change is part of ongoing efforts to simplify the PowerPoint experience and remove features that duplicate existing capabilities.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li>General Availability (Worldwide): We will begin retiring this feature starting in December 2025 and expect to complete in January 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All users of PowerPoint on Windows and Mac desktops.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>The <i>Reuse Slides</i> option will be removed from the PowerPoint ribbon.</li>\n    <li>The feature will no longer be supported or accessible.</li>\n    <li>No admin controls are available to retain or re-enable the feature.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Communicate this change to helpdesk staff.</li>\n<li>Update internal documentation or training materials that reference the <i>Reuse Slides</i> feature.</li>\n<li>If your organization relies on slide reuse workflows, consider alternative methods such as manually copying slides between presentations.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-24T22:13:07Z",
+    "endDateTime": "2026-01-01T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-24T22:13:16.623Z",
+    "title": "Microsoft Custom engine agents: Introducing file upload support",
+    "id": "MC1179162",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Custom engine agents will support file uploads from local storage or OneDrive starting November 2025, allowing agents to access files briefly and respond to queries. This feature, enabled by default, applies to all users and matches Copilot's supported file types, with image support coming later."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Custom engine agents (CEA) are specialized agentic solutions that can be built using any large language model (LLM), toolchain, or orchestration framework, and are tailored to specific domain or tenant workflows. These agents can be created using either Microsoft Copilot Studio or the Agents Toolkit. File upload support is already available in <i>Microsoft 365 Copilot Business Chat</i>.</p><p>We’re now extending this capability to Custom engine agents, enabling users to upload files stored locally or in <i>OneDrive</i> directly to agents. Once uploaded, agents can access the file for a short duration and respond to user queries based on its contents. This update aligns with customer feedback requesting more flexible input options for agent interactions.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide): Rollout will begin in early November 2025 and is expected to complete by late November 2025.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b>&nbsp;All users of Custom engine agents, whether built using Copilot Studio or the Agents Toolkit. This<b> includes users on free, metered, and paid Copilot plans</b>.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Users will be able to upload files directly to Custom engine agents.</li>\n    <li>Supported file types will match those supported by Copilot.</li>\n    <li>Image file support will be added in a future update.</li>\n    <li>The feature will be ON by default once available.</li>\n    <li>No changes to existing admin policies are required.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>Communicate this change to helpdesk staff.</li>\n  <li>Update internal documentation if you reference CEA capabilities.</li>\n  <li>Review the documentation for details on agent configuration and supported capabilities.</li></ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/microsoft-365-copilot/extensibility/overview-custom-engine-agent\" target=\"_blank\">Custom engine agents for Microsoft 365 overview | Microsoft Learn</a></p><p><b>[Compliance considerations:]</b></p><ul><p></p>\n<table border=\"1\">\n<tbody><tr><th>Question</th><th>Answer</th><th>Explanation</th></tr>\n<tr><td>Does this change store new customer data, and if so, where is it stored and is the data cached or permanently stored?</td><td>Yes</td><td>Uploaded files are temporarily accessible to the agent for a few minutes&nbsp;</td></tr>\n<tr><td>Does this change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes</td><td>Custom engine agents will be able to access uploaded files and respond to user queries based on the file contents.</td></tr>\n<tr><td>Does this change provide end users any new way of interacting with generative AI, and if so, how?</td><td>Yes</td><td>Users can now upload files to agents, expanding interaction beyond text input.</td></tr>\n</tbody></table></ul>"
     }
   },
   {
