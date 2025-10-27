@@ -18240,7 +18240,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-27T14:07:26.8473034Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-27T14:07:26.8473037Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-27T16:08:40.1785931Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-27T16:08:40.1785936Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -23947,6 +23947,30 @@
     }
   },
   {
+    "startDateTime": "2025-10-27T14:32:16Z",
+    "endDateTime": "2025-11-27T14:32:16Z",
+    "lastModifiedDateTime": "2025-10-27T14:32:55.513Z",
+    "title": "Microsoft Copilot Studio - Strengthen security of Copilot Studio agents with additional threat protection",
+    "id": "MC1180712",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to strengthen security of Copilot Studio agents with additional threat protection in Microsoft Copilot Studio. This feature will reach general availability on November 28, 2025.<br><br><b>How does this affect me?</b><br>This feature allows you to configure external threat detection systems for enhanced oversight. These tools operate during the agent's run-time, continuously evaluating agent activity. If the system detects any tools or actions it deems suspicious, it can intervene to approve or block their execution, providing an extra layer of real-time protection and compliance enforcement.<br><br>With the flexibility provided by this feature, users can select Microsoft Defender, integrate with other trusted security partners, or develop and connect your own custom monitoring solutions. Admins can enable this feature using the following steps:<ol><li><b>Register a Microsoft Entra application</b>: A Power Platform Administrator creates an Entra app to securely authenticate between Copilot Studio and the chosen external monitoring provider. This can be done using a provided PowerShell script or manually through the Azure portal.</li><li><b>Configure integration in Power Platform Admin Center</b>: The administrator enters the Entra app details and the REST API endpoint from the security partner in the Admin Center’s threat detection settings.</li></ol>Once enabled, Copilot Studio shares only the necessary runtime data with the external provider for real-time decision-making. The integration can be disabled at any time if requirements change. External threat detection is available only for generative agents using generative orchestration (not classic agents).<br><br>Organizations are responsible for ensuring their chosen provider’s data handling and compliance standards meet internal and regulatory requirements.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit the <a target=\"_blank\" href=\"https://aka.ms/ADO12592\">Enable external threat detection and protection for Copilot Studio custom agents (preview)</a>."
+    }
+  },
+  {
     "startDateTime": "2021-06-16T22:53:37Z",
     "endDateTime": "2025-11-28T08:00:00Z",
     "lastModifiedDateTime": "2021-06-16T22:54:13.617Z",
@@ -24402,7 +24426,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
