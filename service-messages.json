@@ -18240,7 +18240,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-27T18:09:55.1483205Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-27T18:09:55.1483208Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-27T20:06:49.5604547Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-27T20:06:49.5604549Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -23968,6 +23968,54 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to strengthen security of Copilot Studio agents with additional threat protection in Microsoft Copilot Studio. This feature will reach general availability on November 28, 2025.<br><br><b>How does this affect me?</b><br>This feature allows you to configure external threat detection systems for enhanced oversight. These tools operate during the agent's run-time, continuously evaluating agent activity. If the system detects any tools or actions it deems suspicious, it can intervene to approve or block their execution, providing an extra layer of real-time protection and compliance enforcement.<br><br>With the flexibility provided by this feature, users can select Microsoft Defender, integrate with other trusted security partners, or develop and connect your own custom monitoring solutions. Admins can enable this feature using the following steps:<ol><li><b>Register a Microsoft Entra application</b>: A Power Platform Administrator creates an Entra app to securely authenticate between Copilot Studio and the chosen external monitoring provider. This can be done using a provided PowerShell script or manually through the Azure portal.</li><li><b>Configure integration in Power Platform Admin Center</b>: The administrator enters the Entra app details and the REST API endpoint from the security partner in the Admin Center’s threat detection settings.</li></ol>Once enabled, Copilot Studio shares only the necessary runtime data with the external provider for real-time decision-making. The integration can be disabled at any time if requirements change. External threat detection is available only for generative agents using generative orchestration (not classic agents).<br><br>Organizations are responsible for ensuring their chosen provider’s data handling and compliance standards meet internal and regulatory requirements.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit the <a target=\"_blank\" href=\"https://aka.ms/ADO12592\">Enable external threat detection and protection for Copilot Studio custom agents (preview)</a>."
+    }
+  },
+  {
+    "startDateTime": "2025-10-27T19:32:38.887Z",
+    "endDateTime": "2026-10-27T19:32:38.777Z",
+    "lastModifiedDateTime": "2025-10-27T19:32:39.833Z",
+    "title": "An updated version of the October 2025 Scan Cab is available",
+    "id": "MC1180840",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div><b>IMPORTANT</b>: This notice is only relevant for environments where:</div><ul><li><a href=\"https://learn.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Server Update Services (WSUS)</a> is used to deploy Windows security updates to Windows Server devices.</li><li>Scan Cab is used to check for update compliance.</li><li>The October 2025 Scan Cab was deployed before 8:54 PM PT on October 24, 2025.</li></ul><div>&nbsp;</div><div>An updated version of the October 2025 Scan Cab was made available at 8:54 am PT on October 24, 2025. This Scan Cab includes new metadata corresponding to new updates for the following versions of Windows Server:</div><div class=\"ql-indent-1\">•\tWindows Server 2025 (<a href=\"https://support.microsoft.com/topic/kb5070762-safe-os-dynamic-out-of-band-update-for-windows-11-version-24h2-and-25h2-and-windows-server-2025-october-20-2025-b92451e7-99c1-4ef8-ad12-b3f6bf381d8d\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070762</a>; <a href=\"https://support.microsoft.com/topic/5070881\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070881</a>)&nbsp;</div><div class=\"ql-indent-1\">•\tWindows Server, version 23H2 (<a href=\"https://support.microsoft.com/topic/5070879\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070879</a>)&nbsp;</div><div class=\"ql-indent-1\">•\tWindows Server 2022 (<a href=\"https://support.microsoft.com/topic/5070884\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070884</a>)&nbsp;</div><div class=\"ql-indent-1\">•\tAzure Automanage for Windows Server 2022 with Hotpatch (<a href=\"https://support.microsoft.com/topic/5070892\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070892</a>)&nbsp;</div><div class=\"ql-indent-1\">•\tWindows Server 2019 (<a href=\"https://support.microsoft.com/topic/5070883\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070883</a>)&nbsp;</div><div class=\"ql-indent-1\">•\tWindows Server 2016 (<a href=\"https://support.microsoft.com/topic/5070882\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070882</a>)&nbsp;</div><div class=\"ql-indent-1\">•\tWindows Server 2012 R2 (<a href=\"https://support.microsoft.com/topic/5070886\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070886</a>)&nbsp;</div><div class=\"ql-indent-1\">•\tWindows Server 2012 (<a href=\"https://support.microsoft.com/topic/5070887\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070887</a>)&nbsp;</div><div>&nbsp;</div><div>The new Microsoft updates for these Windows Server versions,&nbsp;released October 24, 2025, included additional protections to address <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287\" rel=\"noopener noreferrer\" target=\"_blank\"><u>CVE-2025-59﻿287</u></a>. See the additional information section of this message for details.</div><div><br></div><div><b>How this affects your organization:</b></div><div>IT administrators who downloaded the Scan Cab before 8:54 PM PT on October 24, 2025, should re-acquire and re-deploy it if the Scan Cab is used to assess updates for environments where WSUS is used to deploy Windows security updates to Windows Server devices.</div><div>&nbsp;</div><div>No action is required on environments where Scan Cab is not employed and does not use WSUS to Windows Server devices. However, please note that there might be non-Microsoft applications which utilize Scan Cab. Review the documentation for any software and update deployment tools which might be in use for your organization, to understand if this is applicable in your environment.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><div>Administrators can re-deploy the updated Scan Cab via their usual processes. For detailed guidance, see the Additional Information section below.</div><div>&nbsp;</div><div><b>Additional information:</b></div><ul><li><a href=\"https://go.microsoft.com/fwlink/?LinkID=74689\" rel=\"noopener noreferrer\" target=\"_blank\">Updated Scan Cab: Download the new Scan Cab here</a></li><li><a href=\"https://learn.microsoft.com/windows/release-health/windows-message-center#3668\" rel=\"noopener noreferrer\" target=\"_blank\">Take Action: Out-of-band update to address a vulnerability in Windows Server Update Services (WSUS)</a></li><li><a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-59287\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Server Update Service (WSUS) Remote Code Execution Vulnerability</a></li><li><a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-a-smaller-wsus-scan-cab/ba-p/2928256?msclkid=256145ccd0c011ec9266b53af8d0aca1\" rel=\"noopener noreferrer\" target=\"_blank\">Announcing a smaller WSUS Scan Cab - Microsoft Tech Community</a>: Learn more about WSUS and the Scan Cab process</li><li><a href=\"https://learn.microsoft.com/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline?tabs=vbscript\" rel=\"noopener noreferrer\" target=\"_blank\">Using WUA to Scan for Updates Offline - Win32 apps | Microsoft Docs</a>: Windows Update Agent (WUA) can be used to scan computers for security updates without connecting to Windows Update</li><li><a href=\"https://learn.microsoft.com/windows-server/administration/windows-server-update-services/manage/wsus-and-the-catalog-site\" rel=\"noopener noreferrer\" target=\"_blank\">WSUS and the Catalog Site | Microsoft Docs</a>: The Catalog Site used by WSUS to import updates and drivers</li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-27T19:38:44Z",
+    "endDateTime": "2025-11-27T19:38:44Z",
+    "lastModifiedDateTime": "2025-10-27T19:39:21.117Z",
+    "title": "Power Platform admin center – Updates for security roles in child business units",
+    "id": "MC1180845",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We have scheduled an update for the Power Platform admin center that changes how Dataverse security role fields are populated in child business units. The <b>ModifiedOn</b> and <b>ModifiedBy</b> Dataverse security role fields in child business units will now inherit the value set in the parent business unit. This change will be deployed on October 31, 2025.<br><br><b>How does this affect me?</b><br>Previously, when security roles were inherited from the parent business unit into the child business units, the <b>ModifiedOn</b> and <b>ModifiedBy</b> fields of the child business units were not populated.<br><br><b>What action do I need to take?</b><br>Review your process or report if you are reporting on these fields and make the necessary changes.<br><br>For more information, please review the <a target=\"_blank\" href=\"https://aka.ms/ADO12621\">Security roles and privileges</a> documentation."
     }
   },
   {
