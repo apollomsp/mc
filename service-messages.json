@@ -8028,37 +8028,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-24T00:14:55Z",
-    "endDateTime": "2025-10-28T07:00:00Z",
-    "lastModifiedDateTime": "2025-07-24T00:16:08.493Z",
-    "title": "Network Analytics Updates in Viva Engage",
-    "id": "MC1120808",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Viva"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Viva Engage Premium now offers Organizational Data Filters to analyze Network Analytics by employee attributes. New metrics—Enabled and Activated users—enhance engagement insights. Network-wide data can be exported via CSV. Admins can manage filters using Entra ID or CSV uploads. Rollout begins late July 2025."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>Organizational Data Filters</b> is a Viva Engage Premium feature that enables users to filter analytics by employee attributes such as country, department, and job title. Starting at the end of July, this capability will be available to admins and corporate communicators through the ‘All filters’ panel in Network Analytics.</p><p>These filters offer insight into how different employee segments interact with Viva Engage. To support deeper analysis on onboarding and adoption, the dashboard also now includes two new metrics: <b>Enabled users</b> and <b>Activated users</b>. When paired with existing engagement metrics, these values provide a view of the engagement funnel across segments.\n</p><p>To further support data exploration, network-wide analytics can now be exported via the new <b>Network Analytics CSV export</b>, allowing networks to dive deeper into their data.\n</p><p>[When this will happen:]</p><p>General Availability (list environments on the same schedule here): We will begin rolling out late July 2025 and expect to complete by mid-August 2025.</p><p>[How this will affect your organization:]</p><p>Admins and corporate communicators can filter Network Analytics by country, department, and job title. These filters apply to all metrics and tables except retention, benchmarks, themes, and sentiment.\n</p><p>Each filter category shows the top 200 values based on enabled users, with counts shown in the dropdown. Values with fewer than 10 users or outside the top 200 are grouped under “Other.” Admins can manage this feature in the Viva Engage Admin Dashboard under Analytics and AI.\n</p><p>New metrics:</p><ul><li>Enabled users: Users with Viva Engage enabled as a service (premium or seeded).</li><li>Activated users: Subset of Enabled users who performed at least one action in the past 18 months.</li></ul><p>These metrics, along with People reached, People engaged, and People posted, provide a complete view on engagement. In addition, network-wide data can be exported via a CSV.</p><p>[What you need to do to prepare:]</p><p>Organizational data is based on M365 user profiles and can be uploaded in two ways:\n</p><p><b>Entra ID Directory (Default):</b> Viva Engage uses Entra ID to populate filters. We recommend reviewing the country, department, and job title fields to ensure accuracy.\n</p><p><b>CSV Upload via M365 Admin Center: </b>If your network does not use Entra ID or is looking for more flexibility, M365 admins can upload a CSV via the M365 Admin Center. The file must include Microsoft_PersonEmail, and we recommend adding:\n</p><ul><li>Microsoft_Organization</li><li>Microsoft_JobTitle</li><li>Microsoft_CompanyOfficeCountryOrRegion</li></ul><p>Templates are available in the M365 Admin Center and can be uploaded via SharePoint (5GB limit) or locally (25MB limit). To override Entra ID data, email <u>orgdatainm365Support@microsoft.com</u> with the subject: <i>Request to give organizational data precedence over Microsoft Entra data in Microsoft 365 User Profile for Tenant [Name][Tenant ID]</i>. Changes may take up to four days.\n</p><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-07-24T00:28:12Z",
     "endDateTime": "2026-01-12T08:00:00Z",
     "lastModifiedDateTime": "2025-09-11T15:40:58.297Z",
@@ -9026,7 +8995,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-25T22:06:52.3795265Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979992Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979993Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979994Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T22:06:52.3795277Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"498895\":[{\"RoadmapId\":498895,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979993Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979994Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-08-25T22:06:52.3795265Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":498895,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T14:07:06.2979992Z\",\"LatestRing\":null},{\"RoadmapId\":498895,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-08-25T22:06:52.3795277Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18280,7 +18249,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-28T06:11:00.1835506Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-28T06:11:00.1835508Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"503100\":[{\"RoadmapId\":503100,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-28T08:09:56.4999669Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503100,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-28T08:09:56.499967Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -20500,7 +20469,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386009Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.338601Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386002Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386007Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386012Z\",\"LatestRing\":null}]}"
+        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386002Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386007Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386009Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.338601Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386012Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24682,7 +24651,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
