@@ -19697,13 +19697,14 @@
   },
   {
     "startDateTime": "2025-10-08T22:00:47Z",
-    "endDateTime": "2025-11-30T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-31T18:00:33.667Z",
+    "endDateTime": "2026-07-31T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-31T18:13:03.66Z",
     "title": "(Updated) Microsoft Viva Glint: Retaining first name and last name for deleted users",
     "id": "MC1168288",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "Admin impact"
     ],
@@ -19717,12 +19718,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft Viva Glint will introduce a toggle to retain or replace first and last names of deleted users, rolling out October 2025. Entra Delete signals processing resumes July 2026, with manual deletion available meanwhile. This change affects data retention policies and compliance, enabled by default for new deletions."
+        "value": "Microsoft Viva Glint will introduce a toggle allowing admins to retain or replace first and last names of deleted users, improving data traceability. Rollout starts mid-October 2025, with Entra Delete signals resuming July 1, 2026. Admins should review retention settings by November 1, 2025."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated October 31, 2025: We have updated the timeline for resumption of Microsoft Entra Delete signals in Viva Glint. Thank you for your patience.</p><p><b>[Introduction]</b></p>\n<p>To improve data traceability and support organizational compliance needs, Microsoft Viva Glint is introducing a new configuration option that allows administrators to retain the first name and last name of deleted users. Previously, while survey response data could be retained, identifying information for deleted users was not available. This update aligns with customer feedback requesting more granular control over user data retention.</p><p>This message is associated with Message ID MC1113670.&nbsp;</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>General Availability:</b> Rollout will begin mid-October 2025 and is expected to complete by late-October 2025.</li>\n<li><b>We’ve completed planned maintenance associated with MC1113670</b>. We will now resume the processing of Entra Delete signals on July 1, 2026 (previously November 1, 2025). Users identified by these signals will be marked for data deletion in accordance with your organization’s configured User Data controls.</li></ul><p>We have currently paused the automatic process of Delete signals received from Microsoft Entra and as a result, we will not be automatically deleting any people data from Viva Glint. During this period, there may be slight delays in processing these requests. However, all requests will be completed within 90 days of resumption of these signals on July 1, 2026.&nbsp; </p><p>In the meantime, If you would like to manually delete any user data from Viva Glint, please follow the instructions here: <a href=\"https://learn.microsoft.com/viva/glint/setup/raw-data-request-response#delete-user-data\">Responding to Data Subject Requests (DSRs) in Viva Glint | Microsoft Learn</a>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> Viva Glint administrators managing user data retention settings.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>A new admin toggle will allow configuration of first name and last name retention for deleted users.</li>\n<li>When enabled, first and last names of deleted users will be retained.</li>\n<li>When disabled, first and last names of deleted users will be replaced with \"Deleted user\".</li>\n<li>If raw data export is enabled, deleted user data will be exported in accordance with User Data controls.</li><li>Changes will only apply to deleted users from the point of feature release and going forward, not retrospectively.</li>\n<li>This feature will be <b>enabled by default</b> at rollout.</li>Screenshot 1: <i>Admin view in Viva Glint showing the new configuration option for retaining first and last names of deleted users.</i><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8d21a99b-ddf8-4e26-89d6-adeb409bfc57\" style=\"width: 400px;\" alt=\"user settings\"></ul></li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Review your organization’s data retention policy and configure the toggle accordingly by <b>November 1, 2025</b>.</li>\n<li>Notify relevant stakeholders or helpdesk staff about this change.</li>\n<li>Update internal documentation if you reference Viva Glint data retention settings.</li>\n</ul>\n<p>Learn more: <a href=\"https://learn.microsoft.com/viva/glint/setup/manage-general-settings#user-data\" target=\"_blank\">Manage General Settings in Viva Glint</a></p>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\">\n<tbody><tr><th>Question</th><th>Explanation</th></tr>\n<tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Customers can now retain first name and last name of deleted users, which changes how deleted user data is stored and accessed.</td></tr>\n<tr><td>Does the change modify how users can access, export, delete, or correct their personal data within Microsoft 365 services (GDPR Data Subject Rights)?</td><td>The new toggle allows retention of personal identifiers for deleted users, impacting data deletion workflows.</td></tr>\n</tbody></table>"
+      "content": "<p>Updated October 31, 2025: We have updated the timeline for resumption of Microsoft Entra Delete signals in Viva Glint. Thank you for your patience.</p><p><b>[Introduction]</b></p>\n<p>To improve data traceability and support organizational compliance needs, Microsoft Viva Glint is introducing a new configuration option that allows administrators to retain the first name and last name of deleted users. Previously, while survey response data could be retained, identifying information for deleted users was not available. This update aligns with customer feedback requesting more granular control over user data retention.</p><p>This message is associated with Message ID MC1113670.&nbsp;</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>General Availability:</b> Rollout will begin mid-October 2025 and is expected to complete by late-October 2025.</li>\n<li><b>We will continue planned maintenance associated with MC1113670 in June 2026</b>. We will now resume the processing of Entra Delete signals on July 1, 2026 (previously November 1, 2025). Users identified by these signals will be marked for data deletion in accordance with your organization’s configured User Data controls.</li></ul><p>We have currently paused the automatic process of Delete signals received from Microsoft Entra and as a result, we will not be automatically deleting any people data from Viva Glint. During this period, there may be slight delays in processing these requests. However, all requests will be completed within 90 days of resumption of these signals on July 1, 2026.&nbsp; </p><p>In the meantime, If you would like to manually delete any user data from Viva Glint, please follow the instructions here: <a href=\"https://learn.microsoft.com/viva/glint/setup/raw-data-request-response#delete-user-data\">Responding to Data Subject Requests (DSRs) in Viva Glint | Microsoft Learn</a>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> Viva Glint administrators managing user data retention settings.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>A new admin toggle will allow configuration of first name and last name retention for deleted users.</li>\n<li>When enabled, first and last names of deleted users will be retained.</li>\n<li>When disabled, first and last names of deleted users will be replaced with \"Deleted user\".</li>\n<li>If raw data export is enabled, deleted user data will be exported in accordance with User Data controls.</li><li>Changes will only apply to deleted users from the point of feature release and going forward, not retrospectively.</li>\n<li>This feature will be <b>enabled by default</b> at rollout.</li>Screenshot 1: <i>Admin view in Viva Glint showing the new configuration option for retaining first and last names of deleted users.</i><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8d21a99b-ddf8-4e26-89d6-adeb409bfc57\" style=\"width: 400px;\" alt=\"user settings\"></ul></li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Review your organization’s data retention policy and configure the toggle accordingly by <b>November 1, 2025</b>.</li>\n<li>Notify relevant stakeholders or helpdesk staff about this change.</li>\n<li>Update internal documentation if you reference Viva Glint data retention settings.</li>\n</ul>\n<p>Learn more: <a href=\"https://learn.microsoft.com/viva/glint/setup/manage-general-settings#user-data\" target=\"_blank\">Manage General Settings in Viva Glint</a></p>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\">\n<tbody><tr><th>Question</th><th>Explanation</th></tr>\n<tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Customers can now retain first name and last name of deleted users, which changes how deleted user data is stored and accessed.</td></tr>\n<tr><td>Does the change modify how users can access, export, delete, or correct their personal data within Microsoft 365 services (GDPR Data Subject Rights)?</td><td>The new toggle allows retention of personal identifiers for deleted users, impacting data deletion workflows.</td></tr>\n</tbody></table>"
     }
   },
   {
@@ -23921,8 +23922,8 @@
   {
     "startDateTime": "2025-10-31T15:52:15Z",
     "endDateTime": "2025-11-30T15:52:15Z",
-    "lastModifiedDateTime": "2025-10-31T15:52:45.523Z",
-    "title": "Microsoft Dataverse[MB3.1][JW3.2][AL3.3], Dynamics 365 Apps – Storage capacity and entitlements update",
+    "lastModifiedDateTime": "2025-10-31T19:39:34.683Z",
+    "title": "Microsoft Dataverse, Dynamics 365 Apps – Storage capacity and entitlements update",
     "id": "MC1181915",
     "category": "stayInformed",
     "severity": "normal",
@@ -24232,8 +24233,8 @@
   },
   {
     "startDateTime": "2023-09-28T17:35:40Z",
-    "endDateTime": "2026-11-24T08:00:00Z",
-    "lastModifiedDateTime": "2024-05-28T15:46:13.783Z",
+    "endDateTime": "2025-11-05T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-31T18:41:59.847Z",
     "title": "(Updated) Microsoft Teams Live Event Retirement",
     "id": "MC678003",
     "category": "planForChange",
