@@ -13310,30 +13310,6 @@
     }
   },
   {
-    "startDateTime": "2025-09-06T01:18:27Z",
-    "endDateTime": "2025-11-01T00:00:00Z",
-    "lastModifiedDateTime": "2025-09-06T01:19:27.493Z",
-    "title": "Dynamics 365 Commerce - Replace Bing maps with Azure maps on the Commerce store app",
-    "id": "MC1148597",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Finance and Operations Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to replace Bing maps with Azure maps on the Commerce store app in Dynamics 365 Commerce. This feature will reach general availability on October 1, 2025.<br><br><b>How does this affect me?</b><br>This feature replaces the deprecated Bing Maps integration with Azure Maps in the Commerce Store app. It ensures continued support for map-based functionality and enhances the user experience with improved performance, security, and scalability.<br><br>The feature includes the following capabilities:<ul><li><b>Store locator:</b> Display nearby store locations using Azure Maps with geolocation and filtering capabilities.</li><li><b>Map rendering:</b> Replace Bing Maps tiles and controls with Azure Maps equivalents, including zoom, pan, and map styles.</li><li><b>Geocoding:</b> Use the Azure Maps Search API to convert addresses into geographic coordinates and vice versa.</li><li><b>User location detection:</b> Use browser or device geolocation to center the map on the user's current location.</li></ul><b>What action do I need to take?</b><br>This message is for awareness and no action is required.<br><br>If you would like more information on this feature, please visit <a href=\"https://aka.ms/12183\" target=\"_blank\">Replace Bing maps with Azure maps on the Commerce store app</a>."
-    }
-  },
-  {
     "startDateTime": "2025-09-06T01:31:22Z",
     "endDateTime": "2025-11-04T00:00:00Z",
     "lastModifiedDateTime": "2025-09-06T01:37:43.227Z",
@@ -24039,6 +24015,178 @@
     }
   },
   {
+    "startDateTime": "2025-10-31T23:03:55Z",
+    "endDateTime": "2026-04-30T07:00:00Z",
+    "lastModifiedDateTime": "2025-10-31T23:04:14.333Z",
+    "title": "Migration update for Office 365 connectors retirement in Teams – webhook URL support",
+    "id": "MC1181996",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "User impact",
+      "Admin impact",
+      "Retirement"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": "2026-03-30T07:00:00Z",
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Office 365 Connectors retirement migration deadline in Teams is extended to March 31, 2026. By December 2025, Workflows webhooks will support messageCard payloads and posting to shared/private channels. Organizations should plan their transition accordingly. No compliance issues identified."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<b>[Introduction]</b>\n<p>Update 10/28/2025: <b>New information related to Office 365 Connectors Retirement in Teams – Webhook URL Migration (MC808160)</b>. We’ve extended the migration deadline to give organizations more time to transition. We’re also making progress on feature parity for Workflows webhooks.</p>\n\n<b>[When this will happen:]</b>\n<p>The migration deadline is extended to <b>March 31, 2026</b>. Feature parity improvements will be available by <b>December 2025</b>.</p>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b> Organizations using Office 365 Connectors in Microsoft Teams.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Migration deadline extended to March 31, 2026.</li>\n    <li>By December 2025, Workflows webhooks will support:\n      <ul>\n        <li>Posting <code>messageCard</code> formatted payloads (no need to reformat to Adaptive Cards).</li>\n        <li>Posting messages and Adaptive Cards to shared or private channels.</li>\n      </ul>\n    </li>\n  </ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Plan to transition from Office 365 Connectors to Workflows webhooks by March 31, 2026.</li>\n<li>Prepare to use new webhook capabilities starting December 2025.</li>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-31T23:04:43Z",
+    "endDateTime": "2025-12-31T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-31T23:06:29.89Z",
+    "title": "Remove users from Teams chats using Microsoft Defender for Office 365",
+    "id": "MC1181997",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Defender for Office 365 now lets authorized admins remove users from Teams group and 1:1 chats, revoking conversation access. This feature, enabled by default, supports faster incident response and logs actions for compliance. Rollout begins November 2025, requiring Security or Global Admin roles."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing a new security capability in Microsoft Defender for Office 365: the ability to remove users from Microsoft Teams conversations directly from the Defender portal. This enhancement supports faster incident response and containment by allowing authorized admins to take immediate action on suspicious or compromised accounts.</p>\n<p>With the appropriate permissions, admins can remove users from group chats and 1:1 conversations by selecting <b>Take action</b> on the Teams Entity flyout and choosing <b>Remove user from conversation</b> in the Action Wizard. This action also revokes access to the conversation history.</p><p>Screenshot 1:<i> Use the Action Wizard in Microsoft Defender for Office 365 to remove users from Teams conversations.</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/464d44e6-69ff-4292-801a-b6f363c1f1b5\" style=\"width: 400px;\" alt=\"user settings\"></p>\n\n<p><b>[When this will happen:]</b></p>\n<p><b>General Availability (Worldwide):</b> Rollout begins early November 2025 and is expected to complete by late November 2025.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> Admins using Microsoft Defender for Office 365 to monitor Teams message activity.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Admins can remove users within their tenant from Teams group chats and 1:1 conversations.</li>\n    <li>Removed users will lose access to the conversation history.</li>\n    <li>The feature is enabled by default; no configuration changes are required.</li>\n    <li>Action results are visible in the <b>Action Center</b> under the <b>History</b> tab (event type: Remove users).</li>\n    <li>Detailed logs are available in <b>Audit Logs</b> for compliance and tracking.</li>\n    <li>Required roles: <b>Security Admin</b>, <b>Security Operator</b>, or <b>Global Admin</b>.</li>\n    <li>If a user has already been removed, they cannot be removed again.</li>\n    <li>The Action Wizard is accessible from the Teams Entity flyout in <b>Submissions</b>, <b>Quarantine</b>, and <b>Advanced Hunting</b>.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required to enable this feature. However, you may want to:</li>\n  <ul>\n    <li>Communicate this update to your security operations team.</li>\n    <li>Review role assignments to ensure appropriate access to the Action Wizard.</li>\n    <li>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/defender-office-365/teams-message-entity-panel\" target=\"_blank\">The Teams message entity panel in Microsoft Defender for Office 365 Plan 2</a>.</li>\n  </ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n\n\n<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">\n<tbody><tr>\n<th>Compliance Area\n</th>\n<th>Explanation</th>\n</tr>\n<tr>\n<td>Audit logging capabilities</td>\n<td>Defender Audit Logs will record the removal action for compliance and tracking purposes.</td>\n</tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-31T23:18:41Z",
+    "endDateTime": "2026-01-05T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-31T23:19:41.09Z",
+    "title": "New: Native polls integrated into New Outlook calendar compose form",
+    "id": "MC1182003",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Exchange Online",
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Native polls will be integrated into the New Outlook calendar compose form by late 2025, allowing users to propose multiple meeting times and gather attendee preferences, including external participants without Microsoft 365 accounts. The feature is on by default with no admin changes needed."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>To simplify meeting coordination, we’re introducing intelligent and native polls directly into the <b>Outlook calendar compose form</b>. This enhancement helps users propose multiple time slots and gather attendee preferences—especially useful when scheduling with external participants or individuals with limited availability.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/20e23941-618e-4027-8c5a-0abee762e47f\" style=\"width: 400px;\" alt=\"user settings\">&gt;</p><p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide): Rollout begins in late October 2025 and is expected to complete by early December 2025.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All users of the New Outlook for Win 32 and Outlook on the web who use the calendar compose experience.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Users will see a new option to create scheduling polls directly within the calendar compose form.</li>\n    <li>The feature will be ON by default for all tenants.</li>\n    <li>No changes to existing admin policies are required.</li>\n    <li>Polls will help organizer propose multiple meeting time slots and gather attendee preferences.</li>\n    <li>External attendees can respond to polls on website without needing a Microsoft 365 account.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p><p>\n</p><ul>\n<li>No action is required. The feature will be enabled by default. However, you may consider:</li>\n  <ul>\n    <li>Informing helpdesk staff about the new poll experience.</li>\n    <li>Updating internal documentation if you provide guidance on scheduling workflows.</li>\n    <li>Reviewing user training materials to include poll creation steps.</li>\n  </ul>\n</ul>\n<p><b>[Compliance considerations:]</b></p><p>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-31T23:20:44Z",
+    "endDateTime": "2026-02-28T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-31T23:21:10.313Z",
+    "title": "Microsoft Teams: Chat with anyone with an email address",
+    "id": "MC1182004",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "513271"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will allow users to chat with anyone via email, even non-Teams users, who join as guests. This feature, enabled by default, rolls out starting November 2025 and supports external communication within organizational policies. Admins can disable it via TeamsMessagingPolicy settings."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, Desktop, iOS, Linux, Mac"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We're introducing a new capability in <i>Microsoft Teams</i> that allows users to <b>start a chat with anyone</b> who has an <b>email address</b>—even if they’re not currently using Teams. The recipient will receive an email invitation to join the chat session as a guest, enabling seamless communication and collaboration. This update simplifies external engagement and supports flexible work scenarios.</p><p>This feature will be available across Android, Desktop, iOS, Linux, and Mac platforms.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=513271\" target=\"_blank\">513271</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Targeted Release:</b> Rollout will begin in early November 2025 and is expected to complete by mid-November 2025.</li>\n<li><b>General Availability (Worldwide):</b> Rollout will begin in January 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>All Microsoft Teams users in your organization.</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Users will be able to initiate chats with any external contact using their email address.</li>\n<li>External users will receive an email invitation and can join the chat as guests.</li>\n<li>The chat experience will be governed by your organization’s Entra B2B Guest policy.</li>\n<li>Chats will remain within your organization’s boundary.</li>\n<li>This feature will be <b>enabled by default</b>.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Update internal documentation to reflect this new capability.</li>\n<li>Inform helpdesk and support teams about the change.</li><li>To disable the feature, set the <b>UseB2BInvitesToAddExternalUsers </b>attribute of TeamsMessagingPolicy to<b> false</b>. <a href=\"https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsmessagingpolicy?view=teams-ps#-useb2binvitestoaddexternalusers\" target=\"_blank\">Set-CsTeamsMessagingPolicy documentation here</a>.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-10-31T23:26:14Z",
+    "endDateTime": "2026-01-16T08:00:00Z",
+    "lastModifiedDateTime": "2025-10-31T23:26:26.543Z",
+    "title": "Microsoft Purview: Inline protection for sensitive data shared over the network with non-Microsoft SASE integrations",
+    "id": "MC1182008",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "522095"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Purview DLP will integrate with iboss and Netskope SASE platforms by mid-November 2025 to enable inline network traffic inspection and protection of sensitive data across 35,000+ cloud apps. Admins must configure integration and manage alerts via Purview and Microsoft Defender."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Microsoft Purview Data Loss Prevention (DLP)</b> is being extended to the network layer through integration with iboss Zero-Trust SASE Platform or Netskope One SASE Platform. This update will be generally available starting mid-November 2025. It enables organizations to intercept and inspect traffic inline and enforce actions based on Purview DLP policy conditions. This helps prevent sensitive data from being shared with untrusted cloud applications through browsers, apps, APIs, add-ins, and more—including generative AI platforms, cloud storage, and content-sharing services—while managing alerts and incidents through Purview and Microsoft Defender. If configured, these signals also inform user risk indicators in <i>Insider Risk Management</i>.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=522095\" target=\"_blank\">522095</a>.</p>\n\n<b>When this will happen:</b>\n<p>General Availability (Worldwide): Rollout will begin in mid-November 2025 and is expected to complete by mid-December 2025.</p>\n\n<b>How this affects your organization:</b>\n<ul>\n<li><b>Who is affected:</b> Admins managing Microsoft Purview DLP policies and organizations using iboss Zero-Trust SASE or Netskope One SASE platforms.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>A new scenario-focused experience will be available for creating DLP policies.</li>\n    <li>Admins can select the <b><i>Inline Web Traffic</i></b>&nbsp;scenario to configure granular rules for detecting and protecting sensitive data.</li>\n    <li>Protection will extend to over 35,000 unmanaged cloud applications.</li>\n    <li>Alerts and incidents will be managed in <i>Microsoft Purview</i> and <i>Microsoft Defender</i>.</li>\n    <li>The feature will be <b>available by default </b>but <b>requires integration setup</b> to function.</li>\n  </ul>\n</li>\n</ul>\n\n<b>What you can do to prepare:</b>\n<ul>\n<li>Ensure your global administrator enables and configures integration with iboss Zero-Trust SASE or Netskope One SASE platforms.</li>\n<li><b>Activate Purview pay-as-you-go</b> to enable this capability. Learn about the <a href=\"https://learn.microsoft.com/purview/purview-billing-models#pay-as-you-go-billing-model\" target=\"_blank\">Pay-as-you-go billing model</a>.</li>\n<li>Review your current configuration to assess impact.</li>\n<li>Notify helpdesk staff and update internal documentation as needed.</li><li>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/purview/purview-billing-models\" target=\"_blank\">Learn about Microsoft Purview billing models | Microsoft Purview | Microsoft Learn</a></li>\n</ul>\n\n<b>Compliance considerations:</b>\n<table border=\"1\">\n<tbody><tr><th>Question</th><th>Answer</th></tr>\n<tr><td>Does the change add integration to third-party software products?</td><td>Yes. This change integrates with iboss Zero-Trust SASE Platform and Netskope One SASE Platform.</td></tr>\n<tr><td>Does the change modify Data Loss Prevention (DLP) policies or enforcement?</td><td>Yes. It introduces a new scenario-based DLP enforcement for inline web traffic.</td></tr>\n<tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. It enables inline inspection and protection of sensitive data shared via network traffic.</td></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML capabilities that interact with customer data?</td><td>Yes. It includes detection of sensitive data shared with generative AI platforms.</td></tr>\n<tr><td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td><td>Yes. Alerts and incidents will be managed through Microsoft Purview and Microsoft Defender.</td></tr>\n<tr><td>Does the change include an admin control and can it be controlled through Entra ID group membership?</td><td>Yes. The feature must be enabled and configured by a global administrator.</td></tr>\n\n</tbody></table>"
+    }
+  },
+  {
     "startDateTime": "2021-06-16T22:53:37Z",
     "endDateTime": "2025-11-28T08:00:00Z",
     "lastModifiedDateTime": "2021-06-16T22:54:13.617Z",
@@ -24491,6 +24639,10 @@
       {
         "name": "RoadmapIds",
         "value": "381953"
+      },
+      {
+        "name": "FeatureStatusJson",
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767165Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009662Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-05-27T16:39:02.9009668Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-05-01T20:06:35.7767181Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
