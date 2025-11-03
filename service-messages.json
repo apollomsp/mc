@@ -12320,7 +12320,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"499893\":[{\"RoadmapId\":499893,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6835344Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":499893,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.683535Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6835352Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6835353Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6835355Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"499893\":[{\"RoadmapId\":499893,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6835352Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6835353Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6835344Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":499893,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.683535Z\",\"LatestRing\":null},{\"RoadmapId\":499893,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6835355Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21540,8 +21540,8 @@
   },
   {
     "startDateTime": "2025-10-27T14:32:16Z",
-    "endDateTime": "2025-11-27T14:32:16Z",
-    "lastModifiedDateTime": "2025-10-27T14:32:55.513Z",
+    "endDateTime": "2025-12-31T14:32:00Z",
+    "lastModifiedDateTime": "2025-11-03T15:01:32.403Z",
     "title": "Microsoft Copilot Studio - Strengthen security of Copilot Studio agents with additional threat protection",
     "id": "MC1180712",
     "category": "stayInformed",
@@ -21559,7 +21559,7 @@
     "details": [],
     "body": {
       "contentType": "html",
-      "content": "We are announcing the ability to strengthen security of Copilot Studio agents with additional threat protection in Microsoft Copilot Studio. This feature will reach general availability on November 28, 2025.<br><br><b>How does this affect me?</b><br>This feature allows you to configure external threat detection systems for enhanced oversight. These tools operate during the agent's run-time, continuously evaluating agent activity. If the system detects any tools or actions it deems suspicious, it can intervene to approve or block their execution, providing an extra layer of real-time protection and compliance enforcement.<br><br>With the flexibility provided by this feature, users can select Microsoft Defender, integrate with other trusted security partners, or develop and connect your own custom monitoring solutions. Admins can enable this feature using the following steps:<ol><li><b>Register a Microsoft Entra application</b>: A Power Platform Administrator creates an Entra app to securely authenticate between Copilot Studio and the chosen external monitoring provider. This can be done using a provided PowerShell script or manually through the Azure portal.</li><li><b>Configure integration in Power Platform Admin Center</b>: The administrator enters the Entra app details and the REST API endpoint from the security partner in the Admin Center’s threat detection settings.</li></ol>Once enabled, Copilot Studio shares only the necessary runtime data with the external provider for real-time decision-making. The integration can be disabled at any time if requirements change. External threat detection is available only for generative agents using generative orchestration (not classic agents).<br><br>Organizations are responsible for ensuring their chosen provider’s data handling and compliance standards meet internal and regulatory requirements.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit the <a target=\"_blank\" href=\"https://aka.ms/ADO12592\">Enable external threat detection and protection for Copilot Studio custom agents (preview)</a>."
+      "content": "<b>Update:</b> Release of this feature has been updated.<br><br>\nWe are announcing the ability to strengthen security of Copilot Studio agents with additional threat protection in Microsoft Copilot Studio. This feature will reach general availability on December 10, 2025.<br><br><b>How does this affect me?</b><br>This feature allows you to configure external threat detection systems for enhanced oversight. These tools operate during the agent's run-time, continuously evaluating agent activity. If the system detects any tools or actions it deems suspicious, it can intervene to approve or block their execution, providing an extra layer of real-time protection and compliance enforcement.<br><br>With the flexibility provided by this feature, users can select Microsoft Defender, integrate with other trusted security partners, or develop and connect your own custom monitoring solutions. Admins can enable this feature using the following steps:<ol><li><b>Register a Microsoft Entra application</b>: A Power Platform Administrator creates an Entra app to securely authenticate between Copilot Studio and the chosen external monitoring provider. This can be done using a provided PowerShell script or manually through the Azure portal.</li><li><b>Configure integration in Power Platform Admin Center</b>: The administrator enters the Entra app details and the REST API endpoint from the security partner in the Admin Center’s threat detection settings.</li></ol>Once enabled, Copilot Studio shares only the necessary runtime data with the external provider for real-time decision-making. The integration can be disabled at any time if requirements change. External threat detection is available only for generative agents using generative orchestration (not classic agents).<br><br>Organizations are responsible for ensuring their chosen provider’s data handling and compliance standards meet internal and regulatory requirements.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit the <a target=\"_blank\" href=\"https://aka.ms/ADO12592\">Enable external threat detection and protection for Copilot Studio custom agents (preview)</a>."
     }
   },
   {
@@ -23145,6 +23145,30 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to govern Copilot agent development in your environments and enforce governance policies for Copilot agents. This feature will reach public preview on November 16, 2025.<br><br> \n\n<b>How does this affect me? </b><br> \n\nThis feature allows administrators to configure authentication for all agent interactions in the environment. Admins can select one of the following options: \n\n<ul> \n\n<li><b>Authenticate with Microsoft or Authenticate Manually</b> – This allows you to force authentication through Microsoft Entra ID or set up manual authentication. </li> \n\n<li><b>No authentication</b> allows anonymous access. </li> \n\n</ul> \n\nThe <b>Authentication for agents</b> feature is a modernized framework of the existing Data Policy virtual connector, <b>Chat without Microsoft Entra ID</b>, helping you scale through environment-level configurations and rules. <br><br> \n\nPlease note: If you block anonymous access in either one of the places, then at runtime the most restrictive behavior is enforced, and it will be blocked. If you're using both the virtual connector and the <b>Authentication for agents</b> setting in the <b>Security</b> area of the Power Platform admin center, <b><i>then access must be allowed in both places for it to be allowed at runtime</i></b>. <br><br> \n\nWe recommend that you move towards using the <b>Authentication for agents</b> setting in the Power Platform admin center to leverage the capability of groups and rules.<br><br> \n\n<b>What do I need to do to prepare? </b><br> \nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2025-11-03T14:46:18Z",
+    "endDateTime": "2025-12-03T14:46:18Z",
+    "lastModifiedDateTime": "2025-11-03T14:47:19.717Z",
+    "title": "Dynamics 365 Sales – Enhance customer interactions with auto-linked CRM data",
+    "id": "MC1182482",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to enhance customer interactions with auto-linked CRM data in Dynamics 365 Sales.<br><br>\n<b>How does this affect me?</b><br>\nWith this feature, the Sales Qualification Agent finds and auto-links a matching contact and account for each lead it researches so it can process information not only from the lead, but also from the linked records. Sales Qualification Agent analyzes information across linked accounts and contacts to enhance research outcomes and improve customer interactions. \n<br><br>\nThis feature is automatically enabled when you turn on Sales Qualification Agent in Dynamics 365 Sales. As a seller, you see the following information on the lead insights page: \n<ul>\n<li>Automatically linked contact and account information.</li>\n<li>Enriched information from linked accounts and contacts.</li>\n<li>The ability to de-link an auto-linked record and manually link another record if needed. \n</ul>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/12536/1\" target=\"_blank\">Enhance customer interactions with auto-linked CRM data</a>."
     }
   },
   {
