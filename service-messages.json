@@ -23313,7 +23313,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T22:07:25.9435144Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T22:07:25.9435145Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T22:07:25.9435172Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T22:07:25.9435173Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T00:06:01.1275958Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T00:06:01.1275965Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T00:06:01.1275996Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T00:06:01.1275998Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23451,6 +23451,28 @@
     "body": {
       "contentType": "html",
       "content": "We have determined that a subset of SSL certificates issued between July 21, 2024, and April 21, 2025, to one or more of your Dynamics 365 finance and operations Cloud-Hosted Environments (CHE) were incorrectly issued with intermediate certificates. This affected certificates from the following issuers:\n<ol>\n<li>Microsoft Azure RSA TLS Issuing CA 03</li>\n<li>Microsoft Azure RSA TLS Issuing CA 04</li>\n<li>Microsoft Azure RSA TLS Issuing CA 07</li>\n<li>Microsoft Azure RSA TLS Issuing CA 08</li>\n</ol>\nOn <b>November 15, 2025</b>, these intermediate certificates will be revoked, which will degrade your environment's functionality.<br><br>\n<b>What action do I need to take?</b><br>\nThe certificates for affected environments must be rotated before November 15, 2025, to avoid impact to your environments. To do this, first validate whether your CHE environment is utilizing an affected certificate by running the following query:\n<pre style=\"white-space: pre-wrap\">\nGet-ChildItem -Path Cert:\\LocalMachine\\My | \nWhere-Object { \n  $_.Issuer -match 'Microsoft Azure RSA TLS Issuing CA (03|04|07|08)' -and \n  $_.NotBefore -ge (Get-Date '2024-07-21') -and \n  $_.NotBefore -le (Get-Date '2025-04-21') \n} | \nSelect-Object Subject, Issuer, NotBefore, NotAfter, Thumbprint \n</pre>\nFor each affected environment, rotate the certificate by performing the following actions:\n<ul>\n<li>Sign into Lifecycle Services (LCS), open your project, and navigate to <i>Cloud Hosted Environments</i>.</li>\n<li>Select an environment and click on <i>Full Details</i>.</li>\n<li>On the Environment details page, click <i>Maintain</i> > <i>Rotate Secrets</i> --> <i>Rotate SSL Certificate</i>.</li>\n<li>After rotating it, validate the new certificate chain and confirm services initiate correctly.</li>\n</ul>\n<b>Why is this action needed?</b><br>\nThe intermediate certificates assigned to affected environments will be revoked on November 15, 2025. Once it is revoked, users will begin to receive HTTPS failures, service connectivity failures, and web browser security warnings.<br><br>\nPlease contact Microsoft Support if you need further assistance."
+    }
+  },
+  {
+    "startDateTime": "2025-11-10T22:09:05Z",
+    "endDateTime": "2025-12-10T22:09:05Z",
+    "lastModifiedDateTime": "2025-11-10T22:12:22.677Z",
+    "title": "Power Platform - Upcoming enforcement of tenant isolation",
+    "id": "MC1184591",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "As part of our Secure Future Initiative (SFI), the tenant isolation feature will be enabled by default for all Power Platform tenants as the new default behavior. The enforcement is scheduled to begin in <b>February 2026.</b><br><br>This feature applies only to Power Platform policies and is separate from guest access policies and Azure tenant restriction features. <br><br><b>How does this affect me? </b><br>Tenant isolation only applies to connectors running within a tenant. The default tenant isolation behavior will block all connection attempts from one tenant to another; inbound (connections to the tenant from external tenants), outbound (connections from the tenant to external tenants), or both (inbound – outbound) will be blocked by Power Platform.<br><br>Communications within the same tenant will not be affected. In addition, users who sign in as guests (guest user access) will remain unaffected.<br><br><b>What do I need to do to prepare? </b><br> This message is for awareness, and no action is required.<br><br>For more information and to learn how to configure a tenant isolation policy, please review the <a target=\"_blank\" href=\"https://aka.ms/13103\">Cross-tenant inbound and outbound restrictions</a> documentation."
     }
   },
   {
