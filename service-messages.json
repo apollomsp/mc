@@ -1807,7 +1807,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-10-04T10:06:11.5833004Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-10-04T10:06:11.5833004Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -23284,7 +23284,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T16:08:22.5468105Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T16:08:22.5468107Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T16:08:22.5468075Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T16:08:22.5468078Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T18:01:10.5547639Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T18:01:10.554764Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T18:01:10.5547588Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-11T18:01:10.5547591Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23719,6 +23719,78 @@
     "body": {
       "contentType": "html",
       "content": "We have identified that your environment was affected by a <a target=\"_blank\" href=\"https://aka.ms/ADO13159\">service issue</a> impacting flows using HTTP or TeamsWebhook request triggers.<br><br>Flows configured with SAS authentication using the “Anyone” setting may have experienced an unexpected change to the SAS signature resulting in a new URL.<br><br><b>What action do I need to take?</b><br>Please update your impacted flows to the new trigger URL..<br><br><b>Why is this action needed?</b><br>If action is not taken to resolve this issue, you may experience degraded performance and potential failures starting after November 2025.<br><br>Please contact Microsoft Support if you need further assistance."
+    }
+  },
+  {
+    "startDateTime": "2025-11-11T18:02:07.663Z",
+    "endDateTime": "2026-11-11T18:02:07.603Z",
+    "lastModifiedDateTime": "2025-11-11T18:02:08.383Z",
+    "title": "The November 2025 Windows security update is now available",
+    "id": "MC1184889",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>The November 2025 security update is now available for all supported versions of Windows. We recommend that you install these updates promptly. For more information about the contents of this update, see the release notes, which are easily accessible from the&nbsp;<a href=\"https://support.microsoft.com/help/5068861\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a>&nbsp;update history page. To learn more about the different types of monthly quality updates, see <a href=\"https://aka.ms/Windows/MonthlyUpdates\" rel=\"noopener noreferrer\" target=\"_blank\">Windows monthly updates explained</a>.</div><div>&nbsp;&nbsp;</div><div><b>Highlights for the Windows 11, version 25H2 update:&nbsp;</b></div><ul><li>This security update includes improvements that were a part of update&nbsp;<a href=\"https://support.microsoft.com/help/5067036\" rel=\"noopener noreferrer\" target=\"_blank\">KB5067036</a> (released October 28, 2025).</li><li>This update addresses security issues for your Windows operating system.</li><li>This update addresses an issue that affects gaming handheld devices. These devices were unable to stay in low-power states, which caused faster battery drain.​​​​​​​</li><li>This update addresses an issue on some handheld gaming devices where&nbsp;after signing in using the built-in Gamepad, the controller might not respond in apps for about five seconds.</li><li>This update addresses an issue with enabling Storage Spaces Direct. It fails when creating a storage cluster.</li></ul><div><br></div><div>Short on time? Watch our <a href=\"https://aka.ms/Windows11/ReleaseNotesVideo/2511\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 release notes video</a> for this month's tips.</div><div><br></div><div>For instructions on how to install this update, see the KB for your operating system listed below:&nbsp;</div><ul><li>Windows 11, versions 25H2 and 24H2: <a href=\"https://support.microsoft.com/help/5068861\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068861</a></li><li>Windows 11, version 23H2: <a href=\"https://support.microsoft.com/help/5068865\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068865</a></li><li>Windows 11 Enterprise LTSC 2024: Hotpatch <a href=\"https://support.microsoft.com/topic/d702b84c-d238-40f4-a0b7-1861e0b056fd\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068966</a></li><li>Windows 10, versions 22H2 and 21H2: <a href=\"https://support.microsoft.com/help/5068781\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068781</a></li><li>Windows 10 Enterprise LTSC 2019 and Windows Server 2019: <a href=\"https://support.microsoft.com/help/5068791\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068791</a></li><li>Windows 10 LTSB 2016 and Windows Server 2016: <a href=\"https://support.microsoft.com/help/5068864\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068864</a></li><li>Windows Server 2025: <a href=\"https://support.microsoft.com/topic/24e553d1-2338-433e-9cc3-61733148530c\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068861</a></li><li>Windows Server 2025 Datacenter: Azure Edition: Hotpatch <a href=\"https://support.microsoft.com/topic/e923cc54-3b4c-4df1-be42-92ae06d12984\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068966</a></li><li>Windows Server 2022: <a href=\"https://support.microsoft.com/help/5068787\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068787</a></li><li>Windows Server 2022 Datacenter: Azure Edition: Hotpatch <a href=\"https://support.microsoft.com/topic/6934411e-244d-45f7-83ef-24c471748348\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068840</a></li><li>Windows Server 2012 R2: Monthly Rollup: <a href=\"https://support.microsoft.com/help/5068905\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068905</a></li><li>Windows Server 2012: Monthly Rollup: <a href=\"https://support.microsoft.com/help/5068907\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068907</a></li><li>Windows Server 2008 R2 Service Pack 1: Monthly Rollup: <a href=\"https://support.microsoft.com/help/5068904\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068904</a>&nbsp;/ Security Only: <a href=\"https://support.microsoft.com/help/5068908\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068908</a></li><li>Windows Server 2008 SP2: Monthly Rollup: <a href=\"https://support.microsoft.com/help/5068906\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068906</a> / Security Only: <a href=\"https://support.microsoft.com/help/5068909\" rel=\"noopener noreferrer\" target=\"_blank\">KB5068909</a></li></ul><div><br></div><div><b>IMPORTANT&nbsp;</b>Because of minimal operations during the Western holidays and the upcoming new year, there will be no December 2025 non-security preview update. There will be a monthly security update for December 2025. Normal monthly servicing for both security and non-security preview updates will resume in January 2026.</div>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-11T18:02:07.663Z",
+    "endDateTime": "2026-11-11T18:02:07.663Z",
+    "lastModifiedDateTime": "2025-11-11T18:02:10.617Z",
+    "title": "Take Action: Out-of-band update to address ESU enrollment issue on Windows 10, version 22H2 devices",
+    "id": "MC1184890",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Microsoft has identified an issue in the&nbsp;<a href=\"https://www.microsoft.com/windows/extended-security-updates?r=1\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 10 Consumer Extended Security Update</a>&nbsp;(ESU) enrollment process where the enrollment wizard may fail during enrollment.</div><div>&nbsp;</div><div>If you have a personal device running Windows 10 and have not yet enrolled your device in the Consumer ESU program, here are the steps you need to take to ensure you continue receiving security updates:</div><ol><li>Navigate to the Windows Update settings page and select “Check for updates.”</li><li>Install the out-of-band (OOB) update (<a href=\"https://support.microsoft.com/topic/565c78a7-5b5f-4cbd-8ca8-2a73a48f4e2b\" rel=\"noopener noreferrer\" target=\"_blank\">KB5071959</a>) and reboot your device to complete installation.</li><li>Run the Windows 10 Consumer ESU enrollment wizard to enroll your device in the ESU program.</li><li>After you have successfully enrolled your device, navigate once more to the Windows Update settings page and select “Check for updates.”</li><li>Your device will now be offered the latest monthly security update. Install the update and reboot your device to complete installation.</li></ol><div>&nbsp;</div><div>If you have a personal device running Windows 10 and have already enrolled your device in the Consumer ESU program, no additional action is needed. You will receive the November 2025 security update and future Extended Security Updates via Windows Update.</div><div>&nbsp;</div><div>For more information, see <a href=\"https://support.microsoft.com/topic/565c78a7-5b5f-4cbd-8ca8-2a73a48f4e2b\" rel=\"noopener noreferrer\" target=\"_blank\">KB5071959: Windows 10, version 22H2 (OS Build 19045.6466) Out-of-band</a>.</div>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-11T18:02:07.663Z",
+    "endDateTime": "2026-11-11T18:02:07.663Z",
+    "lastModifiedDateTime": "2025-11-11T18:02:13.367Z",
+    "title": "Windows 11, version 23H2 (Home and Pro editions) has reached end of servicing",
+    "id": "MC1184891",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Today,&nbsp;November 11, 2025, Windows 11, version 23H2 (<a href=\"https://learn.microsoft.com/lifecycle/products/windows-11-home-and-pro\" rel=\"noopener noreferrer\" target=\"_blank\">Home</a>&nbsp;and&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/products/windows-11-home-and-pro\" rel=\"noopener noreferrer\" target=\"_blank\">Pro</a>&nbsp;editions) has reached&nbsp;<a href=\"https://learn.microsoft.com/windows/release-health/windows11-release-information\" rel=\"noopener noreferrer\" target=\"_blank\">end of servicing</a>. The November 2025 monthly security update is the last update available for these editions. Devices running these editions will no longer receive monthly security and preview updates containing protections from the latest security threats.</div><div><br></div><div>As always, we recommend that you update&nbsp;your&nbsp;devices to the latest version of&nbsp;<a href=\"https://aka.ms/how-to-get-25H2\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a>. For detailed information, see the&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/announcements/windows-11-23h2-end-of-updates-home-pro\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11, version 23H2 reaching end of updates (Home, Pro)</a>&nbsp;lifecycle page. For information about servicing timelines and lifecycle, see&nbsp;<a href=\"https://learn.microsoft.com/windows/release-health/windows11-release-information\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 release information</a>,&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/faq/windows\" rel=\"noopener noreferrer\" target=\"_blank\">Lifecycle FAQ - Windows</a>, and&nbsp;<a href=\"https://learn.microsoft.com/lifecycle/products/?terms=windows\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Lifecycle Policy search tool</a>.</div>"
     }
   },
   {
