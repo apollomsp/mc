@@ -14215,10 +14215,6 @@
         "value": "500702"
       },
       {
-        "name": "FeatureStatusJson",
-        "value": "{\"500702\":[{\"RoadmapId\":500702,\"Platform\":\"Android\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-30T22:06:41.8648066Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500702,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-10-30T22:06:41.8648071Z\",\"LatestRing\":\"StandardRelease\"}]}"
-      },
-      {
         "name": "Summary",
         "value": "Microsoft Teams Rooms on Android with a Pro license can join town halls as attendees starting mid-October 2025. In-room participants can join via meeting ID, view captions, chat, and send reactions, enabling shared viewing without individual devices. No admin action is needed; update devices and inform organizers."
       },
@@ -23238,7 +23234,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T20:08:26.0636669Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T20:08:26.0636672Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T20:08:26.063672Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T20:08:26.0636721Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T22:07:11.9588475Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T22:07:11.9588477Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T22:07:11.9588504Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T22:07:11.9588506Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24224,6 +24220,28 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to enable process mining integration in process map in Power Automate. This feature will reach general availability on December 12, 2025.<br><br> \n \n\n<b>How does this affect me?</b><br> \n\nThis feature enables you to access flow-centric health and performance metrics directly within the process map, and enable seamless, one-click process mining integration for advanced analysis. Built-in process mining provides instant variant analysis, allowing you to quickly identify slow or unreliable routes and uncover process variations.<br><br> \n \nStandard insights available without process mining integration:<ul> \n\n<li>Flow runs and performance metrics</li> \n\n<li> Failure rates with error trends</li> \n\n<li> Top errors by code</li></ul> \n \n\nEnhanced observability with process mining integration:<ul> \n\n<li> Unlock process mining insights with a one-click experience—no manual log data wrangling or transformation needed.</li> \n\n<li> Visualize and drill down into specific process routes (variants) and bottlenecks with variant analysis.</li> \n\n<li> Trace and analyze slow or unreliable process paths directly within the process map.</li> \n\n<li> Monitor comprehensive process health, performance, and reliability metrics across end-to-end automation.</li> \n\n<li> Go deeper with advanced process analysis in the process mining product.</li></ul> \n \n\nTechnical Information:<ul> \n\n<li> Insights are accessed through the Insights (preview) toggle on the process map.</li> \n\n<li> Advanced insights are enabled with a single click—no manual exports or data prep required (subject to available capacity).</li> \n\n<li> Advanced insights use Power Automate's Process Mining capabilities and consume from your available Process Mining capacity in the tenant.</li> \n\n<li> Metrics are computed from historical flow runs stored in Dataverse and surfaced via the DFAI service.</li> \n\n<li> In high-volume environments, preparing insights may take longer.</li> \n\n<li> Flow runs must be older than 48 hours to be included in analysis.</li></ul> \n \n\nEnablement (basic insights):<ul> \n\n<li> Enabled by default: Basic insights.</li> \n\n<li> Enabled for: All users with access to the Automation Center and process map features.</li> \n\n<li> Disabled for: Environments where “Enable production-ready preview features” is turned off in Power Platform admin center.</li></ul> \n \n\nEnablement (advanced insights):<ul> \n\n<li> Opt-in: Advanced insights through the Insights (preview) side-panel and Enable advanced insights button.</li> \n\n<li> Access requirements: Power Automate Premium license, permission to view flow run data included in the process map, the ability to manually create Process Mining processes, and at least 50 MB of available Process Mining capacity in the environment.</li></ul> \n\n \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> If you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO12836\" target=\"_blank\">Enable process mining integration in process map</a>."
+    }
+  },
+  {
+    "startDateTime": "2025-11-13T21:31:46Z",
+    "endDateTime": "2025-12-13T21:31:46Z",
+    "lastModifiedDateTime": "2025-11-13T21:41:15.817Z",
+    "title": "Finance and Operations Apps - Information regarding the end of support for the Budget Proposal feature",
+    "id": "MC1185863",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Finance and Operations Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "The Budget Proposal feature in Dynamics 365 Finance Insights will be deprecated on October 31, 2025, and reach End-of-Service on January 31, 2026. This change is part of our ongoing efforts to streamline capabilities and align with strategic planning solutions.<br><br> <b>How does this affect me?</b><br>Our internal monitoring indicates that your environment may have interacted with the Budget Proposal feature. As part of lifecycle management, this feature was removed from your environment beginning on October 31, 2025.<br><br><b>What action do I need to take?</b><br>If you do not plan to use Budget Proposal, no action is required.<br><br>\nIf you need budgeting capabilities, we recommend transitioning to <b>Business Performance Planning (BPP)</b>, which offers driver-based planning, workflow approvals, Excel/Power BI integration, and Dataverse compatibility.<br><br><b>Additional Information:</b><br><ul><li>\nAny purchased AI Builder credits can be reused for other AI Builder-backed capabilities.</li><li>\nFor more details on BPP, visit <a href=\"https://aka.ms/13031-1\">Business performance planning overview</a>.</li><li>For guidance on deprecated features please visit <a href=\"https://aka.ms/13031-2\">Removed or deprecated features in Dynamics 365 Finance</a></a>.</li></ul>"
     }
   },
   {
