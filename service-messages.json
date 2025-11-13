@@ -22504,16 +22504,17 @@
   {
     "startDateTime": "2025-11-05T00:24:20Z",
     "endDateTime": "2026-01-30T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-05T00:24:26.907Z",
+    "lastModifiedDateTime": "2025-11-13T16:48:01.257Z",
     "title": "Fix/Update Microsoft Sentinel Account Entity Naming to avoid inconsistent account identification in incidents and alerts",
     "id": "MC1183015",
     "category": "preventOrFixIssue",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "Admin impact"
     ],
     "isMajorChange": false,
-    "actionRequiredByDateTime": "2025-12-13T08:00:00Z",
+    "actionRequiredByDateTime": "2026-02-13T08:00:00Z",
     "services": [
       "Microsoft Defender XDR"
     ],
@@ -22522,12 +22523,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "By December 13, 2025, update Microsoft Sentinel analytic rules, automation, workbooks, and queries to use the new account entity naming precedence: UPN prefix → name → display name. Use coalesce patterns to avoid issues in incidents, alerts, dashboards, and playbooks relying on account names. Test changes before rollout."
+        "value": "Microsoft Sentinel will standardize account entity naming by precedence: UPN prefix → name → display name, effective February 13, 2026. Update your analytic rules, automation, workbooks, and queries to use this new pattern (e.g., coalesce(Name, DisplayName)) to avoid issues in incidents and alerts."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>On December 13, 2025, you may encounter issues if you haven't updated your analytic rules, automation rules/playbooks, workbooks, hunting queries, or custom integrations to be precedence-aware for account entity naming. We've standardized the account entity naming logic in Microsoft Sentinel incidents and alerts, where the account entity naming priority is: UPN prefix → name → display name. Please update your queries and automations to use the new precedence pattern.</p><p>You are receiving this message because our reporting indicates your organization may be using Microsoft Sentinel incidents, alerts (AlertV3), or related automation.</p><p><b>[When this will happen:]</b></p><p>December 13, 2025</p><p><b>[How this will affect your organization:]\n</b></p><p><b>If you don't fix this problem, these queries, automations, dashboards, and reports that reference account names may be affected:\n</b></p><ul><li>Analytics (KQL) that filter by, join on, or normalize account names\n</li><li>Automation rules &amp; playbooks (e.g., Logic Apps) that map Account.Name or compare it to other identity fields\n</li><li>Workbooks &amp; dashboards that show account name or aggregate by that value\n</li><li>Hunting queries that coalesce or parse account identity fields\n</li><li>Any users or systems relying on display name as the account identifier</li></ul><p><b>[What you need to do to prepare:]\n</b></p><p>To fix this problem you need to update your KQL queries and automation logic to use the new precedence-aware pattern for account entity naming. Specifically, use a coalesce pattern (e.g., coalesce(Name, DisplayName)) wherever you reference the account name, and validate your workbooks, dashboards, and playbooks against the new logic. Test changes in a nonproduction workspace before rollout.</p>"
+      "content": "<p>Updated November 13, 2025: We have updated the timing of this change below. Thank you for your patience.</p><p>On February 13, 2026, you may encounter issues if you haven't updated your analytic rules, automation rules/playbooks, workbooks, hunting queries, or custom integrations to be precedence-aware for account entity naming. We've standardized the account entity naming logic in Microsoft Sentinel incidents and alerts, where the account entity naming priority is: UPN prefix → name → display name. Please update your queries and automations to use the new precedence pattern.</p><p>You are receiving this message because our reporting indicates your organization may be using Microsoft Sentinel incidents, alerts (AlertV3), or related automation.</p><p><b>[When this will happen:]</b></p><p>February 13, 2026 (previously December 13, 2025)</p><p><b>[How this will affect your organization:]\n</b></p><p><b>If you don't fix this problem, these queries, automations, dashboards, and reports that reference account names may be affected:\n</b></p><ul><li>Analytics (KQL) that filter by, join on, or normalize account names\n</li><li>Automation rules &amp; playbooks (e.g., Logic Apps) that map Account.Name or compare it to other identity fields\n</li><li>Workbooks &amp; dashboards that show account name or aggregate by that value\n</li><li>Hunting queries that coalesce or parse account identity fields\n</li><li>Any users or systems relying on display name as the account identifier</li></ul><p><b>[What you need to do to prepare:]\n</b></p><p>To fix this problem you need to update your KQL queries and automation logic to use the new precedence-aware pattern for account entity naming. Specifically, use a coalesce pattern (e.g., coalesce(Name, DisplayName)) wherever you reference the account name, and validate your workbooks, dashboards, and playbooks against the new logic. Test changes in a nonproduction workspace before rollout.</p>"
     }
   },
   {
@@ -23235,7 +23236,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T16:08:54.816862Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T16:08:54.8168622Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T16:08:54.8168582Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T16:08:54.8168587Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T18:12:22.3341019Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T18:12:22.334102Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T18:12:22.3340987Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-13T18:12:22.334099Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24624,7 +24625,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
