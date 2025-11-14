@@ -10264,37 +10264,6 @@
     }
   },
   {
-    "startDateTime": "2025-08-29T00:30:04Z",
-    "endDateTime": "2025-11-14T08:00:00Z",
-    "lastModifiedDateTime": "2025-09-24T20:32:25.427Z",
-    "title": "(Updated) Microsoft Purview compliance portal: Data Loss Prevention - Upcoming Change to DLP Alert Settings",
-    "id": "MC1143996",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Purview"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting September 26, 2025, Microsoft Purview will update DLP alert settings to remove \"Generate Alert\" from rules where corresponding Protection Alerts were disabled via PowerShell. To keep receiving alerts, admins must update and save rules in the portal or re-enable alerts using the Set-DlpComplianceRule cmdlet."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated September 24, 2025: We have updated the content. Thank you for your patience.</p><p><b>Introduction</b></p><p>We have identified that some tenants are using DLP rules in which alert generation has been enabled using the Microsoft Purview portal policy configuration page but the corresponding Alert Policy (Protection Alert) was disabled or deleted using <b>\"Set-ProtectionAlert\"</b> PowerShell cmdlet (<a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/set-protectionalert?view=exchange-ps\" target=\"_blank\">Learn more</a>). Due to this the alert generation gets turned off for the associated DLP rule – even though the alert it appears active on Purview portal policy configuration UX.</p><p>If you wish to continue receive alerts for these rules, please take one of the following actions:\n</p><ul><li>Open the rule in the Purview portal, make any update, and save the configuration.\n</li><li>Use the PowerShell cmdlets to re-enable alert generation for the rule. (<a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/set-dlpcompliancerule?view=exchange-ps\" target=\"_blank\">Learn more</a>)</li></ul><p><b>When this will happen</b></p><p>This change will begin rolling out on September 26, 2025.</p><p><b>How this affects your organization</b></p><p>To ensure consistency we will update the DLP rule to remove Generate Alert as an action. Since alerts were disabled using Protection Alert PowerShell cmdlets there will be no change in alert generation behavior for corresponding DLP rule and policy. We are only ensuring there is consistency between DLP rules (with Generate Alert as an action) and their corresponding Alert policies (protection alert)</p><p><b>What you can do to prepare:</b></p><p>If you wish to receive alerts for these rules, please take one of the following actions:</p><ul><li> Open the rule in the Purview portal, make any update, and save the configuration.</li><li>Use the PowerShell cmdlet “Set-DlpComplianceRule” to re-enable alert generation for the rule. (<a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/set-dlpcompliancerule?view=exchange-ps\" target=\"_blank\">Learn more</a>).</li></ul><p></p><ul></ul><p></p><p><b>Compliance considerations</b></p><table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n<tbody><tr>\n<th>Compliance Area</th>\n<th>Impact</th>\n</tr>\n<tr>\n<td>Alters how existing customer data is processed, stored, or accessed</td>\n<td>No affect.</td></tr><tr><td>Modifies Purview capabilities</td>\n<td>No affect.</td>\n</tr>\n<tr>\n<td>Alters how admins can monitor, report on, or demonstrate compliance activities</td>\n<td>No affect.</td>\n</tr>\n<tr>\n<td>Includes an admin control</td>\n<td>Admins can re-enable alert generation if they wish to via portal or Set-\"DlpComplianceRule\"   PowerShell cmdlet.</td>\n</tr>\n<tr>\n<td>Allows user to enable/disable the feature</td>\n<td>Admins can re-enable alert generation if they wish to via portal or Set-\"DlpComplianceRule\" PowerShell cmdlet.</td>\n</tr>\n</tbody></table>"
-    }
-  },
-  {
     "startDateTime": "2025-08-29T00:35:43Z",
     "endDateTime": "2026-08-31T07:00:00Z",
     "lastModifiedDateTime": "2025-09-05T18:55:17.193Z",
@@ -17671,36 +17640,6 @@
     }
   },
   {
-    "startDateTime": "2025-10-13T23:45:49Z",
-    "endDateTime": "2025-11-14T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-14T20:35:20.18Z",
-    "title": "Copilot in Outlook: Intelligent agenda suggestions for calendar events",
-    "id": "MC1171854",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Outlook now includes Copilot's Intelligent Draft Agenda, which auto-generates meeting agendas when creating or editing calendar events. This AI-powered feature, enabled by default worldwide since October 9, 2025, requires a Copilot license and works on Web and Desktop without admin policy changes."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>To help users run more effective meetings, Microsoft is introducing <i>Intelligent Draft Agenda with Copilot</i> in Microsoft Outlook. This feature uses AI to automatically generate a proposed agenda when users create or edit a calendar event, making it easier to align meeting goals, participants, and discussion topics. This enhancement supports better meeting preparation and productivity.</p><p>A Microsoft Copilot license is required to use this feature.</p>\n\n<p><b>[Rollout Details:]</b></p>\n<ul>\n<li>This feature completed worldwide rollout on October 9, 2025.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All users of Outlook on Web and Desktop in Microsoft 365 tenants worldwide.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>When creating or editing a calendar event, individuals can use the <i>Auto draft an agenda</i>&nbsp;button to generate a proposed agenda with Copilot.</li><li>The agenda is generated by Copilot and can be reviewed, edited, and sent as part of the meeting invite.</li>\n    <li>The feature is <b>enabled by default</b>.</li>\n    <li>No changes to existing admin policies are required.</li>\n    <li>Available on both Web and Desktop platforms.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required. However, you may consider the following:</li>\n  <ul>\n    <li>Inform helpdesk and support staff about the new agenda drafting experience.</li>\n    <li>Update internal training materials or documentation if you provide guidance on meeting setup.</li>\n    <li>If you wish to disable Copilot features, refer to Microsoft 365 admin center controls.</li>\n  </ul>\n</ul><p><b>[Compliance considerations:]</b></p>\n<table border=\"1\">\n<tbody><tr><th>Compliance Area</th><th>Explanation</th></tr>\n<tr><td>Introduces AI/ML capabilities interacting with customer data</td><td>Copilot uses meeting context (title, attendees, prior meetings) to generate agendas.</td></tr>\n<tr><td>Provides new user interaction with generative AI</td><td>Users interact with Copilot to review and edit AI-generated agendas.</td></tr>\n<tr><td>Includes admin control</td><td>Admins can manage Copilot availability via Microsoft 365 admin center.</td></tr>\n<tr><td>Allows user to enable/disable feature</td><td>Users can choose to use or ignore the proposed agenda.</td></tr>\n</tbody></table>"
-    }
-  },
-  {
     "startDateTime": "2025-10-14T14:49:55Z",
     "endDateTime": "2025-11-14T14:49:55Z",
     "lastModifiedDateTime": "2025-10-14T14:53:50.507Z",
@@ -23205,7 +23144,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-14T06:10:50.3101679Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-14T06:10:50.3101682Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-14T06:10:50.3101717Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-14T06:10:50.3101718Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-14T08:09:49.663648Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-14T08:09:49.6636483Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-14T08:09:49.6636516Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-14T08:09:49.6636517Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
