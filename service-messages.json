@@ -12955,67 +12955,6 @@
     }
   },
   {
-    "startDateTime": "2025-09-20T05:00:43Z",
-    "endDateTime": "2025-11-19T08:00:00Z",
-    "lastModifiedDateTime": "2025-09-20T05:01:42.01Z",
-    "title": "Windows 365: Optimized management of Cloud PCs",
-    "id": "MC1156317",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Windows 365 updates its service language to clarify seamless, non-disruptive Cloud PC management operations like automatic hibernation and resumption. No user or admin action is needed. Monitoring tools may show temporary offline status during hibernation, which is normal. Use Intune admin center for accurate health status."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Windows 365 is updating its service responsibility language to provide greater transparency into the continuous service management operations that ensure Cloud PCs remain reliable, secure, scalable, and sustainable. These operations have always been part of the Windows 365 experience and occur seamlessly, requiring no action from users or administrators. This is not a change in behavior; we are simply providing additional context to clarify how these operations support the service. \n</p><p>[How will this affect your organization:]  \n</p><p>Windows 365 leverages Azure infrastructure capabilities, such as hibernation. These operations are typically performed when a Cloud PC is not in use, are seamless, and are non-disruptive for both users and administrators. An update to our service description to include additional information will be published in the near future.  \n</p><p>As part of service management operations, the following may occur:  \n</p><ul><li>When a user connects with a supported Windows 365 client, the Cloud PC will resume automatically, ensuring a smooth experience without extra steps.  \n</li><li>If an administrator performs Windows 365 service specific actions on a Cloud PC, it will resume automatically so that tasks can be completed as expected.  \n</li><li>In certain cases, some monitoring tools may temporarily display a Cloud PC as “offline” while it is hibernated. This is normal and does not indicate a problem. The Cloud PC will resume automatically when needed.  \n</li></ul><p>For the most accurate view of Cloud PC health, we recommend using the Cloud PC connectivity status report in the <a href=\"https://learn.microsoft.com/windows-365/enterprise/health-checks-connectivity\" target=\"_blank\">Intune admin center</a>, which helps distinguish normal hibernation from actual connectivity issues.  \n</p><p>[What you need to do to prepare:]  \n</p><p>No action is required. These ongoing operations are non-disruptive and will be reflected in the upcoming revision of the Windows 365 service description page.&nbsp;</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-09-20T05:04:44Z",
-    "endDateTime": "2025-11-19T08:00:00Z",
-    "lastModifiedDateTime": "2025-09-20T05:05:13.337Z",
-    "title": "Planned Maintenance: Windows 365 Service",
-    "id": "MC1156356",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Windows 365 will undergo planned maintenance from September 29 to October 3, 2025, during regional non-peak hours. No downtime is expected, but users on UDP relay may face brief reconnections lasting under a minute, occurring 1-2 times within a 4-hour window. No user action is needed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>To improve performance and reliability, we have scheduled planned maintenance for the Windows 365 service. This maintenance will occur during non-peak hours, based on the Client Device’s local time zone, to minimize potential impact on your organization. For organizations with users across multiple regions, we recognize that non-peak hours may vary. Maintenance will take place separately in each region, affecting only users connecting from that location during the scheduled time. The times listed below indicate the actual maintenance start times for each region, not adjusted for different time zones.\n</p><p>During this period, there will be no service downtime. Users are expected to experience little to no disruption.\n</p><p><b>Maintenance Schedule:\n</b></p><ul><li>Start Date: September 29, 2025\n</li><li>End Date: October 3, 2025\n</li></ul><p><b>Daily Maintenance Window Start Times:\n</b></p><ul><li>Africa: 23:00 UTC\n</li><li>Asia Pacific: 16:30 UTC\n</li><li>Australia: 14:00 UTC\n</li><li>Europe: 00:00 UTC\n</li><li>India: 19:30 UTC\n</li><li>Middle East: 22:00 UTC\n</li><li>North America: 06:00 UTC\n</li><li>South America: 05:00 UTC\n</li></ul><p><b>Daily Maintenance Window End Times:\n</b></p><ul><li>Africa: 03:00 UTC\n</li><li>Asia Pacific: 20:30 UTC\n</li><li>Australia: 18:00 UTC\n</li><li>Europe: 04:00 UTC\n</li><li>India: 23:30 UTC\n</li><li>Middle East 02:00 UTC\n</li><li>North America: 10:00 UTC\n</li><li>South America: 09:00 UTC\n</li></ul><p>[How does this affect my organization:]\n</p><ul><li>During the maintenance window, users actively connected via UDP relay may experience brief, automatic reconnections, with each disconnection lasting less than a minute.\n</li><li>While the total planned impact duration is up to 4 hours within the maintenance window, disconnections will only occur 1-2 times and will not persist throughout the entire 4-hour period.\n</li><li>Users can establish new connections without impact during the maintenance window. The service will remain fully available without any downtime.\n</li></ul><p>[What do I need to do to prepare for this change:]\n</p><ul><li>No further action is required, as systems will automatically recover from any temporary interruptions. You may want to notify your helpdesk and end-users of the scheduled maintenance and the potential for brief disruptions.\n</li><li>We are committed to providing a seamless experience and appreciate your understanding as we carry out this necessary maintenance to enhance the reliability of Windows 365 services.</li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-09-20T05:06:53Z",
     "endDateTime": "2026-01-10T08:00:00Z",
     "lastModifiedDateTime": "2025-09-30T19:28:27.067Z",
@@ -16297,7 +16236,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386007Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386009Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.338601Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386002Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386012Z\",\"LatestRing\":null}]}"
+        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386002Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386007Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386009Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.338601Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386012Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22477,7 +22416,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-19T06:10:25.0383446Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-19T06:10:25.0383447Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-19T06:10:25.0383412Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-19T06:10:25.0383414Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-19T08:09:44.9447764Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-19T08:09:44.9447765Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-19T08:09:44.9447726Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-19T08:09:44.944773Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
