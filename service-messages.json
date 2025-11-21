@@ -4464,7 +4464,7 @@
   {
     "startDateTime": "2025-06-11T23:29:20Z",
     "endDateTime": "2026-06-01T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-28T20:41:30.317Z",
+    "lastModifiedDateTime": "2025-11-21T19:44:57.587Z",
     "title": "(Updated) Microsoft Exchange Online: New Message Trace will be GA; legacy Message Trace will retire",
     "id": "MC1092458",
     "category": "planForChange",
@@ -4490,7 +4490,7 @@
       },
       {
         "name": "Summary",
-        "value": "The new Message Trace in Exchange Online is generally available, replacing the legacy version. Legacy cmdlets retire September 1, 2025; Reporting Web Service support ends February 28, 2026. The new trace offers improved features and PowerShell cmdlets. Transition and update scripts by August 31, 2025."
+        "value": "The new Message Trace in Exchange Online is generally available, replacing the legacy version. Legacy cmdlets retire September 1, 2025; Reporting Web Service support ends March 18, 2026. The new trace offers improved features and PowerShell cmdlets. Transition and update scripts by August 31, 2025."
       },
       {
         "name": "Platforms",
@@ -4499,7 +4499,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated August 28, 2025: Due to the customer feedback we've received, we will be delaying the legacy Message Trace support on Reporting Webservice until February 28th, 2026. Additionally, we will be onboarding the new Message Trace onto Graph API. The tentative timeline for Public Preview of the new Message Trace support on Graph API is November. Further details will be announced closer to the Public Preview release date.</p><p>This does not impact the deprecation timeline for the legacy Message Trace cmdlets. The legacy Message Trace cmdlets (Get-MessageTrace, Get-MessageTraceDetail) are still set to retire on September 1st, 2025.</p><p>We are excited to announce the General Availability of the new Message Trace in the Microsoft Exchange admin center (EAC) in Microsoft Exchange Online. This new experience, previously in Public Preview, offers improved performance, modern design, and enhanced feature parity. Admins can access it via Exchange admin center &gt; <i>Mail flow &gt; Message Trace.</i></p><p>The GA release is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=495489\" target=\"_blank\">495489</a>.</p><p>[When this will happen:]</p><ul><li>Retirement of legacy Message Trace begins September 1, 2025.</li><li>General Availability (Worldwide): We will begin rolling out mid-June and expect to complete by late July.</li></ul><p> </p><p>[How this will affect your organization:]</p><ul><li>Like in Public Preview, the new Message Trace UX in EAC will be available by default and Microsoft PowerShell cmdlets (<code>Get-MessageTraceV2</code>, <code>Get-MessageTraceDetailV2</code>) will be available. </li><li>The legacy Message Trace experience and cmdlets (<code>Get-MessageTrace</code>, <code>Get-MessageTraceDetail</code>) will remain available in parallel for several months to support the transition.\n</li><li>Starting September 1, 2025, the following will begin deprecating:\n<ul><li>Legacy Message Trace UI in EAC.\n</li><li>Legacy cmdlets (<code>Get-MessageTrace</code>, <code>Get-MessageTraceDetail</code>).\n</li></ul></li><li>Starting February 28th, 2026, Reporting Web Service support for Message Trace data will begin deprecating.&nbsp;</li></ul><p>[What you need to do to prepare:]</p><p>This GA rollout and retirement will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your admins and/or users about this change and update internal documentation.</p><ul><li>Begin using the new Message Trace experience in the Exchange admin center.\n</li><li>Update any automation or scripts using legacy cmdlets to use the new versions by August 31, 2025.\n</li><li>If you rely on the Reporting Web Service for Message Trace data, migrate to the new PowerShell cmdlets by February 28, 2026.</li><li>To provide feedback on the new Message Trace, use Exchange admin center &gt; Give Feedback.</li></ul><p>Learn more about the GA rollout: <a href=\"https://techcommunity.microsoft.com/blog/exchange/announcing-general-availability-ga-of-the-new-message-trace-in-exchange-online/4420243\" target=\"_blank\">Announcing General Availability (GA) of the New Message Trace in Exchange Online | Microsoft Community Hub</a> (documentation will be linked to this blog before rollout)</p>"
+      "content": "<p>Updated November 25, 2025: The deprecation of the legacy Message Trace support on Reporting Webservice will be slightly delayed by two weeks from the original deprecation date of February 28th, 2026 to March 18th, 2026. The tentative timeline for Public Preview of the new Message Trace support on Graph API is now December 2025.</p><p>This does not impact the deprecation timeline for the legacy Message Trace cmdlets. The legacy Message Trace cmdlets (Get-MessageTrace, Get-MessageTraceDetail) were deprecated starting back in September 1st 2025.</p><p>We are excited to announce the General Availability of the new Message Trace in the Microsoft Exchange admin center (EAC) in Microsoft Exchange Online. This new experience, previously in Public Preview, offers improved performance, modern design, and enhanced feature parity. Admins can access it via Exchange admin center &gt; <i>Mail flow &gt; Message Trace.</i></p><p>The GA release is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=495489\" target=\"_blank\">495489</a>.</p><p>[When this will happen:]</p><ul><li>Retirement of legacy Message Trace begins September 1, 2025.</li><li>General Availability (Worldwide): We will begin rolling out mid-June and expect to complete by late July.</li></ul><p> </p><p>[How this will affect your organization:]</p><ul><li>Like in Public Preview, the new Message Trace UX in EAC will be available by default and Microsoft PowerShell cmdlets (<code>Get-MessageTraceV2</code>, <code>Get-MessageTraceDetailV2</code>) will be available. </li><li>The legacy Message Trace experience and cmdlets (<code>Get-MessageTrace</code>, <code>Get-MessageTraceDetail</code>) will remain available in parallel for several months to support the transition.\n</li><li>Starting September 1, 2025, the following will begin deprecating:\n<ul><li>Legacy Message Trace UI in EAC.\n</li><li>Legacy cmdlets (<code>Get-MessageTrace</code>, <code>Get-MessageTraceDetail</code>).\n</li></ul></li><li>Starting March 18th, 2026, Reporting Web Service support for Message Trace data will begin deprecating.&nbsp;</li></ul><p>[What you need to do to prepare:]</p><p>This GA rollout and retirement will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your admins and/or users about this change and update internal documentation.</p><ul><li>Begin using the new Message Trace experience in the Exchange admin center.\n</li><li>Update any automation or scripts using legacy cmdlets to use the new versions by August 31, 2025.\n</li><li>If you rely on the Reporting Web Service for Message Trace data, migrate to the new PowerShell cmdlets by March 18, 2026.</li><li>To provide feedback on the new Message Trace, use Exchange admin center &gt; Give Feedback.</li></ul><p>Learn more about the GA rollout: <a href=\"https://techcommunity.microsoft.com/blog/exchange/announcing-general-availability-ga-of-the-new-message-trace-in-exchange-online/4420243\" target=\"_blank\">Announcing General Availability (GA) of the New Message Trace in Exchange Online | Microsoft Community Hub</a> (documentation will be linked to this blog before rollout)</p>"
     }
   },
   {
@@ -22306,7 +22306,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-21T18:10:02.7633821Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-21T18:10:02.7633825Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-21T18:10:02.763385Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-21T18:10:02.7633852Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-21T20:07:45.6522537Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-21T20:07:45.6522541Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-21T20:07:45.6522606Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-21T20:07:45.6522608Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25670,6 +25670,30 @@
     }
   },
   {
+    "startDateTime": "2025-11-21T19:30:14Z",
+    "endDateTime": "2025-12-21T19:30:14Z",
+    "lastModifiedDateTime": "2025-11-21T19:32:20.13Z",
+    "title": "Power Platform admin center - Manage agent security with enhanced admin controls",
+    "id": "MC1188903",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to govern Copilot agent development in your environments and enforce governance policies for Copilot agents. This feature will reach general avaialability on December 21, 2025.<br><br>\n<b>How does this affect me? </b><br>\nThis feature allows administrators to configure authentication for all agent interactions in the environment. Admins can select one of the following options:\n<ul>\n<li><b>Authenticate with Microsoft or Authenticate Manually</b> – This allows you to force authentication through Microsoft Entra ID or set up manual authentication. </li>\n<li><b>No authentication</b> allows anonymous access. </li>\n</ul>\nThe <b>Authentication for agents</b> feature is a modernized framework of the existing Data Policy virtual connector, <b>Chat without Microsoft Entra ID</b>, helping you scale through environment-level configurations and rules. <br><br>\nPlease note: If you block anonymous access in either place, at runtime the most restrictive behavior is enforced, and it will be blocked. If you're using both the virtual connector and the <b>Authentication for agents</b> setting in the <b>Security</b> area of the Power Platform admin center, <b><i> access must be allowed in both places for it to be allowed at runtime</i></b>. <br><br>\nWe recommend using the <b>Authentication for agents</b> setting in the Power Platform admin center to leverage the capability of groups and rules.<br><br>\n<b>What do I need to do to prepare? </b><br>\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
     "startDateTime": "2021-06-16T22:53:37Z",
     "endDateTime": "2025-11-28T08:00:00Z",
     "lastModifiedDateTime": "2021-06-16T22:54:13.617Z",
@@ -27150,30 +27174,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated August 22, 2025: The ability to create shared Loop workspaces that are managed by Microsoft 365 Groups launched in April 2025 with Roadmap ID 472022. As a result, the work described below was canceled. For your reference, the ability for IT admins to enforce that an existing Microsoft 365 Group be used to govern all new Loop workspaces is still tracked by Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?searchterms=422725\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">422725</a>.</p><p>Work below has been canceled. See above.</p><p>---\n</p><p>When creating a new Loop workspace, users will be able to choose an existing Microsoft 365 Group to manage the workspace's lifetime, governance, and compliance, similar to SharePoint Team sites.</p><p>\n</p><p>[When this will happen:]</p><p>General Availability (Worldwide): We will begin rolling out late September 2025 (previously late June) and expect to complete by late October 2025 (previously late July).</p><p>[How this will affect your organization:]</p><p>Once available, when creating a new Loop workspace, users will be able to choose an existing Microsoft 365 Group to manage the workspace's lifetime, governance, and compliance, similar to SharePoint Team sites.</p><p>[What you need to do to prepare:]</p><p>There is nothing you need to do to prepare. These changes will roll to your tenant automatically.</p>"
-    }
-  },
-  {
-    "startDateTime": "2024-11-21T19:34:50.107Z",
-    "endDateTime": "2025-11-21T19:34:50.047Z",
-    "lastModifiedDateTime": "2024-11-21T19:34:51.3Z",
-    "title": "The November 2024 Windows non-security preview update is now available",
-    "id": "MC939233",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>The November 2024 non-security preview update is now available for Windows 11, versions 24H2, 23H2, and 22H2, as well as Windows 10, version 22H2. For instructions on how to install this update on your home device, check the&nbsp;<a href=\"https://support.microsoft.com/windows/update-windows-3c5ae7fc-9fb6-9af1-1984-b5e0412c556a#WindowsVersion=Windows_11\" rel=\"noopener noreferrer\" target=\"_blank\">Update Windows</a>&nbsp;article. Information about the contents of this update is available from the release notes, which are accessible from the <a href=\"https://support.microsoft.com/help/5044380\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a> and <a href=\"https://support.microsoft.com/help/5045594\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 10</a>&nbsp;update history pages. To learn more about the different types of monthly quality updates, see <a href=\"https://aka.ms/Windows/MonthlyUpdates\" rel=\"noopener noreferrer\" target=\"_blank\">Windows monthly updates explained</a>. To be informed about the latest updates and releases, follow us on X <a href=\"https://x.com/windowsupdate\" rel=\"noopener noreferrer\" target=\"_blank\">@WindowsUpdate</a>.</div><div><br></div><div><b>Highlights for the Windows 11, versions 24H2 update:&nbsp;</b></div><ul><li>Tailored Experiences is now Personalized offers in the out of box experience (OOBE). You can find it on the Recommendations and offers page.</li><li>The system tray shows a shortened date and time.&nbsp;Also, the notification bell icon might not show if you have set the toggle for “Do not disturb” to on.</li><li>When you right-click apps that you have pinned to the Start menu, jump lists will appear for apps that have jump lists.</li><li>The IME toolbar will hide when apps are in full screen mode. This only occurs when the IME toolbar is active and you type Chinese or Japanese characters.​​​​​​​</li><li>You can share content to an Android device from the context menu in File Explorer and on the desktop. To use this feature, you must install and configure Phone Link on your PC.​​​​​​​</li><li>This update improves the speech-to-text and text-to-speech features in Windows. You might get a message that asks you to update your language files manually.</li></ul><div><br></div><div>For instructions on how to install this update, see the KB for your operating system listed below:&nbsp;</div><ul><li>Windows 11, versions 24H2: <a href=\"https://support.microsoft.com/help/5046740\" rel=\"noopener noreferrer\" target=\"_blank\">5046740</a></li><li>Windows 11, versions 23H2 and 22H2: <a href=\"https://support.microsoft.com/help/5046732\" rel=\"noopener noreferrer\" target=\"_blank\">5046732</a></li><li>Windows 10, version 22H2: <a href=\"https://support.microsoft.com/help/5046714\" rel=\"noopener noreferrer\" target=\"_blank\">5046714</a></li></ul><div><br></div><div><b>IMPORTANT</b>&nbsp;Because of minimal operations during the Western holidays and the upcoming new year, there will be no December 2024 non-security preview update. There will be a monthly security update for December 2024. Normal monthly servicing for both security and non-security preview updates will resume in January 2025.</div>"
     }
   },
   {
