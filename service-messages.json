@@ -22306,7 +22306,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-22T00:29:42.9367029Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-22T00:29:42.9367031Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-22T00:29:42.9366992Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-22T00:29:42.9366996Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-22T02:35:00.3231608Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-22T02:35:00.3231609Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-22T02:35:00.3231572Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-22T02:35:00.3231575Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25746,6 +25746,233 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p>\n<p>The <b>cloud.microsoft</b> domain was <a href=\"https://techcommunity.microsoft.com/t5/microsoft-365-blog/introducing-cloud-microsoft-a-unified-domain-for-microsoft-365/ba-p/3804961\" target=\"_blank\">provisioned in early 2023</a> to provide a unified, trusted, and dedicated DNS domain space to host Microsoft’s first-party authenticated SaaS products and experiences. This post is to inform you that the following Microsoft products and scenarios are now available at the<b> cloud.microsoft</b> domain, in parallel with the previous domains:</p><ul><li>Microsoft Outlook (https://outlook.cloud.microsoft/)&nbsp;</li><li>Microsoft To Do (https://todo.cloud.microsoft/)</li></ul><p>\n<b>[When this will happen]</b></p>\n<ul>\n<li>The services listed above are already available on <b>cloud.microsoft</b>, in parallel with their previous domains.</li>\n<li>Outlook is currently rolling out under <b>Targeted Release</b> and will expand to <b>Standard Release</b> in the coming months.</li>\n<li>Users will begin seeing Outlook redirect from its old domains to <b>outlook.cloud.microsoft</b> as part of this change.</li>\n</ul>\n\n<p><b>[How this affects your organization]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>All users accessing Microsoft Outlook and Microsoft To Do.</li>\n<li>Admins managing organizational URLs, Teams apps, and network configurations.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>The <b>cloud.microsoft</b> domain has been a part of standard <a href=\"https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges\" target=\"_blank\">Microsoft network guidance on domains and service endpoints</a> since April 2023. If you are currently following this guidance, <b>this change should not impact users in your organization using the above applications under the new domain.</b></li><li>Users will be redirected to applications under <b>cloud.microsoft</b> domains gradually and automatically. </li><li>No specific user action is required. </li><li>Links to the previous domains are backwards compatible and continue to be supported. </li><li>Users may notice that the new application domains are lacking the “.com” extension.  This is by design, as “.microsoft” is Microsoft’s own top-level domain – and this exclusivity allows for additional security and protection against spoofing.&nbsp;</li></ul>\n\n<p><b>[What you can do to prepare]</b></p>\n<ul>\n<li>Educate users about the new <b>cloud.microsoft</b> domain and its purpose. Refer them to <a href=\"https://support.microsoft.com/office/what-is-cloud-microsoft-7ba4c8b9-d062-4444-84a5-fca6c3006d2b\">What is cloud.microsoft? - Microsoft Support</a>.</li>\n<li>Update internal documentation and assets that reference old URLs to avoid confusion.</li>\n<li>Partner with developers of in-house Teams apps to ensure compatibility with the new domain. Refer to&nbsp;<a href=\"https://devblogs.microsoft.com/microsoft365dev/action-required-ensure-your-microsoft-teams-apps-are-ready-for-upcoming-domain-changes/\">Action required: ensure your Microsoft Teams apps are ready for upcoming domain changes</a> for details.</li>\n<li>Verify network configurations to ensure connections to <code>*.cloud.microsoft</code> are not blocked. If you follow <a href=\"https://learn.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges\" target=\"_blank\">standard Microsoft network guidance</a>, no action is needed.</li>\n<li>Admins can disable redirects to <code>teams.cloud.microsoft</code> if necessary using the control in the Teams Admin portal.</li>\n</ul>\n\n<p><b>[Compliance considerations]</b></p>\n<p>No compliance considerations identified; review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-22T00:32:02Z",
+    "endDateTime": "2026-03-09T07:00:00Z",
+    "lastModifiedDateTime": "2025-11-22T00:32:46.417Z",
+    "title": "Microsoft Teams: Shared call history in Queues app",
+    "id": "MC1188999",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "530579"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams Queues app will introduce shared call history for queue members to view all call events. Rolling out January–February 2026, the feature is disabled by default and requires Teams Premium license and admin enablement. Tenant migration of call history is not supported initially."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Mac"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p></p><p><b>[Introduction]</b></p><p>We’re introducing <b>shared call history</b> in the <b>Microsoft Teams Queues app</b>. This feature provides queue members with a unified view of all call events—missed, incoming, and outgoing—within a call queue. By enabling shared history, teams can access consistent, up-to-date information, follow up efficiently, and improve operational responsiveness.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/2d761294-90a6-40bf-a5fa-48ffdb656c1b\" style=\"width: 400px;\" alt=\"user settings\"></p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=530579\" target=\"_blank\">530579</a>&nbsp;and applies to Teams for Windows desktop and Teams for Mac desktop.</p><p>\n</p>\n\n<b><div><b>[When this will happen:]</b></div></b><ul><li><b style=\"\">Targeted Release:</b> Rolling out early&nbsp;January 2026, expected completion by mid-January 2026.</li>\n<li><b>General Availability (Worldwide):</b> Rolling out mid-January 2026, expected completion by early February 2026.</li>\n</ul>\n\n<b>[How this affects your organization:]</b><p></p><p></p><p><b>Who is affected:</b></p>\n<ul>\n<li>Organizations using <b>Microsoft Teams Queues app</b> on desktop, web, and Mac.</li>\n<li>Users with appropriate permissions and a <b>Teams Premium license</b>.</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Queue members will be able to view <b>shared call history</b> for all missed, incoming, and outgoing calls.</li>\n<li>Feature is <b>disabled by default</b>; admins must enable it in <b>Teams Admin Center (TAC)</b>.</li>\n<li>Admins can grant <b>shared call history</b> access to all queue members or restrict access to authorized users only.</li>\n<li>Known limitation: Tenant migration is not supported for <b>Queues call history</b>. If your organization moves to a new region, existing history will not transfer; a new history will begin. Support for migration will be added in a future update.</li>\n</ul>\n\n<b>[What you can do to prepare:]</b><p></p><p></p><ul><li>Enable <b>shared call history</b> in <b>Teams Admin Center</b>.</li>\n<li>Configure permissions for queue members or authorized users.</li>\n<li>Communicate this change to your helpdesk and affected users.</li>\n<li>Update internal documentation to reflect this feature.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/MicrosoftTeams/plan-auto-attendant-call-queue?branch=pr-en-us-18379\" target=\"_blank\">Plan for Teams Auto attendants and Call queues</a> (will be updated before rollout)</li><li><a href=\"https://learn.microsoft.com/microsoftteams/create-a-phone-system-call-queue?tabs=general-info\" target=\"_blank\">Create a Call queue in Microsoft Teams</a> (will be updated before rollout)</li></ul><ul>\n</ul><p><b>[Compliance considerations:]</b></p><p></p><p></p><p>No compliance considerations identified; review as appropriate for your organization.</p><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-22T00:33:08Z",
+    "endDateTime": "2026-05-04T07:00:00Z",
+    "lastModifiedDateTime": "2025-11-22T00:33:37.027Z",
+    "title": "Updated UI for Copilot Chat entry point in Word, Excel and PowerPoint apps",
+    "id": "MC1189000",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Copilot Chat entry point in Word, Excel, and PowerPoint will move from the ribbon to the document canvas starting December 2025. It includes contextual prompt suggestions, remains on by default, and requires no admin action unless adjusting the pinning setting for users without a Copilot license."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re updating the Copilot Chat experience in Microsoft 365 apps by moving the entry point button out of the ribbon and into the document canvas. This change makes Copilot Chat easier to discover and use, and introduces curated, contextual prompt suggestions relevant to the current document or selection.</p>\n\n<p><b>[When this will happen:]</b>\n</p><p>General Availability (Worldwide): Rollout begins early December 2025 and is expected to complete by late March 2026.</p><ul><li>Word, Excel, PowerPoint (Web, Desktop, Mobile): rollout will start for a % of Small Business and Enterprise users without a Microsoft 365 Copilot license who have pinning enabled. These users will see the entry point for Copilot move out of the ribbon, represented by the icon pictured below. \n</li><li>We will continue the rollout progressively for users with a Microsoft 365 Copilot license in the new year.</li></ul>\n\n<b>[How this affects your organization:]</b><p></p><p>\n</p><p><b>Who is affected:</b></p>\n<ul>\n<li>Microsoft 365 users of Word, Excel, and PowerPoint across web, desktop, and mobile who are eligible for Copilot Chat.</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n<li>The Copilot Chat entry point will move from the app ribbon into the document canvas.</li>\n<li>Users will see a new Copilot icon in the canvas to open Copilot Chat.<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/1eb23bf5-691f-4808-8e88-3903afee9ed7/47e0b70c1ebb80721bb02cba93c20059a4e34c9e.png\" width=\"75\" height=\"\"></p></li>\n<li>Contextual prompt suggestions will appear to help users engage with Copilot Chat.</li>\n<li>The feature remains ON by default for eligible users across web, mobile, and desktop.</li>\n<li>Admins can still disable Copilot Chat using the “Pin Microsoft 365 Copilot Chat” setting in the admin center.</li>\n<li>No changes to Copilot Chat functionality or value.</li>\n</ul>\n\n<b>[What you can do to prepare:]</b><p></p><p>\n</p><ul>\n<li>No admin action is required.</li>\n<li>If your “<a href=\"https://go.microsoft.com/fwlink/?linkid=2310640\" target=\"_blank\">Pin Microsoft 365 Copilot Chat</a>” setting is configured to “Do not pin,” update it to “Pin” if you want users without a Copilot license to access Copilot Chat in Microsoft 365 apps.</li>\n<li>Learn more: <ul><li><a href=\"https://learn.microsoft.com/microsoft-365/copilot/manage-copilot-chat\">Manage Microsoft 365 Copilot Chat</a>.</li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/pin-copilot-chat-navbar\" target=\"_blank\">Pin Microsoft 365 Copilot Chat in the Microsoft 365 apps</a></li></ul></li>\n</ul>\n\n<b>[Compliance considerations:]</b><p></p><p>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-22T00:34:47Z",
+    "endDateTime": "2026-03-02T08:00:00Z",
+    "lastModifiedDateTime": "2025-11-22T00:35:36.26Z",
+    "title": "Microsoft 365 Copilot: Voice chat in Microsoft 365 Copilot",
+    "id": "MC1189001",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "516569"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot is adding voice chat across desktop, web, and mobile apps like Word, PowerPoint, and Outlook. Rolling out from November 2025 to January 2026, licensed users can have natural voice conversations with Copilot, with transcripts stored securely. No admin control to disable this feature."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction</b></p>\n<p>In early November, we announced voice in the <i>Microsoft 365 Copilot mobile app</i>. Now we’re expanding that offering to Microsoft 365 Copilot app on desktop and the web, as well as in the Microsoft 365 apps, starting with Word and PowerPoint on desktop and web and Outlook on desktop, web, and mobile.&nbsp;</p><p>Voice enables Microsoft 365 Copilot users to have natural, back-and-forth conversations with Copilot simply by speaking. It lets you quickly capture your ideas, whether you’re brainstorming, drafting a response, or preparing for a meeting. Just say “help me prepare for my next meeting” to get an instant response from Work IQ, grounded in your work data, context, and preferences.&nbsp;&nbsp;</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=516569\" target=\"_blank\">516569</a>.</p>\n\n<p><b>When this will happen</b></p>\n<ul>\n<li><b>Public Preview: </b>Rollout began in <b>November&nbsp;2025 </b>and is expected to complete in&nbsp;<b>December 2025</b>.</li><li><b>General Availability (Worldwide): </b>Rollout begins in <b>December&nbsp;2025 </b>and is expected to complete in&nbsp;<b>January 2026</b>.</li>\n</ul>\n\n<p><b>How this will affect your organization</b></p>\n<p><b>Who is affected:</b> All Microsoft 365 Copilot licensed users.</p>\n<p><b>What will happen</b></p>\n<ul>\n<li>Users can start a voice conversation with Copilot by selecting <b><i>Start a new voice chat</i></b> in the <i>Copilot input box</i>.</li>\n<li>There is <b>no admin control to disable this feature </b>at the tenant or group level.</li>\n<li><b>Voice in Microsoft 365 Copilot</b> is available only for Microsoft 365 Copilot licensed users.</li>\n<li>Text transcripts from voice conversations are stored and managed the same way as text conversations in the <i>Microsoft 365 Copilot app</i>.</li>\n<li>Users can continue a voice chat in the background while moving between apps or with a locked screen on desktop.</li>\n<li>Audio from voice chats will be interrupted if users play audio from another app.</li>\n<li>Background noise suppression is included, but background speech may still be picked up.</li>\n<li>Voice is available in all languages supported by Microsoft 365 Copilot.</li>\n<li>While in voice chat, Copilot can respond using existing memories stored in <i>user Personalization settings</i>. Users cannot modify or edit memories from voice chats yet due to privacy considerations.</li>\n</ul>\n\n<p><b>What you need to do to prepare</b></p>\n<ul>\n<li>Review how privacy and security of organizational data is protected when using this feature: <a href=\"https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-privacy\" target=\"_blank\">Data, Privacy, and Security for Microsoft 365 Copilot | Microsoft Learn</a>.</li><li>Communicate the availability and benefits of this feature to your users.</li><li>Remind users to ensure microphone permissions and device settings are compatible with voice activation.</li></ul><p><b>Learn more:</b>&nbsp;<a href=\"https://techcommunity.microsoft.com/blog/microsoft365copilotblog/voice-turns-microsoft-365-copilot-into-your-thought-partner-/4469040\" target=\"_blank\">Voice turns Microsoft 365 Copilot into your thought partner</a></p><ul>\n</ul>\n\n<p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-22T00:36:09Z",
+    "endDateTime": "2026-01-06T08:00:00Z",
+    "lastModifiedDateTime": "2025-11-22T00:36:42.657Z",
+    "title": "Microsoft 365 Copilot: Copilot chats in search results",
+    "id": "MC1189002",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "506751"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot will integrate past Copilot chats into Microsoft Search, allowing users to retrieve historical conversations from notebooks, agents, and the main chat via a new \"Copilot Chats\" data source in search results. This feature requires a Copilot license and rolls out worldwide from November to December 2025."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, Desktop, iOS, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We’re introducing a new capability that enhances Microsoft Copilot by integrating historical Copilot conversations into Microsoft Search. This update allows users to retrieve past interactions—including chats from notebooks, agents, and the main Copilot chat interface—directly within the search results page (SERP). A new <i><b>“Copilot Chats”</b></i> data source will also appear in the right rail, enabling users to scope their search specifically to Copilot-generated content.</p><p>A Microsoft 365 Copilot license is required to access this feature.</p>\n\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=506751\" target=\"_blank\">506751</a>.</p>\n\n<b>When this will happen:</b>\n<ul>\n  <li><b>Public Preview (Worldwide):</b> Rolling out early November 2025; expected completion by mid-November 2025.</li>\n  <li><b>Targeted Release (Worldwide):</b> Rolling out mid-November 2025; expected completion by late November 2025.</li>\n  <li><b>General Availability (Worldwide):</b> Rolling out late November 2025; expected completion by early December 2025.</li>\n</ul>\n\n<b>How this affects your organization:</b>\n<ul>\n  <li><b>Who is affected:</b> All users of Microsoft Copilot in Microsoft 365.</li>\n  <li><b>What will happen:</b>\n    <ul>\n      <li>Users will be able to search and retrieve historical Copilot conversations from:\n        <ul>\n          <li>Notebooks</li>\n          <li>Agents</li>\n          <li>The main Copilot chat interface</li>\n        </ul>\n      </li>\n      <li>A new <i><b>“Copilot Chats” </b></i>data source will appear in the right rail of the search results page:&nbsp;</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/8248c95f-b58b-447f-ac77-cb1d394ad004/3018b3aa34289a6b38d6a41e9eccdf892811c043.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n      <li>Users can scope their search to only include Copilot-generated content.</li>\n      <li>Each user will only have access to their own Copilot conversations.</li>\n      <li>No changes to tenant-wide settings or permissions are required.</li>\n    </ul>\n  </li>\n</ul>\n\n<b>What you can do to prepare:</b>\n<ul>\n  <li>No action is required from tenant admins at this time.</li>\n  <li>You may wish to inform your users about this new search capability to help them take full advantage of Copilot.</li>\n</ul>\n\n<b>Compliance considerations:</b>\n<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Consideration</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td>\n    <td>Yes – This update enables retrieval of historical Copilot interactions, which are AI-generated and may include user data.</td>\n  </tr>\n  <tr>\n    <td>Does the change provide end users any new way of interacting with generative AI?</td>\n    <td>Yes – Users can now search and retrieve past Copilot conversations, enhancing their ability to revisit and reuse AI-generated content.</td>\n  </tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-22T00:37:10Z",
+    "endDateTime": "2026-03-03T08:00:00Z",
+    "lastModifiedDateTime": "2025-11-22T00:37:47.933Z",
+    "title": "Microsoft 365 Copilot: “Hey Copilot” to start voice in Copilot on Windows devices",
+    "id": "MC1189003",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "497848"
+      },
+      {
+        "name": "Summary",
+        "value": "Starting late November 2025, Microsoft 365 Copilot on Windows will support hands-free voice activation by saying “Hey Copilot,” off by default and enabled in settings. It operates locally without recording audio, supports English activation, and requires manual muting or dismissal to end conversations."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>“<b>Hey Copilot” to start voice in Copilot on Windows devices</b></p><p><b>[Introduction]</b></p><p>Starting late November 2025, we’re introducing a new hands-free way to activate voice in <i>Microsoft 365 Copilot on Windows devices</i>. Users will be able to start a voice chat with Copilot by saying “Hey Copilot”. To end the conversation, users need to press the <i><b>“Dismiss/X” </b></i>button in the voice chat controls. In the future, users will be able to end the chat with a voice command. This allows users to stay in the flow of work, without switching apps or windows, while getting assistance from Copilot using voice. \n</p><p><b>Important</b>: The “Hey Copilot” feature is off by default.\n</p><p>Users can manually enable the feature by going to <b><i>Settings &gt; Quick view</i></b> in the&nbsp;<i>Microsoft 365 Copilot app</i> and turning on the<i><b> Listen for “Hey Copilot\" </b></i>toggle. When on, this capability operates locally on the device and only activates by “hearing” the trigger word “Hey Copilot” without recording or storing any conversation. Text transcripts from voice conversations with Copilot are stored and managed in the same way as text conversations in the <i>Microsoft 365 Copilot app</i>. No user or Copilot audio is stored. For more information about data retention for Copilot, see <a href=\"https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-privacy\" target=\"_blank\">Data, Privacy, and Security for Microsoft 365 Copilot</a>.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=497848\" target=\"_blank\">497848</a>.\n</p><p><b>[When this will happen]\n</b></p><p><b>Preview (Frontier):</b> Begins rolling out at the <b>end of November 2025</b>.</p><p><b>General Availability (Worldwide): </b>Begins rolling out in late <b>December 2025</b> and expected to be generally available by <b>late January 2026.</b></p><p><b>[How this will affect your organization]</b></p><ul><li>Users will be able to start a voice conversation with Copilot hands free, saying “Hey Copilot” once turned on. \n</li><li>The “Hey Copilot” feature is off by default and must be turned on by users in <i>Copilot settings</i>.</li><li>When on, this capability operates locally on the device and only activates by “hearing” the trigger word “Hey Copilot” without recording or storing any conversation.</li><li>There is no admin control to disable this feature by an admin at a tenant or group level.</li><li>Voice in<i> Microsoft 365 Copilot</i> is currently available only for Copilot licensed users and this feature will be available only to those same users.\n</li><li>Activation respects organizational compliance boundaries and only responds when explicitly called.\n</li><li>To mute or end the conversation, the user must click to<b><i> “Mute”</i></b> or <i><b>“Dismiss” </b></i>as needed. At that point, Copilot stops listening. Copilot will end the session after  60 seconds of inactivity, giving users a notice after the first 30 seconds.&nbsp;</li><li>The feature will not activate if audio from another app is on or when the user’s device is locked.\n</li><li>This feature is supported in English only, but once activated, users can have conversation in any language Copilot that supports.\n</li></ul><p><b>[What you need to do to prepare]\n</b></p><p>This feature will roll out default off but users will be prompted in product to try this feature by turning it on in the <i>Copilot settings</i>.\n</p><p>To enable, users need to go to Microsoft 365 Copilot app on Windows devices and enable it in settings and ensure that microphone permissions and device settings are compatible with voice activation</p><ul><li>Review how privacy and security of organizational data is protected when using this feature:<a href=\"https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-privacy\" target=\"_blank\">&nbsp;Data, Privacy, and Security for Microsoft 365 Copilot</a>\n</li><li>Communicate the availability and benefits of this feature to your users.\n</li><li>Remind users to ensure that microphone permissions and device settings are compatible with voice activation.</li></ul><p><b>[Learn more]</b></p><p><a href=\"https://support.microsoft.com/topic/how-hey-copilot-voice-chat-wake-word-works-in-microsoft-365-copilot-a0bf9f39-6dab-47ae-9054-2d919753293e\" target=\"_blank\">How \"Hey Copilot\" voice chat wake word works in Microsoft 365 Copilot - Microsoft Support</a></p><p><a href=\"https://support.microsoft.com/topic/frequently-asked-questions-about-voice-features-in-microsoft-365-copilot-54f83fd3-ea7c-41f5-9502-07ed73fe4c64\" target=\"_blank\">Frequently asked questions about voice features in Microsoft 365 Copilot</a></p><p><a href=\"https://support.microsoft.com/topic/get-started-with-voice-features-in-microsoft-365-copilot-9262968d-565e-470c-a04b-991eb8e0d1ea\" target=\"_blank\">Get started with voice features in Microsoft 365 Copilot</a></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-22T00:38:14Z",
+    "endDateTime": "2026-02-15T08:00:00Z",
+    "lastModifiedDateTime": "2025-11-22T00:40:13.717Z",
+    "title": "Microsoft Teams: Custom AI summary now available in Meeting Recap",
+    "id": "MC1189004",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "501540"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams is introducing a Custom AI Summary feature in Meeting Recap for Copilot users, allowing personalized meeting notes via templates or instructions. Rolling out mid-Dec 2025 to mid-Jan 2026, it's enabled by default for licensed desktop users (English only) with no admin changes needed."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Mac"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction:]</b></p><p>We’re introducing a new way to personalize meeting summaries in <i>Microsoft Teams</i>. The Custom AI Summary feature allows Copilot users to create tailored meeting notes using sample content, instructions, or prebuilt templates. This enhancement is designed to improve flexibility and productivity by enabling users to generate summaries that better suit their needs.&nbsp;</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=501540\" target=\"_blank\">501540</a>.</p><p></p><p><b>[When this will happen:]</b></p><p><b>Targeted Release</b> rollout will begin in <b>mid-December 2025 </b>and is expected to complete by <b>mid-January 2026</b>.</p><p><b>We will share additional timelines later when available.</b></p><p><b>[How this affects your organization:]</b></p><p><i>Who is affected:</i></p><p>Copilot users in <i>Microsoft Teams on desktop</i> (English only).</p><p>The feature requires a Microsoft 365 Copilot license.</p><p><i>What will happen:</i></p><ul><li>Users will see a new option to create custom AI summaries in <i>Teams Meeting Recap</i>.</li><li>Users can build templates using sample notes, freeform instructions, or prebuilt structures.</li><li>Two out-of-box templates will be available: Speaker summary and Executive summary.</li><li>Templates can be saved and reused across meetings.</li><li>The feature is enabled by default for eligible users.</li><li>No admin policy changes are required.</li></ul><p><i>Screenshot 1 - View of a user-created Topic summary:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/2bb1c647-7651-4583-884f-a21af098ca15/f362bdfd8881bc7a88c749c902742afcee403421.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><i>Screenshot 2 - View of a user-created Topic summary template:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/09cd611d-82ee-41a7-be40-19d496b01fc8/945d923ac907af6d172eceb000c25f72b099fa39.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare:]</b></p><p>No action is required at this time.</p><p>If desired, you may:</p><ul><li>Communicate this update to helpdesk or support staff.</li><li>Encourage Copilot users to explore the new summary options and provide feedback.</li><li>Review internal documentation if you reference Teams Meeting Recap features.</li></ul><p>Learn more:&nbsp;<a href=\"https://techcommunity.microsoft.com/blog/MicrosoftTeamsBlog/what%E2%80%99s-new-in-microsoft-teams--microsoft-ignite-2025/4470387\" target=\"_blank\">What’s New in Microsoft Teams | Microsoft Ignite 2025 | Microsoft Community Hub</a></p><p><b>[Compliance considerations:]</b></p><table class=\"table table-bordered\"><tbody><tr><td>Does the change alter how existing customer data is processed, stored, or accessed (e.g., documents, emails, chats)?</td><td>Yes. Meeting data is now processed through customizable AI templates, allowing users to generate summaries based on their own instructions or samples.</td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. This feature introduces a new AI capability that allows users to create personalized summaries using Copilot, which interacts with meeting transcript and note data.</td></tr><tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes. Users can now interact with generative AI by creating custom templates and instructions that guide how Copilot summarizes meeting content.</td></tr></tbody></table>"
     }
   },
   {
