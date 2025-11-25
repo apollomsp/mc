@@ -12603,7 +12603,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503099\":[{\"RoadmapId\":503099,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7989395Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503099,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7989393Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503099,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7989398Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"503099\":[{\"RoadmapId\":503099,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7989393Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503099,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7989395Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":503099,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7989398Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21761,7 +21761,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-24T22:06:28.9705183Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-24T22:06:28.9705184Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-24T22:06:28.9705156Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-24T22:06:28.9705158Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T00:29:26.3850935Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T00:29:26.3850937Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T00:29:26.3850899Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T00:29:26.3850901Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25555,6 +25555,176 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to add an AI record summary to model-driven apps in Power Apps. This feature will reach general availability on December 1, 2025.<br><br><b>How does this affect me?</b><br>This feature enables you to add an AI record summary to your model-driven apps to easily access important information.<br><br>Key functionality of this feature includes:<ul><li>Create a record summary prompt for any table in Power Apps (make.powerapps.com) through a guided prompt builder.</li><li>Add relevant fields and information for users in the record summary.</li><li>Test the summary online to make sure it meets your expectations.</li><li>Provide record summaries to users in their forms for easy access to information.</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/ADO13229\">Add AI record summary to model-driven apps.</a>."
+    }
+  },
+  {
+    "startDateTime": "2025-11-25T00:00:52Z",
+    "endDateTime": "2026-02-23T08:00:00Z",
+    "lastModifiedDateTime": "2025-11-25T00:01:09.787Z",
+    "title": "Upcoming Change to Teams Desktop Client on Windows",
+    "id": "MC1189656",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams Desktop Client for Windows will introduce a new process, ms-teams_modulehost.exe, to handle calling features separately, improving performance and startup time. Rollout begins January 2026. Admins should allowlist the new process in security software and inform helpdesk staff; no user workflow changes expected."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<b>[Introduction]</b>\n<p>We’re improving the performance and startup time of calling features in the Microsoft Teams Desktop Client for Windows. To achieve this, we’re introducing a new child process named <i>ms-teams_modulehost.exe</i> that will handle the calling stack separately from the main application process (<i>ms-teams.exe</i>). This change optimizes resource usage and enhances meeting experiences.</p>\n\n<b>[When this will happen:]</b>\n<p>Worldwide, GCC, GCC High, and DoD: Rollout will begin early January 2026 and complete by late January 2026.</p><p>Note: Timelines may shift due to year-end feature flag rollout freeze.</p>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b> All users running the Teams Desktop Client on Windows.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>A new process (<i>ms-teams_modulehost.exe</i>) will appear in Task Manager under the main Teams process (<i>ms-teams.exe</i>).</li>\n<li>This process is dedicated to calling features and improves performance.</li>\n<li>No changes to user workflows or UI; however, admins should ensure endpoint and security software allow this new process.</li>\n</ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Update endpoint management and security software to allowlist <i>ms-teams_modulehost.exe</i> alongside <i>ms-teams.exe</i>.</li>\n<li>Communicate this change to helpdesk staff to avoid confusion during troubleshooting.</li>\n<li>Update internal documentation if you reference Teams process names.</li>\n<li>Learn more about Teams performance improvements: https://learn.microsoft.com/microsoftteams/Microsoft Teams documentation.</li>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-25T00:01:40Z",
+    "endDateTime": "2026-01-24T08:00:00Z",
+    "lastModifiedDateTime": "2025-11-25T00:02:05.04Z",
+    "title": "Planned Maintenance: Windows 365",
+    "id": "MC1189657",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows 365"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Windows 365 will undergo planned maintenance from December 8-13, 2025, during regional non-peak hours with no downtime. Users may experience brief reconnections lasting under a minute, occurring 1-2 times within a 4-hour window. No user action is needed; systems will recover automatically."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>To improve performance and reliability, we have scheduled planned maintenance for the Windows 365 service. This maintenance will occur during non-peak hours, based on the Client Device’s local time zone, to minimize potential impact on your organization. For organizations with users across multiple regions, we recognize that non-peak hours may vary. Maintenance will take place separately in each region, affecting only users connecting from that location during the scheduled time. The times listed below indicate the actual maintenance start times for each region, not adjusted for different time zones.\n</p><p>During this period, there will be no service downtime. Users are expected to experience little to no disruption.\n</p><p><b>Maintenance Schedule:\n</b></p><ul><li>Start Date: December 8, 2025</li><li>End Date: December 13, 2025</li></ul><p><b>Daily Maintenance Window Start Times:\n</b></p><ul><li>Africa: 23:00 UTC\n</li><li>Asia Pacific: 16:30 UTC\n</li><li>Australia: 14:00 UTC\n</li><li>Europe: 00:00 UTC\n</li><li>India: 19:30 UTC\n</li><li>Middle East: 22:00 UTC\n</li><li>North America: 06:00 UTC\n</li><li>South America: 05:00 UTC\n</li></ul><p><b>Daily Maintenance Window End Times:\n</b></p><ul><li>Africa: 03:00 UTC\n</li><li>Asia Pacific: 20:30 UTC\n</li><li>Australia: 18:00 UTC\n</li><li>Europe: 04:00 UTC\n</li><li>India: 23:30 UTC\n</li><li>Middle East 02:00 UTC\n</li><li>North America: 10:00 UTC\n</li><li>South America: 09:00 UTC\n</li></ul><p>[How does this affect my organization:]\n</p><ul><li>During the maintenance window, users actively connected via UDP relay may experience brief, automatic reconnections, with each disconnection lasting less than a minute.\n</li><li>While the total planned impact duration is up to 4 hours within the maintenance window, disconnections will only occur 1-2 times and will not persist throughout the entire 4-hour period.\n</li><li>Users can establish new connections without impact during the maintenance window. The service will remain fully available without any downtime.\n</li></ul><p>[What do I need to do to prepare for this change:]\n</p><ul><li>No further action is required, as systems will automatically recover from any temporary interruptions. You may want to notify your helpdesk and end-users of the scheduled maintenance and the potential for brief disruptions.\n</li><li>We are committed to providing a seamless experience and appreciate your understanding as we carry out this necessary maintenance to enhance the reliability of Windows 365 services.</li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-25T00:05:43Z",
+    "endDateTime": "2026-05-01T07:00:00Z",
+    "lastModifiedDateTime": "2025-11-25T00:06:04.353Z",
+    "title": "Retirement of external access token for actionable messages – moving to Microsoft Entra authentication",
+    "id": "MC1189663",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Admin impact",
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": "2026-03-30T07:00:00Z",
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "External access tokens for actionable messages will be retired by March 31, 2026, requiring organizations to switch to Microsoft Entra authentication. This change enhances security and compliance. Organizations should review and update their actionable message integrations before the deadline to avoid failures."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>\n<b>[Introduction]</b></p><p>We’re retiring the use of <b>external access tokens</b> for <b>actionable messages</b> and transitioning to Microsoft Entra-based authentication. This update enhances security and aligns with modern identity standards, providing a more robust and compliant experience for <b>actionable messages</b>.<b><br></b>\n\n</p><p><b>[When this will happen]</b></p><p>This change takes effect on <b>March 31, 2026</b>. After this date, <b>external access tokens</b> will no longer be supported.</p><p><b>[How this affects your organization]</b><b><br></b></p><p><b>Who is affected:</b></p><p>Organizations using <b>actionable messages</b> that currently rely on <b>external access tokens</b>.</p><p><b>What will happen:</b></p><ul>\n<li><b>Actionable messages</b> that depend on <b>external access tokens</b> will fail after<b> March 31, 2026</b>.</li>\n<li>All integrations and workflows using <b>actionable messages</b> must adopt <b>Microsoft Entra authentication</b>.</li>\n<li>This change improves security posture by leveraging Entra’s identity and access management capabilities.</li>\n</ul>\n\n<b>[What you can do to prepare]</b><ul>\n<li>Review all actionable message implementations in your organization.</li>\n<li>Update integrations to use <b>Microsoft Entra authentication</b> before <b>March 31, 2026</b>.</li>\n</ul><p>Learn more: </p><ul><li><a href=\"https://learn.microsoft.com/outlook/actionable-messages/\" target=\"_blank\">Actionable messages in Outlook and Office 365 Groups</a></li><li><a href=\"https://learn.microsoft.com/outlook/actionable-messages/enable-entra-token-for-actionable-messages\" target=\"_blank\">Enable Entra token for Actionable messages</a></li>\n</ul>\n\n<b>[Compliance considerations]</b><p></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-25T00:06:23Z",
+    "endDateTime": "2026-06-30T07:00:00Z",
+    "lastModifiedDateTime": "2025-11-25T00:06:49.563Z",
+    "title": "Microsoft 365 admin center: Organizational Messages to support email delivery",
+    "id": "MC1189665",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)",
+      "Microsoft 365 Copilot Chat"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "503562"
+      },
+      {
+        "name": "Summary",
+        "value": "Organizational Messages in Microsoft 365 will add email as a delivery channel, alongside Windows and Teams surfaces. Public Preview starts mid-November 2025, with General Availability in late March 2026. Admins can send premade email templates to improve user engagement and adoption. No action needed now."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Organizational Messages</b> will soon include email as a delivery channel, expanding beyond existing surfaces such as the Windows Taskbar, Windows Notifications, Windows Spotlight, and Teams popovers. This enhancement helps organizations reach users through familiar communication channels, improving engagement and adoption.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=503562\" target=\"_blank\">503562</a>.</p>\n\n<p><b>[When this will happen]</b>&nbsp;</p><ul><li><b>Public Preview (Worldwide): </b>Rollout began in <b>mid-November 2025</b> and is expected to complete by<b> late January 2026</b>. </li><li><b>General Availability (Worldwide): </b>Rollout begins in <b>late March 2026 </b>and is expected complete by<b> late April 2026</b>.</li></ul>\n\n<p><b>[How this will affect your organization]</b>\n</p><p><b>Who is affected:</b> Admins managing Organizational Messages in <i>Microsoft 365</i>.\n</p><p><b>What will happen:</b>\n</p><ul>\n<li>Email will be added as a delivery channel for Organizational Messages.</li>\n<li>Admins can send premade, templatized messages via email in addition to existing surfaces like Windows Spotlight, Taskbar, Notification Center, and Teams popovers:</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/5d3890a5-ee81-4b0c-b78b-55bfbf90a092/87516c6f4cb89826b46202606498a4ab5686fe37.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>During Public Preview, new pre-built email templates will be available:</li><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/577d6990-9ec3-471d-b768-443a0b752821/bf17683de7e5edb9a97c59a9200aafb4d078764b.png\" style=\"width: 400px;\" alt=\"user settings\"></p><ul>\n<li><b>Two welcome messages:</b> Welcome to Copilot and Welcome to Copilot Chat.</li>\n<li><b>Six weekly Great M365 Copilot Journey emails</b> highlighting features and best practices to drive onboarding and adoption.</li>\n</ul>\n\n</ul>\n<p></p>\n\n<p></p><p><b>[What you need to do to prepare]</b>\n</p><p>No action is required at this time.</p>\n\n<p><b>[Compliance considerations]</b></p><p>No compliance impacts identified. Review your organization’s policies as needed.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-25T00:07:07Z",
+    "endDateTime": "2026-06-01T07:00:00Z",
+    "lastModifiedDateTime": "2025-11-25T00:07:34.783Z",
+    "title": "Microsoft 365 admin center: Organizational Messages now support Action Segments for Microsoft 365 Copilot",
+    "id": "MC1189666",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "503563"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 admin center now supports Action Segments for Organizational Messages targeting inactive Microsoft 365 Copilot users. Public Preview runs mid-November 2025 to late January 2026; General Availability starts late March 2026. Admins with Copilot licenses can use this feature without policy changes. No immediate action required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p><b>Action Segments</b> empower IT admins to target Organizational Messages using dynamic, pre-defined usage segments. This enhancement helps admins deliver more relevant communications based on user activity. For the Public Preview, there are two Action Segments available: <b>Inactive Microsoft 365 Copilot Users</b> and <b>Inactive Microsoft 365 Copilot Users in Teams</b>.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=503563\" target=\"_blank\">503563</a>.</p>\n\n<p><b>[When this will happen]</b></p>\n<ul>\n<li><b>Public Preview (Worldwide):</b> Rollout began in <b>mid-November 2025</b> and is expected to complete by <b>late January 2026</b>.</li>\n<li><b>General Availability (Worldwide):</b> Rollout begins in<b> late March 2026</b> and is expected to complete by<b> late April 2026</b>.</li>\n</ul>\n\n<p><b>[How this will affect your organization]</b></p>\n<ul>\n<li><b>Who is affected:</b>\n<ul>\n<li>Admins managing Organizational Messages in <i>Microsoft 365</i>.</li>\n<li>Tenants with <b>Microsoft 365 Copilot licenses</b> (required for Action Segments to apply).</li>\n</ul>\n</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Admins can target messages based on user activity using Action Segments:&nbsp;</li><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/5f959020-b1ad-41b9-a84c-5045538e554f/68a090eefeb0fff68ad0eccd05c92ddddf41f030.png\" style=\"width: 400px;\" alt=\"user settings\"><p></p>\n<li>Two pre-defined segments are available during Public Preview:\n<ul>\n<li>Inactive Microsoft 365 Copilot Users</li>\n<li>Inactive Microsoft 365 Copilot Users in Teams</li>\n</ul>\n</li>\n<li>No changes to existing admin policies; feature is additive.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare]</b></p><ul>\n<li>No immediate action is required at this time.</li><li>If you want to take advantage of this feature:</li><li>Ensure your organization has Microsoft 365 Copilot licenses (required for Action Segments to apply).</li><li>Review and configure Action Segments in the <i>Microsoft 365 admin center</i>.</li><li>Communicate this change to your helpdesk or support teams.</li><li>Update internal documentation if you detail Organizational Messages or Copilot usage.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance impacts identified. Review your organization’s policies as needed.</p>"
     }
   },
   {
