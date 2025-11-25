@@ -21761,7 +21761,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T00:29:26.3850935Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T00:29:26.3850937Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T00:29:26.3850899Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T00:29:26.3850901Z\",\"LatestRing\":null}]}"
+        "value": "{\"523207\":[{\"RoadmapId\":523207,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T02:38:35.1503811Z\",\"LatestRing\":null},{\"RoadmapId\":523207,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T02:38:35.1503813Z\",\"LatestRing\":null}],\"523208\":[{\"RoadmapId\":523208,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T02:38:35.1503773Z\",\"LatestRing\":null},{\"RoadmapId\":523208,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-25T02:38:35.1503777Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25725,6 +25725,30 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p>\n<p><b>Action Segments</b> empower IT admins to target Organizational Messages using dynamic, pre-defined usage segments. This enhancement helps admins deliver more relevant communications based on user activity. For the Public Preview, there are two Action Segments available: <b>Inactive Microsoft 365 Copilot Users</b> and <b>Inactive Microsoft 365 Copilot Users in Teams</b>.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=503563\" target=\"_blank\">503563</a>.</p>\n\n<p><b>[When this will happen]</b></p>\n<ul>\n<li><b>Public Preview (Worldwide):</b> Rollout began in <b>mid-November 2025</b> and is expected to complete by <b>late January 2026</b>.</li>\n<li><b>General Availability (Worldwide):</b> Rollout begins in<b> late March 2026</b> and is expected to complete by<b> late April 2026</b>.</li>\n</ul>\n\n<p><b>[How this will affect your organization]</b></p>\n<ul>\n<li><b>Who is affected:</b>\n<ul>\n<li>Admins managing Organizational Messages in <i>Microsoft 365</i>.</li>\n<li>Tenants with <b>Microsoft 365 Copilot licenses</b> (required for Action Segments to apply).</li>\n</ul>\n</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Admins can target messages based on user activity using Action Segments:&nbsp;</li><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/5f959020-b1ad-41b9-a84c-5045538e554f/68a090eefeb0fff68ad0eccd05c92ddddf41f030.png\" style=\"width: 400px;\" alt=\"user settings\"><p></p>\n<li>Two pre-defined segments are available during Public Preview:\n<ul>\n<li>Inactive Microsoft 365 Copilot Users</li>\n<li>Inactive Microsoft 365 Copilot Users in Teams</li>\n</ul>\n</li>\n<li>No changes to existing admin policies; feature is additive.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare]</b></p><ul>\n<li>No immediate action is required at this time.</li><li>If you want to take advantage of this feature:</li><li>Ensure your organization has Microsoft 365 Copilot licenses (required for Action Segments to apply).</li><li>Review and configure Action Segments in the <i>Microsoft 365 admin center</i>.</li><li>Communicate this change to your helpdesk or support teams.</li><li>Update internal documentation if you detail Organizational Messages or Copilot usage.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance impacts identified. Review your organization’s policies as needed.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-25T01:29:22Z",
+    "endDateTime": "2025-12-25T01:29:22Z",
+    "lastModifiedDateTime": "2025-11-25T01:30:51.473Z",
+    "title": "Power Platform - Improved security for column-level audit events in Microsoft Purview",
+    "id": "MC1189685",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing enhancements to the handling of audit events that capture, create, and update activities on columns protected by column-level security in Microsoft Purview. These enhancements will take effect on <b>December 1, 2025</b>.<br><br>\n<b>How does this affect me? </b><br>\nCurrently, certain audit events may include details that could potentially reveal sensitive information when columns with security restrictions were created or updated. Following these enhancements, these specific events will now be protected, and the before-and-after column values will be filtered in activity logs. You may notice changes in the granularity of audit event data for operations involving column-level security. <br><br>\n<b>What action do I need to take? </b><br>\nThis message is for awareness, and no action is required. <br><br>\nFor more information about Column-level security, please visit <a href=\"https://aka.ms/13274/field-level-security\" target=\"_blank\">Column-level security to control access</a>."
     }
   },
   {
