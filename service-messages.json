@@ -196,37 +196,6 @@
     }
   },
   {
-    "startDateTime": "2025-02-21T23:43:15Z",
-    "endDateTime": "2025-12-02T08:00:00Z",
-    "lastModifiedDateTime": "2025-04-17T19:36:40.083Z",
-    "title": "(Updated) We will remove the EEEU sharing permission from root web and default document library in OneDrive’s",
-    "id": "MC1013464",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "User impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft OneDrive"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting April 17, 2025, Microsoft will remove the EEEU (Everyone Except External Users) sharing permission from the root site and default document library in OneDrive, completing by September 30, 2025. This change will prevent inadvertent data oversharing, and users should grant explicit permissions to specific files and folders. No admin action is required."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated April 17, 2025: We have updated the rollout timeline below. Thank you for your patience.\n</p><p>EEEU, which stands for Everyone Except External Users, is a permission setting used in Microsoft SharePoint and Microsoft OneDrive to manage access to content. This setting allows all internal users in an organization to access certain content while excluding external users. <a href=\"https://learn.microsoft.com/microsoft-365/troubleshoot/access-management/grant-everyone-claim-to-external-users#use-microsoft-entra-groups-and-dynamic-membership-instead-of-default-claims\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">We discourage use of this setting</a> due to concerns about inadvertent oversharing of user data.</p><p>[What is changing]\n</p><p>Starting April 17, 2025 (previously April 10) and ending by September 30, 2025, we will run logic to detect and remove the EEEU permission from the root site of each user’s OneDrive and the default document library in OneDrive.\n</p><p>[How this will affect your organization:]\n</p><p>Before this retirement, apps, processes, or users may be able to discover and access content from OneDrive because of the inadvertent presence of EEEU in the root web and default document library in OneDrive. After the EEEU permission is removed, these apps, processes, and users will lose access to the content from the affected OneDrive accounts. Users, processes, and apps that were granted direct permissions to specific files and folders of a OneDrive account will not be impacted and will continue to retain their access.\n</p><p>We recommend OneDrive owners and OneDrive admins give explicit permission to individual files and folders in OneDrive to be accessed by one or more users or apps.\n</p><p>[What you need to do to prepare:]\n</p><p>This change will happen automatically by the specified date. No admin action is required. Please notify your users about this change and update relevant documentation. If you have questions or wish to discuss more, please open a support ticket.</p><p><i>Learn more: </i>The section called <a href=\"https://learn.microsoft.com/microsoft-365/troubleshoot/access-management/grant-everyone-claim-to-external-users#use-microsoft-entra-groups-and-dynamic-membership-instead-of-default-claims\" target=\"_blank\">Use Microsoft Entra groups and dynamic membership instead of default claims</a> in <a href=\"https://learn.microsoft.com/microsoft-365/troubleshoot/access-management/grant-everyone-claim-to-external-users\" target=\"_blank\">Grant Everyone claim to external users in Microsoft 365 - Microsoft 365 | Microsoft Learn</a></p>"
-    }
-  },
-  {
     "startDateTime": "2025-02-25T00:29:19Z",
     "endDateTime": "2025-12-31T08:00:00Z",
     "lastModifiedDateTime": "2025-02-25T00:29:42.28Z",
