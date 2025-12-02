@@ -1591,30 +1591,6 @@
     }
   },
   {
-    "startDateTime": "2025-04-15T23:20:39Z",
-    "endDateTime": "2026-01-05T08:00:00Z",
-    "lastModifiedDateTime": "2025-04-15T23:21:17.437Z",
-    "title": "Plan for Change: Windows 365 Strengthening Security by Default: Redirections Disabled for Newly Provisioned Cloud PCs",
-    "id": "MC1056257",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": "2025-08-01T07:00:00Z",
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<p>As part of Microsoft’s Secure Future Initiative (SFI), Windows 365 is enhancing the default security of Cloud PCs by disabling clipboard, drive, USB, and printer redirections for all newly provisioned and reprovisioned Cloud PCs. This change minimizes the risk of data exfiltration and malware injections, providing a more secure experience by default. IT admins can enable these redirections as needed using either the Intune Settings Catalog or Group Policy (GPO).&nbsp;</p>\n    \n    <p class=\"section-title\"><span style=\"font-weight: normal;\">[How This Will Affect Your Organization:]</span></p>\n    <p>The rollout of this change will begin in <span class=\"highlight\">August 2025</span> and will gradually take place over <span class=\"highlight\">1-4 months</span> for all customers. To help admins prepare, a banner will be displayed in the <span class=\"highlight\">Microsoft Intune Admin Center</span> on the provisioning policy, individual operation, and bulk action pages. This banner will notify admins of the new default settings for newly provisioned or reprovisioned Cloud PCs and provide documentation on how to override them by creating Intune device configuration policies or GPO.</p>\n    \n    <p class=\"section-title\">Admin Impact:</p>\n    <ul>\n        <li><span class=\"highlight\"><b>Manual configuration required:</b></span> For users that require redirection, IT admins must manually enable redirections through Intune policies or GPO if needed.</li>\n        <li><b><span class=\"highlight\">Minor change in the Microsoft Intune admin center:</span> </b>Banners will be placed across key Intune pages to inform admins ahead of the change.</li>\n    </ul>\n    \n    <p class=\"section-title\">End User Impact:</p>\n    <ul>\n        <li><span class=\"highlight\"><b>Default settings change:</b></span> Clipboard, drive, USB, and printer redirections will be disabled by default on first-time access to Cloud PCs.</li>\n    </ul>\n    \n    <p class=\"section-title\"><span style=\"font-weight: normal;\">[What You Need to Do to Prepare:]</span></p>\n    <ul>\n        <li><span class=\"highlight\"><b>Understand the change</b>:</span> Review the new redirections default settings and their impact on provisioning and reprovisioning Cloud PCs. If redirections are required, enable them for the users who require redirections using multiple device configurations. For Intune-managed redirections, please see the following <a class=\"link\" href=\"https://learn.microsoft.com/windows-365/enterprise/manage-rdp-device-redirections\">documentation</a>. For GPO-managed redirections, please see this <a class=\"link\" href=\"https://learn.microsoft.com/windows-365/enterprise/manage-rdp-device-redirections\">documentation</a>.</li><ul>\n        <li>If an administrator needs to revert the redirection settings, they can use their established management controls. Alternatively, they can leverage Intune's built-in device virtual groups and filters. For detailed instructions, refer to the section \"Use the 'All devices' group and device filters\" in the <a class=\"link\" href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/application-deployment-in-windows-365-recommended-practices/3915376\">official Microsoft blog post</a>. This method offers the quickest way to revert the redirection settings to be enabled.</li></ul>\n        <li><span class=\"highlight\"><b>Communicate with your end users:</b></span> Inform your end users of the new default settings and provide instructions for requesting redirection enablement if needed.</li>\n    </ul>\n    \n    <p class=\"section-title\">Additional Information:</p>\n    <ul><li><a class=\"link\" href=\"https://learn.microsoft.com/windows-365/enterprise/automated-provisioning-steps\">Windows 365 Post-Provisioning Configuration</a></li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-04-15T23:22:54Z",
     "endDateTime": "2026-04-14T07:00:00Z",
     "lastModifiedDateTime": "2025-04-15T23:22:59.573Z",
@@ -1667,7 +1643,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-10-04T10:06:11.5833004Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-10-04T10:06:11.5833004Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -4131,7 +4107,7 @@
   {
     "startDateTime": "2025-06-11T23:29:57Z",
     "endDateTime": "2026-02-02T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-19T21:24:01.883Z",
+    "lastModifiedDateTime": "2025-12-01T23:31:12.103Z",
     "title": "(Updated) Microsoft Viva Insights: New prompt categories in the Microsoft Copilot Dashboard",
     "id": "MC1092459",
     "category": "stayInformed",
@@ -4156,7 +4132,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Viva Insights will add new prompt categories—Ask and find, Catch up, Draft and brainstorm, and Other—to the Microsoft Copilot Dashboard by late December 2025. These will appear in Adoption and Impact tabs with no admin action needed. Organizations should notify users and update documentation accordingly."
+        "value": "Microsoft Viva Insights will add new prompt categories—Ask and find, Catch up, Draft and brainstorm, and Other—to the Microsoft Copilot Dashboard by late 2025. These will appear in Adoption and Impact tabs with no admin action needed. Organizations should prepare by notifying users and updating documentation."
       },
       {
         "name": "Platforms",
@@ -4165,7 +4141,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated November 19, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>Prompt categories will be available in Microsoft Copilot Dashboard in Microsoft Viva Insights on the web to help you understand key Copilot use cases for your organization. In Microsoft Copilot Chat (work), which is grounded in work data, these prompt categories will include <i>Ask and find, Catch up, Draft and brainstorm, </i>and <i>Other.</i> These metrics will be added to the metrics library in the advanced insights app.</p><p>\n</p><p>Learn more about Copilot Dashboard licensing requirements in <a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard\" target=\"_blank\">Connect to the Microsoft Copilot Dashboard for Microsoft 365 customers | Microsoft Learn</a></p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?id=486698\" target=\"_blank\">486698</a>.</p><p>Public Preview: We will begin rolling out in early September 2025 (previously mid-September) and will complete by late September 2025</p><p>General Availability (Worldwide): We will begin rolling early December 2025 (previously mid-November) and expect to complete by end of December 2025 (previously end of November).</p><p>[How this will affect your organization:]</p><p>Users enabled to view Copilot dashboard will see these updates:\n</p><p>1. <i>Adoption </i>tab: Prompt categories will be available at Viva Insights &gt; <i>Microsoft Copilot Dashboard &gt; Adoption &gt; Adoption by app &gt; Copilot Chat (work)</i> dropdown:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/06f43072-7d4d-4789-ad93-b898c78c7e04\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>2. <i>Impact </i>tab: Admins can go to Viva Insights <i>&gt; Microsoft Copilot Dashboard &gt; Impact &gt; Copilot chat card &gt;</i> <i>Explore more </i>button to access the prompt categories as metrics in the <i>Copilot impact trend</i> section and the <i>Comparison between groups</i> section:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/da018107-53a6-4a5e-bab7-96d16dcfc67c\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/707eb149-ff29-4827-8130-9039080016c7\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>This change will be available by default.</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. You may want to notify your admins and/or users about this change and update internal documentation.\n</p><p>Review and assess the impact for your organization. You might consider reviewing with your works council and updating your training and documentation as appropriate.</p><p>Learn more: <a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard\" target=\"_blank\">Connect to the Microsoft Copilot Dashboard for Microsoft 365 customers | Microsoft Learn</a></p>"
+      "content": "<p>Updated December 1, 2025: We have updated the timeline. Thank you for your patience.\n</p><p>Prompt categories will be available in Microsoft Copilot Dashboard in Microsoft Viva Insights on the web to help you understand key Copilot use cases for your organization. In Microsoft Copilot Chat (work), which is grounded in work data, these prompt categories will include <i>Ask and find, Catch up, Draft and brainstorm, </i>and <i>Other.</i> These metrics will be added to the metrics library in the advanced insights app.</p><p>\n</p><p>Learn more about Copilot Dashboard licensing requirements in <a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard\" target=\"_blank\">Connect to the Microsoft Copilot Dashboard for Microsoft 365 customers | Microsoft Learn</a></p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?id=486698\" target=\"_blank\">486698</a>.</p><p>Public Preview: We will begin rolling out in early September 2025 (previously mid-September) and will complete by late September 2025</p><p>General Availability (Worldwide): We will begin rolling mid-December 2025 (previously early December) and expect to complete by end of December 2025 (previously end of November).</p><p>[How this will affect your organization:]</p><p>Users enabled to view Copilot dashboard will see these updates:\n</p><p>1. <i>Adoption </i>tab: Prompt categories will be available at Viva Insights &gt; <i>Microsoft Copilot Dashboard &gt; Adoption &gt; Adoption by app &gt; Copilot Chat (work)</i> dropdown:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/06f43072-7d4d-4789-ad93-b898c78c7e04\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>2. <i>Impact </i>tab: Admins can go to Viva Insights <i>&gt; Microsoft Copilot Dashboard &gt; Impact &gt; Copilot chat card &gt;</i> <i>Explore more </i>button to access the prompt categories as metrics in the <i>Copilot impact trend</i> section and the <i>Comparison between groups</i> section:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/da018107-53a6-4a5e-bab7-96d16dcfc67c\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/707eb149-ff29-4827-8130-9039080016c7\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>This change will be available by default.</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. You may want to notify your admins and/or users about this change and update internal documentation.\n</p><p>Review and assess the impact for your organization. You might consider reviewing with your works council and updating your training and documentation as appropriate.</p><p>Learn more: <a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard\" target=\"_blank\">Connect to the Microsoft Copilot Dashboard for Microsoft 365 customers | Microsoft Learn</a></p>"
     }
   },
   {
@@ -9344,37 +9320,6 @@
     }
   },
   {
-    "startDateTime": "2025-09-08T23:21:26Z",
-    "endDateTime": "2025-12-08T08:00:00Z",
-    "lastModifiedDateTime": "2025-09-08T23:22:13.887Z",
-    "title": "Upcoming changes to Windows 365 Windows 10 gallery images",
-    "id": "MC1150114",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Windows 10 support ends October 14, 2025, affecting Windows 365 gallery images. Windows 10 22H2 images retire April 14, 2026. Extended Security Updates continue automatically after October 2025. Microsoft recommends updating to Windows 11 24H2 images and creating custom Windows 10 images if needed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>As Windows 10 reaches <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/plan-for-windows-10-eos-with-windows-11-windows-365-and-esu/4000414\" target=\"_blank\">end of support</a> on October 14, 2025, changes are coming to Windows 365 gallery images. These changes affect how you provision and maintain Windows 10 Cloud PCs.</p><p>[How This Will Affect Your Organization:]\n</p><ul><li>Provisioning policies that use Windows 365 versions of Windows 10 22H2 gallery images (with or without Microsoft 365 Apps) will continue to work until April 14, 2026. After that date, these images will be retired and no longer be available.\n</li><li>The final monthly update to the Windows 365 Windows 10 gallery images will be the Windows 10 October 2025 Update.\n</li><li>After October 2025, Windows 365 Cloud PCs on Windows 10 will continue receiving Extended Security Updates (ESU) at no additional cost.  No administrative action is needed for existing Cloud PCs to start receiving these updates and are applied automatically after a Cloud PC is deployed. <a href=\"https://learn.microsoft.com/windows/whats-new/extended-security-updates\" target=\"_blank\">Learn more about ESU for Windows 10</a>.</li></ul><p>[What You Need to Do to Prepare:]\n</p><p><b>Plan to adopt Windows 11\n</b></p><ul><li>Microsoft recommends updating provisioning policies to Windows 11 24H2 or newer gallery images.\n</li><li>This ensures your users have access to the latest Windows features (including <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-for-windows-client-now-available/4399808\" target=\"_blank\"><b>Hotpatch</b></a>) and the most secure Windows 365 experience.\n</li></ul><p><b>If you need to continue using Windows 10 after April 14, 2026\n</b></p><ul><li>Create a custom image using the standard Windows 10 Enterprise 22H2 image, available from Azure Marketplace, MSDN, or Volume Licensing downloads until 2028 (end of ESU support).\n</li><li>Note: These images do not include Microsoft 365 Apps or customizations. See <a href=\"https://support.microsoft.com/office/what-windows-end-of-support-means-for-office-and-microsoft-365-34e28be4-1e4f-4928-b210-3f45d8215595\" target=\"_blank\">Windows end of support and Microsoft 365 apps for more details</a>.\n</li></ul><p><b>If you use Windows 10 22H2 images without customization\n</b></p><ul><li>Be aware these images will become outdated with Windows Updates.\n</li><li>We recommend creating a custom image to ensure Windows, other apps, and components remain current.\n</li></ul><p><b>When This Will Happen\n</b></p><ul><li>Windows 10 end of support: <b>October 14, 2025\n</b></li><li>Final Windows 365 Windows 10 gallery image update: <b>October 2025\n</b></li><li>Retirement of Windows 365 Windows 10 22H2 gallery images: <b>April 14, 2026\n</b></li></ul><p><b>Additional Resources:</b></p><ul><li><a href=\"https://learn.microsoft.com/windows/whats-new/extended-security-updates\" target=\"_blank\">Extended Security Updates (ESU) program for Windows 10</a> \n</li><li><a href=\"https://support.microsoft.com/office/what-windows-end-of-support-means-for-office-and-microsoft-365-34e28be4-1e4f-4928-b210-3f45d8215595\" target=\"_blank\">What Windows end of support means for Office and Microsoft 365</a>\n</li><li><a href=\"https://learn.microsoft.com/en-us/lifecycle/faq/windows#windows-10\" target=\"_blank\">Lifecycle FAQ Windows 10</a>\n</li><li><a href=\"https://learn.microsoft.com/windows/whats-new/enable-extended-security-updates\" target=\"_blank\">Enable Extended Security Updates (ESU) End of support for Windows operating system on Cloud PCs</a></li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/end-of-support\" target=\"_blank\">End of support for Windows operating system on Cloud PCs</a></li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-09-08T23:25:49Z",
     "endDateTime": "2026-01-31T08:00:00Z",
     "lastModifiedDateTime": "2025-09-08T23:27:36.63Z",
@@ -12479,31 +12424,6 @@
     }
   },
   {
-    "startDateTime": "2025-10-01T23:55:51Z",
-    "endDateTime": "2025-12-01T23:55:00Z",
-    "lastModifiedDateTime": "2025-10-02T01:02:24.617Z",
-    "title": "Microsoft Dataverse – Update system jobs retention policy from environment settings",
-    "id": "MC1163795",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Dataverse"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to update system jobs retention policy from environment settings in Microsoft Dataverse. This feature will reach Public Preview starting on October 1, 2025. <br><br> \n\n<b>How does this affect me? </b> <br> \n\nWith this feature, you can update system jobs retention policy from the Power Platform admin center environment settings page. This will help to improve system performance and save on storage by cleaning up system jobs and plug-in trace logs to better comply with your company's retention policy. <br><br> \n <b>What action do I need to take? </b> <br> \nThis message is for awareness, and no action is required.<br><br> \n\nFor more information on this feature, please visit <a href=\"https://aka.ms/12441/update-retention-policy-using-environment-settings-page-preview\" target=\"_blank\"> Update retention policy using Environment Settings page (Preview)</a>."
-    }
-  },
-  {
     "startDateTime": "2025-10-02T02:02:35Z",
     "endDateTime": "2026-01-05T08:00:00Z",
     "lastModifiedDateTime": "2025-10-02T02:05:11.27Z",
@@ -12627,35 +12547,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated November 25, 2025: We have updated the timeline. Thank you for your patience.</p><p><b>Introduction\n</b></p><p>We’re introducing enhancements to OneDrive that simplify the process of managing files when employees leave your organization. These updates improve visibility, streamline bulk transfers, and help ensure important content remains accessible and shared appropriately.</p><p>This feature is associated with Microsoft 365 Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=493946\" target=\"_blank\">493946</a>.</p><p><b>When this will happen\n</b></p><p><b>General Availability (Worldwide, GCC, GCCH, DoD):</b> We will begin rolling out in mid-October<b>&nbsp;</b>and expect to complete by early December 2025 (previously early November).\n</p><p><b>How this affects your organization\n</b></p><p>Managing OneDrive content for departing employees is now more efficient. Key improvements include:\n</p><ul><li><b>Redesigned notifications</b>:<b> </b>Account cleanup emails are now more prominent, reducing the chance of being overlooked.\n</li><li><b>Improved filtering</b>: New filters help managers quickly locate shared or important files.\n</li><li><b>Bulk file transfer with preserved sharing</b>: The “Move and keep sharing” feature allows multiple files to be transferred while retaining existing sharing permissions.\n</li><li><b>Consolidated alerts</b>: When six or more files are moved, collaborators receive a single streamlined notification.\n</li></ul><p>These updates help ensure a smooth handover and reduce the risk of losing critical files.\n</p><p>When a user account is deleted, OneDrive access is automatically granted to the manager or designated secondary owner. The recipient receives an email notification with access details and information about the OneDrive retention period. Seven days before the retention period ends, a second reminder email is sent, stating that the OneDrive will be permanently deleted in seven days.</p><p><b>Steps to transfer files:\n</b></p><ol><li>From the email, click <b>View files</b> to access the departing user’s OneDrive. <p></p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/499605f3-db65-4f78-8916-b3ff7b9749c8/57ab653a3004340bbfa7c2fb0c7a24aa550e4210.png\" style=\"width: 400px;\" alt=\"user settings\"></li><li>Use the <b>Shared</b> filter to view only shared files, or <b>All </b>to see everything.</li><li>Select files using the checkbox in the table header.<p></p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/0e70dacb-37a9-4f11-b26c-18873c4ee653/28bd8067457929c04fb85a6a55773d088a681570.png\" style=\"width: 400px;\" alt=\"user settings\"></li><p></p><li>Click <b>Move to,</b>&nbsp;choose a destination, and check <b>Keep sharing with the same people.</b></li><p><b> </b><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/efb0519c-40ec-43af-81b4-5706bbf3dff3/e85be3188a5d490d7c19d7099195a7a01c53d211.png\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Click <b>Move to</b> again to complete the transfer.\n</li></ol><p>Collaborators will receive a single notification once the move is complete:</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/33fb6bcf-92cc-4cf2-aa0a-f9445dd93be8/6ba428c1fd5a9e07b038bef071ecc23f5111a2c5.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p>\n</p><p><b>What you can do to prepare\n</b></p><p>No admin action is required before rollout. You may want to:\n</p><ul><li>Inform managers and secondary owners about the new experience.\n</li><li>Update internal documentation to reflect the new transfer process.</li><li>Watch this guided walkthrough: <a href=\"https://support.microsoft.com/office/simplified-file-transfer-for-departing-employees-125a47a6-2a93-42e8-88ac-241ca5c1b118\">Simplified file transfer for departing employees</a></li></ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/sharepoint/retention-and-deletion\" target=\"_blank\">OneDrive retention and deletion - SharePoint in Microsoft 365 | Microsoft Learn</a></p><p><b>Compliance considerations\n</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-10-03T23:01:22Z",
-    "endDateTime": "2025-12-15T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-03T23:01:42.523Z",
-    "title": "Plan for change: Update firewall and network settings for new Fully Qualified Domain Names for Windows 365",
-    "id": "MC1165051",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Feature update"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft introduces three new wildcard FQDNs (*.windows.cloud.microsoft, *.service.windows.cloud.microsoft, *.windows.static.microsoft) for Windows 365 to simplify endpoints. Update firewall and network settings to allow outbound traffic to these domains by late 2025 to ensure Cloud PC functionality and avoid disruptions."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>To streamline and future-proof endpoint requirements for Windows 365, Microsoft is introducing <b>three new wildcard Fully Qualified Domain Names (FQDNs)</b> essential for service operation:</p><ul><li>*.windows.cloud.microsoft \n</li><li>*.service.windows.cloud.microsoft \n</li><li>*.windows.static.microsoft \n</li></ul><p>These <a href=\"https://learn.microsoft.com/azure/virtual-desktop/required-fqdn-endpoint?tabs=azure%22%20%5Cl%20%22session-host-virtual-machines%22%20%5Ct%20%22_blank\" target=\"_blank\">new endpoints</a> will reduce complexity, minimize future changes, and consolidate service traffic under unified domains. Existing FQDNs will gradually transition to these new domains as part of Microsoft’s<a href=\"https://learn.microsoft.com/microsoft-365/enterprise/cloud-microsoft-domain?view=o365-worldwide\" target=\"_blank\"> unified domain approach</a> used across Microsoft 365 services. \n</p><p><b>[When this will happen:]</b></p><p>The new endpoints are available now. The related Azure Network Connection (ANC) health check will begin rolling out in late October 2025 and is expected to complete by mid-November 2025. \n</p><p><b>[How will this affect your organization?]</b></p><p>You’ll need to update network access rules in your Windows 365 environment to allow traffic to the new endpoints. Ensure that any Proxy, VPN, or Secure Web Gateway configurations permit access to these endpoints, which are required only for outbound traffic from Cloud PCs. For optimal performance, route this traffic directly to Microsoft’s network without interception.  \n</p><p>Customers using <a href=\"https://learn.microsoft.com/windows-365/enterprise/azure-network-connections\" target=\"_blank\">Azure Network Connection (ANC)</a> should confirm these domains are allowed in firewall rules and not blocked by proxy or Secure Web Gateway policies. The new ANC health check will help identify accessibility issues once it becomes available.  \n</p><p>For <a href=\"https://learn.microsoft.com/windows-365/enterprise/deployment-options#microsoft-hosted-network\" target=\"_blank\">Microsoft Hosted Network</a> deployments, no underlying network changes are required, but local Cloud PC configurations must not block these domains. \n</p><p>Update your network configurations to ensure the new domains are accessible. These domains are required for service-critical traffic, and if they are not allowed, Cloud PC provisioning or operations may be disrupted. While no direct user impact is expected, inaccessible endpoints can affect Cloud PC functionality.  \n</p><p><b>[What you need to do to prepare]</b></p><ul><li>Notify your IT administrators about this change and update any internal guides or documentation to reflect the new requirements. </li><li>Make the necessary updates to your environment based on the guidance provided above. \n</li></ul><p><b>Additional Information \n</b></p><p>For detailed documentation, please see:  \n</p><ul><li><a href=\"https://learn.microsoft.com/azure/virtual-desktop/required-fqdn-endpoint?tabs=azure\" target=\"_blank\">Required FQDNs for Azure Virtual Desktop and Windows 365</a> \n</li><li><a href=\"https://learn.microsoft.com/microsoft-365/enterprise/cloud-microsoft-domain?view=o365-worldwide\" target=\"_blank\">Unified Domain Approach</a> \n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/azure-network-connections\" target=\"_blank\">Azure Network Connection</a> \n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/deployment-options#microsoft-hosted-network\" target=\"_blank\">Microsoft Hosted Network&nbsp;</a></li></ul>"
     }
   },
   {
@@ -15763,8 +15654,8 @@
   },
   {
     "startDateTime": "2025-10-31T00:07:43Z",
-    "endDateTime": "2026-03-02T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-04T02:25:01.873Z",
+    "endDateTime": "2026-02-23T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-01T23:28:40.06Z",
     "title": "(Updated) Microsoft Copilot Chat: AI disclaimer updates",
     "id": "MC1181766",
     "category": "stayInformed",
@@ -15786,12 +15677,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft Copilot Chat's AI disclaimer will always remain visible, with a new admin control to bold the message and add a custom URL to AI policy documentation. Rollout starts late November 2025, completing by mid-December. Admins should review settings, prepare URLs, and update communications accordingly."
+        "value": "Microsoft Copilot Chat's AI disclaimer will be updated with admin controls for customization, including bold text and a custom URL. Rollout starts early December 2025, completing by mid-December for most and mid-January 2026 for GCC High & DoD. Admins should review and prepare accordingly."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated November 3, 2025: We have updated this message to clarify the new experience and to clarify that the AI disclaimer will always be visible</p><p><b>[Introduction:]</b></p><p>We’re updating the AI Disclaimer experience in <i>Microsoft Copilot Chat </i>based on customer feedback. To address this, we’re introducing an admin control that allows organizations to customize how the disclaimer appears, improving user awareness and flexibility.\n</p><p><b>[When this will happen:]</b>&nbsp;</p><p>Rollout will begin in late November 2025 and complete by:</p>\n<ul>\n<li><b>Worldwide &amp; GCC:</b> Early December 2025</li>\n<li><b>GCC High &amp; DoD:</b> Mid-December 2025</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n</ul><p><b>Who is affected:</b></p><ul><li>All users of Microsoft Copilot Chat on desktop and web experiences.</li>\n</ul><p><b>What will happen:</b>\n  </p><ul>\n    \n    \n    \n  </ul>\n<p></p><ul><li>The AI disclaimer will remain visible in the user experience.\n</li><li>Admins will gain the ability to heighten this message and to provide a link to their own documentation:<ul><li>The disclaimer will display bolded text for increased visibility.\n</li><li>Admins can configure a custom URL pointing to their AI policy documentation.\n</li></ul></li></ul><div><i>Screenshots 1 and 2 below: The top image shows the current (default) experience. The bottom image shows the AI Disclaimer with heightened awareness enabled by the admin.</i></div><div><br></div><div>\n<p>Current experience (default):</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/5779e73d-4904-4ba6-b5d7-fef91a311d94\" width=\"400\" height=\"\"></p><p>Heightened awareness enabled:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/1df24bdb-f226-4272-9db9-d8cbd8eaa36c \" width=\"400\" height=\"\" <=\"\" p=\"\"></p><p><b>[What you can do to prepare:]</b></p>\n<ul><li>Review the new <i>AI Disclaimer setting</i> in the <i>Admin Portal </i>once available.\n</li><li>Decide whether you want to configure this setting for your organization.\n</li><li>If desired, prepare a custom URL to include in the UX. \n</li><li>Communicate this change to your helpdesk staff and Copilot users.\n</li><li>Update internal documentation if you reference the disclaimer experience.</li></ul>\n\n<p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/topic/transparency-note-for-microsoft-copilot-c1541cad-8bb4-410a-954c-07225892dbc2\" target=\"_blank\">Transparency Note for Microsoft Copilot | Microsoft Support</a></p><p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p></div>"
+      "content": "<p>Updated December 1, 2025: We have updated the timeline. Thank you for your patience.</p><p><b>[Introduction:]</b></p><p>We’re updating the AI Disclaimer experience in <i>Microsoft Copilot Chat </i>based on customer feedback. To address this, we’re introducing an admin control that allows organizations to customize how the disclaimer appears, improving user awareness and flexibility.\n</p><p><b>[When this will happen:]</b>&nbsp;</p><p>Rollout will begin in early December 2025 (previously late November) and complete by:</p>\n<ul>\n<li><b>Worldwide &amp; GCC:</b>&nbsp;mid-December 2025 (previously early December)</li>\n<li><b>GCC High &amp; DoD:</b>&nbsp;mid-January 2026 (previously mid-December 2025)</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n</ul><p><b>Who is affected:</b></p><ul><li>All users of Microsoft Copilot Chat on desktop and web experiences.</li>\n</ul><p><b>What will happen:</b>\n  </p><ul>\n    \n    \n    \n  </ul>\n<p></p><ul><li>The AI disclaimer will remain visible in the user experience.\n</li><li>Admins will gain the ability to heighten this message and to provide a link to their own documentation:<ul><li>The disclaimer will display bolded text for increased visibility.\n</li><li>Admins can configure a custom URL pointing to their AI policy documentation.\n</li></ul></li></ul><div><i>Screenshots 1 and 2 below: The top image shows the current (default) experience. The bottom image shows the AI Disclaimer with heightened awareness enabled by the admin.</i></div><div><br></div><div>\n<p>Current experience (default):</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/5779e73d-4904-4ba6-b5d7-fef91a311d94\" width=\"400\" height=\"\"></p><p>Heightened awareness enabled:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/1df24bdb-f226-4272-9db9-d8cbd8eaa36c \" width=\"400\" height=\"\" <=\"\" p=\"\"></p><p><b>[What you can do to prepare:]</b></p>\n<ul><li>Review the new <i>AI Disclaimer setting</i> in the <i>Admin Portal </i>once available.\n</li><li>Decide whether you want to configure this setting for your organization.\n</li><li>If desired, prepare a custom URL to include in the UX. \n</li><li>Communicate this change to your helpdesk staff and Copilot users.\n</li><li>Update internal documentation if you reference the disclaimer experience.</li></ul>\n\n<p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/topic/transparency-note-for-microsoft-copilot-c1541cad-8bb4-410a-954c-07225892dbc2\" target=\"_blank\">Transparency Note for Microsoft Copilot | Microsoft Support</a></p><p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p></div>"
     }
   },
   {
@@ -20470,13 +20361,14 @@
   },
   {
     "startDateTime": "2025-11-18T22:49:38Z",
-    "endDateTime": "2026-01-01T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-18T22:50:00.727Z",
-    "title": "Microsoft 365 Copilot: Use Copilot with OneDrive files in macOS activity center",
+    "endDateTime": "2026-01-19T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-01T23:46:31.603Z",
+    "title": "(Updated) Microsoft 365 Copilot: Use Copilot with OneDrive files in macOS activity center",
     "id": "MC1187835",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -20491,12 +20383,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft 365 Copilot is now accessible from the OneDrive activity center on macOS, allowing users with a Copilot license to summarize documents, generate FAQs, and ask questions directly from files. The feature, enabled by default, began rolling out mid-November 2025 and requires qualifying Microsoft 365 plans."
+        "value": "Microsoft 365 Copilot is now accessible from the OneDrive activity center on macOS, allowing users with a Copilot license to summarize documents, generate FAQs, and ask questions directly from files. The rollout began mid-November 2025 and will complete by mid-December 2025, with the feature enabled by default."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction:]</b>\n</p><p>We're introducing the ability to use Microsoft 365 Copilot directly from the OneDrive activity center on macOS. This update enables users to perform Copilot actions—such as summarizing documents, generating FAQs, and asking questions—by selecting a file and clicking the vertical ellipsis. This enhancement brings Copilot closer to where users work, helping them extract insights and take action faster.</p>\n\n<p><b>[When this will happen:]</b>\n</p><ul>\n</ul><p><b>General Availability (Worldwide, GCC, GCCH, and DoD):</b> Rollout began in<b> mid-November 2025</b> and is expected to complete by <b>early December 2025</b>.</p><ul>\n</ul><p></p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:&nbsp;</b>Users of OneDrive on macOS <b>with a Microsoft 365 Copilot license</b>.\n</p><p><b>What will happen:</b>\n</p><ul>\n<li>Users will be able to access Copilot actions from the OneDrive activity center by selecting a file and clicking the vertical ellipsis.</li>\n<li>Available actions include summarizing documents, generating FAQs, and asking questions:</li><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/cdfacd85-fc7e-4054-86b9-1f25373d81c3/5ded026093272dee0f5cc47614e1c09839421850.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>The feature is<b> ON by default </b>and does not require admin configuration.</li>\n<li>Microsoft 365 Copilot availability depends on market and language support.</li>\n<li>A qualifying Microsoft 365 enterprise or business plan is required.</li>\n</ul><p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>Inform users about the new Copilot capabilities in the<i> OneDrive activity center</i>.</li>\n<li>Review your organization's Copilot licensing and availability.</li>\n</ul><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/get-started-with-copilot-in-onedrive-7fc81e10-e0cf-4da8-af2e-9876a2770e5d\">Get started with Copilot in OneDrive | Microsoft Support</a></p><p><b>[Compliance considerations:]</b></p><ul><p></p><table border=\"1\" cellpadding=\"5\" cellspacing=\"0\">\n<tbody><tr><th>Question</th><th>Explanation</th></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes – This feature enables users to interact with Microsoft 365 Copilot, which uses AI to process and summarize file content.</td></tr>\n<tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes – Users can now initiate Copilot actions (e.g., summarization, Q&amp;A) directly from the OneDrive activity center on macOS.</td></tr>\n</tbody></table><p></p></ul>"
+      "content": "<p>Updated December 1, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>We're introducing the ability to use Microsoft 365 Copilot directly from the OneDrive activity center on macOS. This update enables users to perform Copilot actions—such as summarizing documents, generating FAQs, and asking questions—by selecting a file and clicking the vertical ellipsis. This enhancement brings Copilot closer to where users work, helping them extract insights and take action faster.</p>\n\n<p><b>[When this will happen:]</b>\n</p><ul>\n</ul><p><b>General Availability (Worldwide, GCC, GCCH, and DoD):</b> Rollout began in<b> mid-November 2025</b> and is expected to complete by <b>mid-December 2025 </b>(previously&nbsp;early December).</p><ul>\n</ul><p></p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:&nbsp;</b>Users of OneDrive on macOS <b>with a Microsoft 365 Copilot license</b>.\n</p><p><b>What will happen:</b>\n</p><ul>\n<li>Users will be able to access Copilot actions from the OneDrive activity center by selecting a file and clicking the vertical ellipsis.</li>\n<li>Available actions include summarizing documents, generating FAQs, and asking questions:</li><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/cdfacd85-fc7e-4054-86b9-1f25373d81c3/5ded026093272dee0f5cc47614e1c09839421850.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>The feature is<b> ON by default </b>and does not require admin configuration.</li>\n<li>Microsoft 365 Copilot availability depends on market and language support.</li>\n<li>A qualifying Microsoft 365 enterprise or business plan is required.</li>\n</ul><p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>Inform users about the new Copilot capabilities in the<i> OneDrive activity center</i>.</li>\n<li>Review your organization's Copilot licensing and availability.</li>\n</ul><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/get-started-with-copilot-in-onedrive-7fc81e10-e0cf-4da8-af2e-9876a2770e5d\">Get started with Copilot in OneDrive | Microsoft Support</a></p><p><b>[Compliance considerations:]</b></p><ul><p></p><table border=\"1\" cellpadding=\"5\" cellspacing=\"0\">\n<tbody><tr><th>Question</th><th>Explanation</th></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes – This feature enables users to interact with Microsoft 365 Copilot, which uses AI to process and summarize file content.</td></tr>\n<tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes – Users can now initiate Copilot actions (e.g., summarization, Q&amp;A) directly from the OneDrive activity center on macOS.</td></tr>\n</tbody></table><p></p></ul>"
     }
   },
   {
@@ -21669,36 +21561,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-24T17:27:41Z",
-    "endDateTime": "2026-01-20T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-24T17:27:57.603Z",
-    "title": "What’s New in Windows 365 (Microsoft Ignite 2025)",
-    "id": "MC1189562",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Windows 365 updates from Ignite 2025 include external identity support, Windows 365 Reserve for temporary Cloud PC access, Cloud Apps, User Experience Sync, Cloud Keyboard Input Protection, AI-enabled Cloud PCs, and Autopilot device preparation. These features roll out gradually and require no action unless adopted."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>As part of Microsoft Ignite 2025, we announced several new capabilities now available in Windows 365. These updates expand flexibility, improve security, and introduce new AI-powered Windows experiences for Cloud PCs.</p><p>[How will this affect your organization:]</p><p>Releases roll out gradually over several weeks and may not appear for all customers at the same time. The updates listed below are becoming available in Windows 365; availability will vary depending on your organization’s configuration, licensing, and region.\n</p><ul><li>Support for external identities (GA): You can now provision Cloud PCs for external identities using the same provisioning flow you use today for Enterprise and Frontline.\n</li><li>Windows 365 Reserve (GA): Windows 365 Reserve is designed for users who primarily work on physical PCs and need temporary Cloud PC access. It gives organizations a flexible way to keep employees productive during unexpected disruptions by providing quick, secure access to a Cloud PC when needed.\n</li><li>Windows 365 Cloud Apps (GA): Now generally available and includes support for publishing Intune apps as Cloud Apps through Autopilot Device Preparation (preview).\n</li><li>User Experience Sync (GA): Saves user settings and app data across sessions to deliver a consistent experience, especially for shared, occasional-use, or Cloud App environments.\n</li><li>Windows Cloud Keyboard Input Protection (Preview): Encrypts keystrokes at the kernel level to help protect against keyloggers and improve endpoint security for Windows 365 and Azure Virtual Desktop.\n</li><li>AI-enabled Cloud PCs (Frontier Public Preview): Provides eligible users with new Windows AI capabilities, including improved Windows Search and Click to Do.\n</li><li>Autopilot device preparation for Cloud PCs: Autopilot device preparation can now be linked with Windows 365 Enterprise and Frontline Cloud PCs in dedicated mode for a more streamlined setup experience.\n</li></ul><p>These updates will roll out automatically and will not change existing Cloud PC configurations unless you choose to enable the new capabilities.\n</p><p>[What you need to do to prepare:]</p><p>No action is required unless you plan to adopt these new capabilities. If so:\n</p><ul><li>Review documentation for configuration steps, licensing requirements, and supported scenarios.\n</li><li>Validate prerequisites for AI-enabled Cloud PCs, Cloud Apps, and external identity provisioning.\n</li><li>Inform your helpdesk about potential changes to user experience when enabling User Experience Sync, Cloud Apps, or AI features.\n</li><li>If adopting Windows 365 Reserve, incorporate it into your organization’s business continuity planning.\n</li></ul><p><b>Additional Information:</b></p><ul><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/provide-cloud-pc-external-identities\" target=\"_blank\">External identities</a>\n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/introduction-windows-365-reserve\" target=\"_blank\">Windows 365 Reserve</a>\n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/cloud-apps\" target=\"_blank\">Windows 365 Cloud Apps</a>\n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/frontline-user-experience-sync\" target=\"_blank\">User Experience Sync</a>\n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/windows-cloud-input-protection\" target=\"_blank\">Windows Cloud Input Protection</a>\n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/ai-enabled-cloud-pcs\" target=\"_blank\">AI-enabled Cloud PCs</a>\n</li><li><a href=\"https://learn.microsoft.com/windows-365/enterprise/autopilot-device-preparation\" target=\"_blank\">Autopilot device preparation with Cloud PCs</a></li></ul><p>\n</p>"
-    }
-  },
-  {
     "startDateTime": "2025-11-24T21:19:00Z",
     "endDateTime": "2025-12-24T21:19:00Z",
     "lastModifiedDateTime": "2025-11-24T21:20:56.833Z",
@@ -21776,36 +21638,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated November 26, 2025: We have updated the content below to provide additional information. Thank you for your feedback.</p><p><b>[Introduction]</b>\n</p><p>We’re improving the performance and startup time of calling features in the Microsoft Teams Desktop Client for Windows. To achieve this, we’re introducing a new child process named <i>ms-teams_modulehost.exe</i> that will handle the calling stack separately from the main application process (<i>ms-teams.exe</i>). This change optimizes resource usage and enhances meeting experiences.</p>\n\n<b>[When this will happen:]</b>\n<p>Worldwide, GCC, GCC High, and DoD: Rollout will begin early January 2026 and complete by late January 2026.</p><p>Note: Timelines may shift due to year-end feature flag rollout freeze.</p>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b> All users running the Teams Desktop Client on Windows.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>A new process (<i>ms-teams_modulehost.exe</i>) will appear in Task Manager under the main Teams process (<i>ms-teams.exe</i>).</li>\n<li>This process is dedicated to calling features and improves performance.</li>\n<li>No changes to user workflows or UI; however, admins should ensure endpoint and security software allow this new process.</li>\n</ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Update endpoint management and security software to allowlist <i>ms-teams_modulehost.exe</i> alongside <i>ms-teams.exe</i>.</li>\n<li>Communicate this change to helpdesk staff to avoid confusion during troubleshooting.</li>\n<li>Update internal documentation if you reference Teams process names.</li><li>Make sure the same QoS settings applied to <i>ms-teams.exe</i> are also applied to <i>ms-teams_modulehost.exe</i>. Refer to this page for details: <a href=\"https://learn.microsoft.com/microsoftteams/qos-in-teams\" target=\"_blank\">Implement Quality of Service (QoS) in Microsoft Teams</a><ul><li><b>DO NOT</b> remove QoS settings of <i>ms-teams.exe</i>. Only add QoS settings for <i>ms-teams_modulehost.exe</i>.</li></ul></li>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>\n<p></p>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-25T00:01:40Z",
-    "endDateTime": "2026-01-24T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-25T00:02:05.04Z",
-    "title": "Planned Maintenance: Windows 365",
-    "id": "MC1189657",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Windows 365 will undergo planned maintenance from December 8-13, 2025, during regional non-peak hours with no downtime. Users may experience brief reconnections lasting under a minute, occurring 1-2 times within a 4-hour window. No user action is needed; systems will recover automatically."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>To improve performance and reliability, we have scheduled planned maintenance for the Windows 365 service. This maintenance will occur during non-peak hours, based on the Client Device’s local time zone, to minimize potential impact on your organization. For organizations with users across multiple regions, we recognize that non-peak hours may vary. Maintenance will take place separately in each region, affecting only users connecting from that location during the scheduled time. The times listed below indicate the actual maintenance start times for each region, not adjusted for different time zones.\n</p><p>During this period, there will be no service downtime. Users are expected to experience little to no disruption.\n</p><p><b>Maintenance Schedule:\n</b></p><ul><li>Start Date: December 8, 2025</li><li>End Date: December 13, 2025</li></ul><p><b>Daily Maintenance Window Start Times:\n</b></p><ul><li>Africa: 23:00 UTC\n</li><li>Asia Pacific: 16:30 UTC\n</li><li>Australia: 14:00 UTC\n</li><li>Europe: 00:00 UTC\n</li><li>India: 19:30 UTC\n</li><li>Middle East: 22:00 UTC\n</li><li>North America: 06:00 UTC\n</li><li>South America: 05:00 UTC\n</li></ul><p><b>Daily Maintenance Window End Times:\n</b></p><ul><li>Africa: 03:00 UTC\n</li><li>Asia Pacific: 20:30 UTC\n</li><li>Australia: 18:00 UTC\n</li><li>Europe: 04:00 UTC\n</li><li>India: 23:30 UTC\n</li><li>Middle East 02:00 UTC\n</li><li>North America: 10:00 UTC\n</li><li>South America: 09:00 UTC\n</li></ul><p>[How does this affect my organization:]\n</p><ul><li>During the maintenance window, users actively connected via UDP relay may experience brief, automatic reconnections, with each disconnection lasting less than a minute.\n</li><li>While the total planned impact duration is up to 4 hours within the maintenance window, disconnections will only occur 1-2 times and will not persist throughout the entire 4-hour period.\n</li><li>Users can establish new connections without impact during the maintenance window. The service will remain fully available without any downtime.\n</li></ul><p>[What do I need to do to prepare for this change:]\n</p><ul><li>No further action is required, as systems will automatically recover from any temporary interruptions. You may want to notify your helpdesk and end-users of the scheduled maintenance and the potential for brief disruptions.\n</li><li>We are committed to providing a seamless experience and appreciate your understanding as we carry out this necessary maintenance to enhance the reliability of Windows 365 services.</li></ul>"
     }
   },
   {
@@ -22908,6 +22740,177 @@
     }
   },
   {
+    "startDateTime": "2025-12-01T22:04:19.377Z",
+    "endDateTime": "2026-12-01T22:04:19.33Z",
+    "lastModifiedDateTime": "2025-12-01T22:04:20.253Z",
+    "title": "The November 2025 Windows non-security preview update is now available",
+    "id": "MC1191307",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>The November 2025 non-security preview update is now available for Windows 11, versions 25H2 and 24H2. Information about the contents of this update is available from the release notes, which are accessible from the <a href=\"https://support.microsoft.com/help/5070311\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a> update history page. To learn more about the different types of monthly quality updates, see <a href=\"https://aka.ms/Windows/MonthlyUpdates\" rel=\"noopener noreferrer\" target=\"_blank\">Windows monthly updates explained</a>.</div><div><br></div><div>Looking to explore upcoming features and improvements in Windows 11? Check out the <a href=\"https://www.microsoft.com/windows/business/roadmap\" rel=\"noopener noreferrer\" target=\"_blank\">Windows roadmap</a>. It includes what’s coming to the Windows Insider Program, what’s gradually rolling out, and what’s generally available.</div><div><br></div><div><b>Highlights for the Windows 11, version 25H2 update:&nbsp;</b></div><ul><li>​​​​​The search results menu displays more available results, making it easier to quickly find and&nbsp;modify&nbsp;your settings. A scroll bar&nbsp;lets&nbsp;you view all search results.*</li><li>You can use <a href=\"https://support.microsoft.com/windows/windows-studio-effects-273c1fa8-2b3f-41b1-a587-7cc7a24b62d8\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Studio Effects</a>, which provides AI-powered camera enhancements, on an additional camera such as a USB webcam or your laptop’s built-in rear camera.*</li><li>When&nbsp;<b>Windows Spotlight</b>&nbsp;is set as your desktop background, the context menu now includes two options:&nbsp;<b>Learn more about this background</b>&nbsp;and&nbsp;<b>Next desktop background</b>.</li><li><b>File Explorer</b>&nbsp;now offers a more consistent dark mode experience.&nbsp;</li></ul><div><em>* Experiences for Copilot+ PCs only</em></div><div><br></div><div>For instructions on how to install this update, see the KB for your operating system listed below:&nbsp;</div><ul><li>Windows 11, versions 25H2 and 24H2: <a href=\"https://support.microsoft.com/help/5070311\" rel=\"noopener noreferrer\" target=\"_blank\">KB5070311</a></li></ul><div><br></div><div><b>IMPORTANT&nbsp;</b>Because of minimal operations during the Western holidays and the upcoming new year, there will be no December 2025 non-security preview update. There will be a monthly security update for December 2025. Normal monthly servicing for both security and non-security preview updates will resume in January 2026.</div>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-01T23:42:50Z",
+    "endDateTime": "2026-02-17T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-01T23:43:01.81Z",
+    "title": "Microsoft Teams: Network Device Interface (NDI) bandwidth increase",
+    "id": "MC1191341",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "529854"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will increase bandwidth for NDI feeds in meetings, enabling up to eight distinct 1080p streams without pinning or spotlighting participants. This automatic enhancement requires no admin changes and will roll out from early to mid-January 2026 for Windows and Mac desktop users."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Mac"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>Microsoft Teams is improving the experience for <b>Network Device Interface (NDI)</b> users by increasing bandwidth for NDI feeds during Teams meetings, webinars, and town halls. This enhancement enables higher-quality streams without requiring event organizers to pin or spotlight participants. To take advantage of this feature, first <a href=\"https://support.microsoft.com/office/broadcasting-audio-and-video-from-microsoft-teams-with-ndi-and-sdi-technology-e91a0adb-96b9-4dca-a2cd-07181276afa3\" target=\"_blank\">set-up NDI for Teams</a> and then ensure that any participant's video that you want to send to NDI is visible in the Teams' client. Customers can now experience up to eight distinct 1080p NDI streams with appropriate hardware and network conditions.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=529854\" target=\"_blank\">529854</a>&nbsp;and is applicable to Teams for Windows desktop and Teams for Mac desktop.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability: Rollout begins early January 2026; expected completion by mid-January 2026.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:&nbsp;</b>Organizations using Microsoft Teams with NDI enabled for meetings, webinars, or town halls.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Bandwidth will automatically increase when an NDI feed is subscribed within a meeting.</li>\n<li>No need to pin or spotlight participants for prioritization.</li>\n<li>Up to eight distinct 1080p NDI streams will be supported based on network conditions.</li>\n<li>No changes to admin settings or policies; feature works automatically when NDI is enabled.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required.</li>\n<li>If you maintain internal documentation for NDI usage, you may want to update it to reflect this improvement.</li>\n</ul><p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified; review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-01T23:43:19Z",
+    "endDateTime": "2026-01-23T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-01T23:43:26.417Z",
+    "title": "Microsoft Planner: Support for Microsoft Information Protection (MIP) content sensitivity labels",
+    "id": "MC1191342",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Planner"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "523819"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Planner will support Microsoft Information Protection (MIP) content sensitivity labels by December 15, 2025, enabling encryption, blocking copy/print/export, and enforcing read-only access. This enhances data protection and compliance, complements existing container-level labels, and requires no changes to current labels but recommends reviewing Purview settings and updating training."
+      },
+      {
+        "name": "Platforms",
+        "value": "TeamsAndSurfaceDevices, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>Microsoft Planner will soon support <b>Microsoft Information Protection (MIP)</b> sensitivity labels at the content level. This enhancement enables encryption, restricts unauthorized actions such as copying, printing, or exporting plan contents, and adds visual markings like watermarks for clear sensitivity awareness. By enforcing content-level protections, Planner helps organizations prevent data leaks, maintain compliance, and enable secure collaboration without impacting productivity. This update aligns Planner with Microsoft Purview standards for consistent enforcement of security and data protection policies.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=523819\" target=\"_blank\">523819</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide): Rollout will begin in early December 2025 and is expected to complete by mid-December 2025.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b> Admins and users of Microsoft Planner across Microsoft 365 tenants.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Planner will support Microsoft Information Protection (MIP) sensitivity labels at the content level.</li>\n<li><b>Container-level labels</b> (already supported) control who can join a plan and enforce restrictions like guest access and sharing limits.</li>\n<li><b>Content-level labels (new):</b>\n<ul>\n<li>Block copy, print, and export actions.</li>\n<li>Enforce read-only access for highly confidential plans.</li>\n<li>Restrict duplicating or exporting plans.</li>\n</ul>\n</li>\n<li>Feature will be <b>enabled by default</b> and progressively available across all tenants by December 15, 2025.</li>\n</ul><p>Screenshot 1: <i>Label Picker</i></p>\n<p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/7b12ba14-0612-4be8-80ef-f69fd7fde471\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<p>Screenshot 2: <i>Label Details</i></p>\n<p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/24880ea7-567b-4e0f-adbc-d7e50fb6777b\" style=\"width: 400px;\" alt=\"user settings\"></p><p>Screenshot 3: <i>Label induced restrictions</i></p>\n<p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/758886c9-d2c4-4ded-ac55-3399e9b0eb60\" style=\"width: 400px;\" alt=\"user settings\"></p>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No changes are required for existing labels.</li>\n<li>Review Purview label protection settings (copy/print/export restrictions) and confirm RMS usage rights align with expected Planner behaviors.</li>\n<li>Update governance guidance and user training for label behaviors in Planner.</li><li>Update help and user training for label behaviors in Planner.</li></ul><p>Learn more: <a href=\"https://learn.microsoft.com/purview/sensitivity-labels\" target=\"_blank\">Learn about sensitivity labels</a>&nbsp;(updates in progress)</p><ul>\n</ul>\n\n<p><b>FAQ</b></p>\n<p><b>Question:</b> What label types does Planner support now?<br>\n<b>Answer:</b> Planner has long supported container‑level labels (Teams/M365 Group/roster access controls). With this release, Planner adds enforcement for content‑level labels (block copy/print/export, read‑only, etc.) on plans and tasks consistent with Microsoft Purview policies and RMS usage rights.</p>\n\n<p><b>Question:</b> Which plan types are covered and when?<br>\n<b>Answer:</b> Rollout begins with Roster Plans followed by Group‑backed Plans.</p>\n\n<p><b>Question:</b> Do I need to change any Purview policies or configurations?<br>\n<b>Answer:</b> No changes are required for existing labels; however, you should review label protection settings (e.g., copy/print/export restrictions) and confirm RMS usage rights align with expected Planner behaviors. Update governance guidance accordingly.</p>\n\n<p><b>Question:</b> How does this interact with Loop and Teams meeting notes/TLC?<br>\n<b>Answer:</b> Loop meeting notes apply a single content label across the page and its components (including Task List components (TLC)). Planner now inherits and enforces those restrictions on the corresponding roster plan, preventing prior sync breaks when restrictive labels were applied.</p>\n\n<p><b>Question:</b> What happens to guest/external users under different label combinations?<br>\n<b>Answer:</b> Container labels determine who can be added; content labels determine what actions are permitted. For example, guests can be added when the container allows it, but content‑level restrictions may prevent plan access or actions (copy/export/print).</p>\n\n<p><b>Question:</b> Who can change a plan’s sensitivity label?<br>\n<b>Answer:</b> Typically, owners/editors with the appropriate rights can change labels. Permissions are enforced service‑side and reflected in the UI according to RMS usage rights.</p>\n<p></p>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-01T23:54:43Z",
+    "endDateTime": "2026-02-28T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-01T23:55:01.41Z",
+    "title": "Plan for Change: Windows quality updates during the out-of-box experience",
+    "id": "MC1191345",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Intune"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting January 2026, Windows 11 (22H2+) devices can install quality updates during out-of-box experience (OOBE) via Intune’s Enrollment Status Page (ESP). Configure the \"Install Windows updates\" setting in ESP and use update rings to manage updates. Devices without ESP or Autopilot preparation won't update during OOBE."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Beginning with the January 2026 Windows security update, quality updates can be installed during the out-of-box experience (OOBE) for devices that are on Windows 11, version 22H2 or later. You can enable and manage these updates through Intune’s <b>Install Windows updates</b> setting in the Enrollment Status Page (ESP).</p><p>[How this will affect your organization:]\n</p><p>If you are using Windows Autopilot and ESP and have configured the <b>Install Windows updates</b> setting to “Yes”, updates will be delivered during OOBE. When configured to “No”, updates will be prevented during OOBE. Additionally, update rings settings (if assigned, as defined below) will be delivered during the ESP and the quality updates page will be shown while the update is applied after ESP completes. Refer to <a href=\"https://learn.microsoft.com/intune/intune-service/enrollment/windows-enrollment-status\" target=\"_blank\">Set up the Enrollment Status Page</a>&nbsp;for more details, requirements, and limitations.</p><p><b>Note:</b> Devices enrolled with Windows Autopilot device preparation or ESP disabled cannot get Windows updates during OOBE, so they do not receive the latest security updates at that stage. Normal Windows update checks resume after OOBE is finished.</p><p>[What you need to do to prepare:]\n</p><p>Review your ESP profile and ensure <b>Install Windows updates</b> setting is configured based on your organization’s requirements. To manage quality updates installed during OOBE for devices using ESP: \n</p><ol><li>In the ESP profile, set Install Windows updates to “Yes” to allow updates or “No” to prevent updates.</li><li>(Recommended) Use or create an <a href=\"https://learn.microsoft.com/intune/intune-service/protect/windows-10-update-rings\" target=\"_blank\">update rings policy</a> to manage pause and deferral settings for quality updates. Quality updates installed during OOBE will follow this policy.</li><li>Assign the ESP profile and the update rings policy to “All devices” or device groups with devices registered for Windows Autopilot.</li></ol><p>Update your documentation and user guidance as needed.</p><p>[Related information:]</p><p><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/get-ready-for-windows-quality-updates-out-of-the-box/4434498\" target=\"_blank\">Get ready for Windows quality updates out of the box</a></p><p>\n</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-01T23:56:47Z",
+    "endDateTime": "2026-02-11T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-01T23:56:57.397Z",
+    "title": "Viva Engage: Update storyline cover photos in Teams for iOS.",
+    "id": "MC1191346",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams",
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "526783"
+      },
+      {
+        "name": "Summary",
+        "value": "Viva Engage community admins can soon update cover photos directly from the Teams iOS app, aligning with existing capabilities on other platforms. This feature, enabled by default without admin setup, will roll out worldwide from late December 2025 to early January 2026. No compliance issues identified."
+      },
+      {
+        "name": "Platforms",
+        "value": "iOS"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]\n</b></p><p>We’re adding more customization to your <b>communities in the Viva Engage app for Microsoft Teams in iOS</b>. Soon, as a community admin, you’ll be able to update your communities' cover photos directly from the Teams iOS app. This feature is already available on Teams for Windows desktop, Teams for Mac desktop, Teams for the web, and Teams for Android, and supports a consistent and personalized experience across platforms.</p><p>Screenshot 1: <i>A community's cover photo, with options to <b>Take a photo </b>or <b>Upload a picture.</b></i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/bc9212a0-b127-44de-869a-453525cd54a1\" style=\"width: 250px;\" alt=\"user settings\"></p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=526783\" target=\"_blank\" style=\"\">526783</a>.</p><p><b>[When this will happen:]\n</b></p><p>General Availability (Worldwide): We will begin rolling out in late December 2025 and expect to complete by early January 2026.</p><p>\n</p><p><b>[How this will affect your organization:]\n</b></p><p><b>Who is affected: </b>All Viva Engage community admins<b>&nbsp;</b>using the Viva Engage app in Microsoft Teams.</p><p><b>What will happen:\n</b></p><ul><li>Users will be able to update<b> community cover photos</b> directly from the Teams iOS app.\n</li><li>This feature is <b>enabled by default </b>and does not require admin configuration.\n</li><li>There is no change to existing admin policies or controls.\n</li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>Update any internal documentation that references <b>community customization</b>.\n</li><li>No admin action is required to enable this feature.\n</li></ul><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
     "startDateTime": "2023-04-13T00:00:49Z",
     "endDateTime": "2026-03-31T07:00:00Z",
     "lastModifiedDateTime": "2023-04-13T00:00:54.207Z",
@@ -23271,7 +23274,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -23707,8 +23710,8 @@
   },
   {
     "startDateTime": "2024-08-29T22:07:08Z",
-    "endDateTime": "2026-01-05T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-13T18:31:35.703Z",
+    "endDateTime": "2026-01-19T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-01T22:57:49.973Z",
     "title": "(Updated) Microsoft Graph API will include usage metrics for Microsoft Copilot for Microsoft 365",
     "id": "MC877369",
     "category": "stayInformed",
@@ -23732,7 +23735,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Graph API will soon include Microsoft Copilot for Microsoft 365 usage metrics, enabling customized reporting and analytics. Public preview starts September 2024; general availability is mid-November 2025. A Copilot license is required. This feature is automatic, with no admin action needed before rollout."
+        "value": "Microsoft Graph API will soon include Microsoft Copilot for Microsoft 365 usage metrics, enabling customized reporting and analytics. Public preview starts September 2024; general availability is mid-November to mid-December 2025. A Copilot license is required, and no admin action is needed before rollout."
       },
       {
         "name": "Platforms",
@@ -23741,7 +23744,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated November 12, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>Coming soon: Microsoft Copilot for Microsoft 365 usage in your tenant will be added to the Microsoft Graph API to facilitate the creation of customized reporting and analytics. Metrics included in the Graph API will match those available in the Copilot for Microsoft 365 usage report in the Microsoft 365 admin center, including tenant-level count of enabled users and active users, as well as last activity date per user (totals for each Microsoft 365 app and a grand total). A Microsoft Copilot for Microsoft 365 license is required to use this feature.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=396562\" target=\"_blank\">396562</a> and with MC724835 <i>Microsoft 365 admin center Usage report: Microsoft Copilot with Graph-grounded chat (Preview)</i> (published March 2024).\n</p><p>[When this will happen:]</p><p>Public Preview: We will begin rolling out early September 2024 and expect to complete by mid-September 2024.</p><p>\n</p><p>General Availability (Worldwide): We will begin rolling out mid-November 2025 (previously late October) and expect to complete by late November 2025 (previously late October).&nbsp;</p><p>[How this will affect your organization:]\n</p><p>Before this rollout, the Graph API did not include Copilot for Microsoft 365 usage.\n</p><p>After this rollout, admins can use the Graph API to create customized reporting and analytics for Copilot for Microsoft 365 usage.\n</p><p>Sample request for one of the three APIs: <a href=\"https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSummary(period='D7')?$format=application/json\" target=\"_blank\">getMicrosoft365CopilotUserCountSummary</a>.\n</p><p>Sample response:<br></p><p><code>HTTP/1.1 200 OK\n</code></p><p><code>Content-Type: application/json\n</code></p><p><code>Content-Length: 537</code>\n</p><p>\n</p><p><code>{\n</code></p><p><code>\"@odata.context\": \"https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSummary(period='D7')?$format=application/json\",\n</code></p><p><code>\"value\": [\n</code></p><p><code>{\n</code></p><p><code>\"reportRefreshDate\": \"2024-06-26\",\n</code></p><p><code>\"adoptionByProduct\": [\n</code></p><p><code>{\n</code></p><p><code>\"reportPeriod\": 7,\n</code></p><p><code>\"anyAppEnabledUsers\": 354590,\n</code></p><p><code>\"anyAppActiveUsers\": 144022,\n</code></p><p><code>\"microsoftTeamsEnabledUsers\": 354449,\n</code></p><p><code>\"microsoftTeamsActiveUsers\": 88737,\n</code></p><p><code>\"wordEnabledUsers\": 354449,\n</code></p><p><code>\"wordActiveUsers\": 17493,\n</code></p><p><code>\"powerPointEnabledUsers\": 354449,\n</code></p><p><code>\"powerPointActiveUsers\": 7245,\n</code></p><p><code>\"outlookEnabledUsers\": 354449,\n</code></p><p><code>\"outlookActiveUsers\": 38140,\n</code></p><p><code>\"excelEnabledUsers\": 354449,\n</code></p><p><code>\"excelActiveUsers\": 2554,\n</code></p><p><code>\"oneNoteEnabledUsers\": 354449,\n</code></p><p><code>\"oneNoteActiveUsers\": 1382,\n</code></p><p><code>\"loopEnabledUsers\": 354449,\n</code></p><p><code>\"loopActiveUsers\": 955,\n</code></p><p><code>\"copilotChatEnabledUsers\": 354449,\n</code></p><p><code>\"copilotChatActiveUsers\": 64401\n</code></p><p><code>}</code></p><p>This feature is on by default.\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified date with no admin action required before the rollout. You may want to notify your admins about this change and update any relevant documentation.\n</p><p>Before rollout, we will update this post with revised documentation.</p><p>To learn more about Microsoft’s own review of this product with its works councils, please consider reading: https://aka.ms/Copilot/MSWorksCouncilsArticle&nbsp;</p>"
+      "content": "<p>Updated December 1, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>Coming soon: Microsoft Copilot for Microsoft 365 usage in your tenant will be added to the Microsoft Graph API to facilitate the creation of customized reporting and analytics. Metrics included in the Graph API will match those available in the Copilot for Microsoft 365 usage report in the Microsoft 365 admin center, including tenant-level count of enabled users and active users, as well as last activity date per user (totals for each Microsoft 365 app and a grand total). A Microsoft Copilot for Microsoft 365 license is required to use this feature.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=396562\" target=\"_blank\">396562</a> and with MC724835 <i>Microsoft 365 admin center Usage report: Microsoft Copilot with Graph-grounded chat (Preview)</i> (published March 2024).\n</p><p>[When this will happen:]</p><p>Public Preview: We will begin rolling out early September 2024 and expect to complete by mid-September 2024.</p><p>\n</p><p>General Availability (Worldwide): We will begin rolling out mid-November 2025 (previously late October) and expect to complete by mid-December 2025 (previously late November).&nbsp;</p><p>[How this will affect your organization:]\n</p><p>Before this rollout, the Graph API did not include Copilot for Microsoft 365 usage.\n</p><p>After this rollout, admins can use the Graph API to create customized reporting and analytics for Copilot for Microsoft 365 usage.\n</p><p>Sample request for one of the three APIs: <a href=\"https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSummary(period='D7')?$format=application/json\" target=\"_blank\">getMicrosoft365CopilotUserCountSummary</a>.\n</p><p>Sample response:<br></p><p><code>HTTP/1.1 200 OK\n</code></p><p><code>Content-Type: application/json\n</code></p><p><code>Content-Length: 537</code>\n</p><p>\n</p><p><code>{\n</code></p><p><code>\"@odata.context\": \"https://graph.microsoft.com/beta/reports/getMicrosoft365CopilotUserCountSummary(period='D7')?$format=application/json\",\n</code></p><p><code>\"value\": [\n</code></p><p><code>{\n</code></p><p><code>\"reportRefreshDate\": \"2024-06-26\",\n</code></p><p><code>\"adoptionByProduct\": [\n</code></p><p><code>{\n</code></p><p><code>\"reportPeriod\": 7,\n</code></p><p><code>\"anyAppEnabledUsers\": 354590,\n</code></p><p><code>\"anyAppActiveUsers\": 144022,\n</code></p><p><code>\"microsoftTeamsEnabledUsers\": 354449,\n</code></p><p><code>\"microsoftTeamsActiveUsers\": 88737,\n</code></p><p><code>\"wordEnabledUsers\": 354449,\n</code></p><p><code>\"wordActiveUsers\": 17493,\n</code></p><p><code>\"powerPointEnabledUsers\": 354449,\n</code></p><p><code>\"powerPointActiveUsers\": 7245,\n</code></p><p><code>\"outlookEnabledUsers\": 354449,\n</code></p><p><code>\"outlookActiveUsers\": 38140,\n</code></p><p><code>\"excelEnabledUsers\": 354449,\n</code></p><p><code>\"excelActiveUsers\": 2554,\n</code></p><p><code>\"oneNoteEnabledUsers\": 354449,\n</code></p><p><code>\"oneNoteActiveUsers\": 1382,\n</code></p><p><code>\"loopEnabledUsers\": 354449,\n</code></p><p><code>\"loopActiveUsers\": 955,\n</code></p><p><code>\"copilotChatEnabledUsers\": 354449,\n</code></p><p><code>\"copilotChatActiveUsers\": 64401\n</code></p><p><code>}</code></p><p>This feature is on by default.\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified date with no admin action required before the rollout. You may want to notify your admins about this change and update any relevant documentation.\n</p><p>Before rollout, we will update this post with revised documentation.</p><p>To learn more about Microsoft’s own review of this product with its works councils, please consider reading: https://aka.ms/Copilot/MSWorksCouncilsArticle&nbsp;</p>"
     }
   },
   {
