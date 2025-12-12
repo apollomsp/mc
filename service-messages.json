@@ -1593,7 +1593,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-10-04T10:06:11.5833004Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"486535\":[{\"RoadmapId\":486535,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178768Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":486535,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884598Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-10-04T10:06:11.5833004Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884602Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0884604Z\",\"LatestRing\":null},{\"RoadmapId\":486535,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-25T02:44:52.5178784Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -7535,7 +7535,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"490561\":[{\"RoadmapId\":490561,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T12:13:02.4974175Z\",\"LatestRing\":null},{\"RoadmapId\":490561,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-12-12T12:13:02.4974177Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":490561,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T12:13:02.4974179Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"490561\":[{\"RoadmapId\":490561,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-12-12T14:08:20.9699793Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":490561,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T14:08:20.9699796Z\",\"LatestRing\":null},{\"RoadmapId\":490561,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T14:08:20.9699797Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -13708,31 +13708,6 @@
     "body": {
       "contentType": "html",
       "content": "We have scheduled your Power Platform environment for planned service maintenance. This maintenance is intended to provide increased stability, reliability, and performance for your business-critical applications and environments. <br><br>\n\n<b>Maintenance downtime duration:</b> Up to 10 minutes<br>\n<b>Maintenance window start:</b> October 25, 2025, at 2:00 AM UTC <br>\n<b>Maintenance window end:</b> October 25, 2025, at 11:00 AM UTC<br>\n<b>Environment ID(s):</b><br>\nDefault-5a45e222-96c2-49fa-ba6d-16214efaae6a<br><br>\n\n<b>How does this affect me?</b><br>\nYour environment may experience a period of downtime for up to 10 minutes during the maintenance window.<br><br>\n\n<b>What action do I need to take?</b><br>\nCommunicate as appropriate with your users utilizing Power Platform applications and features.<br><br>"
-    }
-  },
-  {
-    "startDateTime": "2025-10-21T19:49:52Z",
-    "endDateTime": "2025-12-21T19:49:00Z",
-    "lastModifiedDateTime": "2025-10-22T23:05:49.01Z",
-    "title": "Power Automate - Information about 'Retry with AI vision' functionality in Power Automate for desktop",
-    "id": "MC1177141",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Power Automate"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the introduction of the <b>Retry with AI vision</b> feature in error handling for UI and browser automation within Power Automate for desktop. This feature will be available for Public Preview in all Power Platform environments hosted in the United States region starting <b>November 18, 2025</b>.<br><br> This AI-powered capability is designed to improve the reliability of desktop automations by intelligently identifying and proposing the correct UI element when an automation action fails to find the expected one.<br><br>\nLeveraging advanced language models, the system analyzes screenshots and desktop context to suggest alternative elements, allowing automations to recover from certain errors automatically. This reduces manual intervention and helps keep flows running smoothly. <br><br>\nThe feature is available as an optional fallback in the error handling settings of individual actions and is intended to be used in scenarios where robust flow continuity is critical.<br><br>\n<b>How does this affect me?</b><br>\nMakers can opt-in to use this feature in the specific UI and browser automation actions where they want to retry with AI vision (in the event of an error occurring in their desktop flows during runtime). This setting is disabled by default in those actions and is accessed through the error handling screen of UI and browser automation actions in desktop flows.<br><br>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nPlease contact Microsoft Support if you need further assistance."
     }
   },
   {
@@ -22366,7 +22341,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T12:13:02.497602Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T12:13:02.4976022Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T12:13:02.4976024Z\",\"LatestRing\":null}]}"
+        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T14:08:20.9700699Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T14:08:20.97007Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T14:08:20.9700701Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
