@@ -7535,7 +7535,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"490561\":[{\"RoadmapId\":490561,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-12-11T22:07:37.7808777Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":490561,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-11T22:07:37.780878Z\",\"LatestRing\":null},{\"RoadmapId\":490561,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-11T22:07:37.7808785Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"490561\":[{\"RoadmapId\":490561,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8059419Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":490561,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8059421Z\",\"LatestRing\":null},{\"RoadmapId\":490561,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8059422Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -22366,7 +22366,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-11T22:07:37.7810017Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-11T22:07:37.781002Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-11T22:07:37.7810021Z\",\"LatestRing\":null}]}"
+        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8060637Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8060638Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8060639Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23671,6 +23671,78 @@
     }
   },
   {
+    "startDateTime": "2025-12-11T22:10:06Z",
+    "endDateTime": "2026-02-11T22:10:00Z",
+    "lastModifiedDateTime": "2025-12-11T22:11:29.47Z",
+    "title": "No New Cloud Implementation Projects in Dynamics Lifecycle Services",
+    "id": "MC1194558",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Finance and Operations Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "Starting February 16, 2026, new Finance and operations apps customers trying to create a new cloud implementation project in Dynamics Lifecycle Services (LCS) will instead be routed to Power Platform admin center (PPAC), for the following products:<ul><li>Finance</li><li>Supply Chain Management</li><li>Project Operations</li></ul>Commerce, Dynamics 365 Finance + Operations (on-premises), and AX 2012 upgrade projects will still leverage Lifecycle Services.<br><br><b>How does this affect me?</b><br>New Lifecycle Services cloud implementation projects will no longer be able to be created, as customers trying to do so will be routed to PPAC to start the implementation process.<br><br>There is no impact on existing customers' LCS projects, nor their environments in Lifecycle Services.  Migration capabilities will come in the future but are not yet available.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>For more information about the unified admin experience for Finance and operations apps in PPAC, please visit <a href=\"https://aka.ms/13392\" target=\"_blank\">Overview of unified admin experience for finance and operations apps.</a>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-11T22:48:06Z",
+    "endDateTime": "2026-02-11T22:48:00Z",
+    "lastModifiedDateTime": "2025-12-11T22:49:41.273Z",
+    "title": "Power Platform Monitor - Announcing Copilot Studio agent health metrics and alerts in Public Preview",
+    "id": "MC1194567",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing two new features in Power Platform Monitor that will be available in Public Preview on November 28, 2025:<ul><li><b>Copilot Studio product list page (Preview)</b> – Tenant and environment admins can view operational health metrics for conversational and autonomous agents created in Copilot Studio that are under their purview.</li><li><b>Agent Alerts (preview)</b> – They can also configure alert rules to proactively detect health issues for agents in Managed Environments.</li></ul><b>How does this affect me?</b><br>These updates aim to help admins monitor the operational health of their agents and scale adoption with confidence. To get started, open Monitor in the Power Platform admin center; navigate to Products, then Copilot Studio, and set up alerts under Alerts.<br><br><b>What do I need to do to prepare?</b><br>This message is for awareness, and no action is required.<br><br>Learn more:<ul><li><a href=\"https://aka.ms/13343/1\" target=\"_blank>Metrics and recommendations for Copilot Studio - Power Platform | Microsoft Learn</a></li><li> <a href=\"https://aka.ms/13343/2\" target=\"_blank>Create alerts for your resources (preview) - Power Platform | Microsoft Learn</a></li>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-12T00:00:03Z",
+    "endDateTime": "2026-01-12T00:00:03Z",
+    "lastModifiedDateTime": "2025-12-12T00:01:10.61Z",
+    "title": "Power Platform – Power Platform Environment Settings app",
+    "id": "MC1194585",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "Starting on December 22, 2025, the <b>Power Platform Environment Settings</b> app for Power Platform will become the default experience for managing all environment settings, replacing the legacy Advanced Settings experience.<br><br><b>How does this affect me?</b><br>Currently, <i>Advanced Settings</i> under the settings gear in the Power Apps and Power Pages Maker Portals will direct admins to the classic settings management experience on the web. Environment settings links within the Power Platform admin center also currently redirects admins to the legacy experience.<br><br>Starting December 22, 2025, these links will instead redirect admins to the new Environment Settings app.<br><br>The new Power Platform Environment Settings app offers the following improvements:<ul><li><b>Unified Management:</b> Streamlined experience for creating and managing environment settings.</li><li><b>Role-Based Access:</b> Available to system administrators and system customizers by default with options to grant additional roles.</li><li><b>Preserves Extensions:</b> Any existing extensions from Advanced Settings are retained and displayed in the new app.</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.If you would like more information about this feature, please review <a target=\"_blank\" href=\"https://aka.ms/ADO13339\">Use the Power Platform Environment Settings app</a>."
+    }
+  },
+  {
     "startDateTime": "2023-04-13T00:00:49Z",
     "endDateTime": "2026-03-31T07:00:00Z",
     "lastModifiedDateTime": "2023-04-13T00:00:54.207Z",
@@ -24034,7 +24106,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
