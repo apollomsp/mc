@@ -2104,7 +2104,7 @@
   {
     "startDateTime": "2025-04-25T22:57:17Z",
     "endDateTime": "2026-07-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-14T19:54:18.583Z",
+    "lastModifiedDateTime": "2025-12-12T00:43:05.177Z",
     "title": "(Updated) Changes to how users install Microsoft 365 apps from the Microsoft 365 Copilot app",
     "id": "MC1062453",
     "category": "planForChange",
@@ -2124,12 +2124,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "The rollout of the new modal dialog for installing Microsoft 365 apps from the Microsoft 365 Copilot app has been delayed. Users will continue using the My account portal for installations until November. Organizations should update their self-install communications and use admin center settings or APIs to manage app installations."
+        "value": "The My account portal will be replaced by a modal in the Microsoft 365 Copilot app for self-installing apps. Users should update communications to remove My account links and refer to official Microsoft documentation. Admins can continue blocking installs via admin center settings or API; Conditional Access blocking no longer works."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated June 24, 2025: The rollout of this feature has been delayed. In the meantime, the Microsoft 365 Copilot app will continue directing users to the My account portal for installations. A status update on the new modal dialog is expected in November.</p><p>The <a href=\"http://portal.office.com/account/\" target=\"_blank\">My account</a>&nbsp;portal will be replaced by a new modal dialog within the Microsoft 365 Copilot app (formerly Office.com) on <a href=\"https://m365.cloud.microsoft/\" target=\"_blank\">web </a>and desktop. The new modal will support end user self-installs that are currently available on the My account portal (Office, Project, Visio, and Skype for Business).</p><p>[When this will happen:]</p><p>\n</p><p>\n</p><p>\n</p><p>Targeted Release: We will communicate via Message center when we are ready to proceed.</p><p>General Availability (Worldwide): We will communicate via Message center when we are ready to proceed.</p><p>[How this will affect your organization:]</p><p>End users will be able to download their apps by accessing the modal dialog in <b>Apps &gt; Install apps &gt; Install Microsoft 365 apps</b> in the Microsoft 365 Copilot web and desktop app.&nbsp;</p><p>[What you need to do to prepare:]\n</p><p><i style=\"\">If you allow users to self-install apps:</i></p><ul><li>Please remove direct links to the My account portal (https://portal.office.com/account) in your self-install communications. Instead, please refer your users to the official Microsoft documentation for installing Office (<a href=\"https://support.microsoft.com/office/download-install-or-reinstall-microsoft-365-or-office-2024-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Download, install or reinstall Microsoft 365 or Office 2024 on PC or Mac</a>).  This article will be updated to describe the new self-installs experience when it is released.</li></ul><p><i>If you do not allow users to install apps:</i></p><ul><li>You can continue to use the <a href=\"https://learn.microsoft.com/microsoft-365-apps/deploy/manage-software-download-settings-office-365\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Microsoft 365 admin center installation options</a> setting or the <a href=\"https://learn.microsoft.com/graph/api/m365appsinstallationoptions-update?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">m365AppsInstallationOptions API</a> to block self-installs. If you already configured these settings, users will still be blocked from installing apps in the new experience.</li></ul><p>Blocking Microsoft Admin Portals using Conditional Access Policies will no longer block self-installs. If you have used this setting to block self-installations, you will need to use one of the settings listed above instead.</p><p><br></p>"
+      "content": "<p>Updated December 11, 2025: No new updates on this feature rollout yet. We expect to share a status update by the end of January.</p><p>The <a href=\"http://portal.office.com/account/\" target=\"_blank\">My account</a>&nbsp;portal will be replaced by a new modal dialog within the Microsoft 365 Copilot app (formerly Office.com) on <a href=\"https://m365.cloud.microsoft/\" target=\"_blank\">web </a>and desktop. The new modal will support end user self-installs that are currently available on the My account portal (Office, Project, Visio, and Skype for Business).</p><p>[When this will happen:]</p><p>\n</p><p>\n</p><p>\n</p><p>Targeted Release: We will communicate via Message center when we are ready to proceed.</p><p>General Availability (Worldwide): We will communicate via Message center when we are ready to proceed.</p><p>[How this will affect your organization:]</p><p>End users will be able to download their apps by accessing the modal dialog in <b>Apps &gt; Install apps &gt; Install Microsoft 365 apps</b> in the Microsoft 365 Copilot web and desktop app.&nbsp;</p><p>[What you need to do to prepare:]\n</p><p><i style=\"\">If you allow users to self-install apps:</i></p><ul><li>Please remove direct links to the My account portal (https://portal.office.com/account) in your self-install communications. Instead, please refer your users to the official Microsoft documentation for installing Office (<a href=\"https://support.microsoft.com/office/download-install-or-reinstall-microsoft-365-or-office-2024-on-a-pc-or-mac-4414eaaf-0478-48be-9c42-23adc4716658\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Download, install or reinstall Microsoft 365 or Office 2024 on PC or Mac</a>).  This article will be updated to describe the new self-installs experience when it is released.</li></ul><p><i>If you do not allow users to install apps:</i></p><ul><li>You can continue to use the <a href=\"https://learn.microsoft.com/microsoft-365-apps/deploy/manage-software-download-settings-office-365\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Microsoft 365 admin center installation options</a> setting or the <a href=\"https://learn.microsoft.com/graph/api/m365appsinstallationoptions-update?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">m365AppsInstallationOptions API</a> to block self-installs. If you already configured these settings, users will still be blocked from installing apps in the new experience.</li></ul><p>Blocking Microsoft Admin Portals using Conditional Access Policies will no longer block self-installs. If you have used this setting to block self-installations, you will need to use one of the settings listed above instead.</p><p><br></p>"
     }
   },
   {
@@ -7535,7 +7535,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"490561\":[{\"RoadmapId\":490561,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8059419Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":490561,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8059421Z\",\"LatestRing\":null},{\"RoadmapId\":490561,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8059422Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"490561\":[{\"RoadmapId\":490561,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-12-12T02:41:47.9970723Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":490561,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T02:41:47.9970725Z\",\"LatestRing\":null},{\"RoadmapId\":490561,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T02:41:47.9970726Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -17734,7 +17734,7 @@
   {
     "startDateTime": "2025-11-14T00:02:57Z",
     "endDateTime": "2026-01-16T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-11T17:56:14.757Z",
+    "lastModifiedDateTime": "2025-12-12T00:57:14.147Z",
     "title": "(Updated) Microsoft 365 Copilot: Steer your presentation length, tone, style, and images when creating with Copilot",
     "id": "MC1185911",
     "category": "stayInformed",
@@ -17755,7 +17755,7 @@
     "details": [
       {
         "name": "RoadmapIds",
-        "value": "513430"
+        "value": "513430,513422,513431"
       },
       {
         "name": "Summary",
@@ -17763,12 +17763,12 @@
       },
       {
         "name": "Platforms",
-        "value": "Desktop, Web"
+        "value": "Desktop, Web, Mac"
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated December 11, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>You can now adjust the length of your presentation, the tone of your narrative, the style of your slides, and leverage AI-generated images when creating with Copilot. These enhancements are designed to give users more creative control and flexibility when building presentations, helping them tailor content to suit different audiences and contexts.</p><p>A Microsoft 365 Copilot license is required to use this feature.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=513430\" target=\"_blank\">513430</a>&nbsp;and 513431.</p>\n\n<b>When this will happen:</b>\n<p><b>General Availability (Worldwide):</b> Rollout will begin <b>December 15, 2025</b>.</p>\n\n<b>How this affects your organization:</b>\n<ul>\n<li><b>Who is affected:&nbsp;</b>All users with access to Copilot in Microsoft 365 on <b>Desktop, Web and Mac platforms.</b></li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Users will see new options to adjust presentation length, tone, and style:</li><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/3b40f210-561d-41ce-84ee-ebacec3ba9e0/7a090c71fca9e43f92f448ca93f00ac668a0f456.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/52cad34a-8ce6-43b7-903b-e1aab857ed0e/bd2daf513f00466316fb12f8d138f8687834058a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Users can incorporate AI-generated images into presentations:</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/7a116b3a-24f2-4fa3-9e91-033d1d177220/4078fafda8218180035258b826f3e7e75633fd51.png\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Features will be <b>available by default</b>.</li>\n    <li>No changes to existing admin policies are required.</li>\n  </ul>\n</li>\n</ul>\n\n<b>What you can do to prepare:</b>\n<p>No action is required. These improvements will roll out automatically.</p><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d\" target=\"_blank\">Create a new presentation with Copilot in PowerPoint | Copilot in PowerPoint | Copilot | Microsoft Support</a></p>\n\n<b>Compliance considerations:</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated December 11, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>You can now adjust the length of your presentation, the tone of your narrative, the style of your slides, and leverage AI-generated images when creating with Copilot. These enhancements are designed to give users more creative control and flexibility when building presentations, helping them tailor content to suit different audiences and contexts.</p><p>A Microsoft 365 Copilot license is required to use this feature.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=513430\" target=\"_blank\">513430</a>, <a href=\"https://www.microsoft.com/microsoft-365/roadmap?searchterms=513422\">513422</a> and <a href=\"https://www.microsoft.com/microsoft-365/roadmap?searchterms=513431\">513431</a>.</p>\n\n<b>When this will happen:</b>\n<p><b>General Availability (Worldwide):</b> Rollout will begin <b>December 15, 2025</b>.</p>\n\n<b>How this affects your organization:</b>\n<ul>\n<li><b>Who is affected:&nbsp;</b>All users with access to Copilot in Microsoft 365 on <b>Desktop, Web and Mac platforms.</b></li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Users will see new options to adjust presentation length, tone, and style:</li><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/3b40f210-561d-41ce-84ee-ebacec3ba9e0/7a090c71fca9e43f92f448ca93f00ac668a0f456.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/52cad34a-8ce6-43b7-903b-e1aab857ed0e/bd2daf513f00466316fb12f8d138f8687834058a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Users can incorporate AI-generated images into presentations:</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/7a116b3a-24f2-4fa3-9e91-033d1d177220/4078fafda8218180035258b826f3e7e75633fd51.png\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Features will be <b>available by default</b>.</li>\n    <li>No changes to existing admin policies are required.</li>\n  </ul>\n</li>\n</ul>\n\n<b>What you can do to prepare:</b>\n<p>No action is required. These improvements will roll out automatically.</p><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/create-a-new-presentation-with-copilot-in-powerpoint-3222ee03-f5a4-4d27-8642-9c387ab4854d\" target=\"_blank\">Create a new presentation with Copilot in PowerPoint | Copilot in PowerPoint | Copilot | Microsoft Support</a></p>\n\n<b>Compliance considerations:</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -22366,7 +22366,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8060637Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8060638Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T00:32:12.8060639Z\",\"LatestRing\":null}]}"
+        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T02:41:47.9968392Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T02:41:47.9968396Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-12T02:41:47.9968399Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23743,6 +23743,224 @@
     }
   },
   {
+    "startDateTime": "2025-12-12T00:49:13Z",
+    "endDateTime": "2026-02-20T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-12T00:49:28.23Z",
+    "title": "Manage version expiration for audio and video files in SharePoint Online",
+    "id": "MC1194603",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "SharePoint Online will enable admins to set version expiration policies for audio and video files to reduce storage and manage versions. Rolling out mid-Dec 2025, it supports PowerShell controls at tenant, site, and library levels, with compliance considerations for retention and legal holds."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing version storage management for video and audio files in<b> SharePoint Online</b>. This new capability allows admins to define and automate version expiration policies for large media files, helping reduce storage consumption, prevent version sprawl, and maintain consistent governance across sites and libraries.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide): Rollout begins mid-December 2025 and is expected to complete by mid-January 2026.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b> Admins managing SharePoint Online sites and libraries that store audio or video files.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Admins can apply file-type-specific version policies for audio and video files.</li>\n<li>Capabilities include:\n<ul>\n<li>Setting maximum retained versions.</li>\n<li>Defining expiration periods.</li>\n<li>Enabling auto-trim behaviors.</li>\n</ul>\n</li>\n<li>PowerShell support includes:\n<ul>\n<li>Tenant, site, and library-level overrides.</li>\n<li>Syncing policies across existing libraries.</li>\n<li>Trimming existing versions to reclaim storage.</li>\n</ul>\n</li>\n<li>Requires <b>SharePoint Online Management Shell </b><code>16.0.26712.12000</code> or later.</li>\n<li>Policies apply forward unless libraries are manually synced; trimming jobs can delete older versions.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Install the latest SharePoint Online Management PowerShell.</li>\n<li>Review media-heavy sites and plan version policies.</li>\n<li>Test cmdlets in non-production:<ul><li><b>Tenant‑Level Controls</b></li><ul><li>\n<a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/set-spotenant?view=sharepoint-ps\" target=\"_blank\">Set-SPOTenant</a>&nbsp;(new parameter: FileTypesForVersionExpiration, RemoveVersionExpirationFileTypeOverride )\n</li><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/get-spotenant?view=sharepoint-ps\" target=\"_blank\">Get-SPOTenant</a>&nbsp;(new property: VersionPolicyFileTypeOverride).\n</li></ul><li><b>Site‑Level Contols</b></li><ul><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/set-sposite?view=sharepoint-ps\" target=\"_blank\">Set-SPOSite</a>&nbsp;(new parameter: FileTypesForVersionExpiration, RemoveVersionExpirationFileTypeOverride )&nbsp;\n</li><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/get-sposite?view=sharepoint-ps\" target=\"_blank\">Get-SPOSite</a>&nbsp;(new property: VersionPolicyFileTypeOverride).</li></ul><li><b>Document Library‑Level Controls</b></li><ul><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/set-spolistversionpolicy?view=sharepoint-ps\" target=\"_blank\">Set-SPOListVersionPolicy</a>&nbsp;(new parameters: FileTypes, sync, RemoveVersionExpirationFileTypeOverride )\n</li><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/get-spolistversionpolicy?view=sharepoint-ps\" target=\"_blank\">Get-SPOListVersionPolicy</a>&nbsp;(new property: VersionPolicyFileTypeOverride).\n</li></ul><li><b>Manage Version Policy Jobs</b></li><ul><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/new-spositemanageversionpolicyjob?view=sharepoint-ps\" target=\"_blank\">New-SPOSiteManageVersionPolicyJob</a>\n</li><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/get-spositemanageversionpolicyjobprogress?view=sharepoint-ps\" target=\"_blank\">Get-SPOSiteManageVersionPolicyJobProgress</a>\n</li><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/remove-spositemanageversionpolicyjob?view=sharepoint-ps\" target=\"_blank\">Remove-SPOSiteManageVersionPolicyJob</a></li></ul><li><b>File Version Trimming Operations</b></li><ul><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/new-spolistfileversionbatchdeletejob?view=sharepoint-ps\" target=\"_blank\">New-SPOListFileVersionBatchDeleteJob</a>&nbsp;(new parameter: TrimUseListPolicy)</li></ul></ul></li><li>Decide whether to:\n<ul>\n<li>Override audio, video, or both.</li>\n<li>Use default or custom expiration periods.</li>\n<li>Sync all libraries or target specific file types.</li>\n</ul>\n</li>\n<li>Communicate to site owners:\n<ul>\n<li>Old versions may be deleted.</li>\n<li>Only new versions get expiration stamps unless trimming jobs run.</li>\n</ul>\n</li>\n</ul><p>Before rollout, we will update this post with new documentation.</p><p><b>[Compliance considerations:]</b></p><p>The following compliance impacts may apply. Review as appropriate for your organization.</p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <thead>\n    <tr>\n      <th>Compliance area</th>\n      <th>Explanation</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data processing changes</td>\n      <td>This change may alter how existing customer data is processed because older audio/video versions can be deleted when exceeding thresholds, and trimming jobs may add or clear expiration timestamps.</td>\n    </tr>\n    <tr>\n      <td>Purview retention and legal hold</td>\n      <td>Retention policies and legal holds will prevent deletion, and trimming jobs respect these constraints. Admins should review retention and legal hold settings to avoid conflicts with version expiration policies.</td>\n    </tr>\n  </tbody>\n</table>\n<p>No new customer data is stored, and no changes to user-facing access or GDPR workflows.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-12T00:49:46Z",
+    "endDateTime": "2026-03-06T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-12T00:49:51.923Z",
+    "title": "Microsoft Teams: Best Practice dashboard to monitor VDI optimization for meetings",
+    "id": "MC1194604",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "526781"
+      },
+      {
+        "name": "Summary",
+        "value": "A new Best Practice Configurations Monitoring Dashboard will roll out in early 2026 in the Teams admin center, helping admins monitor and remediate VDI optimization issues in meetings. It highlights non-conformance, shows impacted locations, and allows export of user data for targeted fixes."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We’re introducing a new <b>Best Practice Configurations Monitoring Dashboard</b> in the Teams admin center. This dashboard helps administrators monitor their tenant’s adherence to Microsoft-recommended best practices for an optimal collaboration experience in Teams meetings. The first focus area is <b>Virtual Desktop Infrastructure (VDI) optimization</b>, enabling admins to identify and remediate non-conformance quickly.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=526781\" target=\"_blank\">526781</a>.</p>\n\n<b>[When this will happen]</b>\n<p></p><ul>\n<li><b>General Availability (Worldwide): </b>We will start rolling out in<b> mid-January 2026</b> and expect to complete by<b> late January 2026</b>.</li><li><b>General Availability (GCC): </b>We will start rolling out in<b> late January 2026</b> and expect to complete by<b> early February 2026.</b></li></ul><p><b></b></p><p></p>\n\n<b>[How this affects your organization]</b>\n<p><b>Who is affected:</b> Teams administrators managing meeting experiences across M365 tenants.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>A new <b>Best Practice Configurations Monitoring Dashboard</b> will appear under the <b>Meetings</b> section in Teams admin center.</li>\n<li>The dashboard will:\n<ul>\n<li>Highlight non-conformance with best practices for VDI optimization.</li>\n<li>Display subnet/IP details by city for impacted locations.</li>\n<li>Provide exportable lists of users connected to VDI sessions without media optimization enabled.</li>\n</ul></li>\n<li>Supported roles for export functionality:\n<ul>\n<li>Teams Administrator</li>\n<li>Teams Communications Administrator</li>\n<li>Teams Communications Support Engineer</li>\n<li>Teams Telephony Administrator</li>\n<li>Teams Reader</li>\n<li>Global Administrator</li>\n<li>Global Reader</li>\n</ul></li>\n<li>Note: Export is not supported for admins scoped to an administrative unit.</li>\n<li>No changes to user workflows; this is an admin-only feature.</li>\n</ul>\n\n<b>[What you can do to prepare]</b>\n<ul>\n<li>No action is required before rollout; the feature will be enabled automatically.</li>\n<li>After rollout:\n<ul>\n<li>Visit <b>Teams admin center &gt; Meetings &gt; Best Practice Configurations</b> to review dashboard insights.</li>\n<li>Use export functionality to plan targeted remediation for non-optimized VDI sessions.</li></ul></li>\n</ul>\n\n<b>[Compliance considerations]</b>\n<p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-12T01:02:28Z",
+    "endDateTime": "2026-02-09T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-12T01:02:40.1Z",
+    "title": "Microsoft Viva - Viva Glint: Export Executive Summary report in Viva Glint to editable PowerPoint slides",
+    "id": "MC1194612",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "499661"
+      },
+      {
+        "name": "Summary",
+        "value": "Managers can soon export Viva Glint Executive Summary reports as editable PowerPoint slides, enabling easier customization and faster sharing. This native export improves layout, reliability, and performance, starting early January 2026. The previous screenshot export remains available for custom templates. No admin action is needed."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>Managers will soon be able to export the default sections from the <b>Executive Summary</b> <b>report </b>in Viva Glint directly into <b>editable PowerPoint slides</b>. This enhancement makes it easier and faster to share and customize reports outside Viva Glint compared to the previous method, which relied on static screenshots.</p>\n<p>With this release, the new editable PowerPoint export feature will be available for <b>Executive Summary reports</b>, complementing the Team Summary report export capability introduced earlier.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=499661\" target=\"_blank\">499661</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p><b>General Availability (Worldwide):</b> Rollout will begin in <b>early January 2026</b> and is expected to complete by <b>early January 2026</b>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b> Managers and users who access Viva Glint Executive Summary report.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li><b>Native PowerPoint output:</b> Executive Summary reports can now be exported as editable PowerPoint slides, allowing users to leverage built-in formatting and editing tools without needing to manipulate static images.</li>\n<li><b>Cleaner, customizable presentations:</b> The new format improves layout and reduces whitespace, helping users create polished presentations more efficiently.</li>\n<li><b>Faster, more reliable export experience:</b> The export process has been optimized for performance, reducing time-outs and improving reliability—especially for large reports with filters and visuals.</li>\n<li><b>Previous option remains available:</b> The screenshot-based export option remains available for users who require custom PowerPoint template support, which is not yet supported in the new export feature.</li>\n</ul><p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No admin action is required; the feature is on by default.</li>\n<li>Communicate this change to managers and report consumers who use Viva Glint.</li>\n<li>Update internal documentation if you reference report export options.</li></ul><p>Learn more: <a href=\"https://learn.microsoft.com/viva/glint/reports/export-to-ppt#how-to-export-report-to-powerpoint\" target=\"_blank\">How to Export Report to PowerPoint</a>&nbsp;(will be updated before rollout)</p><ul>\n</ul>\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified; review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-12T01:04:38Z",
+    "endDateTime": "2026-03-02T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-12T01:05:22.343Z",
+    "title": "Microsoft Excel: Enabling M365 subscribers to use Copilot Chat in locally stored modern workbooks",
+    "id": "MC1194615",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps",
+      "Microsoft 365 Copilot Chat"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 subscribers will be able to use Copilot Chat in locally stored Excel modern workbooks starting mid-December 2025, with rollout completing by January 2026. This feature is enabled by default and aligns functionality with workbooks stored in SharePoint or OneDrive."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We’re enabling Microsoft 365 subscribers to use Copilot Chat when working in <i>Microsoft Excel modern workbooks</i> (.xlsx, .xlsb, .xlsm, .ods, .xltx, .xltm, and .xlam files) stored locally. This brings parity with workbooks stored in <i>SharePoint </i>or <i>OneDrive</i>, allowing users to query Copilot Chat regardless of storage location.</p>\n<p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide): </b>Rollout will begin in <b>mid-December 2025</b> and is expected to complete in&nbsp;<b>January 2026</b>.</p>\n<p><b>How this affects your organization:</b></p>\n<ul>\n</ul><p><b>Who is affected:</b> All Microsoft 365 subscribers using Excel modern workbooks stored locally.</p><ul>\n</ul><p><b>What will happen:</b>\n</p><ul>\n\n\n\n</ul>\n<p></p><ul><li>Microsoft 365 subscribers will be able to query Copilot Chat when opening and working in <i>locally stored Excel modern workbooks</i>.</li><li>This feature is <b>enabled by default</b>; no admin action is required.</li><li>There is no impact to existing workflows for workbooks stored in <i>SharePoint</i> or <i>OneDrive</i>.</li>\n</ul>\n<p><b>[What you can do to prepare]</b></p><p>All locally stored Modern Excel workbooks are blocked today from querying Copilot Chat. We are enabling M365 subscribers who open these workbooks and query Copilot Chat. See&nbsp;<a href=\"https://learn.microsoft.com/copilot/manage\" target=\"_blank\">Manage Microsoft 365 Copilot Chat</a><b>&nbsp;</b>to manage that chat experience<b>.</b></p><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/copilot/manage\" target=\"_blank\">Manage Microsoft 365 Copilot Chat | Microsoft Learn</a><b< li=\"\"></b<></li><li><a href=\"https://learn.microsoft.com/copilot/overview\" target=\"_blank\">Overview of Microsoft 365 Copilot Chat | Microsoft Learn</a></li></ul>\n<p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-12T01:29:01Z",
+    "endDateTime": "2026-03-16T07:00:00Z",
+    "lastModifiedDateTime": "2025-12-12T01:29:21.877Z",
+    "title": "SharePoint site analytics: OneNote usage included in site usage reports",
+    "id": "MC1194626",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online",
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "537285"
+      },
+      {
+        "name": "Summary",
+        "value": "SharePoint site analytics will include OneNote file usage, increasing reported site metrics like unique viewers and visits. Popular content reports will show frequently accessed OneNote files. The update rolls out worldwide from mid-January to mid-February 2026, requires no admin changes, and may raise site usage numbers."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re enhancing <b>SharePoint site analytics</b> to include usage data from <b>OneNote files (.one)</b>. This update provides a more complete view of site engagement by incorporating OneNote activity into metrics such as Unique viewers and site visits. Popular content reporting will also reflect heavily used OneNote files.</p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?searchterms=537285\" target=\"_blank\">537285</a>.</p>\n\n<p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): Rollout begins mid-January 2026 and is expected to complete by mid-February 2026.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> Admins and users who monitor SharePoint site analytics.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Expect an increase in reported <b>site usage metrics</b>, including unique viewers and site visits, as OneNote file activity will now be included.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/66f1efe0-fbfb-4726-8763-fa7a35b16216\" style=\"width: 400px;\" alt=\"user settings\"></p><li>The <b>Popular content</b> section in site analytics will display OneNote files if they are among the most accessed in the last 7 days.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/f7f983fb-b70f-432b-ad62-bc82e8fc8ac1\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>No admin configuration changes are required; this update is enabled by default.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Inform site admins and analytics stakeholders that site usage metrics may increase due to inclusion of OneNote activity.</li>\n<li>Update any internal documentation or reporting processes that reference SharePoint site analytics.</li>\n<li>No additional action or configuration is required.</li></ul><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/view-usage-data-for-your-sharepoint-site-2fa8ddc2-c4b3-4268-8d26-a772dc55779e\" target=\"_blank\">View usage data for your SharePoint site</a></p><ul>\n</ul>\n<p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified; review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-12T01:33:40Z",
+    "endDateTime": "2026-03-02T08:00:00Z",
+    "lastModifiedDateTime": "2025-12-12T01:34:12.633Z",
+    "title": "Microsoft Planner: New service plan to support task-based chat",
+    "id": "MC1194627",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Planner"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "512432"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Planner will add a new service plan enabling task-based chat for improved collaboration, rolling out worldwide in early January 2026. This feature will be ON by default for eligible licenses, including Planner Plan 1, Project Plan 3 and 5, and Dynamics 365 Project Operations. No immediate admin action needed."
+      },
+      {
+        "name": "Platforms",
+        "value": "TeamsAndSurfaceDevices, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re introducing a <b>new service plan for Microsoft Planner that enables task-based chat</b>, allowing teammates working on the same plan to communicate directly about tasks. This update improves collaboration and coordination for shared work managed in <i>Planner</i>.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/250c5bee-7750-46df-a124-9e04ea9567f4/e8be79a8c6edc26d1170cbdc0d4763f3ff489005.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=512432\" target=\"_blank\">512432</a>.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide): </b>The new service plan will start rolling out in<b> early January 2026</b>, with the task chat feature becoming available shortly after.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected: </i>Organizations using Microsoft Planner, Project, and Dynamics 365 Project Operations.</p><p><i>What will happen:</i></p><ul><li>A new service plan will be added to enable task-based chat in Planner.</li><li>The following licenses will include this service plan:<ul><li>Planner Plan 1</li><li>Planner and Project Plan 3</li><li>Planner and Project Plan 5</li><li>Dynamics 365 products that include Dynamics 365 Project Operations</li></ul></li><li>Feature will be <b>ON by default</b> for eligible licenses.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>No immediate admin action is required.</li><li>Consider updating internal training and documentation to reflect the new chat capability.</li><li>Communicate this change to helpdesk staff to prepare for potential user questions.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.\n</p><p></p>"
+    }
+  },
+  {
     "startDateTime": "2023-04-13T00:00:49Z",
     "endDateTime": "2026-03-31T07:00:00Z",
     "lastModifiedDateTime": "2023-04-13T00:00:54.207Z",
@@ -24106,7 +24324,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
