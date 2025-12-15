@@ -7409,7 +7409,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"490561\":[{\"RoadmapId\":490561,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-12-15T18:11:03.5913138Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":490561,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T18:11:03.5913141Z\",\"LatestRing\":null},{\"RoadmapId\":490561,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T18:11:03.5913142Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"490561\":[{\"RoadmapId\":490561,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-12-15T20:08:18.0284433Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":490561,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T20:08:18.0284438Z\",\"LatestRing\":null},{\"RoadmapId\":490561,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T20:08:18.028444Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21284,13 +21284,14 @@
   },
   {
     "startDateTime": "2025-12-02T20:55:40Z",
-    "endDateTime": "2026-06-30T07:00:00Z",
-    "lastModifiedDateTime": "2025-12-02T20:56:04.663Z",
-    "title": "Update to EWS Access for Kiosk / Frontline Worker Licenses",
+    "endDateTime": "2026-08-31T07:00:00Z",
+    "lastModifiedDateTime": "2025-12-15T19:15:20.717Z",
+    "title": "(Updated) Update to EWS Access for Kiosk / Frontline Worker Licenses",
     "id": "MC1191578",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "User impact",
       "Admin impact"
     ],
@@ -21304,12 +21305,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Starting March 1, 2026, EWS access will be blocked for mailboxes with Exchange Online Kiosk, Microsoft 365/Office 365 F1, and F3 licenses, which currently lack EWS rights. To maintain EWS access, users must be assigned licenses with EWS rights, or EWS requests will return HTTP 403 errors."
+        "value": "Starting June 30, 2026, EWS access will be blocked for mailboxes licensed only with Exchange Online Kiosk, Microsoft 365/Office 365 F1, or F3. To maintain EWS access, users must be assigned licenses with EWS rights, such as Exchange Online Plan 1/2 or Microsoft 365 E3/E5."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>We're making some changes to Exchange Web Services (EWS).</p><p>Starting March 1, 2026, we will start to block EWS access for all mailboxes without license rights to EWS. This is another step in our ongoing commitment to enhance the security and control mechanisms of EWS.</p><p>[How this will affect your organization:]</p><p>The impacted licenses are:\n</p><p>\n</p><ul><li>Exchange Online Kiosk</li><li>Microsoft 365 and Office 365 F1</li><li>Microsoft 365 and Office 365 F3</li></ul><p>As stated in the Service Descriptions, these licenses do not provide access to mailboxes via EWS, but these restrictions were never enforced. With this change, EWS access for users with only these license types will be blocked.</p><p>[What you need to do to prepare:]</p><p>If you wish these users to continue to use EWS, and your users are licensed with one of these noted above, you’ll need to assign a new license, one containing EWS access rights. For example, you could assign an Exchange Online Plan 1 or 2 license, or a Microsoft 365 or Office 365 E3 or E5 license.\n</p><p>\n</p><p>Starting March 1, 2026, requests to use EWS without a suitable license will result in a HTTP 403 response. </p><p>Learn more: <a href=\"https://aka.ms/EWSLicenseChanges\" target=\"_blank\">Update to EWS Access for Kiosk / Frontline Worker Licensed Users</a>&nbsp;</p>"
+      "content": "<p>Updated December 15, 2025: We have updated the timing of this change to provide additional time for customers to take action as appropriate. Thank you for your feedback.</p><p>We're making some changes to Exchange Web Services (EWS).</p><p>Starting June 30, 2026, we will start to block EWS access for all mailboxes without license rights to EWS. This is another step in our ongoing commitment to enhance the security and control mechanisms of EWS.</p><p>[How this will affect your organization:]</p><p>The impacted licenses are:\n</p><p>\n</p><ul><li>Exchange Online Kiosk</li><li>Microsoft 365 and Office 365 F1</li><li>Microsoft 365 and Office 365 F3</li></ul><p>As stated in the Service Descriptions, these licenses do not provide access to mailboxes via EWS, but these restrictions were never enforced. With this change, EWS access for users with only these license types will be blocked.</p><p>[What you need to do to prepare:]</p><p>If you wish these users to continue to use EWS, and your users are licensed with one of these noted above, you’ll need to assign a new license, one containing EWS access rights. For example, you could assign an Exchange Online Plan 1 or 2 license, or a Microsoft 365 or Office 365 E3 or E5 license.\n</p><p>\n</p><p>Starting June 30, 2026, requests to use EWS without a suitable license will result in a HTTP 403 response. </p><p>Learn more: <a href=\"https://aka.ms/EWSLicenseChanges\" target=\"_blank\">Update to EWS Access for Kiosk / Frontline Worker Licensed Users</a>&nbsp;</p>"
     }
   },
   {
@@ -21842,7 +21843,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T18:11:03.5914583Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T18:11:03.5914584Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T18:11:03.5914585Z\",\"LatestRing\":null}]}"
+        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T20:08:18.0288423Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T20:08:18.0288424Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-15T20:08:18.0288425Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23482,6 +23483,96 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to monitor batch workload telemetry in Azure Monitor Application Insights for finance and operations apps in Microsoft Dataverse. This feature is planned to reach general availability on January 14, 2026.<br><br><b>How does this affect me?</b><br>Batch telemetry enables admins the ability to diagnose performance bottlenecks and scheduling issues more effectively. Azure Monitor Application Insights provides built-in support for alerts and dashboards that provide admins with actionable insights to enhance observability and operational efficiency.<br><br>With this new feature, you will have access to new telemetry signals that capture batch start and stop times, throttling events, and thread availability. It also includes telemetry for batch queue sizes across priority levels, enabling visibility into scheduling bottlenecks, and exception metadata for failed batch tasks. These insights provide the ability to monitor batch job execution with greater precision and respond proactively to performance or scheduling issues.<br><br>Batch signals that have been introduced under Monitoring and Telemetry in Dynamics 365 apps are:<ul><li>Batch start time</li><li>Batch stop time</li><li>Batch throttling</li><li>Batch failure</li><li>Batch queue</li><li>Batch threads</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please review the <a target=\"_blank\" href=\"https://aka.ms/ADO13384\">Available telemetry</a> learn article."
+    }
+  },
+  {
+    "startDateTime": "2025-12-15T18:59:54Z",
+    "endDateTime": "2026-03-14T07:00:00Z",
+    "lastModifiedDateTime": "2025-12-15T19:02:18.13Z",
+    "title": "Plan for Change: Removing old versions of the Intune Company Portal app for Windows from the Microsoft Download Center",
+    "id": "MC1197101",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Intune"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Old versions of the Intune Company Portal app for Windows will be removed from the Microsoft Download Center on January 30, 2026. Installed versions will keep working, but downloads will stop. Users should switch to the latest version from the Microsoft Store or use Windows Package Manager."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>On <b>January 30, 2026</b>, or soon after, we will be removing the old versions of the Intune Company Portal app for Windows from the Microsoft Download Center, specifically:\n</p><ul><li><a href=\"https://www.microsoft.com/download/details.aspx?id=106069\" target=\"_blank\">Microsoft Intune Company Portal Redesign for Windows</a>\n</li><li><a href=\"https://www.microsoft.com/download/details.aspx?id=108156\" target=\"_blank\">Microsoft Intune Windows Company Portal</a>\n</li></ul><p>[How this will affect your organization:]</p><p>If either of these versions are installed on devices, it will continue to function. However, you will no longer be able to download these versions from the Download Center.\n</p><p>[What you need to do to prepare:]</p><p>We recommend using the latest Intune Company Portal version available in the Microsoft Store to ensure you have the most up-to-date experience. If needed, you can use Windows Package Manager to download the Intune Company Portal app. For more details refer to <a href=\"https://learn.microsoft.com/intune/intune-service/apps/store-apps-company-portal-app\" target=\"_blank\">Add the Windows Company Portal app by using Microsoft Intune</a>.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-15T19:03:42Z",
+    "endDateTime": "2026-05-30T07:00:00Z",
+    "lastModifiedDateTime": "2025-12-15T19:04:08.783Z",
+    "title": "Exchange Online ActiveSync device support update",
+    "id": "MC1197103",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact",
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": "2026-02-28T08:00:00Z",
+    "services": [
+      "Exchange Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting March 1, 2026, devices using Exchange ActiveSync versions below 16.1 cannot connect to Exchange Online. Organizations must update mobile devices and apps to EAS 16.1 or higher. Outlook Mobile and Exchange Server are unaffected. Admins can identify outdated devices via PowerShell and should inform users accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Exchange Online ActiveSync Device Support Update</b></p>\n\n<p>We’re making a change to improve security and reliability in Exchange Online. Starting <b>March 1, 2026</b>, devices using <b>Exchange ActiveSync (EAS)</b> versions lower than 16.1 will no longer be able to connect to Exchange Online. EAS 16.1 was introduced in June 2016 and provides enhanced compatibility and security.</p>\n\n<p><b>When this will happen:</b></p>\n<p>This change begins taking effect on <b>March 1, 2026</b>.</p><p><b>How this affects your organization:</b></p>\n<p><b>Who is affected:</b> Organizations using mobile devices with native email apps to access Exchange Online mailboxes via EAS protocol. Apple devices added support for EAS 16.1 in iOS 10 and are unlikely to be affected. The Gmail app and Samsung Mail will have updated versions available before the deadline. For other apps you should contact your device or application vendor if they are using EAS versions lower than 16.1.&nbsp;</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Devices running EAS versions lower than 16.1 will no longer connect to Exchange Online.</li>\n<li>Devices using Outlook Mobile are not impacted because they do not use EAS.</li>\n<li>This change applies only to Exchange Online, not Exchange Server.</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>Verify that all mobile devices and applications are updated to EAS version 16.1 or higher before March 1, 2026.</li>\n<li>Admins can generate a report of devices using older EAS versions with the following PowerShell command:</li>\n</ul>\n\n<pre><code>\nGet-MobileDevice | Where-Object {($_.ClientType -eq 'EAS' -or $_.ClientType -match 'ActiveSync') -and $_.ClientVersion -and ([version]$_.ClientVersion -lt [version]'16.1')} | Sort-Object UserDisplayName | Select-Object UserDisplayName, UserPrincipalName, DeviceId, DeviceModel\n</code></pre>\n\n<ul>\n<li>Communicate this change to your helpdesk and end users and ask them to update if possible.</li>\n<li>Update internal documentation as needed.</li>\n<li>For assistance, contact your device or application vendor.</li>\n<li>Learn more: <a href=\"https://aka.ms/EASVersionUpdate\">Exchange ActiveSync in Exchange Online</a></li>\n</ul>\n\n<p><b>Compliance considerations:</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2025-12-15T19:04:46Z",
+    "endDateTime": "2026-04-01T07:00:00Z",
+    "lastModifiedDateTime": "2025-12-15T19:05:01.177Z",
+    "title": "Deprecation of Designer bot and Designer banners in Teams",
+    "id": "MC1197104",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Designer bot and Designer banners in Microsoft Teams will be retired between mid-January and February 27, 2026. Users can no longer use these features but can generate images via Copilot in Teams. No admin action is needed; notify users and update documentation accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>Introduction</b></p>\n<p>We’re <b>retiring the Designer bot and Designer banners in Microsoft Teams</b> to streamline image generation capabilities. Moving forward, Copilot in Teams will provide enhanced image generation features, where we will continue to invest and improve functionality.</p>\n\n<p><b>When this will happen:</b></p>\n<p>Retirement begins mid-January 2026 and completes by February 27, 2026.</p>\n\n<p><b>How this affects your organization:</b></p>\n<ul>\n<li><b>Who is affected:</b> All Microsoft Teams users who currently use Designer bot or Designer banners.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Users will no longer be able to install or use the Designer bot in Teams chat.</li>\n<li>Users will no longer be able to create channel announcement banners using Designer.</li>\n<li>Users can generate images using Copilot in Teams instead.</li>\n<li>No admin configuration changes are required.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>No admin action is required; this change happens automatically.</li>\n<li>Recommended steps:\n<ul>\n<li>Notify your users about the retirement of Designer bot and banners.</li>\n<li>Update internal documentation to reflect this change.</li>\n<li>Share guidance on using Copilot in Teams for image generation.</li>\n</ul>\n</li>\n</ul><p>Learn more: <a href=\"https://m365.cloud.microsoft/ai-image-generator\" target=\"_blank\">AI Image Generator in Copilot</a></p><ul>\n</ul>\n\n<p><b>Compliance considerations:</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
