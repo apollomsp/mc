@@ -19470,76 +19470,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-26T16:15:50Z",
-    "endDateTime": "2025-12-26T16:15:50Z",
-    "lastModifiedDateTime": "2025-11-26T16:17:52.887Z",
-    "title": "Dynamics 365 Finance - Include general journal settlements in Polish payment terms report",
-    "id": "MC1190104",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Finance and Operations Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to include general journal settlements in the Polish payment terms report in Dynamics 365 Finance. This feature will reach general availability on December 26, 2025.<br><br> \n<b>How does this affect me?</b><br> \nThis enhancement improves the accuracy and completeness of the Payment Terms in Commercial Transactions Report for Polish legal entities. The report will now include payments posted in the Daily Journal that produce transactions of the General Journal type. This enhancement provides a more accurate representation of payments and strengthens compliance with Polish reporting standards. This update reduces the need for manual adjustments and enhances the reliability of reported data.<br><br> \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \nIf you would like more information on this feature, please visit the <a href=\"https://aka.ms/ADO13218\" target=\"_blank\">Include general journal settlements in Polish payment terms report</a> article."
-    }
-  },
-  {
-    "startDateTime": "2025-11-26T16:28:31Z",
-    "endDateTime": "2025-12-26T16:28:31Z",
-    "lastModifiedDateTime": "2025-11-26T16:29:48.22Z",
-    "title": "Dynamics 365 Finance - Print the Italian Fiscal Journal as PDF",
-    "id": "MC1190106",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Finance and Operations Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to print the Italian Fiscal Journal as a PDF using Electronic Reporting (ER) in Dynamics 365 Finance. This feature will reach general availability on December 26, 2025.<br><br> \n\n \n\n<b>How does this affect me?</b><br> \nThis release introduces a redesigned version of the Italian Fiscal Journal report, now generated in PDF format using the <a href=\"https://aka.ms/ADO13216a\" target=\"_blank\">Electronic reporting (ER) overview</a>. The new solution replaces the previous SSRS-based implementation and brings several key improvements:<ul> \n \n\n<li><b>PDF output via Electronic Reporting</b>: The report is now rendered directly in PDF format, ensuring consistent layout.</li> \n\n<li><b>Configurable report design</b>: The ER format allows for easier customization of the report layout without requiring code changes.</li> \n\n<li><b>Improved performance</b>: The new design supports processing larger volumes of transactional data more efficiently, overcoming performance constraints previously encountered with SSRS.</li> \n\n<li><b>Regulatory alignment</b>: The report structure and content are aligned with Italian fiscal documentation standards, supporting compliance and audit readiness.</li> \n\n<li><b>Simplified maintenance</b>: Updates to the report layout or logic can be managed through ER configurations, reducing dependency on developer resources.</li></ul> \n\nThis redesign enhances both the technical robustness and usability of the Italian Fiscal Journal reporting process, making it more adaptable to evolving business and regulatory needs.<br><br> \n\n \n\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \n \n\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO13216b\" target=\"_blank\">Print the Italian Fiscal Journal as a PDF</a>."
-    }
-  },
-  {
-    "startDateTime": "2025-11-26T17:15:46Z",
-    "endDateTime": "2025-12-26T17:15:46Z",
-    "lastModifiedDateTime": "2025-11-26T17:17:44.483Z",
-    "title": "Dynamics 365 Finance – Define application of exchange rates in Intrastat reporting",
-    "id": "MC1190115",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Finance and Operations Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to define how exchange rates are applied in Intrastat reporting in Dynamics 365 Finance, providing greater control and consistency for financial and compliance processes. This feature will reach general availability on December 26, 2025.<br><br><b>How does this affect me?</b><br>Admins and finance users will be able to specify an <b>Exchange rate type</b> for Intrastat calculations, ensuring alignment with tax logic and reducing manual adjustments:<ul><li>Multiple VAT registration numbers enabled:<ul><li>Without an Exchange rate type: standard algorithm applies (transaction → accounting → Intrastat currency using default rate).</li><li>With an Exchange rate type: specified rate is used for Intrastat currency calculation.</li></ul></li><br><li>Single VAT registration number:<ul><li>Without an Exchange rate type: default rate calculates Intrastat amounts to accounting currency.</li><li>With an Exchange rate type: specified rate is applied for Intrastat to /accounting currency.</li></ul></li></ul>This global parameter eliminates localization gaps and simplifies configuration for multinational operations.<br><br><b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/ADO13214\">Define application of exchange rates in Intrastat reporting</a>."
-    }
-  },
-  {
     "startDateTime": "2025-11-26T18:09:18.753Z",
     "endDateTime": "2026-11-26T18:09:18.707Z",
     "lastModifiedDateTime": "2025-11-26T18:09:19.643Z",
@@ -19645,7 +19575,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
+        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23825,7 +23755,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
