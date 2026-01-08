@@ -13275,12 +13275,13 @@
   {
     "startDateTime": "2025-11-12T00:10:11Z",
     "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-12T00:10:42.653Z",
-    "title": "Legacy SharePoint Online Content Delivery Network (CDN) domain to be retired—review configurations",
+    "lastModifiedDateTime": "2026-01-08T19:03:19.657Z",
+    "title": "(Updated) Legacy SharePoint Online Content Delivery Network (CDN) domain to be retired—review configurations",
     "id": "MC1184996",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "User impact",
       "Admin impact",
       "Retirement"
@@ -13300,7 +13301,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>As part of ongoing service modernization, Microsoft has migrated the hosting of SharePoint Online static assets to the Microsoft Azure Front Door (AFD) content delivery network (CDN), using the new domain <b>public-cdn.sharepointonline.com</b>. This migration was previously announced in MC1066155 and completed in July 2025.<p></p>\n\n<p>This message is a follow-up notice to retire the legacy CDN domain <b>publiccdn.sharepointonline.com</b>. After this rollout completes, content referenced via the legacy domain will no longer be accessible, and users will receive 404 errors when trying to access resources hosted on the legacy domain.</p><p></p>\n\n<p><b>[When this will happen:]</b></p>\n<b>General Availability (Worldwide):</b> Rollout begins March 31, 2026, and completes by late April 2026.<br><p></p>\n\n<p><b>[How this affects your organization:]</b></p>\n<b>Who is affected:</b>\n<p></p><ul>\n<li>Organizations using SharePoint Online with applications, scripts, or configurations that hardcode the legacy CDN domain.</li>\n<li>Developers using SharePoint Framework (SPFx) with hardcoded <code>cdnBasePath</code> values.</li>\n<li>Admins who have configured domain-based allow lists in their network settings.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>The legacy domain <b>publiccdn.sharepointonline.com</b> will be retired.</li>\n<li>Any content referenced via the legacy domain will return <b>404 errors</b>.</li>\n<li>The same resources remain available through the new CDN domain <b>public-cdn.sharepointonline.com</b>.</li>\n<li>The legacy domain previously served as an automatic hosting endpoint for SharePoint resources.</li>\n<li>The 404 error does <b>not indicate data loss</b>—only the access path is affected.</li>\n<li>Hardcoded references to the legacy domain will fail once the domain is retired.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b></p>\n<p></p><ul>\n<li>Review your applications, scripts, and configurations for any hardcoded references to <b>publiccdn.sharepointonline.com</b>.</li>\n<li>Update affected components to use supported and dynamic endpoints to ensure continued functionality.</li>\n<li>For SPFx applications:\n  <ul>\n    <li>If using an external CDN, it’s fine to update the <code>cdnBasePath</code>.</li>\n    <li>If relying on automatic hosting through the Microsoft 365 Public CDN, <b>do not hardcode </b><code style=\"\">cdnBasePath</code>—leave it unchanged, shown in the code snippet box below. For more details, refer to <a href=\"https://learn.microsoft.com/sharepoint/dev/spfx/extensions/get-started/hosting-extension-from-office365-cdn#update-your-solution-project-for-the-cdn-urls\" target=\"_blank\">Update your solution project for the CDN URLs</a>.</li></ul></li><p></p>\n\n<pre><code>{\n  \"cdnBasePath\": \"&lt;!-- PATH TO CDN --&gt;\"\n}</code></pre><li>Ensure <b>public-cdn.sharepointonline.com</b> is included in your domain-based allow lists.</li>\n<li>Validate your updates before <b>March 31, 2026</b> to prevent potential service disruptions.</li>\n<li>Monitor network traffic and optionally block requests to the legacy domain to confirm that content hosted through the CDN continues to function properly.</li>\n<li>Learn more: <a href=\"https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview\" target=\"_blank\">Overview of the SharePoint Framework</a></li></ul>\n\n<p></p>\n\n<p><b>[Compliance considerations]</b></p>No compliance considerations identified, review as appropriate for your organization.<p></p>"
+      "content": "<p>Updated January 8, 2026: We have updated this post as a reminder. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>As part of ongoing service modernization, Microsoft has migrated the hosting of SharePoint Online static assets to the Microsoft Azure Front Door (AFD) content delivery network (CDN), using the new domain <b>public-cdn.sharepointonline.com</b>. This migration was previously announced in MC1066155 and completed in July 2025.<p></p>\n\n<p>This message is a follow-up notice to retire the legacy CDN domain <b>publiccdn.sharepointonline.com</b>. After this rollout completes, content referenced via the legacy domain will no longer be accessible, and users will receive 404 errors when trying to access resources hosted on the legacy domain.</p><p></p>\n\n<p><b>[When this will happen:]</b></p>\n<b>General Availability (Worldwide):</b> Rollout begins March 31, 2026, and completes by late April 2026.<br><p></p>\n\n<p><b>[How this affects your organization:]</b></p>\n<b>Who is affected:</b>\n<p></p><ul>\n<li>Organizations using SharePoint Online with applications, scripts, or configurations that hardcode the legacy CDN domain.</li>\n<li>Developers using SharePoint Framework (SPFx) with hardcoded <code>cdnBasePath</code> values.</li>\n<li>Admins who have configured domain-based allow lists in their network settings.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>The legacy domain <b>publiccdn.sharepointonline.com</b> will be retired.</li>\n<li>Any content referenced via the legacy domain will return <b>404 errors</b>.</li>\n<li>The same resources remain available through the new CDN domain <b>public-cdn.sharepointonline.com</b>.</li>\n<li>The legacy domain previously served as an automatic hosting endpoint for SharePoint resources.</li>\n<li>The 404 error does <b>not indicate data loss</b>—only the access path is affected.</li>\n<li>Hardcoded references to the legacy domain will fail once the domain is retired.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b></p>\n<p></p><ul>\n<li>Review your applications, scripts, and configurations for any hardcoded references to <b>publiccdn.sharepointonline.com</b>.</li>\n<li>Update affected components to use supported and dynamic endpoints to ensure continued functionality.</li>\n<li>For SPFx applications:\n  <ul>\n    <li>If using an external CDN, it’s fine to update the <code>cdnBasePath</code>.</li>\n    <li>If relying on automatic hosting through the Microsoft 365 Public CDN, <b>do not hardcode </b><code style=\"\">cdnBasePath</code>—leave it unchanged, shown in the code snippet box below. For more details, refer to <a href=\"https://learn.microsoft.com/sharepoint/dev/spfx/extensions/get-started/hosting-extension-from-office365-cdn#update-your-solution-project-for-the-cdn-urls\" target=\"_blank\">Update your solution project for the CDN URLs</a>.</li></ul></li><p></p>\n\n<pre><code>{\n  \"cdnBasePath\": \"&lt;!-- PATH TO CDN --&gt;\"\n}</code></pre><li>Ensure <b>public-cdn.sharepointonline.com</b> is included in your domain-based allow lists.</li>\n<li>Validate your updates before <b>March 31, 2026</b> to prevent potential service disruptions.</li>\n<li>Monitor network traffic and optionally block requests to the legacy domain to confirm that content hosted through the CDN continues to function properly.</li>\n<li>Learn more: <a href=\"https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview\" target=\"_blank\">Overview of the SharePoint Framework</a></li></ul>\n\n<p></p>\n\n<p><b>[Compliance considerations]</b></p>No compliance considerations identified, review as appropriate for your organization.<p></p>"
     }
   },
   {
@@ -15113,8 +15114,8 @@
   },
   {
     "startDateTime": "2025-11-19T23:26:22Z",
-    "endDateTime": "2026-04-01T07:00:00Z",
-    "lastModifiedDateTime": "2025-12-01T19:27:21.43Z",
+    "endDateTime": "2026-04-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-01-08T18:46:20.907Z",
     "title": "(Updated) Microsoft Teams: Private chat for organizers and presenters in structured meetings, webinars, and town halls",
     "id": "MC1188222",
     "category": "planForChange",
@@ -15139,7 +15140,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams will add private chat for organizers, co-organizers, and presenters in structured meetings, webinars, and town halls, unifying backroom chat behavior. Rollout starts February 2026. Admins can enable or disable backroom chat via policy; existing meetings will update accordingly. No compliance issues noted."
+        "value": "Microsoft Teams will introduce a private chat for organizers, co-organizers, and presenters in structured meetings, webinars, and town halls, unifying backroom chat behavior across town halls. Rollout begins March 2026, affecting meeting policies and requiring admin review and communication."
       },
       {
         "name": "Platforms",
@@ -15148,7 +15149,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated December 1, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p>We’re introducing a private chat feature for organizers, co-organizers, and presenters in structured meetings and webinars in Microsoft Teams. This separate chat enhances collaboration by allowing key participants to communicate privately before, during, and after the event, without involving attendees. Additionally, we are <b>unifying backroom chat behavior in town halls</b> to ensure consistent functionality across all structured meetings. Currently, backroom chat behavior varies depending on whether streaming chat is enabled for town halls and whether the organizer has a Teams Premium license. This update removes that inconsistency.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=392328\" target=\"_blank\">392328</a>&nbsp;and applies to Teams for Windows desktop, Teams for Mac desktop, Teams for the web, Teams for iOS/Android, MTR-W and MTR-A devices.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul><li><b>Targeted Release:</b> Rollout begins in early February 2026 (previously early January) and is expected to complete by mid-February 2026 (previously mid-January).</li><li><b>General Availability (Worldwide and GCC): </b>Rollout begins in mid-February 2026 and is expected to complete by late February 2026.</li></ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b> Admins managing Microsoft Teams meetings, webinars, and town halls.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li><b>New private chat for organizers, co-organizers, and presenters:</b> This chat is separate from attendee chat and is available before, during, and after the event.</li>\n<li><b>Unified backroom chat policy for town halls:</b> The default setting will be ON for all town halls, regardless of streaming chat availability or license type.</li>\n<li>Existing town halls will adopt the new policy once meeting options are updated.</li>\n<li>If admins turn the backroom chat policy OFF, previously enabled town halls will lose access after update.</li>\n<li>Non-TPre town halls (those without a Teams Premium license) will have backroom chat ON by default after rollout and update.</li>\n</ul>\n<p><b>Two potential impacts:</b></p>\n<ul>\n<li>If an admin explicitly turns the new backroom chat policy OFF, any already-scheduled town hall that previously had backroom chat ON will lose access once the meeting options are updated.</li>\n<li>For non-TPre town halls where backroom chat was previously OFF, it will switch to ON by default after the rollout and a meeting options update.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Review your Teams meeting policies and decide whether to enable private chat for organizers and presenters.</li>\n<li>Communicate this change to helpdesk staff and event organizers.</li>\n<li>Update internal documentation to reflect the new backroom chat behavior.</li>\n<li>If you want to disable backroom chat, adjust the policy in the Teams admin center.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated January 8, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p>We’re introducing a private chat feature for organizers, co-organizers, and presenters in structured meetings and webinars in Microsoft Teams. This separate chat enhances collaboration by allowing key participants to communicate privately before, during, and after the event, without involving attendees. Additionally, we are <b>unifying backroom chat behavior in town halls</b> to ensure consistent functionality across all structured meetings. Currently, backroom chat behavior varies depending on whether streaming chat is enabled for town halls and whether the organizer has a Teams Premium license. This update removes that inconsistency.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=392328\" target=\"_blank\">392328</a>&nbsp;and applies to Teams for Windows desktop, Teams for Mac desktop, Teams for the web, Teams for iOS/Android, MTR-W and MTR-A devices.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul><li><b>Targeted Release:</b> Rollout begins in early March 2026 (previously early February) and is expected to complete by mid-March 2026 (previously mid-February).</li><li><b>General Availability (Worldwide and GCC): </b>Rollout begins in mid-March 2026 (previously mid-February) and is expected to complete by late March 2026 (previously late February).</li></ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b> Admins managing Microsoft Teams meetings, webinars, and town halls.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li><b>New private chat for organizers, co-organizers, and presenters:</b> This chat is separate from attendee chat and is available before, during, and after the event.</li>\n<li><b>Unified backroom chat policy for town halls:</b> The default setting will be ON for all town halls, regardless of streaming chat availability or license type.</li>\n<li>Existing town halls will adopt the new policy once meeting options are updated.</li>\n<li>If admins turn the backroom chat policy OFF, previously enabled town halls will lose access after update.</li>\n<li>Non-TPre town halls (those without a Teams Premium license) will have backroom chat ON by default after rollout and update.</li>\n</ul>\n<p><b>Two potential impacts:</b></p>\n<ul>\n<li>If an admin explicitly turns the new backroom chat policy OFF, any already-scheduled town hall that previously had backroom chat ON will lose access once the meeting options are updated.</li>\n<li>For non-TPre town halls where backroom chat was previously OFF, it will switch to ON by default after the rollout and a meeting options update.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Review your Teams meeting policies and decide whether to enable private chat for organizers and presenters.</li>\n<li>Communicate this change to helpdesk staff and event organizers.</li>\n<li>Update internal documentation to reflect the new backroom chat behavior.</li>\n<li>If you want to disable backroom chat, adjust the policy in the Teams admin center.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -19982,30 +19983,6 @@
     }
   },
   {
-    "startDateTime": "2025-12-24T17:34:53Z",
-    "endDateTime": "2026-01-24T17:34:53Z",
-    "lastModifiedDateTime": "2025-12-24T17:35:21.293Z",
-    "title": "Microsoft 365 Copilot for Service – Create case records from customer emails with one click",
-    "id": "MC1204498",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to create case records from customer emails within Outlook in Microsoft 365 Copilot for Service. This feature will reach general availability on January 1, 2026.<br><br><b>How does this affect me?</b><br>This feature provides the following functionality:<ul><li><b>One-click case creation</b>: When you view a customer email in Outlook, you can leverage the Copilot for Service side panel to instantly create a new case.</li><li><b>Automatic data capture</b>: Information from an email, such as subject, customer details, and issue description, are automatically extracted and populated into relevant case fields.</li><li><b>Customizable and editable fields</b>: Before saving a case, you can easily modify any prefilled information to help ensure accuracy and completeness.</li></ul><b>What do I need to do to prepare?</b><br>This message is for awareness, and no action is required."
-    }
-  },
-  {
     "startDateTime": "2025-12-24T22:09:03Z",
     "endDateTime": "2026-01-24T22:09:03Z",
     "lastModifiedDateTime": "2025-12-24T22:09:51.227Z",
@@ -20884,6 +20861,54 @@
     "body": {
       "contentType": "html",
       "content": "Starting on February 2, 2026, the following preview Copilot features in Power Apps Canvas Apps will be removed: \n<ul>\n<li>Copilot Control: <a href=\"https://aka.ms/13467/1\" target=\"_blank\">Add a Copilot control to a canvas app (preview)</a></li>\n<li>Copilot Answer Control: <a href=\"https://aka.ms/13467/2\" target=\"_blank\">Overview of Copilot answer control for canvas apps</a></li>\n<li>Custom Copilot: <a href=\"https://aka.ms/13467/3\" target=\"_blank\">Enable a custom Copilot to a canvas app</a></li>\n</ul>\n<b>How does this affect me?</b><br> \nMakers will no longer be able to add these controls to new Canvas apps. Existing apps that already use these controls will continue to function, but these features will not be supported and will be deprecated in the future.<br><br>\nNo other Canvas app functionality is affected. \n<br><br>\nWe are currently working on a future release for <a href=\"https://aka.ms/13467/4\" target=\"_blank\">M365 Copilot in Power Apps for copilot experiences</a> that will provide similar capabilities.<br><br>\n<b>What action do I need to take?</b><br>\nFor apps that currently use these features, we recommend planning a transition to Microsoft 365 Copilot in Power Apps when they are made available."
+    }
+  },
+  {
+    "startDateTime": "2026-01-08T19:04:18.74Z",
+    "endDateTime": "2027-01-08T19:04:18.693Z",
+    "lastModifiedDateTime": "2026-01-08T19:04:19.657Z",
+    "title": "Windows Office Hours: January 15, 2026",
+    "id": "MC1215830",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>If you are an IT admin with questions about managing and updating Windows, we want to help. Every third Thursday of the month, we host a live chat-based event on the Tech Community called Windows Office Hours. Members of the Windows, Microsoft&nbsp;Intune, Windows Autopilot, Windows Autopatch, and Windows 365 engineering teams will be standing by to answer your questions. We also have experts from FastTrack, the Customer Acceleration Team, and Microsoft public sector teams.&nbsp;</div><div><br></div><div>Want to attend the January 15 session of Office Hours?&nbsp;<a href=\"https://techcommunity.microsoft.com/t5/s/gxcuf89792/attachments/gxcuf89792/WindowsEvents/6441/1/Windows-Office-Hours-January-15-2026.ics\" rel=\"noopener noreferrer\" target=\"_blank\">Add it to your calendar</a> and select Attend on the <a href=\"https://techcommunity.microsoft.com/event/windowsevents/windows-office-hours-january-15-2026/4458455\" rel=\"noopener noreferrer\" target=\"_blank\">event page</a> to let us know you’re coming.&nbsp;There is no video or live meeting component. Simply visit the event page, log in to the Tech Community, and leave your questions in the Comments section. You can also bookmark&nbsp;<a href=\"https://aka.ms/Windows/OfficeHours\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/Windows/OfficeHours</a>&nbsp;for upcoming dates (and the ability to add this event to your calendar). We look forward to helping you.</div>"
+    }
+  },
+  {
+    "startDateTime": "2026-01-08T19:27:00Z",
+    "endDateTime": "2026-02-08T19:27:00Z",
+    "lastModifiedDateTime": "2026-01-08T19:28:42.78Z",
+    "title": "Dynamics 365 Contact Center- Set least active assignment as default in messaging queues",
+    "id": "MC1215836",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to set the least active assignment as the default in messaging queues in Dynamics 365 Contact Center. This feature will reach general availability on February 6, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis feature assigns conversations by default to the least active customer service representatives across messaging and voice channels.<br><br>\n \n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required."
     }
   },
   {
