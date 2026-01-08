@@ -8394,7 +8394,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"515169\":[{\"RoadmapId\":515169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837717Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837718Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837715Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837716Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837719Z\",\"LatestRing\":null}]}"
+        "value": "{\"515169\":[{\"RoadmapId\":515169,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837715Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837716Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837717Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837718Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837719Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20837,6 +20837,55 @@
     }
   },
   {
+    "startDateTime": "2026-01-08T15:52:50Z",
+    "endDateTime": "2026-02-08T15:52:50Z",
+    "lastModifiedDateTime": "2026-01-08T15:54:58.34Z",
+    "title": "Microsoft Dataverse - Ending Support for configuring Table‑Level Deleted-Records Keeping",
+    "id": "MC1215681",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Dataverse"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "Beginning <b>February 2026</b>, Microsoft Dataverse will no longer support configuring deleted-records keeping at the individual table level. Deleted records will now be managed consistently at the environment level for all tables.<br><br><b>How does this affect me?</b><br>You will no longer be able to configure deleted‑records keeping per table. All supported tables will follow the single environment‑level setting accessible from Feature Management, helping improve governance, consistency, and reliable data management.<br><br><b>What do I need to do to prepare?</b><br> No action is required on your part. When the table‑level option is removed, keeping deleted records will be automatically enabled for all supported tables if your environment‑level setting is turned on for deleted records. Environments where the environment‑level setting is off will remain unchanged."
+    }
+  },
+  {
+    "startDateTime": "2026-01-08T15:53:22Z",
+    "endDateTime": "2026-02-08T15:53:22Z",
+    "lastModifiedDateTime": "2026-01-08T16:06:10.94Z",
+    "title": "Power Apps – Deprecation of Preview Copilot Controls in Canvas Apps",
+    "id": "MC1215683",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Retirement"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "Starting on February 2, 2026, the following preview Copilot features in Power Apps Canvas Apps will be removed: \n<ul>\n<li>Copilot Control: <a href=\"https://aka.ms/13467/1\" target=\"_blank\">Add a Copilot control to a canvas app (preview)</a></li>\n<li>Copilot Answer Control: <a href=\"https://aka.ms/13467/2\" target=\"_blank\">Overview of Copilot answer control for canvas apps</a></li>\n<li>Custom Copilot: <a href=\"https://aka.ms/13467/3\" target=\"_blank\">Enable a custom Copilot to a canvas app</a></li>\n</ul>\n<b>How does this affect me?</b><br> \nMakers will no longer be able to add these controls to new Canvas apps. Existing apps that already use these controls will continue to function, but these features will not be supported and will be deprecated in the future.<br><br>\nNo other Canvas app functionality is affected. \n<br><br>\nWe are currently working on a future release for <a href=\"https://aka.ms/13467/4\" target=\"_blank\">M365 Copilot in Power Apps for copilot experiences</a> that will provide similar capabilities.<br><br>\n<b>What action do I need to take?</b><br>\nFor apps that currently use these features, we recommend planning a transition to Microsoft 365 Copilot in Power Apps when they are made available."
+    }
+  },
+  {
     "startDateTime": "2023-04-13T00:00:49Z",
     "endDateTime": "2026-03-31T07:00:00Z",
     "lastModifiedDateTime": "2023-04-13T00:00:54.207Z",
@@ -20993,7 +21042,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783811Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783804Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783808Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783816Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783804Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783808Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783811Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783816Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
