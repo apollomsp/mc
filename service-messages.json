@@ -26,7 +26,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"369345\":[{\"RoadmapId\":369345,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775946Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775949Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775966Z\",\"LatestRing\":null}]}"
+        "value": "{\"369345\":[{\"RoadmapId\":369345,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775949Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775946Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775966Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -179,7 +179,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
+        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -1157,32 +1157,6 @@
     }
   },
   {
-    "startDateTime": "2025-04-10T01:40:01Z",
-    "endDateTime": "2026-01-09T08:00:00Z",
-    "lastModifiedDateTime": "2025-04-10T01:40:47.277Z",
-    "title": "Reminder: Moving to Android Management API and web enrollment for Android personally owned work profile",
-    "id": "MC1052156",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<p>As mentioned in MC988140, later this year we are making two significant improvements for the management of Android personally owned work profile devices. These include a web-based enrollment flow and a new implementation to deliver policies by moving to Google's Android Management API (AM API). These updates are designed to modernize device management and improve the user enrollment flow.</p><p>For more details, review the blog: <a href=\"https://aka.ms/Intune-personal-WP-updates\" target=\"_blank\">New policy implementation and web enrollment for Android personally owned work profile</a></p><p>[How this will affect your organization:]\n</p><p>We have updated the blog with this additional information:</p><ul><li><b>Web enrollment opt in:</b> Intune will add a tenant-wide setting for you to opt in to web enrollment for new devices, which will be available in the second half of calendar year 2025. In the first half of calendar year 2026, web enrollment will become the default for all enrollments.</li><li><b>Android OS version support: </b></li><ul><li>Web enrollment will be supported on all Android OS versions. </li><li>Moving existing enrolled devices to the new implementation will be supported on any device running <a href=\"https://learn.microsoft.com/intune/intune-service/fundamentals/supported-devices-browsers#android\" target=\"_blank\">supported Android OS versions</a> for user-based management methods at that time.</li></ul><li><b>Microsoft Authenticator:</b> The Microsoft Authenticator app will be installed automatically during web enrollments to provide streamlined single sign-on for users.</li><li><b>Enrollment restriction:</b> For the enrollment restriction for personal work profile devices, Intune will be removing the setting to block personally owned devices.</li><li><b>Work profile password: </b>AM API does not support password requirements at the work profile level for devices on Android 11 and earlier. Because of this, any devices on Android 11 and earlier that have configuration or compliance policies that set a password requirement at the work profile level that web enroll or move to AM API will have their work profile level password requirement applied at the device level to ensure corporate data is protected. </li><li><b>TeamViewer support:</b> For devices on the new implementation, support for <a href=\"https://learn.microsoft.com/intune/intune-service/remote-actions/teamviewer-support\" target=\"_blank\">using TeamViewer to remotely administer devices</a> will be added in the first half of calendar year 2026 when all devices are moved to the new implementation. If you opt in to web enrollment or move devices to the new implementation before that time, you will not be able to use TeamViewer on those devices until the first half of calendar year 2026. TeamViewer will continue working for devices on the custom DPC implementation.&nbsp;</li></ul><p>For more details and the full list of expected changes, review the blog: <a href=\"https://aka.ms/Intune-personal-WP-updates\" target=\"_blank\">New policy implementation and web enrollment for Android personally owned work profile</a> </p><p>[What you need to do to prepare:]</p><p>To ensure a smooth transition and the most streamlined experience for your users, we recommend as applicable:\n</p><ul><li>Reviewing the changes listed and revising any relevant policy configurations\n</li><li>Update your IT admin documentation</li><li>Notify your users or helpdesk about the changes in experience</li></ul><p>We will provide more specific timeframes and additional information in the coming months to give you adequate time to prepare. Stay tuned to the blog for more details and updates: <a href=\"https://aka.ms/Intune-personal-WP-updates\" target=\"_blank\">New policy implementation and web enrollment for Android personally owned work profile</a></p>"
-    }
-  },
-  {
     "startDateTime": "2025-04-10T01:45:58.053Z",
     "endDateTime": "2026-04-10T01:45:57.943Z",
     "lastModifiedDateTime": "2025-04-10T01:45:58.963Z",
@@ -1339,7 +1313,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487432\":[{\"RoadmapId\":487432,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703625Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703628Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470363Z\",\"LatestRing\":null}]}"
+        "value": "{\"487432\":[{\"RoadmapId\":487432,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703628Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703625Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470363Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -5863,7 +5837,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869502Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869506Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869509Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869511Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869509Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869506Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869502Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869511Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -7138,7 +7112,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7988099Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842871Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7988102Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842871Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7988099Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7988102Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -7253,7 +7227,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"499889\":[{\"RoadmapId\":499889,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842748Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.684275Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842752Z\",\"LatestRing\":null}]}"
+        "value": "{\"499889\":[{\"RoadmapId\":499889,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.684275Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842748Z\",\"LatestRing\":null},{\"RoadmapId\":499889,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842752Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -8394,7 +8368,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"515169\":[{\"RoadmapId\":515169,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837715Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837716Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837717Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837718Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837719Z\",\"LatestRing\":null}]}"
+        "value": "{\"515169\":[{\"RoadmapId\":515169,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837718Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837717Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837716Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837715Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837719Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -9258,7 +9232,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386002Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386007Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386009Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.338601Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386012Z\",\"LatestRing\":null}]}"
+        "value": "{\"503300\":[{\"RoadmapId\":503300,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.338601Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386009Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386007Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386002Z\",\"LatestRing\":null},{\"RoadmapId\":503300,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-10-11T10:06:23.3386012Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10736,36 +10710,6 @@
     }
   },
   {
-    "startDateTime": "2025-10-29T00:21:59Z",
-    "endDateTime": "2026-01-09T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-29T00:22:05.96Z",
-    "title": "Teams admin center: \"What's New\" section",
-    "id": "MC1181208",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "A new “What’s New” section in the Teams Admin Center will launch worldwide from mid-November to early December 2025. It provides admins with tenant-specific updates, new controls, resources, and Targeted Release visibility. The feature is on by default, requires no setup, and helps admins stay informed and act quickly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing a new “What’s New” section in Microsoft Teams Admin Center—a centralized hub designed to help Teams admins stay informed about recent and upcoming feature updates. This in-context experience consolidates key changes, admin controls, and learning resources, making it easier for IT admins to act quickly and confidently.</p>\n<p>With this new experience, admins can:</p>\n<ul>\n<li>View updates relevant to their tenant, including Teams and Teams Admin Center changes.</li>\n<li>Access new admin settings, policies, and Microsoft Learn resources.</li>\n<li>Check visibility for Targeted Release preferences.</li>\n</ul>\n<p>This means less time searching, more time acting—helping admins stay informed and ready for change.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p><b>General Availability (Worldwide):</b> Rollout will begin in <b>mid-November 2025</b> and is expected to complete by <b>early December 2025</b>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b> Admins managing Microsoft Teams via the Teams Admin Center.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>A new “What’s New” section will appear in the Teams Admin Center.</li>\n<li>Updates will be tailored to your tenant.</li>\n<li>Admins will see:\n  <ul>\n    <li>New admin controls</li>\n    <li>Links to relevant Message center posts</li>\n    <li>Microsoft Learn resources</li>\n    <li>Visibility into the tenant’s Targeted Release preference</li>\n  </ul>\n</li>\n<li>The feature is <b>on by default</b> and requires <b>no configuration</b>.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<p>No action is required to enable this feature.</p>\n<p>Admins are encouraged to:</p>\n<ul>\n<li>Explore the “What’s New” section to stay informed.</li>\n<li>Use the provided resources to plan rollouts effectively.</li>\n<li>Share this update with helpdesk or IT support teams as needed.</li>\n</ul>\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-10-29T00:22:25Z",
     "endDateTime": "2027-12-31T08:00:00Z",
     "lastModifiedDateTime": "2025-10-29T00:22:34.997Z",
@@ -10932,36 +10876,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>Introduction</b></p>\n<p>To improve consistency and quality across Microsoft 365 writing experiences, Microsoft will retire the <i style=\"\">Editor Pane</i> in <i>PowerPoint for the Web</i>. This pane, previously available as a preview feature, offered grammar and style suggestions. However, it no longer meets the standards for intelligent writing assistance and will be removed. Users can continue to rely on built-in spell check and <i>Copilot in PowerPoint</i> for enhanced writing support.</p>\n\n<p><b>When this will happen:</b></p>\n<p>The <i>Editor Pane</i> will be retired and removed from <i>PowerPoint for the Web</i> in <b style=\"\">January 2026</b>.</p>\n\n<p><b>How this affects your organization:</b>\n</p><ul>\n<li><b>Who is affected:</b> All users of <i>PowerPoint for the Web</i> who currently use the <i>Editor Pane</i> for writing suggestions.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>The <i>Editor Pane</i> will no longer be available after January 2026.</li>\n    <li>Built-in spell check will remain available and active by default.</li>\n    <li><i>Copilot in PowerPoint</i> offers enhanced writing support, including context-aware suggestions and natural language prompts.</li>\n    <li>No admin configuration changes are required.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>No action is required.</li>\n<li>Admins may wish to:\n  <ul>\n    <li>Inform helpdesk and support teams of the retirement to avoid confusion.</li>\n    <li>Update internal documentation if it references the <i>Editor Pane</i>.</li>\n    <li>Encourage users to explore <i>Copilot in PowerPoint</i> for advanced writing assistance.</li>\n  </ul>\n</li>\n</ul><p><b>Compliance considerations:</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-10-30T15:45:35Z",
-    "endDateTime": "2026-01-09T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-30T15:45:41.88Z",
-    "title": "New: Follow Threads from Discover feed in Microsoft Teams",
-    "id": "MC1181659",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams is introducing a \"Follow thread\" feature allowing users to follow posts from the Discover feed or Channels. Followed threads appear in a new \"Followed threads\" view in the Chat app. The feature rolls out from mid-November to early December 2025, enabled by default with no admin action needed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing a new way for users to stay engaged with conversations in Microsoft Teams. The <b>Follow thread</b> feature allows users to follow any post they see in the Discover feed or in Channels. Followed threads will be accessible in a new <b>Followed threads</b> view within the Chat app, making it easier to track important discussions across Teams.</p><p>This message applies to Teams for Windows desktop, Teams for Mac desktop, Teams for the web, and Teams for iOS/Android.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Targeted Release:</b> We will begin rolling out mid-November 2025 and expect to complete by late November 2025.</li>\n<li><b>General Availability (Worldwide):</b> We will begin rolling out late November 2025 and expect to complete by early December 2025.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All Microsoft Teams users who access posts via the Discover feed or Channels.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Users will see a new <b>Follow thread</b> option on posts in the Discover feed and Channels.</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/0ece61cc-6dda-49c8-a193-2f0ee71b6bd7/28aac345e3e0c51d52c12df72871c4a972ee2cf4.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n    <li>Followed threads will appear in a dedicated <b>Followed threads</b> view in the Chat app.</li>\n    <li>There are no changes to tenant-level settings.</li>\n    <li>The feature is enabled by default; no admin action is required to turn it on.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required to prepare for this change. However, you may want to:</li>\n  <ul>\n    <li>Notify your users about the new <b>Follow thread</b> feature.</li>\n    <li>Update internal documentation to reflect the new <b>Followed threads</b> view in the Chat app.</li>\n    <li>Review Microsoft Teams help documentation for user guidance once available.</li>\n  </ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -11172,7 +11086,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -16317,7 +16231,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
+        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -16331,37 +16245,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated December 2, 2025: We have updated the content. Thank you for your patience.&nbsp;<br><br><b>[Introduction]</b></p>\n<p>We’re introducing a new flexible layout option in future Teams meetings to give users more control over how shared content and participant videos appear. A resizable divider will let users adjust the space between shared content and the video gallery. Want to focus more on the presentation? Expand the content area. Prefer to see more people? Shrink the content area to make room for more video tiles. Users can also swap the position of content and participants to suit their viewing preference. This works with spotlighted speakers, pinned videos, and Speaker View, providing a more personalized meeting experience—especially helpful on larger or ultra-wide screens.<br><br>Screenshot 1: <i>When someone is sharing content or when you are in Speaker view, grab the divider between the left and right views to resize them.</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/5ad8177d-b16a-4b53-a524-4b1d16a38e10/35dcf036667dbaf9af73409969cd593f5b7c799e.png\" style=\"width: 200px;\" alt=\"user settings\"></p><p>Screenshot 2. <i>When you drag the divider to the left, you will see more people in the right gallery view. When you drag the divider to the right, you will see less people in the gallery but the content or speaker will become larger.</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/24405469-1ed5-4393-86d8-a09dbd20d9b2/695bb6807c04f2e4f397331d2cff3a342cb65300.png\" style=\"width: 200px;\" alt=\"user settings\"></p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=528930\" target=\"_blank\">528930</a>&nbsp;and applies to Teams for Windows desktop and Teams for Mac desktop.</p>\n\n<p><b>When this will happen:</b></p><ul>\n<li>Targeted Release: Rolling out early January 2026, expected completion by late January 2026.</li>\n<li>General Availability (Worldwide and GCC): Rolling out early February 2026, expected completion by late March 2026.</li>\n</ul>\n\n<p><b>How this will affect your organization:</b></p>\n<p><b style=\"\">Who is affected:</b> All Teams users in Worldwide and GCC environments.</p>\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n<li>Users will see a new resizable divider in Teams meetings during content sharing.</li>\n<li>Users can adjust layouts to prioritize content or participant video tiles.</li>\n<li>Users can swap positions of shared content and video gallery.</li>\n<li>Works with spotlighted speakers, pinned videos, and Speaker View.</li>\n<li>Enabled by default; no admin configuration required.</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>No configuration is required; the feature is enabled by default.</li>\n<li>Update training materials and FAQs to explain:\n<ul>\n<li>How to find and use the resizable divider.</li>\n<li>How to adjust layouts during content sharing and Speaker View.</li>\n</ul>\n</li>\n<li>Communicate this change to helpdesk staff to prepare for user questions, especially from those with large or ultra-wide monitors.</li>\n</ul><p><b>Compliance considerations:</b></p>\n<p>No compliance considerations identified; review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-26T23:22:49Z",
-    "endDateTime": "2026-01-09T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-26T23:23:30.137Z",
-    "title": "Upload transcripts for learning content in Viva Learning",
-    "id": "MC1190200",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Viva",
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Admins can upload or edit transcripts for learning objects and paths in Viva Learning starting late November 2025. This enhances content discoverability and AI features like personalized recommendations. The feature is enabled by default, with indexing taking up to 24 hours after updates. No action is required before rollout."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing a new capability in Viva Learning that allows admins to <b>upload or edit transcripts for learning objects and Learning paths</b>. Transcripts make learning content more discoverable and enhance AI-powered features such as personalized recommendations and microlearning through the <b>Learning agent</b>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide): Rollout will begin in late November 2025 and is expected to complete by early December 2025.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b> Admins managing Viva Learning content.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Admins can upload or edit transcripts in two locations:</li>\n<ul>\n<li><b>Learning paths:</b> Navigate to <b>Admin </b>→ <b>Learning paths</b> → <b>select a Learning path</b> → <b>Add/Edit transcript</b>.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/0f4c3644-2595-41be-b9c7-cb5c038af2c1\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li><b>Individual learning objects:</b> Upload or edit transcripts directly at the <b>Learning object</b> level.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/b98c1c2c-cbdf-4bb3-a8e6-f4a47718a4b3\" style=\"width: 400px;\" alt=\"user settings\"></p>\n</ul>\n<li>After a transcript is uploaded or updated, indexing may take up to 24 hours before improvements appear in <b>Learning agent</b> experiences (e.g., recommendations, microlearning cards, quick answers).</li>\n<li>This feature will be enabled by default for all tenants.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required. These capabilities will become available automatically once rollout is complete.</li>\n<li>If desired, review your <b>Learning paths</b> and <b>learning objects</b> to ensure transcripts are accurate and complete.</li>\n</ul><p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -17263,7 +17146,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-16T14:09:08.086244Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-16T14:09:08.0862439Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-16T14:09:08.0862443Z\",\"LatestRing\":null}]}"
+        "value": "{\"534487\":[{\"RoadmapId\":534487,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-16T14:09:08.0862439Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-16T14:09:08.086244Z\",\"LatestRing\":null},{\"RoadmapId\":534487,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-12-16T14:09:08.0862443Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21097,7 +20980,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783804Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783808Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783811Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783816Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783811Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783808Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783804Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-01-24T16:18:42.1783816Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21245,7 +21128,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991029Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991033Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991035Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T10:08:37.7991039Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21478,7 +21361,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869502Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869506Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869509Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869511Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869509Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869506Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869502Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-03-12T15:03:39.3869511Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -22451,33 +22334,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Gain clarity on the meaning of deprecation in the Windows lifecycle. A deprecation announcement is an advance notice or a \"save the date\" courtesy to signal that the product will be retired or removed in the future. In the meantime, deprecated products are still supported. Benefits of deprecation periods include strengthening your organizational compliance goals and supporting your transition. Get our recommendations for proactive lifecycle management in <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/deprecation-what-it-means-in-the-windows-lifecycle/4372457\" rel=\"noopener noreferrer\" target=\"_blank\">Deprecation: What it means in the Windows lifecycle</a>.&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>There are no changes to the <a href=\"https://learn.microsoft.com/lifecycle/\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Lifecycle Policy</a> or definitions. This article helps clarify the existing definitions and policies.&nbsp;</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>This article can help your organization manage lifecycles proactively by understanding deprecation.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>No action is needed.&nbsp;</div><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><ul><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/deprecation-what-it-means-in-the-windows-lifecycle/4372457\" rel=\"noopener noreferrer\" target=\"_blank\">Deprecation: What it means in the Windows lifecycle</a></li><li><a href=\"https://learn.microsoft.com/lifecycle/\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Lifecycle Policy</a></li><li><a href=\"https://learn.microsoft.com/windows/whats-new/feature-lifecycle\" rel=\"noopener noreferrer\" target=\"_blank\">Windows client features lifecycle</a></li><li><a href=\"https://learn.microsoft.com/windows/whats-new/deprecated-features\" rel=\"noopener noreferrer\" target=\"_blank\">Deprecated features for Windows client</a></li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-01-31T23:38:12Z",
-    "endDateTime": "2026-01-09T08:00:00Z",
-    "lastModifiedDateTime": "2025-01-31T23:38:47.737Z",
-    "title": "Legacy Microsoft Outlook for Mac: Support will end",
-    "id": "MC994282",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2025-10-31T07:00:00Z",
-    "services": [
-      "Exchange Online",
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<p>After October 2025, Microsoft 365 subscriptions associated with a Microsoft 365 account (personal, work, or school) will no longer be able to use legacy Microsoft Outlook for Mac. This transition marks a significant step towards a more robust, feature-rich, and <a href=\"https://techcommunity.microsoft.com/blog/outlook/keeping-our-outlook-personal-email-users-safe-reinforcing-our-commitment-to-secu/4164184\" target=\"_blank\">secure email experience</a> for all users.\n</p><p>The latest version of Outlook for Mac has been part of the Microsoft 365 suite for the last four years. More than 95% of Microsoft 365 users have already moved from legacy Outlook for Mac to the new version. Learn more about the new features and benefits in our <a href=\"https://techcommunity.microsoft.com/category/outlook/blog/outlook\" target=\"_blank\">Outlook Blog</a> and <a href=\"https://learn.microsoft.com/officeupdates/current-channel\" target=\"_blank\">Release Notes</a>. For information on what's next, please follow the <a href=\"https://www.microsoft.com/microsoft-365/roadmap?msockid=165f8b1203726cfe0ed49e3207726225&amp;filters=Outlook%2CMac\" target=\"_blank\">Microsoft 365 Roadmap for Outlook for Mac</a>.\n</p><p>[How this will affect your organization:]\n</p><p>You are receiving this message because our reporting indicates your organization may be using legacy Outlook for Mac. We do not have access to the list of users, but we might be able to provide a list of device IDs if your tenant allows legacy Outlook to upload telemetry.\n</p><p>Users will no longer be able to switch back to legacy Outlook for Mac after this change is implemented.\n</p><p>This change affects ONLY Outlook for Mac\n</p><p>[What you need to do to prepare:]\n</p><p>This change will happen automatically by the specified date. No admin action is required. Please notify your users about this change and update relevant documentation as appropriate.\n</p><p>Learn more: <a href=\"https://support.microsoft.com/office/end-of-support-for-legacy-outlook-for-mac-7b9cf644-7035-4345-a151-8c1c7a65ac25\" target=\"_blank\" style=\"\">End of support for legacy Outlook for Mac - Microsoft Support</a></p>"
     }
   },
   {
