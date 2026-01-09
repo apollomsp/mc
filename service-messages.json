@@ -4923,6 +4923,36 @@
     }
   },
   {
+    "startDateTime": "2025-08-07T23:39:53Z",
+    "endDateTime": "2026-03-09T08:00:00Z",
+    "lastModifiedDateTime": "2026-01-09T17:44:12.23Z",
+    "title": "(Updated) Microsoft Lens app will retire",
+    "id": "MC1131064",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Microsoft Lens app for iOS and Android will be removed from stores on February 9, 2026, and scanning will stop on March 9, 2026. Users should switch to OneDrive's scan feature. No admin action is needed; notify users accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Updated January 9, 2026: We have updated this post to reflect timeline updates. Thank you for your patience.&nbsp;</p><p>We will retire the Microsoft Lens app from iOS and Android in a phased approach starting January 9th, 2026. We recommend users to use the scan capability in the OneDrive app.</p><p><b>This change applies to the Microsoft Lens mobile app on iOS and Android.</b></p><p><b>How this affects your organization\n</b></p><p>The app will be removed from the stores on February 9, 2026. Users who already have the app downloaded on their devices can continue to use the scanning capability in the app until March 9, 2026. After that, users will no longer be able to create new scans in the app. Users can continue to access their previous scans from MyScans in the app after the change while they still have the app on their devices, although this capability will not be supported by Microsoft. Please note that users need to be signed into your last active account on the Microsoft Lens app to access past scans.<br></p><p><b>What you can do to prepare\n</b></p><p>This change will happen automatically on the specified dates above. No admin action is required. Please notify your users of this change, update any internal documentation, and encourage users to use the OneDrive app for their scanning needs.<br><br>For more information, read the <a href=\"https://support.microsoft.com/topic/retirement-of-microsoft-lens-fc965de7-499d-4d38-aeae-f6e48271652d\">support article</a>.&nbsp;</p><p>\n</p>"
+    }
+  },
+  {
     "startDateTime": "2025-08-11T23:31:53Z",
     "endDateTime": "2026-01-30T07:00:00Z",
     "lastModifiedDateTime": "2025-12-16T20:16:24.233Z",
@@ -9480,8 +9510,8 @@
   },
   {
     "startDateTime": "2025-10-13T23:25:16Z",
-    "endDateTime": "2026-03-30T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-13T18:37:01.547Z",
+    "endDateTime": "2026-04-30T08:00:00Z",
+    "lastModifiedDateTime": "2026-01-09T17:31:08.403Z",
     "title": "(Updated) Microsoft Defender for Office 365: Enhancing the quarantine experience for administrators",
     "id": "MC1171845",
     "category": "stayInformed",
@@ -9502,12 +9532,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft Defender for Office 365 will enhance quarantine by listing messages by individual recipients, improving backend durability and consistency. Rollout starts January 2026, completing by February. Admins must release quarantined messages per user. No changes affect end users; update internal processes accordingly."
+        "value": "Microsoft Defender for Office 365 is enhancing quarantine for admins by listing messages by individual recipients, improving backend durability, and requiring message release per user. Rollout begins January 2026, completing by March. No changes affect end users. Admins should update practices and documentation accordingly."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p></p><p>Updated November 12, 2025: We have updated the timeline. Thank you for your patience.</p><p>We’re <b>improving the quarantine experience</b> in <i>Microsoft Defender for Office 365</i> to deliver greater clarity, visibility, and ease of use for administrators. These updates include backend enhancements for improved durability and consistency as well as experience updates to list messages in quarantine by individual recipients to simplify navigation and management.</p>\n\n<b>When this will happen:</b>\n<ul>\n<li><b>General Availability (Worldwide and GCC): </b>We will begin rolling out in early January 2026 (previously early November 2025) and expect to complete by end of February 2026 (previously mid-December 2025).\n</li><li><b>General Availability (GCCH and DoD): </b>We will begin rolling out in early January 2026 (previously early December 2025) and expect to complete by end of February 2026 (previously early January 2026).</li>\n</ul>\n\n<b>How this affects your organization:</b>\n<ul>\n<li><b>Who is affected:</b> Administrators managing quarantined messages in Microsoft Defender for Office 365.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Quarantined messages will now be listed by individual recipient instead of grouped by multiple recipients.</li>\n    <li>Backend enhancements will improve durability and consistency.</li>\n    <li>Existing quarantine release cmdlets will all remain functional. Administrators should be cognizant that `<b>ReleaseToAll</b>` now applies to a single user as aggregation has been removed. Admins must release messages for each intended mailbox individually.</li>\n    <li>No changes to end-user experience.</li></ul></li></ul><p><i>Screenshot 1 - <b>Updated </b>quarantine view showing <b>individual recipients listed separately</b> in the Recipient column:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/246243b9-3537-4b95-b438-4fcfaca3145f/1a3b905a51335e39e4f0f7e236884dd363e78119.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i></i></p><p><i>Screenshot 2 - <b>Existing</b> quarantine view showing <b>multiple recipients</b> in the Recipient column:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/81c2e6a8-afca-4f34-8a87-a1d293d53c8f/ac875dbc78ddaa73fe5b580e3b9d2fbb3435f56a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><ul>\n  </ul>\n<p></p><ul>\n</ul>\n\n<p></p><p><b>What you can do to prepare:</b>\n</p><ul>\n<li>Review your organization’s quarantine release practices.</li>\n<li>Update any internal documentation to reflect the new recipient-level view.</li>\n<li>Communicate this change to helpdesk or support teams as needed.</li>\n<li>Learn more:&nbsp;<ul><li><a href=\"https://learn.microsoft.com/defender-office-365/mdo-about\">Microsoft Defender for Office 365 overview | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-admin-manage-messages-files\" target=\"_blank\">Manage quarantined messages and files as an admin | Microsoft Defender for Office 365 | Microsoft Learn</a></li></ul></li></ul><p><b>Compliance considerations:</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
+      "content": "<p></p><p>Updated January 9, 2026: We have updated the timeline. Thank you for your patience.</p><p>We’re <b>improving the quarantine experience</b> in <i>Microsoft Defender for Office 365</i> to deliver greater clarity, visibility, and ease of use for administrators. These updates include backend enhancements for improved durability and consistency as well as experience updates to list messages in quarantine by individual recipients to simplify navigation and management.</p>\n\n<b>When this will happen:</b>\n<ul>\n<li><b>General Availability (Worldwide and GCC): </b>We will begin rolling out in early January 2026 (previously early November 2025) and expect to complete by end of March 2026 (previously end of February).\n</li><li><b>General Availability (GCCH and DoD): </b>We will begin rolling out in early January 2026 (previously early December 2025) and expect to complete by end of March 2026 (previously end of February).</li>\n</ul>\n\n<b>How this affects your organization:</b>\n<ul>\n<li><b>Who is affected:</b> Administrators managing quarantined messages in Microsoft Defender for Office 365.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Quarantined messages will now be listed by individual recipient instead of grouped by multiple recipients.</li>\n    <li>Backend enhancements will improve durability and consistency.</li>\n    <li>Existing quarantine release cmdlets will all remain functional. Administrators should be cognizant that `<b>ReleaseToAll</b>` now applies to a single user as aggregation has been removed. Admins must release messages for each intended mailbox individually.</li>\n    <li>No changes to end-user experience.</li></ul></li></ul><p><i>Screenshot 1 - <b>Updated </b>quarantine view showing <b>individual recipients listed separately</b> in the Recipient column:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/246243b9-3537-4b95-b438-4fcfaca3145f/1a3b905a51335e39e4f0f7e236884dd363e78119.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i></i></p><p><i>Screenshot 2 - <b>Existing</b> quarantine view showing <b>multiple recipients</b> in the Recipient column:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/81c2e6a8-afca-4f34-8a87-a1d293d53c8f/ac875dbc78ddaa73fe5b580e3b9d2fbb3435f56a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><ul>\n  </ul>\n<p></p><ul>\n</ul>\n\n<p></p><p><b>What you can do to prepare:</b>\n</p><ul>\n<li>Review your organization’s quarantine release practices.</li>\n<li>Update any internal documentation to reflect the new recipient-level view.</li>\n<li>Communicate this change to helpdesk or support teams as needed.</li>\n<li>Learn more:&nbsp;<ul><li><a href=\"https://learn.microsoft.com/defender-office-365/mdo-about\">Microsoft Defender for Office 365 overview | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-admin-manage-messages-files\" target=\"_blank\">Manage quarantined messages and files as an admin | Microsoft Defender for Office 365 | Microsoft Learn</a></li></ul></li></ul><p><b>Compliance considerations:</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
     }
   },
   {
@@ -22071,30 +22101,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>The last phase of the changes to certificate-based authentication on domain controllers (DC) is here. As stated in reminders, Full Enforcement mode phase starts in February 2025. This mode change occurs when you install the Windows updates dated February 2025 or later.</div><div><br></div><div>Starting in May 2022, certificate-based authentication on Windows DCs started to go through a series of changes to enhance security, following a planned timeline of Enablement Phases.</div><div><br></div><div>After you install the Windows security updates released in February 2025 or later, authentication for certificates that do not meet the expected mapping requirements will be denied. This change is known as Full Enforcement mode. However, you can move back to Compatibility<b> </b>mode until September 2025. For full details, see <a href=\"https://support.microsoft.com/topic/ad2c23b0-15d8-4340-a468-4d4f3b188f16\" rel=\"noopener noreferrer\" target=\"_blank\">KB5014754</a>.</div><div>&nbsp;</div><div><b>When will this happen:</b></div><div>In February 2025, devices will move to Full Enforcement mode.</div><div>&nbsp;</div><div><b>How this will affect your organization:</b></div><div>When you install the February 2025 or later Windows update, devices that are not already in Full Enforcement mode (<b>StrongCertificateBindingEnforcement</b>&nbsp;registry value is set to 2) will be moved to Full Enforcement mode. If authentication is denied, you will see Event ID 39 (or Event ID 41 for Windows Server 2008 R2 SP1 and Windows Server 2008 SP2). You will have the option to set the registry key value back to 1 (Compatibility mode) at this stage. In the September 2025 Windows update, the <b>StrongCertificateBindingEnforcement</b>&nbsp;registry value will no longer be supported.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><div>Review the date changes in the “Take action”, “Full Enforcement mode”, and “Registry key information” sections of <a href=\"https://support.microsoft.com/topic/ad2c23b0-15d8-4340-a468-4d4f3b188f16\" rel=\"noopener noreferrer\" target=\"_blank\">KB5014754</a>. Take the appropriate action needed to make your devices more secure.</div><div>&nbsp;</div><div><b>Additional information:</b></div><div>For full detailed information, see <a href=\"https://support.microsoft.com/topic/ad2c23b0-15d8-4340-a468-4d4f3b188f16\" rel=\"noopener noreferrer\" target=\"_blank\">KB5014754: Certificate-based authentication changes on Windows domain controllers</a>.</div>"
-    }
-  },
-  {
-    "startDateTime": "2025-01-09T17:59:21.133Z",
-    "endDateTime": "2026-01-09T17:59:21.087Z",
-    "lastModifiedDateTime": "2025-01-09T17:59:22.22Z",
-    "title": "Windows Office Hours: January 16, 2025",
-    "id": "MC975829",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>If you are an IT admin with questions about managing and updating Windows, we want to help. Every third Thursday of the month, we host a live chat-based event on the Tech Community called Windows Office Hours. Members of the Windows, Intune, Windows Autopilot, Windows Autopatch, and Windows 365 engineering teams will be standing by to answer your questions. We also have experts from FastTrack, the Customer Acceleration Team, and Microsoft public sector teams.&nbsp;</div><div><br></div><div>Want to attend the&nbsp;January 16&nbsp;session of Office Hours?&nbsp;<a href=\"https://techcommunity.microsoft.com/t5/s/gxcuf89792/attachments/gxcuf89792/WindowsEvents/5239/1/Windows%20Office%20Hours%20-%20January%2016%202025.ics\" rel=\"noopener noreferrer\" target=\"_blank\">Add it to your calendar</a> and select Attend on the <a href=\"https://techcommunity.microsoft.com/event/windowsevents/windows-office-hours-january-16-2024/4358417\" rel=\"noopener noreferrer\" target=\"_blank\">event page</a> to let us know you’re coming.&nbsp;There is no video or live meeting component. Simply visit the event page, log in to the Tech Community, and leave your questions in the Comments section. You can also bookmark&nbsp;<a href=\"https://aka.ms/Windows/OfficeHours\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/Windows/OfficeHours</a>&nbsp;for upcoming dates (and the ability to add this event to your calendar). We look forward to helping you.</div>"
     }
   },
   {
