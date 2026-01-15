@@ -14944,7 +14944,7 @@
   {
     "startDateTime": "2025-11-25T00:00:52Z",
     "endDateTime": "2026-02-02T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-17T18:18:50.843Z",
+    "lastModifiedDateTime": "2026-01-15T16:17:06.323Z",
     "title": "(Updated) Upcoming Change to Teams Desktop Client on Windows",
     "id": "MC1189656",
     "category": "planForChange",
@@ -14965,12 +14965,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Thank you for the valuable feedback we’ve received. We are currently reassessing the rollout timelines to ensure alignment with your needs and operational requirements. You can expect a formal update from us by mid to late January 2026."
+        "value": "The planned renaming of the Teams Calling and Meetings executable was canceled due to a Windows fix in versions 24H2 and 25H2. No admin action is needed. A new process, ms-teams_modulehost.exe, will be introduced for calling features to improve performance, requiring endpoint allowlisting and QoS updates."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated December 17, 2025: We understand that implementing the current guidance involves considerable effort for administrators, and we are actively working to reduce this impact. We are exploring ways to make policy changes as seamless as possible, in close partnership with the Windows team.</p><p>Given this ongoing work, we recommend pausing any testing or configuration updates related to this feature. Updated instructions and revised guidance will be shared as part of the formal communication planned for January 2026.</p><p>Thank you for the valuable feedback we’ve received. We are currently reassessing the rollout timelines to ensure alignment with your needs and operational requirements. You can expect a formal update from us by mid to late January 2026.</p><p><b>[Introduction]</b>\n</p><p>We’re improving the performance and startup time of calling features in the Microsoft Teams Desktop Client for Windows. To achieve this, we’re introducing a new child process named <i>ms-teams_modulehost.exe</i> that will handle the calling stack separately from the main application process (<i>ms-teams.exe</i>). This change optimizes resource usage and enhances meeting experiences.</p>\n\n<b>[When this will happen:]</b>\n<p>Updated rollout timing will be announced in January 2026</p><p>Note: Timelines may shift due to year-end feature flag rollout freeze.</p>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b> All users running the Teams Desktop Client on Windows.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>A new process (<i>ms-teams_modulehost.exe</i>) will appear in Task Manager under the main Teams process (<i>ms-teams.exe</i>).</li>\n<li>This process is dedicated to calling features and improves performance.</li>\n<li>No changes to user workflows or UI; however, admins should ensure endpoint and security software allow this new process.</li>\n</ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Update endpoint management and security software to allowlist <i>ms-teams_modulehost.exe</i> alongside <i>ms-teams.exe</i>.</li>\n<li>Communicate this change to helpdesk staff to avoid confusion during troubleshooting.</li>\n<li>Update internal documentation if you reference Teams process names.</li><li>Make sure the same QoS settings applied to <i>ms-teams.exe</i> are also applied to <i>ms-teams_modulehost.exe</i>. Refer to this page for details: <a href=\"https://learn.microsoft.com/microsoftteams/qos-in-teams\" target=\"_blank\">Implement Quality of Service (QoS) in Microsoft Teams</a><ul><li><b>DO NOT</b> remove QoS settings of <i>ms-teams.exe</i>. Only add QoS settings for <i>ms-teams_modulehost.exe</i>.</li></ul></li>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>\n<p></p>"
+      "content": "<p>Updated January 15, 2026: We are canceling a proposed change related to renaming the existing Calling and Meetings executable. \n</p><p>\n</p><p>No action is required from administrators. This change did not introduce a new binary. It involved renaming the existing executable used for Calling and Meetings as a workaround for a Windows compatibility issue.&nbsp;</p><p><b>What Happened?&nbsp;</b></p><p>To reduce administrative effort, we partnered with the Windows team to deliver the fix for a Windows compatibility issue. With the Windows fix now fully rolled out in Windows 24H2 and 25H2, the executable name change is no longer required and has been rolled back.&nbsp;</p><p>Was this a security, reliability, or compliance issue?&nbsp;</p><ul><li><b>This was not a security or compliance issue.</b>&nbsp;</li><li>It was a platform compatibility issue in Windows.&nbsp;</li><li>No customer data, identity, or tenant configuration was at risk.&nbsp;</li></ul><p><b>Was my tenant impacted?&nbsp;</b></p><p>Only organizations participating in our <i>Technology Adoption Program (TAP)</i> were affected. Specifically, the change applied only to the TAP Admin earlyadopter subset (Ring 1.5).&nbsp;</p><p>If your organization does not participate in the Microsoft Technology Adoption Program, you were <i>not impacted in any way</i>. The change has been fully rolled back for TAP participants, with no lasting configuration or behavioral changes on client machines. No administrator action is required.&nbsp;</p><p><b>What if we haven’t deployed recent Windows updates yet?&nbsp;</b></p><p>We understand that many enterprises deploy Windows cumulative updates on managed timelines.&nbsp;</p><ul><li><i>There is no risk or degradation if the referenced Windows KBs are not installed.&nbsp;</i></li><li>New features that depend on these Windows updates will <i>explicitly check for the presence of the required KBs</i> and will only enable when they are available.&nbsp;</li><li>If the KBs are not installed, those features simply remain disabled—<i>no functionality breaks and no admin action is required</i>.&nbsp;</li></ul><p><b>Windows updates that include the fix</b>&nbsp;</p><p>The Windows compatibility fix is included in Windows updates for versions <i>24H2</i> and <i>25H2</i>, delivered through <a href=\"https://support.microsoft.com/en-us/topic/november-11-2025-kb5068861-os-builds-26200-7171-and-26100-7171-2e0512e4-3ad4-4da6-958c-a468a1af949e\" target=\"_blank\">KB5068861</a>.&nbsp;</p><p><b>What to expect next?</b>&nbsp;</p><ul><li>No changes to admin configuration or tenant settings&nbsp;</li><li>No service disruption&nbsp;</li></ul><p>---Original message---</p><p><b>[Introduction]</b>\n</p><p>We’re improving the performance and startup time of calling features in the Microsoft Teams Desktop Client for Windows. To achieve this, we’re introducing a new child process named <i>ms-teams_modulehost.exe</i> that will handle the calling stack separately from the main application process (<i>ms-teams.exe</i>). This change optimizes resource usage and enhances meeting experiences.</p>\n\n<b>[When this will happen:]</b>\n<p>Rollout will begin early January 2026 and complete by late January 2026.</p><p>Note: Timelines may shift due to year-end feature flag rollout freeze.</p>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b> All users running the Teams Desktop Client on Windows.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>A new process (<i>ms-teams_modulehost.exe</i>) will appear in Task Manager under the main Teams process (<i>ms-teams.exe</i>).</li>\n<li>This process is dedicated to calling features and improves performance.</li>\n<li>No changes to user workflows or UI; however, admins should ensure endpoint and security software allow this new process.</li>\n</ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Update endpoint management and security software to allowlist <i>ms-teams_modulehost.exe</i> alongside <i>ms-teams.exe</i>.</li>\n<li>Communicate this change to helpdesk staff to avoid confusion during troubleshooting.</li>\n<li>Update internal documentation if you reference Teams process names.</li>\n<li>Make sure the same QoS settings applied to <i>ms-teams.exe</i> are also applied to <i>ms-teams_modulehost.exe</i>. Refer to this page for details: <a href=\"https://learn.microsoft.com/microsoftteams/qos-in-teams\" target=\"_blank\">Implement Quality of Service (QoS) in Microsoft Teams</a><ul><li><b>DO NOT</b> remove QoS settings of <i>ms-teams.exe</i>. Only add QoS settings for <i>ms-teams_modulehost.exe</i>.</li></ul></li>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>\n<p></p>"
     }
   },
   {
@@ -17219,8 +17219,8 @@
   },
   {
     "startDateTime": "2025-12-10T23:37:25Z",
-    "endDateTime": "2026-02-15T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-16T22:27:26.13Z",
+    "endDateTime": "2026-03-02T08:00:00Z",
+    "lastModifiedDateTime": "2026-01-15T17:37:31.07Z",
     "title": "(Updated) Microsoft 365 Copilot: Declarative agents model upgrade to GPT-5.1",
     "id": "MC1194070",
     "category": "stayInformed",
@@ -17241,12 +17241,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft 365 Copilot declarative agents will upgrade to the GPT-5.1 model with an auto architecture, rolling out worldwide from early January to mid-January 2026. The advanced reasoning model will handle complex queries, enabled by default with no admin changes or required user action."
+        "value": "Microsoft 365 Copilot declarative agents will upgrade to the GPT-5.1 model with an auto architecture, rolling out worldwide from mid- to end-January 2026. The upgrade requires no admin changes, is enabled by default, and offers advanced reasoning for complex queries. No compliance issues identified."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated December 16, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b>\n<p><b>Microsoft 365 Copilot declarative agents are upgrading to the GPT-5.1 model</b>, which uses an “auto” architecture. The orchestrator will automatically select the best model for each scenario, either the fast “chat” model or the advanced reasoning model, based on the user prompt.</p>\n\n<b>[When this will happen]</b>\n<p><b>General Availability (Worldwide): </b>Rollout will begin <b>early January 2026 (previously&nbsp;mid-December 2025)</b> and is expected to complete by <b>mid-January 2026</b>.</p>\n\n<b>[How this affects your organization]</b>\n<ul>\n</ul><p><b>Who is affected:</b> All tenants using Microsoft 365 Copilot declarative agents.</p><p><b>What will happen:</b>\n</p><ul>\n\n\n\n</ul><ul>\n</ul>\n<p></p><ul><li>Declarative agents will upgrade to GPT-5.1.</li><li>The advanced reasoning model will be available for complex queries.</li><li>No admin configuration changes are required.</li><li>Feature will be<b> enabled by default</b> for all applicable tenants.</li>\n</ul><ul>\n</ul>\n\n<b>[What you can do to prepare]</b>\n<p>No action is required.</p>\n\n<b>[Compliance considerations]</b>\n<p>No compliance considerations identified. Review as appropriate for your organization.</p>\n</p>"
+      "content": "<p>Updated January 15, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b>\n</p><p><b>Microsoft 365 Copilot declarative agents are upgrading to the GPT-5.1 model</b>, which uses an “auto” architecture. The orchestrator will automatically select the best model for each scenario, either the fast “chat” model or the advanced reasoning model, based on the user prompt.</p>\n\n<b>[When this will happen]</b>\n<p><b>General Availability (Worldwide): </b>Rollout will begin mid-January 2026 (previously&nbsp;early January)&nbsp;and is expected to complete by end of January 2026 (previously&nbsp;mid-January).</p>\n\n<b>[How this affects your organization]</b>\n<ul>\n</ul><p><b>Who is affected:</b> All tenants using Microsoft 365 Copilot declarative agents.</p><p><b>What will happen:</b>\n</p><ul>\n\n\n\n</ul><ul>\n</ul>\n<p></p><ul><li>Declarative agents will upgrade to GPT-5.1.</li><li>The advanced reasoning model will be available for complex queries.</li><li>No admin configuration changes are required.</li><li>Feature will be<b> enabled by default</b> for all applicable tenants.</li>\n</ul><ul>\n</ul>\n\n<b>[What you can do to prepare]</b>\n<p>No action is required.</p>\n\n<b>[Compliance considerations]</b>\n<p>No compliance considerations identified. Review as appropriate for your organization.</p>\n<p></p>"
     }
   },
   {
@@ -20110,8 +20110,8 @@
   {
     "startDateTime": "2026-01-14T02:06:16Z",
     "endDateTime": "2026-04-13T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-14T02:06:30.937Z",
-    "title": "Improvements to meeting threads in Microsoft Teams channels",
+    "lastModifiedDateTime": "2026-01-15T17:46:25.77Z",
+    "title": "(Updated) Improvements to meeting threads in Microsoft Teams channels",
     "id": "MC1217638",
     "category": "stayInformed",
     "severity": "normal",
@@ -20129,12 +20129,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft Teams will reduce automatic meeting updates in channel conversations starting January 2026, making threads cleaner with reply counts showing real user responses. Meeting details remain accessible in threads. The update is automatic, requires no admin action, and affects all Teams users in channel meetings."
+        "value": "Microsoft Teams will reduce automatic meeting updates in channel conversations starting January 2026, making threads cleaner with reply counts showing real user responses. Meeting details remain accessible in threads. The update requires no admin action and will roll out automatically worldwide by March 2026."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We’re improving channel meetings in Microsoft Teams by reducing automatic meeting updates in channel conversations. This change helps keep channels cleaner and focused on real user replies, while meeting details remain accessible when you open the meeting thread.</p><p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Targeted Release:</b> Rolling out mid-January 2026, expected to complete by late January 2026.</li>\n<li><b>General Availability (Worldwide):</b> Rolling out early February 2026, expected to complete by late February 2026.</li>\n<li><b>General Availability (GCC, GCCHigh, DoD):</b> Rolling out early March 2026, expected to complete by late March 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All Microsoft Teams users participating in channel meetings.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Automatic meeting updates in channel conversations will be reduced.</li>\n<li>Channel threads will appear cleaner and reply counts will reflect actual user responses.</li>\n<li>Meeting details remain accessible by opening the meeting thread.</li>\n<li>No admin configuration changes are required; the feature is enabled by default.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required. This update will roll out automatically.</li>\n<li>Optional: Communicate this change to helpdesk staff to reduce potential confusion.</li>\n<li>For more information on channel meetings, visit: <a href=\"https://learn.microsoft.com/microsoftteams/meetings-channels\">Channel meetings in Teams</a>.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p><b>Updated January 15, 2026: We have updated the content. Thank you for your patience.&nbsp;</b></p><p><b>[Introduction]</b></p>\n<p>We’re improving scheduled channel meetings in Microsoft Teams by reducing automatic meeting updates in channel conversations. This change helps keep channels cleaner and focused on real user replies, while meeting details remain accessible when you open the meeting thread.</p><p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Targeted Release:</b> Rolling out mid-January 2026, expected to complete by late January 2026.</li>\n<li><b>General Availability (Worldwide):</b> Rolling out early February 2026, expected to complete by late February 2026.</li>\n<li><b>General Availability (GCC, GCCHigh, DoD):</b> Rolling out early March 2026, expected to complete by late March 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All Microsoft Teams users participating in scheduled channel meetings.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Automatic meeting updates in channel conversations will be reduced.</li>\n<li>Channel threads will appear cleaner and reply counts will reflect actual user responses.</li>\n<li>Meeting details remain accessible by opening the meeting thread.</li>\n<li>No admin configuration changes are required; the feature is enabled by default.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required. This update will roll out automatically.</li>\n<li>Optional: Communicate this change to helpdesk staff to reduce potential confusion.</li>\n<li>For more information on channel meetings, visit: <a href=\"https://learn.microsoft.com/microsoftteams/meetings-channels\">Channel meetings in Teams</a>.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -20232,7 +20232,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T16:13:40.52676Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T16:13:40.5267603Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T16:13:40.5267604Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T16:13:40.5267605Z\",\"LatestRing\":null}]}"
+        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T18:14:27.7065408Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T18:14:27.7065409Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T18:14:27.706541Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T18:14:27.7065411Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20585,7 +20585,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T16:13:40.5264788Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T16:13:40.5264792Z\",\"LatestRing\":null}]}"
+        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T18:14:27.7063014Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-15T18:14:27.7063016Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20677,6 +20677,30 @@
     "body": {
       "contentType": "html",
       "content": "<b>[Introduction]</b><p>We're introducing the ability to <b>save meeting events as drafts</b> in <i>Outlook on iOS</i>. This update helps users start a meeting invitation, pause, and return to it later, providing more flexibility when scheduling on mobile devices.</p><p>This message is associated with Microsoft Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=545895\" target=\"_blank\">545895</a>.</p>\n\n<b>[When this will happen]</b><p><b>General Availability (Worldwide):</b> Rollout will begin in<b> late January 2026</b> and is expected to complete by<b> late February 2026</b>.</p>\n\n<b>[How this affects your organization]</b><p><i>Who is affected:</i></p>\n<ul>\n  <li>All users creating calendar events in <i>Outlook on iOS </i>connected to Exchange Online.</li>\n</ul>\n\n<p><i>What will happen:</i></p>\n<ul>\n  <li>Users will see a new option to save an in-progress meeting as a draft when dismissing an event with at least one attendee:</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d28fc86a-0340-4f4b-871a-4f93903b9469/89608d6ad66af74dc41f5fada71e9ef36bbbcde1.png\" style=\"width: 400px;\"></p><p></p><p></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/0fae0b9a-1c56-4f6e-936a-e10df3da86b0/d7f5c9f4d382b45e72b9d607984f0f572bf139ef.png\" style=\"width: 400px;\"></p>\n  <li>Draft events will appear on the calendar with a “<b>[Draft]</b>” label in the title:</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/aed1702d-82ae-475b-916c-c240f2544573/0e7e22617c21bcd29d065c430e9d55ae6306aabd.png\" style=\"width: 400px;\"></p>\n  <li>The feature is <b>on by default </b>and requires no admin configuration.</li>\n  <li>No changes are made to existing policies or settings.</li>\n</ul>\n\n<b>[What you can do to prepare]</b><p>No admin action is required. You may choose to:</p>\n<ul>\n  <li>Inform users about the new “<i><b>Save as Draft</b></i>” option in <i>Outlook for iOS</i>.</li>\n  <li>Update internal training materials or documentation as needed.</li>\n</ul>\n\n<b>[Compliance considerations]</b><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-01-15T17:25:30Z",
+    "endDateTime": "2026-02-15T17:25:30Z",
+    "lastModifiedDateTime": "2026-01-15T17:25:54.04Z",
+    "title": "Power Automate - Debug easily into condition actions at runtime",
+    "id": "MC1218294",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Power Automate"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to debug condition actions by displaying values passed into the dynamic content and expressions at runtime in Power Automate. This feature reached general availability on December 31, 2025.<br><br><b>How does this affect me?</b><br>This feature simplifies the debugging experience for the 'Condition' action after your flow runs. You can view detailed results for each row in a condition action, including the values in dynamic content and expressions, helping to locate the part of the condition didn't work as expected. This is helpful for flows with complex condition logic that use multiple expressions and dynamic content.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/ADO13261\">Debug easily into condition actions at runtime</a>."
     }
   },
   {
