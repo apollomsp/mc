@@ -3134,46 +3134,6 @@
     }
   },
   {
-    "startDateTime": "2025-06-19T22:58:22Z",
-    "endDateTime": "2026-01-22T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-05T17:12:05.84Z",
-    "title": "Microsoft Teams admin center: Apply only configured settings from configuration profiles for Teams Android devices",
-    "id": "MC1098931",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 for the web"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "313800"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams admin center will update Android device configuration profiles so only explicitly configured settings apply, preventing unintended changes. Rollout begins July 2025 worldwide, with later dates for GCC High and DoD. No admin action is needed; settings left \"Not configured\" remain unchanged."
-      },
-      {
-        "name": "Platforms",
-        "value": "TeamsAndSurfaceDevices, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated November 5, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>We’re introducing an improvement to configuration profiles in the Microsoft Teams admin center for Android devices. Admins will now have more granular control—only explicitly configured settings in a profile will be applied to devices, preventing unintended changes.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?featureid=313800\" target=\"_blank\">313800</a>.\n</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide, GCC): We will begin rolling out early July 2025 and expect to complete by mid-July 2025.\n</p><p>General Availability (GCC High): We will begin rolling out early November 2025 (previously early August) and expect to complete by mid-November 2025 (previously mid-August).\n</p><p>General Availability (DoD): We will begin rolling out early December 2025 (previously early September) and expect to complete by mid-December 2025 (previously mid-September).\n</p><p>[How this will affect your organization:]</p><p>Before this rollout, assigning a configuration profile applies all settings—including those left unconfigured—with default values. This sometimes causes unintended changes (such as language or time zone).\n</p><p>After this rollout:</p><ul><li>Only settings explicitly configured in the profile will be applied.\n</li><li>Settings left as <i>Not configured</i> will remain unchanged on the device.\n</li><li>This change simplifies bulk management and reduces the risk of overwriting regional or OEM-specific defaults.</li></ul><p>The new configuration profile experience will be available by default for admins to configure, as follows:</p><p><i>Create a configuration profile\n</i></p><p>1. Go to <i>Teams Devices &gt;</i> [device type]<i> &gt; Configuration profiles</i> and select <i>Add.</i></p><p>2. By default, all settings will display as <i>Not configured</i>.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/59de52af-2f67-4302-8e42-232a559b586a\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p>3. Enter a name for the profile and optionally add a friendly description.\n</p><p>4. Configure the settings you want for the profile and select <i>Review changes.\n</i></p><p>5. In the Review configured settings pop-up, compare and confirm before saving. Select <i>Save</i>.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/08724f96-76c4-471c-946d-0db7cb585e1b\" style=\"width: 400px;\" alt=\"admin controls\">\n</p><p><i>Assign a configuration profile\n</i></p><p>1. Go to <i>Teams Devices</i> &gt; [device type]\n</p><p>2. Select one or more devices, and then select <i>Assign configuration.\n</i></p><p>3. If any selected devices are from OEMs that don’t yet support this feature, you will see a warning in the Assign a configuration pane:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/78f8a738-a1f4-43f9-85a7-f32786be09de\" style=\"width: 300px;\" alt=\"admin controls\">\n</p><p><b>Note:</b>Many OEMs have already implemented support for this feature. We are working with the remaining OEMs to enable it over the next few months. We will publish full OEM support details in the public documentation after the release begins.</p><p>4. In the <i>Assign a configuration</i> pane, search for the configuration profile to assign to the selected devices. Select <i>Apply</i>.</p><p><i>Edit a configuration profile\n</i></p><ol><li>Go to <i>Teams Devices &gt;</i> [device type] <i>&gt; Configuration profiles.\n</i></li><li>Select the configuration profile you want to edit.\n</li><li>Configure the desired settings and select <i>Review changes.\n</i></li><li>Review and confirm the settings in the pop-up, then select <i>Save</i>.\n</li><li>If the profile was already assigned to devices, changes will be applied automatically. If the profile was not already assigned, assign the updated profile to devices as needed.\n</li></ol><p><i>Reassign a configuration profile\n</i></p><p>To reassign a configuration profile to the existing assigned devices, without making any changes to settings\n</p><ol><li>Go to T<i>eams Devices &gt;</i> [device type]<i> &gt; Configuration profiles.\n</i></li><li>Select the configuration profile you want to reassign.\n</li><li>At the bottom of the configuration profile, a Reassign button will appear if the profile was assigned to a device</li><li>Select <i>Reassign</i>, review the configured settings, and then select <i>Save</i>.</li></ol><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before or after the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your admins and/or users about this change and update internal documentation.</p><p>Learn more: The Use configuration profiles section in <a href=\"https://learn.microsoft.com/microsoftteams/devices/device-management#use-configuration-profiles-in-teams\" target=\"_blank\">Manage devices in Microsoft Teams - Microsoft Teams | Microsoft Learn</a> (will be updated before rollout)</p>"
-    }
-  },
-  {
     "startDateTime": "2025-06-20T22:15:22Z",
     "endDateTime": "2026-01-26T07:00:00Z",
     "lastModifiedDateTime": "2025-08-22T17:13:58.313Z",
@@ -19497,7 +19457,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8335068Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8335071Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8335072Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8335073Z\",\"LatestRing\":null}]}"
+        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8864844Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8864845Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8864846Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8864847Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19850,7 +19810,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8337453Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8337455Z\",\"LatestRing\":null}]}"
+        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8862429Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8862432Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20141,7 +20101,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8336723Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8336724Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8336725Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8863192Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8863193Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8863194Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20371,7 +20331,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8336259Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.833626Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8336261Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8336262Z\",\"LatestRing\":\"TargetedRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-01-22T08:11:13.886367Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8863672Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8863673Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8863673Z\",\"LatestRing\":\"TargetedRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -20759,7 +20719,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8336501Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T06:12:47.8336502Z\",\"LatestRing\":null}]}"
+        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8863445Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-01-22T08:11:13.8863446Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
