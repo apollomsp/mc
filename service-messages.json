@@ -10350,7 +10350,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6436605Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6436607Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6436609Z\",\"LatestRing\":null}]}"
+        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6787922Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6787923Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6787925Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -16642,102 +16642,6 @@
     }
   },
   {
-    "startDateTime": "2026-01-01T21:16:14Z",
-    "endDateTime": "2026-02-01T21:16:14Z",
-    "lastModifiedDateTime": "2026-01-01T21:17:22.817Z",
-    "title": "Power Platform admin center – Manage external authentication provider governance",
-    "id": "MC1210742",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability of new controls, in the Power Platform admin center, that let admins select which external identity providers can be used on their Power Pages sites. This feature will reach general availability on January 30, 2026.<br><br><b>How does this affect me?</b><br>With this feature, admins can manage external authentication providers with environment-level governance controls and optional site-level exceptions. Admins can centrally enforce which identity providers are allowed across all sites in an environment, while still enabling site-specific flexibility. Only the allowed identity providers will be displayed to users when setting up authentication, ensuring consistent governance and alignment with enterprise security policies.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/13477\">Manage external authentication provider governance</a>."
-    }
-  },
-  {
-    "startDateTime": "2026-01-01T21:28:21Z",
-    "endDateTime": "2026-02-01T21:28:21Z",
-    "lastModifiedDateTime": "2026-01-01T21:30:14.81Z",
-    "title": "Dynamics 365 Contact Center - Debug routing issues with Application Insights dashboard",
-    "id": "MC1210743",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to debug routing issues with the Application Insights dashboard in Dynamics 365 Contact Center. This feature will reach general availability on January 31, 2026.<br><br>\n<b>How does this affect me?</b><br> \nThis feature provides efficient troubleshooting of routing delays and assignment issues via the Application Insights Debug dashboard.<br><br>\n \nKey capabilities of the feature include:\n<ul>\n<li>Conversation trend analysis: Visualize trends over the last 24 hours or a custom time range, with filters by channel and queue.</li>\n<li>Assignment Performance: Assess time-to-assign and analyze assignment events to identify bottlenecks.</li>\n<li>Non-assignment reasons: View top reasons for non-assignment and drill into specific cases.</li>\n<li>Conversation timeline: Inspect the complete lifecycle of a conversation, including assignment events.</li>\n<li>Representative details: Access representative presence, capacity, and skills at the time of assignment for better routing insights.</li>\n<li>Assignment events: View the skills, presence, and capacity required by the work item, and analyze each assignment attempt to a specific representative with their actual presence, skills, and capacity. Identify if the attempt was accepted, rejected, or not responded to, and understand why a particular representative wasn't assigned the work item.</li>\n<li>Self-serve troubleshooting: Resolve issues without leaving the Copilot Service workspace app.</li> \n</ul>\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-01-01T21:35:08Z",
-    "endDateTime": "2026-02-01T21:35:08Z",
-    "lastModifiedDateTime": "2026-01-01T21:36:56.783Z",
-    "title": "Dynamics 365 Contact Center - Debug issues in automatic assignment with enhanced logs",
-    "id": "MC1210746",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to debug issues in automatic assignment with enhanced logs in Dynamics 365 Contact Center. This feature will reach general availability on January 31, 2026.<br><br><b>How does this affect me?</b><br>With this update, administrators can now see the additional information that is logged in Application Insights for improved diagnostics.<br><br>The key enhancements include:<ul><li>Presence changes</li><li>Unit-based and profile-based capacity changes</li><li>Representative skill changes</li><li>Queue membership changes</li><li>Representative, skill, queue, and capacity profile names with the corresponding IDs</li><li>Assignment ruleset and rule ID matched during the assignment attempt (for custom assignment rulesets)</li><li>Assignment ruleset and rule details (for custom assignment rulesets)</li></ul>These details are logged across voice, digital messaging, and record channels to provide transparency into the automatic assignment process.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-01-01T21:44:58Z",
-    "endDateTime": "2026-02-01T21:44:58Z",
-    "lastModifiedDateTime": "2026-01-01T21:46:32.007Z",
-    "title": "Power Pages – Build modern single-page applications",
-    "id": "MC1210747",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to build modern single-page applications in Power Pages. This feature will reach general availability on January 31, 2026.<br><br> \n<b>How does this affect me?</b><br> \n\nWith this feature, Power Pages supports creation and deployment of single-page applications, allowing you to build fully customized, high-performance web experiences using familiar front-end frameworks like React. You can create modern, component-driven interfaces that integrate with Power Pages while leveraging the platform's security, data integration, and hosting capabilities.<br><br> \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/13487/1\"target=\"_blank\">Create and deploy a single-page application in Power Pages</a>."
-    }
-  },
-  {
     "startDateTime": "2026-01-03T02:57:54Z",
     "endDateTime": "2026-05-31T07:00:00Z",
     "lastModifiedDateTime": "2026-01-07T17:09:05.447Z",
@@ -17778,7 +17682,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6435712Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6435715Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6435717Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6435718Z\",\"LatestRing\":null}]}"
+        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6786773Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6786774Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6786776Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6786777Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18102,7 +18006,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6439204Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6439206Z\",\"LatestRing\":null}]}"
+        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6789818Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.678982Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18394,7 +18298,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6438731Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6438732Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6438734Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788834Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788835Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788836Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18625,7 +18529,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-02-01T20:08:36.643668Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6436682Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6436683Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6436685Z\",\"LatestRing\":\"TargetedRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788201Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788203Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788224Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788226Z\",\"LatestRing\":\"TargetedRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -19016,7 +18920,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6437077Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T20:08:36.6437079Z\",\"LatestRing\":null}]}"
+        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788521Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-01T22:08:22.6788523Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
