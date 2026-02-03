@@ -826,6 +826,36 @@
     }
   },
   {
+    "startDateTime": "2025-04-04T23:12:38Z",
+    "endDateTime": "2026-08-31T08:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T21:52:05.96Z",
+    "title": "(Updated) DNS Provisioning Change",
+    "id": "MC1048624",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": "2026-07-01T07:00:00Z",
+    "services": [
+      "Exchange Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting July 1, 2026, A records for new Accepted Domains will use subdomains under mx.microsoft to support DNSSEC. Automation relying on mail.protection.outlook.com must update to use the List serviceConfigurationRecords Graph API for MX records. DNSSEC benefits apply automatically if enabled."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Updated February 2, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>&nbsp;We’re making some changes to DNS provisioning of A records for all new Accepted Domains provisioned after July 1st, 2026 (previously February 1st). Between early and late July 2026 (previously February), we will gradually switch provisioning of all A records for new Accepted Domains into the new subdomains under mx.microsoft.</p><p>We are doing this to reduce the friction of adopting DNSSEC in the long run. DNSSEC is a set of extensions to DNS that provides cryptographic verification of DNS records, preventing DNS spoofing and adversary-in-the-middle attacks to DNS.\n</p><p>[How this will affect your organization:]\n</p><p>After July 1, 2026 (previously February 1), all A records for new Accepted Domains will be provisioned into the new subdomains under mx.microsoft. July 1, 2026 (previously February 1) if not secured with DNSSEC at the domain level (ex. contoso.com), then DNS resolution will work as usual. If an Accepted Domain you add to the EAC after July 1, 2026 (previously February 1) is secured with DNSSEC, then DNSSEC will extend to the mx.microsoft DNS record automatically and you will get the benefits of DNSSEC without having to take any further action. Any issues with DNSSEC can be addressed by disabling DNSSEC for the Accepted Domain (ex. contoso.com) via your DNS provider.</p><p>[What you need to do to prepare:]\n</p><p>If you have any automation in place, for example in workflows for Domain Setup, for MX record creation that expects A records for newly provisioned Accepted Domains to be provisioned in mail.protection.outlook.com, this automation needs to be updated by July 1, 2026 (previously February 1) to use List serviceConfigurationRecords Graph API (<a href=\"https://learn.microsoft.com/graph/api/domain-list-serviceconfigurationrecords?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\">List serviceConfigurationRecords</a>). Use List serviceConfigurationRecords to retrieve the mailExchange value for your MX record. After July 1, 2026 (previously February 1), List serviceConfigurationRecords Graph API will be the only source of truth for your Accepted Domains’ MX record value. You will not be able to rely on the Accepted Domain’s A record being provisioned in mail.protection.outlook.com after July 1, 2026 (previously February 1).</p><p>If you are using automation that expects the record to end with mail.protection.outlook.com, when you add a new Accepted Domain to the Exchange Admin Center after July 1, 2026 (previously February 1), mail flow may not work upon initial configuration and you will have to update your MX record to match what the Exchange Admin Center says for the domain or use the mailExchange value returned by List serviceConfigurationRecords Graph API.\n</p><p>If you expect this change to cause any issues for your organization, please share that feedback. \n</p><p><br></p>"
+    }
+  },
+  {
     "startDateTime": "2025-04-07T17:04:38.86Z",
     "endDateTime": "2026-04-07T17:04:38.797Z",
     "lastModifiedDateTime": "2025-04-07T17:04:40.38Z",
@@ -7815,8 +7845,8 @@
   },
   {
     "startDateTime": "2025-10-16T00:11:07Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-20T18:40:38.503Z",
+    "endDateTime": "2026-05-11T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T19:08:16.19Z",
     "title": "(Updated) Microsoft Copilot Analytics: Data export public preview for Copilot metrics in the Copilot dashboard",
     "id": "MC1173208",
     "category": "stayInformed",
@@ -7842,7 +7872,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft is launching a default-on public preview in December 2025 for exporting de-identified, user-level Copilot usage metrics from the Copilot Dashboard to users with full company-level data access. This supports adoption analysis, licensing optimization, and AI strategy, requiring at least 50 Copilot licenses."
+        "value": "Microsoft is introducing a default-on public preview of a Copilot Dashboard export feature for users with full company-level access. It allows downloading de-identified, weekly Copilot usage data from the past six months to analyze adoption and optimize licensing. Available from December 2025, with general availability in March 2026."
       },
       {
         "name": "Platforms",
@@ -7851,7 +7881,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated November 20, 2025: We have updated the timeline. This post has also been updated to remind customers that this feature is <b>default-on</b> for Copilot Dashboard users with <b>full company-level data access</b>. The export output remains <b>de-identified</b>, with each user represented by a hashed ID. Please review and take any actions as appropriate for your organization. Thank you for your patience.</p><p>This MC post is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?searchterms=500872\">500872</a>.</p><p><b>[Introduction:]</b></p><p>To support deeper analysis of Copilot adoption, Microsoft is introducing a <b>new export capability in the <i>Copilot Dashboard</i></b>. This feature allows dashboard users with company-level access to download de-identified Copilot usage metrics, aggregated by user and week, from the past six months. Organizations can use this data to track adoption trends, optimize licensing, and support AI transformation strategies.</p><p>This feature requires at least 50 Microsoft 365 Copilot licenses and applies to the Viva Insights web app.</p><p><b>[When this will happen:]</b></p><ul><li><b>Public Preview:</b> Begins in early December 2025 (previously late November 2025), completes by late December 2025.</li><li><b>General Availability (Worldwide):</b> Begins in early February 2026, completes by late February 2026.</li></ul><p><b>[How this affects your organization:]</b></p><p>Who is affected:</p><p>Copilot Dashboard users with <b>full company-level data access</b>, including senior leaders (as <a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard#using-entra-id-data\" target=\"_blank\">identified in Entra ID</a>), admin-assigned company-level users, delegates with company-level access, as well as global analysts and admins.&nbsp;</p><p>Note: Group managers with data access limited to their own teams will <b>not </b>have access to this feature.</p><p>What will happen:</p><ul><li>Users will be able to export de-identified, row-level Copilot usage metrics from the dashboard.</li><li>The dataset includes weekly, user-level metrics from the past six months.</li><li>The export supports Copilot usage analysis across apps (such as Word, Excel, Teams), and includes two attributes: Organization, and Job function.</li><li>Organizations can use the data to track usage patterns, generate insights to inform adoption strategies, optimize licensing, and measure ROI.</li><li>The feature is <b>enabled by default</b> for eligible users.</li><li>Admins can manage access via Viva Feature Access Management (VFAM) settings, under <i>Module: Viva Insights; Feature: Copilot Metrics Export</i>.</li><li>No impact to user workflow unless accessed by eligible users.</li></ul><p><i>Screenshot 1 - View of the new Microsoft Copilot dashboard:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d3b1ff4d-e865-4735-99fe-89a85a92adae/c6b2526f8b2d42d219252086e589436f216baccb.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot 2 - Example of output:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ed28db4c-5c0c-42f4-a9fc-ce5d61fd13a4/eadf652eb77fa2338ecc3cc2f0623643ba7ca107.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare:]</b></p><ul><li>Review the assignment of the Copilot dashboard users with full company-wide data access and adjust VFAM policies as needed.</li><li>Communicate the upcoming feature to eligible users so they know what to expect.</li><li>No admin setup is required to start using the export.</li><li>Admins can disable the feature at the tenant or group level at any time using VFAM settings.</li></ul><p>Learn more:&nbsp;</p><p><a href=\"https://learn.microsoft.com/viva/feature-access-management#viva-features-management\" target=\"_blank\">Microsoft Viva Feature access management | Microsoft Learn</a></p><p><a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard\" target=\"_blank\">Connect to the Microsoft Copilot Dashboard for Microsoft 365 customers | Microsoft Learn</a>\n</p><p></p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated February 2, 2026: We have updated the timeline. This post has also been updated to remind customers that this feature is <b>default-on</b> for Copilot Dashboard users with <b>full company-level data access</b>. The export output remains <b>de-identified</b>, with each user represented by a hashed ID. Please review and take any actions as appropriate for your organization. Thank you for your patience.</p><p>This MC post is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?searchterms=500872\">500872</a>.</p><p><b>[Introduction:]</b></p><p>To support deeper analysis of Copilot adoption, Microsoft is introducing a <b>new export capability in the <i>Copilot Dashboard</i></b>. This feature allows dashboard users with company-level access to download de-identified Copilot usage metrics, aggregated by user and week, from the past six months. Organizations can use this data to track adoption trends, optimize licensing, and support AI transformation strategies.</p><p>This feature requires at least 50 Microsoft 365 Copilot licenses and applies to the Viva Insights web app.</p><p><b>[When this will happen:]</b></p><ul><li><b>Public Preview:</b> Begins in early December 2025 (previously late November 2025), completes by late December 2025.</li><li><b>General Availability (Worldwide):</b> Begins in late March 2026 (previously early February), completes by early April 2026 (previously late February).</li></ul><p><b>[How this affects your organization:]</b></p><p>Who is affected:</p><p>Copilot Dashboard users with <b>full company-level data access</b>, including senior leaders (as <a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard#using-entra-id-data\" target=\"_blank\">identified in Entra ID</a>), admin-assigned company-level users, delegates with company-level access, as well as global analysts and admins.&nbsp;</p><p>Note: Group managers with data access limited to their own teams will <b>not </b>have access to this feature.</p><p>What will happen:</p><ul><li>Users will be able to export de-identified, row-level Copilot usage metrics from the dashboard.</li><li>The dataset includes weekly, user-level metrics from the past six months.</li><li>The export supports Copilot usage analysis across apps (such as Word, Excel, Teams), and includes two attributes: Organization, and Job function.</li><li>Organizations can use the data to track usage patterns, generate insights to inform adoption strategies, optimize licensing, and measure ROI.</li><li>The feature is <b>enabled by default</b> for eligible users.</li><li>Admins can manage access via Viva Feature Access Management (VFAM) settings, under <i>Module: Viva Insights; Feature: Copilot Metrics Export</i>.</li><li>No impact to user workflow unless accessed by eligible users.</li></ul><p><i>Screenshot 1 - View of the new Microsoft Copilot dashboard:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d3b1ff4d-e865-4735-99fe-89a85a92adae/c6b2526f8b2d42d219252086e589436f216baccb.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot 2 - Example of output:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ed28db4c-5c0c-42f4-a9fc-ce5d61fd13a4/eadf652eb77fa2338ecc3cc2f0623643ba7ca107.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare:]</b></p><ul><li>Review the assignment of the Copilot dashboard users with full company-wide data access and adjust VFAM policies as needed.</li><li>Communicate the upcoming feature to eligible users so they know what to expect.</li><li>No admin setup is required to start using the export.</li><li>Admins can disable the feature at the tenant or group level at any time using VFAM settings.</li></ul><p>Learn more:&nbsp;</p><p><a href=\"https://learn.microsoft.com/viva/feature-access-management#viva-features-management\" target=\"_blank\">Microsoft Viva Feature access management | Microsoft Learn</a></p><p><a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard\" target=\"_blank\">Connect to the Microsoft Copilot Dashboard for Microsoft 365 customers | Microsoft Learn</a>\n</p><p></p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -8352,12 +8382,13 @@
   {
     "startDateTime": "2025-10-24T22:12:41Z",
     "endDateTime": "2026-02-05T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-24T22:12:47.857Z",
-    "title": "Microsoft PowerPoint: \"Reuse Slides\" feature will retire starting 2026",
+    "lastModifiedDateTime": "2026-02-02T22:31:45.177Z",
+    "title": "(Updated) Microsoft PowerPoint: \"Reuse Slides\" feature will retire starting 2026",
     "id": "MC1179161",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "User impact",
       "Retirement"
     ],
@@ -8371,12 +8402,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Starting January 2026, PowerPoint will retire the \"Reuse Slides\" feature on Windows and Mac desktops, removing it from the ribbon with no option to re-enable. Users should update documentation and consider alternative slide reuse methods. No compliance issues are noted."
+        "value": "Starting January 2026, PowerPoint's \"Reuse Slides\" feature will only support slides from local files, retiring cloud-based reuse. This affects all Windows and Mac desktop users, with no admin controls to revert. Organizations should update documentation and consider alternative slide reuse methods."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>Starting in January 2026, Microsoft will retire the <i style=\"\">Reuse Slides</i> feature from PowerPoint for Windows and Mac desktops. This change is part of ongoing efforts to simplify the PowerPoint experience and remove features that duplicate existing capabilities.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li>General Availability (Worldwide): We will begin retiring this feature starting in December 2025 and expect to complete in January 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All users of PowerPoint on Windows and Mac desktops.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>The <i>Reuse Slides</i> option will be removed from the PowerPoint ribbon.</li>\n    <li>The feature will no longer be supported or accessible.</li>\n    <li>No admin controls are available to retain or re-enable the feature.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Communicate this change to helpdesk staff.</li>\n<li>Update internal documentation or training materials that reference the <i>Reuse Slides</i> feature.</li>\n<li>If your organization relies on slide reuse workflows, consider alternative methods such as manually copying slides between presentations.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated February 2, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p>Starting in January 2026, Microsoft will move back to legacy behavior of the <i style=\"\">Reuse Slides</i> feature from PowerPoint for Windows and Mac desktops, only allowing users to reuse slides from local files. This change is part of ongoing efforts to simplify the PowerPoint experience and remove features that duplicate existing capabilities.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li>General Availability (Worldwide): We will begin retiring this feature starting in December 2025 and expect to complete in January 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All users of PowerPoint on Windows and Mac desktops.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>The Reuse Slides option will only allow users to reuse slides from presentations saved locally.</li>\n    <li>The modern feature with ability to reuse slides from cloud files will no longer be supported or accessible.</li>\n    <li>No admin controls are available to retain or re-enable the feature.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Communicate this change to helpdesk staff.</li>\n<li>Update internal documentation or training materials that reference the <i>Reuse Slides</i> feature.</li>\n<li>If your organization relies on slide reuse workflows, consider alternative methods such as manually copying slides between presentations.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -10021,7 +10052,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9369959Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9369961Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9369962Z\",\"LatestRing\":null}]}"
+        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8380037Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8380039Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.838004Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -14009,8 +14040,8 @@
   },
   {
     "startDateTime": "2025-12-08T17:14:19Z",
-    "endDateTime": "2026-02-16T08:00:00Z",
-    "lastModifiedDateTime": "2026-01-13T22:07:37.837Z",
+    "endDateTime": "2026-04-20T08:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:37:18.223Z",
     "title": "(Updated) Coming Soon: Anthropic models will be available by default in Copilot experiences",
     "id": "MC1193290",
     "category": "planForChange",
@@ -14031,12 +14062,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Anthropic models will be enabled by default in many Microsoft 365 Copilot experiences starting January 7, 2026, with Anthropic onboarded as a Microsoft subprocessor under Microsoft’s data protection terms. Admins can opt out, and the default setting varies by region and cloud type."
+        "value": "Anthropic models will be enabled by default in many Microsoft 365 Copilot experiences starting January 7, 2026, under Microsoft’s Product Terms and Data Protection Addendum. Admins can opt out via the Microsoft 365 admin center. EU/EFTA, UK, and government clouds have different default settings or exclusions."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated January 13, 2026: Anthropic as a subprocessor is rolling out to the Researcher agent in phases, so the Anthropic option in Researcher may not be available for all tenants yet. Broad availability is expected by the end of January 2026. <a href=\"https://support.microsoft.com/topic/use-claude-with-researcher-in-microsoft-365-copilot-23e2503b-d73e-4abb-902d-b9814205a38a\">Use Claude with Researcher in Microsoft 365 Copilot</a></p><p><b>[Introduction:]</b></p><p>In September, <b>Anthropic models</b> became available in <i>certain Copilot experiences</i> through an <b>opt-in setting</b>, where use was subject to Anthropic’s commercial terms and data processing agreement. <b>On January 7, 2026</b>, Anthropic models will be <b>enabled by default for many customers</b>&nbsp;and now offered under the Microsoft <a href=\"https://go.microsoft.com/fwlink/?linkid=2185110\" target=\"_blank\">Product Terms</a> and <a href=\"https://aka.ms/dpa\" target=\"_blank\">Data Protection Addendum</a>. To enable this change, Anthropic has been onboarded as a Microsoft subprocessor. This transition extends Microsoft’s contractual commitments and data protection standards to the use of Anthropic models in Copilot experiences.</p><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b></p><ul><li>Admins managing Microsoft 365 Copilot and Microsoft Copilot Studio.</li><li>Microsoft 365 Copilot licensed customers participating in select Frontier features such as Word, Excel, PowerPoint, and Researcher agents, as well as Agent Mode in Excel.</li></ul><p><b>Key changes</b></p><ul><li>Dec 8, 2025: New admin toggle for Anthropic models appears in the Microsoft 365 admin center (MAC). For most commerical cloud customers, it will be enabled ON by default (except customers in EU/EFTA and UK will be OFF by default). See \"customer and region exclusions\" section below for more details.</li><li>January 7, 2026: Anthropic as a Microsoft subprocessor becomes enabled on your tenant; the legacy admin toggle to opt-in to Anthropic's commercial terms and data processing agreement is deprecated.<ul><li>If you previously opted in to the legacy Anthropic toggle, and you're in an excluded region, you would need to opt in to the new subprocessor toggle.</li></ul></li><li>Admins can opt out in MAC now - no need to wait until January.</li></ul><p>Some features are only available when Anthropic models are enabled. If you turn off this option, certain features may no longer be accessible.</p><p><b>Customer and region exclusions:</b></p><p>The following customers and regions will not have the toggle set to default on:</p><ul><li><b>Customer tenants in EU/EFTA and UK</b>: The toggle will be set to default off. You will need to opt in to use Anthropic models as a subprocessor.</li><li><b>Government clouds (GCC, GCC High, DoD) or sovereign clouds</b>: Anthropic models are not yet available in government or sovereign clouds. No toggle will be present for those clouds.</li></ul><p><b>What does it mean that Anthropic is now a Microsoft subprocessor?</b></p><p>As a subprocessor for Copilot experiences, Anthropic will operate under Microsoft’s direction and contractual safeguards. This includes coverage under the <a href=\"https://www.microsoft.com/licensing/docs/view/microsoft-products-and-services-data-protection-addendum-dpa\" target=\"_blank\">Microsoft Data Protection Addendum (DPA)</a> and <a href=\"https://www.microsoft.com/licensing/terms/welcome/welcomepage\" target=\"_blank\">Product Terms</a>. In addition, use of Anthropic models in Microsoft 365 Copilot falls under our Enterprise Data Protection as described <a href=\"http://aka.ms/EDPLearn\" target=\"_blank\">here</a>. Note that Anthropic models are currently excluded from EU Data Boundary and when applicable, in-country processing commitments.&nbsp;</p><p><b>Learn more:</b></p><ul><li><a href=\"https://go.microsoft.com/fwlink/?linkid=2343508\" target=\"_blank\">Integrate and manage Anthropic's AI models in Microsoft 365 Copilot</a>\n</li><li><a href=\"https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection\" target=\"_blank\">Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat</a> \n</li><li><a href=\"https://go.microsoft.com/fwlink/?linkid=2343407\" target=\"_blank\">Use Claude with Researcher in Microsoft 365 Copilot</a>\n</li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/wordexcelppt-agents\" target=\"_blank\">Get started with Word, Excel, and PowerPoint Agents (Frontier) in Microsoft 365 Copilot</a>\n</li><li><a href=\"https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-select-external-response-model#admin-controls-and-requirements-for-external-models\" target=\"_blank\">Choose an external model as the primary AI model - Microsoft Copilot Studio</a></li></ul>"
+      "content": "<p>Updated February 2, 2026: In our January 13, 2026 update, we shared that broad availability of Anthropic as a subprocessor in the Researcher agent was expected by the end of January. Rollout is taking longer than anticipated as we complete additional validation. During this phased rollout, the Anthropic option in Researcher may not yet be visible in all tenants; the existing Researcher functionality remains unchanged. We will provide another update in this post when rollout to Researcher is complete.&nbsp;<br><a href=\"https://support.microsoft.com/topic/use-claude-with-researcher-in-microsoft-365-copilot-23e2503b-d73e-4abb-902d-b9814205a38a\">Use Claude with Researcher in Microsoft 365 Copilot</a></p><p><b>[Introduction:]</b></p><p>In September, <b>Anthropic models</b> became available in <i>certain Copilot experiences</i> through an <b>opt-in setting</b>, where use was subject to Anthropic’s commercial terms and data processing agreement. <b>On January 7, 2026</b>, Anthropic models will be <b>enabled by default for many customers</b>&nbsp;and now offered under the Microsoft <a href=\"https://go.microsoft.com/fwlink/?linkid=2185110\" target=\"_blank\">Product Terms</a> and <a href=\"https://aka.ms/dpa\" target=\"_blank\">Data Protection Addendum</a>. To enable this change, Anthropic has been onboarded as a Microsoft subprocessor. This transition extends Microsoft’s contractual commitments and data protection standards to the use of Anthropic models in Copilot experiences.</p><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b></p><ul><li>Admins managing Microsoft 365 Copilot and Microsoft Copilot Studio.</li><li>Microsoft 365 Copilot licensed customers participating in select Frontier features such as Word, Excel, PowerPoint, and Researcher agents, as well as Agent Mode in Excel.</li></ul><p><b>Key changes</b></p><ul><li>Dec 8, 2025: New admin toggle for Anthropic models appears in the Microsoft 365 admin center (MAC). For most commerical cloud customers, it will be enabled ON by default (except customers in EU/EFTA and UK will be OFF by default). See \"customer and region exclusions\" section below for more details.</li><li>January 7, 2026: Anthropic as a Microsoft subprocessor becomes enabled on your tenant; the legacy admin toggle to opt-in to Anthropic's commercial terms and data processing agreement is deprecated.<ul><li>If you previously opted in to the legacy Anthropic toggle, and you're in an excluded region, you would need to opt in to the new subprocessor toggle.</li></ul></li><li>Admins can opt out in MAC now - no need to wait until January.</li></ul><p>Some features are only available when Anthropic models are enabled. If you turn off this option, certain features may no longer be accessible.</p><p><b>Customer and region exclusions:</b></p><p>The following customers and regions will not have the toggle set to default on:</p><ul><li><b>Customer tenants in EU/EFTA and UK</b>: The toggle will be set to default off. You will need to opt in to use Anthropic models as a subprocessor.</li><li><b>Government clouds (GCC, GCC High, DoD) or sovereign clouds</b>: Anthropic models are not yet available in government or sovereign clouds. No toggle will be present for those clouds.</li></ul><p><b>What does it mean that Anthropic is now a Microsoft subprocessor?</b></p><p>As a subprocessor for Copilot experiences, Anthropic will operate under Microsoft’s direction and contractual safeguards. This includes coverage under the <a href=\"https://www.microsoft.com/licensing/docs/view/microsoft-products-and-services-data-protection-addendum-dpa\" target=\"_blank\">Microsoft Data Protection Addendum (DPA)</a> and <a href=\"https://www.microsoft.com/licensing/terms/welcome/welcomepage\" target=\"_blank\">Product Terms</a>. In addition, use of Anthropic models in Microsoft 365 Copilot falls under our Enterprise Data Protection as described <a href=\"http://aka.ms/EDPLearn\" target=\"_blank\">here</a>. Note that Anthropic models are currently excluded from EU Data Boundary and when applicable, in-country processing commitments.&nbsp;</p><p><b>Learn more:</b></p><ul><li><a href=\"https://go.microsoft.com/fwlink/?linkid=2343508\" target=\"_blank\">Integrate and manage Anthropic's AI models in Microsoft 365 Copilot</a>\n</li><li><a href=\"https://learn.microsoft.com/en-us/copilot/microsoft-365/enterprise-data-protection\" target=\"_blank\">Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat</a> \n</li><li><a href=\"https://go.microsoft.com/fwlink/?linkid=2343407\" target=\"_blank\">Use Claude with Researcher in Microsoft 365 Copilot</a>\n</li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/wordexcelppt-agents\" target=\"_blank\">Get started with Word, Excel, and PowerPoint Agents (Frontier) in Microsoft 365 Copilot</a>\n</li><li><a href=\"https://learn.microsoft.com/en-us/microsoft-copilot-studio/authoring-select-external-response-model#admin-controls-and-requirements-for-external-models\" target=\"_blank\">Choose an external model as the primary AI model - Microsoft Copilot Studio</a></li></ul>"
     }
   },
   {
@@ -14579,12 +14610,13 @@
   {
     "startDateTime": "2025-12-10T00:23:43Z",
     "endDateTime": "2026-02-28T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-10T00:23:54.783Z",
-    "title": "Microsoft 365 Copilot: Email triage with pin, flag, archive, and mark read",
+    "lastModifiedDateTime": "2026-02-02T22:03:08.13Z",
+    "title": "(Updated) Microsoft 365 Copilot: Email triage with pin, flag, archive, and mark read",
     "id": "MC1193695",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -14599,12 +14631,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft 365 Copilot will enable natural language commands for email triage—pinning, flagging, archiving, marking read/unread, and completing tasks—in Outlook. Available mid-December 2025 for licensed users, this feature requires no admin changes and aims to simplify inbox management."
+        "value": "Microsoft 365 Copilot now supports natural language commands to pin, flag, archive, mark read/unread emails, and complete tasks in Outlook. Available by default for licensed users starting mid-December 2025, no admin changes needed. Prepare by ensuring licenses and updating support teams and documentation."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction:]</b>\n</p><p>Managing email just got easier. <b>Microsoft 365 Copilot</b> now<b> supports natural language commands</b> to help users pin or unpin important messages, flag or unflag items, mark tasks complete, archive clutter, and mark emails as read or unread. This enhancement is designed to streamline inbox management and help users stay focused on what matters most.</p><p>A Microsoft 365 Copilot license is required to access this feature.</p>\n\n<p><b>[When this will happen:]</b>\n</p><ul><li><b>Public Preview (Worldwide):</b> Rollout begins mid-December 2025 and is expected to complete by early January 2026.\n</li><li><b>General Availability (Worldwide):</b> Rollout begins mid-December 2025 and is expected to complete by late January 2026.</li></ul>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:&nbsp;</b>Users with Microsoft 365 and Copilot licenses who use Outlook for email management.\n</p><p><b>What will happen:</b></p><ul>\n<li>Users can use natural language to<ul>\n    <li>Pin or unpin emails.</li>\n    <li>Flag or unflag messages.</li>\n    <li>Mark tasks as complete.</li>\n    <li>Archive emails.</li>\n    <li>Mark emails as read or unread.</li>\n  </ul>\n</li>\n<li>These features will be <b>available by default </b>for licensed users.</li>\n<li>No changes to existing admin policies are required.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>Ensure users have the appropriate Microsoft 365 and Copilot licenses.</li>\n<li>Communicate this update to helpdesk and support teams.</li>\n<li>Update internal documentation if you detail email management features.</li>\n<li>No additional configuration is required for rollout.</li>\n</ul>\n<p></p>\n\n<p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated February 2, 2026: We have added a link to a support article. Thank you for your patience.&nbsp;<br></p><p><b>[Introduction:]</b>\n</p><p>Managing email just got easier. <b>Microsoft 365 Copilot</b> now<b> supports natural language commands</b> to help users pin or unpin important messages, flag or unflag items, mark tasks complete, archive clutter, and mark emails as read or unread. This enhancement is designed to streamline inbox management and help users stay focused on what matters most.</p><p>A Microsoft 365 Copilot license is required to access this feature.</p>\n\n<p><b>[When this will happen:]</b>\n</p><ul><li><b>Public Preview (Worldwide):</b> Rollout begins mid-December 2025 and is expected to complete by early January 2026.\n</li><li><b>General Availability (Worldwide):</b> Rollout begins mid-December 2025 and is expected to complete by late January 2026.</li></ul>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:&nbsp;</b>Users with Microsoft 365 and Copilot licenses who use Outlook for email management.\n</p><p><b>What will happen:</b></p><ul>\n<li>Users can use natural language to<ul>\n    <li>Pin or unpin emails.</li>\n    <li>Flag or unflag messages.</li>\n    <li>Mark tasks as complete.</li>\n    <li>Archive emails.</li>\n    <li>Mark emails as read or unread.</li>\n  </ul>\n</li>\n<li>These features will be <b>available by default </b>for licensed users.</li>\n<li>No changes to existing admin policies are required.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>Ensure users have the appropriate Microsoft 365 and Copilot licenses.</li>\n<li>Communicate this update to helpdesk and support teams.</li>\n<li>Update internal documentation if you detail email management features.</li>\n<li>No additional configuration is required for rollout.</li><li>Review the following support article: <a href=\"https://support.microsoft.com/office/triage-email-with-microsoft-365-copilot-in-outlook-85932469-7c3f-4a6a-acdb-adf0f3ebc169\">Triage Email with Microsoft 365 Copilot in Outlook - Microsoft Support</a></li>\n</ul>\n<p></p>\n\n<p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -17221,7 +17253,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372535Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372536Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372537Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372538Z\",\"LatestRing\":null}]}"
+        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8381081Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8381082Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8381083Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8381084Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -17545,7 +17577,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9369418Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9369419Z\",\"LatestRing\":null}]}"
+        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8378469Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8378473Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -17837,7 +17869,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9370957Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9370959Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9370959Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.837918Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8379181Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8379183Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18068,7 +18100,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372339Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.937234Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372341Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372342Z\",\"LatestRing\":\"TargetedRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8379757Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8379758Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8379759Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.837976Z\",\"LatestRing\":\"TargetedRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18459,7 +18491,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372112Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-02T18:17:45.9372113Z\",\"LatestRing\":null}]}"
+        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8379485Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8379486Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19670,13 +19702,14 @@
   },
   {
     "startDateTime": "2026-01-29T00:37:39Z",
-    "endDateTime": "2026-04-02T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-29T00:38:07.313Z",
-    "title": "Microsoft 365 Copilot: Create and view Outlook rules",
+    "endDateTime": "2026-04-20T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T21:54:41.86Z",
+    "title": "(Updated) Microsoft 365 Copilot: Create and view Outlook rules",
     "id": "MC1223821",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -19691,12 +19724,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Outlook will enable Microsoft 365 Copilot to create and view Inbox rules using natural language, simplifying rule management without navigating settings. This feature, requiring a Copilot license, rolls out globally from late January to early March 2026, is on by default, and aligns with existing Outlook policies."
+        "value": "Microsoft 365 Copilot in Outlook now lets users create and view Inbox rules using natural language. Rolling out worldwide from early February to mid-March 2026, this feature requires a Copilot license, works alongside existing rules, is on by default, and needs no admin action."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>Outlook is adding new Microsoft 365 Copilot capabilities that let users <b>create</b> and <b>view Inbox rules using natural language</b>. This update helps users stay organized more efficiently by allowing them to ask Copilot to set up new rules or list existing rules directly in chat, without navigating Outlook settings.</p><p>A Microsoft 365 Copilot license is required to access this new feature.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide): </b>We began rolling out in<b> late January 2026</b> and expect to complete <b>by early March 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>: Users who have access to Microsoft 365 Copilot in <i>Outlook</i>.</p><p><i>What will happen</i>:</p><ul><li>Users can create new Inbox rules through natural language prompts (for example: “<i>Create a rule to move emails from my manager to a Manager folder</i>.”).<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/014b3253-bd88-45ba-8521-6af04ac818db/f30055e4d159c868fb400c5ac3e764a975d35637.png\" style=\"width: 400px;\"></p></li><li>Users can ask Copilot to show their existing Inbox rules, including rule names, conditions, actions, and status.</li><li>Rules created with Copilot operate the same as rules created through Outlook settings:<ul><li>Rules apply only to future incoming messages.</li><li>Existing messages are not automatically moved or modified.</li><li>All rules are visible and manageable through Outlook’s native Rules settings.</li></ul></li><li>The feature is <b>on by default</b> for eligible users and respects all existing Outlook and Exchange policies.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required from administrators.</p><p>If your helpdesk or documentation references Outlook rule creation, you may wish to update it to reflect natural‑language rule management through Copilot.</p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated February 2, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>Outlook is adding new Microsoft 365 Copilot capabilities that let users <b>create</b> and <b>view Inbox rules using natural language</b>. This update helps users stay organized more efficiently by allowing them to ask Copilot to set up new rules or list existing rules directly in chat, without navigating Outlook settings.</p><p>A Microsoft 365 Copilot license is required to access this new feature.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide): </b>We began rolling out in&nbsp;early February 2026 (previously late January)&nbsp;and expect to complete by mid-March 2026 (previously early March).</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>: Users who have access to Microsoft 365 Copilot in <i>Outlook</i>.</p><p><i>What will happen</i>:</p><ul><li>Users can create new Inbox rules through natural language prompts (for example: “<i>Create a rule to move emails from my manager to a Manager folder</i>.”).<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/014b3253-bd88-45ba-8521-6af04ac818db/f30055e4d159c868fb400c5ac3e764a975d35637.png\" style=\"width: 400px;\"></p></li><li>Users can ask Copilot to show their existing Inbox rules, including rule names, conditions, actions, and status.</li><li>Rules created with Copilot operate the same as rules created through Outlook settings:<ul><li>Rules apply only to future incoming messages.</li><li>Existing messages are not automatically moved or modified.</li><li>All rules are visible and manageable through Outlook’s native Rules settings.</li></ul></li><li>The feature is <b>on by default</b> for eligible users and respects all existing Outlook and Exchange policies.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required from administrators.</p><p>If your helpdesk or documentation references Outlook rule creation, you may wish to update it to reflect natural‑language rule management through Copilot.</p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -20559,6 +20592,304 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to generate short‑term forecast scenarios with a duration of up to 365 days (one year) in Dynamics 365 Customer Service. This feature will reach general availability on February 27, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis enhancement removes the previous 6-week short-term forecasting limitation, allowing supervisors to create forecasts for staffing needs up to one year in advance. This will help improve long-term planning for operational demand.<br><br>\n<b>What action do I need to take?</b><br>\nTo use this feature, you must install the <i>Workforce Management for Customer Service</i> package from the Power Platform admin center."
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:00:10.793Z",
+    "endDateTime": "2027-02-02T23:00:10.747Z",
+    "lastModifiedDateTime": "2026-02-02T23:00:12.143Z",
+    "title": "Secure Boot status report in Windows Autopatch",
+    "id": "MC1226170",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>If&nbsp;you’re&nbsp;an IT admin using Windows Autopatch, a new report is now available to&nbsp;monitor&nbsp;the status of Secure Boot across your organization. As&nbsp;<a href=\"https://go.microsoft.com/fwlink/?linkid=2347358\" rel=\"noopener noreferrer\" target=\"_blank\">the 2011 Secure Boot certificates start expiring in June 2026</a>, this report helps you start by&nbsp;identifying&nbsp;devices that have Secure Boot enabled. Out of those, see which devices are fully up to date and which ones still need updated certificates.&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><ul><li>The&nbsp;Secure Boot status report&nbsp;is&nbsp;now available&nbsp;in Windows Autopatch.&nbsp;</li><li>The&nbsp;2011&nbsp;Secure Boot certificates&nbsp;(or CAs)&nbsp;start&nbsp;expiring&nbsp;in June&nbsp;2026.&nbsp;</li></ul><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>The Secure Boot status report in Windows Autopatch is designed to help&nbsp;you&nbsp;understand the Secure Boot posture of&nbsp;your&nbsp;fleet.&nbsp;It can help you&nbsp;identify&nbsp;devices that may require attention—before issues occur.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>If&nbsp;you&nbsp;don’t&nbsp;yet&nbsp;use&nbsp;Windows Autopatch, consider&nbsp;how it can&nbsp;help you manage Windows&nbsp;across your organization.&nbsp;If&nbsp;none of your devices&nbsp;have Secure Boot enabled,&nbsp;no action&nbsp;is&nbsp;required.&nbsp;Devices that&nbsp;use Secure Boot to&nbsp;prevent&nbsp;boot-level&nbsp;malware&nbsp;at startup&nbsp;need&nbsp;updated&nbsp;certificates.&nbsp;The new report&nbsp;can&nbsp;help with the inventory and&nbsp;monitoring&nbsp;of&nbsp;the Secure&nbsp;Boot&nbsp;certificate status.&nbsp;See Additional information&nbsp;to learn more.&nbsp;</div><div>&nbsp;</div><div><b>Additional&nbsp;information:</b>&nbsp;</div><ul><li><a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/monitor/secure-boot-status-report\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot status report in Windows Autopatch</a></li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/secure-boot-playbook-for-certificates-expiring-in-2026/4469235\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot playbook for certificates expiring in 2026</a></li><li><a href=\"https://support.microsoft.com/topic/windows-secure-boot-certificate-expiration-and-ca-updates-7ff40d33-95dc-4c3c-8725-a9b95457578e\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Secure Boot certificate expiration and CA updates</a></li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:44:09Z",
+    "endDateTime": "2026-04-06T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:44:23.24Z",
+    "title": "Microsoft 365 Copilot: Copy tables from Chat",
+    "id": "MC1226217",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot will allow users with a Copilot license to copy AI-generated tables from Chat into documents and apps starting early March 2026. The feature is enabled by default, requires no admin action, and has no compliance concerns identified."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>\nWe’re introducing the ability for users to copy tables created when using Chat in Microsoft 365 Copilot. This enhancement makes it easier for users to take AI‑generated structured content—such as comparison tables, checklists, and summaries—and reuse it directly in documents, emails, spreadsheets, and other Microsoft 365 apps. This feature is available for users with a Microsoft 365 Copilot license.</p>\n\n<p><b>[When this will happen:]</b></p><p>\nGeneral Availability (Worldwide): rollout will begin <b>early March 2026</b> and complete by <b>early March 2026</b>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b style=\"\">Who is affected:</b></p><p>Users with a Microsoft 365 Copilot license.</p>\n\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n  <li>Users will be able to copy tables generated in Chat.</li>\n  <li>This feature is <b>enabled by default</b> for all users with a Microsoft 365 Copilot license.</li>\n  <li>No existing admin policies or controls change.</li>\n  <li>No impact to workflows beyond the new capability.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No admin action is required.</li>\n  <li>Update helpdesk or training materials as needed.</li></ul><p><b>[Compliance considerations:]</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:45:41Z",
+    "endDateTime": "2026-04-07T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:45:49.887Z",
+    "title": "App names hidden in app bar for a cleaner, more focused experience",
+    "id": "MC1226220",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will hide app names in the app bar by default starting late February 2026 for a cleaner look, showing only icons. Users can re-enable names via Settings. This affects all commercial tenants, requires no admin changes, and has no impact on policies or permissions."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are <b>updating the Microsoft Teams app bar</b> to create a cleaner and more focused experience. <b>App names </b>will be <b>hidden by default</b>, showing only app icons. This helps reduce visual noise and improves overall navigation clarity. Users can choose to show app names again in <i>Settings</i>.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide): </b>We will begin rolling out in<b> late&nbsp;February 2026</b> and expect to complete by <b>early March 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>: <b>All Microsoft Teams users </b>in<i> commercial (non-government) tenants</i>.</p><p><i>What will happen</i>:</p><ul><li>App names in the <i>Teams app bar </i>will be <b>hidden by default</b>.</li><li>Users will see app icons only, providing a simplified vertical navigation experience.</li><li>Users who prefer to show app names may update this setting individually:<ul><li><i><b>Settings &gt; Appearance &gt; Show app names in the app bar</b></i></li></ul></li><li>No admin configuration changes are required.</li><li>There is <b>no impact to existing policies, permissions, or app availability</b>.</li></ul><p><i>Screenshot 1 - Before</i>:</p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d387f29a-2cdd-43a3-a373-8c5de42b8472/cfc020bd0a2368d632002c180a0f325698faeee0.png\" style=\"width: 100px;\"></p><p><i></i></p><p><i>Screenshot 2 - After</i>:</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/cd1c135b-b4cb-47d8-8040-2d949a1f7f84/47b7fda341b8537b6bcf6a0808cbf8cc553d7240.png\" style=\"width: 100px;\"></p><p></p><p><b>[What you can do to prepare]</b></p><ul><li>No action is required.</li><li>If helpful, you may notify users or help desk staff about this visual update and how to re-enable app names.</li><li>If your organization maintains internal documentation or screenshots of the Teams interface, consider updating them after rollout.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:46:11Z",
+    "endDateTime": "2026-05-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:46:40.153Z",
+    "title": "People Skills on the profile card expanding to Microsoft Teams",
+    "id": "MC1226221",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams",
+      "Microsoft Copilot (Microsoft 365)",
+      "Microsoft 365 Copilot Chat"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "552588"
+      },
+      {
+        "name": "Summary",
+        "value": "People Skills will expand to Microsoft Teams, allowing employees to view and manage skills on the Microsoft 365 profile card within Teams. The rollout starts March 2026, enhancing collaboration without changing admin controls or data handling. No admin action is needed if People Skills is already set up."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Mac"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are expanding access to <b>People Skills</b> within <b>Microsoft Teams</b>. With this update, employees will be able to view skills directly on the <b>Microsoft 365 profile card</b> in <b>Teams</b>—making it easier to learn about colleagues, strengthen collaboration, and manage their own skills profile in the flow of work.</p><p>As a reminder, <b>People Skills</b> enables employees to build a skills profile based on a shared taxonomy, helping them showcase expertise and connect with others. Eligible <a href=\"https://learn.microsoft.com/copilot/microsoft-365/people-skills-overview#licensing\" target=\"_blank\">Microsoft 365 Copilot, Viva,</a> and <a href=\"https://learn.microsoft.com/copilot/microsoft-365/people-skills-manage-skills-library#expand-ai-skill-inferencing-to-microsoft-365-e3-and-e5-licensed-users\" target=\"_blank\">Microsoft 365 E3/E5 users</a> may also benefit from AI‑powered skill inferencing, which uses Microsoft Graph signals to automatically generate a personalized skills profile for each eligible employee and keep it up to date.&nbsp;<b>People Skills</b> data enhances Microsoft 365, Copilot, and Viva experiences by providing richer, contextual insights about people across the organization.</p><p>Learn more:&nbsp;<a href=\"https://adoption.microsoft.com/ai-agents/people-skills/\" target=\"_blank\">People Skills | Microsoft Adoption</a></p><p>\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=552588#Roadmap\" target=\"_blank\">552588</a>.</p><p><b>[When this will happen:]</b></p><ul><li>Targeted Release: We will begin rolling out <b>early March 2026</b> and expect to complete by <b>mid-March 2026</b>.</li><li>General Availability (Worldwide):We will begin rolling out <b>March 2026</b> and expect to complete by<b>&nbsp;April 2026</b></li></ul><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:&nbsp;</b></p><ul><li>Users who have access to People Skills and can view the Microsoft 365 profile card in Teams</li></ul><p><b>What will happen:&nbsp;</b></p><p>Once this update is rolled out, all employees<b> in tenants who have already set up People Skills</b>&nbsp;will find a Skills section on the <b>Microsoft 365 profile card</b> in <b>Teams</b>. This makes it easier for users to:</p><ul><li>View colleagues’ skills in the profile card on Teams to better understand and connect with colleagues</li><li>Access and manage their own skills profile from the new Skills component on the profile card in Teams</li></ul><p>There is no change to existing <b>People Skills</b> admin controls, configuration settings, or data access permissions. People skills must be setup before the Skills component</p><p>is visible in M365 Profile Cards.<br></p><p><b>[What you can do to prepare:]\n</b></p><p>&nbsp;If your organization uses People Skills today, no admin action is required. The experience will automatically appear on the<b> profile card</b> in <b>Teams</b>.<br>If you do not have People skills setup, please review your documentation to do so in admin center. <a href=\"https://learn.microsoft.com/copilot/microsoft-365/people-skills-setup\" target=\"_blank\">Learn how to set up People Skills.</a></p><p>You may wish to:</p><ul><li>Inform users about this enhanced visibility of skills in <b>Teams</b>.</li><li>Set up <b>People Skills</b> in <b>admin center</b>. <a href=\"https://learn.microsoft.com/copilot/microsoft-365/people-skills-setup\" target=\"_blank\">Learn how to set up People Skills</a>.</li></ul><p><b>[Compliance considerations:]</b></p><ul><li>No changes have been made to how existing customer data (including documents, emails, and chats) is processed, stored, or accessed. This update does not introduce new AI/ML capabilities or modify inferencing behavior; it only expands where <b>People Skills</b> data is displayed.</li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:47:07Z",
+    "endDateTime": "2026-06-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:47:44.213Z",
+    "title": "Prevent/Fix: Guidance for On-Premises Connectors Configuration",
+    "id": "MC1226222",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Exchange Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Ensure On-Premises connectors use unique certificates with domains accepted by the tenant and avoid shared IPs across tenants. Misconfigurations can disrupt mail flow due to Exchange Online's multi-tenant nature. Use unique Send Connectors per tenant and prefer certificate-based authentication for reliable email routing."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We are reiterating the guidance for connector settings to ensure customers are using healthy configurations. The key problematic configurations we are seeing are:\n</p><ol><li>When a tenant has an Inbound connector of type OnPremises and the connector does certificate-based authentication using a certificate with a subject/SAN for a domain that is NOT an Accepted Domain of the tenant.\n</li><li>When a tenant has an Inbound connector of type OnPremises and the connector does IP-based authentication, but the IP is used by other tenants.\n</li></ol><p>These anti-patterns typically occur when you are using a 3rd party service to relay email through Exchange Online but could also occur if your organization has a single on-premises Exchange Server connecting to multiple Exchange Online tenants.\n</p><p>These configurations can cause incorrect mail flow because Exchange Online is a multi tenant service and relies on message attribution to determine which tenant an incoming message belongs to. When messages are received through an Inbound connector of type OnPremises, attribution is determined using the following priority order:\n</p><ol><li>The domain on the TLS certificate presented by the sending server\n</li><li>The P1 MailFrom (envelope sender) domain</li><li> The P1 RcptTo (recipient) domain</li></ol><p>[How this will affect your organization:]\n</p><p>We may perform internal changes, such as tenant moves, without notice, which can impact mail flow if a tenant has a bad connector configuration. This means a misconfigured connector that works today may unexpectedly stop working.\n</p><p>[What you need to do to prepare:]\n</p><p>If you have a single on-premises Exchange Server connecting to multiple Exchange Online tenants, your on-premises Exchange environment must use a unique client certificate to send to each unique Exchange Online tenant belonging to your organization. You must configure a unique Send Connector on-premises for each unique tenant in Exchange Online that you want to route on-premises traffic to: <a href=\"https://learn.microsoft.com/exchange/mail-flow/connectors/send-connectors\" target=\"_blank\">Send connectors in Exchange Server | Microsoft Learn</a>. You should also prioritize configuring Inbound connectors of type OnPremises in Exchange Online to use certificate-based authentication, rather than IP based . For best performance, Exchange Online tenants Inbound connector’s should reference the unique client certificate dedicated for that connector path.\n</p><p>If you need to use a third-party add-on service to process email messages sent from your organization and then relay through Exchange Online, the third-party service must support a unique certificate for your organization, and the certificate domain (in Subject name or SAN) must be an accepted domain of your organization. In addition, you must update your Inbound connector of OnPremises type to use the unique certificate domain, via property TlsSenderCertificateName. An example of this scenario is your organization using a third-party CRM cloud service to send emails on behalf your organization to mailboxes of your company or other external users. To learn more, see Scenario: <a href=\"https://learn.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/integrate-office-365-with-an-email-add-on-service\" target=\"_blank\">Integrate Exchange Online with an email add-on service</a>.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:48:16Z",
+    "endDateTime": "2026-05-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:50:01.847Z",
+    "title": "Teams Rooms on Windows: Direct Guest Join now supports Google Meet meetings",
+    "id": "MC1226223",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Teams Rooms on Windows will support two-way Direct Guest Join with Google Meet, enabling one-touch or manual join for cross-platform meetings. Rollout starts February 2026, is admin-controlled and disabled by default. No impact unless enabled; admins can prepare by enabling settings and updating documentation."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>\nWe are expanding meeting interoperability between Microsoft Teams and Google Meet by enabling two‑way <b>Direct Guest Join (DGJ)</b>. Teams Rooms on Windows devices will be able to join Google Meet meetings using one‑touch join or meeting ID entry, while Google Meet devices will be able to join Teams meetings. This improvement helps organizations simplify cross‑platform meeting participation and reduce reliance on companion devices or manual join workarounds.</p>\n\n<p><b>[When this will happen:]</b></p><ul><li>General Availability (Worldwide, GCC): Rollout begins <b>early February 2026</b> and is expected to complete <b>late February 2026</b>.</li><li>General Availability (GCC High): Rollout begins <b>early March 2026</b> and is expected to complete <b>late March 2026</b>.</li></ul>\n\n<p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations using Microsoft Teams Rooms on Windows.</li>\n  <li>IT admins responsible for Teams Rooms configuration.</li>\n  <li>Users joining mixed-platform meetings (Teams ↔ Google Meet).</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Teams Rooms on Windows devices will gain:<ul><li><b>One‑touch join</b> to Google Meet meetings from the room calendar.</li><li><b>Manual join</b> via entering a Google Meet meeting ID.</li></ul></li><li>Google Meet devices can also join Microsoft Teams meetings</li>\n  <li>Feature is <b>admin-controlled</b> and <b>disabled by default</b> until enabled.</li>\n  <li>No impact to existing meeting workflows unless the feature is enabled.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<p>No action is required unless you want to enable this feature.</p>\n<ul>\n  <li>Enable Google Meet in Teams Rooms settings: <b>Settings </b>→ <b>Meetings </b>→ <b>Third‑party meetings</b> → Toggle on <b>Google Meet</b>.</li>\n  <li>Or configure via XML:<p></p><p>\n    <code>&lt;GoogleMeetMeetingsEnabled&gt;true&lt;/GoogleMeetMeetingsEnabled&gt;</code>\n  </p></li>\n  <li>Update internal documentation.</li>\n  <li>Inform helpdesk teams.</li>\n  <li>Optionally validate the experience in pilot rooms.</li></ul><p>Learn more: <a href=\"https://learn.microsoft.com/microsoftteams/rooms/third-party-join?tabs=MTRW\" target=\"_blank\">Third-party meetings on Teams Rooms | Microsoft Learn</a></p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:50:34Z",
+    "endDateTime": "2026-05-02T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:50:44.307Z",
+    "title": "Viva Engage: New option to hide a user's messages",
+    "id": "MC1226225",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "513276"
+      },
+      {
+        "name": "Summary",
+        "value": "Viva Engage will introduce a new feature allowing users to hide messages from specific individuals, reducing unwanted interactions. Rolling out worldwide from late February to late March 2026, the feature is on by default but can be disabled by admins. Some roles cannot be hidden. No admin action required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, iOS, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>\nWe’re introducing a new end-user moderation control in Viva Engage: <b>Hide a user’s messages</b>. This feature allows users to reduce visibility of messages from specific individuals, helping minimize unwanted or distracting interactions while preserving community engagement.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=513276#Roadmap\" target=\"_blank\">513276</a>.</p>\n\n<p><b>[When this will happen:]</b></p><p>\nGeneral Availability (Worldwide): Rolling out <b>late February 2026</b> and completing by <b>late March 2026</b>.</p><p>\n\n</p><p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p><p>\nAll Viva Engage users.</p>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>The feature is <b>on by default</b>.</li>\n<li>Admins can <b>turn this feature off</b> in the Engage admin center.</li><li>Users will have a new option to hide another user’s messages from:<ul><li>Any message in Viva Engage</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/f238f09d-56ec-4bd1-85da-76c04b46a993\" style=\"width: 400px;\" alt=\"user settings\"></p><li>A user’s profile page</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/4b915ef7-a4ae-48f2-bd4e-233628410b3a\" style=\"width: 400px;\" alt=\"user settings\"></p></ul></li><li>When a user is hidden:<ul><li>Their threadstarters will no longer appear in Home Feed or email digests.</li><li>In communities and other locations, their threadstarters will appear collapsed with a click‑to‑reveal option.</li><li>In all surfaces, comments appear collapsed with a click-to-reveal option.</li></ul></li><li>Some roles cannot be hidden, including:<ul><li><b>Designated leaders </b>(requires the <b>Viva Communications &amp; Communities</b> or <b>Viva Suite</b> license)</li><li><b>Corporate communicators</b></li><li><b>Network/verified admins</b></li><li><b>Engage admins</b></li></ul>\n\n</li></ul>\n\n<p><b>[What you can do to prepare:]</b></p><p>\nNo admin action is required.</p>\n<p>We recommend:</p>\n<ul>\n<li>Informing users about this new moderation option.</li>\n<li>Updating internal documentation or guidance, as needed.</li>\n<li>Using the Engage admin center if you wish to disable the feature.</li></ul><p>Before rollout, we will update this post with new documentation.</p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:51:06Z",
+    "endDateTime": "2026-04-20T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:51:16.81Z",
+    "title": "Microsoft Purview | Role group changes in Microsoft Purview",
+    "id": "MC1226226",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Purview introduces a new Purview Agent Deployment role added to several built-in role groups, allowing analysts to deploy and manage Purview agents without admin help. Rollout starts late February 2026. No default data access changes occur; organizations can customize roles to restrict deployment if needed."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>\nWe are introducing a new <b>Microsoft Purview Role-Based Access Control (RBAC)</b> role—<b>Purview Agent Deployment</b>—and adding it to several existing Purview built‑in role groups. This update enables analysts who intend to work with Purview agents to also deploy them directly without requiring administrator involvement. This change improves onboarding efficiency and supports broader adoption of Purview’s AI‑powered agent capabilities.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): Rollout begins <b>late February 2026</b> and is expected to complete by <b>mid‑March 2026</b>.</p>\n\n<p><b>[How this will affect your organization:]</b></p>\n\n<p><b>Who is affected:</b><br>\nAdmins and analysts who intend to use Microsoft Purview agents or manage Purview role groups.</p>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>The new <b>Purview Agent Deployment</b> role will be added to these built‑in role groups:\n    <ul>\n      <li>Compliance Administrator</li>\n      <li>Data Security Management</li>\n      <li>Information Protection</li>\n      <li>Information Protection Analysts</li>\n      <li>Information Protection Investigators</li>\n      <li>Insider Risk Management</li>\n      <li>Insider Risk Management Analyst</li>\n      <li>Insider Risk Management Investigator</li><li>Purview Agent Management</li>\n    </ul>\n  </li>\n  <li>The <b>Purview Agent Management</b> role group will continue to include Purview Content Analyst role and maintain access to Posture agent capabilities.</li>\n  <li>Users assigned to these role groups will be able to deploy, use, and manage Purview agents end‑to‑end, including:\n    <ul>\n      <li><b>Data Security Triage Agent (DLP)</b></li>\n      <li><b>Data Security Triage Agent (IRM)</b></li>\n      <li><b>Data Security Posture Agent (DSPM)</b></li>\n      <li>Future agents as released</li>\n    </ul>\n  </li>\n  <li>No default data access permissions are changed.</li>\n  <li>No additional visibility into customer content is added.</li>\n  <li>Organizations can optionally enforce separation of deployment vs. analysis roles using custom role groups.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>Analysts assigned to built‑in Purview role groups will automatically be able to deploy agents.</li>\n  <li>If restricting agent deployment:\n    <ul>\n      <li>Create a custom role group without the Purview Agent Deployment role.</li>\n      <li>Assign analysts accordingly.</li>\n    </ul>\n  </li>\n  <li>Ensure custom groups include the Purview Agent Deployment role only where intended.</li>\n  <li>Review and update internal RBAC documentation, training, and onboarding materials.</li>\n  </ul><p>Learn more: <a href=\"https://learn.microsoft.com/defender-office-365/scc-permissions?toc=%2Fpurview%2Ftoc.json&amp;bc=%2Fpurview%2Fbreadcrumb%2Ftoc.json\" target=\"_blank\">Roles and role groups in Microsoft Defender for Office 365 and Microsoft Purview | Microsoft Learn</a></p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th><b>Question</b></th>\n    <th><b>Explanation</b></th>\n  </tr>\n  <tr>\n    <td>Does the change alter how existing customer data is processed, stored, or accessed?</td>\n    <td>Purview Agents may process or access existing customer data (for example, DLP, IRM, and DSPM signals) during triage and security posture workflows. This update expands who can deploy agents but does not change default data access permissions.</td>\n  </tr>\n  <tr>\n    <td>Does the change modify Conditional Access policies?</td>\n    <td>Agent deployment and operation interact with existing Conditional Access enforcement. Conditional Access policies continue to apply, but more roles will now be able to initiate workflows that are governed by those policies.</td>\n  </tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-02T23:51:40Z",
+    "endDateTime": "2026-04-15T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-02T23:51:49.09Z",
+    "title": "Ongoing meetings indicator for Teams channels with a threads layout",
+    "id": "MC1226227",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "513272"
+      },
+      {
+        "name": "FeatureStatusJson",
+        "value": "{\"513272\":[{\"RoadmapId\":513272,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8380894Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8380895Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-03T00:41:22.8380896Z\",\"LatestRing\":null}]}"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will add an ongoing meetings indicator in channels using the threads layout, showing active meetings with details and a Join button in the channel header. Rolling out from mid-February to mid-March 2026, it requires no admin action and does not change existing meeting policies."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Mac"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We will introduce a <b>new indicator </b>in <i>Microsoft Teams channels that use the threads layout</i>. As more teams begin using channels to organize their collaboration, we are seeing an increase in simultaneous meetings within the same channel. Today, Teams does not provide an efficient way for channel members to discover all ongoing meetings and choose the one they want to join. This new indicator will help fill that gap by making it easier for users to see active meetings at a glance and quickly join the meeting that best fits their needs.</p><p>The indicator will appear in the <i>channel header </i>and will expand to show active meetings, along with basic details and a <i><b>Join </b></i>button:</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/49087c5a-5114-46ab-b99c-e68fbe0edaa3/61c794253ad1d9eacf941724565dba22ddd38156.png\" style=\"width: 400px;\"></p><p>This update is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=513272#Roadmap\" target=\"_blank\">513272</a>.</p><p><b>[When this will happen]</b></p><p><b>Targeted Release (Worldwide): </b>We will begin rolling out in&nbsp;<b>mid-February 2026</b> and expect to complete by late<b> February 2026</b>.</p><p><b>General Availability (Worldwide): </b>We will begin rolling out in&nbsp;<b>early March 2026</b> and expect to complete by <b>mid-March 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected:</i></p><ul><li>Users in <i>Teams channels</i> that use the threads layout</li><li>All Microsoft 365 tenants, including Targeted Release</li></ul><p>What will happen:</p><ul><li>A new ongoing meetings indicator will appear in the <i>channel header</i>.</li><li>Users will be able to expand the indicator to view active meetings.</li><li>Each meeting will show basic details and a <i><b>Join</b></i> button.</li><li>The feature will be&nbsp;<b>on by default</b>; no admin configuration will be required.</li><li>No changes will occur to existing meeting behaviors, policies, or controls.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action will be required. This feature will become available automatically for channels that use the threads layout.</p><p>You may optionally:</p><ul><li>Inform helpdesk or support staff of this change.</li><li>Update internal Teams training materials as needed.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p><p></p>"
     }
   },
   {
