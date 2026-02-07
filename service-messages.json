@@ -9914,7 +9914,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4979599Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.49796Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4979601Z\",\"LatestRing\":null}]}"
+        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0675603Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0675604Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0675605Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -13996,36 +13996,6 @@
     }
   },
   {
-    "startDateTime": "2025-12-09T00:13:18Z",
-    "endDateTime": "2026-02-07T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-12T17:18:57.8Z",
-    "title": "(Update)Action Required: Trust DigiCert Global Root G2 Certificate Authority for using Entra services by January 7, 2026",
-    "id": "MC1193408",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Admin impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2026-01-07T08:00:00Z",
-    "services": [
-      "Microsoft Entra"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "By January 7, 2026, Microsoft Entra will switch from DigiCert Global Root G1 to G2 certificates. Organizations must trust the DigiCert G2 root CA to avoid authentication failures with Entra services. Remove any pinning to G1 and update trust settings to prevent service disruption."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>\n</p><p>Updated December 12, 2025: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>Action Required: Trust the new DigiCert Certificate Authorities (CAs) for Microsoft Entra</b>\n\n</p><p>Starting January 7, 2026, Microsoft Entra will migrate its DigiCert certificates from the G1 root CA to the G2 root CA. Clients that pin to the DigiCert G1 root or do not trust the DigiCert G2 root may experience authentication failures.</p>\n\n<b>What are G1 and G2 root CAs?</b>\n<p>Certificate Authorities (CAs) issue digital certificates that establish trust for secure communications. A root CA is the top-level certificate in a trust chain. DigiCert Global Root G1 is the current root CA used by Microsoft Entra services. DigiCert Global Root G2 is the newer root CA that Microsoft is migrating to for improved security and compliance. If your systems do not trust the G2 root, authentication and secure connections to Microsoft Entra services will fail.</p><p><b>Why you’re receiving this message:</b></p><p>Our reporting indicates that one or more users in your organization may be using Microsoft Entra ID.</p>\n\n<b>When this will happen:</b>\n<p>January 7, 2026.</p>\n\n<b>How this affects your organization:</b>\n<ul>\n<li><b>Who is affected:</b> Organizations using Microsoft Entra ID services.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>If DigiCert G2 certificates are not trusted, authentication failures will occur when accessing Microsoft Entra services.</li>\n<li>Impacted domains include:<ul>\n<li>login.live.com</li>\n<li>login.windows.net</li>\n<li>autologon.microsoftazuread-sso.com</li>\n<li>graph.windows.net</li><li><b>Note:</b> The login.microsoftonline.com domain has already been migrated to the DigiCert G2 root in Feb 2025. Customers using this domain will not be impacted, as their client systems already trust DigiCert G2.</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n\n<b>What you can do to prepare:</b>\n<ul>\n<li>Trust all Root and Subordinate CAs listed in the <a href=\"https://learn.microsoft.com/azure/security/fundamentals/azure-ca-details?tabs=root-and-subordinate-cas-list\">Azure Certificate Authority details</a> documentation.</li>\n<li>Ensure you trust the “DigiCert Global Root G2” root and its subordinate CAs (documented since September 2025).</li>\n<li>Remove any client-side pinning to the DigiCert Global Root CA root certificate.</li>\n<li>Update your settings now to avoid service disruption.</li>\n</ul>\n\n<b>Help and support:</b>\n<ul>\n<li>For details about DigiCert certificates, refer to&nbsp;<a href=\"https://knowledge.digicert.com/general-information/digicert-root-and-intermediate-ca-certificate-updates-2023\">DigiCert documentation</a>.</li>\n<li>For guidance on issuer/certificate pinning, see <a href=\"https://learn.microsoft.com/azure/security/fundamentals/azure-ca-details?tabs=certificate-authority-chains#certificate-pinning\">Azure documentation</a>.</li>\n<li>Get answers from community experts in <a href=\"https://learn.microsoft.com/answers/tags/133/azure\">Microsoft Q&amp;A</a>.</li>\n<li>If you have a support plan and need technical help, create a <a href=\"https://learn.microsoft.com/azure/azure-portal/supportability/how-to-create-azure-support-request\">support request</a>.</li>\n</ul>\n\n<b>Compliance considerations:</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
-    }
-  },
-  {
     "startDateTime": "2025-12-09T00:13:56Z",
     "endDateTime": "2026-03-02T08:00:00Z",
     "lastModifiedDateTime": "2026-01-06T17:31:48.727Z",
@@ -17046,7 +17016,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4978716Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4978719Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.497872Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4978721Z\",\"LatestRing\":null}]}"
+        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0674636Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0674638Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0674639Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.067464Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -17371,7 +17341,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4980874Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4980875Z\",\"LatestRing\":null}]}"
+        "value": "{\"542795\":[{\"RoadmapId\":542795,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0676964Z\",\"LatestRing\":null},{\"RoadmapId\":542795,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0676965Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -17664,7 +17634,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4980256Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4980256Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4980257Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.06763Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0676302Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0676302Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -17895,7 +17865,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4979808Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4979809Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.497981Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4979811Z\",\"LatestRing\":\"TargetedRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-02-07T08:10:56.067582Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0675821Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0675822Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0675823Z\",\"LatestRing\":\"TargetedRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18287,7 +18257,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4980036Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4980037Z\",\"LatestRing\":null}]}"
+        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0676062Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0676063Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20656,7 +20626,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"513272\":[{\"RoadmapId\":513272,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4978916Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4978917Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T06:18:38.4978918Z\",\"LatestRing\":null}]}"
+        "value": "{\"513272\":[{\"RoadmapId\":513272,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0674865Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0674866Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-07T08:10:56.0674867Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
