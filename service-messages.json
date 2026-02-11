@@ -14338,30 +14338,6 @@
     }
   },
   {
-    "startDateTime": "2025-12-11T22:10:06Z",
-    "endDateTime": "2026-02-11T22:10:00Z",
-    "lastModifiedDateTime": "2025-12-11T22:11:29.47Z",
-    "title": "No New Cloud Implementation Projects in Dynamics Lifecycle Services",
-    "id": "MC1194558",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Finance and Operations Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "Starting February 16, 2026, new Finance and operations apps customers trying to create a new cloud implementation project in Dynamics Lifecycle Services (LCS) will instead be routed to Power Platform admin center (PPAC), for the following products:<ul><li>Finance</li><li>Supply Chain Management</li><li>Project Operations</li></ul>Commerce, Dynamics 365 Finance + Operations (on-premises), and AX 2012 upgrade projects will still leverage Lifecycle Services.<br><br><b>How does this affect me?</b><br>New Lifecycle Services cloud implementation projects will no longer be able to be created, as customers trying to do so will be routed to PPAC to start the implementation process.<br><br>There is no impact on existing customers' LCS projects, nor their environments in Lifecycle Services.  Migration capabilities will come in the future but are not yet available.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>For more information about the unified admin experience for Finance and operations apps in PPAC, please visit <a href=\"https://aka.ms/13392\" target=\"_blank\">Overview of unified admin experience for finance and operations apps.</a>"
-    }
-  },
-  {
     "startDateTime": "2025-12-11T22:48:06Z",
     "endDateTime": "2026-02-11T22:48:00Z",
     "lastModifiedDateTime": "2025-12-11T22:49:41.273Z",
@@ -21867,6 +21843,78 @@
     "body": {
       "contentType": "html",
       "content": "We are introducing the ability to support asynchronous payments for commerce orders in Dynamics 365 Commerce. This feature will reach general availability on March 13, 2026.<br><br> \n<b>How does this affect me?</b><br> \nThis feature enables users to create payment links for customers who are interested in a product but need more time to decide. Asynchronous payment processing supports modern payments methods that don't offer real-time payment authorization, allowing for improved transaction flexibility and sales conversion rates.<br><br>\nWith this feature, users can create orders that include shipping details and send customers a secure payment link. If payment isn't completed within a specified time frame, the system can automatically cancel the order and release the inventory. Administrators can enable payment methods through configuration settings and feature flags.<br><br> \n</ul><b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO13782\" target=\"_blank\">Support asynchronous payments for commerce orders</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-02-11T20:27:48Z",
+    "endDateTime": "2026-03-11T20:27:48Z",
+    "lastModifiedDateTime": "2026-02-11T20:38:06.733Z",
+    "title": "Dynamics 365 Commerce – Pay by link support for call center orders",
+    "id": "MC1230823",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Finance and Operations Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability for call center users to generate payment links for customers in Dynamics 365 Commerce. This feature will reach general availability on March 13, 2026.<br><br> \n<b>How does this affect me?</b><br> \nThis feature enables call center users to create and send payment links via email or other communication channels, allowing customers to complete payments securely and at their convenience. Key features include:\n<ul>\n<li><b>Improved security</b> by eliminating the need for customers to share sensitive card details verbally.</li>\n<li><b>Expanded payment options</b>, including digital wallets and \"buy now, pay later\" methods.</li>\n<li><b>Order on hold</b>: Call center agents can place orders on hold while waiting for the customer to complete the payment, giving customers flexibility.</li>\n<li><b>Automatic order cancellation</b>: If the payment is not completed within the predefined transaction duration, the order will be automatically canceled, and the inventory will be released.</li>\n</ul>\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/13782/1\" target=\"_blank\">Pay by link support for call center orders</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-02-11T20:38:11Z",
+    "endDateTime": "2026-03-13T20:38:00Z",
+    "lastModifiedDateTime": "2026-02-11T20:43:20.547Z",
+    "title": "Dynamics 365 Project Operations - Enable selective import from staging for project invoices",
+    "id": "MC1230825",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Finance and Operations Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are introducing the ability to enable selective import from staging for project invoices in Dynamics 365 Project Operations. This feature will reach general availability on March 13, 2026.<br><br> \n<b>How does this affect me?</b><br> \nThis feature allows users to selectively import invoice lines for a specific proposal and process individual invoice proposals without waiting for the full batch process. Project managers can quickly process a single invoice proposal directly from the open invoice proposal. Key capabilities of this feature include:\n<ul>\n<li>A new button to populate invoice lines in the context of a specific invoice proposal.</li>\n<li>A new button on the Invoice Proposals list page to populate lines for a selected invoice.</li>\n<li>Streamlined logic that limits data processing to the selected invoice proposal, resulting in faster performance and reduced processing overhead.</li>\n</ul>\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO13784\"target=\"_blank\">Manage project invoice proposals</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-02-11T21:29:40Z",
+    "endDateTime": "2026-03-13T21:29:00Z",
+    "lastModifiedDateTime": "2026-02-11T21:30:42.867Z",
+    "title": "Dynamics 365 Supply Chain Management – Automate production reporting with electronic sensors",
+    "id": "MC1230850",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Finance and Operations Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to automate production reporting with electronic sensors in Dynamics 365 Supply Chain Management. This feature will reach general availability on March 13, 2026.<br><br> \n<b>How does this affect me?</b><br> \nThis feature adds a new auto-reporting scenario for Sensor Data Intelligence. It allows manufacturers to augment production equipment by adding electronic sensors that automatically report production progress directly to Supply Chain Management. Admins configure the system by mapping each progress-tracking sensor to a specific machine resource and operation, choosing reporting intervals, and assigning unit-conversion factors.<br><br>\nWith this feature, workers using the production floor execution interface get real-time visibility into completed units. The solution supports two-level unit tracking for flexible use across various packaging setups, such as pieces per box and boxes per pallet. Users may switch to manual reporting at any time if needed.<br><br> \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO13850\"target=\"_blank\">Automate production reporting with electronic sensors</a>."
     }
   },
   {
