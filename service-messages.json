@@ -9401,36 +9401,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-05T00:22:29Z",
-    "endDateTime": "2026-02-13T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-05T00:22:56.423Z",
-    "title": "Retiring the ability to create Microsoft Application Virtualization (App-V) packages for Microsoft 365 Apps",
-    "id": "MC1183012",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft will retire the ability to create App-V packages for Microsoft 365 Apps starting January 13, 2026, focusing on Click-to-Run deployment instead. Existing App-V packages will still work, but new ones cannot be created with updated tools. Organizations should transition to Click-to-Run before this date."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We’re retiring the ability to create <b>App-V packages</b> for Microsoft 365 Apps starting January 13, 2026. This change aligns with our focus on modern deployment methods and continued investment in <b>Click-to-Run</b>, which offers improved performance, reliability, and supportability.</p>\n<p><b>What is App-V?</b></p>\nMicrosoft Application Virtualization (App-V) is a technology that enables applications to be deployed in a virtualized format, allowing them to run on end-user devices without being installed directly. This helps reduce application conflicts and simplifies management in enterprise environments. While App-V has been useful for certain deployment scenarios, its use for Microsoft 365 Apps has become increasingly uncommon.<p></p>\n\n<p><b>[When this will happen:]</b></p>\n<p>This change will take effect on January 13, 2026. After this date, new versions of the Office Deployment Tool will no longer support App-V packaging for Microsoft 365 Apps.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> Organizations that use the Office Deployment Tool in packager mode to create App-V packages for Microsoft 365 Apps.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>The Office Deployment Tool will no longer support creation of App-V packages using the /packager argument after January 13, 2026. (Example: setup.exe /packager packageconfig.xml)</li>\n    <li>Existing App-V packages will continue to function, but no new packages can be created using updated tools.</li>\n    <li>Organizations using Click-to-Run are not affected.</li>\n    <li>No changes will occur for organizations that do not use App-V for deployment.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>Review your deployment strategy before January 13, 2026.</li>\n  <li>Transition to Click-to-Run deployment, which remains fully supported.</li>\n  <li>Update internal documentation and deployment scripts to reflect this change.</li>\n  <li>Communicate this change to IT and helpdesk teams.</li>\n  <li>Learn more about Click-to-Run deployment: <a href=\"https://aka.ms/ODTPackagerDeprecation\" target=\"_blank\">Create an App-V package for Microsoft 365 Apps</a></li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-11-05T00:23:16Z",
     "endDateTime": "2026-05-18T07:00:00Z",
     "lastModifiedDateTime": "2026-02-05T17:55:12.51Z",
