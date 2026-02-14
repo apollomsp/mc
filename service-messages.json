@@ -26,7 +26,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"369345\":[{\"RoadmapId\":369345,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775949Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775946Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775966Z\",\"LatestRing\":null}]}"
+        "value": "{\"369345\":[{\"RoadmapId\":369345,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775946Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775949Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775966Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22178,6 +22178,108 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing enhancements to the unified pricing management data entity that will make pricing data imports and exports faster, more reliable, and easier to automate in Dynamics 365 Supply Chain Management. These enhancements will reach general availability on March 13, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis enhancement provides a refined data entity for importing and exporting Unified pricing management pricing rule data. It enhances data management framework mappings, data validations, and staging performance. The entity now supports clearer column semantics for price attributes and rule components, improved default mappings, and better error surfacing during high volume loads. These improvements streamline data imports and exports, reduce rework, and enable recurring jobs and data packages to move pricing configurations safely across environments.<br><br>\n<b>Why is this action needed?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO13773\"target=\"_blank\">Optimize pricing data import and export workflows</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-02-14T01:58:19Z",
+    "endDateTime": "2026-05-16T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-14T01:58:38.827Z",
+    "title": "Microsoft Teams: Admin setting for simpler meeting passcodes (numeric‑only)",
+    "id": "MC1232096",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "555858"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will offer an admin setting to enable simpler 8-digit numeric-only meeting passcodes, off by default and requiring admin opt-in. This reduces passcode complexity but lowers cryptographic strength. The rollout begins March 2026, affecting only new meetings, with existing security controls unchanged."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>Microsoft Teams is introducing simplified meeting passcodes to reduce friction when joining meetings, especially when participants must manually enter a passcode. This feature is off by default and must be explicitly enabled by a tenant administrator.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=555858#Roadmap\" target=\"_blank\">555858</a>.</p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release</b>: We will begin rolling out in <b>early March 2026</b> and expect to complete by <b>mid-March 2026</b>.</li><li><b>General Availability</b><ul><li><b>Worldwide &amp; GCC</b>: We will begin rolling out in <b>mid-March 2026</b> and expect to complete by <b>late March 2026</b>.</li><li><b>GCCH &amp; DoD</b>: We will begin rolling out in<b> early April 2026</b> and expect to complete by <b>mid-April 2026</b>.</li></ul></li></ul><p><b>[How this affects your organization]</b></p><ul></ul><p></p><p><i>Who is affected</i>:</p><p>Tenant administrators who manage meeting security settings in <i>Microsoft Teams</i>.</p><p><i>What will happen</i>:</p><ul><li>A new admin setting allows simplified<b> 8‑digit numeric‑only meeting passcodes</b>.</li><li>The feature is <b>off by default</b>; admins must opt in.</li><li>The setting can be applied to:<ul><li>Specific users</li><li>Groups</li><li>The entire tenant</li></ul></li><li>Only newly scheduled meetings use numeric‑only passcodes.</li><li>Existing meetings are not changed.</li><li>If the feature remains off, Teams continues to use the default, more complex passcodes.</li></ul><p><b>Security considerations:</b></p><ul><li>Numeric‑only passcodes reduce cryptographic strength relative to the default setting.</li><li>The simplified passcode applies whether users join via meeting ID or by clicking a meeting link.</li><li>Admins will see a security warning when enabling the setting.</li><li>All other Teams meeting security controls remain unchanged, including:<ul><li>Lobby and admission controls</li><li>Organizer and participant policies</li><li>Tenant authentication and access controls</li></ul></li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Review your organization's meeting security requirements.</li><li>Decide whether simplified passcodes meet your policies.</li><li>If enabling, determine appropriate scope (users, groups, or tenant‑wide).</li><li>If maintaining current behavior, no action is required.</li><li>Consider updating internal documentation and informing helpdesk staff if you enable the feature.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-14T01:59:01Z",
+    "endDateTime": "2026-02-28T08:00:00Z",
+    "lastModifiedDateTime": "2026-02-14T01:59:10.623Z",
+    "title": "Microsoft Intune In Development for February 2026 is now available",
+    "id": "MC1232097",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Intune"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Intune In Development for February 2026 is available with an updated features list to aid organizational readiness. IT staff should review upcoming changes, inform helpdesk, and update user guidance as needed before these features roll out in the next month or later releases."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>The <a href=\"https://aka.ms/Intune_InDevelopment\" target=\"_blank\">In development for Microsoft Intune</a> page in our documentation has been updated.</p><p>[How this will affect your organization:]\n</p><p>The <a href=\"https://aka.ms/Intune_InDevelopment\" target=\"_blank\">In development page</a> provides a list of features in upcoming releases of Microsoft Intune to assist in your readiness and planning. The list has now been updated. You will start seeing these changes in the next month or in a subsequent release.</p><p>[What you need to do to prepare:]\n</p><p>You can inform your IT staff and helpdesk of the upcoming changes listed on this page. Plan to update your user guidance, if you feel any of these features would be important to your users.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-14T01:59:30Z",
+    "endDateTime": "2026-02-21T08:00:00Z",
+    "lastModifiedDateTime": "2026-02-14T01:59:41.817Z",
+    "title": "What’s new in the Microsoft Intune Service Update for January 2026",
+    "id": "MC1232098",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Intune"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Microsoft Intune service has been updated to the January 2026 build. The release number will appear in the Tenant Status blade. Users should review the latest features on the What's New page and related blogs to prepare for changes and new capabilities."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Your Microsoft Intune account has been updated to the latest service build.</p><p>[How this will affect your organization:]\n</p><p>You will see the service release number updated in the Tenant Status blade of the Intune admin center soon. We have introduced some changes that we are excited for you to try out.</p><p>[What you need to do to prepare:]\n</p><p>Review the additional information below to learn more about what’s new in this service release. We will continue to update the What’s new page with any features that are released between now and the next monthly service update. Learn more by reviewing features highlighted in the latest Intune <a href=\"https://aka.ms/IntuneWN2601\" target=\"_blank\">What's new 2601 (January) blog</a> and how the Intune service updates each month is described in the Microsoft Intune Service Updates blog. \n</p><p>[Additional Information:]\n</p><p><a href=\"https://aka.ms/IntuneWN\" target=\"_blank\">Intune What's new</a></p><p><a href=\"https://aka.ms/Intune/ServiceChangeBlog\" target=\"_blank\">Staying up to date on Intune new features, service changes, and service health</a></p>"
     }
   },
   {
