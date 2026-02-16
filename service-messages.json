@@ -6969,36 +6969,6 @@
     }
   },
   {
-    "startDateTime": "2025-10-02T22:10:12Z",
-    "endDateTime": "2026-02-16T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-02T22:10:42.417Z",
-    "title": "Retirement of \"When Sending a Message\" Group Policy in Classic Outlook for Windows",
-    "id": "MC1164375",
-    "category": "preventOrFixIssue",
-    "severity": "normal",
-    "tags": [
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2026-01-12T08:00:00Z",
-    "services": [
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The \"When Sending a Message\" Group Policy in Classic Outlook for Windows will be retired by January 13, 2026. New individual policies will be introduced starting October 14, 2025, requiring admins to migrate and configure settings separately for more granular control."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<b>[Introduction]</b>\n<p>We’re retiring the <i>When Sending a Message</i> Group Policy in Classic Outlook for Windows to improve administrative flexibility and respond to customer feedback. This legacy policy grouped several mail-sending behaviors under one setting. Moving forward, these behaviors will be managed through individual policies, allowing for more granular control and easier configuration.</p>\n<p><b>[When this will happen:]</b></p><ul>\n<li>New individual Group Policies will be introduced starting <b>October 14, 2025</b>.</li>\n<li>The legacy <i>When Sending a Message</i> policy will be <b>removed on January 13, 2026</b>.</li>\n</ul>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><i><b>Who is affected: </b></i>Admins managing <b>Classic Outlook for Windows</b> using Group Policy.</li>\n<li><b style=\"\">What will happen:</b>\n  <ul>\n    <li>New individual Group Policies will be added to the Office admin templates (ADMX/ADML).</li>\n    <li>These policies will coexist with the legacy policy until January 2026.</li>\n    <li>After January 13, 2026, the legacy <i>When Sending a Message</i> policy will be removed.</li>\n    <li>Admins will need to configure the new policies individually.</li>\n    <li>No changes will occur automatically; migration is required.</li>\n  </ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Review your current use of the <i>When Sending a Message</i> Group Policy.</li>\n<li>Plan to migrate to the new individual policies before January 13, 2026.</li>\n<li>Download the updated Administrative Template files (ADMX/ADML) from the Microsoft Download Center.</li><li><a href=\"https://www.microsoft.com/en-us/download/details.aspx?id=104003\"></a>Update internal documentation and helpdesk guidance to reflect the new policy structure.</li><li>Learn more: <a href=\"https://support.microsoft.com/office/outlook-gpo-update-for-when-sending-a-message-policy-b5757666-2f4a-4aa3-8a88-a7bd035f89b1\">Outlook for “When Sending a Message” Policy</a></li>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-10-02T22:15:06Z",
     "endDateTime": "2026-03-02T08:00:00Z",
     "lastModifiedDateTime": "2025-12-05T17:53:45.683Z",
@@ -10418,39 +10388,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-14T23:57:44Z",
-    "endDateTime": "2026-02-16T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-17T20:50:44.637Z",
-    "title": "(Updated) Announcing the new pay-as-you-go experience in Microsoft 365 Admin Center",
-    "id": "MC1186367",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online",
-      "Microsoft 365 Copilot Chat"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft 365 Admin Center introduces a new pay-as-you-go experience for managing Backup and Copilot billing starting January 15, 2026. Admins can create billing policies, set budgets, and view usage under the Billing node. Migration details for existing Backup customers will be announced later. No immediate action required."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated December 17, 2025: We have updated the document link. Thank you for your patience.</p><p><b>[Introduction]</b></p><p>We’re introducing a new <b>pay-as-you-go (PAYG) experience</b> in the <b>Microsoft 365 Admin Center (MAC)</b>. This update provides a centralized way to manage metered services such as <b>Microsoft 365 Backup</b> and <b>Copilot </b>under the <b>Billing node</b>.</p>\n\n<p><b>[When this will happen:]</b></p><p><b>General Availability:</b></p>\n<ul>\n<li>Available to new <b>Microsoft 365 Backup </b>and all&nbsp;<b>Copilot customers</b> starting January 15, 2026 (previously December 15, 2025).</li>\n<li>Migration path for existing <b>Backup customers</b> will be announced later.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b> Admins in Worldwide and GCC environments managing Microsoft 365 Backup and Copilot PAYG services.</p><p><b>What will happen:</b></p>\n<ul>\n<li>A new <b>PAYG page</b> will appear under the<b> Billing node</b> in MAC.</li>\n<li>Admins can create and manage billing policies directly in MAC.</li>\n<li>Services can be linked to billing policies, with support for departmental billing. <i>Note:</i> departmental billing for <b>Backup customers</b> will become available in Q1 2026.</li>\n<li>Budgets can be set, and notifications triggered when thresholds are met.</li>\n<li>Usage and spending can be viewed at the billing policy level.</li>\n<li>Subscriptions and resource groups can be created in MAC without navigating to Azure.</li>\n<li>PAYG setup for other services remains under <b>Org Settings</b> &gt; <b>PAYG </b>until transitioned.</li>\n<li>Additional PAYG-enabled services will be added to the<b> Billing node</b> over time. Until then, the PAYG setup for other products (besides <b>Backup</b>) will continue to remain under <b>Org Settings</b> &gt; <b>PAYG</b>.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p><p>No action is required.</p><p>Admins may decide to:</p>\n<ul>\n<li>Review the new <b>PAYG page</b> under <b>Billing </b>in MAC.</li>\n<li>Monitor announcements for migration timelines for existing <b>Backup customers</b>.</li>\n<li>Refer to Microsoft documentation for guidance on billing policies and budget notifications.</li></ul><p>Learn more: <a href=\"https://learn.microsoft.com/microsoft-365/services/update-pay-as-you-go-setup-billing-node?view=o365-worldwide\">Set up or disconnect pay-as-you-go billing for services in new billing node | Microsoft Learn</a>&nbsp;(will be updated before rollout)</p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-11-14T23:59:31Z",
     "endDateTime": "2026-06-15T07:00:00Z",
     "lastModifiedDateTime": "2025-11-15T00:00:07.4Z",
@@ -11860,38 +11797,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction:]</b></p><p>We’re introducing <b>OpenAI’s Sora 2</b>, an advanced video generation model, into <i>Microsoft 365 Copilot</i>. This integration enables licensed Microsoft 365 Copilot users in the Frontier Program to create short, AI-generated videos using natural language prompts. The feature helps organizations accelerate creative workflows while maintaining enterprise-grade security and compliance.</p>\n<p><b>[When this will happen:]</b></p><ul><li><b>Preview (Frontier):</b> Available now for Microsoft 365 Copilot licensed users in the <i>Create experience</i> under the Frontier program.</li></ul>\n<p><b>[How this affects your organization:]</b><b></b></p><p><b>Who is affected:</b>&nbsp;Microsoft 365 Copilot licensed users in participating Frontier tenants.</p><p><b>What will happen:</b></p>\n<ul>\n<li>Users can generate clips at 720p x 1080p resolution with synchronized audio and realistic visuals:</li><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/191f9c65-8719-459b-abde-4104f2f3bab3/870c71ab404c824d9de2b6742d37cf60cf7a2c0c.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>Users can replace media in their video projects with generated clips.</li>\n<li>Videos are stored in <i>OneDrive for Business </i>or <i>SharePoint Online</i>, following your organization’s retention and compliance policies.</li>\n<li>By default, generative AI video is enabled for Copilot licensed users in participating tenants.</li>\n<li>Security and compliance: All interactions are logged, encrypted (TLS 1.2 in transit, Customer Key or Microsoft Managed Key at rest), and governed by Microsoft Purview policies (audit logging, retention, eDiscovery, DLP).</li>\n<li>Responsible AI safeguards: Prompts are screened for inappropriate content; generated videos include visible AI-generated watermarks for transparency.</li></ul><ul>\n</ul>\n<p><b>[What you can do to prepare:]</b></p><p>No configuration or technical admin action is required. However, we recommend that you:</p><ul><li>Inform your Frontier users about the new generative video capability in<i> Microsoft 365 Copilot</i>.</li><li>Share guidance on how to generate clips and replace media in projects.</li><li>Update internal documentation if you maintain feature details for your organization.</li></ul><p>Learn more:&nbsp;</p><ul><li><a href=\"https://techcommunity.microsoft.com/blog/microsoft365copilotblog/available-today-openais-sora-2-in-microsoft-365-copilot/4469721\" target=\"_blank\">Available today: OpenAI's Sora 2 in Microsoft 365 Copilot | Microsoft 365 Copilot Blog</a></li><li><a href=\"https://support.microsoft.com/topic/create-ai-generated-short-clips-with-microsoft-365-copilot-frontier-07694d9a-9a39-4c87-8c5b-a1190365759f\" target=\"_blank\">Create AI-generated short clips with Microsoft 365 Copilot (Frontier) | Microsoft Support</a></li><li><a href=\"https://support.microsoft.com/topic/replace-part-of-a-video-project-with-an-ai-generated-short-clip-frontier-cc3b07ba-1b57-46be-8be4-a2338f75bdc8\" target=\"_blank\">Replace part of a video project with an AI-generated short clip (Frontier) | Microsoft Support</a></li></ul><p></p><table>\n<tbody><tr><th>Question</th><th>Answer</th></tr>\n<tr><td>Does the change store new customer data, if so, where, and is the data cached or permanently stored?</td><td>Yes. Generated videos are stored in OneDrive for Business or SharePoint Online under your organization’s retention and compliance policies.</td></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data, if so summarize changes?</td><td>Yes. This change introduces OpenAI’s Sora 2 model into Microsoft 365 Copilot, enabling users to create AI-generated videos using natural language prompts.</td></tr>\n<tr><td>Does the change provide end users any new way of interacting with generative AI, if so how?</td><td>Yes. Users can now generate video clips and replace media in projects using AI-generated content directly within Microsoft 365 Copilot.</td></tr>\n<tr><td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities e.g., Purview or admin reporting, if so summarize the changes?</td><td>Yes. All interactions are logged and governed by Microsoft Purview policies, ensuring auditability and compliance reporting.</td></tr>\n<tr><td>Does the change include an admin control and, can it be controlled through Entra ID group membership?</td><td>Yes. Admins can manage access through Microsoft 365 Copilot licensing and Entra ID group membership.</td></tr>\n\n</tbody></table>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-21T00:15:55Z",
-    "endDateTime": "2026-02-16T08:00:00Z",
-    "lastModifiedDateTime": "2026-01-06T17:25:33.367Z",
-    "title": "(Updated) Microsoft Viva: Transition to VFAM-based exclusion management",
-    "id": "MC1188597",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Viva"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting January 6, 2026, Viva Insights and Copilot Analytics user exclusions will transition to VFAM-based policy management, replacing the current list method. Existing exclusions migrate automatically, with no admin action needed. Admins will manage exclusions via VFAM policies at user, group, or tenant levels."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 6, 2026: The rollout for VFAM based exclusion list for Viva insights and Copilot analytics is starting from Jan 6, 2026 and expected to complete by Jan 15, 2026. Exact roll out dates may vary by region. Thank you for your patience.</p><p><b>[Introduction:]</b></p><p>We’re updating how you manage user exclusions in <i>Viva Insights</i> and <i>Copilot Analytics</i>. Starting early January 2026, exclusions will be controlled through Viva Feature Access Management (VFAM) policies instead of the current list-based method in the <i>Microsoft 365 admin center</i>. This new approach lets admins create user-, group-, or tenant-level policies to exclude users from all Viva Insights measurement (Copilot Dashboard, Advanced Insights, Organizational Insights), using the same scalable policy framework as other Viva features.</p><p><b>[When this will happen:]</b></p><p>The VFAM-based exclusion feature will begin rolling out in early January 2026 (previously&nbsp;early December 2025). Exact rollout dates may vary by region.</p><p><b>[How this affects your organization:]</b></p><p><b><i>Who is affected:</i></b> Admins managing Viva Insights and Copilot Analytics exclusions.</p><p><i><b>What will happen:</b></i></p><ul><li>Existing exclusion lists will be automatically migrated to VFAM; no admin action is required.</li><li>Users already excluded will remain excluded across all Viva Insights experiences.</li><li>VFAM will become the default and only method for managing exclusions.</li><li>Admins will use VFAM policies to configure new exclusions at the user, group, or tenant level.</li><li>The exclusion behavior remains unchanged; only the configuration method is updated.</li></ul><p><i>Screenshot - Viva Feature Access Management feature for Exclusion management:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/6a3af982-5fe9-4bf6-b1c4-dedce91aa913/1a4cb948028e9c043a78413396a20e2e3a7a356f.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare:]</b></p><ul><li>No immediate action is required.</li><li>Inform your Viva admins about the upcoming change.</li><li>Once VFAM is live, review your exclusion settings in the <i>Microsoft 365 admin center</i> (under <i>Viva Insights</i>).</li><li>Use the VFAM policy interface for any future updates.</li></ul><p>Learn more about VFAM access:&nbsp;<a href=\"https://learn.microsoft.com/viva/feature-access-management\" target=\"_blank\">Control access to features in Microsoft 365 | Microsoft Viva | Microsoft Learn</a></p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -14515,44 +14420,6 @@
     }
   },
   {
-    "startDateTime": "2025-12-15T20:09:30Z",
-    "endDateTime": "2026-02-16T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-15T20:09:34.053Z",
-    "title": "New permissions report available in SharePoint admin center",
-    "id": "MC1197128",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "492621"
-      },
-      {
-        "name": "Summary",
-        "value": "A new Permissions report in the SharePoint admin center (under Data access governance) will show which sites a user can access, including direct or group-based permissions. Rolling out worldwide from mid-December 2025 to mid-January 2026, it requires no configuration and aids permission reviews."
-      },
-      {
-        "name": "Platforms",
-        "value": "Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing a new <b>Permissions report</b> in the SharePoint admin center under <b>Data access governance</b>. This report helps SharePoint admins quickly identify which sites a specific user can access, including whether access is granted directly or through group membership. This feature supports investigations and permission reviews, especially before assigning Copilot licenses.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=492621\" target=\"_blank\" style=\"\">492621</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide, GCC, GCCH, DoD): Rollout begins mid-December 2025 and completes by mid-January 2026.</p>\n<p><b>[How this affects your organization:]</b></p><ul>\n<li><b>Who is affected:</b> SharePoint administrators managing site permissions and access.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>A new <b>Permissions report</b> will be available in the SharePoint admin center under <b>Data access governance</b>.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/7ddac865-7a97-4138-872a-aac88b098601\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>The report lists all SharePoint sites a user can access, including whether access is full-site or limited to sections.</li>\n<li>Access details include whether permissions were granted directly or via group membership.</li>\n<li>This feature is enabled by default; no additional configuration is required.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Review your current site permissions configuration to understand potential exposure.</li>\n<li>Notify your SharePoint administrators about the new portal-based access report.</li>\n<li>Update internal documentation and workflows to reflect this change.</li>\n</ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/sharepoint/data-access-governance-site-permissions-users-report\" target=\"_blank\">Discover sites accessible by a given user with the snapshot report</a></p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-12-15T20:10:45Z",
     "endDateTime": "2026-07-31T07:00:00Z",
     "lastModifiedDateTime": "2026-01-23T17:04:30.987Z",
@@ -15068,36 +14935,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p>\n<p>We’re refreshing the <b>Chat History landing page filtering experience</b> to make it simpler and more intuitive. This update consolidates filtering options under a single “filter pill,” which is a compact UI element that displays all applied filters in one place, making it easier to manage and clear them quickly.</p><p>Screenshot: <i>Select the filter pill to view options for filtering by agents or pages.</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/6a1b8beb-d1cb-44c9-868c-165e54417f3a\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide, GCC, GCC High, DoD): We will begin rolling out in mid-January 2026 and expect to complete by late January 2026.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b> All users who access Chat History.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Filtering options will now appear under a single “filter pill” for a cleaner interface.</li>\n<li>Users can clear all filters more easily with one action.</li>\n<li>No changes to underlying functionality—this is a UI refresh only.</li>\n<li>The feature will be enabled by default for all tenants.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No admin action is required.</li>\n<li>Optional: Communicate this UI change to helpdesk staff and end users to reduce confusion.</li>\n<li>Update internal documentation if you include screenshots of the Chat History page.</li>\n</ul><p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-12-19T23:41:08Z",
-    "endDateTime": "2026-02-16T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-19T23:41:17.947Z",
-    "title": "Teams admin center: Messaging safety defaults changing to \"On\" by default",
-    "id": "MC1200576",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting January 12, 2026, Microsoft Teams will enable messaging safety features by default, including weaponizable file type protection, malicious URL protection, and reporting incorrect detections. Existing custom settings remain unchanged. Admins should review and adjust settings before this date and inform helpdesk staff accordingly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We’re improving messaging security in Microsoft Teams by enabling key safety protections by default. This update helps safeguard users from malicious content and provides options to report incorrect detections, reducing risk and improving collaboration security.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>Starting <b>January 12, 2026</b>, as announced in MC1148540, MC1148539, and MC1147984.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Tenants that have not previously modified messaging safety settings and are still using the default configuration.</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n<li>The following settings in Teams admin center <b>Messaging Settings</b> will be turned <b>ON by default</b>:\n<ul>\n<li>Weaponizable file type protection</li>\n<li>Malicious URL protection</li>\n<li>Report incorrect security detections</li>\n</ul>\n</li>\n<li>End users may:\n<ul>\n<li>See warning labels on messages containing malicious URLs.</li>\n<li>Have the option to report false positives.</li>\n<li>Experience blocked messages if they contain weaponizable file types.</li>\n</ul>\n</li>\n<li>If you have already customized and saved these settings, your preferences will remain unchanged.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Review current values for these settings in <b>Teams admin center &gt; Messaging &gt; Messaging settings &gt; Messaging safety</b>.</li>\n<li>If you do not want the new defaults to apply, adjust settings and click <b>Save</b> before January 12, 2026.</li>\n<li>Communicate this change to helpdesk staff and update internal documentation if necessary.</li></ul><p>Learn more</p><ul><li><a href=\"https://learn.microsoft.com/microsoftteams/weaponizable-file-protection-teams\" target=\"_blank\">Weaponizable File Protection in Microsoft Teams</a></li><li><a href=\"https://learn.microsoft.com/microsoftteams/malicious-url-protection-teams\" target=\"_blank\">Malicious URL Protection in Microsoft Teams</a></li><li><a href=\"https://learn.microsoft.com/microsoftteams/end-user-reporting-security#user-experience-in-teams--report-not-a-security-concern\" target=\"_blank\">User experience in Teams – Report Not a Security Concern</a></li></ul><p><b> [Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
