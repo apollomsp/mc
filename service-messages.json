@@ -26,7 +26,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"369345\":[{\"RoadmapId\":369345,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775949Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775946Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775966Z\",\"LatestRing\":null}]}"
+        "value": "{\"369345\":[{\"RoadmapId\":369345,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775946Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775949Z\",\"LatestRing\":null},{\"RoadmapId\":369345,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-07-10T23:26:38.5775966Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22215,6 +22215,30 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>Microsoft is enhancing Microsoft 365 Copilot by allowing users to search for, select, and insert SharePoint Lists directly into their prompts in Copilot Chat to ground their conversations. When writing Copilot prompts in the chat box, users will be able to search for and select SharePoint Lists from Context IQ by either typing forward slash <b>\"/\"</b> or selecting <b>Add work content</b>&nbsp;from the <b>Plus menu (+)</b>. This helps ground prompts in contextually relevant data, improving the accuracy and usefulness of Copilot responses.</p><p></p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=422308\" target=\"_blank\">422308</a>.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): We will begin rolling out <b>late March 2026</b> and expect to complete by <b>early April 2026</b>.</p><p><b>[How this affects your organization:]\n</b></p><p><b>Who is affected:</b></p><ul><li>All users of Microsoft 365 Copilot with access to SharePoint Lists.</li><li>A Microsoft 365 Copilot license is required to use this feature.</li></ul><p><b>What will happen:</b></p><ul><li>Users will begin seeing their recent SharePoint Lists in <b>Context IQ</b> under the <b>Sites</b><b style=\"\"> </b>tab by either typing forward slash <b>\"/\"</b> or selecting <b>Add work content</b>&nbsp;from the <b>Plus menu (+)</b> when writing prompts in chat.</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/0bb83207-36a8-4377-97e5-8dd8b1f12e5d/42b1c2def64352bb9aa169afc741ebe1ac1c8fbc.png\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Only Lists the user has access to will be surfaced.</li><li>This feature is <b>enabled by default</b>.</li><li>No impact to tenant admins or existing configurations.\n</li></ul><p><b>[What you can do to prepare:]\n</b></p><p>No admin action is required before or after rollout. </p><p>However, you may want to:\n</p><ul><li>Notify users about this change.\n</li><li>Update internal documentation if you reference Copilot or Context IQ capabilities</li></ul><p>Learn more: <a href=\"https://support.microsoft.com/topic/using-context-iq-to-refer-to-specific-files-people-and-more-in-microsoft-365-copilot-and-copilot-chat-272ac2c1-c5f7-49c9-8a42-2a8a87846fa0\" target=\"_blank\">Using Context IQ to refer to specific files, people, and more in Microsoft 365 Copilot and Copilot Chat | Microsoft Support</a></p><p><b>[Compliance considerations]</b></p><table>\n  <tbody><tr>\n    <th>Question</th>\n    <th>Answer</th>\n  </tr>\n  <tr>\n    <td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td>\n    <td>Context IQ extends Microsoft Copilot’s AI-assisted prompt creation by allowing users to search for and reference SharePoint Lists they already have access to. The AI uses user-selected lists to ground responses and does not expand data access beyond existing permissions.</td>\n  </tr>\n  <tr>\n    <td>Does the change provide end users any new way of interacting with generative AI?</td>\n    <td>Users can directly search for and insert SharePoint Lists into Copilot prompts through Context IQ, enabling a new, more structured way to guide generative AI using enterprise data.</td>\n  </tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-23T13:12:22Z",
+    "endDateTime": "2026-03-23T13:12:22Z",
+    "lastModifiedDateTime": "2026-02-23T13:13:52.387Z",
+    "title": "Power Platform - Copilot Credit enforcement update for environments without explicit capacity settings",
+    "id": "MC1237338",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "Starting on March 1, 2026, agent usage will be blocked in your environment if there is no Copilot Credit capacity allocated and/or configured to draw from the tenant pool is disabled.<br><br> \n\n<b>What action do I need to take?</b><br>  \n\nIf you have environments that contain agents that you do not want any service disruption due to Copilot Credit capacity enforcement, please take once of the following actions:  \n\n<ul> \n\n<li><b>Allocate Copilot capacity</b> to your environment</li>  \n\n<li><b>Enable “Draw from tenant pool”</b> for your environment</li>  \n\n<li><b>Set up PayAsYouGo (PAYG)</b> for Copilot credit usage</li> \n\n</ul> \n\n<b>Why is this action needed?</b><br> \n\nIf action is not taken prior to the enforcement date, your agent usage will be blocked.<br><br> \n\nIf you have questions or need assistance, please contact Microsoft Support."
     }
   },
   {
