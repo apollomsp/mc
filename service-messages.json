@@ -22283,18 +22283,19 @@
   },
   {
     "startDateTime": "2026-02-25T01:04:06Z",
-    "endDateTime": "2026-05-20T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-25T01:04:44.113Z",
-    "title": "Microsoft Purview eDiscovery Configuration change for PowerShell cmdlet case and search synchronization changes",
+    "endDateTime": "2026-02-26T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-25T22:42:52.603Z",
+    "title": "(Updated) Microsoft Purview eDiscovery Configuration change for PowerShell cmdlet case",
     "id": "MC1238428",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "Admin impact",
       "Retirement"
     ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2026-03-23T07:00:00Z",
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
     "services": [
       "Microsoft Purview"
     ],
@@ -22303,12 +22304,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Starting March 23, 2026, on-demand synchronization for eDiscovery cases and searches created or managed via PowerShell cmdlets will be disabled, causing them not to appear or sync in the eDiscovery UX. Organizations must use Microsoft Graph APIs for UX visibility or continue cmdlet use without synchronization."
+        "value": "Updated February 25, 2026: We are removing this message and will be providing an updated message shortly. You can safely disregard this message. We apologize for any confusion this may have caused."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Starting March 23, 2026, we’re disabling on‑demand synchronization for eDiscovery cases and searches created, modified, or deleted using PowerShell cmdlets. As a result, cases and searches created through cmdlets will no longer automatically appear or stay in sync with the eDiscovery UX. \n</p><p><b>\n</b></p><p>[When this will happen:]</p><p>March 23, 2026</p><p>[How this will affect your organization:] \n</p><p>You are receiving this message because our reporting indicates your organization may be using eDiscovery tool.  \n</p><p><b>Note:</b> Administrators can identify usage by reviewing PowerShell audit logs or automation scripts that create or manage eDiscovery cases and searches. \n</p><p>eDiscovery users will no longer see cases or searches created, modified or deleted using cmdlets reflected in the eDiscovery UX when this change is implemented. \n</p><p>[What you need to do to prepare:] \n</p><p>When this change takes effect, no action is required if you manage cases and searches exclusively through the eDiscovery UX. \n</p><p>If your organization currently uses PowerShell cmdlets to create or manage eDiscovery cases or searches and expects them to appear in the UX, you will need to: \n</p><ul><li><a href=\"https://techcommunity.microsoft.com/blog/microsoft-security-blog/general-availability-of-microsoft-purview-ediscovery-graph-api-for-e3-customers/4489678\" target=\"_blank\">Use Microsoft Graph APIs</a> to create and manage eDiscovery cases and searches. \n</li><li>Continue using PowerShell cmdlets for backend or automation scenarios without expecting visibility or synchronization in the UX. \n</li></ul><p>Learn more about eDiscovery: <a href=\"https://learn.microsoft.com/en-us/purview/edisc?view=o365-worldwide\" target=\"_blank\">Learn about eDiscovery solutions | Microsoft Learn</a> \n</p><p>Learn more about Graph API for eDiscovery: <a href=\"https://learn.microsoft.com/en-us/purview/edisc-ref-api-guide\" target=\"_blank\">Use Microsoft Purview APIs for eDiscovery | Microsoft Learn&nbsp;</a></p><p></p><p><b>Compliance considerations:</b></p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th align=\"left\">Compliance area</th>\n  \n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change modify, interrupt, or disable any Purview capabilities (eDiscovery or Content Search)?</td>\n    \n    <td>This change disables on‑demand synchronization between PowerShell‑managed eDiscovery cases and searches and the eDiscovery user experience (UX). While eDiscovery functionality remains available through PowerShell and Microsoft Graph APIs, cases and searches created, modified, or deleted via cmdlets will no longer appear or stay in sync within the eDiscovery UX.</td>\n  </tr>\n  <tr>\n    <td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td>\n\n    <td>Administrators who rely on the eDiscovery UX to review or manage cases and searches created through automation will no longer see those objects reflected in the UI. Monitoring, reporting, and compliance workflows may need to shift to Microsoft Graph APIs, PowerShell audit logs, or automation tooling to maintain visibility.</td>\n  </tr>\n</tbody></table>"
+      "content": "<p>Updated February 25, 2026: We are removing this message and will be providing an updated message shortly. You can safely disregard this message. We apologize for any confusion this may have caused.</p><p>----Disregard---</p><p>Starting March 23, 2026, we’re disabling on‑demand synchronization for eDiscovery cases and searches created, modified, or deleted using PowerShell cmdlets. As a result, cases and searches created through cmdlets will no longer automatically appear or stay in sync with the eDiscovery UX. \n</p><p><b>\n</b></p><p>[When this will happen:]</p><p>March 23, 2026</p><p>[How this will affect your organization:] \n</p><p>You are receiving this message because our reporting indicates your organization may be using eDiscovery tool.  \n</p><p><b>Note:</b> Administrators can identify usage by reviewing PowerShell audit logs or automation scripts that create or manage eDiscovery cases and searches. \n</p><p>eDiscovery users will no longer see cases or searches created, modified or deleted using cmdlets reflected in the eDiscovery UX when this change is implemented. \n</p><p>[What you need to do to prepare:] \n</p><p>When this change takes effect, no action is required if you manage cases and searches exclusively through the eDiscovery UX. \n</p><p>If your organization currently uses PowerShell cmdlets to create or manage eDiscovery cases or searches and expects them to appear in the UX, you will need to: \n</p><ul><li><a href=\"https://techcommunity.microsoft.com/blog/microsoft-security-blog/general-availability-of-microsoft-purview-ediscovery-graph-api-for-e3-customers/4489678\" target=\"_blank\">Use Microsoft Graph APIs</a> to create and manage eDiscovery cases and searches. \n</li><li>Continue using PowerShell cmdlets for backend or automation scenarios without expecting visibility or synchronization in the UX. \n</li></ul><p>Learn more about eDiscovery: <a href=\"https://learn.microsoft.com/en-us/purview/edisc?view=o365-worldwide\" target=\"_blank\">Learn about eDiscovery solutions | Microsoft Learn</a> \n</p><p>Learn more about Graph API for eDiscovery: <a href=\"https://learn.microsoft.com/en-us/purview/edisc-ref-api-guide\" target=\"_blank\">Use Microsoft Purview APIs for eDiscovery | Microsoft Learn&nbsp;</a></p><p></p><p><b>Compliance considerations:</b></p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th align=\"left\">Compliance area</th>\n  \n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change modify, interrupt, or disable any Purview capabilities (eDiscovery or Content Search)?</td>\n    \n    <td>This change disables on‑demand synchronization between PowerShell‑managed eDiscovery cases and searches and the eDiscovery user experience (UX). While eDiscovery functionality remains available through PowerShell and Microsoft Graph APIs, cases and searches created, modified, or deleted via cmdlets will no longer appear or stay in sync within the eDiscovery UX.</td>\n  </tr>\n  <tr>\n    <td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td>\n\n    <td>Administrators who rely on the eDiscovery UX to review or manage cases and searches created through automation will no longer see those objects reflected in the UI. Monitoring, reporting, and compliance workflows may need to shift to Microsoft Graph APIs, PowerShell audit logs, or automation tooling to maintain visibility.</td>\n  </tr>\n</tbody></table>"
     }
   },
   {
@@ -22510,6 +22511,282 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to record and review full-screen representative activity in Dynamics 365 Customer Service. This feature will reach general availability on March 27, 2026.<br><br><b>How does this affect me?</b><br>This feature records full‑screen representative activity during customer interactions and uploads it for review, giving supervisors an exact view of what occurred in each session. The system records the active monitor, includes system audio when full‑screen capture is enabled, and securely uploads the file to Dataverse at session end. Local copies are automatically deleted to protect sensitive data.<br><br>Supervisors can review, download, and analyze recordings for coaching, quality assurance, and compliance. Each file includes metadata, such as case ID and representative name, for accurate identification and retrieval. Recordings support durations up to two hours with built‑in guardrails for performance and file size. As recordings are triggered by channel activity, no manual setup is required in automatic capture scenarios. For workflows requiring manual control, such as monitoring agents working on chats or cases, representatives can start and stop recordings manually.<br><br>Administrators can disable screen recording by uninstalling the Desktop Capture Application client, turning off channel‑based triggers, or configuring role‑based access so only authorized users can view or download recordings.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T00:10:37Z",
+    "endDateTime": "2026-04-24T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-26T00:10:59.53Z",
+    "title": "Windows 365: In development update for February 2026",
+    "id": "MC1239170",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows 365"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Windows 365 In development page for Enterprise and Frontline has been updated with upcoming features for February 2026. Organizations should review and share this information with IT and helpdesk teams and update documentation as needed. No compliance issues have been identified."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>The <a href=\"https://learn.microsoft.com/windows-365/enterprise/in-development\" target=\"_blank\">In development</a> page for Windows 365 Enterprise and Frontline has been updated. \n</p><p>[How this will affect your organization]</p><p>The <a href=\"https://learn.microsoft.com/windows-365/enterprise/in-development\" target=\"_blank\">In development</a> page provides visibility into features planned for upcoming Windows 365 releases to support readiness and planning. This list has been refreshed, and the listed changes may begin rolling out in the next month or in a subsequent release. \n</p><p>[What you need to do to prepare]</p><p>Review the updated In development page and share relevant information with your IT staff and helpdesk teams. Consider updating internal guidance or user-facing documentation if any of the upcoming features are relevant to your organization. \n</p><p>[Compliance considerations]</p><p>No compliance considerations have been identified.&nbsp;&nbsp;</p><p>\n</p><p>\n</p><p>\n</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T00:13:15Z",
+    "endDateTime": "2026-04-24T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-26T00:14:46.29Z",
+    "title": "Plan for Change:  Windows 365 Azure Network Connection deployments connected to new VNets",
+    "id": "MC1239171",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows 365"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "After March 31, 2026, new Azure VNets used with Windows 365 Azure Network Connection will lack default outbound internet access, requiring explicit outbound connectivity setup (e.g., NAT Gateway) to avoid provisioning failures. Existing VNets and Microsoft hosted network deployments are unaffected. Admins should prepare accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>After March 31st, 2026, newly created Azure Virtual Networks (VNets) will no longer include default outbound internet access. \n</p><p>Windows 365 customers who deploy Cloud PCs using an Azure Network Connection (ANC) connected to a VNet created on or after this date must explicitly configure outbound connectivity for the Cloud PCs.  \n</p><p>Windows 365 deployments using Microsoft hosted network (MHN) are not affected. \n</p><p>[How will this affect your organization?]</p><p>If your organization deploys Cloud PCs using an Azure Network Connection that is connected to a VNet created on or after March 31, 2026: \n</p><ul><li>New VNets will default to private subnets with no outbound internet access. \n</li><li>Without an explicitly configured outbound connectivity method (such as a NAT Gateway), Cloud PC provisioning will fail. \n</li><li>ANCs using existing VNets created through March 31, 2026, are not impacted and will continue to function with their current outbound configuration. \n</li><li>Deployments using Microsoft hosted network (MHN) require no changes. \n</li></ul><p>This change only applies when new VNets are created for Azure Network Connection after March 31, 2026. Existing provisioning policies that use VNets created before this date will continue to work as expected. \n</p><p>[What you need to do to prepare:]</p><p>Admins should review their Windows 365 deployment approach and ensure internal teams, including help desks and support staff are aware of this change. \n</p><p>Recommended actions: \n</p><ul><li>Use Microsoft hosted network (MHN) where possible. MHN is the recommended deployment option for Windows 365 and includes fully managed outbound connectivity.</li><li>If continuing to use Azure Network Connection, ensure all new VNets linked in new or existing ANCs include a supported outbound access method:</li><li style=\"margin-left: 75px;\">NAT Gateway (recommended)</li><li style=\"margin-left: 75px;\">Azure Standard Load Balancer</li><li style=\"margin-left: 75px;\">Azure Firewall or a supported third-party Network Virtual Appliance (NVA)*</li></ul><p>*NVAs that automatically scale may interrupt persistent connections such as RDP. A direct outbound method like NAT Gateway is preferred. \n</p><ul><li>Validate outbound connectivity to ensure Windows 365 service endpoints are reachable and ANC health checks succeed. \n</li><li>Review deployment automation (ARM, Bicep, Terraform) to confirm it no longer relies on legacy default outbound access behavior. \n</li></ul><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization \n</p><p>[Additional Information:]</p><p><a href=\"https://techcommunity.microsoft.com/discussions/windows365discussions/azure-default-outbound-access-changes-guidance-for-windows-365-anc-customers/4494460\" target=\"_blank\">Azure Default Outbound Access Changes: Guidance for Windows 365 ANC Customers | Microsoft Community Hub</a> \n</p><p><a href=\"https://azure.microsoft.com/updates?id=492953\" target=\"_blank\">Azure updates | Microsoft Azure</a>&nbsp;</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T00:19:48Z",
+    "endDateTime": "2026-06-16T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-26T00:20:02.883Z",
+    "title": "Microsoft Purview: Data Security Investigations – AI analysis enhancements",
+    "id": "MC1239175",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Feature update",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "557556"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Purview is enhancing Data Security Investigations with AI analysis improvements, including automatic preparation of items for AI analysis and a new standard categorization option. Rolling out from mid-March to mid-May 2026, the feature is enabled by default with no admin action required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re enhancing AI analysis in Data Security Investigations (DSI) to help analysts evaluate risky content more efficiently. These updates streamline the workflow by automatically preparing items for AI analysis as they're added to an investigation and by introducing a new standard categorization option. Standard categorization can reduce time and cost, while advanced categorization—including AI‑generated topics—remains available.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557556\" target=\"_blank\">557556</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview: </b>Rolling out<b> mid‑March 2026</b> through <b>mid‑April 2026</b>.</li><li><b>General Availability (Worldwide): </b>Rolling out <b>mid‑April 2026</b> through <b>mid‑May 2026</b>.</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft Purview administrators and analysts using Data Security Investigations.</li><li>All Microsoft 365 tenants with access to DSI capabilities.</li></ul><p>What will happen</p><ul><li>Items added to an investigation will be<b> automatically prepared for AI analysis</b>, reducing manual steps.</li><li>A new <b>standard categorization </b>option will be available.</li><li><b>Advanced categorization</b> (including AI‑generated topics) remains available.</li><li>No changes to existing admin settings—<b>feature is enabled by default</b> as part of the DSI workflow.</li><li>Users may notice:<ul><li>Faster categorization and analysis readiness.</li><li>An updated categorization selection interface.</li></ul></li></ul><p><i>Screenshot - Data Security Investigations standard vs. advanced categorization:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/4eb135a4-33e7-4369-8bed-11ea1d4ef7dc/c086cc36be065fd9e183862e97f93aef29477289.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><p>No admin action is required before rollout.</p><p>To prepare:</p><ul><li>Inform analysts and relevant security operations staff about the new categorization options.</li><li>Update internal documentation if you describe DSI workflows or categorization processes.</li></ul><p>Learn:</p><ul><li><a href=\"https://learn.microsoft.com/purview/data-security-investigations\" target=\"_blank\">Learn about Data Security Investigations | Microsoft Purview | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/purview/data-security-investigations-ai-analysis\" target=\"_blank\">Use AI analysis in Data Security Investigations | Microsoft Purview | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T00:20:37Z",
+    "endDateTime": "2026-05-11T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-26T00:20:48.14Z",
+    "title": "Outlook: Delimiter setting admin policy",
+    "id": "MC1239176",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Exchange Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "557676"
+      },
+      {
+        "name": "Summary",
+        "value": "A new Exchange Online admin policy will let admins set a tenant-wide default for using commas as recipient separators in Outlook mail compose and reply. Rollout starts April 2026. Users can override unless locked by policy. No automatic changes; no action required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re adding a new Exchange Online admin policy that gives admins more control over the default Mail Compose and Reply setting that determines whether commas are used as recipient separators.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557676\" target=\"_blank\">557676</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General availability (Worldwide): </b>Rollout will begin in <b>early April 2026</b> and complete by <b>mid‑April 2026</b>.</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Exchange Online administrators</li><li>All users composing or replying to email in <i>Outlook</i> where no per‑user override is configured</li></ul><p><i>What will happen</i></p><ul><li>A new admin policy will be available to set the tenant‑wide default for “<i><b>Use commas as recipient separators</b></i>.”</li><li>Admins can choose whether the default is on or off for all users.</li><li>Users may still change this setting in their <i>Outlook client </i>unless an admin enforces a policy that locks it:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d53d4d89-2cf9-4b09-8916-ad98fa64e98e/51360c8601e14324e4cd6d6a0a45e002a951a767.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>This update is especially useful for organizations whose contacts commonly use “Last name, First name” formats.</li><li>No changes will occur automatically—tenants will retain existing behavior unless an admin modifies the policy.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>If desired, you may:</p><ul><li>Review your organization’s preferred recipient formatting conventions.</li><li>Update internal documentation if your helpdesk or user‑training materials reference this setting.</li><li>Configure the new admin policy after rollout if you want to establish a consistent default.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T00:25:19Z",
+    "endDateTime": "2026-06-02T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-26T00:25:30.12Z",
+    "title": "SharePoint: Backend migration for Weather, World Clock, and Events web parts",
+    "id": "MC1239181",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "SharePoint’s Weather, World Clock, and Events web parts will switch from Bing Maps to Azure Maps backend by late April 2026. This automatic migration affects organizations using these web parts and requires allowing atlas.microsoft.com in network settings. No changes to user experience or configuration will occur."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>The Bing Maps data provider will be retired in the near future. To ensure service continuity, SharePoint’s <b>Weather</b>, <b>World Clock</b>, and <b>Events</b> web parts will migrate to <b>Azure Maps</b> as the new backend data provider. This update is backend-only and does not change any end-user functionality or experience.</p>\n\n<p><b>[When this will happen]</b></p>\n<p><b>General Availability (Worldwide, GCC):</b> Rollout will begin in <b>late March 2026</b> and complete by <b>late April 2026</b>.</p>\n\n<p><b>[How this affects your organization]</b></p>\n\n<p><b style=\"\">Who is affected:</b></p>\n<ul>\n<li>Organizations using the SharePoint <b>Weather</b>, <b>World Clock</b>, or <b>Events</b> web parts.</li>\n<li>Admins responsible for allowlists, network security, or governance of SharePoint sites.</li>\n</ul>\n\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n<li>The data provider for these web parts will migrate from <b>Bing Maps</b> to <b>Azure Maps</b>.</li>\n<li>Azure Maps services used by these web parts are supported in most regions except China.</li>\n<li>No changes occur to end-user experience or configuration.</li>\n<li>No admin toggle is provided; migration is automatic.</li>\n</ul>\n\n<p><b>[What you can do to prepare]</b></p>\n<ul>\n<li>Add <b>atlas.microsoft.com</b> to your organization’s allowlist if applicable.</li>\n<li>Confirm that network, firewall, and proxy configurations allow traffic to this domain.</li>\n<li>Review SharePoint pages that use these web parts.</li>\n<li>Communicate this backend update to site owners or helpdesk staff as needed.</li>\n<li>Update internal documentation as needed.</li>\n</ul><p>Learn more:&nbsp;</p><ul><li><a href=\"https://support.microsoft.com/office/use-the-events-web-part-5fe4da93-5fa9-4695-b1ee-b0ae4c981909\" target=\"_blank\">Use the Events web part | Microsoft Support</a>\n</li><li><a href=\"https://support.microsoft.com/office/use-the-world-clock-web-part-aa2ede87-e331-44f1-a116-a5b8fc67fd04\" target=\"_blank\">Use the World clock web part | Microsoft Support</a></li><li><a href=\"https://support.microsoft.com/office/show-the-weather-on-your-page-4a86540e-0846-4fc0-bad0-1a82fcd430fc\" target=\"_blank\">Show the weather on your page | Microsoft Support</a></li></ul>\n\n<p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T00:26:37Z",
+    "endDateTime": "2026-05-15T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-26T00:27:03.607Z",
+    "title": "Microsoft 365 Copilot: Audio recap language expansion in Microsoft Teams",
+    "id": "MC1239183",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "554926"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams Audio Recap will support eight additional languages starting March 2026, available on all major clients for users with a Microsoft 365 Copilot license. No admin changes are needed, and audio recaps will be stored in users' OneDrive. Optional training updates are suggested."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, Desktop, iOS, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are rolling out an update to <b>Microsoft Teams Audio Recap</b> that will expand support to eight additional languages. This enhancement is designed to help more users access concise, podcast‑style summaries of their meetings in their preferred language, improving inclusivity and meeting follow‑up for global organizations. Audio Recap will be available across Android, Desktop, iOS, and Web, ensuring consistent access for users on all major Teams clients. A Microsoft 365 Copilot license will be required to use this feature once rollout is complete.</p><p>This update is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=554926\" target=\"_blank\">554926</a></p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release: </b>Rollout will begin in <b>early March 2026</b> and complete by&nbsp;<b>mid‑March 2026.</b></li><li><b>General Availability (Worldwide)</b>: Rollout will begin in<b> late March 2026</b> and complete by <b>mid‑April 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft 365 tenants with users who have a <b>Microsoft 365 Copilot license</b></li><li>All Microsoft 365 tenants where Teams Audio Recap is available</li></ul><p><i>What will happen</i></p><ul><li>Audio Recap will begin supporting <b>eight additional languages</b>, including variations across:<ul><li>Chinese</li><li>English</li><li>French</li><li>German</li><li>Italian</li><li>Japanese</li><li>Portuguese</li><li>Spanish</li></ul></li><li>Users will see these languages as options on the <b><i>Audio Recap generation page</i></b> once rollout is complete:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/775c0818-1195-443c-925c-410355cdebfa/3897c215c750c8c6d4c649117ab7f00f663395d7.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/7df63890-e8d7-40bb-a601-a6022d9de30a/5f9b8acd886835cf929cf2e3c98f63253cb769f3.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>No admin policy changes or configuration will be required.</li><li>The feature will remain <b>on by default </b>for tenants where Audio Recap is already available.</li></ul><p><b>[What you need to do to prepare]</b></p><p>No action is required.</p><p>Optional preparation steps include:</p><ul><li>Update internal training materials to reflect new language availability.\n</li><li>Inform helpdesk staff that new language options will appear beginning in March 2026.</li></ul><p><b>Learn more:&nbsp;</b><a href=\"https://support.microsoft.com/office/listen-to-audio-recaps-of-your-meetings-04bd2828-5c4e-4132-ac86-a87b9ec28984\" target=\"_blank\">Listen to audio recaps of your meetings | Copilot in Teams | Copilot | Microsoft Support</a></p><p><b>[Compliance considerations]\n</b></p><p>This feature stores new customer data. Generated audio recap files will be stored in the user’s <i>OneDrive</i>.</p><p>\n</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T00:27:29Z",
+    "endDateTime": "2026-07-17T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-26T00:33:01.157Z",
+    "title": "Microsoft 365 Copilot: Turn Copilot Pages into SharePoint News posts",
+    "id": "MC1239186",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot will enable users to transfer content from Copilot Pages directly into SharePoint News posts for seamless editing and publishing. This feature, rolling out late May to mid-June 2026, is enabled by default, respects existing permissions, and requires no action but user awareness and documentation updates."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are introducing a new handoff experience that allows users to take content created in Copilot Pages and seamlessly continue authoring as a SharePoint news post. This update helps users move from ideation to publishing more efficiently.</p><p><b>[When this will happen:]</b></p><p><b>General Availability (Worldwide, GCC):</b> We will begin rolling out on <b>late May 2026</b> and expect to complete by <b>mid-June 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><b>Who is affected:</b></p><ul><li>Users who create content in Copilot Pages and publish SharePoint News</li><li>Organizations using Microsoft 365 Copilot with SharePoint Online</li></ul><p><b>What will happen:</b></p><p></p><ul><li>Users can move content from Copilot Pages directly into a SharePoint News post.</li><li>A new <b>SharePoint </b>option will appear under the <b>Create </b>button in Copilot Pages:<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/352bdbb5-6e50-4928-89b7-be0a18895a6f/b6f4075353c86e3ab8b15d19407429dfbaaff981.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Selecting SharePoint opens the content in SharePoint News for continued editing and publishing.</li><li>The feature is <b>enabled by default</b>.</li><li>Existing SharePoint permissions, policies, and governance controls are respected.</li><li>There is no disruption to existing SharePoint News workflows.</li></ul><p><b>[What you can do to prepare]</b></p><p>No specific action is required. You may consider:</p><ul><li>Inform users who regularly publish SharePoint News about the new Copilot Pages handoff.</li><li>Update internal documentation or training materials if you reference Copilot or SharePoint authoring workflows.</li><li>Review SharePoint News governance and permissions to ensure they align with your organization’s publishing practices.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p></no>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T00:33:20Z",
+    "endDateTime": "2026-07-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-26T00:33:36.08Z",
+    "title": "Defender for Office 365 URL click alerts now include Microsoft Teams",
+    "id": "MC1239187",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "557549"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Defender for Office 365 URL click alerts will now include Microsoft Teams, enabling detection of malicious link clicks in Teams messages. This feature, rolling out from February to May 2026, enhances alert visibility and investigation in the Defender portal for licensed organizations, with no user workflow changes."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, Desktop, iOS, Mac, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We’re extending <b>Microsoft Defender for Office 365 (MDO)</b> URL click alerting to Microsoft Teams, giving security teams greater visibility into potentially malicious activity beyond email. By surfacing alerts when users click malicious or suspicious links in Teams messages, organizations can detect threats earlier, investigate faster, and respond more effectively—all from the Microsoft Defender portal.</p><p>This message is associated with Microsoft Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557549\" target=\"_blank\">557549</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li>Public Preview (Worldwide): We will begin rolling out<b> late February 2026 </b>and expect to complete by <b>early March 2026</b>.\n</li><li>General Availability (Worldwide): We will begin rolling out <b>early March 2026</b> and expect to complete by <b>mid-March 2026</b>.\n</li><li>General Availability (GCC, GCCH, DoD): We will begin rolling out <b>early May 2026</b> and expect to complete by <b>late May 2026</b>.</li></ul><p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Organizations licensed for <b>Microsoft Defender for Office 365 Plan 2</b></li>\n<li>Organizations licensed for <b>Microsoft 365 E5</b></li>\n<li>Security admins and SOC teams monitoring alerts in the Microsoft Defender portal</li>\n<li>Users who send or receive Microsoft Teams messages containing URLs</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>Two existing MDO alerts will now also trigger for <b>Microsoft Teams URL clicks</b>, in addition to email:<ul><li><b>A user clicked through to a potentially malicious URL</b></li><li><b>A potentially malicious URL click was detected</b></li></ul></li>\n<li>Alerts will appear on the <b>Defender alerts page</b> alongside existing alerts.</li>\n<li>Alerts will include the <b>associated Teams message as evidence</b>, providing richer investigation context.</li>\n<li>Teams signals will be included in <b>incident correlation</b>, helping connect related activity across email and Teams.</li>\n<li>Incident pages will surface <b>Teams message data directly</b>, reducing the need to switch investigation contexts.</li><li><b>Automated investigation and response (AIR)</b> will not be supported for the Teams URL click alerts.</li>\n<li>The feature is <b>enabled by default </b>for eligible tenants.</li>\n<li>No changes are made to user workflows.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required. The feature is automatically enabled for eligible tenants.</li>\n<li>Review alert workflows and incident response playbooks.</li>\n<li>Inform SOC and helpdesk teams about Teams-based alerting.</li>\n</ul>\n\n<p><b>Learn more:</b></p><p><a href=\"https://learn.microsoft.com/defender-xdr/alert-policies\" target=\"_blank\">Alert policies in the Microsoft Defender portal | Microsoft Learn</a>&nbsp;(will be updated before rollout)</p><p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" width=\"100%\">\n  <tbody><tr>\n    <th align=\"left\">Question</th>\n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change alter how existing customer data is processed, stored, or accessed?</td>\n    <td>Microsoft Teams message data is accessed and surfaced as evidence within Microsoft Defender for Office 365 alerts and incidents when users click malicious or suspicious URLs.</td>\n  </tr>\n  <tr>\n    <td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td>\n    <td>Security admins gain additional alerting and investigation signals related to Microsoft Teams URL clicks within the Microsoft Defender portal, enhancing monitoring and incident correlation.</td>\n  </tr>\n</tbody></table>"
     }
   },
   {
