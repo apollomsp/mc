@@ -3358,7 +3358,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"491632\":[{\"RoadmapId\":491632,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786498Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786496Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786501Z\",\"LatestRing\":null}]}"
+        "value": "{\"491632\":[{\"RoadmapId\":491632,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786496Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786498Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786501Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23105,6 +23105,52 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to run voice outbound campaigns with proactive engagement in Dynamics 365 Contact Center. This feature will reach general availability on March 31, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis feature allows administrators to configure proactive engagements in voice outbound campaigns to reach more customers efficiently and compliantly while optimizing operational resources. Key capabilities of this feature include:<ul>\n    <li><b>File upload and API options:</b> Upload files containing customer data to onboard contacts for proactive engagements or use API integration to directly submit proactive engagement requests with attributes.</li>\n    <li><b>Reattempts configuration:</b> Administrators have granular control over retry logic for proactive engagements by setting up the following options:<ul>\n        <li>Outcome-based retries</li>\n        <li>Maximum attempts and wait times</li>\n        <li>Number selection and stacking</li>\n        <li>Contact chaining</li>\n    </ul></li>\n    <li><b>Communication preferences:</b> Controls to honor customer communication preferences include:<ul>\n        <li>Contactable hours and days</li>\n        <li>Holiday restrictions</li>\n        <li>Consent management</li>\n    </ul></li>\n</ul>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.\n<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO14038\" target=\"_blank\">Run voice outbound campaigns with proactive engagement.</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T20:44:53Z",
+    "endDateTime": "2026-04-02T20:44:00Z",
+    "lastModifiedDateTime": "2026-02-26T20:46:50.563Z",
+    "title": "Dynamics 365 Customer Insights – Journeys – Automatic activation of bot protection",
+    "id": "MC1239861",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "On April 1, 2026, <a target=\"_blank\" href=\"https://aka.ms/ADO14140\">bot protection</a> will be enabled in all Customer Insights - Journeys environments.<br><br><b>How does this affect me?</b><br>This change is being made to improve the accuracy of your channel telemetry and ensure reliable data analytics. Interactions identified as bot generated will be filtered out by default.<ul><li><b>If you already have bot protection enabled:</b><br>You will not experience any behavioral changes. The feature toggle will no longer appear in Settings, as the feature is now permanently enabled.</li><li><b>If you currently have bot protection disabled:</b><br>The feature will be activated automatically. The toggle for this feature will no longer appear in Settings. You may also notice a minor decrease in interaction metrics as bot-generated interactions across channels will be filtered out.</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-02-26T22:01:29.093Z",
+    "endDateTime": "2027-02-26T22:01:29.01Z",
+    "lastModifiedDateTime": "2026-02-26T22:01:30.343Z",
+    "title": "New Secure Boot update resources for Azure Virtual Desktop, Windows 365, and Microsoft Intune",
+    "id": "MC1239883",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>New documentation is now available to help IT administrators prepare for Secure Boot certificate updates and manage update readiness across virtual and cloud‑managed Windows environments. The documentation covers Secure Boot certificate updates for <a href=\"https://support.microsoft.com/topic/secure-boot-certificate-updates-for-azure-virtual-desktop-06a8a1bc-2510-4ead-9bea-3698e1d6b1db\" rel=\"noopener noreferrer\" target=\"_blank\">Azure Virtual Desktop</a> and <a href=\"https://support.microsoft.com/topic/secure-boot-certificate-updates-for-windows-365-71839dd8-2832-44ed-9c60-57c04f99a645\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 365 Cloud PCs</a>, as well as <a href=\"https://support.microsoft.com/topic/monitoring-secure-boot-certificate-status-with-microsoft-intune-remediations-6696a27b-fa09-4570-b112-124965adc87f\" rel=\"noopener noreferrer\" target=\"_blank\">monitoring Secure Boot certificate status using Microsoft Intune remediations</a> to provide visibility into readiness across managed devices. Together, these resources help ensure virtual and cloud‑managed Windows environments remain secure and continue to receive updates after June 2026.</div><div><br></div><div><b>When will this happen:</b></div><div>This documentation is available now. Secure Boot certificates begin expiring in June 2026.</div><div><br></div><div><b>How this will affect your organization:</b></div><div>Organizations managing virtual or cloud‑managed Windows environments may need to review Secure Boot certificate update planning and readiness. The documentation provides guidance for updating Secure Boot certificates in Azure Virtual Desktop and Windows 365 environments and describes how Microsoft Intune can be used to monitor Secure Boot certificate status across managed devices.</div><div><br></div><div>In addition, the <a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/monitor/secure-boot-status-report\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot status report in Windows Autopatch</a> is available again after being temporarily disabled, restoring visibility into Secure Boot readiness for devices enrolled in Windows Autopatch.</div><div><br></div><div><b>What you need to do to prepare:</b></div><div>Review the new documentation to help plan Secure Boot certificate updates and assess readiness across your virtual and cloud‑managed Windows environments. Where applicable, use Microsoft Intune and Windows Autopatch reporting to monitor Secure Boot certificate status and support update planning.</div><div><br></div><div><b>Additional information:</b></div><ul><li><a href=\"https://support.microsoft.com/topic/secure-boot-certificate-updates-for-azure-virtual-desktop-06a8a1bc-2510-4ead-9bea-3698e1d6b1db\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot Certificate Updates for Azure Virtual Desktop</a></li><li><a href=\"https://support.microsoft.com/topic/secure-boot-certificate-updates-for-windows-365-71839dd8-2832-44ed-9c60-57c04f99a645\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot Certificate Updates for Windows 365</a></li><li><a href=\"https://support.microsoft.com/topic/monitoring-secure-boot-certificate-status-with-microsoft-intune-remediations-6696a27b-fa09-4570-b112-124965adc87f\" rel=\"noopener noreferrer\" target=\"_blank\">Monitoring Secure Boot certificate status with Microsoft Intune remediations</a></li><li><a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/monitor/secure-boot-status-report\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot status report in Windows Autopatch</a></li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/secure-boot-playbook-for-certificates-expiring-in-2026/4469235\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot playbook for certificates expiring in 2026</a></li><li><a href=\"https://support.microsoft.com/topic/secure-boot-certificate-updates-guidance-for-it-professionals-and-organizations-e2b43f9f-b424-42df-bc6a-8476db65ab2f#bkmk_deploment_playbook\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot Certificate updates: Guidance for IT professionals and organizations</a></li></ul>"
     }
   },
   {
