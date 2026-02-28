@@ -159,30 +159,6 @@
     }
   },
   {
-    "startDateTime": "2025-02-28T21:59:18.603Z",
-    "endDateTime": "2026-02-28T21:59:18.553Z",
-    "lastModifiedDateTime": "2025-02-28T21:59:19.53Z",
-    "title": "Prepare for removal of DES in Kerberos for Windows Server and client",
-    "id": "MC1020176",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>Prepare for removal of Data Encryption Standard (DES) in Kerberos for Windows Server 2025 and Windows 11, version 24H2. While it’s an optional component that isn’t installed by default, it’s important to detect and disable your DES use to avoid potential disruption before taking the September 2025 security update. Consider adopting the Advanced Encryption Standard (AES) algorithm as a stronger encryption method.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><ul><li>September 2025: DES in Kerberos will be removed from Windows Server 2025 and Windows 11, version 24H2.&nbsp;</li><li>Alternative solutions are available to you today.&nbsp;</li></ul><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>Once DES in Kerberos is removed, it will no longer be supported as an encryption cipher in any function of Kerberos in Windows Sever 2025 and later or in Windows 11, version 24H2. Legacy scenarios using DES on these two versions will stop working until you make configuration changes to Kerberos-related application and network security. DES will not be removed from earlier Windows versions.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>First, detect any use of DES in Kerberos within your network, identify apps that are using DES, and reconfigure them to use a stronger cipher. Ultimately, you’ll need to disable DES before taking the September 2025 Windows security update. Finally, identify apps and callers negotiating DES and upgrade to a more secure encryption cipher, such as Advanced Encryption Standard (AES) algorithm.&nbsp;</div><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><div>Learn more and follow recommended guidance to detect and disable DES usage in <a href=\"https://techcommunity.microsoft.com/blog/WindowsServerNewsandBestPractices/removal-of-des-in-kerberos-for-windows-server-and-client/4386903\" rel=\"noopener noreferrer\" target=\"_blank\">Removal of DES in Kerberos for Windows Server and client</a>.</div>"
-    }
-  },
-  {
     "startDateTime": "2025-03-04T00:35:17Z",
     "endDateTime": "2026-03-01T08:00:00Z",
     "lastModifiedDateTime": "2025-03-04T00:35:23.297Z",
@@ -3224,7 +3200,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"491632\":[{\"RoadmapId\":491632,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786496Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786498Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786501Z\",\"LatestRing\":null}]}"
+        "value": "{\"491632\":[{\"RoadmapId\":491632,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786498Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786496Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786501Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -16945,30 +16921,6 @@
     }
   },
   {
-    "startDateTime": "2026-01-28T21:53:47Z",
-    "endDateTime": "2026-02-28T21:53:47Z",
-    "lastModifiedDateTime": "2026-01-28T22:13:18.537Z",
-    "title": "Power Platform admin center - Power Platform inventory is now Generally Available",
-    "id": "MC1223778",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to view and manage a comprehensive inventory of Power Platform resources in the Power Platform admin center (PPAC). This feature is now generally available.<br><br>\n<b>How does this affect me?</b><br>\nPower Platform inventory is accessible from multiple locations in the admin center: the unified <i>Inventory</i> page under <i>Manage</i> shows all resources together, while resource-specific inventory views are available in Copilot Studio (agents), Power Apps (apps), and Power Automate (flows).<br><br>The resource types available in Power Platform inventory include:\n<ul>\n<li><b>Agents:</b> Agents created in Copilot Studio and Microsoft 365 Copilot Agent Builder.</li>\n<li><b>Apps:</b> Apps created in Power Apps and Microsoft 365 Copilot App Builder agent.</li>\n<li><b>Flows:</b> Agent flows from Microsoft Copilot Studio, cloud flows from Power Automate, and workflows from Microsoft 365 Copilot Workflows agent.</li>\n<li><b>Environments:</b> All environments in your tenant.</li>\n<li><b>Environment groups:</b> All environment groups in your tenant.</li>\n</ul>\nInventory data can also be retrieved through the <a href=\"https://aka.ms/13790/1\" target=\"_blank\">Power Platform for Admins V2 connector</a>, <a href=\"https://aka.ms/13790/2\" target=\"_blank\">Power Platform Inventory API</a>, and <a href=\"https://aka.ms/13790/3\" target=\"_blank\">Azure Resource Graph</a>.<br><br>\nAdditionally, on February 9, 2026, the following capabilities, along with additional bug fixes and improvements, will be available:\n<ul>\n<li><b>Environment groups support:</b> Filter and organize inventory by environment group membership</li>\n<li><b>Power Platform for Admins V2 connector:</b> Query inventory data directly from Power Automate workflows</li>\n</ul>\nPlease note: The \"Preview\" tag is being progressively removed from all Inventory views and will be completely removed by February 9, 2026.<br><br>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit the article <a href=\"https://aka.ms/13790/4\" target=\"_blank\">Power Platform inventory</a> ."
-    }
-  },
-  {
     "startDateTime": "2026-01-28T22:57:00Z",
     "endDateTime": "2026-03-31T23:59:00Z",
     "lastModifiedDateTime": "2026-01-28T23:02:34.567Z",
@@ -17417,52 +17369,6 @@
     }
   },
   {
-    "startDateTime": "2026-01-30T20:21:17Z",
-    "endDateTime": "2026-02-28T20:21:17Z",
-    "lastModifiedDateTime": "2026-01-30T21:05:33.913Z",
-    "title": "Dynamics 365 Contact Center – Desktop Companion App support for Embedded Mode",
-    "id": "MC1225152",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to use the Desktop Companion App in Embedded mode in Dynamics 365 Contact Center. This feature will reach general availability on February 6, 2026.<br><br> \n\n  \n\n<b>How does this affect me?</b><br> \n\nThe Desktop Companion App in Embedded mode enables agents to access Dynamics 365 Contact Center capabilities directly within their chosen Dynamics 365 environment. Embedded mode extends the Desktop Companion App experience to supported third-party Dynamics 365 vendors, offering consistent and optimized agent desktops across platforms. Key features include:<ul> \n\n \n\n<li><b>Optimized Call Performance:</b> Reduces call latency and improves connection stability by leveraging the native DCA framework instead of relying solely on browser‑based telephony.</li> \n\n<li><b>Enhanced Reliability:</b> Provides a more robust and resilient voice experience, minimizing disruptions caused by browser variations, session timeouts, or client‑side environmental inconsistencies.</li> \n\n<li><b>Scalable Deployment:</b> Allows organizations to standardize their voice experience across supported third-party CRMs, enabling broader adoption and easier operational management.</li></ul> \n\n  \n\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-01-30T21:23:04Z",
-    "endDateTime": "2026-02-28T21:23:04Z",
-    "lastModifiedDateTime": "2026-01-30T21:24:13.06Z",
-    "title": "Dynamics 365 Finance – Deploy preconfigured demo assets for Business Performance Planning",
-    "id": "MC1225161",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Finance and Operations Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to deploy preconfigured demo assets in Dataverse to support business performance planning in Dynamics 365 Finance. This feature will reach general availability on February 13, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThe preconfigured demo assets include predefined dimensions, planning cubes, calculated measures, and sample data designed to illustrate common enterprise planning scenarios. These demo assets act as a shared data foundation for business performance planning Power BI demo apps and enable interactive planning, scenario modeling, and write-back experiences when consumed through Power BI.<br><br>This feature is intended for demonstration and evaluation purposes only and isn't designed for production use or as a supported starting point for customer planning models.<br><br>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required."
-    }
-  },
-  {
     "startDateTime": "2026-01-30T22:49:05Z",
     "endDateTime": "2026-03-30T07:00:00Z",
     "lastModifiedDateTime": "2026-01-30T22:49:27.45Z",
@@ -17656,102 +17562,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated February 11, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>\nWe are updating the file-opening experience in Microsoft 365 Copilot Chat. When users click on cited Word, Excel, or PowerPoint content in Copilot Chat, the file currently opens in a new browser tab. With this update, supported files can open directly within Copilot chat to streamline viewing. This change does not apply to Copilot Mobile, Copilot in Edge, Copilot in Excel, Copilot in Word, or Copilot in PowerPoint.</p>\n\n<p><b>[When this will happen:]</b></p><p>\nGeneral Availability (Worldwide): rollout will begin in<b>&nbsp;</b>late February 2026 (previously early February)&nbsp;and is expected to complete by early March 2026 (previously&nbsp;mid-February).</p>\n\n<p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Users who access and open Word, Excel, or PowerPoint file citations within Copilot Chat in the web experience.</li><li>A Microsoft 365 Copilot license is required to use this feature.</li>\n</ul>\n\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n<li>Supported Word, Excel, and PowerPoint files will open directly inside Copilot Chat instead of opening in a new browser tab.</li>\n<li>This enhancement does not change permissions, data access, or existing configuration.</li>\n<li>The feature will be enabled by default.</li>\n<li>There is no change to Copilot Mobile, Copilot in Edge, Copilot in Excel, Copilot in Word, or Copilot in PowerPoint.</li></ul><ul>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p><p>\nNo admin action is required for this update.</p>\n<ul>\n<li>Notify helpdesk or training teams about the streamlined in-Copilot Chat file-opening experience.</li>\n<li>Update internal documentation if it describes file citation behavior.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-01-31T20:19:29Z",
-    "endDateTime": "2026-02-28T20:19:29Z",
-    "lastModifiedDateTime": "2026-01-31T20:35:28.563Z",
-    "title": "Dynamics 365 Customer Service - Quality Evaluation Agent Evaluation Criteria Extensibility",
-    "id": "MC1225438",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing Quality Evaluation Agent Evaluation Criteria Extensibility in Dynamics 365 Customer Service. This feature will reach general availability on February 6, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature enables organizations to enforce a shared foundation of quality and brand values across all customer engagements while empowering individual business units to tailor evaluations to their unique needs. This allows teams to evolve quality standards at scale while maintaining governance, consistency, and clear visibility into evaluation outcomes across the organization.<br><br> \nKey capabilities of this feature include:<ul> \n\n<li><b>Source evaluation criteria:</b> Define a source (base) evaluation criteria that represents core quality standards and brand principles.</li> \n\n<li> <b>Criteria extensibility:</b> Business units extend the base criteria by adding BU‑specific requirements while automatically inheriting the same baseline quality standards. This ensures all extended criteria follow a consistent source of truth.</li> \n\n<li> <b>Automatic propagation of updates:</b> When the source criteria is updated, changes are auto‑published to all extended criteria, keeping standards aligned without manual rework.</li> \n\n<li> <b>Versioning and simulation support:</b> Supervisors can view criteria versions in the Evaluation Criteria Versioning History tab, select any version, and run simulations to validate changes before publishing.</li> \n<li> <b>Evaluation outcome visibility:</b> Evaluation details clearly show outcomes and scores by source criteria and extended criteria, providing transparency into how the baseline and BU‑specific extensions contribute to the final quality results. This helps supervisors understand scoring breakdowns, compare impacts, and maintain confidence in quality measurements.</li></ul> \n\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-01-31T20:36:42Z",
-    "endDateTime": "2026-02-28T20:36:42Z",
-    "lastModifiedDateTime": "2026-01-31T20:37:39.39Z",
-    "title": "Dynamics 365 Contact Center - Quality Evaluation Agent Evaluation Criteria Extensibility",
-    "id": "MC1225441",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing Quality Evaluation Agent Evaluation Criteria Extensibility in Dynamics 365 Contact Center. This feature will reach general availability on February 6, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature enables organizations to enforce a shared foundation of quality and brand values across all customer engagements while empowering individual business units to tailor evaluations to their unique needs. This allows teams to evolve quality standards at scale while maintaining governance, consistency, and clear visibility into evaluation outcomes across the organization.<br><br> \nKey capabilities of this feature include:<ul> \n\n<li><b>Source evaluation criteria:</b> Define a source (base) evaluation criteria that represents core quality standards and brand principles.</li> \n\n<li> <b>Criteria extensibility:</b> Business units extend the base criteria by adding BU‑specific requirements while automatically inheriting the same baseline quality standards. This ensures all extended criteria follow a consistent source of truth.</li> \n\n<li> <b>Automatic propagation of updates:</b> When the source criteria is updated, changes are auto‑published to all extended criteria, keeping standards aligned without manual rework.</li> \n\n<li> <b>Versioning and simulation support:</b> Supervisors can view criteria versions in the Evaluation Criteria Versioning History tab, select any version, and run simulations to validate changes before publishing.</li> \n<li> <b>Evaluation outcome visibility:</b> Evaluation details clearly show outcomes and scores by source criteria and extended criteria, providing transparency into how the baseline and BU‑specific extensions contribute to the final quality results. This helps supervisors understand scoring breakdowns, compare impacts, and maintain confidence in quality measurements.</li></ul> \n\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-01-31T21:48:08Z",
-    "endDateTime": "2026-02-28T21:48:08Z",
-    "lastModifiedDateTime": "2026-01-31T21:49:55.103Z",
-    "title": "Dynamics 365 Customer Service - Leverage Quality Evaluation Agent simulation to test & fine tune evaluation criteria",
-    "id": "MC1225451",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to leverage Quality Evaluation Agent simulation to test & fine tune evaluation criteria in Dynamics 365 Customer Service. This feature will reach general availability on February 6, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis feature enables supervisors to validate new or updated evaluation criteria using real customer engagement data and see predicted outcomes before rolling the criteria out broadly. With the following capabilities introduced with this feature, supervisors can simulate evaluation criteria on a controlled sample of real engagements, iterate quickly, then publish.<ul>\n<li>Run simulations directly from Evaluation Criteria to test how your criteria will score real cases without mixing test runs into production evaluation history.</li>\n<li>Choose which records to test using selection controls (e.g., filtering/conditions) so you can target the right scenarios and validate predictions against the interactions that matter most.</li>\n<li>Review Quality Evaluation Agent’s predicted answers and outcomes to confirm the criteria is producing the intended results, then refine questions and instructions and rerun one or more simulations until outcomes match your expectations.</li>\n<li>Support draft and published criteria testing with governance tied to criteria versions, so you can test safely and keep clarity on what was validated before publication.</li>\n<li>Track simulation runs for a criterion (including rerun/retrigger workflows in the experience) so teams can iterate efficiently during tuning and rollout readiness.</li>\n<li>Publish when ready. Once validated, you can confidently publish the updated criteria and use it for quality evaluations at enterprise scale.</li></ul>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-01-31T21:51:24Z",
-    "endDateTime": "2026-02-28T21:51:24Z",
-    "lastModifiedDateTime": "2026-01-31T21:52:43.05Z",
-    "title": "Dynamics 365 Contact Center - Leverage Quality Evaluation Agent simulation to test & fine tune evaluation criteria",
-    "id": "MC1225452",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to leverage Quality Evaluation Agent simulation to test & fine tune evaluation criteria in Dynamics 365 Contact Center. This feature will reach general availability on February 6, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis feature enables supervisors to validate new or updated evaluation criteria using real customer engagement data and see predicted outcomes before rolling the criteria out broadly. With the following capabilities introduced with this feature, supervisors can simulate evaluation criteria on a controlled sample of real engagements, iterate quickly, then publish.<ul>\n<li>Run simulations directly from Evaluation Criteria to test how your criteria will score real cases without mixing test runs into production evaluation history.</li>\n<li>Choose which records to test using selection controls (e.g., filtering/conditions) so you can target the right scenarios and validate predictions against the interactions that matter most.</li>\n<li>Review Quality Evaluation Agent’s predicted answers and outcomes to confirm the criteria is producing the intended results, then refine questions and instructions and rerun one or more simulations until outcomes match your expectations.</li>\n<li>Support draft and published criteria testing with governance tied to criteria versions, so you can test safely and keep clarity on what was validated before publication.</li>\n<li>Track simulation runs for a criterion (including rerun/retrigger workflows in the experience) so teams can iterate efficiently during tuning and rollout readiness.</li>\n<li>Publish when ready. Once validated, you can confidently publish the updated criteria and use it for quality evaluations at enterprise scale.</li></ul>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required."
     }
   },
   {
@@ -23097,7 +22907,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192477Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192473Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192479Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192484Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192479Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192477Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192473Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192484Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
