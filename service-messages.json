@@ -5362,8 +5362,8 @@
   },
   {
     "startDateTime": "2025-09-10T22:48:47Z",
-    "endDateTime": "2026-05-04T08:00:00Z",
-    "lastModifiedDateTime": "2026-02-18T17:32:23.537Z",
+    "endDateTime": "2026-05-18T08:00:00Z",
+    "lastModifiedDateTime": "2026-02-27T22:40:23.447Z",
     "title": "Microsoft Teams | VDI for Azure Virtual Desktops/Windows 365 and Citrix: macOS support with new SlimCore optimization",
     "id": "MC1151241",
     "category": "stayInformed",
@@ -5387,7 +5387,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams on macOS for Azure Virtual Desktop, Windows 365, and Citrix now uses the SlimCore media engine, replacing WebRTC for better performance and features like enhanced meeting views, 1080p video, hardware acceleration, and improved telephony. Deployment begins February-March 2026 with updated client and plugin requirements."
+        "value": "Microsoft Teams now supports macOS with a new SlimCore media engine for Azure Virtual Desktop, Windows 365, and Citrix, improving performance, meeting features, telephony, and supportability. Deployment begins late February 2026, requiring updated Teams and Citrix clients plus plugin installation for optimized VDI experiences."
       },
       {
         "name": "Platforms",
@@ -5396,7 +5396,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p style=\"\">Updated February 17, 2026: We have updated the timeline. Thank you for your patience.</p><p style=\"\"><b>[Introduction]</b>\n</p><p>Microsoft Teams optimization with the new SlimCore-based media engine is now available for macOS endpoints connecting to Azure Virtual Desktop (AVD), Windows 365, or Citrix DaaS/CVAD environments. This redesigned Virtual Desktop Infrastructure (VDI) solution replaces the legacy WebRTC-based optimization and delivers enhanced performance, reliability, security, and streamlined support. It also simplifies media engine updates without requiring frequent upgrades to VDI infrastructure or clients.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=502524\" target=\"_blank\">502524</a>.</p>\n\n<b>[When this will happen:]</b>\n<ul>\n<li><b style=\"\">Targeted Release</b><b>:</b>&nbsp;Begins late February 2026 (previously mid-February), completes late February 2026 (previously late January).</li>\n<li><b>General Availability (Worldwide, GCC):</b> Begins mid-March 2026 (previously late January), completes late March 2026 (previously mid-February).</li>\n</ul>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b> macOS users connecting to AVD, Windows 365, or Citrix DaaS/CVAD environments using Microsoft Teams.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Teams will use the SlimCore media engine instead of WebRTC for optimized VDI experiences.</li>\n    <li>Advanced meeting capabilities:\n      <ul>\n        <li>Gallery View 3x3 and 7x7</li>\n        <li>Background images from My Organization</li>\n        <li>1080p video resolution</li>\n        <li>Include computer sound while screen sharing</li>\n        <li>Hardware acceleration on the endpoint</li>\n      </ul>\n    </li>\n    <li>Telephony and voice capabilities:\n      <ul>\n        <li>Location Based Routing and Media Bypass</li>\n        <li>Quality of Service (QoS)</li>\n        <li>Noise suppression</li>\n      </ul>\n    </li>\n    <li>Better supportability:\n      <ul>\n        <li>Teams Admin Center integration</li>\n        <li>Call Quality Dashboard support</li>\n        <li>Simplified media engine updates via Plugin</li>\n      </ul>\n    </li>\n  </ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Ensure users have Teams version 25269.x.x.x or higher (available October 2025).</li>\n<li>For AVD/Windows 365:\n  <ul>\n    <li>Install the non-Store Windows App client (.pkg file) (<a href=\"https://aka.ms/macOSWindowsAppDownload\">Download</a>).</li><li><i>Note</i>: Store version does not support SlimCore optimization.</li></ul></li></ul><p><i>Figure i. Download page for non-store Client</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/686b29d7-8ebb-49b2-bd27-87b69961f55d\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p></p><ul>\n  </ul>\n<p></p><ul>\n<li>For Citrix DaaS/CVAD:\n  <ul>\n    <li>Ensure Citrix Workspace App version 2505 or higher is installed.</li>\n    <li>Install the Plugin:\n      </li><ul>\n        <li>Install the Plugin on top of CWA 2505+:<ul><li>Available as a standalone component (<a href=\"https://aka.ms/CitrixPluginDownloadhere\" target=\"_blank\">Download</a>)<a href=\"https://aka.ms/CitrixPluginDownloadhere.\" target=\"_blank\">.</a></li><li>Alternatively, deploy via Global App Config service or <a href=\"https://docs.citrix.com/citrix-virtual-apps-desktops/multimedia/virtual-channel-plugin-manager.html\" target=\"_blank\">Virtual Channel Plugin Manager</a> (requires CWA 2508).</li></ul></li></ul><li>After deployment, users will be upgraded to the new optimization stack automatically after restarting Teams once rollout begins.</li><li>Update internal documentation and inform helpdesk staff.</li></ul></li></ul><p></p><p></p><ul></ul><p></p><p></p><p></p><p><b>[Compliance considerations:]</b></p><p></p><p></p><table>\n<tbody><tr><th>Question</th><th>Impact</th></tr>\n<tr><td>Does the change alter how admins can monitor,</td><td>Additional monitoring and reporting capabilities are exposed in Teams Admin Center and Call Quality Dashboard, including call/meeting details and Plugin/SlimCore version tracking.</td></tr>\n</tbody></table>\n<p></p>"
+      "content": "<p style=\"\">Updated February 27, 2026: We have updated the timeline. Thank you for your patience.</p><p style=\"\"><b>[Introduction]</b>\n</p><p>Microsoft Teams optimization with the new SlimCore-based media engine is now available for macOS endpoints connecting to Azure Virtual Desktop (AVD), Windows 365, or Citrix DaaS/CVAD environments. This redesigned Virtual Desktop Infrastructure (VDI) solution replaces the legacy WebRTC-based optimization and delivers enhanced performance, reliability, security, and streamlined support. It also simplifies media engine updates without requiring frequent upgrades to VDI infrastructure or clients.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=502524\" target=\"_blank\">502524</a>.</p>\n\n<b>[When this will happen:]</b>\n<ul>\n<li><b style=\"\">Targeted Release</b><b>:</b>&nbsp;Begins late February 2026 (previously mid-February), completes late February 2026 (previously late January).</li>\n<li><b>General Availability (Worldwide, GCC):</b> Begins late March 2026 (previously mid-March), completes mid-April 2026 (previously late March).</li>\n</ul>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b> macOS users connecting to AVD, Windows 365, or Citrix DaaS/CVAD environments using Microsoft Teams.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Teams will use the SlimCore media engine instead of WebRTC for optimized VDI experiences.</li>\n    <li>Advanced meeting capabilities:\n      <ul>\n        <li>Gallery View 3x3 and 7x7</li>\n        <li>Background images from My Organization</li>\n        <li>1080p video resolution</li>\n        <li>Include computer sound while screen sharing</li>\n        <li>Hardware acceleration on the endpoint</li>\n      </ul>\n    </li>\n    <li>Telephony and voice capabilities:\n      <ul>\n        <li>Location Based Routing and Media Bypass</li>\n        <li>Quality of Service (QoS)</li>\n        <li>Noise suppression</li>\n      </ul>\n    </li>\n    <li>Better supportability:\n      <ul>\n        <li>Teams Admin Center integration</li>\n        <li>Call Quality Dashboard support</li>\n        <li>Simplified media engine updates via Plugin</li>\n      </ul>\n    </li>\n  </ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Ensure users have Teams version 25269.x.x.x or higher (available October 2025).</li>\n<li>For AVD/Windows 365:\n  <ul>\n    <li>Install the non-Store Windows App client (.pkg file) (<a href=\"https://aka.ms/macOSWindowsAppDownload\">Download</a>).</li><li><i>Note</i>: Store version does not support SlimCore optimization.</li></ul></li></ul><p><i>Figure i. Download page for non-store Client</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/686b29d7-8ebb-49b2-bd27-87b69961f55d\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p></p><ul>\n  </ul>\n<p></p><ul>\n<li>For Citrix DaaS/CVAD:\n  <ul>\n    <li>Ensure Citrix Workspace App version 2505 or higher is installed.</li>\n    <li>Install the Plugin:\n      </li><ul>\n        <li>Install the Plugin on top of CWA 2505+:<ul><li>Available as a standalone component (<a href=\"https://aka.ms/CitrixPluginDownloadhere\" target=\"_blank\">Download</a>)<a href=\"https://aka.ms/CitrixPluginDownloadhere.\" target=\"_blank\">.</a></li><li>Alternatively, deploy via Global App Config service or <a href=\"https://docs.citrix.com/citrix-virtual-apps-desktops/multimedia/virtual-channel-plugin-manager.html\" target=\"_blank\">Virtual Channel Plugin Manager</a> (requires CWA 2508).</li></ul></li></ul><li>After deployment, users will be upgraded to the new optimization stack automatically after restarting Teams once rollout begins.</li><li>Update internal documentation and inform helpdesk staff.</li></ul></li></ul><p></p><p></p><ul></ul><p></p><p></p><p></p><p><b>[Compliance considerations:]</b></p><p></p><p></p><table>\n<tbody><tr><th>Question</th><th>Impact</th></tr>\n<tr><td>Does the change alter how admins can monitor,</td><td>Additional monitoring and reporting capabilities are exposed in Teams Admin Center and Call Quality Dashboard, including call/meeting details and Plugin/SlimCore version tracking.</td></tr>\n</tbody></table>\n<p></p>"
     }
   },
   {
@@ -12798,8 +12798,8 @@
   },
   {
     "startDateTime": "2025-12-09T00:16:50Z",
-    "endDateTime": "2026-03-23T08:00:00Z",
-    "lastModifiedDateTime": "2026-01-16T22:12:33.793Z",
+    "endDateTime": "2026-04-27T08:00:00Z",
+    "lastModifiedDateTime": "2026-02-27T22:37:03.967Z",
     "title": "(Updated) Microsoft 365 Copilot: Add web links as references in Copilot Notebooks",
     "id": "MC1193414",
     "category": "stayInformed",
@@ -12824,7 +12824,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft 365 Copilot Notebooks will allow users with a Copilot license to add public web links as references, expanding beyond file types like Word and Excel. This feature, enabled by default, began rolling out worldwide in mid-February 2026 and requires no special preparation."
+        "value": "Microsoft 365 Copilot Notebooks will allow users with a Copilot license to add public web links as references, expanding beyond file types like Word and Excel. This feature, enabled by default, will roll out worldwide from late March 2026. No specific preparation is needed."
       },
       {
         "name": "Platforms",
@@ -12833,7 +12833,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<b></b>\n\n<p>Updated January 16, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>We’re introducing the ability to<b> add public web links as references</b> in <i>Microsoft Copilot Notebooks</i>. This enhancement allows users to ground Copilot responses on specific public web pages, expanding the types of content that can be used to inform and contextualize their work.</p><p>A Microsoft 365 Copilot license is required to use this feature.</p><p>\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=516040\" target=\"_blank\">516040</a>.</p>\n\n<p><b>[When this will happen:]</b>\n</p><p><b>General Availability (Worldwide):</b> Rollout began in mid-February 2026 (previously&nbsp;mid-November 2025) and is expected to complete by end of February 2026 (previously&nbsp;mid-January).</p>\n\n<p><b>[How this will affect your organization:]</b></p>\n<ul>\n  </ul><p><b>Who is affected:</b> All users of Microsoft Copilot Notebooks with a Microsoft 365 Copilot license.</p><p><b>What will happen:</b>\n    </p><ul>\n      \n      \n      \n      \n    </ul>\n  <p></p><ul><li>Users will be able to add public web links as references in their <i>Copilot Notebooks</i>.</li><li>This expands current capabilities, which already support referencing Word, PowerPoint, Excel, and other file types.</li><li>Users can now ground Copilot on public web content without needing to convert it to a file format (such as PDF).</li><li>The feature will be <b>enabled by default</b>.</li>\n  </ul><ul>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  </ul><p>No specific preparation is required. However, we recommend:</p><ul>\n  <ul>\n    </ul><li>Informing users about the upcoming capability to enhance their productivity.</li><li>Updating internal documentation if you provide guidance on using Copilot Notebooks.</li><ul>\n    </ul><ul>\n  </ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<b></b>\n\n<p>Updated February 27, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>We’re introducing the ability to<b> add public web links as references</b> in <i>Microsoft Copilot Notebooks</i>. This enhancement allows users to ground Copilot responses on specific public web pages, expanding the types of content that can be used to inform and contextualize their work.</p><p>A Microsoft 365 Copilot license is required to use this feature.</p><p>\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=516040\" target=\"_blank\">516040</a>.</p>\n\n<p><b>[When this will happen:]</b>\n</p><p><b>General Availability (Worldwide):</b> Rollout will begin in late March 2026 (previously mid-February) and is expected to complete late March 2026 (previously end of February).</p>\n\n<p><b>[How this will affect your organization:]</b></p>\n<ul>\n  </ul><p><b>Who is affected:</b> All users of Microsoft Copilot Notebooks with a Microsoft 365 Copilot license.</p><p><b>What will happen:</b>\n    </p><ul>\n      \n      \n      \n      \n    </ul>\n  <p></p><ul><li>Users will be able to add public web links as references in their <i>Copilot Notebooks</i>.</li><li>This expands current capabilities, which already support referencing Word, PowerPoint, Excel, and other file types.</li><li>Users can now ground Copilot on public web content without needing to convert it to a file format (such as PDF).</li><li>The feature will be <b>enabled by default</b>.</li>\n  </ul><ul>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  </ul><p>No specific preparation is required. However, we recommend:</p><ul>\n  <ul>\n    </ul><li>Informing users about the upcoming capability to enhance their productivity.</li><li>Updating internal documentation if you provide guidance on using Copilot Notebooks.</li><ul>\n    </ul><ul>\n  </ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -14274,30 +14274,6 @@
     "body": {
       "contentType": "html",
       "content": "<b>[Introduction]</b>\n<p>New Outlook for Windows will now support the ability to show a customizable oversharing dialog for Data Loss Prevention (DLP). This enhancement allows organizations to tailor the experience for end users when oversharing is detected, improving clarity and compliance.</p>\n\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=498921\" target=\"_blank\">498921</a>.</p>\n\n<b>[When this will happen]</b>\n<p><b>General Availability (Worldwide):</b> Rollout begins in <b>early January 2026&nbsp;</b>and is expected to complete by<b> late January 2026</b>.\n</p><p><b>General Availability (GCC):</b> Rollout begins in <b>early February 2026&nbsp;</b>and is expected to complete by<b> late February 2026</b>.</p>\n\n<b>[How this affects your organization]</b>\n<ul>\n<li><b>Who is affected:</b> Admins managing DLP policies in New Outlook for Windows.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>New Outlook will display a customizable oversharing dialog when DLP rules are triggered.</li>\n<li>Customization options include:\n<ul>\n<li>Custom titles and body text with multi-language support (up to 10 languages).</li>\n<li>Business justification options (up to 3 predefined + 1 optional free-text).</li>\n<li>Dynamic tokens for matched recipients, sensitivity labels, and attachment filenames.</li>\n<li>Text formatting (Bold, Italic, Underline, Line breaks).</li>\n</ul>\n</li>\n<li>If this feature is already enabled in classic Outlook, it will work in New Outlook without additional action.</li>\n<li>Feature is <b>OFF by default </b>unless configured by admins.</li>\n</ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare]</b>\n<ul>\n<li>No action is required unless you want to enable this feature.</li>\n<li>If enabling, configure settings in the Compliance portal under DLP policy tips.</li></ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/purview/dlp-ol365-win32-policy-tips\" target=\"_blank\">Data loss prevention policy tip reference for Outlook for Microsoft 365 | Microsoft Purview | Microsoft Learn</a></p><ul>\n</ul>\n\n<b>[Compliance considerations]</b>\n<p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-12-27T23:17:13Z",
-    "endDateTime": "2026-02-27T23:59:00Z",
-    "lastModifiedDateTime": "2026-01-06T16:45:37.723Z",
-    "title": "Dynamics 365 Finance – Delay settlement from journal posting",
-    "id": "MC1207023",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Finance and Operations Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<b>Update:</b> Release of this feature has been postponed; we will announce a new date in the future.<br><br>We are announcing the ability to delay settlements from journal posting for Dynamics 365 Finance.<br><br><b>How does this affect me?</b><br>This feature includes the following capabilities:<ul><li>Payments are no longer blocked by settlement errors: Valid payments post successfully, even if settlement fails.</li><li>Enhanced cash flow visibility and reporting: Payments are reflected immediately, while settlements can be managed separately.</li><li>Streamlined exception handling: Failed settlements are isolated and can be retried or managed independently.</li></ul><b>What do I need to do to prepare?</b><br>This message is for awareness and no action is required.<br><br>For more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/13461\">Delay settlement from journal posting</a>."
     }
   },
   {
@@ -15773,7 +15749,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564046Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564046Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22929,6 +22905,257 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>We’re introducing a new flexible layout option in Teams meetings to give users more control over how shared content and participant videos appear. A resizable divider in the top gallery lets users adjust the space between shared content and the video gallery. This allows users to prioritize presentation content or video tiles, and to swap their positions based on personal preference. This update supports spotlighted speakers, pinned videos, and Speaker View, and provides a more personalized experience—especially on large or ultra‑wide displays.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=554925\" target=\"_blank\">554925</a>.</p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release: </b>Rolling out in<b> April 2026</b> and expected to complete in <b>April 2026</b>.</li><li><b>General Availability (Worldwide): </b>Rolling out in <b>early April 2026 </b>and expected to complete by<b> late April 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All Teams users who participate in meetings where content is shared.</li></ul><p><i>What will happen</i></p><ul><li>Users will see a new resizable divider in the top gallery of Teams meetings during content sharing.</li><li>&nbsp;Users can adjust the meeting layout to prioritize shared content or participant video tiles:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/b1b1c4ee-f416-4bb3-82bf-4d702030cda7/b02f29cf368a819a52c493468cd371110b0529ab.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Users can swap the positions of shared content and the video gallery:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/cbd1bae6-18c9-4586-b23c-0d710d60d541/a9853def4c311b834de2f0181dbf0561f73311e6.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>The feature works with spotlighted speakers, pinned videos, and Speaker View.</li><li>This feature is <b>enabled by default</b>; no admin configuration is required.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action is required. To prepare for the rollout, you may want to:</p><ul><li>Update training materials and FAQ to explain:<ul><li>How to locate and use the resizable divider.</li><li>How to adjust layouts during content sharing and in Speaker View.</li></ul></li><li>Communicate this change to helpdesk and support staff, especially for users with large or ultra‑wide monitors.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-27T22:07:05Z",
+    "endDateTime": "2026-07-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-27T22:08:20.08Z",
+    "title": "Introducing the new SharePoint experience",
+    "id": "MC1240699",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "547732"
+      },
+      {
+        "name": "Summary",
+        "value": "A reimagined SharePoint experience with an intuitive design, streamlined architecture, and AI-assisted features (requiring a Microsoft 365 Copilot license) will roll out from March to May 2026. It includes a redesigned app bar with Discover, Publish, Build, OneDrive, and Home features. Enabling it is optional."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, Desktop, iOS, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are introducing a<b> </b>reimagined SharePoint experience that simplifies how users discover knowledge, publish content, and build solutions. This update delivers an intuitive design, a streamlined information architecture, and foundational support for future AI‑assisted creation scenarios in <i>SharePoint Online</i>. A Microsoft 365 Copilot license is required to access the AI capabilities in this update.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=547732\" target=\"_blank\">547732</a>.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview: </b>Rolling out in <b>early March 2026</b>; expected completion by<b> late April 2026</b>.</li><li><b>Targeted Release:</b> Rolling out in<b> late April 2026</b>; expected completion by <b>early May 2026</b>.</li><li><b>General Availability (Worldwide, GCC, GCC High, DoD):</b> Rolling out in<b> early May 2026</b>; expected completion by<b> late May 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations with users who have a Microsoft 365 Copilot license.</li><li>Organizations that choose to enable the new SharePoint experience in the <i>SharePoint admin center</i>.</li></ul><p><i>What will happen</i></p><p>If your organization enables the new SharePoint experience in the<i> SharePoint admin center</i>, licensed users will see:</p><ul><li>A redesigned <b>SharePoint app bar</b>, including:<ul><li><b>Discover </b>– a refreshed start experience to quickly find relevant sites, content, and news: <p style=\"margin-left: 25px;\">&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/cb5622b9-011b-4281-9d13-13b61d4a0fbf/8812dac023726a48c71a5797a6e28c8dfec2bf32.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li><b>Publish</b> – A unified publishing hub in <i>SharePoint</i> that brings together pages, news and campaign-style communications powered by Amplify:<p style=\"margin-left: 25px;\"><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/822e372d-987b-4dff-adf7-0254a8b1412d/864f1985c3e9d302c89b248339431777ab3f99f1.png\" style=\"width: 400px;\" alt=\"user settings\"> </p></li><li><b>Build</b> – A centralized experience to create, manage, and scale Sites, Lists, Libraries, and Agents all with a streamlined surface:&nbsp;<p style=\"margin-left: 25px;\"><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/f75254ad-7a4c-488a-9062-6ea7ade5dfbb/a1580a5a20188b868d814a880437ed2c1898e5fd.png\" style=\"width: 400px;\" alt=\"user settings\"><b></b></p></li><li><b>OneDrive </b>– Provides quick access to files.</li><li><b>Home</b> – Displayed when a Home site with global navigation is enabled, with the appropriate logo and name as configured in global navigation.</li></ul></li></ul><p style=\"\"></p><ul><li>Updated page, news, library, and list experiences with improved content elevation</li><li>Neutral theming applied across core product surfaces (site‑level branding remains unchanged)</li></ul><p>If you do not enable the preview, there is <b>no impact </b>to your users or admin experience.</p><p><b>[What you can do to prepare]</b></p><p>If you plan to enable the new experience:</p><ul><li>Verify that users who need access have a <b>Microsoft 365 Copilot license</b> assigned to access the AI capabilities in this update.</li><li>Enable the experience in the<i> SharePoint admin center</i>: <b><i>Settings → SharePoint → New SharePoint Experience</i></b></li><li>Review instructions for enabling the experience:&nbsp;<a href=\"https://learn.microsoft.com/sharepoint/enable-new-sharepoint-experience\" target=\"_blank\">Enable the new SharePoint experience (preview) | SharePoint in Microsoft 365 | SharePoint | Microsoft Learn</a></li><li>Communicate expected UI changes to helpdesk and affected teams before enabling.\n</li><li>Update internal documentation if you describe SharePoint navigation or app bar elements.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-27T22:09:53Z",
+    "endDateTime": "2026-06-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-27T22:10:10.707Z",
+    "title": "Microsoft Teams: Code block line numbers and improved keyboard accessibility",
+    "id": "MC1240703",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "554933"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will enhance code blocks by adding default line numbers, improved keyboard navigation, consistent language selection, and collaborative editing via Loop components. These updates, rolling out April–May 2026, improve accessibility and developer collaboration without requiring admin action."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Mac"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re introducing<b> </b>improvements to the <b>code block experience</b> in <i>Microsoft Teams Compose</i>. These updates make reading, sharing, and referencing code more efficient by adding default line numbers and enhancing keyboard navigation. These changes also support better accessibility and help users who frequently share code in chats or channels.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=554933#Roadmap\" target=\"_blank\">554933</a>.</p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release</b>: Rolling out in <b>April 2026</b> and expected to complete in <b>April 2026</b>.</li><li><b>General Availability (Worldwide)</b>: Rolling out in <b>April&nbsp;2026 </b>and expected to complete in <b style=\"background-color: rgb(255, 255, 255);\">May</b><b>&nbsp;2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p>All users who compose and share messages in <i>Microsoft Teams </i>on Windows, Mac, and Web.</p><p><i>What will happen</i></p><p>Users will see enhancements to the code block experience, including:</p><ul><li><b>Default line numbers</b> appearing automatically when a code block is inserted, supporting easier line-by-line collaboration and review.</li><li><b>Improved keyboard navigation</b> within code blocks, allowing users to move more easily through code using keyboard commands, improving overall accessibility.</li><li><b>Consistent language selection</b> for syntax highlighting; Teams will remember the last language a user selected.</li><li><b>Support for collaborative editing</b>, with the option to convert a code block to a Loop component before sending.</li><li><b>Multiple insertion methods remain supported</b> (slash commands, keyboard shortcuts, and Markdown), ensuring familiarity and flexibility for users.</li><li><b>This feature is enabled by default</b>, and no admin controls or configuration changes are required.</li></ul><p>These updates improve the development and engineering collaboration experience in <i>Teams</i> and help achieve better parity with other industry-standard collaboration tools.</p><p><b>[What you can do to prepare]</b></p><p>No admin action is required.&nbsp;</p><p>Optional steps:</p><ul><li>Inform helpdesk or support teams that users may notice changes to how code blocks appear and behave in <i>Teams</i>.</li><li>Update any internal documentation for engineering teams or developer communities that rely on code sharing within <i>Teams</i>.</li><li>Review Microsoft Support documentation for additional user-facing guidance about inserting, formatting, and collaborating on code blocks in <i>Teams</i>.</li></ul><p>Learn more:&nbsp;&nbsp;<a href=\"https://support.microsoft.com/office/use-code-blocks-in-microsoft-teams-3b8f43ee-86bd-479b-8ad6-6f52661b21e3\" target=\"_blank\" style=\"font-family: sans-serif; font-weight: 400; background-color: rgb(255, 255, 255);\">Use code blocks in Microsoft Teams | Microsoft Support</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p><p><b>[Introduction]</b></p><p>We’re introducing<b> </b>improvements to the <b>code block experience</b> in <i>Microsoft Teams Compose</i>. These updates make reading, sharing, and referencing code more efficient by adding default line numbers and enhancing keyboard navigation. These changes also support better accessibility and help users who frequently share code in chats or channels.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=554933#Roadmap\" target=\"_blank\">554933</a>.</p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release</b>: Rolling out in <b>April 2026</b> and expected to complete in <b>April 2026</b>.</li><li><b>General Availability (Worldwide)</b>: Rolling out in <b>April&nbsp;2026 </b>and expected to complete in <b style=\"background-color: rgb(255, 255, 255);\">May</b><b>&nbsp;2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p>All users who compose and share messages in <i>Microsoft Teams </i>on Windows, Mac, and Web.</p><p><i>What will happen</i></p><p>Users will see enhancements to the code block experience, including:</p><ul><li><b>Default line numbers</b> appearing automatically when a code block is inserted, supporting easier line-by-line collaboration and review.</li><li><b>Improved keyboard navigation</b> within code blocks, allowing users to move more easily through code using keyboard commands, improving overall accessibility.</li><li><b>Consistent language selection</b> for syntax highlighting; Teams will remember the last language a user selected.</li><li><b>Support for collaborative editing</b>, with the option to convert a code block to a Loop component before sending.</li><li><b>Multiple insertion methods remain supported</b> (slash commands, keyboard shortcuts, and Markdown), ensuring familiarity and flexibility for users.</li><li><b>This feature is enabled by default</b>, and no admin controls or configuration changes are required.</li></ul><p>These updates improve the development and engineering collaboration experience in <i>Teams</i> and help achieve better parity with other industry-standard collaboration tools.</p><p><b>[What you can do to prepare]</b></p><p>No admin action is required.&nbsp;</p><p>Optional steps:</p><ul><li>Inform helpdesk or support teams that users may notice changes to how code blocks appear and behave in <i>Teams</i>.</li><li>Update any internal documentation for engineering teams or developer communities that rely on code sharing within <i>Teams</i>.</li><li>Review Microsoft Support documentation for additional user-facing guidance about inserting, formatting, and collaborating on code blocks in <i>Teams</i>.</li></ul><p>Learn more:&nbsp;&nbsp;<a href=\"https://support.microsoft.com/office/use-code-blocks-in-microsoft-teams-3b8f43ee-86bd-479b-8ad6-6f52661b21e3\" target=\"_blank\" style=\"font-family: sans-serif; font-weight: 400; background-color: rgb(255, 255, 255);\">Use code blocks in Microsoft Teams | Microsoft Support</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-27T22:10:37Z",
+    "endDateTime": "2026-05-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-27T22:11:07.933Z",
+    "title": "Copilot entry point changes in Word and handoff to Agent in chat",
+    "id": "MC1240704",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Copilot entry points in Word are being unified and moved to a consistent corner, with contextual access via selection floatie (Windows/Web) or right-click menu (Mac). Word Agent in the chat pane becomes the primary interface. Rollout starts March 2026, no admin changes required."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are updating the entry points for Copilot in <i>Word</i> to provide a clearer, more consistent, and more intuitive experience. These changes unify how users access Copilot and<b> introduce Word Agent in the <i>chat pane </i>as the primary Copilot interface</b>. This update improves discoverability, simplifies the user workflow, and creates consistency with other Microsoft 365 apps.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide, GCC, GCCH and DoD)</b>: We will begin rolling out in <b>early March 2026</b> and expect to complete by<b> late April 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p>All users of Microsoft 365 apps for Word on Windows, macOS, and Web.</p><p><i>What will happen</i></p><ul><li>The existing Copilot entry point in the left margin will be replaced by a consolidated entry point positioned in a consistent corner location.</li><li>Users will see contextual Copilot entry points when selecting content:<ul><li><b>Windows and Web</b>: inside the selection floatie</li><li><b>Mac</b>: in the right‑click context menu</li></ul></li><li>Word Agent in the <i>right-side chat pane </i>becomes the primary Copilot experience for prompts and responses.</li><li>All Copilot entry points—consolidated and contextual—will connect to Word Agent to ensure a unified experience.</li><li>There is no change to admin configuration, policy behavior, or Copilot availability settings.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>You may optionally:</p><ul><li>Inform your users about the new Copilot access points and updated experience in Word.</li><li>Update internal help content or training materials if you document Copilot entry points.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-27T23:57:01Z",
+    "endDateTime": "2026-05-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-27T23:58:03.68Z",
+    "title": "Microsoft Viva – Copilot Analytics: “All” licensed user page added to the Copilot Dashboard",
+    "id": "MC1240741",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Copilot Dashboard will add an “All” view combining licensed Microsoft 365 Copilot and unlicensed Copilot Chat usage, enabled by default with no admin changes needed. This update rolls out worldwide from mid to late March 2026, affecting all users with dashboard access. No action required."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re updating the Copilot Analytics experience by enhancing the Copilot Dashboard landing page to provide a more complete view of Copilot usage across your organization. Today, the dashboard defaults to Microsoft 365 Copilot (licensed) usage. With this update, an “All” view will display combined usage across Microsoft 365 Copilot and Copilot Chat (unlicensed), offering clearer insights into total Copilot adoption.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide): </b>We will begin rolling out this update in<b> mid‑March 2026</b> and expect rollout to complete by late <b>March 2026</b>.</p><p><b>[How this affects your organization]</b></p><p>Who is affected</p><p>Users with access to the Copilot Dashboard, including:</p><ul><li>Default access users</li><li>Group managers</li><li>Global administrators</li></ul><p><i>What will happen</i></p><ul><li>A new <b>“All” view</b> will appear on the Copilot Dashboard landing page <b>showing both licensed and unlicensed Copilot usage:</b><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/78d003bb-e74d-404b-9a96-c780ea710865/0c202e3b7811d7934a01be1289259e156da85adc.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>A new license filter will allow users to switch between the <b>“All”</b>,<b> “M365 Copilot (licensed)”</b>, and <b>“Copilot Chat (unlicensed)”</b> views.</li><li>The new view will be <b>enabled by default</b>; no admin configuration is required.</li><li>No existing admin settings, permissions, or policies are changed.</li><li>No user workflows are impacted.</li><li>No changes are made to how data is stored, processed, or accessed.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>Optional steps:</p><ul><li>Notify Copilot Dashboard users of the new “All” view and updated filter options.</li><li>Update internal documentation or reporting processes if you reference dashboard views or Copilot usage metrics.</li><li>Review usage insights after the update becomes available.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-27T23:58:37Z",
+    "endDateTime": "2026-04-20T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-27T23:59:11.05Z",
+    "title": "Microsoft Viva – Microsoft 365 Copilot adoption (Power BI) report update with power user insights",
+    "id": "MC1240742",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "557674"
+      },
+      {
+        "name": "Summary",
+        "value": "The Microsoft 365 Copilot adoption (Power BI) report in Viva Insights will be updated by mid-March 2026 with a streamlined layout and new power user insights. Analysts must rerun queries to refresh data. No changes to admin settings or compliance occur. Users should prepare by notifying relevant teams."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re updating the <b>Microsoft 365 Copilot adoption (Power BI) report</b> in <i>Viva Insights</i>&nbsp;to provide a more streamlined experience and deeper insights. This update includes an improved report layout and new power user insights to help Viva Insights analysts better understand sustained Copilot usage patterns, habit formation, and adoption maturity across their organization.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557674#Roadmap\" target=\"_blank\">557674</a></b>.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide and GCC):</b> Rollout will begin in<b> mid‑March 2026</b> and is expected to complete in <b>mid‑March 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Viva Insights analysts who run Copilot adoption queries</li><li>Admins who manage Microsoft Viva Insights analytics and reporting</li><li>Organizations already using the Microsoft 365 Copilot adoption (Power BI) report</li></ul><p><i>What will happen</i></p><ul><li>The Microsoft 365 Copilot adoption (Power BI) report will be updated with a streamlined user experience.</li><li>New power user insights will highlight deeper engagement patterns, including repeat usage and sustained activity.</li><li>The updated report is <b>available by default </b>once rollout completes.</li><li><b>Important: </b>Viva Insights analysts <b>must rerun existing or recurring queries</b> to generate the updated report experience and refresh underlying data.</li><li>No changes will be made to your admin configuration, permissions, or existing Viva Insights settings.</li></ul><p><i>Screenshot 1 - Microsoft 365 Copilot adoption (Power BI) - Overview page:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/3b812bcc-a50c-482d-aa93-5d99ea05f445/3a7256f9fa93c498cb97e8751aa250e4acbf987d.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot 2 - Microsoft 365 Copilot adoption (Power BI) - Power user page:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a7243ab6-8c27-4871-9433-64d38c03b5f0/736e0aa13d9730089dc5ff61d6ab595886f4149e.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><p>If your organization uses the Microsoft 365 Copilot adoption (Power BI) report, consider the following actions:</p><ul><li>Notify your Viva Insights analysts about the upcoming update.</li><li>Instruct analysts to rerun active, saved, or recurring queries after rollout to generate the updated report experience.</li><li>Review internal documentation or training materials that reference the previous report layout or workflows.</li><li>If you have helpdesk or reporting support teams, inform them about the new layout and power user insights.</li><li>Review Viva Insights documentation when available.</li></ul><p>If no internal processes rely on the current report format, <b>no action is required</b>.</p><p><b>[Compliance considerations]</b></p><p>This update modifies the report presentation only and does not alter data storage, processing, AI capabilities, or compliance‑related behaviors.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-27T23:59:33Z",
+    "endDateTime": "2026-05-06T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-28T00:00:00.137Z",
+    "title": "SharePoint page template gallery improvements and new templates",
+    "id": "MC1240743",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "490565"
+      },
+      {
+        "name": "Summary",
+        "value": "SharePoint is enhancing its page template gallery with 31 new templates, improved browsing, filtering, search, and unified Pages and News creation. Entry points are expanded across site settings, site contents, onboarding, and Stream app. The feature is enabled by default, requiring no tenant changes, rolling out March–April 2026."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p></p><p><b>[Introduction]</b></p><p>We’re enhancing the <b>SharePoint page template gallery</b> experience to improve how users discover, browse, and use templates when creating pages and news posts, while also introducing 31 new templates. These enhancements streamline entry points, improve navigation consistency, and make it easier for users to find the right template for their content.&nbsp;</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=490565\" target=\"_blank\">490565</a></b>.</p><p><b>&nbsp;[When this will happen]</b></p><ul><li><b>Targeted Release):</b> We will begin rolling out in<b> early March 2006</b>&nbsp;and expect to complete by <b>mid-March 2026.</b></li><li><b>General Availability (Worldwide, GCC, GCCH, and DoD)</b>: We will begin rolling out in&nbsp;<b>late March 2026</b> and expect to complete by <b>early April 2026</b>.</li><p><b></b></p></ul>\n<p><b>[How this affects your organization]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>SharePoint content creators and site owners</li>\n<li>Organizations using modern SharePoint sites</li>\n</ul><b>What will happen:</b><p></p>\n\n<ul><li><b>Expanded entry points to the SharePoint page template gallery:</b></li></ul>\n<ul>\n\n\n\n<ul><li>From <b>Site settings</b>, providing direct access to the template gallery during site configuration</li><li>From <b>Site contents (+ New)</b>, where selecting <b>Page</b> opens the template gallery instead of immediately creating a blank page</li><li>From <b>site onboarding experiences</b> (such as “Next steps”) on newly created sites, guiding users into template‑based creation</li><li>From the <b>Stream (video) app</b>, when selecting <b>Create video news post</b> under <b>Share</b></li></ul>\n</ul>\n\n<ul><li><b>Improved template browsing and filtering:</b></li></ul>\n<ul>\n\n\n<ul><li>Templates can be filtered by category, such as announcements, storytelling, video, or news</li><li>Multiple filters can be applied at the same time and easily cleared</li><li>Selected filters persist when switching between <b>Pages</b> and <b>News</b> views, helping users maintain context while exploring templates</li></ul>\n</ul>\n\n<ul><li><b>Unified experience for Pages and News templates:</b></li></ul>\n<ul>\n\n<ul><li>A single template gallery supports both Page and News Post creation</li><li>Templates automatically open in the correct creation mode (page or news) based on selection, reducing ambiguity during creation</li></ul>\n</ul>\n\n<ul><li><b>Search within the template gallery:</b></li></ul>\n<ul>\n\n<ul><li>Users can search for templates directly within the template gallery</li><li>Search can be combined with filters to quickly narrow down available templates</li></ul>\n</ul>\n\n<ul><li><b>New SharePoint templates:</b></li></ul>\n<ul>\n\n<ul><li>31 new modern SharePoint templates are introduced and available by default</li><li>Templates are designed to support common communication and storytelling scenarios</li></ul>\n</ul>\n\n<ul><li><b>Additional details:</b></li></ul>\n<ul>\n\n<ul><li>The feature is <b>enabled by default.</b></li><li>No tenant‑level configuration or policy changes are required.</li></ul>\n<li>Existing SharePoint permissions are respected.</li></ul><li><p><i>Screenshot 1 - Improved template browsing with pivot buttons and filtering by template categories:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/dd8d8577-9755-4b24-9833-f84cf7e01af6/57d365817e81d132dfac9bffb1fb3d5cbdaa36d1.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p></li><li><p><i>Screenshot 2 - New SharePoint templates:</i>&nbsp;</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a10fa654-11c5-47ab-b880-6bf85c22cc3d/a327f3bfd2d18d9f14229ac076310e5aa3bfbad6.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><ul>\n</ul>\n\n<p><b>[What you can do to prepare]</b></p>\n<ul>\n<li>No action is required to enable or configure this feature</li>\n<li>Consider notifying content creators and site owners about the new template gallery entry points</li>\n<li>Update any internal documentation or training materials that reference creating blank SharePoint pages</li>\n<li>Optionally, inform helpdesk staff that users may see the template gallery instead of a blank page when creating pages or news posts</li></ul><p><b>Learn more:</b>&nbsp;<a href=\"https://support.microsoft.com/office/page-templates-in-sharepoint-faa92408-0c84-4e3d-8460-3c28065e7873\" target=\"_blank\">(This page’s content will be refreshed at feature launch.) <b>Page templates in SharePoint | SharePoint | Microsoft Support</b></a></p><ul>\n</ul>\n\n<p><b>[Compliance considerations]</b></p>\n<p>This update changes how users initiate page and news creation but does not change how customer data is stored, processed, or governed in SharePoint.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-02-28T00:08:31Z",
+    "endDateTime": "2026-05-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-02-28T00:09:35.797Z",
+    "title": "Retiring the Impala connector",
+    "id": "MC1240748",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact",
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": "2026-03-31T07:00:00Z",
+    "services": [
+      "Microsoft Power Automate in Microsoft 365"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Impala connector will be retired and removed from Copilot Studio, Logic Apps, Power Apps, and Power Automate between April 1-14, 2026. Existing connections will stop working, and new ones won't be allowed. Users should migrate to alternative connectors and update related documentation to avoid disruption."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re <b>retiring the Impala connector</b> across Copilot Studio, Logic Apps, Power Apps, and Power Automate. This change aligns with our efforts to streamline our connector catalog, reduce maintenance of legacy components, and focus on modern, widely adopted data connectivity options. After this retirement, the Impala connector will no longer be supported.</p><p><b>[When this will happen]</b></p><ul><li>Retirement begins: <b>April&nbsp;1, 2026</b></li><li>Retirement completed: <b>April 14, 2026</b></li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p>Organizations using the Impala connector in any of the following services:</p><ul><li>Copilot Studio (Premium)</li><li>Logic Apps (Standard)</li><li>Power Apps (Premium)</li><li>Power Automate (Premium)</li></ul><p><i>What will happen</i></p><ul><li>The Impala connector will be retired and removed from Copilot Studio, Logic Apps, Power Apps, and Power Automate.</li><li>Existing connections using the Impala connector will stop functioning after the retirement window.</li><li>New connections using the Impala connector will no longer be allowed.</li><li>The connector and its actions—including Get row, Get rows, and Get tables—will no longer be accessible.</li></ul><p><b>[What you can do to prepare]</b></p><p>To reduce service disruption:</p><ul><li>Review your apps, flows, and Logic Apps that currently use the Impala connector.</li><li>Migrate any dependencies to supported alternative connectivity solutions (for example, connector options that support your organization’s Hadoop‑based environments).</li><li>Notify users and solution owners who rely on this connector.</li><li>Update internal documentation, runbooks, and helpdesk scripts to remove references to the Impala connector.</li><li>Learn more about the connector’s current capabilities and behavior through our documentation:&nbsp;<a href=\"https://learn.microsoft.com/connectors/impala/\" target=\"_blank\">Apache Impala | Connector reference | Connectors | Microsoft Learn</a></li></ul><p>If your apps or flows require ongoing connectivity to Impala endpoints, consult your data platform owners to determine your long‑term connectivity strategy.</p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
