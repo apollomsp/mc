@@ -7196,6 +7196,48 @@
     }
   },
   {
+    "startDateTime": "2025-10-31T00:11:41Z",
+    "endDateTime": "2026-03-31T08:00:00Z",
+    "lastModifiedDateTime": "2026-03-06T21:27:22.787Z",
+    "title": "Microsoft Teams: File attachment control now enabled by default in external 1:1 and group chats",
+    "id": "MC1181772",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "492625"
+      },
+      {
+        "name": "FeatureStatusJson",
+        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams now enables automatic file and Loop component sharing by default in external 1:1, group, and meeting chats, improving collaboration. Admins can disable this via policy. Guest users can share files from their home tenant. Rollout starts October 2025, completing worldwide by January 2026."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Mac, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re improving external collaboration in Microsoft Teams by enabling file attachments and Loop sharing in 1:1, group and meeting chats with external users. This update improves the collaboration experience for Files and Loop and add a new control for IT admins. Specifically, Files and Loop components will be shared automatically with external participants in the chat and won’t require any action by the sender by default. Additionally, Entra B2B Guests in your organization will be able to attach and share files from their home tenant’s OneDrive or SharePoint.&nbsp;</p><p>This change applies to Teams for Windows desktop, Mac desktop, and web and is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=492625\" target=\"_blank\">492625</a>.</p><p>Screenshot 1: <i>Files are automatically provisioned.</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/a099fd76-7665-4ce8-b043-0f3331b55971\" style=\"width: 400px;\" alt=\"user settings\"></p><p>Screenshot 2: <i>Files shared have an external label and always open on Web.</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/27858dcc-8fd4-4e98-b1af-27dd3678887d\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[When this will happen:]</b></p><ul><p></p>\n<li><b>Targeted Release:</b>&nbsp;Rollout begins late October 2025; expected to complete by mid-November 2025</li>\n<li><b>General Availability (Worldwide):</b>&nbsp;Rollout begins mid-January 2026</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b></p><p>All Microsoft Teams users in your organization who participate in 1:1, group, or meeting chats with external users, including guest and Teams for Free users.</p><p><b>What will happen:</b></p><p>With this update: \n</p><ul><li>Unless the user chooses to share File and Loop by pasting links, external users in chat will be automatically provisioned to allow frictionless collaboration. \n</li><li>You can disable automatic provisioning and have the user change permissions manually by using policy controls.\n</li><li>If disabled, users will have to manually provision the file to users in the chat. \n</li><li>Guest users will be able to upload files from their home tenant’s OneDrive and SharePoint.\n</li><li>Files shared by external users will continue to display an <b>External&nbsp;</b>tag for clarity.\n</li><li>Loop components will now be rendered inside external chats in Teams.\n</li><li>Recipients will access File and Loop components as B2B guests within the resource tenant. If they are not already added as guests, they will need to give consent and might need to complete MFA, depending on your company’s B2B policy, before viewing the chat content.</li>\n</ul>\n\n<b>What you can do to prepare:</b>\n\n\n<ul><li>No action is required to enable the feature—it will be automatically available as the rollout progresses.</li><li>To disable the automatic provisioning behavior for files and loops set the <code>AutoShareFilesInExternalChats</code> attribute of <code>TeamsMessagingPolicy</code> to <code>Disabled</code>. Learn more: <a href=\"https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsmessagingpolicy?view=teams-ps#-autosharefilesinexternalchats\" target=\"_blank\">Set-CsTeamsMessagingPolicy documentation</a>.\n</li><li>To provide seamless Loop access experience for external users, we recommend turning on Entra B2B Guest Access. Refer to: <a href=\"https://learn.microsoft.com/sharepoint/sharepoint-azureb2b-integration\" target=\"_blank\">Microsoft Entra B2B integration for SharePoint &amp; OneDrive - SharePoint in Microsoft 365 | Microsoft Learn</a>.</li><li>For configuration guidance, refer to: <a href=\"https://learn.microsoft.com/powershell/module/teams/set-csteamsfilespolicy?view=teams-ps#-filesharinginchatswithexternalusers\" target=\"_blank\">Set-CsTeamsFilesPolicy documentation</a> (documentation will be updated before rollout).</li></ul><p><b>Compliance considerations</b></p><p><b></b></p><p></p><table border=\"1\">\n<tbody><tr>\n<th>Compliance Area</th>\n<th>Impact</th>\n</tr>\n<tr>\n<td>New communication method between tenants</td>\n<td>Enables file sharing in external chats, expanding cross-tenant collaboration</td>\n</tr>\n<tr>\n<td>Admin control available</td>\n<td>Admins can disable the feature via PowerShell</td>\n</tr>\n<tr>\n<td>Can be controlled through Entra ID group membership</td>\n<td>Policy can be scoped using Entra ID groups</td>\n</tr>\n<tr>\n<td>Data processing changes</td>\n<td>Files shared in external chats are tagged and stored per existing Teams file sharing protocols</td>\n</tr>\n</tbody></table>"
+    }
+  },
+  {
     "startDateTime": "2025-10-31T23:03:55Z",
     "endDateTime": "2026-06-01T07:00:00Z",
     "lastModifiedDateTime": "2026-02-12T19:33:42.617Z",
@@ -7526,6 +7568,46 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated February 3, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>Outlook mobile users</b> can now prepare for their meetings using Copilot chat with a single tap. This feature is available on <b>Android and iOS</b> platforms and requires a <b>Microsoft 365 Copilot license</b>. It helps users quickly access relevant meeting information, making preparation more efficient and personalized.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=516568\" target=\"_blank\">516568</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p><b>General Availability (Worldwide):</b> Rollout will begin in mid-February 2026 (previously early February) and is expected to complete by mid-February 2026 (previously end of January).</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> Users of Outlook mobile on<i> Android </i>and<i> iOS</i> <b>who have a Microsoft 365 Copilot license</b>.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Eligible users will see a new Copilot chat option to prepare for meetings directly within <i>Outlook mobile</i>.</li>\n    <li>The feature will be <b>ON by default for licensed users</b>. To turn off Copilot in <i>Outlook</i>&nbsp;review&nbsp;<a href=\"https://support.microsoft.com/office/turn-off-copilot-in-microsoft-365-apps-bc7e530b-152d-4123-8e78-edc06f8b85f1\" target=\"_blank\">Turn off Copilot in Microsoft 365 apps | Microsoft Support</a>.</li>\n    <li>No admin configuration is required.</li>\n    <li>Existing policies and permissions are respected.</li></ul></li></ul><p><i>Screenshots 1-3 provide a view of the previous experience:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/68651904-f4b2-4b49-98ce-917610a1405c/079b169301ae2d986706717ddaeb6b505ec9dc1c.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><i>Screenshots 4-5 provide a view of the new experience - Selecting Prepare will take users to Copilot Chat, enabling users to ask follow-up questions:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a6a33c7e-fe21-4b48-9853-dae55a7c8e31/7a70eb19524458f6805bb88639e83da0f1c20300.png\" style=\"width: 400px;\" alt=\"user settings\"><i></i></p><p><i></i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/4b03e39f-05c2-444f-921d-c857c832e9a1/5a7b91b3481a759c53cfac7aaf63475d9a920c1d.png\" style=\"width: 400px;\" alt=\"user settings\"><i></i></p><p></p><ul></ul><p></p><p></p><ul>\n  </ul>\n<p></p><ul>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No admin action is required at this time.</li>\n<li>If desired, communicate this feature to helpdesk staff.</li>\n<li>Update internal documentation if you detail this feature.</li>\n<li>Ensure users have the appropriate Microsoft 365 Copilot license to access this feature.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\">\n<tbody><tr><th>Question</th><th>Explanation</th></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes – Copilot chat uses AI to surface meeting-related information from user data.</td></tr>\n<tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes – Users interact with Copilot chat to prepare for meetings.</td></tr>\n<tr><td>Does the change modify how users can access, export, delete, or correct their personal data within Microsoft 365 services (GDPR Data Subject Rights)?</td><td>Yes – Copilot may surface personal data in chat responses, depending on meeting context.</td></tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2025-11-04T00:47:22Z",
+    "endDateTime": "2026-03-31T08:00:00Z",
+    "lastModifiedDateTime": "2026-03-06T21:30:01.297Z",
+    "title": "(Updated) Microsoft Teams: Channel agent orchestration with GitHub, Asana, and Jira via Model Context Protocol (MCP)",
+    "id": "MC1182703",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "515466"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will enable Channel Agent to orchestrate tasks with GitHub, Asana, and Jira via Model Context Protocol, improving workflow efficiency within Teams. This preview feature requires admin enablement and a Microsoft 365 Copilot license, with rollout from mid-November 2025 to late January 2026."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Updated January 13, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>Microsoft is introducing a new capability in <i>Teams</i> that enables <b>Channel Agent </b>to orchestrate tasks with select third-party Model Context Protocol (MCP) servers, including GitHub, Asana, and Atlassian (JIRA). This integration supports collaborative workflows that reflect real human teamwork, allowing agents to transparently reason through tasks and gather information across tools. This change helps reduce manual switching between apps and improves task completion efficiency—all within the familiar <i>Teams environment</i>.</p><p>A Microsoft 365 Copilot license is required to use this feature.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=515466\" target=\"_blank\">515466</a>.</p>\n\n<b>When this will happen</b><ul>\n<li><b>Targeted Release (Worldwide):</b> Begins in mid-November 2025 and is expected to complete by late January 2026 (previously mid-December 2025).</li>\n</ul>\n\n<b>How this affects your organization</b><ul>\n</ul><p><b>Who is affected:</b> Microsoft 365 tenants using Teams and <i>Channel Agent </i>integrations.</p><ul>\n</ul><p><b>What will happen:</b>\n  </p><ul>\n    <li><i>Channel Agent</i> will be able to collaborate with Model Context Protocol (MCP) servers like GitHub, Asana, and Jira.</li>\n    <li>Users can ask<i> Channel Agent </i>questions and receive coordinated responses across tools:</li></ul><p>&nbsp; &nbsp; &nbsp; &nbsp; <i>&nbsp; Screenshot 1</i></p><ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/fc7863fb-e54d-4a5a-b5cd-ed831a4dfeb1/592adcd44d64908ac4ad397fb54bac8a0ca52d88.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot 2</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/688948be-b6ef-4b3f-b371-540200fa2e54/1bc336dd3f9d49e23d9fc4cf8a19d744aa6811cf.png\" style=\"width: 400px;\" alt=\"user settings\"></p><li>The feature will be available in preview and requires admin enablement.</li><li>A Microsoft 365 Copilot license is required.</li><li>There is no impact unless enabled by tenant admins.</li></ul><p><b>What you can do to prepare</b></p><ul><ul>\n</ul><li>Enable <i>Channel Agent </i>usage in <i>Teams</i> for your tenant.</li><ul>\n</ul><li>Allow apps that integrate with Model Context Protocol (MCP) servers such as GitHub, Asana, or Jira.</li><li>Ensure users who need access have a Microsoft 365 Copilot license.</li><li>Review internal documentation and update helpdesk guidance as needed.</li></ul><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
     }
   },
   {
@@ -21556,6 +21638,220 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>\nWe are updating the <b>AI Administrator</b>&nbsp;role to support <b>Agent 365</b>. This update enables delegated, day-to-day agent management while preserving enterprise security and least-privilege principles.</p>\n\n<p>The AI Admin role is designed for managing agent lifecycles and agentic users. By removing the dependency on <b>Global Administrators</b> for routine, agent-scoped actions, this change helps eliminate operational bottlenecks, supports scale, and maintains clear separation of duties. Global Admin elevation remains required only for rare, high-risk scenarios.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  </ul><p>General Availability: Rollout begins <b>early March 2026</b>; expected completion by <b>late March 2026</b></p><ul>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected</b></p>\n<ul>\n  <li>Microsoft 365 tenants using Agent 365</li>\n  <li>Administrators assigned the <b>AI Administrator role</b></li>\n  <li>Organizations that currently require <b>Global Administrator</b> involvement for routine agent management</li>\n</ul>\n\n<p><b>What will happen</b></p>\n<ul>\n  <li><b>AI Administrators </b>can grant tenant-wide admin consent for apps and agents requesting permissions, except Microsoft Graph application permissions</li>\n  <li>AI Admins can view basic subscription properties</li>\n  <li>AI Admins can view agents flagged as risky through Microsoft Entra Identity Protection. Learn more: <a href=\"https://learn.microsoft.com/entra/id-protection/concept-risky-agents\" target=\"_blank\">ID Protection for agents (Preview)</a>&nbsp;(this article will be updated soon).</li><li>To review existing capabilities of the AI Admin, visit <a href=\"https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#ai-administrator\" target=\"_blank\" style=\"\">AI Administrator</a>.</li>\n  <li>AI Admins can perform full CRUD (create, read, update, delete) operations on agents</li>\n  <li>This includes adding, deleting, and managing agent credentials</li>\n  <li>Agent management is available through the Microsoft 365 admin center, Microsoft Entra admin center, PowerShell, and APIs</li>\n</ul>\n\n<p><b>What is not included</b></p>\n<ul>\n  <li>Apps or agents requiring Microsoft Graph application permissions will continue to require <b>Privileged Role Administrator</b> or <b>Global Administrator</b> approval</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>Review existing assignments for the <b>AI Administrator</b> role to ensure only appropriate users have access</li>\n  <li>If you want to opt out, remove the AI Admin role from users who should not grant tenant-wide consent or manage agents</li>\n</ul>\n\n<p><b>Review or update role assignments</b></p>\n<ol>\n  <li>Sign in to the Microsoft 365 admin center at <a href=\"https://admin.cloud.microsoft\" target=\"_blank\">admin.cloud.microsoft</a> using a <b>Global Administrator</b> or <b>User Administrator</b> account.</li>\n  <li>Go to <b>Roles </b>&gt; <b>Role assignments</b>.</li>\n  <li>Select <b>AI Administrator</b>.</li>\n  <li>Review the list of users assigned to the role.</li>\n  <li>If needed, remove the role from users or add users who should legitimately manage AI agents.</li>\n</ol>\n\n<p><b>Learn more: </b><a href=\"https://learn.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide\" target=\"_blank\">About administrator roles in the Microsoft 365 admin center - Microsoft 365 admin | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p>\n\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th align=\"left\">Question</th>\n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change alter how existing customer data is processed, stored, or accessed?</td>\n    <td>AI Administrators gain expanded permissions to manage agents and agent credentials, which may indirectly affect how agents access tenant data.</td>\n  </tr>\n  <tr>\n    <td>Does the change introduce or significantly modify AI or agent capabilities that interact with customer data?</td>\n    <td>The update expands AI Administrator authority over agent lifecycles and tenant-wide consent, increasing control over agent behavior and data access.</td>\n  </tr>\n  <tr>\n    <td>Does the change alter how admins can monitor or demonstrate compliance activities?</td>\n    <td>AI Administrators can now view agents flagged as risky through Identity Protection, improving visibility and compliance monitoring.</td>\n  </tr>\n  <tr>\n    <td>Does the change include an admin control, and can it be controlled through Entra ID role membership?</td>\n    <td>All new capabilities are governed by assignment of the AI Administrator role in Microsoft Entra ID.</td>\n  </tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-06T21:04:20.437Z",
+    "endDateTime": "2027-03-06T21:04:20.387Z",
+    "lastModifiedDateTime": "2026-03-06T21:04:21.637Z",
+    "title": "Upcoming events to help with Secure Boot updates",
+    "id": "MC1245992",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Do you need to update Secure Boot certificates across your organization before they start expiring in June 2026? Two events next week can help you with best practices and answers to your questions in real time.</div><div>&nbsp;</div><div><b>When will this happen:</b></div><div>On March 9 at 7:30 AM PT (2:30 PM UTC) is <a href=\"https://techcommunity.microsoft.com/event/windowsevents/secure-boot-certificate-updates-explained/4490529\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Secure Boot certificate updates explained</u></a>. This will be a fast-paced walkthrough of essential guidance - including how to test firmware, monitor device readiness, deploy updated certificates, and diagnose issues. Then, on March 12 at 8:00 AM PT (3:00 PM UTC), you can ask any questions you might have at the <a href=\"https://aka.ms/AMA/SecureBoot\" rel=\"noopener noreferrer\" target=\"_blank\"><u>Secure Boot AMA</u></a>. Members of the engineering team will be on camera and in the comments working to help with answers.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><div>Both events will take place on the Tech Community. Registration is not required, but you will need to sign in to the Tech Community with a Microsoft account in order to participate in the Q&amp;A. Questions can be posted in advance or during the live streams. Visit the session pages for the option to “Add to calendar” and click “Attend” to receive event reminders.</div><div>&nbsp;</div><div><b>Additional information:</b></div><div>To keep up with new Windows-related events for IT professionals, <a href=\"https://techcommunity.microsoft.com/category/windows/events/windowsevents\" rel=\"noopener noreferrer\" target=\"_blank\">follow Windows Events on Tech Community</a>.</div>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-06T21:17:06Z",
+    "endDateTime": "2026-05-05T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-06T21:17:31.523Z",
+    "title": "Plan for change:Azure Network Connection health check enforcement for required Windows 365 endpoints",
+    "id": "MC1245997",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows 365"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting April 2026, Windows 365 will enforce errors (not warnings) for unreachable required endpoints during Azure Network Connection health checks, blocking provisioning until resolved. No new endpoints are added; existing configurations allowing these endpoints need no changes. Microsoft Hosted Network deployments remain unaffected. Prepare by reviewing network settings."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Beginning in April 2026, Windows 365 will begin enforcing additional required endpoint validations during Azure Network Connection (ANC) health checks.  \n</p><p>Currently, ANC health checks return a “Warning” if any of the following required endpoints are not reachable:  \n</p><ul><li>*.service.windows.cloud.microsoft.com \n</li><li>*.windows.cloud.microsoft.com \n</li><li>*.windows.static.microsoft.com \n</li></ul><p>With this update, the status of these health check failures will be changed to “Error” and new provisioning attempts using that ANC will fail until the issue is resolved. No new <a href=\"https://learn.microsoft.com/windows-365/enterprise/requirements-network?tabs=enterprise%2Cent\" target=\"_blank\">endpoint requirements</a> are being introduced. This update only changes how existing ANC health checks are enforced when the checks run, including during ANC creation, upon any subsequent ANC changes, and as part of the recurring six‑hour health check cycle. \n</p><p>[How this will affect your organization]  \n</p><p>For ANC deployments, Windows 365 uses Azure Network Connection health checks to validate required network connectivity before Cloud PCs are provisioned.  \n</p><p>Microsoft Hosted Network deployments are not affected because Microsoft automatically provides and manages this connectivity. \n</p><p>Starting in April 2026:  \n</p><ul><li>If required endpoints are reachable, provisioning proceeds as expected.  \n</li><li>If required endpoints are not reachable, the health check returns an error, and provisioning is blocked until the issue is resolved.  \n</li><li>Health check results indicate which required endpoint connectivity checks did not pass. </li></ul><p>This enforcement ensures required network configuration issues are addressed before provisioning is attempted.  \n</p><p><b>Endpoints enforced  \n</b></p><p>The following existing required endpoints will be enforced:  \n</p><ul><li>*.service.windows.cloud.microsoft.com \n</li><li>*.windows.cloud.microsoft.com \n</li><li>*.windows.static.microsoft.com</li></ul><p>If these endpoints are already allowed in your firewall or network configuration, no action is required.  \n</p><p>Note: These endpoints must be reachable from the Cloud PC environment; they do not need to be reachable from the local device used to connect to a Cloud PC.  \n</p><p><b>What is not changing  \n</b></p><ul><li>No new endpoint requirements are being added.  \n</li><li>The underlying ANC connectivity validation process remains the same.  \n</li><li>Existing successfully provisioned Cloud PCs are not impacted.  \n</li><li>Microsoft Hosted Network deployments are not impacted.  \n</li></ul><p>[What you need to do to prepare]  \n</p><p>Before April 2026, review your network configuration for Azure Network Connections and confirm that the required endpoints listed above are allowed through firewalls, proxies, and other network security devices.  \n</p><p>You may also want to consider taking the following steps:  \n</p><ul><li>Inform your helpdesk and support teams of this enforcement change.  \n</li><li>Update internal IT documentation and provisioning guidance as needed. </li></ul><p>Additional Information <b>  \n</b></p><ul><li><a href=\"https://aka.ms/Network_requirement\" target=\"_blank\">Network requirements for Windows 365</a> \n</li><li><a href=\"https://aka.ms/ANCHealthCheck\" target=\"_blank\">Azure network connection health checks</a>    \n</li><li><a href=\"https://aka.ms/ANCAllowConnect\" target=\"_blank\">Network requirements - allow network connectivity </a>   </li></ul><p>[Compliance considerations]</p><p>No compliance considerations identified, review as appropriate for your organization</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-06T21:22:03Z",
+    "endDateTime": "2026-05-18T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-06T21:22:19.353Z",
+    "title": "Always-on diagnostics for Endpoint DLP – Turned on by default",
+    "id": "MC1246001",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting mid-April 2026, Always-on diagnostics for Endpoint DLP will be enabled by default on Windows devices, storing diagnostic logs locally for 90 days to aid troubleshooting. Admins can opt out anytime via Microsoft Purview. This improves issue resolution but may affect investigation efficiency if disabled."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>Starting in the second week of April 2026, <b>Always-on diagnostics for Endpoint Data Loss Prevention (DLP) will be turned on by default</b> for onboarded Windows devices in Microsoft Purview. Endpoint DLP diagnostic traces including policy evaluation logs, file classification results, enforcement actions, and error states are stored locally on the device in a secure, compressed proprietary format for up to 90 days. This collection helps eliminate the need to reproduce issues during Microsoft Support investigations. The ability to request that Microsoft collects critical diagnostic data as part of a support case will also be enabled. Endpoint diagnostic logs that you choose can then be securely shared with Microsoft for troubleshooting, reducing investigation effort and accelerating time to resolution for Endpoint DLP issues.\n</p><p><b style=\"\">[When this will happen:]</b></p>\n<ul>\n  </ul><p>General Availability (Worldwide): This change will go into effect <b style=\"\">mid-April 2026</b></p><ul>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b style=\"\">Who is affected:</b></p>\n<ul>\n  <li>Organizations using <b>Endpoint Data Loss Prevention (DLP)</b> on Windows devices</li>\n  <li>Admins managing Endpoint DLP settings in Microsoft Purview</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>From the date of this Message Center post through the second week of April 2026, admins may choose to opt out of this setting in the Microsoft Purview portal. If an admin opts out during this period, their selection will be respected, and the setting will remain unchanged.</li><li>If no action is taken, diagnostics will be automatically enabled in the second week of April 2026, after which admins can opt out at any time via the existing settings.</li>\n</ul> <p><b>Note:</b> Opting out of Always-on diagnostics may hinder your ability to effectively troubleshoot issues that arise in Endpoint Data Loss Prevention scenarios. Without this feature, organizations may experience prolonged investigation times, reduced visibility into policy behavior, and increased difficulty identifying and resolving Endpoint DLP issues. Keeping Always-on diagnostics enabled helps support the security, reliability, and operational stability of your environment.</p>\n\n<p><b style=\"\">[What you can do to prepare:]</b></p>\n<ul>\n  <li><b>No action is required</b> if you want to keep the default behavior.</li>\n  <li>Review your organization’s diagnostic and data collection policies.</li>\n  <li>If you want to opt out before the default change:<ul><li>Go to <b>Microsoft Purview portal</b></li><li>Navigate to <b>Endpoint DLP settings</b></li><li>Disable <b>Always-on diagnostics</b></li></ul></li>\n  <li>Communicate this change to security, compliance, and helpdesk teams</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/purview/dlp-always-on-diagnostics\" target=\"_blank\">Always-on diagnostics for endpoint DLP | Microsoft Learn</a></li><li><a href=\"https://techcommunity.microsoft.com/blog/microsoft-security-blog/always%E2%80%91on-diagnostics-for-purview-endpoint-dlp-effortless-zero%E2%80%91friction-troubles/4479008\" target=\"_blank\">Always-on diagnostics troubleshooting blog</a></li><li><a href=\"https://techcommunity.microsoft.com/blog/microsoft-security-blog/always-on-diagnostics-for-endpoint-dlp/4435551\" target=\"_blank\">Always-on diagnostics blog</a></li></ul><p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"5\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Question</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change store new customer data, and if so, where?</td>\n    <td>Endpoint DLP diagnostic logs (including policy evaluation, classification results, enforcement actions, and error states) are stored locally on Windows devices in a secure, compressed proprietary format for up to 90 days.</td>\n  </tr>\n  <tr>\n    <td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td>\n    <td>Admins gain enhanced troubleshooting capabilities by collecting and selectively sharing Endpoint DLP diagnostic data with Microsoft during support cases - eliminating the need to reproduce issues or engage end users, and improving investigation efficiency.</td>\n  </tr>\n  <tr>\n    <td>Does the change include an admin control?</td>\n    <td>Admins can opt out of Always-on diagnostics at any time through existing Endpoint DLP settings in the Microsoft Purview portal.</td>\n  </tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-06T21:22:39Z",
+    "endDateTime": "2026-04-03T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-06T21:22:58.01Z",
+    "title": "Prevent/Fix: Microsoft Baseline Security Mode has automatically trigger Entra Conditional Access policy creation",
+    "id": "MC1246002",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Entra"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Between November 2025 and February 2026, Microsoft Baseline Security Mode automatically created two disabled draft Entra Conditional Access policies in some tenants. This is not a security issue, requires no action, and a fix will remove unintended drafts and prevent automatic creation."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Problem detected: Microsoft Baseline Security Mode has automatically triggers Entra Conditional Access policy creation</p><p>Customers who accessed Baseline Security Mode in Microsoft 365 between November 2025 and early February 2026 might see two draft Microsoft Entra ID Conditional Access policies created in their tenant in a Disabled state. These policies are associated with Baseline Security Mode and might appear as created by the administrator who signed in to the Microsoft Baseline Security Mode page.<br></p><p>[How this will affect your organization:]</p><p>This behavior doesn't represent a security incident and has no effect on tenant security. The policies are in a disabled draft state.&nbsp;<br></p><p>[What you need to do to prepare:]</p><p>There's no action needed to prepare. A fix has rolled out to ensure policies are created only through explicit administrator action. Any unintentionally created policy drafts will be removed as part of addressing this issue.&nbsp;</p><p>[Learn more about Microsoft Baseline Security Mode]<br>Baseline Security Mode: https://learn.microsoft.com/en-us/microsoft-365/baseline-security-mode/baseline-security-mode-settings?view=o365-worldwide</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-06T21:23:22Z",
+    "endDateTime": "2026-04-12T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-06T21:23:29.92Z",
+    "title": "Endpoint Data Loss Prevention: Always-on diagnostics for Windows endpoints (Phase 2)",
+    "id": "MC1246003",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "499431"
+      },
+      {
+        "name": "Summary",
+        "value": "Phase 2 of always-on diagnostics for Endpoint Data Loss Prevention enables admins to collect diagnostic traces from Windows endpoints via the Purview portal without user involvement, improving troubleshooting. Rolling out worldwide from March 2026, it requires admin enablement and does not affect existing DLP policies."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re introducing <b>Phase 2 of always-on diagnostics</b> for Endpoint Data Loss Prevention (DLP). This update enables admins to collect diagnostic traces directly from Windows endpoints and upload them to Microsoft through the Purview portal during support investigations—without involving the employee or information worker . This improves troubleshooting efficiency and helps resolve support cases faster.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=499431\" target=\"_blank\">499431</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): We will begin rolling out in&nbsp;early March 20265</b>&nbsp;and expect to complete by <b>mid-March&nbsp;2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Admins who manage <b>Endpoint DLP </b>in <i>Microsoft Purview</i></li><li>Organizations using Windows endpoints with Endpoint DLP enabled</li></ul><p><i>What will happen</i></p><ul><li>Admins can request and retrieve always-on diagnostics directly from Windows endpoints using the Purview portal.</li><li>Users are not interrupted, and no device-side interaction is required.</li><li>Diagnostic traces can be uploaded directly to Microsoft Support using a request number.</li><li>The change reduces time to reproduce issues, collect logs, and resolve support cases.</li><li>Existing Endpoint DLP policies and enforcement remain unchanged.</li><li>This feature requires admin enablement; it is <b>not automatically turned on</b>. Learn more: <a href=\"https://learn.microsoft.com/purview/dlp-always-on-diagnostics\" target=\"_blank\">Always-on diagnostics for Endpoint DLP</a>.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Review the documentation for configuring always-on diagnostics for Endpoint DLP.</li><li>Enable the feature for your organization if you plan to use the enhanced troubleshooting capabilities.</li><li>Update internal helpdesk documentation to ensure support staff know how to request traces from the Purview portal.</li><li>Share the Learn documentation with admins who manage Purview or DLP policies.</li></ul><p><b>Learn more:</b> <a href=\"https://learn.microsoft.com/purview/dlp-always-on-diagnostics\" target=\"_blank\">Always-on diagnostics for endpoint DLP | Microsoft Purview | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-06T21:24:46Z",
+    "endDateTime": "2026-07-15T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-06T21:25:56.193Z",
+    "title": "Unified RBAC enabled by default for new Microsoft Defender for Office 365 tenants",
+    "id": "MC1246006",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting May 30, 2026, new Microsoft Defender for Office 365 Plan 2 tenants will have Unified RBAC enabled by default, offering centralized, granular access control. Existing tenants remain unchanged but can opt in anytime. Administrators should review roles and update documentation for new tenants accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re improving the security and consistency of permissions management in<i> Microsoft Defender for Office 365</i>. Starting May 30, 2026, all newly created Microsoft Defender for Office 365 Plan 2 tenants will use the Defender XDR Unified role-based access control (Unified RBAC) model by default. This change streamlines role management and provides more granular, centralized access controls across security workloads. Existing tenants prior to this date are not affected.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview:</b> Late May 2026 – mid‑June 2026</li><li><b>General Availability: </b>Late May 2026 – mid‑June 2026</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Administrators managing new Microsoft Defender for Office 365 Plan 2 tenants</li><li>Tenants that receive Plan 2 (or equivalent) licensing after May 30, 2026</li><li>Existing tenants are not affected</li></ul><p><i>What will happen</i></p><ul><li>Unified RBAC will be <b>enabled by default</b> for all newly created Microsoft Defender for Office 365 Plan 2 tenants.</li><li>Administrators will use <b>Unified RBAC roles </b>alongside Microsoft Entra roles to manage access in the Microsoft Defender portal.</li><li>Existing tenants keep their current permission model without changes or required action.</li><li>There is<b> no user impact</b>.</li><li>Existing tenants may optionally adopt Unified RBAC at any time to benefit from improved permission granularity and centralized permission management.</li></ul><p><b>[What you can do to prepare]</b></p><p>For organizations creating new tenants or assigning Plan 2 licenses <b>after May 30, 2026</b>:</p><ul><li>Review available <b>Unified RBAC roles </b>to ensure permissions align with your security and IT operational requirements.</li><li>Update internal deployment and onboarding documentation for teams responsible for new tenant provisioning.</li><li>Familiarize administrators with Unified RBAC role management in the<i> Microsoft Defender portal</i>.</li><li>Share the following resources with security and IT teams:<ul><li><a href=\"https://learn.microsoft.com/defender-xdr/create-custom-rbac-roles\" target=\"_blank\">Create custom roles with Microsoft Defender XDR Unified RBAC | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/defender-xdr/compare-rbac-roles\" target=\"_blank\">Map Microsoft Defender XDR Unified RBAC permissions | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/defender-xdr/manage-rbac\" target=\"_blank\">Microsoft Defender XDR Unified role-based access control (RBAC) | Microsoft Learn</a></li></ul></li></ul><p>No action is required for existing tenants unless you choose to adopt Unified RBAC.</p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-06T21:26:28Z",
+    "endDateTime": "2026-06-15T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-06T21:26:49.46Z",
+    "title": "New URBAC permission to preview email content in Microsoft Defender for Office 365",
+    "id": "MC1246007",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Defender for Office 365 introduces a new URBAC permission allowing admins to preview and download email content linked to \"Email reported by user as malware or phish\" alerts, enabling granular access without broad email permissions. Rollout begins April 2026, with no impact on existing roles."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]\n</b></p><p>We are introducing a<b> new Defender XDR Unified RBAC (URBAC) permission</b> in <i>Microsoft Defender for Office 365</i> that allows administrators to preview and download email content associated with the alert <i>\"Email reported by user as malware or phish</i>\", without granting broad access to all email content. This new permission helps provide more granular access during security investigations while preserving existing workflows for admins who require full email content access.\n</p><p>These changes affect permissions assigned through Defender XDR Unified RBAC.\n</p><p><b>[When this will happen]\n</b></p><ul><li><b>General Availability (Worldwide): </b>We will begin rolling out in<b> early April 2026</b> and expect to complete by <b>mid-May 2026</b>.\n</li><li><b>General Availability (GCC, GCC High, DoD): </b>We will begin rolling out in <b>mid-April 2026</b> and expect to complete by<b>&nbsp;late&nbsp;May 2026</b>.\n</li></ul><p><b>[How this will affect your organization]\n</b></p><p>We are introducing a new URBAC permission under Security operations called Email and collaboration content: <b>Emails associated with alerts (read)</b>.\n</p><ul><li>With this permission, Admins can perform preview and download actions on email entity associated with supported alerts.</li><li>This permission currently applies to the alert “Email reported by user as malware or phish”.\n</li><li>This is a new permission, and there is no impact to existing roles or admin workflows.</li><li>&nbsp;Admins who already have Security operations/Raw data (email &amp; collaboration)/Email &amp; collaboration content (read): All Emails will retain full access and do not need to take any action.</li><li>Support for additional alert types will be added at a later stage.</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/9830ebd2-d99b-4831-a1f7-8fab35e6d1ee/acb590604b1704da4a284dec6cd7b1e9e4a460e3.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you need to do to prepare]\n</b></p><ul><li>Review which administrators in your organization require access to message content.</li><li>Communicate this change to security operations and helpdesk teams that investigate messages.\n</li><li>If you want to assign more granular access:\n<ul><li>Review your existing Defender XDR Unified RBAC roles.\n</li><li>Consider assigning the new permission to analysts who only need access to emails tied to the alert \"<i>Email reported by user as malware or phish</i>.\"\n</li></ul></li><li><b>Learn more:\n</b><ul><li><a href=\"https://learn.microsoft.com/defender-office-365/mdo-email-entity-page\" target=\"_blank\">The Email entity page in Microsoft Defender for Office 365 | Microsoft Defender for Office 365 | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/defender-xdr/manage-rbac\" target=\"_blank\">Microsoft Defender XDR Unified role-based access control (RBAC) | Microsoft Defender XDR | Microsoft Learn</a></li></ul></li></ul><p><b>[Compliance considerations]\n</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
