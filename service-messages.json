@@ -2380,45 +2380,6 @@
     }
   },
   {
-    "startDateTime": "2025-06-24T00:00:18Z",
-    "endDateTime": "2026-03-09T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-23T20:34:32.347Z",
-    "title": "(Updated) Offline Support for Calendar - Create, Edit and Delete Event support",
-    "id": "MC1101906",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Exchange Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "490059"
-      },
-      {
-        "name": "Summary",
-        "value": "Offline support in the new Outlook for Windows will allow users to create, edit, and delete single calendar events without internet. Rollout starts late September 2025, completing by February 2026. Recurring events offline are not supported. Controlled by the Owamailboxpolicy -OfflineEnabledWin setting."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 23, 2026: We have updated the timeline. Thank you for your patience.\n</p><p>We’re expanding offline capabilities in the new Outlook for Windows. Users will soon be able to create, edit, and delete single calendar events even when not connected to the internet. This enhancement improves productivity and flexibility when working offline.</p><p>This change is associated with Microsoft 365 Roadmap ID: <a href=\"https://www.microsoft.com/en-us/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=490059\" target=\"_blank\">490059</a></p><p>[When this will happen:]</p><p>Targeted Release: Rollout will begin in late September 2025 and is expected to complete by late October 2025.</p><p>General Availability (Worldwide): Rollout will begin in late October 2025 (previously mid-September) and is expected to complete by early February 2026 (previously mid-December 2025).</p><p>[How this will affect your organization:]</p><p>Users with offline mode enabled in the new Outlook for Windows will be able to:\n</p><ul><li>Create new single calendar events while offline.\n</li><li>Edit or delete existing calendar events that have been previously synchronized within the offline timeframe set in Outlook settings.\n</li></ul><p>Note: Support for recurring (series) events while offline is not currently available.\n</p><p>This functionality is controlled by the existing mailbox policy setting:\n</p><p><code>OWAMailboxPolicy -OfflineEnabledWin</code>.\n</p><p>If this policy is set to True, offline calendar functionality will be available. If set to False, it will be disabled. This update does not change the default value of the policy.\n</p><p>[What you need to do to prepare:]</p><p>Ensure that offline mode is enabled for users who need this functionality. At the user level, this can be verified in the new Outlook under:\n</p><p><i>Settings &gt; General &gt; Offline\n</i></p><ul><li>Enable offline email, calendar, and people\n</li></ul><p>Admins can manage this setting using the Set-OwaMailboxPolicy cmdlet. Learn more here:&nbsp;<a href=\"https://learn.microsoft.com/powershell/module/exchange/set-owamailboxpolicy\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Set-OwaMailboxPolicy</a>&nbsp;</p><p>For end-user guidance, see: <a href=\"https://support.microsoft.com/en-us/office/work-offline-in-outlook-2460e4a8-16c7-47fc-b204-b1549275aac9#picktab=new_outlook\" target=\"_blank\">Work offline in Outlook</a></p><p>[Compliance considerations:]</p><ul><li>Does the change alter how existing customer data is processed, stored, or accessed?\tYes – calendar data is now accessible and editable offline</li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-06-24T17:01:10.15Z",
     "endDateTime": "2026-06-24T17:01:10.087Z",
     "lastModifiedDateTime": "2025-06-24T17:01:10.843Z",
@@ -3533,36 +3494,6 @@
     }
   },
   {
-    "startDateTime": "2025-08-07T23:39:53Z",
-    "endDateTime": "2026-03-09T08:00:00Z",
-    "lastModifiedDateTime": "2026-01-09T17:44:12.23Z",
-    "title": "(Updated) Microsoft Lens app will retire",
-    "id": "MC1131064",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The Microsoft Lens app for iOS and Android will be removed from stores on February 9, 2026, and scanning will stop on March 9, 2026. Users should switch to OneDrive's scan feature. No admin action is needed; notify users accordingly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 9, 2026: We have updated this post to reflect timeline updates. Thank you for your patience.&nbsp;</p><p>We will retire the Microsoft Lens app from iOS and Android in a phased approach starting January 9th, 2026. We recommend users to use the scan capability in the OneDrive app.</p><p><b>This change applies to the Microsoft Lens mobile app on iOS and Android.</b></p><p><b>How this affects your organization\n</b></p><p>The app will be removed from the stores on February 9, 2026. Users who already have the app downloaded on their devices can continue to use the scanning capability in the app until March 9, 2026. After that, users will no longer be able to create new scans in the app. Users can continue to access their previous scans from MyScans in the app after the change while they still have the app on their devices, although this capability will not be supported by Microsoft. Please note that users need to be signed into your last active account on the Microsoft Lens app to access past scans.<br></p><p><b>What you can do to prepare\n</b></p><p>This change will happen automatically on the specified dates above. No admin action is required. Please notify your users of this change, update any internal documentation, and encourage users to use the OneDrive app for their scanning needs.<br><br>For more information, read the <a href=\"https://support.microsoft.com/topic/retirement-of-microsoft-lens-fc965de7-499d-4d38-aeae-f6e48271652d\">support article</a>.&nbsp;</p><p>\n</p>"
-    }
-  },
-  {
     "startDateTime": "2025-08-12T17:01:27.267Z",
     "endDateTime": "2026-08-12T17:01:27.22Z",
     "lastModifiedDateTime": "2025-08-12T17:01:27.953Z",
@@ -4325,38 +4256,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Windows Backup for Organizations is now generally available. It provides a simple and secure way to back up and restore settings and the list of Microsoft Store apps on eligible enterprise devices running Windows 10 and Windows 11, version 22H2 and higher. With the capability during the out-of-the-box experience (OOBE) to restore a familiar experience on a new device or after a device reset or reimage, users can get back to work faster. And, if you’re still in the process of moving from Windows 10 to Windows 11, Windows Backup for Organizations can help streamline the transition.&nbsp;&nbsp;</div><div><br></div><div><b>When will this happen:</b>&nbsp;</div><div>Windows Backup for Organizations is generally available.&nbsp;Note: The Restore setting is rolling out gradually, so check back in about a week if you don’t see it in your Intune tenant.</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>With Windows Backup for Organizations, you’ll help enhance user experience by ensuring backup of settings and apps. You’ll also be able to quickly restore them, providing reduced troubleshooting and enhanced productivity.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>To begin using the backup functionality of Windows Backup for Organizations, first ensure:&nbsp;&nbsp;</div><ul><li>Devices are Microsoft Entra or Microsoft Entra hybrid joined.&nbsp;&nbsp;</li><li>Devices are running a supported version of Windows 10, version 22H2 or Windows 11, version 22H2 or later.&nbsp;</li><li>Devices have the August 2025 or newer Windows security update.&nbsp;</li><li>The <a href=\"https://learn.microsoft.com/windows/client-management/mdm/windowsbackupandrestore-csp\" rel=\"noopener noreferrer\" target=\"_blank\">backup policy</a> is enabled via mobile device management (MDM) or Group Policy.&nbsp;&nbsp;</li></ul><div>&nbsp;</div><div>To restore settings and Microsoft Store apps to the Start menu, ensure:&nbsp;&nbsp;</div><ul><li>Devices are Microsoft Entra joined.&nbsp;</li><li>Devices are running Windows 11, version 22H2 or later.&nbsp;</li><li>Devices are preprovisioned with at least the August 2025 Windows security update prior to users going through out-of-box experience (OOBE).&nbsp;</li></ul><div>&nbsp;</div><div>After these qualifications are met, you can configure Backup and Restore policies.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><ul><li>Get started with step-by-step instructions at <a href=\"https://aka.ms/WindowsBackupForOrganizations\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Backup for Organizations is now available</a>.&nbsp;</li><li>Read the <a href=\"https://learn.microsoft.com/windows/configuration/windows-backup/?branch=pr-en-us-10813&amp;tabs=intune\" rel=\"noopener noreferrer\" target=\"_blank\">official documentation</a> for Windows Backup for Organizations.&nbsp;</li><li>Learn more about quality updates with OOBE at <a href=\"https://aka.ms/W11QualityUpdates/OOBE\" rel=\"noopener noreferrer\" target=\"_blank\">Get ready for Windows quality updates out of the box</a>.&nbsp;</li><li>Enable <a href=\"https://learn.microsoft.com/windows/client-management/mdm/windowsbackupandrestore-csp\" rel=\"noopener noreferrer\" target=\"_blank\">backup policies</a> via mobile device management (MDM) or Group Policy.&nbsp;&nbsp;</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-08-27T21:41:19Z",
-    "endDateTime": "2026-03-09T08:00:00Z",
-    "lastModifiedDateTime": "2026-01-24T00:40:12.983Z",
-    "title": "(Updated) Microsoft Viva Engage: Smarter delivery of Community Announcement notifications",
-    "id": "MC1143276",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Viva"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Viva Engage is updating Community Announcement notifications to use a smarter, behavior-based delivery system. Users will receive notifications through their most engaged channel first, with a secondary channel if unopened. Immediate email notifications remain available for urgent announcements. Rollout begins mid-September 2025, completing by January 2026."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 23, 2026: We have updated the timeline. Thank you for your patience.</p><p><b>Introduction</b></p><p>We hear your feedback about ways we can improve the notifications experience in Viva Engage. It's always a fine balance between ensuring your users are notified of relevant content without notifications feeling too overwhelming or noisy. In response to your feedback, we're rolling out an intelligent notifications experience. Specifically, this change will improve how <i>Community Announcement</i> notifications are delivered. This smarter delivery approach optimizes notifications delivery based on a user’s engagement behavior, helping to reduce notifications fatigue while ensuring timely visibility of announcements.&nbsp;</p>\n\n<p><b>When this will happen</b><b></b></p><p><b>General Availability (Worldwide): </b>We will begin rolling out this change in mid-September 2025 and expect the rollout to reach GA (General Availability) by February 6, 2026 (previously end of January).</p>\n\n<p><b>How this affects your organization</b>\n</p><p>Previously, when an admin created a new Community Announcement, this would send a notification in Teams and Mobile Push immediately, followed by an email notification two hours later if the announcement was not opened already in Teams and/or Mobile Push.&nbsp;\nWith this new update:\n</p><ul>\n<li>Users will now receive the notification in <b>one channel only</b>—either Teams, Mobile Push, or Email. This notification channel may differ by user and is selected based on where a user has engaged with Engage notifications most frequently in the past 30 days.&nbsp;</li><li>If the announcement is not opened within two hours in the first notification channel, a <b>secondary notification channel</b> will be sent, also determined by where a user engages with Engage notifications most frequently.&nbsp;</li></ul><p>We will continue to respect all user notification preferences and settings where applicable. If a notification channel is disabled or the app is not installed, it will not be selected as a potential notification channel for the Community Announcement delivery.</p><p>Note that this change applies only to<b> regular Community Announcements in Viva Engage</b> and does not affect the \"immediate\" Community Announcement feature (where admins can still select the checkbox to send emails immediately —this functionality remains unchanged).</p><p><b>Can I still notify Community users via email immediately (along with other notification channels)?&nbsp;</b></p><p>Yes! In Viva Engage, we offer an option to send an “immediate” Community Announcement. With this feature, Community admins can choose to send email notifications immediately after posting a Community Announcement, even if a user has opted out of receiving emails. All other notification channels will also send immediately along with email, including Teams and Mobile Push. Therefore, we recommend admins to use this feature when there is a Community Announcement that requires immediate attention from users.&nbsp;</p><p>Community Admins can find this “immediate” Community Announcement option by firstly navigating to the announcement publisher and selecting the hyperlinked <b><i>“option to send emails immediately” </i></b>at the bottom of the publisher. Upon clicking this option, an additional pop-up box will open called <i><b>“Immediate email delivery”</b></i>. By selecting this checkbox, this will ensure that all three notification channels – Email, Teams, and Mobile Push – will send to customers immediately after a Community Announcement is made.&nbsp;</p><p><b>\n&nbsp;What you can do to prepare</b>\n</p><p>No admin action is required. However, we recommend:\n</p><ul>\n<li>Informing your users about the new notifications change to reduce confusion</li>\n<li>Monitoring user feedback and engagement with <i>Community Announcements' notifications delivery</i></li>\n<li>Reviewing internal communication strategies to align with the new notification's behavior</li></ul><p></p><p></p>\n<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">\n<tbody><tr><th>Compliance Area</th><th>Explanation</th></tr>\n<tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. Notification delivery logic now uses user behavior data (last 30 days of notification engagement) to determine delivery channels. This data is used to personalize delivery but is not stored permanently.</td></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. The system uses behavioral data to determine the most effective notification channel, which is a form of machine learning-based personalization.</td></tr>\n<tr><td>Does the change provide a new way of communicating between users, tenants, or subscriptions?</td><td>Yes. The change modifies how users receive communications (Community Announcements) by introducing a dynamic, behavior-based delivery method.</td></tr>\n</tbody></table>"
     }
   },
   {
@@ -7460,36 +7359,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-04T00:41:27Z",
-    "endDateTime": "2026-03-09T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-04T00:41:34.06Z",
-    "title": "New Microsoft Teams Store (preview)",
-    "id": "MC1182697",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams Store is being redesigned for a more intuitive app and agent discovery experience, rolling out worldwide from late October 2025 to January 2026. Changes include a modern interface, new agent filter, streamlined app tiles, centered search, simplified categories, and a unified app management hub. No user or admin action is needed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>\nWe’re introducing a redesigned Microsoft Teams Store that enhances the agent-first discovery experience. This update simplifies how users find, explore, and manage apps and agents, aligning with feedback for a more intuitive and efficient interface.</p>\n\n<p><b>[When this will happen:]</b></p><p>\nPreview (Worldwide): We will begin rolling out late October 2025 and expect to complete by late January 2026.</p>\n\n<p><b>[How this affects your organization:]</b></p><p>\n<b>Who is affected:</b> </p><ul><li>All Microsoft Teams users across commercial and education tenants.</li></ul><p><b>What will happen:</b>\n</p><ul>\n<li>Users will see a modernized Teams Store interface.</li>\n<li>A new “Agent” filter pill will appear under every category for faster agent discovery.</li>\n<li>App tiles will be streamlined to show only essential information.</li>\n<li>Search will be prominently centered on the page.</li>\n<li>Categories will be simplified with subcategories for easier navigation.</li>\n<li>The app details page will be redesigned to highlight the most relevant information.</li>\n<li>A new “Your Apps &amp; Agents” hub will allow users to view and manage all installed apps and agents in one place.</li>\n<li>No action is needed from users or admins.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b></p><p>\nNo action is required at this time. However, you may wish to:\n</p><ul>\n<li>Communicate this change to helpdesk staff to reduce potential confusion.</li>\n<li>Update internal documentation or training materials that reference the Teams Store interface.</li>\n<li>Review app and agent usage in your tenant to anticipate user questions.</li>\n</ul>\n<p></p>\n\n<p><b>[Compliance considerations:]</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-11-04T00:41:55Z",
     "endDateTime": "2026-04-20T08:00:00Z",
     "lastModifiedDateTime": "2026-02-20T20:20:40.447Z",
@@ -10233,45 +10102,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-22T00:32:02Z",
-    "endDateTime": "2026-03-09T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-22T00:32:46.417Z",
-    "title": "Microsoft Teams: Shared call history in Queues app",
-    "id": "MC1188999",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "530579"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams Queues app will introduce shared call history for queue members to view all call events. Rolling out January–February 2026, the feature is disabled by default and requires Teams Premium license and admin enablement. Tenant migration of call history is not supported initially."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop, Mac"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p></p><p><b>[Introduction]</b></p><p>We’re introducing <b>shared call history</b> in the <b>Microsoft Teams Queues app</b>. This feature provides queue members with a unified view of all call events—missed, incoming, and outgoing—within a call queue. By enabling shared history, teams can access consistent, up-to-date information, follow up efficiently, and improve operational responsiveness.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/2d761294-90a6-40bf-a5fa-48ffdb656c1b\" style=\"width: 400px;\" alt=\"user settings\"></p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=530579\" target=\"_blank\">530579</a>&nbsp;and applies to Teams for Windows desktop and Teams for Mac desktop.</p><p>\n</p>\n\n<b><div><b>[When this will happen:]</b></div></b><ul><li><b style=\"\">Targeted Release:</b> Rolling out early&nbsp;January 2026, expected completion by mid-January 2026.</li>\n<li><b>General Availability (Worldwide):</b> Rolling out mid-January 2026, expected completion by early February 2026.</li>\n</ul>\n\n<b>[How this affects your organization:]</b><p></p><p></p><p><b>Who is affected:</b></p>\n<ul>\n<li>Organizations using <b>Microsoft Teams Queues app</b> on desktop, web, and Mac.</li>\n<li>Users with appropriate permissions and a <b>Teams Premium license</b>.</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Queue members will be able to view <b>shared call history</b> for all missed, incoming, and outgoing calls.</li>\n<li>Feature is <b>disabled by default</b>; admins must enable it in <b>Teams Admin Center (TAC)</b>.</li>\n<li>Admins can grant <b>shared call history</b> access to all queue members or restrict access to authorized users only.</li>\n<li>Known limitation: Tenant migration is not supported for <b>Queues call history</b>. If your organization moves to a new region, existing history will not transfer; a new history will begin. Support for migration will be added in a future update.</li>\n</ul>\n\n<b>[What you can do to prepare:]</b><p></p><p></p><ul><li>Enable <b>shared call history</b> in <b>Teams Admin Center</b>.</li>\n<li>Configure permissions for queue members or authorized users.</li>\n<li>Communicate this change to your helpdesk and affected users.</li>\n<li>Update internal documentation to reflect this feature.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/MicrosoftTeams/plan-auto-attendant-call-queue?branch=pr-en-us-18379\" target=\"_blank\">Plan for Teams Auto attendants and Call queues</a> (will be updated before rollout)</li><li><a href=\"https://learn.microsoft.com/microsoftteams/create-a-phone-system-call-queue?tabs=general-info\" target=\"_blank\">Create a Call queue in Microsoft Teams</a> (will be updated before rollout)</li></ul><ul>\n</ul><p><b>[Compliance considerations:]</b></p><p></p><p></p><p>No compliance considerations identified; review as appropriate for your organization.</p><p></p>"
-    }
-  },
-  {
     "startDateTime": "2025-11-22T00:33:08Z",
     "endDateTime": "2026-05-04T07:00:00Z",
     "lastModifiedDateTime": "2025-11-26T18:41:10.053Z",
@@ -10858,44 +10688,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated December 15, 2025: We have updated the timing of this change to provide additional time for customers to take action as appropriate. Thank you for your feedback.</p><p>We're making some changes to Exchange Web Services (EWS).</p><p>Starting June 30, 2026, we will start to block EWS access for all mailboxes without license rights to EWS. This is another step in our ongoing commitment to enhance the security and control mechanisms of EWS.</p><p>[How this will affect your organization:]</p><p>The impacted licenses are:\n</p><p>\n</p><ul><li>Exchange Online Kiosk</li><li>Microsoft 365 and Office 365 F1</li><li>Microsoft 365 and Office 365 F3</li></ul><p>As stated in the Service Descriptions, these licenses do not provide access to mailboxes via EWS, but these restrictions were never enforced. With this change, EWS access for users with only these license types will be blocked.</p><p>[What you need to do to prepare:]</p><p>If you wish these users to continue to use EWS, and your users are licensed with one of these noted above, you’ll need to assign a new license, one containing EWS access rights. For example, you could assign an Exchange Online Plan 1 or 2 license, or a Microsoft 365 or Office 365 E3 or E5 license.\n</p><p>\n</p><p>Starting June 30, 2026, requests to use EWS without a suitable license will result in a HTTP 403 response. </p><p>Learn more: <a href=\"https://aka.ms/EWSLicenseChanges\" target=\"_blank\">Update to EWS Access for Kiosk / Frontline Worker Licensed Users</a>&nbsp;</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-12-03T00:01:00Z",
-    "endDateTime": "2026-03-09T07:00:00Z",
-    "lastModifiedDateTime": "2025-12-03T00:01:11.543Z",
-    "title": "Interpreter agent in Teams calls",
-    "id": "MC1191612",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "526777"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams will expand the Interpreter agent to support real-time speech-to-speech interpretation in calls starting January 2026 for users with a Microsoft 365 Copilot license. Users can choose languages, adjust audio balance, and select voice options. It works best in structured conversations and requires policy configuration."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re expanding the Interpreter agent in Microsoft Teams to include <b>real-time speech-to-speech interpretation for Teams calls</b>. This brings the same functionality previously available in meetings to calls, enabling users to speak and listen in their preferred language.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=526777\" target=\"_blank\">526777</a>&nbsp;and applies to Teams for Windows desktop.</p><p><b>[When this will happen:]\n</b></p><ul><li>Targeted Release: We will begin rolling out early January 2026 and expect to complete by mid-January 2026.\n</li><li>General Availability (Worldwide): We will begin rolling out late January 2026 and expect to complete by early-February 2026.</li><li>Note: Government and Special clouds are not supported at this time, and there is no timeline for availability.\n</li></ul><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:&nbsp;</b>Users with a Microsoft 365 Copilot license participating in Teams calls.</p><p><b>What will happen:</b></p><ul><li>Interpreter can now be enabled during Teams calls (previously meetings only).</li><li>Users can:<ul><li>Choose their listening language.</li><li>Adjust audio balance between original and interpreted speech.</li><li>Select a voice option, including a simulated version of their own&nbsp;voice for interpretation.</li></ul></li><li>No additional setup is required for meetings; this update applies only to Teams calls.</li><li>Interpreter works best in structured conversations and may not be ideal for fast-paced exchanges.</li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>If you want to enable Interpreter for calls, configure policies using:</li><ul><li><b>Enable users to use interpreter in calls:</b> <a href=\"https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamscallingpolicy?view=teams-ps#-aiinterpreter\" target=\"_blank\">Set-CsTeamsCallingPolicy (MicrosoftTeams) | -AIInterpreter | Microsoft Learn</a></li><li><b>Enable users to user to use the voice simulation feature while being AI interpreted in calls</b>: <a href=\"https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamscallingpolicy?view=teams-ps#-voicesimulationininterpreter\" target=\"_blank\">Set-CsTeamsCallingPolicy (MicrosoftTeams) | -VoiceSimulationInInterpreter | Microsoft Learn</a></li></ul><li>Communicate to users that Interpreter works best in structured conversations and may not be ideal for fast-paced exchanges.\n</li><li>Update internal documentation and helpdesk guidance.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/microsoftteams/interpreter-agent-teams\" target=\"_blank\">Manage Interpreter agent for your organization | Microsoft Learn</a></li><li><a href=\"https://support.microsoft.com/office/interpreter-in-microsoft-teams-meetings-c7efe2bb-535d-42ab-a5c4-d2d91619b46d\" target=\"_blank\">Interpreter in Microsoft Teams meetings | Microsoft Support</a>&nbsp;</li></ul><p><b>[Compliance considerations:]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Consideration</b></td><td><b>Explanation</b></td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Interpreter agent uses AI-driven speech-to-speech interpretation and voice simulation, which processes real-time audio streams from Teams calls and meetings. The feature does not provide direct access to raw customer data for users or admins; it processes audio for interpretation purposes only.&nbsp;Data handling follows Microsoft’s compliance and privacy standards.</td></tr><tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>It extends Copilot’s AI capabilities into live audio experiences</td></tr></tbody></table>"
     }
   },
   {
@@ -13121,36 +12913,6 @@
     }
   },
   {
-    "startDateTime": "2026-01-09T23:12:45Z",
-    "endDateTime": "2026-03-09T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-09T23:13:05.19Z",
-    "title": "Planned Maintenance: Windows 365 Service",
-    "id": "MC1216265",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Windows 365 will undergo planned maintenance from January 19-23, 2026, during regional non-peak hours with no service downtime. Users may experience brief reconnections lasting under a minute, occurring 1-2 times within a 4-hour window. No action is needed; systems will auto-recover."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>To improve performance and reliability, we have scheduled planned maintenance for the Windows 365 service. This maintenance will occur during non-peak hours, based on the Client Device’s local time zone, to minimize potential impact on your organization. For organizations with users across multiple regions, we recognize that non-peak hours may vary. Maintenance will take place separately in each region, affecting only users connecting from that location during the scheduled time. The times listed below indicate the actual maintenance start times for each region, not adjusted for different time zones.\n</p><p>During this period, there will be no service downtime. Users are expected to experience little to no disruption.\n</p><p><b>Maintenance Schedule:\n</b></p><ul><li>Start Date: January 19, 2026\n</li><li>End Date: January 23, 2026\n</li></ul><p><b>Daily Maintenance Window Start Times:\n</b></p><ul><li>Africa: 23:00 UTC\n</li><li>Asia Pacific: 16:30 UTC\n</li><li>Australia: 14:00 UTC\n</li><li>Europe: 00:00 UTC\n</li><li>India: 19:30 UTC\n</li><li>Middle East: 22:00 UTC\n</li><li>North America: 06:00 UTC\n</li><li>South America: 05:00 UTC\n</li></ul><p><b>Daily Maintenance Window End Times:\n</b></p><ul><li>Africa: 03:00 UTC\n</li><li>Asia Pacific: 20:30 UTC\n</li><li>Australia: 18:00 UTC\n</li><li>Europe: 04:00 UTC\n</li><li>India: 23:30 UTC\n</li><li>Middle East 02:00 UTC\n</li><li>North America: 10:00 UTC\n</li><li>South America: 09:00 UTC\n</li></ul><p>[How does this affect my organization:]\n</p><ul><li>During the maintenance window, users actively connected via UDP relay may experience brief, automatic reconnections, with each disconnection lasting less than a minute.\n</li><li>While the total planned impact duration is up to 4 hours within the maintenance window, disconnections will only occur 1-2 times and will not persist throughout the entire 4-hour period.\n</li><li>Users can establish new connections without impact during the maintenance window. The service will remain fully available without any downtime.\n</li></ul><p>[What do I need to do to prepare for this change:]\n</p><ul><li>No further action is required, as systems will automatically recover from any temporary interruptions. You may want to notify your helpdesk and end-users of the scheduled maintenance and the potential for brief disruptions.\n</li><li>We are committed to providing a seamless experience and appreciate your understanding as we carry out this necessary maintenance to enhance the reliability of Windows 365 services.</li></ul>"
-    }
-  },
-  {
     "startDateTime": "2026-01-13T00:03:48Z",
     "endDateTime": "2026-03-26T07:00:00Z",
     "lastModifiedDateTime": "2026-01-13T00:04:02.423Z",
@@ -13326,45 +13088,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>Updated January 15, 2026: We have updated the content. Thank you for your patience.&nbsp;</b></p><p><b>[Introduction]</b></p>\n<p>We’re improving scheduled channel meetings in Microsoft Teams by reducing automatic meeting updates in channel conversations. This change helps keep channels cleaner and focused on real user replies, while meeting details remain accessible when you open the meeting thread.</p><p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Targeted Release:</b> Rolling out mid-January 2026, expected to complete by late January 2026.</li>\n<li><b>General Availability (Worldwide):</b> Rolling out early February 2026, expected to complete by late February 2026.</li>\n<li><b>General Availability (GCC, GCCHigh, DoD):</b> Rolling out early March 2026, expected to complete by late March 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<ul>\n<li><b>Who is affected:</b> All Microsoft Teams users participating in scheduled channel meetings.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Automatic meeting updates in channel conversations will be reduced.</li>\n<li>Channel threads will appear cleaner and reply counts will reflect actual user responses.</li>\n<li>Meeting details remain accessible by opening the meeting thread.</li>\n<li>No admin configuration changes are required; the feature is enabled by default.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required. This update will roll out automatically.</li>\n<li>Optional: Communicate this change to helpdesk staff to reduce potential confusion.</li>\n<li>For more information on channel meetings, visit: <a href=\"https://learn.microsoft.com/microsoftteams/plan-meetings\">Meetings in Teams</a>.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-01-14T02:07:59Z",
-    "endDateTime": "2026-03-09T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-14T02:08:05.957Z",
-    "title": "Microsoft Edge: Cross-platform policies in the Edge management service",
-    "id": "MC1217641",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 suite"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "522536"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft is expanding Edge for Business policy management to allow configuring policies for macOS, iOS, and Android in the Edge management service alongside Windows. Public preview starts mid-November 2025; general availability begins late January 2026. No user impact unless new policies are deployed."
-      },
-      {
-        "name": "Platforms",
-        "value": "Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b>\n</p><p>Microsoft is <b>expanding Edge for Business policy management</b> in the <i>Edge management service</i>. In addition to existing Windows policy configurations, organizations will be able to <b>configure Edge for Business policies for macOS, iOS, and Android devices in one place</b>. This enhancement will streamline cross‑platform policy management and support more consistent browser governance across devices.&nbsp;</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=522536\" target=\"_blank\">522536</a>.</p>\n\n<p><b>[When this will happen]</b></p>\n<ul>\n<li><b>Public Preview (Worldwide):</b>&nbsp;We began rolling out in <b>mid-November 2025</b> and expect to complete by<b> late January 2026</b>.</li>\n<li><b>General Availability (Worldwide):</b>&nbsp;We will begin rolling out in <b>late January 2026</b> and expect to complete by<b> early February 2026</b>.</li>\n</ul>\n\n<p><b>[How this affects your organization]</b></p>\n\n<p><i>Who is affected:</i></p>\n<ul>\n<li>Admins who manage Microsoft Edge for Business using the Edge management service</li>\n<li>Organizations deploying Edge on Windows, macOS, iOS, or Android</li>\n</ul>\n\n<p><i>What will happen:</i></p>\n<ul>\n<li>You will be able to configure Edge for Business policies for macOS, iOS, and Android directly in the <i>Edge management service</i>.</li>\n<li>Existing Windows configuration policies remain unchanged.</li>\n<li>You can edit an existing Windows configuration policy or create new policies that target multiple platforms:&nbsp;</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/362bda52-461e-4b2a-87ff-6469311c0807/1b764d348e0b9fa3dde31b9d2ea97c8f9185397d.png\" style=\"width: 400px;\"></p>\n<li>Some policy settings will continue to apply only to Windows devices.</li>\n<li>No user impact unless your organization deploys new or updated policies.</li>\n</ul>\n\n<p><b>[What you can do to prepare]</b>\n</p><p>No action is required before rollout. After the feature becomes available:</p>\n<ul>\n<li>Review existing configuration policies and update them if you want to apply settings to macOS, iOS, or Android.</li>\n<li>Update internal admin documentation if you manage Edge policies across platforms.</li>\n<li>Learn more about configuration policies in the Edge management service.</li>\n</ul>\n\n<p><b>Learn more:&nbsp;</b><a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-management-service\" target=\"_blank\">Get started with configuration policies | Microsoft Edge | Microsoft Learn</a></p><p><b>[Compliance considerations]</b>\n</p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -16928,37 +16651,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p></p><p>We’re adding a<b> new PowerShell cmdlet</b> that lets administrators <b>change the organizer of an existing meeting</b> or <b>meeting series </b>in <i>Exchange Online</i>. This feature supports continuity when a meeting owner changes roles, goes on leave, or is offboarded—removing the need to recreate long‑running series. After the transfer, the new organizer can update meeting properties, and attendees within the tenant won’t need to re‑RSVP.</p><p>A future release will enable users to change the organizer directly in <i>Modern Calendar experiences</i> in<i> Outlook on the web</i>, the <i>new Outlook</i>, and <i>Teams</i>. For user‑initiated transfers, the new organizer must accept the meeting before the transfer completes.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=554937#Roadmap\" target=\"_blank\">554937</a>.</p><p><b>[When this will happen]</b></p><p><b>General Availability&nbsp;</b></p><ul style=\"\"></ul><p></p><ul><li><b>Worldwide and GCC: </b>We will begin rolling out in <b>mid-May 2026 </b>and expect to complete by<b> late June 2026.</b></li><li><b>GCC High and DoD: </b>We will begin rolling out in <b style=\"font-weight: bold;\">mid-May 2026 </b>and expect to complete by<b style=\"font-weight: bold;\"> late July 2026</b><b>.</b></li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>: </p><ul><li>Administrators managing Exchange Online</li><li>Meeting organizers and attendees in your tenant may see updated organizer information when applicable.</li></ul><p><i>What will happen</i>:</p><ul><li>Administrators can use a new PowerShell cmdlet to change the organizer of an existing meeting or meeting series.</li><li>The new organizer will have full control of the event, including recurrence, description, attendees, and meeting details.</li><li>For attendees within the tenant, the <b>existing event</b> on attendees’ calendars <b>will be silently updated</b> <b>to reflect the new organizer</b>. These attendees won't need to decline or reaccept the meeting.</li><li>Attendees outside the tenant will receive 2 meeting messages - one ending the series with the previous organizer and another inviting them to a series with the new organizer. These attendees should reaccept the meeting.</li><li><b>Meeting history is preserved</b>, supporting continuity and reducing abandoned meeting series.</li><li>This feature is<b> enabled by default</b>; no configuration is required.</li></ul><b>[What you can do to prepare]</b><p></p><p></p><p>No action is required. The feature will roll out automatically.</p><p>To prepare:</p><ul><li>Review upcoming public documentation for the cmdlet when it becomes available (a link will be added to this message).</li><li>Update internal processes for organizer transitions, such as role changes or offboarding.</li><li>You may test the cmdlet ahead of the user‑initiated organizer change experience coming to Outlook on the web, new Outlook, and Teams.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p><p></p><p></p>"
-    }
-  },
-  {
-    "startDateTime": "2026-02-06T00:43:14Z",
-    "endDateTime": "2026-03-09T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-06T00:43:33.66Z",
-    "title": "Microsoft Purview | Removing support for relaxed proximity matching in out-of-box sensitive information types",
-    "id": "MC1227624",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Purview"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Purview has removed relaxed proximity matching in out-of-box sensitive information types, enforcing stricter proximity rules to improve detection accuracy. This change may reduce detections in some scenarios and affects organizations using OOB SITs in data classification or DLP policies. Custom SITs remain configurable."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We are updating <b>Microsoft Purview’s out-of-box (OOB) sensitive information type (SIT)</b> detection logic to improve accuracy and reduce false positives. As part of this update, the relaxed proximity matching behavior previously used in some OOB SITs will be removed. After this change, all OOB SITs will consistently use stricter proximity rules for more consistent and precise detections.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p><b>General Availability (Production, GCC, GCC High, DoD):</b>&nbsp;Available now</p>\n\n<p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations using Microsoft Purview out-of-box sensitive information types in data classification or <b>Data Loss Prevention (DLP)</b> policies.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>OOB SITs will stop using the relaxed proximity behavior previously applied in some detection rules.</li>\n  <li>All OOB SITs will consistently use stricter proximity matching rules going forward.</li>\n  <li>Content that previously matched under relaxed proximity conditions may no longer trigger a detection unless it meets the stricter proximity requirements.</li>\n  <li>This may result in fewer detections in scenarios that relied on broader proximity matching.</li>\n  <li>Custom sensitive information types are not affected and can still be configured to use broader proximity logic if required.</li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>Review existing DLP and classification policies that rely on OOB SIT detections.</li>\n  <li>Test policy behavior in a non-production environment if broader proximity matching is required for certain workflows.</li>\n  <li>Create custom sensitive information types if your organization needs relaxed proximity logic.</li>\n  </ul><p>Learn more: <a href=\"https://learn.microsoft.com/purview/sensitive-information-type-learn-about\" target=\"_blank\">Sensitive Information Types in Microsoft Purview</a></p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th><b>Question</b></th>\n    <th><b>Explanation</b></th>\n  \n  </tr>\n  <tr>\n    <td>Does the change modify, interrupt, or disable Data Loss Prevention (DLP) policies or enforcement?</td>\n    <td>Stricter proximity detection may reduce the number of matches, which could indirectly affect DLP behavior.</td>\n  </tr>\n  <tr>\n    <td>Does the change modify Information Protection labels or sensitive information types?</td>\n    <td>Out-of-box SITs are updated to retire relaxed proximity matching and use stricter proximity logic.</td>\n  </tr>\n</tbody></table>"
     }
   },
   {
