@@ -116,30 +116,6 @@
     }
   },
   {
-    "startDateTime": "2025-03-10T17:00:47.683Z",
-    "endDateTime": "2026-03-10T17:00:47.637Z",
-    "lastModifiedDateTime": "2025-03-10T17:00:48.54Z",
-    "title": "30-day notice: Manage PAC Validation related to CVE-2024-26248 & CVE-2024-29056",
-    "id": "MC1027793",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>Last year, Windows updates released on or after April 9, 2024 added new behaviors that start the process of addressing a security risk in the <a href=\"https://learn.microsoft.com/openspecs/windows_protocols/ms-apds/82b7b7c6-413d-4d66-b6b7-4a9224549782\" rel=\"noopener noreferrer\" target=\"_blank\">Kerberos PAC Validation Protocol</a>. Presently, it is still possible to override the enforcement settings related to the new behaviors, and revert to a <b>Compatibility</b>&nbsp;mode.</div><div><br></div><div>This year, beginning with Windows updates to be released in April 2025, there will be no support for <b>Compatibility</b>&nbsp;mode, and the new secure behavior will be enabled during the <b>Enforcement</b>&nbsp;phase.</div><div><br></div><div>For full guidance, see <a href=\"https://support.microsoft.com/help/5037754\" rel=\"noopener noreferrer\" target=\"_blank\">KB5037754: How to manage PAC Validation changes related to CVE-2024-26248 and CVE-2024-29056</a>.</div><div><br></div><div><b>When will this happen?</b></div><div><b>Enforcement</b>&nbsp;phase begins in April 2025. Windows security updates released on or after this date will remove support for the <b>Compatibility</b>&nbsp;mode registry subkeys <b>PacSignatureValidationLevel</b>&nbsp;and <b>CrossDomainFilteringLevel</b>&nbsp;and enforce the new secure behavior. There will be no support for <b>Compatibility</b>&nbsp;mode after installing the April 2025 update.</div><div><b>&nbsp;</b></div><div><b>How will this affect your organization?</b></div><div>To mitigate the risks described in <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26248\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-26248</a> and <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29056\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-29056</a>, you must update your entire Windows environment. This must include all Windows domain controllers and Windows clients. Environments that are not up to date will not recognize the new request structure after the <b>Enforcement </b>phase begins. Because of this, security checks will fail.</div><div>&nbsp;</div><div><b>What do you need to do to prepare?</b></div><div>Be ready to fully enable <b>Enforcement </b>mode later this year.</div><ol><li>Ensure that all Windows domain controllers and Windows clients are updated with a Windows security update released on or after April 9, 2024.</li><li>Review Audit events that are visible in <b>Compatibility</b>&nbsp;mode. This will help identify which devices have not been updated with a Windows security update released on or after April 9, 2024.</li><li>Install the April 2025 Windows update on all Windows domain controllers and Windows clients, once it becomes available later this year. <b>Enforcement </b>mode will be fully enabled in your environment. This will properly mitigate the vulnerabilities described in&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26248\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-26248</a> and <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29056\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-29056</a>.</li></ol><div>&nbsp;</div><div><b>Additional information:</b></div><ul><li><a href=\"https://support.microsoft.com/help/5037754\" rel=\"noopener noreferrer\" target=\"_blank\">KB5037754: How to manage PAC Validation changes related to CVE-2024-26248 and CVE-2024-29056</a></li><li><a href=\"https://support.microsoft.com/help/5020805\" rel=\"noopener noreferrer\" target=\"_blank\">KB5020805: How to manage Kerberos protocol changes related to CVE-2022-37967</a></li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-03-11T17:02:08.103Z",
     "endDateTime": "2026-03-11T17:02:08.023Z",
     "lastModifiedDateTime": "2025-03-11T17:02:08.763Z",
@@ -1177,6 +1153,45 @@
     "body": {
       "contentType": "html",
       "content": "<p>Coming soon for Microsoft Viva Engage: We will modernize email subscription management to deliver a more intuitive, user-friendly experience. Before this rollout, unsubscribe and notification links in in Viva Engage emails opened legacy web pages with limited functionality. After this rollout, those links will take users to refreshed pages where they can more easily manage their preferences. Users will be able to unsubscribe from or resubscribe to individual email types in a cleaner, more accessible workflow.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=489829\" target=\"_blank\">489829</a>.</p><p>[When this will happen:] \n</p><p>General Availability (Worldwide): We will begin rolling out mid-May 2025 and expect to complete by late May 2025.</p><p>[How this will affect your organization:]\n</p><p>After this rollout, no admin actions are required. Users will experience these changes:</p><ul><li>Users who select notification links in Viva Engage emails will be taken to the modernized notification settings page in Viva Engage for the web, instead of being taken to legacy pages.\n</li><li>We will remove the legacy <i>Unsubscribe from all </i>option. Users must now subscribe or unsubscribe to individual notification types on the new settings page.\n</li></ul><p>This rollout does not change the underlying email delivery or preference management functionality.\n</p><p>Users who have bookmarked old unsubscribe URLs should remove or update those links.</p><p>The <i>Unsubscribe </i>link in a Viva Engage notification email:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/92b44412-523e-4d78-bb33-7e7adff8d0ef\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>The new <i>Unsubscribe </i>screen in Viva Engage<i> &gt; Settings &gt; Notifications:</i>\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/806becd3-587b-4630-bd41-efb04eff8076\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>The new <i>Resubscribe </i>screen in Viva Engage<i> &gt; Settings &gt; Notifications:</i>\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/c78fee99-4445-4309-8e05-9aeed7d27ad9\" style=\"width: 400px;\" alt=\"user controls\">\n</p><p>This change will be on by default.\n</p><p>[What you need to do to prepare:]\n</p><ul><li>Review the new notification settings page in the Viva Engage web app.</li><li>Update any internal documentation or user guidance to reference the new workflow.\n</li><li>Communicate to your users that email preferences are now managed in the notification settings page.\n</li><li>No additional administration or configuration is required. Links will automatically redirect after the rollout begins.</li></ul><p>Learn more: <a href=\"https://techcommunity.microsoft.com/blog/viva_engage_blog/embracing-a-fully-modern-viva-engage-experience/4403008\" target=\"_blank\">Embracing a Fully Modern Viva Engage Experience | Microsoft Community Hub</a></p>"
+    }
+  },
+  {
+    "startDateTime": "2025-05-05T23:18:10Z",
+    "endDateTime": "2026-06-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-10T17:56:46.257Z",
+    "title": "(Updated) Account Switcher for Copilot Tab on iOS and Android",
+    "id": "MC1068268",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "490213"
+      },
+      {
+        "name": "Summary",
+        "value": "Users can now switch accounts on the Copilot chat tab in iOS and Android by swiping left to select supported accounts. The rollout begins September 2025 and completes by May 2026, allowing access to chat history and data from multiple accounts without admin action."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, iOS"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Updated March 10, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>You can now switch between accounts on the Copilot chat tab on iOS and Android. Simply swipe left to open the left-navigation and select from the list of supported accounts.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=490213\" target=\"_blank\">490213</a></p><p>[When this will happen:]</p><p>1.\tGeneral Availability (Worldwide, GCC): We will begin rolling out in early September 2025 (previously early July) and expect to complete by end of May 2026 (previously early February).</p><p>[How this will affect your organization:]</p><p>Currently, users are only able to access the Copilot Chat tab with their default account or privacy, even if they have other accounts that support Copilot. With account-switching on iOS and Android, users will be able to access Copilot Chat from other accounts that support Copilot, enabling them to access their chat history and graph data associated with those accounts.</p><p>iOS:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/811309d2-a9b6-455b-acd3-bc1af5454530\" width=\"400\" height=\"\"></p><p><br></p><p>Android:</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/543564af-dcc5-4146-90a9-ed2ee01767d1\" width=\"400\" height=\"\"></p><p>[What you need to do to prepare:]</p><p>This rollout will happen automatically with no admin action required. You may want to notify your users about this change and update any relevant documentation as appropriate.</p>"
     }
   },
   {
@@ -13792,7 +13807,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563393Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563395Z\",\"LatestRing\":\"TargetedRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563393Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563395Z\",\"LatestRing\":\"TargetedRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21503,13 +21518,14 @@
   },
   {
     "startDateTime": "2026-03-09T17:08:22Z",
-    "endDateTime": "2026-05-10T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-09T17:08:32.253Z",
-    "title": "Microsoft 365 Copilot: Draft and send Outlook email directly in Copilot Chat",
+    "endDateTime": "2026-06-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-10T17:51:23.58Z",
+    "title": "(Updated) Microsoft 365 Copilot: Draft and send Outlook email directly in Copilot Chat",
     "id": "MC1247637",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -21524,12 +21540,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft 365 Copilot Chat will enable drafting, editing, and sending Outlook emails directly within the chat on desktop starting early March 2026. This feature is on by default for licensed users with Exchange Online mailboxes, requires no admin changes, and maintains existing Outlook policies."
+        "value": "Microsoft 365 Copilot Chat will enable drafting, editing, and sending Outlook emails directly within the chat starting late March 2026. This feature, on by default for licensed desktop users with Exchange Online, streamlines email workflows without requiring admin changes or affecting compliance. No action is needed."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re enhancing Microsoft 365 Copilot Chat by enabling users to draft, edit, and send Outlook email directly within Copilot Chat. When Microsoft 365 Copilot identifies an email‑writing intent, it will open an embedded Outlook compose form. This improvement reduces context switching and streamlines everyday communication workflows.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rollout will begin in <b>early March 2026 </b>and is expected to complete by <b>early April 2026</b>.</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Users licensed for Microsoft 365 Copilot</li><li>Users with Exchange Online mailboxes</li><li>Users accessing Copilot Chat on desktop (“big screen”)</li></ul><p><i>What will happen</i></p><ul><li>When users ask Copilot to draft an email, an embedded Outlook compose form will appear directly within <i>Copilot Chat:&nbsp;</i><p><i></i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/dd128a08-3f45-4061-b838-8be690be03a2/05be0472d9cad210765e6797cdc518650729dd1c.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Users will be able to:<ul><li>Edit the email content</li><li>Modify recipients</li><li>Send the email from within Copilot Chat</li><li>Open the draft in <i>Outlook</i> to continue editing</li></ul></li><li>The feature will be <b>on by default </b>for all eligible users.</li><li>Availability:<ul><li><b>Available:</b> Copilot Chat desktop app</li><li><b>Not available: </b>Copilot Chat mobile app or chat sidebar</li></ul></li><li>Existing Outlook and Exchange Online policies—including DLP—continue to apply.</li><li>No admin configuration changes or new controls are introduced.</li></ul><p style=\"margin-left: 25px;\"><b>Note:</b> Access to this feature requires an<b> active Microsoft 365 Copilot license</b>.</p><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>You may choose to:</p><ul><li>Inform your helpdesk and end users about this new email‑drafting experience in Copilot Chat.</li><li>Update internal documentation if you describe Copilot Chat workflows.</li><li>Review which users in your organization are licensed for Microsoft 365 Copilot.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated March 10, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re enhancing Microsoft 365 Copilot Chat by enabling users to draft, edit, and send Outlook email directly within Copilot Chat. When Microsoft 365 Copilot identifies an email‑writing intent, it will open an embedded Outlook compose form. This improvement reduces context switching and streamlines everyday communication workflows.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rollout will begin in <b>late March 2026</b> (previously&nbsp;early March)<b>&nbsp;</b>and is expected to complete by <b>late April 2026</b> (previously&nbsp;early April).</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Users licensed for Microsoft 365 Copilot</li><li>Users with Exchange Online mailboxes</li><li>Users accessing Copilot Chat on desktop (“big screen”)</li></ul><p><i>What will happen</i></p><ul><li>When users ask Copilot to draft an email, an embedded Outlook compose form will appear directly within <i>Copilot Chat:&nbsp;</i><p><i></i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/dd128a08-3f45-4061-b838-8be690be03a2/05be0472d9cad210765e6797cdc518650729dd1c.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Users will be able to:<ul><li>Edit the email content</li><li>Modify recipients</li><li>Send the email from within Copilot Chat</li><li>Open the draft in <i>Outlook</i> to continue editing</li></ul></li><li>The feature will be <b>on by default </b>for all eligible users.</li><li>Availability:<ul><li><b>Available:</b> Copilot Chat desktop app</li><li><b>Not available: </b>Copilot Chat mobile app or chat sidebar</li></ul></li><li>Existing Outlook and Exchange Online policies—including DLP—continue to apply.</li><li>No admin configuration changes or new controls are introduced.</li></ul><p style=\"margin-left: 25px;\"><b>Note:</b> Access to this feature requires an<b> active Microsoft 365 Copilot license</b>.</p><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>You may choose to:</p><ul><li>Inform your helpdesk and end users about this new email‑drafting experience in Copilot Chat.</li><li>Update internal documentation if you describe Copilot Chat workflows.</li><li>Review which users in your organization are licensed for Microsoft 365 Copilot.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -21708,7 +21724,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557253\":[{\"RoadmapId\":557253,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T16:27:13.8433808Z\",\"LatestRing\":null},{\"RoadmapId\":557253,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T16:27:13.8433809Z\",\"LatestRing\":null}],\"557254\":[{\"RoadmapId\":557254,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T16:27:13.843376Z\",\"LatestRing\":null},{\"RoadmapId\":557254,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T16:27:13.8433763Z\",\"LatestRing\":null}]}"
+        "value": "{\"557253\":[{\"RoadmapId\":557253,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T18:22:22.7363069Z\",\"LatestRing\":null},{\"RoadmapId\":557253,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T18:22:22.736307Z\",\"LatestRing\":null}],\"557254\":[{\"RoadmapId\":557254,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T18:22:22.7363025Z\",\"LatestRing\":null},{\"RoadmapId\":557254,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T18:22:22.7363028Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21870,6 +21886,30 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>We are adding<b> AI citations analytics</b> to SharePoint to help site owners understand how their SharePoint documents, news posts, and pages are referenced by Microsoft Copilot and other AI agents. These insights will help organizations track content value, identify high‑impact information, and understand how AI‑powered workflows use SharePoint content. Users must have the appropriate Microsoft Copilot licenses to use the AI features that may generate citations.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=480725#Roadmap\" target=\"_blank\">480725</a></b>.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide)</b>: Rollout will begin in <b>mid‑April 2026</b> and will complete by <b>mid-May&nbsp;2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>:</p><ul><li>SharePoint Online site owners, content authors, and admins.</li><li>Users who have Microsoft Copilot licenses for the experiences that may generate citations.</li></ul><p><i>What will happen</i>:</p><p>The following updates will appear in <i>SharePoint</i>:</p><ul><li>SharePoint <b>Popular content</b> in<i> Site Usage</i> will display documents, news posts, and pages ranked by how often they are cited by Copilot or AI agents.</li><li>SharePoint <b>page analytics </b>will include a new<b> Total citations</b> card showing the number of times a page or news post is referenced in Copilot or agent responses.</li><li>SharePoint<b> file statistics </b>will include a new <b>AI citations</b> metric displayed alongside existing metrics such as views and viewers.</li><li>A new <b>AI citations analytics page </b>will appear under <b><i>Site Usage</i></b>. It will provide:<ul><li>The number of users who consume site content through Copilot and AI agents.</li><li>The total number of citations for the site.</li><li>The most frequently cited documents, news posts, and pages.</li></ul></li></ul><p>Supported agents include Microsoft 365 Copilot, Copilot in <i>Word</i>, <i>Excel, PowerPoint, Teams, Loop, Planner, SharePoint Knowledge Agent</i>, and SharePoint custom agents.</p><p>This feature will be <b>on by default </b>and will not require admin action to enable.</p><p></p><p><i>Screenshot 1 - AI citations aggregated across site content in the Site analytics view:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/cae1bccc-ce9a-4d7a-bce8-1203ff604d85/f666d398ab8fbd151bbbceca30a230a139c311dc.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>&nbsp;</i></p><p><i>Screenshot 2 - AI citations shown for an individual SharePoint page or news post in Page analytics:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/45e9158a-be83-491f-bc21-cc4205b1d9ca/c4d1d93b0c4ed709b0b2ede37f9fdd140adc94a5.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><p>No admin action is required before the rollout.</p><p>You may want to:</p><ul><li>Inform site owners and content authors about the new analytics.</li><li>Review your SharePoint usage and analytics processes to understand how the new AI citation metrics may support governance, content lifecycle planning, and content strategy.</li><li>Update internal documentation or training materials.</li><li>Provide guidance to users on Copilot licensing requirements if your organization centrally manages those licenses.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-10T17:09:17.07Z",
+    "endDateTime": "2027-03-10T17:09:17.01Z",
+    "lastModifiedDateTime": "2026-03-10T17:09:18.72Z",
+    "title": "The March 2026 Windows security update is now available",
+    "id": "MC1248239",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>The March 2026 security update is now available for all supported versions of Windows. We recommend that you install these updates promptly. For more information about the contents of this update, see the release notes, which are easily accessible from the&nbsp;<a href=\"https://support.microsoft.com/help/5079473\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a> update history page. To learn more about the different types of monthly quality updates, see <a href=\"https://aka.ms/Windows/MonthlyUpdates\" rel=\"noopener noreferrer\" target=\"_blank\">Windows monthly updates explained</a>.</div><div>&nbsp;&nbsp;</div><div><b>Highlights for the Windows 11, version 25H2 update:&nbsp;</b></div><ul><li>This security update includes improvements that were a part of update&nbsp;<a href=\"https://support.microsoft.com/help/5077181\" rel=\"noopener noreferrer\" target=\"_blank\">KB5077181</a> (released February 10, 2026).</li><li>This update makes quality improvements to the servicing stack, which is the component that installs Windows updates.</li><li>This update adds high‑confidence device targeting, expanding coverage for automatic Secure Boot certificate delivery.</li><li>This update improves File Explorer search reliability&nbsp;when searching across multiple drives or \"This PC\".&nbsp;</li><li>This update improves the reliability of choosing trusted catalog files. It adds a warning dialog that helps you confirm that the file you select comes from a trusted source. ​​​​​​​</li></ul><div><br></div><div>Short on time? Watch our <a href=\"https://aka.ms/Windows11/ReleaseNotes/Video/2603\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 release notes video</a> for this month's tips.</div><div><br></div><div>For instructions on how to install this update, see the KB for your operating system listed below:&nbsp;</div><ul><li>Windows 11, version 26H1: <a href=\"https://support.microsoft.com/help/5079466\" rel=\"noopener noreferrer\" target=\"_blank\">KB5079466</a></li><li>Windows 11, versions 25H2 and 24H2: <a href=\"https://support.microsoft.com/help/5079473\" rel=\"noopener noreferrer\" target=\"_blank\">KB5079473</a></li><li>Windows 11, version 23H2: <a href=\"https://support.microsoft.com/help/5078883\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078883</a></li><li>Windows 11 Enterprise LTSC 2024: Hotpatch <a href=\"https://support.microsoft.com/topic/752485e9-41c1-4628-ad1a-7538dba503e3\" rel=\"noopener noreferrer\" target=\"_blank\">KB5079420</a></li><li>Windows 10, versions 22H2 and 21H2: <a href=\"https://support.microsoft.com/help/5078885\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078885</a></li><li>Windows 10 Enterprise LTSC 2019 and Windows Server 2019: <a href=\"https://support.microsoft.com/help/5078752\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078752</a></li><li>Windows 10 LTSB 2016 and Windows Server 2016: <a href=\"https://support.microsoft.com/help/5078938\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078938</a></li><li>Windows Server 2025: <a href=\"https://support.microsoft.com/help/5078740\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078740</a></li><li>Windows Server 2025 Datacenter: Azure Edition: Hotpatch <a href=\"https://support.microsoft.com/topic/d62230e0-d4fb-4597-8df4-81410e827f79\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078736</a></li><li>Windows Server 2022: <a href=\"https://support.microsoft.com/help/5078766\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078766</a></li><li>Windows Server 2022 Datacenter: Azure Edition: Hotpatch <a href=\"https://support.microsoft.com/topic/c3e0f4b0-62ac-4f92-9a7c-1831d02dc155\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078737</a></li><li>Windows Server 2012 R2: <a href=\"https://support.microsoft.com/help/5078774\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078774</a></li><li>Windows Server 2012: <a href=\"https://support.microsoft.com/help/5078775\" rel=\"noopener noreferrer\" target=\"_blank\">KB5078775</a></li></ul>"
     }
   },
   {
