@@ -7120,7 +7120,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -9311,8 +9311,8 @@
   },
   {
     "startDateTime": "2025-11-18T16:21:30Z",
-    "endDateTime": "2026-05-04T08:00:00Z",
-    "lastModifiedDateTime": "2026-02-18T00:32:43.233Z",
+    "endDateTime": "2026-06-19T08:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:20:58.657Z",
     "title": "(Updated) Microsoft Edge: Microsoft 365 Copilot will support summarization and contextual grounding",
     "id": "MC1187682",
     "category": "stayInformed",
@@ -9338,7 +9338,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Edge for Business will support Microsoft 365 Copilot Chat to summarize and provide context from browser tabs, Microsoft 365 documents, and YouTube videos starting mid-February 2026. The feature is off by default, respects DLP and policy settings, and requires Entra ID sign-in and Copilot access."
+        "value": "Microsoft Edge for Business will support Microsoft 365 Copilot Chat to summarize and provide context from open tabs, documents, and YouTube videos starting mid-February. The feature is off by default, respects DLP and policy settings, and requires Entra ID sign-in with appropriate licensing. No admin action needed before rollout."
       },
       {
         "name": "Platforms",
@@ -9347,7 +9347,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated February 17, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>Microsoft Edge for Business will soon support summarization and contextual grounding with Microsoft 365 Copilot Chat. This enhancement enables users to ask Copilot questions about multiple open browser tabs, Microsoft 365 documents (such as Word, Excel, PowerPoint), and YouTube videos directly from the Edge side pane.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=496364\" target=\"_blank\">496364</a>, <a href=\"https://www.microsoft.com/en-us/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=499423\" target=\"_blank\">499423</a>, and <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=499424\" target=\"_blank\">499424</a>.</p>\n\n<p><b>[When this will happen:]</b>\n</p><p><b>General Availability (Worldwide): </b>We will begin rolling out in mid-February (previously mid-March).</p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:</b>&nbsp;Users signed in to Microsoft Edge for Business with their Entra ID and who have access to Microsoft 365 Copilot.</p><p><b>What will happen:</b>\n</p><ul>\n<li>Users will be able to ask Copilot questions about open browser tabs, Microsoft 365 documents, and YouTube videos.</li>\n<li>The feature will be<b> off by default</b>.</li>\n<li>If Copilot is restricted from accessing page content via <a href=\"https://learn.microsoft.com/DeployEdge/edge-learnmore-copilot-page-summary-results#blocking-copilot-chat-in-edge-for-business-access-to-page-content-through-dlp\" target=\"_blank\">Data Loss Prevention (DLP)</a> or the <a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext\" target=\"_blank\">EdgeEntraCopilotPageContext policy</a>, it will be suppressed to maintain DLP integrity.</li>\n<li>Existing DLP and policy configurations will be respected.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>This rollout will happen automatically by the specified date; no admin action is required before rollout.\n</li><li>Ensure users who need this capability have access to Microsoft 365 Copilot.</li><li>Ensure your tenant is configured to support Microsoft 365 Copilot and that eligible users meet all licensing prerequisites, including Entra ID sign-in and applicable Microsoft 365 service plans.</li><li>Review your current DLP and Edge policy configurations to determine potential impact.</li><li>Notify users about this upcoming capability.\n</li><li>Update internal documentation if needed.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/DeployEdge/edge-learnmore-copilot-page-summary-results\" target=\"_blank\">Microsoft 365 Copilot Chat in Edge and Access to Page Content | Microsoft Edge | Microsoft Learn</a><br></li><li><a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-policies\" target=\"_blank\">Microsoft Edge - Policies | Microsoft Edge | Microsoft Learn</a><br></li></ul><p></p><p><b>[Compliance considerations:]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. Microsoft 365 Copilot introduces contextual grounding and summarization using generative AI across browser tabs, Microsoft 365 documents, and YouTube videos.</td></tr><tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes. Users can now ask Copilot questions about open browser tabs and documents directly from the Edge sidepane, enabling real-time summarization and contextual responses.</td></tr><tr><td>Does the change modify Data Loss Prevention (DLP) policies or enforcement?</td><td>Yes. If DLP or the EdgeEntraCopilotPageContext policy restricts access, Copilot will be suppressed from accessing page content to maintain DLP integrity.</td></tr><tr><td>Does the change include an admin control, and can it be controlled through Entra ID group membership?</td><td>Yes. Admins can manage access to Copilot’s contextual grounding capabilities via DLP settings and Edge policy configurations, which can be scoped using Entra ID group membership.</td></tr></tbody></table><p><br></p>"
+      "content": "<p>Updated March 9, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>Microsoft Edge for Business will soon support summarization and contextual grounding with Microsoft 365 Copilot Chat. This enhancement enables users to ask Copilot questions about multiple open browser tabs, Microsoft 365 documents (such as Word, Excel, PowerPoint), and YouTube videos directly from the Edge side pane.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=496364\" target=\"_blank\">496364</a>, <a href=\"https://www.microsoft.com/en-us/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=499423\" target=\"_blank\">499423</a>, and <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=499424\" target=\"_blank\">499424</a>.</p>\n\n<p><b>[When this will happen:]</b>\n</p><p><b>General Availability (Worldwide): </b>We will begin rolling out in mid-February (previously mid-March).</p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:</b>&nbsp;Users signed in to Microsoft Edge for Business with their Entra ID and who have access to Microsoft 365 Copilot.</p><p><b>What will happen:</b>\n</p><ul>\n<li>Users will be able to ask Copilot questions about open browser tabs, Microsoft 365 documents, and YouTube videos.</li>\n<li>The feature will be<b> off by default</b>.</li>\n<li>If Copilot is restricted from accessing page content via <a href=\"https://learn.microsoft.com/DeployEdge/edge-learnmore-copilot-page-summary-results#blocking-copilot-chat-in-edge-for-business-access-to-page-content-through-dlp\" target=\"_blank\">Data Loss Prevention (DLP)</a> or the <a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext\" target=\"_blank\">EdgeEntraCopilotPageContext policy</a>, it will be suppressed to maintain DLP integrity.</li>\n<li>Existing DLP and policy configurations will be respected.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>This rollout will happen automatically by the specified date; no admin action is required before rollout.\n</li><li>Ensure users who need this capability have access to Microsoft 365 Copilot.</li><li>Ensure your tenant is configured to support Microsoft 365 Copilot and that eligible users meet all licensing prerequisites, including Entra ID sign-in and applicable Microsoft 365 service plans.</li><li>Review your current DLP and Edge policy configurations to determine potential impact.</li><li>Notify users about this upcoming capability.\n</li><li>Update internal documentation if needed.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/DeployEdge/edge-learnmore-copilot-page-summary-results\" target=\"_blank\">Microsoft 365 Copilot Chat in Edge and Access to Page Content | Microsoft Edge | Microsoft Learn</a><br></li><li><a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-policies\" target=\"_blank\">Microsoft Edge - Policies | Microsoft Edge | Microsoft Learn</a><br></li></ul><p></p><p><b>[Compliance considerations:]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. Microsoft 365 Copilot introduces contextual grounding and summarization using generative AI across browser tabs, Microsoft 365 documents, and YouTube videos.</td></tr><tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes. Users can now ask Copilot questions about open browser tabs and documents directly from the Edge sidepane, enabling real-time summarization and contextual responses.</td></tr><tr><td>Does the change modify Data Loss Prevention (DLP) policies or enforcement?</td><td>Yes. If DLP or the EdgeEntraCopilotPageContext policy restricts access, Copilot will be suppressed from accessing page content to maintain DLP integrity.</td></tr><tr><td>Does the change include an admin control, and can it be controlled through Entra ID group membership?</td><td>Yes. Admins can manage access to Copilot’s contextual grounding capabilities via DLP settings and Edge policy configurations, which can be scoped using Entra ID group membership.</td></tr></tbody></table><p><br></p>"
     }
   },
   {
@@ -21717,6 +21717,298 @@
     "body": {
       "contentType": "html",
       "content": "<div>Starting with the May 2026 Windows security update, Windows Autopatch is enabling&nbsp;hotpatch&nbsp;security updates by default because they are the quickest way to get secure. This change in default behavior will&nbsp;impact&nbsp;all eligible&nbsp;Microsoft&nbsp;Intune devices.&nbsp;Additional&nbsp;IT controls are coming in April.&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><ul><li>Devices will start receiving&nbsp;hotpatch&nbsp;updates by default with the May 2026 Windows security update.&nbsp;</li><li>The tenant setting to opt out of&nbsp;hotpatch&nbsp;updates is scheduled to go live on April 1, 2026.&nbsp;</li></ul><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>Devices that meet&nbsp;<a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates#prerequisites\" rel=\"noopener noreferrer\" target=\"_blank\">hotpatch prerequisites</a>&nbsp;will get secure faster because full Windows security updates are applied without waiting for a restart. Devices are secured as soon as the update is installed.&nbsp;You&nbsp;don’t&nbsp;need to wait for devices to restart, saving&nbsp;on average&nbsp;three to five days.&nbsp;</div><div>&nbsp;</div><div>Devices will restart during&nbsp;<a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates#release-cycles\" rel=\"noopener noreferrer\" target=\"_blank\">baseline&nbsp;months</a>,&nbsp;which are January, April, July, and October.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>If you already use Windows Autopatch, no action is needed&nbsp;to get hotpatch updates enabled by default.&nbsp;We&nbsp;recommend keeping&nbsp;hotpatch&nbsp;updates enabled for your devices.&nbsp;</div><div>To maximize the number of devices receiving&nbsp;hotpatch&nbsp;updates,&nbsp;ensure they meet&nbsp;<a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates#prerequisites\" rel=\"noopener noreferrer\" target=\"_blank\">prerequisites</a>. Most commonly, this means enabling&nbsp;Virtualization-based&nbsp;Security&nbsp;(VBS)&nbsp;for x86 devices.&nbsp;</div><div>&nbsp;&nbsp;</div><div>If&nbsp;you’re&nbsp;not ready for this change, you can opt out groups of devices using&nbsp;<a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates#enroll-devices-to-receive-hotpatch-updates\" rel=\"noopener noreferrer\" target=\"_blank\">Quality Update policies</a>&nbsp;or the whole tenant.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>Additional&nbsp;information:</b>&nbsp;</div><div>Read the announcement in&nbsp;<a href=\"https://aka.ms/HotpatchByDefault\" rel=\"noopener noreferrer\" target=\"_blank\">Securing devices faster with&nbsp;hotpatch&nbsp;updates on&nbsp;by default</a>.&nbsp;</div><div>Learn more about&nbsp;hotpatch&nbsp;updates with the following resources:&nbsp;&nbsp;&nbsp;</div><ul><li><a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatch updates</a>&nbsp;</li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-for-windows-client-now-available/4399808\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatch for Windows client now available</a>&nbsp;</li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatching-now-available-for-64-bit-arm-architecture/4430949\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatching now available for 64-bit Arm architecture</a>&nbsp;</li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-for-client-frequently-asked-questions/4413582\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatch for client: Frequently asked questions</a>&nbsp;</li><li><a href=\"https://www.microsoft.com/insidetrack/blog/transforming-security-and-compliance-at-microsoft-with-windows-hotpatch/\" rel=\"noopener noreferrer\" target=\"_blank\">Transforming security and compliance at Microsoft</a>&nbsp;</li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-efficiency-unlocked-smaller-update-size/4460681\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatch efficiency unlocked: Smaller update size</a>&nbsp;</li><li><a href=\"https://www.youtube.com/watch?v=_OBB1F2ZMYs\" rel=\"noopener noreferrer\" target=\"_blank\">Inside hotpatch updates for Windows</a>&nbsp;(YouTube&nbsp;video)&nbsp;</li><li><a href=\"https://www.youtube.com/watch?v=VpY4R8-NzcY\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatching 101: Enable virtualization-based security (VBS)</a>&nbsp;(YouTube&nbsp;video)&nbsp;</li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-09T22:17:07Z",
+    "endDateTime": "2026-03-23T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:17:12.717Z",
+    "title": "Microsoft Intune In Development for March 2026 is now available",
+    "id": "MC1247878",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Intune"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Microsoft Intune In Development page for March 2026 has been updated with upcoming features. Organizations should review these changes to prepare IT staff and update user guidance accordingly, as the features will appear in the next month or a future release."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>The <a href=\"https://aka.ms/Intune_InDevelopment\" target=\"_blank\">In development for Microsoft Intune</a> page in our documentation has been updated.</p><p>[How this will affect your organization:]\n</p><p>The <a href=\"https://aka.ms/Intune_InDevelopment\" target=\"_blank\">In development page</a> provides a list of features in upcoming releases of Microsoft Intune to assist in your readiness and planning. The list has now been updated. You will start seeing these changes in the next month or in a subsequent release.</p><p>[What you need to do to prepare:]\n</p><p>You can inform your IT staff and helpdesk of the upcoming changes listed on this page. Plan to update your user guidance, if you feel any of these features would be important to your users.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-09T22:17:35Z",
+    "endDateTime": "2026-05-25T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:17:56Z",
+    "title": "Anthropic Claude Sonnet is now available in Microsoft 365 Copilot",
+    "id": "MC1247880",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Anthropic Claude Sonnet is now available in Microsoft 365 Copilot for licensed users, except in EU/EFTA, UK, government, and sovereign clouds. It can be selected in Copilot Chat, with rollout completing by late March 2026. Admins may need to opt in where Anthropic is off by default."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>[Introduction]\n</p><p>We’re expanding model choice in <b>Microsoft 365 Copilot</b> with the addition of <b>Anthropic Claude Sonnet</b> for users with a Microsoft 365 Copilot license. Claude Sonnet is available in <b>Copilot Chat in Frontier</b>, alongside the latest OpenAI models, giving users the flexibility to choose the model best suited for their tasks. This expansion reflects our commitment to delivering the latest AI innovation for work—while maintaining the security, compliance, and privacy standards customers expect from Microsoft.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/\nd0d7e118-b868-4533-b987-49b85c01403d\" width=\"250\" height=\"\"></p><p>[When this will happen:]\n</p><ul><li><b>Frontier availability: </b>Claude Sonnet is available now in Frontier.\n</li><li><b>General availability (web/desktop/macOS/mobile):</b> Rolling out gradually; expected completion late March 2026.\n</li></ul><p>[How this affects your organization:]\n</p><p>Who is affected:\n</p><ul><li>Users with a Microsoft 365 Copilot license \n</li></ul><p>Who is not affected:\n</p><ul><li>Tenants in EU/EFTA and the UK\n</li><li>Government clouds (GCC, GCC High, DoD)\n</li><li>Sovereign clouds For these tenants, Anthropic models are not available \n</li></ul><p>For these tenants, Anthropic models are not available and no model option will be shown.\n</p><p>What will happen:\n</p><ul><li>Microsoft 365 Copilot licensed users will be able to select <b>Claude Sonnet</b> as an option in the <b>model selector</b> within Copilot Chat.\n</li><li>In regions where Anthropic is configured as a subprocessor and is set to <i>Off by default,</i> admins can choose to opt in to make Anthropic models available for their organization.\n</li><li><b>Enterprise Data Protection for Microsoft 365 Copilot continues to apply</b>, with no changes to existing protections.\n</li><li>Anthropic operates as a <b>Microsoft subprocessor</b> under the Microsoft Data Protection Addendum and Product Terms.\n</li><li>Anthropic models are currently <b>excluded from EU Data Boundary and in‑country processing commitments</b>.\n</li></ul><p>[What you can do to prepare:]\n</p><ul><li><b>No action is required.</b> However, it’s recommended that you review internal guidance and communicate to users that availability.\n</li><li>If your tenant is in a region where Anthropic is <b>Off by default</b>, review the subprocessor setting and opt in if you want Anthropic models available to users. Learn more: <a href=\"https://learn.microsoft.com/en-us/copilot/microsoft-365/connect-to-ai-subprocessor\" target=\"_blank\">Anthropic as a subprocessor for Microsoft Online Services | Microsoft Learn</a>\n</li><li>Learn more about Anthropic as a Microsoft subprocessor: <a href=\"https://learn.microsoft.com/en-us/copilot/microsoft-365/connect-to-ai-subprocessor\" target=\"_blank\">Anthropic as a subprocessor for Microsoft Online Services</a> \n</li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-09T22:21:46Z",
+    "endDateTime": "2026-06-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:21:51.98Z",
+    "title": "Microsoft Viva Glint: AI-generated survey insights with Copilot highlights",
+    "id": "MC1247887",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "558111"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Viva Glint will introduce AI-generated Copilot highlights in survey reports by April 2026, providing structured summaries of key insights automatically for licensed users. No extra configuration or Microsoft 365 Copilot license is needed. Admins can manage access via the Microsoft 365 admin center."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p><b>Copilot highlights in <i>Viva Glint</i> </b>provides AI‑generated, structured summaries of employee survey results directly within supported Glint reports. The feature appears as a collapsible card at the top of the report and surfaces key insights—including strengths, opportunities, team‑level differences, and trends—to help managers and leaders move from data to action faster. Copilot highlights will be automatically available for users who have access to Copilot in <i>Viva Glint</i>, with no additional configuration required.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558111\" target=\"_blank\">558111</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rollout will begin in <b>early April 2026 </b>and is expected to complete by<b> late April 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations using Viva Glint</li><li>Admins who manage Copilot in <i>Viva Glint </i>access in the <i>Microsoft 365 admin center</i></li><li>Users with Glint roles that include dashboard and reports access when Copilot in <i>Viva Glint </i>is enabled</li><li>Users must have a license for <b style=\"\">Viva Glint</b>, <b style=\"\">Microsoft Viva Suite</b>, or <b style=\"\">Microsoft Viva Workplace Analytics and</b> <b style=\"\">Employee Feedback</b> to access Copilot highlights.</li><li>A <b>Microsoft 365 Copilot license is not required </b>to use Copilot in Viva Glint or Copilot highlights.</li></ul><p><i>What will happen</i></p><ul><li><b>Copilot highlights will appear automatically </b>as a collapsible card at the top of Team Summary and Executive Summary reports.</li><li>There will be <b>no separate toggle to configure</b>; the feature will be enabled automatically when Copilot in <i>Viva Glint </i>is turned on.</li><li>Summaries may include up to three structured sections:<ul><li><b>Overview and key outcomes: </b>Response rate, key outcome trend, top strengths</li><li><b>Team scores:</b> Team breakdowns, increases/decreases, high/low scoring teams</li><li><b>Top opportunities:&nbsp;</b>Score, benchmark comparison, risk classification</li></ul></li><li><b>Multilingual summaries</b> will be generated in <i>each user’s configured Viva Glint dashboard language</i>.</li><li>Interpretation rules will surface only notable findings based on respondent group size.</li><li>No new data sources will be introduced; summaries will use existing report data.</li><li>Existing access policies, data permissions, and confidentiality thresholds will remain unchanged.</li><li>No changes will be made to dashboard access, user permissions, or privacy protections.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li><b>Verify Copilot access settings</b>:<ul><li>Go to<i style=\"\"> admin.microsoft.com</i> <b><i>→ Settings → Viva → Viva Glint →</i></b> <b><i>Manage settings for Microsoft Copilot in Viva Glint</i></b>.</li><li>Confirm Copilot in <i>Viva Glint</i> is turned on at the tenant level.</li><li>If needed, adjust access policies to limit Copilot visibility to specific users or groups.</li></ul></li><li><b>Inform report viewers: </b>Let managers and leaders know that AI‑generated summaries will appear at the top of supported reports. Users can collapse the card if they prefer to review data directly.</li><li><b>No additional configuration is required: </b>Copilot highlights will be automatically available when Copilot in<i> Viva Glint</i> is enabled.</li><li><b>Learn more: </b><a href=\"https://learn.microsoft.com/viva/glint/copilot/mac-copilot-access\" target=\"_blank\">Manage Viva Glint Copilot access in the Microsoft 365 admin center | Viva Glint | Microsoft Viva | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p><p></p><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-09T22:23:37Z",
+    "endDateTime": "2026-05-12T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:23:44.867Z",
+    "title": "Outlook: Support for recommended and automatically applied sensitivity labels in Outlook for iOS and Android",
+    "id": "MC1247891",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Exchange Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "557253,557254"
+      },
+      {
+        "name": "FeatureStatusJson",
+        "value": "{\"557253\":[{\"RoadmapId\":557253,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T00:37:18.3491388Z\",\"LatestRing\":null},{\"RoadmapId\":557253,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T00:37:18.3491389Z\",\"LatestRing\":null}],\"557254\":[{\"RoadmapId\":557254,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T00:37:18.3491351Z\",\"LatestRing\":null},{\"RoadmapId\":557254,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-10T00:37:18.3491354Z\",\"LatestRing\":null}]}"
+      },
+      {
+        "name": "Summary",
+        "value": "Outlook for iOS and Android will support recommended and automatic sensitivity labels during email composition, aligning with Microsoft Purview Information Protection policies. This rollout starts mid-March 2026, is on by default for organizations with existing policies, and requires no changes to current Purview configurations."
+      },
+      {
+        "name": "Platforms",
+        "value": "iOS, Android"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>Outlook for iOS and Android is adding support for recommended and automatically applied sensitivity labels when you compose an email on your mobile device. With this release, we are extending Recommended Labels to Outlook mobile (iOS and Android), providing the same labeling experience users already have in Outlook on the desktop and web. For recommended labels, you’ll see a prompt to review and apply the suggested label. For automatic labels, they will be applied without needing any action from you. This ensures alignment with your organization’s Microsoft Purview Information Protection labeling policies when sensitive information is detected.</p><p>This message is associated with<b> Microsoft 365 Roadmap IDs&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557253\" target=\"_blank\">557253</a> and&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557254#Roadmap\" target=\"_blank\">557254</a>.</b></p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide):</b> We will begin rolling out in <b>mid‑March 2026</b> and expect to complete by<b> late March 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Users who compose email in <i>Outlook for iOS</i> and<i> Android</i></li><li>Organizations with <b>automatic or recommended sensitivity labeling policies</b> configured in<i> Microsoft Purview Information Protection</i></li></ul><p><i>What will happen</i></p><ul><li><b>This update extends Recommended Labels to Outlook mobile (iOS and Android)</b>, enabling recommended label prompts when sensitive information is detected.</li><li>Users see recommended sensitivity labels when Microsoft Purview identifies sensitive information during email composition.</li><li>Users are prompted to review and apply recommended labels.</li><li>Automatic labels are applied without user action when required by policy.</li><li>The feature is <b>on by default</b> for organizations with existing Purview sensitivity labeling policies.</li><li>No changes are made to Purview policy configuration, scopes, or publishing.</li><li>Outlook desktop and Outlook on the web are not affected; <b>this update adds support for Outlook mobile only</b>.</li></ul><p><i>Figures 1–3. Examples of users being prompted to review and apply recommended sensitivity labels in Outlook mobile.</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/1fc47a3d-6732-4e99-91a5-a362671ab78b/8e4b299eb856fc88fb36aa07b408e153ba6b0978.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p> </p><p><i></i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/9f5a2aea-afa6-4742-a84e-1ae99efbcead/b905089deae2f50f05a5bf73890f75f51d3b5ec8.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p> </p><p><i></i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/33236c8b-c7c4-4677-bc6d-51a25611df63/842da4dad0ff26587bcf3fa908fb39d728953d34.png\" style=\"width: 400px;\" alt=\"user settings\"> </p><p><b>[What you can do to prepare]</b></p><p>No action is required if your organization already uses automatic or recommended sensitivity labeling policies in <i>Microsoft Purview Information Protection</i>. Outlook mobile support is added automatically.</p><p>Admins may choose to:</p><ul><li>Review existing labeling policies in the <i>Microsoft Purview portal</i> to confirm correct scoping and label publishing.</li><li>Ensure sensitivity labels are published to users who rely on Outlook mobile.</li><li>Communicate this change to helpdesk or support teams.</li><li>Review Microsoft Learn documentation for minimum supported Outlook mobile versions:&nbsp;<a href=\"https://learn.microsoft.com/purview/sensitivity-labels-versions#sensitivity-label-capabilities-in-outlook\" target=\"_blank\">Sensitivity label capabilities in Outlook - Minimum versions for sensitivity labels in Office apps | Microsoft Purview | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td><b>Does the change alter how existing customer data is processed, stored, or accessed?</b></td><td>Yes. Sensitivity labels may be applied to email content composed on mobile devices using existing Microsoft Purview auto‑labeling and recommendation logic. No new storage locations or data pathways are introduced.</td></tr><tr><td><b>Does the change modify Information Protection labels or sensitive information types?</b></td><td>Yes. Existing Microsoft Purview sensitivity labeling policies and sensitive information types now apply to messages composed in Outlook for iOS and Android, in addition to other Outlook clients.</td></tr><tr><td><b>Does the change include an admin control, and can it be controlled through Entra ID group membership?</b></td><td>Yes. Users can accept or dismiss recommended labels. However, users cannot disable automatic labeling when required by Purview policies.</td></tr></tbody></table><p><b></b></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-09T22:24:16Z",
+    "endDateTime": "2026-05-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:24:40.47Z",
+    "title": "Microsoft Entra passkeys on Windows now support phishing-resistant sign-in",
+    "id": "MC1247893",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Entra"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Entra passkeys on Windows enable phishing-resistant, passwordless sign-in using Windows Hello on Entra-protected resources, including unmanaged devices. Public preview starts mid-March 2026. Organizations must opt in and configure policies to enable this feature; no impact occurs without activation."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re introducing <b>Microsoft Entra passkeys on Windows </b>to enable phishing-resistant sign-in to Entra-protected resources. This update allows users to create device‑bound passkeys stored in the <i>Windows Hello container </i>and authenticate using Windows Hello methods (face, fingerprint, or PIN). It also expands passwordless authentication to Windows devices that aren’t Entra‑joined or registered, helping organizations strengthen security and reduce reliance on passwords.</p><p><b>[When this will happen]</b></p><ul><li><b>Public preview: </b>Rolling out from <b>mid-March 2026</b> through <b>late April 2026</b></li><li><b>General Availability</b><ul style=\"\"><li style=\"\"><b>Worldwide</b>: Mid‑March 2026 to mid‑April 2026</li><li style=\"\"><b>GCC</b>: Mid-April 2026 to mid-May 2026</li><li style=\"\"><b>GCC High</b>: Mid-April 2026 to mid-May2026</li><li style=\"\"><b>DoD</b>: Mid-April 2026 to Mid-May 2026</li></ul></li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations using Microsoft Entra ID whose users sign in from Windows devices, including corporate‑managed, personal, and shared PCs.</li></ul><p><i>What will happen</i></p><ul><li><b>There is no impact to your organization unless you opt in.</b></li><li>Microsoft Entra passkeys on Windows will be available as a phishing‑resistant, passwordless sign‑in option for Entra‑protected cloud resources.</li><li>Users will authenticate with Windows Hello (face, fingerprint, or PIN).</li><li>Users can use passkeys on Windows devices that are not Entra‑joined or registered, enabling use on personal, shared, and unmanaged PCs.</li><li>Users can sign-in to multiple Entra accounts on the same Windows device, with each account registering its own passkey.</li><li>Passkeys on Windows are device‑bound and do not sync across devices; each device requires separate registration per Entra account.</li><li>Windows Hello for Business remains recommended for managed, Entra‑joined or registered devices; passkeys supplement unmanaged device scenarios and do not support device sign‑in.</li><li>Existing Conditional Access and authentication strength policies continue to apply with no required configuration changes unless you choose to enable passkeys.</li><li>Users can’t register a passkey on Windows if a Windows Hello for Business credential already exists for the same account and container. This block may not apply once the user exceeds 50 total credentials across passkeys (FIDO2), Windows Hello for Business, and Mac Platform Credentials.&nbsp;&nbsp;</li></ul><p><b>[What you can do to prepare]</b></p><p>If you want to enable Entra passkeys on Windows during public preview:</p><ul><li>Enable the <b>Passkeys (FIDO2)</b> authentication method in Authentication Methods policies.</li><li>Create a passkey profile and configure:<ul><li><i>Attestation enforcement: </i><b>Disabled</b></li><li><i>Key restrictions: </i><b>Enabled</b></li><li><i>Allowed AAGUIDs (required during preview):</i><ul><li>Windows Hello Hardware Authenticator: <code>08987058-cadc-4b81-b6e1-30de50dcbe96</code><b></b></li><li>Windows Hello VBS Hardware Authenticator: <code>9ddd1817-af5a-4672-a2b9-3e3dd95000a9</code><b></b></li><li>Windows Hello Software Authenticator: <code>6028b017-b1d4-4c02-b4b3-afcdafc96bb2</code><b></b></li><li><b>Note: </b>During Public Preview, you must explicitly add these Windows Hello AAGUIDs to the allowed list.</li></ul></li></ul></li><li>Assign the passkey profile to appropriate groups.</li><li>Validate <b>Conditional Access </b>and <b>authentication strengths</b> policies to ensure they support passkey authentication.</li><li>Communicate with pilot users about supported scenarios and enrollment steps.</li><li>Update internal documentation if your organization tracks approved authentication methods.</li></ul><p>If you do not plan to participate in the public preview, no action is required.</p><p><b>Learn more:</b>&nbsp;<a href=\"https://learn.microsoft.com/entra/identity/authentication/how-to-authentication-passkey-profiles\" target=\"_blank\">How to enable passkey (FIDO2) profiles in Microsoft Entra ID (preview) | Authentication | Microsoft Entra ID | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-09T22:25:10Z",
+    "endDateTime": "2026-05-15T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:26:43.157Z",
+    "title": "Microsoft Teams Rooms: Private chat for organizers and presenters in structured meetings and webinars",
+    "id": "MC1247896",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "557165"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams Rooms on Windows will introduce private chat for organizers, co-organizers, and presenters in structured meetings and webinars, offering separate chats for event teams and all attendees. This feature, enabled by default, rolls out globally from early to mid-April 2026."
+      },
+      {
+        "name": "Platforms",
+        "value": "TeamsAndSurfaceDevices"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are<b> introducing private chat </b>in <i>Teams Rooms on Windows</i> for organizers, co‑organizers, and presenters in structured meetings and webinars. This update provides<b> two chat options</b>—<b>one for private coordination among key participants</b> and <b>one for all attendees</b>—helping event teams manage communications more effectively before, during, and after an event.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters=557165#Roadmap\" target=\"_blank\">557165</a></b>.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide and GCC): </b>Rollout begins in<b> early April 2026</b> and completes in <b>mid‑April 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Admins who manage Microsoft Teams meetings, webinars, and town halls</li><li>Users in<i> Teams Rooms on Windows</i> who participate in structured meetings and events</li></ul><p><i>What will happen</i></p><p>When a Teams Rooms on Windows device joins a structured meeting or webinar as an organizer, co‑organizer, or presenter:</p><ul><li><b>Everyone </b>is shown by default (<i>Figures 1 and 2</i>):<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/46b0a902-4527-4485-bac3-e028e24aec62/3361d87e2f99b4056949a01653e4e8af7711626f.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/9b1bf1cd-ce25-413d-afbb-28567679acd8/bc1ed27e91410a44d604332a6103b40cbd1ba418.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Users will see<b> two chat panels</b>:<ul><li><b>Event group</b> (private chat for organizers and presenters)</li><li><b>Everyone</b> (all presenters and attendees)</li></ul></li><li>Users can switch between chats using a <b>new drop‑down chevron</b> on the chat button.</li><li>The feature allows presenters to coordinate privately without disrupting attendee chat.</li><li>No changes are made to existing attendee chat behavior.</li><li>This feature is <b>enabled by default </b>for Teams Rooms on Windows roles listed above.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Review your Teams meeting policies to confirm whether private chat is enabled for organizers and presenters.</li><li>Communicate this change to helpdesk staff and event organizers.</li><li>Update internal documentation that references chat behavior in<i> Teams Rooms</i>.</li><li>Share Microsoft Learn resources for Teams Rooms as needed for training or troubleshooting.</li></ul><p><b>Learn more:</b>&nbsp;<a href=\"https://support.microsoft.com/office/host-or-attend-an-event-from-a-microsoft-teams-room-mtr-d7ff15e0-6516-4ebc-ae03-a2bdf58a4478\" target=\"_blank\">Host or attend an event from a Microsoft Teams Room (MTR) | Microsoft Support</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-09T22:27:11Z",
+    "endDateTime": "2026-05-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:28:09.767Z",
+    "title": "Microsoft Viva Insights – Onboarding Email for Copilot Analytics",
+    "id": "MC1247899",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "511801"
+      },
+      {
+        "name": "Summary",
+        "value": "Starting March 2026, organization leaders granted Microsoft Copilot Analytics access in Viva Insights will receive a one-time onboarding email explaining their permissions and features. This default, no-action-needed update aims to help users quickly utilize Copilot Analytics. Administrators should inform support teams and review access assignments."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re introducing a new onboarding email experience for organization leaders who are granted access to Microsoft Copilot Analytics in <i>Viva Insights</i>. This email is designed to clearly notify newly enabled users of their access and help them start getting value from Microsoft Copilot Analytics immediately.</p><p>This email is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=511801\" target=\"_blank\">511801</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rollout will begin in <b>March 2026</b>, with completion varying by region and scale unit.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organization leaders who receive tenant‑wide access to Microsoft Copilot Analytics (Viva Insights), either through auto-identified roles or admin role assignment.</li></ul><p><i>What will happen</i></p><ul><li>Newly assigned users will receive a one‑time onboarding email when they are granted Microsoft Copilot Analytics access:<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/8d791067-ff1d-4a5a-a23f-41768725cf98/b87dc940e3667a008d9802405f39fa863d81fe09.png\" style=\"width: 400px;\" alt=\"user settings\"> </p></li><li>The email helps users understand their permissions, available insights, and how to get started.</li><li>No existing admin configuration or policy needs to be updated.</li><li>This experience is<b> on by default for all tenants that enable Microsoft Copilot Analytics</b>.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required to enable this update.</p><p>However, we recommend that you:</p><ul><li>Inform your Viva Insights administrators and AI administrators about this upcoming communication.</li><li>Update internal support/helpdesk documentation in case leaders have questions.</li><li>Review your current Microsoft Copilot Analytics access assignments if you want to anticipate who may receive the onboarding email.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-09T22:28:31Z",
+    "endDateTime": "2026-06-15T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-09T22:28:38.647Z",
+    "title": "SharePoint: AI citations analytics for documents and pages",
+    "id": "MC1247902",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "480725"
+      },
+      {
+        "name": "Summary",
+        "value": "SharePoint will add AI citations analytics by mid-May 2026, showing how documents and pages are referenced by Microsoft Copilot and AI agents. Features include citation metrics in site usage, page analytics, and a new AI citations analytics page. No admin action is needed; Copilot licenses are required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are adding<b> AI citations analytics</b> to SharePoint to help site owners understand how their SharePoint documents, news posts, and pages are referenced by Microsoft Copilot and other AI agents. These insights will help organizations track content value, identify high‑impact information, and understand how AI‑powered workflows use SharePoint content. Users must have the appropriate Microsoft Copilot licenses to use the AI features that may generate citations.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=480725#Roadmap\" target=\"_blank\">480725</a></b>.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide)</b>: Rollout will begin in <b>mid‑April 2026</b> and will complete by <b>mid-May&nbsp;2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>:</p><ul><li>SharePoint Online site owners, content authors, and admins.</li><li>Users who have Microsoft Copilot licenses for the experiences that may generate citations.</li></ul><p><i>What will happen</i>:</p><p>The following updates will appear in <i>SharePoint</i>:</p><ul><li>SharePoint <b>Popular content</b> in<i> Site Usage</i> will display documents, news posts, and pages ranked by how often they are cited by Copilot or AI agents.</li><li>SharePoint <b>page analytics </b>will include a new<b> Total citations</b> card showing the number of times a page or news post is referenced in Copilot or agent responses.</li><li>SharePoint<b> file statistics </b>will include a new <b>AI citations</b> metric displayed alongside existing metrics such as views and viewers.</li><li>A new <b>AI citations analytics page </b>will appear under <b><i>Site Usage</i></b>. It will provide:<ul><li>The number of users who consume site content through Copilot and AI agents.</li><li>The total number of citations for the site.</li><li>The most frequently cited documents, news posts, and pages.</li></ul></li></ul><p>Supported agents include Microsoft 365 Copilot, Copilot in <i>Word</i>, <i>Excel, PowerPoint, Teams, Loop, Planner, SharePoint Knowledge Agent</i>, and SharePoint custom agents.</p><p>This feature will be <b>on by default </b>and will not require admin action to enable.</p><p></p><p><i>Screenshot 1 - AI citations aggregated across site content in the Site analytics view:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/cae1bccc-ce9a-4d7a-bce8-1203ff604d85/f666d398ab8fbd151bbbceca30a230a139c311dc.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>&nbsp;</i></p><p><i>Screenshot 2 - AI citations shown for an individual SharePoint page or news post in Page analytics:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/45e9158a-be83-491f-bc21-cc4205b1d9ca/c4d1d93b0c4ed709b0b2ede37f9fdd140adc94a5.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><p>No admin action is required before the rollout.</p><p>You may want to:</p><ul><li>Inform site owners and content authors about the new analytics.</li><li>Review your SharePoint usage and analytics processes to understand how the new AI citation metrics may support governance, content lifecycle planning, and content strategy.</li><li>Update internal documentation or training materials.</li><li>Provide guidance to users on Copilot licensing requirements if your organization centrally manages those licenses.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
