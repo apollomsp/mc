@@ -2342,8 +2342,8 @@
   },
   {
     "startDateTime": "2025-06-25T00:12:42Z",
-    "endDateTime": "2026-04-30T08:00:00Z",
-    "lastModifiedDateTime": "2025-11-24T21:21:54.463Z",
+    "endDateTime": "2026-07-31T08:00:00Z",
+    "lastModifiedDateTime": "2026-03-13T18:33:35.69Z",
     "title": "Microsoft Teams on the web: New Private Preview for Sign in with Apple and Google for consumers may affect enterprise",
     "id": "MC1102784",
     "category": "planForChange",
@@ -6947,7 +6947,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -10523,7 +10523,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"506750\":[{\"RoadmapId\":506750,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-13T18:16:45.2503477Z\",\"LatestRing\":null},{\"RoadmapId\":506750,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-13T18:16:45.2503486Z\",\"LatestRing\":null},{\"RoadmapId\":506750,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-13T18:16:45.2503487Z\",\"LatestRing\":null}]}"
+        "value": "{\"506750\":[{\"RoadmapId\":506750,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-13T20:13:15.9497358Z\",\"LatestRing\":null},{\"RoadmapId\":506750,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-13T20:13:15.9497361Z\",\"LatestRing\":null},{\"RoadmapId\":506750,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-13T20:13:15.9497362Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11001,12 +11001,13 @@
   {
     "startDateTime": "2025-12-09T00:19:20Z",
     "endDateTime": "2026-07-01T07:00:00Z",
-    "lastModifiedDateTime": "2025-12-09T00:19:28.48Z",
-    "title": "Content Security Policies (CSP) are coming to SharePoint Online and might impact your custom SPFx solutions",
+    "lastModifiedDateTime": "2026-03-13T19:26:48.223Z",
+    "title": "(Updated) Content Security Policies (CSP) are coming to SharePoint Online and might impact your custom SPFx solutions",
     "id": "MC1193419",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -11025,7 +11026,7 @@
       },
       {
         "name": "Summary",
-        "value": "Starting March 1, 2026, SharePoint Online will enforce Content Security Policy (CSP), blocking scripts from non-trusted sources in custom SPFx solutions. To avoid disruption, ensure all scripts come from trusted sources and move inline scripts to files. CSP enforcement can be postponed 90 days via PowerShell."
+        "value": "Starting March 1, 2026, SharePoint Online will enforce Content Security Policy (CSP), blocking scripts from untrusted sources in custom SPFx solutions. To avoid disruptions, ensure all scripts come from trusted sources and move inline scripts to files. CSP enforcement can be postponed 90 days via PowerShell."
       },
       {
         "name": "Platforms",
@@ -11034,7 +11035,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>We’re improving SharePoint Online security via Content Security Policy (CSP) enforcement. Currently CSP is applied in reporting mode but as of March 1, 2026, the Content Security Policy will be enforced which will prevent the loading of script (e.g. JavaScript) from non-allowed sources. This message center post replaces MC1055557 (April 2024).</p><p>This change is associated with Microsoft 365 Roadmap ID: <a href=\"https://www.microsoft.com/microsoft-365/roadmap?id=485797\" target=\"_blank\">485797</a></p><p>[When this will happen:]</p><p>This will be implemented starting March 1, 2026.</p><p>\n</p><p>[How this will affect your organization:]</p><p>If your organization extended SharePoint Online using SPFx then the created custom SPFx solutions could potentially load scripts from locations which are not allowed. In most cases SPFx solutions use and load script from allowed locations, but that’s not always the case. Any script from a not allowed location will be blocked, the same applies for any inline script usage. SPFx solutions whose script is getting blocked will not function anymore as designed, impacting business scenarios depending on those solutions.\n</p><p>To prevent solutions from breaking there you need to:\n</p><ol><li>Ensure all used script locations are trusted script sources. This can be done without updating the SPFx solution\n</li><li>Move all inline script to script files which can then be defined as trusted source. <b>This will require updating the SPFx solution!\n</b></li></ol><p>If you need more time to review your SPFx solutions, there’s an option to postpone CSP enforcement by 90 days via below SPO Management Shell PowerShell cmdlet.\n</p><p><code>Set-SPOTenant -DelayContentSecurityPolicyEnforcement $true</code>\n</p><p>Note:\n</p><p>This option will be available in the SPO Management Shell version 16.0.26712.12000 (November 2025) or higher.\n</p><p>[What you need to do to prepare:]</p><p>In addition to the default CSP settings, SharePoint Online will add locations listed in the Trusted Script Sources area of the SharePoint Online Admin Center as valid locations for CSP, thus enabling script loading from those locations. To add an entry, in a browser, go to the Trusted Script Sources via SharePoint Online Admin Center &gt; Advanced &gt; Script sources.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/65be05c0-aa60-4cd8-8c3d-cbf18cddbb73 \" width=\"400\" height=\"\"></p><p>To understand which script location to add there are two options. First option is testing your SPFx solutions with the browser dev tools console open. As CSP is in reporting mode until March 1, 2026, there will be messages indicating script that will be blocked once CSP is enforced. These messages start with “Loading the script '&lt;path to script&gt;' violates the following…” or “Executing inline script violates the following Content Security Policy directive…”. \n</p><p>Whenever the browser logs a CSP violation, that violation is also logged to <a href=\"https://purview.microsoft.com/\" target=\"_blank\">Microsoft Purview</a>. In the browser, navigate to the Audit solution in Microsoft Purview from the Microsoft 365 Admin Center. From the Search page, search for the Activity - friendly names value Violated Content Security Policy, or the Activity - operation names value ViolatedContentSecurityPolicy:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/ece7b2ac-44f9-4abe-b95f-426e20ab77bf \" width=\"400\" height=\"\"></p><p>Selecting a search result opens the side panel with the audit details. Take note of the following properties:</p><ul><li><b>DocumentUrl:</b> This indicates the page in the SharePoint Online site where the CSP violation occurred.</li><li><b>BlockedUrl:</b> This indicates the URL of the script that violated the CSP configuration or contains “inline” when the violation came from loading inline script\n</li></ul><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/1818988a-08d8-4e41-802e-9abdc94ec2c5 \" width=\"400\" height=\"\"></p><p><b><u>Important\n</u></b></p><p>In the case of inline script, the remediation requires updating the SPFx solution by moving inline script into a separate script file, which then can be added as a trusted source.\n</p><p>Learn more: <a href=\"https://aka.ms/spfx/csp\" target=\"_blank\">Support for Content Security Policy (CSP) in SharePoint Online</a>&nbsp;</p>"
+      "content": "<p>Updated March 13, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>We’re improving SharePoint Online security via Content Security Policy (CSP) enforcement. Currently CSP is applied in reporting mode but as of March 1, 2026, the Content Security Policy will be enforced which will prevent the loading of script (e.g. JavaScript) from non-allowed sources. This message center post replaces MC1055557 (April 2024).</p><p>This change is associated with Microsoft 365 Roadmap ID: <a href=\"https://www.microsoft.com/microsoft-365/roadmap?id=485797\" target=\"_blank\">485797</a></p><p>[When this will happen:]</p><p>This will be implemented starting March 1, 2026 and should complete by March 20, 2026.</p><p>\n</p><p>[How this will affect your organization:]</p><p>If your organization extended SharePoint Online using SPFx then the created custom SPFx solutions could potentially load scripts from locations which are not allowed. In most cases SPFx solutions use and load script from allowed locations, but that’s not always the case. Any script from a not allowed location will be blocked, the same applies for any inline script usage. SPFx solutions whose script is getting blocked will not function anymore as designed, impacting business scenarios depending on those solutions.\n</p><p>To prevent solutions from breaking there you need to:\n</p><ol><li>Ensure all used script locations are trusted script sources. This can be done without updating the SPFx solution\n</li><li>Move all inline script to script files which can then be defined as trusted source. <b>This will require updating the SPFx solution!\n</b></li></ol><p>If you need more time to review your SPFx solutions, there’s an option to postpone CSP enforcement by 90 days via below SPO Management Shell PowerShell cmdlet.\n</p><p><code>Set-SPOTenant -DelayContentSecurityPolicyEnforcement $true</code>\n</p><p>Note:\n</p><p>This option will be available in the SPO Management Shell version 16.0.26712.12000 (November 2025) or higher.\n</p><p>[What you need to do to prepare:]</p><p>In addition to the default CSP settings, SharePoint Online will add locations listed in the Trusted Script Sources area of the SharePoint Online Admin Center as valid locations for CSP, thus enabling script loading from those locations. To add an entry, in a browser, go to the Trusted Script Sources via SharePoint Online Admin Center &gt; Advanced &gt; Script sources.\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/65be05c0-aa60-4cd8-8c3d-cbf18cddbb73 \" width=\"400\" height=\"\"></p><p>To understand which script location to add there are two options. First option is testing your SPFx solutions with the browser dev tools console open. As CSP is in reporting mode until March 1, 2026, there will be messages indicating script that will be blocked once CSP is enforced. These messages start with “Loading the script '&lt;path to script&gt;' violates the following…” or “Executing inline script violates the following Content Security Policy directive…”. \n</p><p>Whenever the browser logs a CSP violation, that violation is also logged to <a href=\"https://purview.microsoft.com/\" target=\"_blank\">Microsoft Purview</a>. In the browser, navigate to the Audit solution in Microsoft Purview from the Microsoft 365 Admin Center. From the Search page, search for the Activity - friendly names value Violated Content Security Policy, or the Activity - operation names value ViolatedContentSecurityPolicy:\n</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/ece7b2ac-44f9-4abe-b95f-426e20ab77bf \" width=\"400\" height=\"\"></p><p>Selecting a search result opens the side panel with the audit details. Take note of the following properties:</p><ul><li><b>DocumentUrl:</b> This indicates the page in the SharePoint Online site where the CSP violation occurred.</li><li><b>BlockedUrl:</b> This indicates the URL of the script that violated the CSP configuration or contains “inline” when the violation came from loading inline script\n</li></ul><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/1818988a-08d8-4e41-802e-9abdc94ec2c5 \" width=\"400\" height=\"\"></p><p><b><u>Important\n</u></b></p><p>In the case of inline script, the remediation requires updating the SPFx solution by moving inline script into a separate script file, which then can be added as a trusted source.\n</p><p>Learn more: <a href=\"https://aka.ms/spfx/csp\" target=\"_blank\">Support for Content Security Policy (CSP) in SharePoint Online</a>&nbsp;</p>"
     }
   },
   {
@@ -17001,30 +17002,6 @@
     }
   },
   {
-    "startDateTime": "2026-02-11T19:59:48Z",
-    "endDateTime": "2026-03-13T19:59:00Z",
-    "lastModifiedDateTime": "2026-02-11T20:04:53.777Z",
-    "title": "Dynamics 365 Commerce - Support asynchronous payments for commerce orders",
-    "id": "MC1230809",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Finance and Operations Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are introducing the ability to support asynchronous payments for commerce orders in Dynamics 365 Commerce. This feature will reach general availability on March 13, 2026.<br><br> \n<b>How does this affect me?</b><br> \nThis feature enables users to create payment links for customers who are interested in a product but need more time to decide. Asynchronous payment processing supports modern payments methods that don't offer real-time payment authorization, allowing for improved transaction flexibility and sales conversion rates.<br><br>\nWith this feature, users can create orders that include shipping details and send customers a secure payment link. If payment isn't completed within a specified time frame, the system can automatically cancel the order and release the inventory. Administrators can enable payment methods through configuration settings and feature flags.<br><br> \n</ul><b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO13782\" target=\"_blank\">Support asynchronous payments for commerce orders</a>."
-    }
-  },
-  {
     "startDateTime": "2026-02-11T20:38:11Z",
     "endDateTime": "2026-03-13T20:38:00Z",
     "lastModifiedDateTime": "2026-02-11T20:43:20.547Z",
@@ -22046,6 +22023,30 @@
     "body": {
       "contentType": "html",
       "content": "<div>As announced in January 2026, the <a href=\"https://learn.microsoft.com/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs\" rel=\"noopener noreferrer\" target=\"_blank\">unattend.xml</a> file used in hands‑free deployment poses a vulnerability when transmitted over an unauthenticated RPC channel. Beginning with the April 2026 security update, IT admins should prepare for the <a href=\"https://support.microsoft.com/topic/windows-deployment-services-wds-hands-free-deployment-hardening-guidance-related-to-cve-2026-0386-0daa3a3c-f3cd-4291-9147-a459c290c462\" rel=\"noopener noreferrer\" target=\"_blank\">second phase of hardening</a> for <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-0386</a>. These changes will make hands‑free deployment <b>disabled by default</b> to enforce secure behavior. After this update, hands‑free deployment will no longer work unless explicitly overridden with registry settings.</div><div><br></div><div><b>When will this happen:</b></div><div>Starting with the April 2026 security update, Windows Deployment Services (WDS) will enforce secure‑by‑default behavior by automatically disabling hands‑free deployment.</div><div><br></div><div><b>How this will affect your organization:</b></div><div>After installing the April 2026 security update, hands‑free deployment will be blocked to prevent unauthenticated access to unattend.xml, enforcing the hardening requirements for <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-0386</a>. Any workflows that rely on unattend.xml‑based deployment will no longer function unless overridden with registry settings.</div><div><br></div><div><b>What you need to do to prepare:</b></div><div>Organizations that still require hands‑free deployment after installing the April 2026 security update must explicitly override the secure default by setting the <em>AllowHandsFreeFunctionality</em> registry value to <b>1</b>, which keeps unattend.xml‑based deployments operational but reintroduces the security risks associated with <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-0386</a>. When this override is used, devices will log diagnostic messages indicating that they are operating in an insecure mode. Because this configuration is not recommended for long‑term use, IT admins should plan to migrate to alternate deployment solutions and return to secure‑by‑default behavior.</div><div><br></div><div><b>Additional information:</b></div><ul><li>Read the full hardening guidance:&nbsp;<a href=\"https://support.microsoft.com/topic/windows-deployment-services-wds-hands-free-deployment-hardening-guidance-related-to-cve-2026-0386-0daa3a3c-f3cd-4291-9147-a459c290c462\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Deployment Services (WDS) Hands-Free Deployment Hardening Guidance related to CVE-2026-0386.</a></li><li>Learn more about the related vulnerability:&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-0386</a>.</li><li>See deployment alternatives:&nbsp;<a href=\"https://learn.microsoft.com/windows/deployment/wds-boot-support\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Deployment Services (WDS) boot.wim support</a>.</li><li>Explore cloud-based solutions:&nbsp;<a href=\"https://learn.microsoft.com/autopilot/\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Autopilot and Windows Autopilot device preparation documentation</a>.</li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-13T18:59:56.223Z",
+    "endDateTime": "2027-03-13T18:59:56.173Z",
+    "lastModifiedDateTime": "2026-03-13T18:59:57.46Z",
+    "title": "Out-of-band update released for Windows Enterprise client devices running hotpatch updates",
+    "id": "MC1250975",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Microsoft has identified a <a href=\"https://support.microsoft.com/topic/ef323fee-e70f-4f43-8bbc-1021c435bf5c\" rel=\"noopener noreferrer\" target=\"_blank\">security issue in the Windows Routing and Remote Access Service (RRAS) management tool</a> that could allow remote code execution when connecting to a malicious server. This issue only applies to a limited set of scenarios involving Enterprise client devices running hotpatch updates and being used for remote server management.</div><div><br></div><div>An out-of-band (OOB) hotpatch update (<a href=\"https://support.microsoft.com/topic/ef323fee-e70f-4f43-8bbc-1021c435bf5c\" rel=\"noopener noreferrer\" target=\"_blank\">KB5084597</a>)&nbsp;was released today, March 13, 2026, to address this issue. This cumulative update includes all protections and improvements from the March 2026 Windows security update released March 10, 2026. No action is required if:</div><ul><li>Your devices receive standard Windows updates.</li><li>If you are not using the RRAS management tool on Windows devices running versions 25H2 or 24H2.</li></ul><div><br></div><div>This OOB hotpatch update is available for Windows 11, versions 25H2 and 24H2 devices enrolled in hotpatch updates and managed by Windows Autopatch. This update will install automatically through Windows Update and take effect without requiring you to restart your device. Learn more about <a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatch updates</a>.</div><div><br></div><div>For more information, refer to the KB article <a href=\"https://support.microsoft.com/topic/ef323fee-e70f-4f43-8bbc-1021c435bf5c\" rel=\"noopener noreferrer\" target=\"_blank\">March 13, 2026—Hotpatch KB5084597 (OS Builds 26200.7979 and 26100.7979) Out-of-band</a>.</div>"
     }
   },
   {
