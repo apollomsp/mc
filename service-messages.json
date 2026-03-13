@@ -22202,6 +22202,31 @@
     }
   },
   {
+    "startDateTime": "2026-03-13T03:42:00Z",
+    "endDateTime": "2026-09-30T03:37:00Z",
+    "lastModifiedDateTime": "2026-03-13T04:06:18.5Z",
+    "title": "Power Platform – New Continuous Access Evaluation (CAE) announcement",
+    "id": "MC1250351",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Dataverse",
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing our CAE rollout for user sign-in flows to Dataverse as part of ongoing security improvements for Power Platform. This change affects interactive user access to Dataverse and relies on <b>Microsoft Entra Conditional Access (CAE)</b> policies for near real-time session evaluation. This feature is being gradually rolled out across Dataverse environments, which is anticipated to be complete by September 2026.<br><br>\nUsers are advised to review their <b>user-focused CAE Conditional Access</b> policies to ensure continued access to Dataverse.<br><br>\n<b>How does this affect me? </b><br>\nDataverse user access is transitioning to <b>CAE-enabled authentication</b>, where user sessions are continuously evaluated based on Conditional Access policy signals rather than only at the initial sign-in. \nAs part of this rollout, user sign-in traffic to Dataverse may originate from managed locations that must be permitted and compliant with your organization’s CAE Conditional Access policies. <br><br>\n<i>Note: This change applies only to interactive user sign-in flows.</i><br><br>\n<b>Who is Impacted? </b><br>\nCustomers with:<ul>\n<li>CAE-enabled Conditional Access policies applied to users. </li>\n<li>Location-based conditions in user CAE policies. </li>\n<li>Sign-in frequency, session controls, or risk-based policies for Dataverse users.</li></ul>\n<b>What do I need to do to prepare? </b><br>\nCustomers should take the following actions for user access scenarios:<ol>  \n<b><li>Review user-targeted CAE Conditional Access policies</b></li><ol type=\"A\">\n<li>Ensure policies allow Dataverse user traffic from locations which are compliant as per your CAE policies.</li>\n<li>Avoid overly restrictive location conditions that could unintentionally block user sessions. </li></ol>\n<b><li>Validate interactive user sign-in scenarios</b></li><ol type=\"A\">\n<li>Test Dataverse access for end users under current CAE policies. </li>\n<li>Review the policies enforcing location, device, or risk conditions.</li></ol></ol>\nNo action is required if <b>existing user CAE policies</b> already permit Dataverse access from managed locations."
+    }
+  },
+  {
     "startDateTime": "2023-04-13T00:00:49Z",
     "endDateTime": "2026-03-31T07:00:00Z",
     "lastModifiedDateTime": "2023-04-13T00:00:54.207Z",
