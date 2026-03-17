@@ -22115,7 +22115,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-17T18:27:03.40745Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-17T18:27:03.4074505Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-17T18:27:03.4074507Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-17T18:27:03.4074509Z\",\"LatestRing\":null}]}"
+        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-17T20:16:27.6101258Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-17T20:16:27.610126Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-17T20:16:27.6101261Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-17T20:16:27.6101261Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22238,6 +22238,30 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to improve the context for opportunities with AI-based data enrichment in Dynamics 365 Sales. This feature will reach general availability on April 17, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nAI-powered data enrichment allows you to analyze your emails and highlight gaps in opportunity information and suggest updates. This feature helps you keep your opportunity data accurate and up to date, increases your confidence in pipeline data, and enables more effective deal reviews and forecasting.<br><br> \n\nAs an admin, you can:<ul> \n\n<li>Specify the criteria for selecting opportunity records that should be enriched.</li> \n\n<li>Specify whether you want the records to be automatically updated or manually reviewed and approved.</li></ul> \nAs a seller, you can:<ul> \n<li>Review the suggested changes for your opportunity records. The suggestions are generated based on your recent email interactions with customers.</li> \n<li>Read the context behind each suggestion to understand why the update is recommended.</li> \n<li>Choose to accept or reject the suggested updates (for manual processes) or revert changes made by the agent (for automated processes).</li></ul> \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-17T19:57:25.823Z",
+    "endDateTime": "2027-03-17T19:57:25.823Z",
+    "lastModifiedDateTime": "2026-03-17T19:57:26.833Z",
+    "title": "30-Day Reminder: Second deployment phase for Kerberos RC4 hardening begins with the April 2026 Windows security update",
+    "id": "MC1254512",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Windows updates released April 2026 and later introduce the <a href=\"https://support.microsoft.com/topic/1ebcda33-720a-4da8-93c1-b0496e1910dc#ID0EDDBN\" rel=\"noopener noreferrer\" target=\"_blank\">second deployment phase</a> of protections for a Kerberos information disclosure vulnerability (<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20833\" rel=\"noopener noreferrer\" target=\"_blank\">CVE‑2026‑20833</a>). In this phase, domain controllers change default Kerberos ticket behavior for accounts that do not have an explicit Kerberos encryption configuration, shifting to AES‑SHA1-only by default. Environments with remaining RC4 dependencies may experience authentication issues unless those dependencies are remediated or explicitly configured.</div><div><br></div><div><b>When this will happen:</b></div><ul><li>April 2026 - Enforcement Phase with manual rollback: Default Kerberos behavior changes so domain controllers use AES‑SHA1-only encryption for accounts without <a href=\"https://learn.microsoft.com/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys\" rel=\"noopener noreferrer\" target=\"_blank\">explicit encryption type</a> settings, and Enforcement mode is enabled by default on Windows domain controllers. Audit mode remains available as a manual rollback option until July 2026.</li><li>July 2026 - Enforcement Phase: Audit mode is removed, leaving Enforcement mode as the only option.</li></ul><div><br></div><div><b>How this will affect your organization:</b></div><div>Beginning with the April 2026 Windows security update, domain controllers will default to issuing AES‑SHA1-encrypted tickets for accounts that do not explicitly define supported encryption types. Environments with service accounts, applications, or devices that still require RC4-based Kerberos tickets may see authentication or connection failures unless those dependencies are addressed. Kerberos-related events in the System event log can help <a href=\"https://support.microsoft.com/topic/1ebcda33-720a-4da8-93c1-b0496e1910dc#ID0EDDBL\" rel=\"noopener noreferrer\" target=\"_blank\">identify and address misconfigurations or remaining dependencies</a> that are likely to become incompatible as enforcement progresses.</div><div><br></div><div><b>What you need to do to prepare:</b></div><div>Monitor the System event log for Kerberos-related events indicating RC4 dependencies or insecure encryption configurations. If event log data shows RC4 reliance, remediate by moving to stronger encryption or explicitly configuring the account’s <b>msds-SupportedEncryptionTypes</b> attribute where RC4 is still required. Complete these actions before July 2026, when Audit mode is removed and Enforcement mode becomes the only available option.</div><div><br></div><div><b>Note:</b> Audit events related to this change are only generated when Active Directory is unable to issue AES‑SHA1 service tickets or session keys. The absence of audit events does not guarantee that all non-Windows devices will successfully accept Kerberos authentication after the April 2026 Enforcement phase begins. Validate non-Windows interoperability through testing before broadly enabling this behavior.</div><div><br></div><div><b>Additional&nbsp;information:&nbsp;</b></div><ul><li>Read the full hardening guidance:&nbsp;<a href=\"https://support.microsoft.com/topic/1ebcda33-720a-4da8-93c1-b0496e1910dc\" rel=\"noopener noreferrer\" target=\"_blank\">How to manage Kerberos KDC usage of RC4 for service account ticket issuance changes related to CVE-2026-20833</a>.</li><li>Learn about RC4 usage in Windows and its risks: <a href=\"https://learn.microsoft.com/windows-server/security/kerberos/detect-remediate-rc4-kerberos\" rel=\"noopener noreferrer\" target=\"_blank\">Detect and remediate RC4 usage in Kerberos</a>.</li><li>Learn more about the related vulnerability: <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20833\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-20833</a>.</li></ul>"
     }
   },
   {
