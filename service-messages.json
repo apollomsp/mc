@@ -10249,7 +10249,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
+        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21785,7 +21785,7 @@
   {
     "startDateTime": "2026-03-16T19:07:15Z",
     "endDateTime": "2026-04-16T19:07:15Z",
-    "lastModifiedDateTime": "2026-03-16T19:08:52.467Z",
+    "lastModifiedDateTime": "2026-03-18T17:40:12.893Z",
     "title": "Power Platform - Information regarding the end of support for Global Discovery Service (GDS) API",
     "id": "MC1253577",
     "category": "stayInformed",
@@ -21804,7 +21804,7 @@
     "details": [],
     "body": {
       "contentType": "html",
-      "content": "On June 8, 2026, the Global Discovery Service (GDS) API will have reached end of support.<br><br><b>How does this affect me?</b><br>The legacy Global Discovery Service (GDS) REST API endpoints hosted at <i>globaldisco.crm.dynamics.com</i> will no longer be available.<br><br>Deprecated GDS endpoints:<ol><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances</i></li><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances</i></li><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances({id})</i></li></ol><b>What action do I need to take?</b><br><ol><li>Identify any applications or scripts that call <i>globaldisco.crm.dynamics.com</i> REST API endpoints.</li><li>Update your applications to use the\n<a target=\"_blank\" href=\"https://aka.ms/ADO14316\">Power Platform List Environments API</a> instead of the GDS endpoints.</li><li>Test your updated integrations against the new endpoints to verify compatibility.</li></ol>Please note that the Power Platform API uses a different token audience than GDS. You will need to update your authentication to request tokens with the scope (<i>https://api.powerplatform.com/.default</i>) and register the Power Platform API (app ID <i>8578e004-a5c6-46e7-913e-12f58912df43</i>) as an API permission in your Microsoft Entra app registration. For detailed setup instructions, see\n<a target=\"_blank\" href=\"https://aka.ms/ADO14316_1\">Power Platform API Authentication</a>.<br><br>To avoid a disruption in service, please migrate to the Power Platform List Environments API before June 8, 2026.<br><br>If you need additional assistance, please contact Microsoft Support."
+      "content": "<b>Update:</b> End of support date of this API has been updated.<br><br>\nOn June 19, 2026, the Global Discovery Service (GDS) API will have reached end of support.<br><br><b>How does this affect me?</b><br>The legacy Global Discovery Service (GDS) REST API endpoints hosted at <i>globaldisco.crm.dynamics.com</i> will no longer be available.<br><br>Deprecated GDS endpoints:<ol><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances</i></li><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances</i></li><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances({id})</i></li></ol><b>What action do I need to take?</b><br><ol><li>Identify any applications or scripts that call <i>globaldisco.crm.dynamics.com</i> REST API endpoints.</li><li>Update your applications to use the\n<a target=\"_blank\" href=\"https://aka.ms/ADO14316\">Power Platform List Environments API</a> instead of the GDS endpoints.</li><li>Test your updated integrations against the new endpoints to verify compatibility.</li></ol>Please note that the Power Platform API uses a different token audience than GDS. You will need to update your authentication to request tokens with the scope (<i>https://api.powerplatform.com/.default</i>) and register the Power Platform API (app ID <i>8578e004-a5c6-46e7-913e-12f58912df43</i>) as an API permission in your Microsoft Entra app registration. For detailed setup instructions, see\n<a target=\"_blank\" href=\"https://aka.ms/ADO14316_1\">Power Platform API Authentication</a>.<br><br>To avoid a disruption in service, please migrate to the Power Platform List Environments API before June 19, 2026.<br><br>If you need additional assistance, please contact Microsoft Support."
     }
   },
   {
@@ -21958,7 +21958,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-18T16:29:40.1702119Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-18T16:29:40.1702121Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-18T16:29:40.1702123Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-18T16:29:40.1702125Z\",\"LatestRing\":null}]}"
+        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-18T18:26:53.9922976Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-18T18:26:53.9922978Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-18T18:26:53.9922979Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-18T18:26:53.9922981Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22188,7 +22188,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558544\":[{\"RoadmapId\":558544,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-18T16:29:40.1701744Z\",\"LatestRing\":null},{\"RoadmapId\":558544,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-18T16:29:40.1701748Z\",\"LatestRing\":null},{\"RoadmapId\":558544,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-18T16:29:40.170175Z\",\"LatestRing\":null}]}"
+        "value": "{\"558544\":[{\"RoadmapId\":558544,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-18T18:26:53.9922652Z\",\"LatestRing\":null},{\"RoadmapId\":558544,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-18T18:26:53.9922655Z\",\"LatestRing\":null},{\"RoadmapId\":558544,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-18T18:26:53.9922656Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
