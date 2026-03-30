@@ -6500,12 +6500,13 @@
   {
     "startDateTime": "2025-10-31T00:11:41Z",
     "endDateTime": "2026-05-04T08:00:00Z",
-    "lastModifiedDateTime": "2026-03-09T16:15:04.797Z",
-    "title": "Microsoft Teams: File attachment control now enabled by default in external 1:1 and group chats",
+    "lastModifiedDateTime": "2026-03-30T16:21:41.447Z",
+    "title": "(Updated) Microsoft Teams: Secure file and Loop sharing in external 1:1, group and meeting chats",
     "id": "MC1181772",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "Feature update",
       "Admin impact"
     ],
@@ -6527,7 +6528,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams now enables automatic file and Loop component sharing by default in external 1:1, group, and meeting chats, improving collaboration. Admins can disable this via policy. Guest users can share files from their home tenant. Rollout starts October 2025, completing worldwide by January 2026."
+        "value": "Microsoft Teams will enable automatic file and Loop component sharing in external 1:1, group, and meeting chats, improving collaboration. Guests can share files from their own OneDrive or SharePoint. IT admins can disable automatic sharing via policy. Rollout starts late October 2025, and completed late March 2026."
       },
       {
         "name": "Platforms",
@@ -6536,7 +6537,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re improving external collaboration in Microsoft Teams by enabling file attachments and Loop sharing in 1:1, group and meeting chats with external users. This update improves the collaboration experience for Files and Loop and add a new control for IT admins. Specifically, Files and Loop components will be shared automatically with external participants in the chat and won’t require any action by the sender by default. Additionally, Entra B2B Guests in your organization will be able to attach and share files from their home tenant’s OneDrive or SharePoint.&nbsp;</p><p>This change applies to Teams for Windows desktop, Mac desktop, and web and is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=492625\" target=\"_blank\">492625</a>.</p><p>Screenshot 1: <i>Files are automatically provisioned.</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/a099fd76-7665-4ce8-b043-0f3331b55971\" style=\"width: 400px;\" alt=\"user settings\"></p><p>Screenshot 2: <i>Files shared have an external label and always open on Web.</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/27858dcc-8fd4-4e98-b1af-27dd3678887d\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[When this will happen:]</b></p><ul><p></p>\n<li><b>Targeted Release:</b>&nbsp;Rollout begins late October 2025; expected to complete by mid-November 2025</li>\n<li><b>General Availability (Worldwide):</b>&nbsp;Rollout begins mid-January 2026</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b></p><p>All Microsoft Teams users in your organization who participate in 1:1, group, or meeting chats with external users, including guest and Teams for Free users.</p><p><b>What will happen:</b></p><p>With this update: \n</p><ul><li>Unless the user chooses to share File and Loop by pasting links, external users in chat will be automatically provisioned to allow frictionless collaboration. \n</li><li>You can disable automatic provisioning and have the user change permissions manually by using policy controls.\n</li><li>If disabled, users will have to manually provision the file to users in the chat. \n</li><li>Guest users will be able to upload files from their home tenant’s OneDrive and SharePoint.\n</li><li>Files shared by external users will continue to display an <b>External&nbsp;</b>tag for clarity.\n</li><li>Loop components will now be rendered inside external chats in Teams.\n</li><li>Recipients will access File and Loop components as B2B guests within the resource tenant. If they are not already added as guests, they will need to give consent and might need to complete MFA, depending on your company’s B2B policy, before viewing the chat content.</li>\n</ul>\n\n<b>What you can do to prepare:</b>\n\n\n<ul><li>No action is required to enable the feature—it will be automatically available as the rollout progresses.</li><li>To disable the automatic provisioning behavior for files and loops set the <code>AutoShareFilesInExternalChats</code> attribute of <code>TeamsMessagingPolicy</code> to <code>Disabled</code>. Learn more: <a href=\"https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsmessagingpolicy?view=teams-ps#-autosharefilesinexternalchats\" target=\"_blank\">Set-CsTeamsMessagingPolicy documentation</a>.\n</li><li>To provide seamless Loop access experience for external users, we recommend turning on Entra B2B Guest Access. Refer to: <a href=\"https://learn.microsoft.com/sharepoint/sharepoint-azureb2b-integration\" target=\"_blank\">Microsoft Entra B2B integration for SharePoint &amp; OneDrive - SharePoint in Microsoft 365 | Microsoft Learn</a>.</li><li>For configuration guidance, refer to: <a href=\"https://learn.microsoft.com/powershell/module/teams/set-csteamsfilespolicy?view=teams-ps#-filesharinginchatswithexternalusers\" target=\"_blank\">Set-CsTeamsFilesPolicy documentation</a> (documentation will be updated before rollout).</li></ul><p><b>Compliance considerations</b></p><p><b></b></p><p></p><table border=\"1\">\n<tbody><tr>\n<th>Compliance Area</th>\n<th>Impact</th>\n</tr>\n<tr>\n<td>New communication method between tenants</td>\n<td>Enables file sharing in external chats, expanding cross-tenant collaboration</td>\n</tr>\n<tr>\n<td>Admin control available</td>\n<td>Admins can disable the feature via PowerShell</td>\n</tr>\n<tr>\n<td>Can be controlled through Entra ID group membership</td>\n<td>Policy can be scoped using Entra ID groups</td>\n</tr>\n<tr>\n<td>Data processing changes</td>\n<td>Files shared in external chats are tagged and stored per existing Teams file sharing protocols</td>\n</tr>\n</tbody></table>"
+      "content": "<p>Updated March 30, 2026: We have updated the title. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re improving external collaboration in Microsoft Teams by enabling file attachments and Loop sharing in 1:1, group and meeting chats with external users. This update improves the collaboration experience for Files and Loop and add a new control for IT admins. Specifically, Files and Loop components will be shared automatically with external participants in the chat and won’t require any action by the sender by default. Additionally, Entra B2B Guests in your organization will be able to attach and share files from their home tenant’s OneDrive or SharePoint.&nbsp;</p><p>This change applies to Teams for Windows desktop, Mac desktop, and web and is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=492625\" target=\"_blank\">492625</a>.</p>\n<p>Screenshot 1: <i>File sharing option is available in external chats</i></p>\n<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/6daea95f-fe2a-4fae-8a10-10cb6091e752/4e2a9f05f791267c91a9f4baa3e3027a033e6870.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<p>Screenshot 2: <i>Files shared have an external label and always open on Web</i></p>\n<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/c14c4953-10e9-4616-9b3e-3e82830091aa/c3469c4611cbe286fea9d85ffef458ab1f403cf6.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<p>Screenshot 3: <i>Teams automatically shares the file or Loop component when uploaded to external chats</i></p>\n<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/38dfe9ca-f7f9-4102-87c5-d4df9d3c8aa9/c2fad821a355b98dcaf24a81f919bb8bf356356c.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<p>Screenshot 4: <i>User can also manually change permissions before sharing</i></p>\n<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/1b101287-80e8-41a3-8b5d-f7443802e428/b817c68259a49c081448904e516367168a567cc2.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[When this will happen:]</b></p><ul><p></p>\n<li><b>Targeted Release:</b>&nbsp;Rollout begins late October 2025; expected to complete by mid-November 2025</li>\n<li><b>General Availability (Worldwide):</b>&nbsp;Rollout begins mid-January 2026</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b></p><p>All Microsoft Teams users in your organization who participate in 1:1, group, or meeting chats with external users, including guest and Teams for Free users.</p><p><b>What will happen:</b></p><p>With this update: \n</p><ul><li>Unless the user chooses to share File and Loop by pasting links, external users in chat will be automatically provisioned to allow frictionless collaboration. \n</li><li>You can disable automatic provisioning and have the user change permissions manually by using policy controls.\n</li><li>If disabled, users will have to manually provision the file to users in the chat. \n</li><li>Guest users will be able to upload files from their home tenant’s OneDrive and SharePoint.\n</li><li>Files shared by external users will continue to display an <b>External&nbsp;</b>tag for clarity.\n</li><li>Loop components will now be rendered inside external chats in Teams.\n</li><li>Recipients will access File and Loop components as B2B guests within the resource tenant. If they are not already added as guests, they will need to give consent and might need to complete MFA, depending on your company’s B2B policy, before viewing the chat content.</li>\n</ul>\n\n<b>What you can do to prepare:</b>\n\n\n<ul><li>No action is required to enable the feature—it will be automatically available as the rollout progresses.</li><li>To disable the automatic provisioning behavior for files and loops set the <code>AutoShareFilesInExternalChats</code> attribute of <code>TeamsMessagingPolicy</code> to <code>Disabled</code>. Learn more: <a href=\"https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsmessagingpolicy?view=teams-ps#-autosharefilesinexternalchats\" target=\"_blank\">Set-CsTeamsMessagingPolicy documentation</a>.\n</li><li>To provide seamless Loop access experience for external users, we recommend turning on Entra B2B Guest Access. Refer to: <a href=\"https://learn.microsoft.com/sharepoint/sharepoint-azureb2b-integration\" target=\"_blank\">Microsoft Entra B2B integration for SharePoint &amp; OneDrive - SharePoint in Microsoft 365 | Microsoft Learn</a>.</li><li>For configuration guidance, refer to: <a href=\"https://learn.microsoft.com/powershell/module/teams/set-csteamsfilespolicy?view=teams-ps#-filesharinginchatswithexternalusers\" target=\"_blank\">Set-CsTeamsFilesPolicy documentation</a> (documentation will be updated before rollout).</li><li>Review the following article: <a href=\"https://learn.microsoft.com/microsoftteams/share-files-loop-in-external-chats\">Share Files and Loop components in external (federated) chats</a></li></ul><p><b>Compliance considerations</b></p><p><b></b></p><p></p><table border=\"1\">\n<tbody><tr>\n<th>Compliance Area</th>\n<th>Impact</th>\n</tr>\n<tr>\n<td>New communication method between tenants</td>\n<td>Enables file sharing in external chats, expanding cross-tenant collaboration</td>\n</tr>\n<tr>\n<td>Admin control available</td>\n<td>Admins can disable the feature via PowerShell</td>\n</tr>\n<tr>\n<td>Can be controlled through Entra ID group membership</td>\n<td>Policy can be scoped using Entra ID groups</td>\n</tr>\n<tr>\n<td>Data processing changes</td>\n<td>Files shared in external chats are tagged and stored per existing Teams file sharing protocols</td>\n</tr>\n</tbody></table>"
     }
   },
   {
@@ -14898,7 +14899,7 @@
   {
     "startDateTime": "2026-02-10T23:06:15Z",
     "endDateTime": "2026-06-29T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-02T17:31:49.443Z",
+    "lastModifiedDateTime": "2026-03-30T15:52:09.557Z",
     "title": "(Updated) Microsoft 365 apps for Mac suite installer now includes the Microsoft 365 Copilot app",
     "id": "MC1230456",
     "category": "stayInformed",
@@ -14920,12 +14921,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Starting mid-February 2026, the Microsoft 365 apps for Mac suite installer will include a shim for the Microsoft 365 Copilot app, enabling users to download the full Copilot app. Deployment completes by mid-May 2026. Organizations must ensure the shim app is included and meet macOS 14.0+ requirements."
+        "value": "Starting mid-February 2026, the Microsoft 365 apps for Mac suite installer will include a shim for the Microsoft 365 Copilot app, enabling users to download the full Copilot app. Deployment options and preparation steps are provided, with rollout completing by mid-May 2026. Existing installations remain unaffected."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated March 2, 2026: We have updated the timeline and content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>Starting in mid‑February 2026, the Microsoft 365 apps for Mac suite installer a shim for the Microsoft 365 Copilot app. This change helps organizations more easily deploy the Microsoft 365 Copilot Mac app by enabling users to download the full application<b><i>&nbsp;</i></b>directly from the shim.</p><p>The Microsoft 365 Copilot Mac app brings AI assistance to macOS, helping users search, analyze, and create from a single, secure desktop experience.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/600508ad-dc34-4587-9918-65be25bec663/a9b208f1b3c4ae6dac71aaabbac7505e39da3e2a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide)</b>: Rollout will begin in <b>mid‑February 2026</b> and is expected to complete by<b> mid-May 2026</b> (previously&nbsp;mid‑March).</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>: Organizations that deploy Microsoft 365 apps for Mac using the suite installation package.</p><p><i>What will happen</i>:</p><ul><li>The Microsoft 365 apps for Mac suite installer will include the Microsoft 365 Copilot shim app.</li><li>Users will be able to download and install the full Microsoft 365 Copilot app by opening the shim app from the <i><b>Applications</b></i> folder<b style=\"\"><i style=\"\">.</i></b></li><li>Existing installations of Microsoft 365 apps on macOS are not affected.</li><li>Organizations that want to deploy Microsoft 365 Copilot to devices already running Microsoft 365 apps should deploy the shim app separately.</li></ul><p><b>[What you can do to prepare]</b></p><p>If your organization deploys Microsoft 365 apps for Mac using the suite installer package:</p><ul><li>Ensure the <b>Microsoft 365 Copilot shim app</b> is not excluded during deployment.</li><li>Ensure that your organization does not use managed <b>Microsoft AutoUpdate (MAU)  configurations</b>.</li><li>Confirm that <b>Microsoft AutoUpdate (MAU)</b> is enabled on macOS devices.</li><li>Confirm that devices meet the minimum requirement of <b>macOS 14.0 (Sonoma) or later</b>.</li><li>Ensure network connectivity is available so the shim app can download the full app.</li><li>This guidance is applicable for all users, not specifically those who want to deploy the shim app separately.</li><li>Review: <a href=\"https://learn.microsoft.com/microsoft-365-apps/mac/deployment-guide-for-office-for-mac\" target=\"_blank\">Deployment guide for Office for Mac | Microsoft 365 | Microsoft Learn</a>.</li></ul><p><b>How can you exclude the shim app from suite installer package during deployment</b></p><p><b>Method 1</b> - While downloading the suite installer package</p>\n\n<p>1. <i>Click on customize on the installation type page.&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/33235684-2e35-4a08-97bb-99eac1f34e51/31ba2168cd79a69ea1b02fb61dfc8cb80bdf2f0b.jpg\" style=\"width: 400px;\" alt=\"user settings\"></p>\n\n<p>2. <i>Uncheck Microsoft 365 Copilot to remove the shim app</i>&nbsp;</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/481185f8-b3e3-4f2d-8ce9-54a10fb94067/99c72866cb7192b24009419eeeb03b0a2f52bbab.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n\n<p><b>Method 2</b> - While using Configuration Profile or Mobile Device Management (MDM)&nbsp;</p><p>Apply the following preferences -</p><table class=\"table table-bordered\"><tbody><tr><td>Category&nbsp;</td><td>Details&nbsp;</td></tr><tr><td>Domain&nbsp;</td><td>com.microsoft.m365copilot&nbsp;</td></tr><tr><td>Key&nbsp;</td><td>InstallCopilot&nbsp;</td></tr><tr><td>Data Type&nbsp;</td><td>Boolean&nbsp;</td></tr><tr><td>Possible values&nbsp;</td><td>true (default) \n<br>false&nbsp;</td></tr><tr><td>Availability&nbsp;</td><td>16.106&nbsp;</td></tr><tr><td>Comments&nbsp;</td><td>This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the defaults command.</td></tr></tbody></table><p>More context - <a href=\"https://learn.microsoft.com/microsoft-365-apps/mac/preferences-office\">Set suite-wide preferences for Office for Mac - Microsoft 365 Apps | Microsoft Learn</a>&nbsp;</p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated March 30, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>Starting in mid‑February 2026, the Microsoft 365 apps for Mac suite installer a shim for the Microsoft 365 Copilot app. This change helps organizations more easily deploy the Microsoft 365 Copilot Mac app by enabling users to download the full application<b><i>&nbsp;</i></b>directly from the shim.</p><p>The Microsoft 365 Copilot Mac app brings AI assistance to macOS, helping users search, analyze, and create from a single, secure desktop experience.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/600508ad-dc34-4587-9918-65be25bec663/a9b208f1b3c4ae6dac71aaabbac7505e39da3e2a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide)</b>: Rollout will begin in <b>mid‑February 2026</b> and is expected to complete by<b> mid-May 2026</b> (previously&nbsp;mid‑March).</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>: Organizations that deploy Microsoft 365 apps for Mac using the suite installation package.</p><p><i>What will happen</i>:</p><ul><li>The Microsoft 365 apps for Mac suite installer will include the Microsoft 365 Copilot shim app.</li><li>Users will be able to download and install the full Microsoft 365 Copilot app by opening the shim app from the <i><b>Applications</b></i> folder<b style=\"\"><i style=\"\">.</i></b></li><li>Existing installations of Microsoft 365 apps on macOS are not affected.</li><li>Organizations that want to deploy Microsoft 365 Copilot to devices already running Microsoft 365 apps should deploy the shim app separately.</li></ul><p><b>[What you can do to prepare]</b></p><p>If your organization deploys Microsoft 365 apps for Mac using the suite installer package:</p><ul><li>Ensure the <b>Microsoft 365 Copilot shim app</b> is not excluded during deployment.</li><li>Ensure that your organization does not use managed <b>Microsoft AutoUpdate (MAU)  configurations</b>.</li><li>Confirm that <b>Microsoft AutoUpdate (MAU)</b> is enabled on macOS devices.</li><li>Confirm that devices meet the minimum requirement of <b>macOS 14.0 (Sonoma) or later</b>.</li><li>Ensure network connectivity is available so the shim app can download the full app.</li><li>This guidance is applicable for all users, not specifically those who want to deploy the shim app separately.</li><li>Review: <a href=\"https://learn.microsoft.com/microsoft-365-apps/mac/deployment-guide-for-office-for-mac\" target=\"_blank\">Deployment guide for Office for Mac | Microsoft 365 | Microsoft Learn</a>.</li></ul><p><b>How can you exclude the shim app from suite installer package during deployment</b></p><p><b>Method 1</b> - While downloading the suite installer package</p>\n\n<p>1. <i>Click on customize on the installation type page.&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/33235684-2e35-4a08-97bb-99eac1f34e51/31ba2168cd79a69ea1b02fb61dfc8cb80bdf2f0b.jpg\" style=\"width: 400px;\" alt=\"user settings\"></p>\n\n<p>2. <i>Uncheck Microsoft 365 Copilot to remove the shim app</i>&nbsp;</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/481185f8-b3e3-4f2d-8ce9-54a10fb94067/99c72866cb7192b24009419eeeb03b0a2f52bbab.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n\n<p><b>Method 2</b> - While using Configuration Profile or Mobile Device Management (MDM)&nbsp;</p><p>Apply the following preferences -</p><table class=\"table table-bordered\"><tbody><tr><td>Category&nbsp;</td><td>Details&nbsp;</td></tr><tr><td>Domain&nbsp;</td><td>com.microsoft.office&nbsp;</td></tr><tr><td>Key&nbsp;</td><td>InstallCopilot&nbsp;</td></tr><tr><td>Data Type&nbsp;</td><td>Boolean&nbsp;</td></tr><tr><td>Possible values&nbsp;</td><td>true (default) \n<br>false&nbsp;</td></tr><tr><td>Availability&nbsp;</td><td>16.106&nbsp;</td></tr><tr><td>Comments&nbsp;</td><td>This preference must be implemented through a Configuration Profile/MDM to be effective. It doesn't work when using the defaults command.</td></tr></tbody></table><p>More context - <a href=\"https://learn.microsoft.com/microsoft-365-apps/mac/preferences-office\">Set suite-wide preferences for Office for Mac - Microsoft 365 Apps | Microsoft Learn</a>&nbsp;</p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -16621,54 +16622,6 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to standardize security role and system application docs in Microsoft Dataverse. This feature will reach general availability on March 31, 2026. <br> <br>\n\n<b>How does this affect me </b><br>\nWith this feature, users, admins, and non-admins can easily find Microsoft Dataverse security roles and their respective privileges in the documentation or by asking Microsoft Copilot in Bing. The Microsoft Learn site automatically documents these roles and applications with standard and consistent content. Customers can use Copilot in Bing to find the list of privileges in a security role and see the differences between security roles without asking a local admin to access a Dataverse environment. <br> <br>\n\n<b>What action do I need to take? </b><br>\nThis message is for awareness, and no action is required. <br> <br>\n\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/11688/standardize-security-role-system-application-documentation\" target=\"_blank\">Standardize security role and system application docs</a>."
-    }
-  },
-  {
-    "startDateTime": "2026-02-26T15:09:54Z",
-    "endDateTime": "2026-03-30T15:09:00Z",
-    "lastModifiedDateTime": "2026-02-26T15:25:58.13Z",
-    "title": "Dynamics 365 Contact Center – Leverage rich media messaging across channels",
-    "id": "MC1239656",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to leverage rich media messaging across channels in Dynamics 365 Contact Center. This feature will reach general availability on March 30, 2026.<br><br>\n<b>How does this affect me? </b><br>\nWith this feature, admins can design rich media message templates that apply to both the live chat widget and WhatsApp. Rich media messaging enhances engagement in support conversations by eliminating the need for extensive typing from customers. The following types are supported for each channel: <br><br>\n<b>Live chat widget</b><ul>\n<li><b>Forms: </b>Messages with a series of questions of types such as multi-select, single-select, dropdown, single-line input, date picker, and multiline input. </li>\n<li><b>Suggested replies: </b>Reply buttons. </li>\n<li><b>Custom JSON</b>: Freeform cards that you create using Microsoft's adaptive card technology. </li></ul>\n<b>WhatsApp</b><ul>\n<li><b>Suggested replies: </b>A card with up to three reply buttons. </li></ul>\n<b>What action do I need to take? </b><br>\nThis message is for awareness, and no action is required. <br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/14029/leverage-rich-media-messaging-across-channels\" target=\"_blank\">Leverage rich media messaging across channels</a>."
-    }
-  },
-  {
-    "startDateTime": "2026-02-26T15:37:45Z",
-    "endDateTime": "2026-03-30T15:37:00Z",
-    "lastModifiedDateTime": "2026-02-26T15:39:37.593Z",
-    "title": "Dynamics 365 Customer Insights - Journeys – Create static segments with up to 200,000 members",
-    "id": "MC1239668",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to create static segments with up to 200,000 members in Dynamics 365 Customer Insights - Journeys. This feature will reach general availability on March 31, 2026.<br><br>\n<b>How does this affect me?</b><br>This feature allows users to quickly create static segments with up to 200,000 members per static group. Static segments can be created by:<ul>\n    <li>Uploading a CSV file to match contacts or leads in Dataverse.</li>\n    <li>Using the API to upload a CSV file and match contacts or leads.</li>\n</ul>\nTo define static segment membership using a CSV file, create a contact or lead-based segment, then go to <b> + Add a new group > Upload CSV</b>.<br><br>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO14044\"target=\"_blank\">Create static segments with up to 200,000 members.</a>"
     }
   },
   {
@@ -20217,12 +20170,13 @@
   {
     "startDateTime": "2026-03-17T22:46:28Z",
     "endDateTime": "2026-06-15T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-17T22:47:20.78Z",
-    "title": "Microsoft Teams: New slash command in compose to create workflows",
+    "lastModifiedDateTime": "2026-03-30T16:16:31.253Z",
+    "title": "(Updated) Microsoft Teams: New slash command in compose to create workflows",
     "id": "MC1254553",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact"
     ],
@@ -20244,7 +20198,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams is introducing the /createworkflow slash command in the message compose box, enabling users to quickly create workflows directly from chats and channels. This feature, enabled by default with no admin changes, will roll out worldwide from late April to mid-May 2026."
+        "value": "Microsoft Teams is introducing the /createworkflow slash command in the message compose box, enabling users to quickly create workflows directly from chats and channels. This feature, enabled by default, will roll out worldwide from late April to mid-May 2026 for all Teams users."
       },
       {
         "name": "Platforms",
@@ -20253,7 +20207,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re introducing a new slash command, <b>/createworkflow</b>, in the Microsoft Teams message compose box. A workflow is an automated process that handles repetitive tasks for users, such as sending notifications, creating tasks, or starting approvals when something happens in Teams. With this update, users can type <b>/createworkflow</b> while composing a message to quickly begin creating an automation, instead of navigating through menus. This change is designed to make workflow creation faster, easier to discover, and more accessible directly from chats and channels.</p><p>This message applies to Teams for Windows desktop, Teams for Mac desktop, and Teams for the web. It is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558544\" target=\"_blank\">558544</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li><b>Targeted Release (Worldwide):</b>&nbsp;We will begin rollout in <b>late April 2026</b> and expect to complete by<b> late April 2026</b>.</li>\n  <li><b>General Availability (Worldwide):</b>&nbsp;We will begin rollout in <b>late April 2026</b> and expect to complete by complete by <b>mid-May 2026</b>.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b><br>\nAll Microsoft Teams users.</p>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Users can create workflows directly from the compose box using the <b>/createworkflow</b> slash command.</li><p>Screenshot: <i>Example of the <b>/createworkflow</b> slash command appearing in the Teams message compose box</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/6e0f2c01-af84-46cb-b498-013e2b05646a\" style=\"width: 300px;\" alt=\"user settings\"></p></ul><ul>\n  <li>The feature is <b>enabled by default</b>.</li>\n  <li>No existing admin policies are changed.</li>\n  <li>Workflow creation is faster with fewer clicks.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No action is required.</li>\n  <li>Optionally inform users about the new slash command.</li>\n  </ul><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/use-commands-in-microsoft-teams-88f61508-284d-417f-a53d-9e082164050b\" target=\"_blank\">Use commands in Microsoft Teams | Microsoft Support</a>&nbsp;(will be updated before rollout)</p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th align=\"left\">Question</th>\n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change allow a user to enable and disable the feature themselves?</td>\n   \n    <td>The /createworkflow slash command provides users with a new, self-initiated entry point to create workflows directly from the Teams compose box. The feature is enabled by default, and usage is initiated by end users without admin action.</td>\n  </tr>\n</tbody></table>"
+      "content": "<p>Updated March 30, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re introducing a new slash command, <b>/createworkflow</b>, in the Microsoft Teams message compose box. A workflow is an automated process that handles repetitive tasks for users, such as sending notifications, creating tasks, or starting approvals when something happens in Teams. With this update, users can type <b>/createworkflow</b> while composing a message to quickly begin creating an automation, instead of navigating through menus. This change is designed to make workflow creation faster, easier to discover, and more accessible directly from chats and channels.</p><p>This message applies to Teams for Windows desktop, Teams for Mac desktop, and Teams for the web. It is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558544\" target=\"_blank\">558544</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li><b>Targeted Release (Worldwide):</b>&nbsp;We will begin rollout in <b>late April 2026</b> and expect to complete by<b> late April 2026</b>.</li>\n  <li><b>General Availability (Worldwide):</b>&nbsp;We will begin rollout in <b>late April 2026</b> and expect to complete by complete by <b>mid-May 2026</b>.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b><br>\nAll Microsoft Teams users.</p>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Users can create workflows directly from the compose box using the <b>/createworkflow</b> slash command.</li><p>Screenshot: <i>Example of the <b>/createworkflow</b> slash command appearing in the Teams message compose box</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/6e0f2c01-af84-46cb-b498-013e2b05646a\" style=\"width: 300px;\" alt=\"user settings\"></p></ul><ul>\n  <li>The feature is <b>enabled by default</b>.</li>\n  <li>No existing admin policies are changed.</li>\n  <li>Workflow creation is faster with fewer clicks.</li><li>If the Workflows app is blocked for users, they will see the Create Workflow slash command, however they will not be able to use it and will see the following dialogue:<br><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/08549fec-968c-4d01-8aed-810b9ba20c3f/a829476c354517bb036397bec2b0acf9cd059396.png\" style=\"width: 50%;\" alt=\"user settings\"></li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No action is required.</li>\n  <li>Optionally inform users about the new slash command.</li>\n  </ul><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/use-commands-in-microsoft-teams-88f61508-284d-417f-a53d-9e082164050b\" target=\"_blank\">Use commands in Microsoft Teams | Microsoft Support</a>&nbsp;(will be updated before rollout)</p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th align=\"left\">Question</th>\n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change allow a user to enable and disable the feature themselves?</td>\n   \n    <td>The /createworkflow slash command provides users with a new, self-initiated entry point to create workflows directly from the Teams compose box. The feature is enabled by default, and usage is initiated by end users without admin action.</td>\n  </tr>\n</tbody></table>"
     }
   },
   {
@@ -20843,13 +20797,14 @@
   },
   {
     "startDateTime": "2026-03-20T22:52:34Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-20T22:52:46.66Z",
-    "title": "Microsoft Teams: Building‑level insights on the Teams Rooms Pro Management portal recommended actions page",
+    "endDateTime": "2026-06-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:00:25.653Z",
+    "title": "(Updated) Microsoft Teams: Building‑level insights on the Teams Rooms Pro Management portal recommended actions page",
     "id": "MC1257308",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -20868,7 +20823,7 @@
       },
       {
         "name": "Summary",
-        "value": "New building-level insights will be added to the Teams Rooms Pro Management portal’s recommended actions page by April 2026. These insights highlight buildings with high Teams Rooms usage alongside BYOD rooms to help IT admins ensure consistent meeting experiences. The feature is enabled by default for eligible licenses."
+        "value": "Microsoft is adding building-level insights to the Teams Rooms Pro Management portal's recommended actions page, helping IT identify buildings with high Teams Rooms usage but still having BYOD rooms. This feature, enabled by default for eligible licenses, rolls out worldwide from early to late May 2026, requiring no action."
       },
       {
         "name": "Platforms",
@@ -20877,7 +20832,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re adding<b> new building‑level insights</b> to the recommended actions page in the <i>Teams Rooms Pro Management portal</i>. This update helps IT admins identify buildings with high Microsoft Teams Rooms (MTR) utilization that still have bring-your-own-device (BYOD) rooms in them, creating an inconsistent user experience from room to room. These insights support more consistent meeting experiences across buildings and help organizations optimize room‑technology investments. Available with a Teams Rooms Pro or Shared Space license.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=553591\" target=\"_blank\">553591</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General availability (Worldwide):</b> We will begin rolling out <b>early April 2026</b> and expect to complete by<b> late April 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations using the Teams Rooms Pro Management portal with Teams Rooms Pro or Shared Device licenses</li></ul><p><i>What will happen</i></p><ul><li>A new building‑level insights view will appear on the portal’s <i><b>Recommended actions</b></i> page:<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a3730884-7935-4ffb-a4ec-8484548ce0ff/75404d11fac76a75080aabddd91fa2c649f18299.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Insights will highlight buildings with high MTR usage and remaining BYOD meeting rooms:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/391f042f-d319-4afb-8dcb-6fd77d120f76/ab4ec118c9df83e7d259d1b5168538574c39e9d5.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>These insights are designed to help IT create more consistent room to room experiences for users within a building.</li><li>No changes will occur to existing configurations, policies, or settings.</li><li>The feature will be<b> enabled by default </b>for tenants with eligible licenses.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>If relevant to your organization’s deployment planning, you may:</p><ul><li>Review your current MTR and BYOD room distribution in the <i>Teams Rooms&nbsp;Pro Management portal</i>.</li><li>Update internal documentation or planning guidance as needed.</li><li>Share this update with teams responsible for meeting room technology decisions.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated March 30, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re adding<b> new building‑level insights</b> to the recommended actions page in the <i>Teams Rooms Pro Management portal</i>. This update helps IT admins identify buildings with high Microsoft Teams Rooms (MTR) utilization that still have bring-your-own-device (BYOD) rooms in them, creating an inconsistent user experience from room to room. These insights support more consistent meeting experiences across buildings and help organizations optimize room‑technology investments. Available with a Teams Rooms Pro or Shared Space license.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=553591\" target=\"_blank\">553591</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General availability (Worldwide):</b> We will begin rolling out<b> early May 2026</b> (previously&nbsp;early April)&nbsp;and expect to complete by<b>&nbsp;late May 2026 </b>(previously late April).</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations using the Teams Rooms Pro Management portal with Teams Rooms Pro or Shared Device licenses</li></ul><p><i>What will happen</i></p><ul><li>A new building‑level insights view will appear on the portal’s <i><b>Recommended actions</b></i> page:<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a3730884-7935-4ffb-a4ec-8484548ce0ff/75404d11fac76a75080aabddd91fa2c649f18299.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Insights will highlight buildings with high MTR usage and remaining BYOD meeting rooms:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/391f042f-d319-4afb-8dcb-6fd77d120f76/ab4ec118c9df83e7d259d1b5168538574c39e9d5.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>These insights are designed to help IT create more consistent room to room experiences for users within a building.</li><li>No changes will occur to existing configurations, policies, or settings.</li><li>The feature will be<b> enabled by default </b>for tenants with eligible licenses.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>If relevant to your organization’s deployment planning, you may:</p><ul><li>Review your current MTR and BYOD room distribution in the <i>Teams Rooms&nbsp;Pro Management portal</i>.</li><li>Update internal documentation or planning guidance as needed.</li><li>Share this update with teams responsible for meeting room technology decisions.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -21443,7 +21398,7 @@
   {
     "startDateTime": "2026-03-24T22:48:18Z",
     "endDateTime": "2026-08-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-24T22:48:24.353Z",
+    "lastModifiedDateTime": "2026-03-30T15:39:17.437Z",
     "title": "Microsoft Teams: Copilot PSTN audio announcements",
     "id": "MC1260709",
     "category": "stayInformed",
@@ -21456,7 +21411,8 @@
     "isMajorChange": false,
     "actionRequiredByDateTime": null,
     "services": [
-      "Microsoft Teams"
+      "Microsoft Teams",
+      "Microsoft Copilot (Microsoft 365)"
     ],
     "hasAttachments": false,
     "viewPoint": null,
@@ -22275,6 +22231,414 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>We’re adding <b>AI-powered live interpretation</b> to <b>Microsoft Teams Phone devices</b> to help organizations support multilingual collaboration during calls and meetings. This update enables users with a Microsoft 365 Copilot license to hear real-time interpreted audio directly on certified Teams Phone hardware, reducing reliance on external interpreters and improving accessibility for globally distributed teams.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=553594\" target=\"_blank\">553594</a></b>.</p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide and GCC): </b>We will begin rolling out in <b>mid-May 2026</b> and expect to complete in&nbsp;<b>mid-May 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Users on certified Teams Phone devices (touch and non-touch)</li><li>Users with a Microsoft 365 Copilot license</li><li>Admins managing Teams calling and meeting policies</li></ul><p><i>What will happen</i></p><ul><li>Eligible users will be able to use AI-powered live interpretation during:<ul><li>1:1 VoIP and Public Switched Telephone Network (PSTN) calls</li><li>Group VoIP calls</li><li>VoIP group calls escalated with a PSTN user</li><li>Ad-hoc and scheduled meetings</li></ul></li><li>Pure PSTN group calls are <b>not supported</b>.</li><li>On first use, users will select a preferred interpretation language; preferences and volume levels are saved automatically.</li><li>A visual indicator will appear for all participants when interpretation is active.</li><li>Users will only see the AI Interpreter option when:<ul><li>The tenant has enabled the required calling and meeting policies, and</li><li>The user holds an eligible license.</li></ul></li><li>The feature is<b> off by default</b> and does <b>not </b>change calling experiences for users without the required configuration.</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/fe1d7652-e911-482a-b7a2-3ec068ecd689/36f0c789077c7f8af181642a24d41adf20574476.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><ul><li>Confirm that users who need this capability have a <b>Microsoft 365 Copilot license</b>.</li><li>Enable AI Interpreter in <i>your Teams policies</i>:<ul><li><i><b>Set-CsTeamsCallingPolicy</b></i></li><li><i><b>Set-CsTeamsMeetingPolicy</b></i></li></ul></li><li>Communicate the experience to your helpdesk and affected Teams Phone users.</li><li>Update internal documentation or device usage guides as needed.</li></ul><p><b>Learn more:</b> <a href=\"https://learn.microsoft.com/microsoftteams/interpreter-agent-teams\" target=\"_blank\">Manage Interpreter agent for your organization | Microsoft Teams | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:21:25Z",
+    "endDateTime": "2026-05-03T15:21:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:28:21.08Z",
+    "title": "Dynamics 365 Contact Center - Enabling Infobip SMS for Dynamics 365 Contact Center",
+    "id": "MC1265555",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability for users to use your Infobip SMS account directly in Contact Center to streamline how you connect with customers in Dynamics 365 Contact Center. This feature will reach general availability on April 30, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature enables Contact Center administrators to add Infobip as a third-party SMS provider, allowing users to send and receive SMS and MMS messages through Infobip connections. Once configured, Infobip SMS appears as an available messaging channel that agents can use during customer conversations. The setup supports inbound and outbound messaging across the same workflows and routing logic used for other SMS channels, providing a consistent user experience and unified reporting.<br><br> \n\nThis feature is not enabled automatically. Administrators add Infobip accounts in the Channels > Messaging Accounts area of the Contact Center admin experience, where a new Infobip SMS option appears. To enable the feature: \n\n<ol> \n\n<li>In the Copilot Service admin center, go to Channels > Messaging accounts.</li> \n\n<li>Select + New account, provide the name and channel type, then choose Infobip.</li> \n\n<li>Enter your Infobip API base URL and API key.</li> \n\n<li>Add your available Infobip SMS numbers.</li> \n\n<li>Save the configuration to activate the channel.</li> \n\n</ol> \n\nAdmins can disable or remove an Infobip account at any time from the same settings area. Once enabled, Infobip SMS routes through the same message orchestration, analytics, and agent tools used for all supported SMS providers.<br><br> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:24:17Z",
+    "endDateTime": "2026-05-03T15:24:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:28:03.84Z",
+    "title": "Dynamics 365 Sales - Boost decision making by using Visualize with Copilot",
+    "id": "MC1265561",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to boost data-driven decision making using Visualize with Copilot in Dynamics 365 Sales. This feature will reach general availability on April 30, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nAs part of Copilot's productivity capabilities, smart charts enable sellers to generate real-time visualizations directly within their workflow. Using AI, these charts help you uncover trends, patterns, and relationships in tabular data, making it easier to interpret data, act on insights faster, and stay focused on closing deals. This feature provides sellers the ability to:  \n\n<ul> \n\n<li>Select the Visualize option on a grid page to generate a chart based on the visible columns and applied filters in the current view.</li> \n\n<li>View the chart side by side with the data grid, so you can more easily interpret key trends and patterns in your data.</li> \n\n<li>Select Explain to see an AI-generated summary that helps you understand why Copilot chose the specific visualization.</li> \n\n<li>Hover over data points or select chart elements to drill into details—filtered results will update automatically in the grid.</li> \n\n<li>Use the chart selector to personalize the visualization by choosing from nine chart types, including bar, pie, column, and line.</li> \n\n<li>Add or remove columns and filters in the view, and Copilot will automatically update the chart.</li> \n\n<li>Use additional controls to refresh the chart, expand it to full screen, close the chart pane, or copy it as a PNG.</li> \n\n<li>Share your feedback with the thumbs-up or thumbs-down icons to help improve the feature.</li></ul> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required.<br><br> \n\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/14462/1\" target=\"_blank\">Visualize the data in your view easily with Copilot</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:27:13Z",
+    "endDateTime": "2026-05-03T15:27:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:29:07.453Z",
+    "title": "Dynamics 365 Project Operations - Add support for Lookup and Currency on custom columns",
+    "id": "MC1265693",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing support for Lookup and Currency on custom columns in Dynamics 365 Project Operations. This feature will reach general availability on April 30, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature enables you to add Lookup and Currency data type fields as enterprise task custom columns. You can surface relational and financial data directly in the task grid, eliminating the need for task form customizations. <br><br> \n\nThis feature will be enabled by default for all users and doesn't require any additional configuration or action to enable.<br><br> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:31:46Z",
+    "endDateTime": "2026-05-04T15:31:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:32:36.097Z",
+    "title": "Dynamics 365 Project Operations - Enable configurable timescale settings on assignments view",
+    "id": "MC1265696",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to enable configurable timescale settings on assignments view in Dynamics 365 Project Operations. This feature will reach general availability on April 30, 2026.  <br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature allows users to enable configurable timescale settings on assignments view and eliminate repetitive manual adjustments. This timescale setting that adapts to project duration and user preference to ensure that long-running projects can be managed without unnecessary scrolling or filter resets.  <br><br> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:35:22Z",
+    "endDateTime": "2026-05-04T15:35:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:36:29.367Z",
+    "title": "Dynamics 365 Contact Center - Use callback insights to optimize contact center operations",
+    "id": "MC1265701",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to use callback insights to optimize contact center operations in Dynamics 365 Contact Center. This feature will reach general availability on April 30, 2026.  <br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature provides analytics for voicemails and direct callback actions for conversations that go through overflows, providing supervisors with insights into these overflow actions via custom reporting. The improved data model for overflow action reporting supports metrics for the following overflow actions.<br><br> \n\nVoicemails: \n\n<ul> \n\n<li>Voicemail left during business hours vs. outside-of-business hours.</li> \n\n<li>Voicemail left for an individual or group.</li> \n\n<li>Filter empty voicemails and classify them as abandoned calls.</li> \n\n</ul> \n\n  \n\nDirect callback and general overflow actions: \n\n<ul> \n\n<li>List conversations with overflow action of any type that triggered direct callback.</li> \n\n<li>Identify the overflow condition that's triggered, before work items are queued, when work items are queued, or out of operation hours.</li> \n\n<li>Identify the time the overflow action was triggered.</li> \n\n<li>Identify whether the customer accepted the callback option and the time it was accepted.</li> \n\n<li>Identify when callback was initiated by the system.</li> \n\n<li>Identify if and when the callback notification was accepted by a service representative.</li> \n\n</ul> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:37:48Z",
+    "endDateTime": "2026-05-04T15:37:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:39:33.113Z",
+    "title": "Dynamics 365 Project Operations - Record task progress from the tasks grid",
+    "id": "MC1265703",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to mark a task as complete from the grid view in Dynamics 365 Project Operations. This feature will reach general availability on March 31, 2026.<br><br><b>How does this affect me?</b><br>This feature allows users to mark a task as complete from the grid view.<br><br><b>What action do I need to take?</b><br> This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/11696\">Record task progress from the tasks grid in Project Operations</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:42:51Z",
+    "endDateTime": "2026-05-04T15:42:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:44:13.85Z",
+    "title": "Dynamics 365 Sales - Find, filter, and sort using natural language with smart grid",
+    "id": "MC1265717",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to find, filter, and sort records using natural language queries directly within smart grid through Copilot Search in Dynamics 365 Sales. This feature will reach general availability on April 30, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nUsers in Dynamics 365 Sales will be able to use natural language queries in Copilot Search to quickly locate and refine records within smart grids. This capability will help users reduce time spent navigating advanced filter menus and manually configuring filters.<br><br> \n\nWith this feature, users will be able to: \n\n<ul> \n\n<li>Enter natural language queries to filter and locate records in smart grids.</li> \n\n<li>Apply filters automatically by typing queries such as \"opportunities with estimated revenue greater than 10000 USD\". </li> \n\n<li>Sort records in the grid using conversational input.</li> \n\n<li>View applied filters and clear them with one click to return to the default grid view.</li> \n\n</ul> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required.<br><br> \n\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/14358/1\" target=\"_blank\">Find, filter, and sort using natural language with smart grid</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:46:40Z",
+    "endDateTime": "2026-05-04T15:46:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:47:16.42Z",
+    "title": "Power Pages - Enable secure server-side logic in Power Pages",
+    "id": "MC1265719",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to enable secure server-side logic in Power Pages. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables you to securely execute server-side JavaScript within your sites. This allows for integration with external services, advanced data operations, and custom business logic without exposing sensitive credentials in client code.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:48:30Z",
+    "endDateTime": "2026-05-04T15:48:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:49:29.163Z",
+    "title": "Dynamics 365 Contact Center - Use SMS channel to engage with customers proactively",
+    "id": "MC1265721",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to use the SMS channel to engage with customers proactively in Dynamics 365 Contact Center. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables proactive engagement through the SMS channel that extends your customer engagement workflows with outbound SMS capabilities powered by the proactive engagement CCaaS API. It provides automated, targeted outreach using SMS, with support for orchestrating messaging through CCaaS APIs, Customer Insights journeys, Model Context Protocol (MCP), or file￼based uploads. Message context is passed seamlessly to downstream AI agents or customer service representatives, enabling proactive, event￼based, and personalized communications with end￼to￼end traceability across systems.<Br><br>The feature is included in the existing proactive engagement feature set and uses your current SMS channel configuration in Copilot Service admin center. If you already use the proactive engagement CCaaS API, you can start sending outbound SMS by configuring your SMS provider, defining outbound SMS workstreams, and choosing an orchestration method. Context sharing is automatically applied so that AI agents and service representatives receive the full conversation context.<br><Br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:51:17Z",
+    "endDateTime": "2026-05-04T15:51:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:51:51.597Z",
+    "title": "Dynamics 365 Contact Center - Cancel voice consult with external number",
+    "id": "MC1265722",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to cancel voice consult with an external number in Dynamics 365 Contact Center. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables customer service representatives to cancel consult and transfer attempts while a call is still in the connecting or ringing state. The cancel option appears directly in the UI during the connecting phase, allowing the consult or transfer attempt to be terminated immediately so the customer service representative can retry with the correct participant or continue assisting the customer without delay.<br><br>The feature is enabled out of the box and doesn't require administrator configuration.<br><br><b>What action do I need to take?</b><br> This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:54:05Z",
+    "endDateTime": "2026-05-04T15:54:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:54:43.17Z",
+    "title": "Power Pages – Control Power Pages components using client APIs",
+    "id": "MC1265724",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are introducing the ability to control Power Pages components using client APIs in Power Pages. This feature will reach general availability on February 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables the usage of client-side APIs for Power Pages components, eliminating the dependency on custom JavaScript and fragile Document Object Model (DOM) manipulation to hide fields, update values, or trigger actions. The Power Pages Client APIs (Preview) provides a JavaScript interface for controlling UI components and performing operations on your Power Pages sites. Key features include:<ul><li><b>Form API</b>: Retrieve forms by ID, manage their visibility, and interact with controls.</li><li><b>List API</b>: Access lists, toggle their visibility, and retrieve HTML elements.</li><li><b>User API</b>: Handle authentication actions like sign-in and sign-out.</li><li><b>Web API</b>: Use OData-compliant methods to create, retrieve, and query records.</li></ul>These APIs allow you to dynamically update UI elements, manage data, and create tailored user experiences without reloading the page.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/ADO13625\">Control Power Pages components using client APIs</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:55:55Z",
+    "endDateTime": "2026-05-04T15:55:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:56:54.253Z",
+    "title": "Dynamics 365 Customer Service - Enhance timeline with AI-driven filtering and attribution",
+    "id": "MC1265732",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to enhance the timeline with AI-driven filtering and attribution in Dynamics 365 Customer Service. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables AI agent attribution on activities, allowing users to distinguish automated actions (such as enrichment, classification, or updates) from human‑generated entries. Key capabilities of this feature include:<ul><li><b>Persona‑based filters:</b> Agents segment the timeline by specific AI agents or human contributors to rapidly locate relevant activity threads.</li><li><b>Extensible highlights:</b> Ensure custom agent actions or partner‑developed plug-ins can surface consistently across the timeline.</li><li><b>Performance and data‑processing improvements:</b> Enable responsive filtering even as AI‑generated activity volume increases, ensuring the timeline remains a reliable source of historical truth.</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T15:58:26Z",
+    "endDateTime": "2026-05-04T15:58:00Z",
+    "lastModifiedDateTime": "2026-03-30T15:59:05.75Z",
+    "title": "Dynamics 365 Customer Service - Unify next‑step suggestions across Microsoft AI and custom agents",
+    "id": "MC1265733",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to surface recommended next steps for agents in Dynamics 365 Customer Service. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>The Unified Suggested Next Actions framework provides AI insights with business-specific agent logic, providing clearer, more actionable guidance. Suggestions from Microsoft AI agents and custom line-of-business agents appear in a standardized format across the inbox, case form, and timeline. You can rely on AI-driven guidance that aligns with business rules, supports, multiple suggestions, and reflects the full context of the case. In addition, you can reduce manual triage through automated, prioritized next actions aligned with business rules and customer context.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T16:01:05Z",
+    "endDateTime": "2026-05-04T16:01:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:01:42.463Z",
+    "title": "Microsoft 365 Copilot for Sales - Configure admin setting for meeting AI insights sharing governance",
+    "id": "MC1265735",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Power Platform)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to configure admin settings for meeting AI insights sharing governance in Microsoft 365 Copilot for Sales. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables you to control how meeting insights are used across Sales agent through access management, so you can protect sensitive data while still enabling sellers to benefit from AI-powered insights. This helps to reduce risk and maintain trust without slowing sales workflows.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T16:10:03Z",
+    "endDateTime": "2026-05-04T16:10:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:11:00.143Z",
+    "title": "Microsoft 365 Copilot for Sales- Control AI insights generation by meeting sensitivity labels",
+    "id": "MC1265738",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Power Platform)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to control AI insights generation with meeting sensitivity labels in Microsoft 365 Copilot for Sales. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables you to define rules that control AI insight generation based on meeting sensitivity labels. Meetings marked with excluded labels (e.g. Highly confidential) won't generate AI insights, while included meetings continue to power Meeting Prep and related features.<br><br>These settings are applied consistently across all meeting-derived experiences. The configuration for this feature is managed through the Sales app admin settings.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T16:12:38Z",
+    "endDateTime": "2026-05-04T16:12:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:15:04.497Z",
+    "title": "Power Platform - Move apps out of the default environment",
+    "id": "MC1265740",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Power Platform"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to move apps out of the default environment in Power Platform. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables you to move canvas apps and SharePoint forms from the default environment to designated Managed Environments.<br><Br>You can move apps by using one of the following methods:<ul><li><b>Manual cleanup:</b> Best for smaller migrations or when you want to review apps individually.</li><li><b>Automated cleanup by using Power Automate:</b> Best for bulk migrations by using preapproved recommendations.</li></ul><b>What action do I need to take?</b><Br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/14406\">Move apps from the default environment</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T16:16:17Z",
+    "endDateTime": "2026-05-04T16:16:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:19:07.343Z",
+    "title": "Dynamics 365 Contact Center - Consent-Based Recording for Voice Interactions",
+    "id": "MC1265742",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are introducing consent-based recording in Dynamics 365 Contact Center to enhance trust, ensure regulatory compliance, and reduce risk during customer voice interactions. This feature captures explicit customer consent at the start of calls with voice agents. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>Calls with voice agents will now include a proactive consent prompt before recording or transcription begins. If consent is declined, calls continue without recording or transcription, and this preference carries over if the call transfers to a service representative. This ensures a consistent, privacy-respecting experience and helps meet voice-specific compliance requirements.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
     }
   },
   {
