@@ -4275,6 +4275,45 @@
     }
   },
   {
+    "startDateTime": "2025-09-05T22:05:07Z",
+    "endDateTime": "2026-04-17T08:00:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:54:21.673Z",
+    "title": "(Updated) Microsoft Teams: Collaborative Notes in Chats",
+    "id": "MC1148543",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "498159"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will introduce Collaborative Notes in group chats, enabling real-time co-creation of notes, agendas, and action items via a new Notes tab. Rollout starts late September 2025 for Targeted Release and early November 2025 for General Availability. The feature is on by default and manageable via Teams Admin Center or PowerShell."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>Updated March 30, 2026: Chat Notes respect data residency at creation time based on the chat creator’s Preferred Data Location (PDL). If no PDL is set, Chat Notes are stored in the tenant’s central or default regional location. If the creator’s PDL changes later, the associated Chat Note is not automatically migrated, even though the chat data may move. Microsoft is aware of this limitation and is working to address it.</p><p><b>Introduction</b></p><p>We’re introducing <i>Teams Collaborative Notes</i> (powered by Loop) in group chats across desktop and web experiences. This feature enables users to co-create and edit notes, agendas, and action items directly within the Teams chat interface, enhancing real-time collaboration without switching contexts.</p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=498159\" target=\"_blank\">498159</a>.</p><p><b>When this will happen</b></p><ul><li>Targeted Release: Rollout begins late September (previously early September) and completes by late October 2025 (previously early October).&nbsp;&nbsp;</li><li>General Availability: Rollout begins early November 2025 (previously early October) and completes by end of January 2026 (previously mid-November 2025).</li></ul><p><b>How this affects your organization</b></p><p>Users will see a new <i>Notes </i>tab in group chats, allowing them to create and collaborate on Loop components such as agendas and action items. These components are editable inline, supporting synchronous collaboration directly within Teams.&nbsp;&nbsp;</p><p>This feature is on by default for all tenants. Users do not need to install anything to begin using it.</p><p><b>What you can do to prepare</b></p><ul><li>You can manage this feature via the Teams Admin Center. If desired, Collaborative Notes can be disabled at the tenant level.</li><li>Review internal documentation and training materials to ensure users are aware of the new Notes tab and its capabilities.</li><li>Admins can manage the feature via the Teams Admin Center under: Messaging → Messaging Settings → Messaging Notes<ul><li>Alternatively, it can be configured using the PowerShell cmdlet: <a href=\"https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsmessagingconfiguration?view=teams-ps#-messagingnotes\" target=\"_blank\" style=\"font-family: sans-serif; font-weight: 400; background-color: rgb(255, 255, 255);\">Set-CsTeamsMessagingConfiguration</a></li></ul></li></ul><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
     "startDateTime": "2025-09-05T22:05:38Z",
     "endDateTime": "2026-06-15T08:00:00Z",
     "lastModifiedDateTime": "2026-03-23T16:23:00.637Z",
@@ -9305,7 +9344,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
+        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11831,7 +11870,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5008007Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5008007Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11994,7 +12033,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101498Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101506Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101498Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101506Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -14077,8 +14116,8 @@
   },
   {
     "startDateTime": "2026-02-05T00:08:26Z",
-    "endDateTime": "2026-06-02T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-20T17:46:39.387Z",
+    "endDateTime": "2026-07-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-30T17:55:29.287Z",
     "title": "(Updated) Events in Meet app – Introducing a redesigned, unified Events experience in Microsoft Teams",
     "id": "MC1227087",
     "category": "stayInformed",
@@ -14106,7 +14145,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams is redesigning the Meet app to unify event creation, discovery, and management for webinars, town halls, and custom events. Rollout begins late February 2026, with no admin action needed. Existing meetings remain accessible, and the update includes a centralized Events hub and enhanced scheduling features."
+        "value": "Microsoft Teams is redesigning the Meet app into a unified Events app for streamlined creation, discovery, and management of webinars, town halls, and custom events. Rollout starts late February 2026 with general availability by late June. No admin action required; existing meetings and controls remain unchanged."
       },
       {
         "name": "Platforms",
@@ -14115,7 +14154,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated February 20, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p>We are introducing a redesigned <b>Meet </b>app in Microsoft Teams that delivers a new, unified <b>Events </b>experience. This update modernizes how users create, discover, and manage events—bringing webinars, town halls, and custom events into a single streamlined workflow. Users will continue to access their current <b>Meetings </b>and <b>Audio recap</b> experiences without any disruption.</p><p>Screenshot 1: <i><b>Discover </b>experience for attendees showing <b>Events </b>happening now and upcoming </i>​</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/bfd81d21-a2af-432a-ba69-39e68c071cfd/4b3e4f81a7cb53233d455c6330ddb0c5fb103ce5.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<p>This message applies to Teams for Windows desktop, Teams for Mac desktop, and Teams for the web and is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=547834#Roadmap\" target=\"_blank\">547834</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li>Targeted Release: We will begin rolling out <b>late February 2026</b> (previously&nbsp;early February)&nbsp;and expect to complete by <b>mid-March 2026</b> (previously&nbsp;mid-February).</li>\n  <li>General Availability: We will begin rolling out <b>early April 2026</b> and expect to complete by <b>late April 2026</b>.</li>\n</ul>\n\n<p><b>[How this will affect your organization:]</b></p>\n<p><b style=\"\">Who is affected:</b></p>\n<ul>\n  <li>All users who currently use the <b>Meet </b>app in Microsoft Teams.</li>\n  <li>Applicable across all Teams clients where the <b>Meet </b>app is available.</li>\n</ul>\n\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n  <li>Users will see the redesigned <b>Meet </b>app with a modernized, unified <b>Events </b>experience.</li>\n  <li>A centralized <b>Events hub </b>to create, edit, and track events.</li><p>Screenshot 2: <i>Manage all your events in different stages</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/51d696ae-67dc-4362-b3c8-1eb535ff45dd\" style=\"width: 400px;\" alt=\"user settings\"></p>\n  <li>Simplified scheduling for custom events, webinars, and town halls using templates.&nbsp;</li><p>Screenshot 3: <i>New simplified scheduling form</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/bf80651f-5768-49da-bad5-53ab80ef23bc\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Custom events created using <b>Create from scratch</b> will automatically honor the appropriate policy set—<b>Town hall</b> policies for broadcast‑type events and <b>Webinar </b>policies for collaborative events.</li>\n  <li>Ability to schedule events using shared and delegate mailboxes.</li>\n  <li>Event landing pages with <b>Q&amp;A</b> and <b>Polls</b>.</li>\n  <li>Seamless upgrade path for current <b>Webinars </b>and <b>Town halls</b>.</li>\n  <li>A redesigned <b>Events </b>home to help users discover and revisit events.</li><p>Screenshot 4: <i>Event landing page for Attendees to engage before or after event</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8709ba87-9e6e-43df-a881-4d6f2ef36818\" style=\"width: 400px;\" alt=\"user settings\"></p>\n  <li><b>Meetings </b>and <b>Audio recap</b> remain accessible via a continuity banner.</li>\n  <li>No impact on existing events.</li>\n  <li>No changes to admin controls.</li>\n  <li>Classic <b>Meet </b>remains available during preview and general availability.</li>\n</ul>\n\n<p><b>[What you need to do to prepare:]</b></p>\n<p>No administrative action is required.</p>\n<ul>\n  <li>Review and update internal training and communication materials.</li>\n  <li>Inform event organizers of the upcoming unified <b>Events </b>experience.</li>\n  <li>Encourage users to pin the <b>Meet </b>app in Teams.</li>\n  <li>Share training resources within your organization.</li>\n</ul>\n\n<p>Before rollout, we will update this post with new documentation.</p><p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated March 30, 2026: We have updated the timeline and content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p>We are introducing a redesigned <b>Meet </b>app in Microsoft Teams that delivers a new, unified <b>Events </b>experience. This update modernizes how users create, discover, and manage events—bringing webinars, town halls, and custom events into a single streamlined workflow. Users will continue to access their current <b>Meetings </b>and <b>Audio recap</b> experiences without any disruption.&nbsp;<br><br>Please note that with this change, the app will also be renamed to \"Events\".</p><p>Screenshot 1: <i><b>Discover </b>experience for attendees showing <b>Events </b>happening now and upcoming </i>​</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/bfd81d21-a2af-432a-ba69-39e68c071cfd/4b3e4f81a7cb53233d455c6330ddb0c5fb103ce5.png\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<p>This message applies to Teams for Windows desktop, Teams for Mac desktop, and Teams for the web and is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=547834#Roadmap\" target=\"_blank\">547834</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li>Targeted Release: We will begin rolling out <b>late February 2026</b> (previously&nbsp;early February)&nbsp;and expect to complete by <b>mid-March 2026</b> (previously&nbsp;mid-February).</li>\n  <li>General Availability: We will begin rolling out <b>mid-June 2026</b> (previously&nbsp;early April)&nbsp;and expect to complete by <b>late June 2026</b> (previously&nbsp;late April).</li>\n</ul>\n\n<p><b>[How this will affect your organization:]</b></p>\n<p><b style=\"\">Who is affected:</b></p>\n<ul>\n  <li>All users who currently use the <b>Meet </b>app in Microsoft Teams.</li>\n  <li>Applicable across all Teams clients where the <b>Meet </b>app is available.</li>\n</ul>\n\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n  <li>Users will see the redesigned <b>Meet </b>app with a modernized, unified <b>Events </b>experience.</li>\n  <li>A centralized <b>Events hub </b>to create, edit, and track events.</li><p>Screenshot 2: <i>Manage all your events in different stages</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/51d696ae-67dc-4362-b3c8-1eb535ff45dd\" style=\"width: 400px;\" alt=\"user settings\"></p>\n  <li>Simplified scheduling for custom events, webinars, and town halls using templates.&nbsp;</li><p>Screenshot 3: <i>New simplified scheduling form</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/bf80651f-5768-49da-bad5-53ab80ef23bc\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Custom events created using <b>Create from scratch</b> will automatically honor the appropriate policy set—<b>Town hall</b> policies for broadcast‑type events and <b>Webinar </b>policies for collaborative events.</li>\n  <li>Ability to schedule events using shared and delegate mailboxes.</li>\n  <li>Event landing pages with <b>Q&amp;A</b> and <b>Polls</b>.</li>\n  <li>Seamless upgrade path for current <b>Webinars </b>and <b>Town halls</b>.</li>\n  <li>A redesigned <b>Events </b>home to help users discover and revisit events.</li><p>Screenshot 4: <i>Event landing page for Attendees to engage before or after event</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8709ba87-9e6e-43df-a881-4d6f2ef36818\" style=\"width: 400px;\" alt=\"user settings\"></p>\n  <li><b>Meetings </b>and <b>Audio recap</b> remain accessible via a continuity banner.</li>\n  <li>No impact on existing events.</li>\n  <li>No changes to admin controls.</li>\n  <li>Classic <b>Meet </b>remains available during preview and general availability.</li>\n</ul>\n\n<p><b>[What you need to do to prepare:]</b></p>\n<p>No administrative action is required.</p>\n<ul>\n  <li>Review and update internal training and communication materials.</li>\n  <li>Inform event organizers of the upcoming unified <b>Events </b>experience.</li>\n  <li>Encourage users to pin the <b>Meet </b>app in Teams.</li>\n  <li>Share training resources within your organization.</li>\n</ul>\n\n<p>Before rollout, we will update this post with new documentation.</p><p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -22157,7 +22196,7 @@
   {
     "startDateTime": "2026-03-27T19:38:32Z",
     "endDateTime": "2026-05-21T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-27T19:38:43.323Z",
+    "lastModifiedDateTime": "2026-03-30T17:48:14.86Z",
     "title": "Microsoft 365 Copilot: Admins will be able to enable third‑party model providers for specific users and groups",
     "id": "MC1263276",
     "category": "stayInformed",
@@ -22191,7 +22230,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>Today, IT admins can enable or disable<b> </b>third‑party model providers<b>,</b> such as Anthropic and xAI (US only), at the tenant level in the <i>Microsoft Admin Center</i>. With this update, admins will be able to assign access to a third‑party model provider to specific users or groups within the tenant.</p><p>This update is related to <i>MC1193920</i>, which announced that Anthropic models would be enabled by default for many customers in <i>certain Copilot experiences</i> and offered under the <a href=\"https://www.microsoft.com/licensing/terms/welcome/welcomepage\" target=\"_blank\">Microsoft Product Terms</a> and <a href=\"https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA\" target=\"_blank\">Data Protection Addendum (DPA)</a> as a Microsoft subprocessor. </p><p>This message corresponds to <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557371\" target=\"_blank\">557371</a></b>.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ab5f0f9a-6d69-4b64-bff0-1ed67ff4859f/b82aa463d6bae209e2799f8df25173f437a4ed97.png\" style=\"width: 400px;\" alt=\"user settings\"> </p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide): </b>We will begin rolling out in<b> late April 2026</b> and expect to complete in<b> late April 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations that use or plan to use<b> third‑party model providers</b> in <i>Microsoft 365 Copilot </i>and in <i>Copilot Studio</i></li><li>Admins who manage access in the <i>Microsoft Admin Center</i>, <i>Power Platform Admin Center (PPAC)</i>, or <i>Copilot Studio</i></li></ul><p><i>What will happen</i></p><ul><li>Admins will see a <b>new control </b>in the <i>Microsoft Admin Center</i> that allows assigning a third‑party model provider to specific users or Entra ID groups.</li><li>The setting will apply at the provider level, not at the individual model level.</li><li>Assignments will be enforced consistently across the Microsoft Admin Center, PPAC, and Copilot Studio.</li><li>The control <b>will apply to subprocessors</b> <b>and independent processors</b> for all current and future third‑party model providers.</li><li>Admins can add up to any combination of 999 groups and users; nested groups are supported.&nbsp;</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Review your existing settings for Anthropic and xAI (US only) in the<i> Microsoft Admin Center</i>.</li><li>Update user or group assignments to align with your internal governance policies.</li><li>Update any existing agents and experiences that may be impacted when model access is limited by Entra ID security groups.</li><li>Communicate any planned changes to your helpdesk or impacted user groups.</li><li>Update internal documentation where you track AI access or model provider settings.</li><li>Review Microsoft documentation on managing third‑party model providers when it becomes available.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/connect-to-ai-subprocessor\" target=\"_blank\">Anthropic as a subprocessor for Microsoft Online Services | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/microsoft-copilot-studio/authoring-select-external-response-model\" target=\"_blank\">Choose an external model as the primary AI model | Microsoft Copilot Studio | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/enterprise-data-protection\" target=\"_blank\">Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA\" target=\"_blank\">Microsoft Products and Services Data Protection Addendum (DPA) | Licensing Resources and Documents | Licensing | Microsoft</a></li><li><a href=\"https://www.microsoft.com/licensing/terms/welcome/welcomepage\" target=\"_blank\">Product Terms | Licensing | Microsoft</a></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td>Question</td><td>Answer</td></tr><tr><td>Does the change introduce or significantly modify AI, ML, or agent capabilities that interact with or provide access to customer data?</td><td>Yes. This update introduces new admin controls that define which users or groups can access third‑party AI model providers.</td></tr><tr><td>Does the change add any integration to third‑party software products, and if so what?</td><td>Yes. This update applies to model providers such as Anthropic and xAI (US only).</td></tr><tr><td>Does the change include an admin control and, can it be controlled through Entra ID group membership?</td><td>Yes. Access can be assigned at the user or group level using Entra ID.</td></tr></tbody></table><p><b></b></p>"
+      "content": "<p><b>[Introduction]</b></p><p>Today, IT admins can enable or disable<b> </b>third‑party model providers<b>,</b> such as Anthropic and xAI (US only), at the tenant level in the <i>Microsoft Admin Center</i>. With this update, admins will be able to assign access to a third‑party model provider to specific users or groups within the tenant.</p><p>This update is related to <i>MC1193290</i>, which announced that Anthropic models would be enabled by default for many customers in <i>certain Copilot experiences</i> and offered under the <a href=\"https://www.microsoft.com/licensing/terms/welcome/welcomepage\" target=\"_blank\">Microsoft Product Terms</a> and <a href=\"https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA\" target=\"_blank\">Data Protection Addendum (DPA)</a> as a Microsoft subprocessor. </p><p>This message corresponds to <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557371\" target=\"_blank\">557371</a></b>.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ab5f0f9a-6d69-4b64-bff0-1ed67ff4859f/b82aa463d6bae209e2799f8df25173f437a4ed97.png\" style=\"width: 400px;\" alt=\"user settings\"> </p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide): </b>We will begin rolling out in<b> late April 2026</b> and expect to complete in<b> late April 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations that use or plan to use<b> third‑party model providers</b> in <i>Microsoft 365 Copilot </i>and in <i>Copilot Studio</i></li><li>Admins who manage access in the <i>Microsoft Admin Center</i>, <i>Power Platform Admin Center (PPAC)</i>, or <i>Copilot Studio</i></li></ul><p><i>What will happen</i></p><ul><li>Admins will see a <b>new control </b>in the <i>Microsoft Admin Center</i> that allows assigning a third‑party model provider to specific users or Entra ID groups.</li><li>The setting will apply at the provider level, not at the individual model level.</li><li>Assignments will be enforced consistently across the Microsoft Admin Center, PPAC, and Copilot Studio.</li><li>The control <b>will apply to subprocessors</b> <b>and independent processors</b> for all current and future third‑party model providers.</li><li>Admins can add up to any combination of 999 groups and users; nested groups are supported.&nbsp;</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Review your existing settings for Anthropic and xAI (US only) in the<i> Microsoft Admin Center</i>.</li><li>Update user or group assignments to align with your internal governance policies.</li><li>Update any existing agents and experiences that may be impacted when model access is limited by Entra ID security groups.</li><li>Communicate any planned changes to your helpdesk or impacted user groups.</li><li>Update internal documentation where you track AI access or model provider settings.</li><li>Review Microsoft documentation on managing third‑party model providers when it becomes available.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/connect-to-ai-subprocessor\" target=\"_blank\">Anthropic as a subprocessor for Microsoft Online Services | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/microsoft-copilot-studio/authoring-select-external-response-model\" target=\"_blank\">Choose an external model as the primary AI model | Microsoft Copilot Studio | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/enterprise-data-protection\" target=\"_blank\">Enterprise data protection in Microsoft 365 Copilot and Microsoft 365 Copilot Chat | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://www.microsoft.com/licensing/docs/view/Microsoft-Products-and-Services-Data-Protection-Addendum-DPA\" target=\"_blank\">Microsoft Products and Services Data Protection Addendum (DPA) | Licensing Resources and Documents | Licensing | Microsoft</a></li><li><a href=\"https://www.microsoft.com/licensing/terms/welcome/welcomepage\" target=\"_blank\">Product Terms | Licensing | Microsoft</a></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td>Question</td><td>Answer</td></tr><tr><td>Does the change introduce or significantly modify AI, ML, or agent capabilities that interact with or provide access to customer data?</td><td>Yes. This update introduces new admin controls that define which users or groups can access third‑party AI model providers.</td></tr><tr><td>Does the change add any integration to third‑party software products, and if so what?</td><td>Yes. This update applies to model providers such as Anthropic and xAI (US only).</td></tr><tr><td>Does the change include an admin control and, can it be controlled through Entra ID group membership?</td><td>Yes. Access can be assigned at the user or group level using Entra ID.</td></tr></tbody></table><p><b></b></p>"
     }
   },
   {
@@ -22639,6 +22678,197 @@
     "body": {
       "contentType": "html",
       "content": "We are introducing consent-based recording in Dynamics 365 Contact Center to enhance trust, ensure regulatory compliance, and reduce risk during customer voice interactions. This feature captures explicit customer consent at the start of calls with voice agents. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>Calls with voice agents will now include a proactive consent prompt before recording or transcription begins. If consent is declined, calls continue without recording or transcription, and this preference carries over if the call transfers to a service representative. This ensures a consistent, privacy-respecting experience and helps meet voice-specific compliance requirements.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T16:43:05Z",
+    "endDateTime": "2026-05-04T16:43:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:45:20.327Z",
+    "title": "Dynamics 365 Customer Service - Simulate case‑resolution flows before production",
+    "id": "MC1265750",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to simulate case‑resolution flows before production in Dynamics 365 Customer Service. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables you to validate Case Management Agent resolution logic to detect configuration and instruction issues before they impact customers. Actionable validations from simulated end-to-end case resolution flows include resolution accuracy, clarification gaps, failures, and estimated credit impact.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/14408\">Simulate case resolution flows before production</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T16:47:06Z",
+    "endDateTime": "2026-05-04T16:47:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:47:53.327Z",
+    "title": "Dynamics 365 Customer Service – Case sentiment insights",
+    "id": "MC1265753",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing a new feature for Dynamics 365 Customer Service known as Case Sentiment Insights. This feature is designed to give agents and supervisors a clear, real-time view of customer sentiment across email, chat, and voice channels. This feature will help to identify potential escalations early and support better case prioritization. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>You will be able to see sentiment scores as icons displayed directly on cases, in case grids, and on agent inbox cards when added to an agent profile. These scores reflect the combined emotional tone of recent customer interactions and update automatically as new communications arrive.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T16:52:10Z",
+    "endDateTime": "2026-05-04T16:52:00Z",
+    "lastModifiedDateTime": "2026-03-30T16:52:59.44Z",
+    "title": "Dynamics 365 Customer Insights - Journeys - Boost engagement with Copilot-powered conversational text messages",
+    "id": "MC1265755",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to boost engagement with Copilot-powered conversational text messages in Dynamics 365 Customer Insights - Journeys in conjunction with Dynamics 365 Contact Center. This feature will reach general availability on April 30, 2026. <br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature enables you to leverage Copilot Studio agents to deliver personalized SMS conversations with your customers.<br><br> \n\nKey functionality of this feature includes: \n\n<ul> \n\n<li>Seamless integration with Dynamics 365 Contact Center proactive engagement.</li> \n\n<li>Use the existing capabilities of consent, audience configurations, and quiet times.</li> \n\n<li>Design your journey to include conversational text messages and react to message outcomes. </li> \n\n<li>View detailed engagement metrics, such as the number of attempts, outcomes, and specific results for each conversation interaction in the out-of-the-box journey reporting.</li> \n\n<li>Access all text conversations and engagement interaction data in storage and build custom reports using Microsoft Fabric integration. </li> \n\n</ul> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T17:13:38Z",
+    "endDateTime": "2026-05-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-30T17:16:03.15Z",
+    "title": "Auto Critique and Model Council features in Researcher (Frontier program)",
+    "id": "MC1265765",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)",
+      "Microsoft 365 Copilot Chat"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "553213,558538"
+      },
+      {
+        "name": "Summary",
+        "value": "Researcher’s new Auto Critique improves draft quality by reviewing structure, sources, and citations. Model Council compares reports from multiple AI models, highlighting agreements and differences. Available to Microsoft 365 Copilot Frontier program users by March 30, 2026, with tenant-admin control over feature and model access."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop, Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing new capabilities in Researcher to help teams review AI‑generated research more confidently and reduce rework before using outputs in business decisions.</p><p><b>Critique</b> is a built-in review step in Researcher that automatically checks and improves a draft before it’s delivered. It uses a second reasoning pass to strengthen structure and completeness, prioritize reputable sources, and ensure key statements are grounded in clear citations—so the final report is more reliable and easier to trust.</p><p><b>Council</b> is Researcher’s multi-model comparison mode. It runs the same question through multiple deep‑reasoning research agents (for example, GPT and Claude) in parallel, preserves each model’s full standalone report, and adds a lightweight synthesis “cover letter” that highlights where the models agree, where they diverge, and what each uniquely contributes—so you can compare perspectives and make decisions with higher confidence.</p><p>These preview features are initially available only to organizations enrolled in the Microsoft 365 Copilot Frontier program, which provides early access to experimental Copilot capabilities.</p><p>This message is associated with Roadmaps <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=553213#Roadmap\" target=\"_blank\">553213</a> and <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558538#Roadmap\" target=\"_blank\" style=\"\">558538</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>Public preview: Rolling out to Frontier customers by <b>March 30, 2026.</b></p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n\n<ul>\n<li>Organizations enrolled in the <b>Microsoft 365 Copilot Frontier program using Researcher</b></li>\n<li>Admins managing AI model access, including third-party models such as Anthropic Claude</li>\n\n<li>Users who generate long-form research reports using Researcher</li><li>A Microsoft 365 Copilot (Premium) license is required to use this feature</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Researcher drafts will run through Critique before delivery, improving structure, completeness, and citation quality, when “Auto” is selected as the Default option in the model picker.&nbsp;</li><li>Users will be able to enable <b>Council</b>, which generates:<ul><li>Two independent, full research reports from different reasoning models (for example, GPT and Claude).</li><li>A concise synthesis “cover letter” summarizing areas of agreement, disagreement, and unique contributions.</li></ul></li><li>Critique and Council availability is<b> tenant-admin controlled</b>, including the ability to allow or block third-party models such as Claude.</li><li>There is <b>no change to existing user workflows</b> unless the feature is enabled.</li><li>Existing security, compliance, and data handling policies continue to apply.</li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Review your <b>AI model access settings</b> and confirm whether <b>Anthropic Claude</b> is enabled for your tenant.</li>\n<li>Decide whether to allow Critique and Council based on your organization’s governance and compliance requirements. There are no separate controls for these features; both are enabled when Anthropic and Claude report generation are turned on.</li>\n<li>Inform helpdesk and support teams about the upcoming preview features.</li>\n<li>Update internal guidance or training materials if Researcher is documented in your organization.</li></ul><p>No action is required if you do not plan to enable the preview features.</p><p><b>Learn more:</b>&nbsp;<a href=\"https://go.microsoft.com/fwlink/?linkid=2356719\" target=\"_blank\">Use model choice in the Researcher agent | Microsoft Support</a><span style=\"background-color: rgb(255, 255, 0);\"></span></p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T17:15:40Z",
+    "endDateTime": "2026-04-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-03-30T17:16:07.113Z",
+    "title": "Copilot Cowork now available in Frontier",
+    "id": "MC1265767",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)",
+      "Microsoft 365 Copilot Chat"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Copilot Cowork is now available in Frontier for Microsoft 365 Copilot Premium users, enabling multi-step task orchestration across apps with user approval and progress tracking. It requires Frontier enrollment, enabled agents, and Anthropic as a subprocessor. EU tenants must enable it explicitly due to data boundary rules."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p><b>Copilot Cowork is now available in Frontier</b>. Copilot Cowork enables users to orchestrate complex, multi-step work across Microsoft 365 without switching between apps. Copilot Cowork moves beyond answering questions to turning intent into execution by automatically generating plans, coordinating work across emails, meetings, messages, files, and data, and carrying tasks forward with visible progress and user control. This update reflects customer feedback to reduce manual coordination for real work while maintaining enterprise-grade security, privacy, and controls. Learn more on our blog: <a href=\"https://www.microsoft.com/microsoft-365/blog/2026/03/09/powering-frontier-transformation-with-copilot-and-agents/\" target=\"_blank\">Powering Frontier Transformation with Copilot and agents</a>.</p><p>Screenshot: <i>The Copilot Cowork interface in Microsoft 365 Copilot</i></p><p><img src=\" https://cxcs.microsoft.net/file/ccp/en-us/92746cdd-2d55-4095-a3dd-7b8390135e8c\" style=\"width: 400px;\" alt=\"user settings\"></p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li>Copilot Cowork is now available in Frontier.</li>\n  <li>General availability will be communicated at a later date.</li></ul><p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Users with a <b style=\"\">Microsoft 365 Copilot (Premium) license</b></li>\n  <li>Users enabled for <b>Frontier&nbsp;</b></li>\n  <li>English language only</li>\n</ul>\n\n<p><b>Prerequisites and controls:</b></p>\n<ul>\n  <li>The tenant must be enrolled in the <a href=\"https://adoption.microsoft.com/copilot/frontier-program/\" target=\"_blank\">Frontier program</a>.</li>\n  <li>Microsoft‑built agents must be enabled.</li><li><b>Anthropic </b>must be enabled as a subprocessor (default: on).</li>\n  <li>For tenants based in the <b>European Union (EU)</b>, Copilot Cowork is<b> off by default</b> due to EU Data Boundary requirements and must be explicitly enabled.</li></ul><p><b>What will happen:</b></p>\n<ul>\n  <li>Users can install<b> Copilot Cowork </b>from the <b>Agent Store in the Microsoft 365 Copilot app</b> and pin it to the left rail.</li>\n  <li>Users can describe an outcome in natural language, and Copilot Cowork will:</li>\n  <ul>\n    <li>Automatically generate a multi-step plan grounded in the user’s Microsoft 365 context</li>\n    <li>Coordinate tasks across Microsoft 365 apps such as Word, PowerPoint, Outlook, and others</li>\n    <li>Continue work overtime with visible checkpoints and progress tracking</li>\n  </ul>\n  <li>Copilot Cowork proposes actions and requires<b> explicit user approval</b> before acting on tasks such as:</li>\n  <ul>\n    <li>Sending emails or Teams messages</li>\n    <li>Scheduling, declining, or rescheduling meetings</li>\n    <li>Editing or moving files</li>\n  </ul>\n  <li>Users can pause, adjust, or stop execution at any time and return later to review progress.</li>\n  <li><span style=\"background-color: rgb(255, 255, 255);\">For eligible tenants, the experience is enabled by default and respects existing Microsoft 365 permissions and policies, unless restricted by EU Data Boundary settings.</span></li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No admin action is required.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/cowork\" target=\"_blank\">Copilot Cowork: Now Available in Frontier | Microsoft Learn</a><font color=\"#000000\" style=\"background-color: rgb(255, 255, 0);\"></font></li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/connect-to-ai-subprocessor\" target=\"_blank\">Anthropic as a subprocessor for Microsoft Online Services | Microsoft Learn</a>&nbsp;</li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/connect-to-ai-subprocessor#opt-in-to-use-anthropics-models\" target=\"_blank\">Opt-in to use Anthropic's models | Microsoft Learn</a><br></li><li><a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/agent-settings?view=o365-worldwide\" target=\"_blank\">Agent settings in Microsoft 365 admin center | Microsoft Learn</a>&nbsp;</li></ul><p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"5\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Compliance question</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td>\n    <td>Copilot Cowork introduces a new Microsoft-built agent that orchestrates multi-step work across Microsoft 365 services using existing customer data, while requiring explicit user approval before taking actions.</td>\n  </tr>\n  <tr>\n    <td>Does the change provide end users any new way of interacting with generative AI?</td>\n    <td>Users can describe an intended outcome in natural language and have Copilot Cowork generate and execute a multi-step plan with progress tracking.</td>\n  </tr>\n  <tr>\n    <td>Does the change add any integration to 3rd party software products?</td>\n    <td>Anthropic is used as a subprocessor to support Copilot Cowork capabilities and is enabled by default.</td>\n  </tr>\n  <tr>\n    <td>Does the change include an admin control?</td>\n    <td>Availability is controlled through Frontier enrollment, agent enablement settings, subprocessor configuration, and EU Data Boundary defaults.</td>\n  </tr>\n  <tr>\n    <td>Does the change allow a user to enable and disable the feature themselves?</td>\n    <td>Users can install Copilot Cowork from the Agent Store and can pause, adjust, or stop execution at any time.</td>\n  </tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T17:50:12Z",
+    "endDateTime": "2026-05-04T17:50:00Z",
+    "lastModifiedDateTime": "2026-03-30T17:57:55.08Z",
+    "title": "Dynamics 365 Contact Center – Evaluate multiple conversations using Quality Evaluation Agent",
+    "id": "MC1265787",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability for supervisors and quality managers to evaluate multiple closed conversations on demand, directly from the conversation list view, that also enables automated review of historical closed conversations in Dynamics 365 Contact Center. This feature will reach general availability on April 30, 2026.<br><br> \n<b>How does this affect me?</b><br> \nYou will be able to quickly select and evaluate several closed conversations at once without navigating away from the conversation list. Automated daily evaluation plans will also run in the background to process historical conversations, streamlining quality management workflows.  \n<br><br> \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-03-30T18:07:19Z",
+    "endDateTime": "2026-05-01T23:59:00Z",
+    "lastModifiedDateTime": "2026-03-30T18:09:29.66Z",
+    "title": "Dynamics 365 Contact Center - Identify your customers with enhanced authentication",
+    "id": "MC1265792",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to identify your customers easier with enhanced authentication methods and mid-conversation authentication for live chat in Dynamics 365 Contact Center. This feature will reach general availability on April 30, 2026.<br><Br><b>How does this affect me?</b><br>This feature improves customer onboarding and engagement by expanding authentication options and enabling authentication during live interactions. Broader identity provider support improves out-of-the-box compatibility to reduce setup time and effort. Mid-conversation authentication allows service representatives and AI agents to securely assist customers who begin interactions anonymously, allowing for improved, data-driven support without disrupting the customer experience. The authentication enhancements include:<ul><li>Support for OAuth 2.0 authentication along with existing JWT-based authentication.</li><li>Aligned authentication with Copilot Studio, enabling a consistent authentication method across Dynamics 365 Contact Center and Copilot Studio agents.</li><li>Mid--conversation authentication for synchronous live chat, allowing anonymous customers to authenticate during an active conversation when prompted by a service representative or AI agent.</li></ul><b>What action do I need to take?</b><Br>This message is for awareness, and no action is required."
     }
   },
   {
