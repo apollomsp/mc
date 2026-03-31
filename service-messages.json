@@ -116,40 +116,6 @@
     }
   },
   {
-    "startDateTime": "2025-03-12T23:05:01Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-03-12T23:05:10.593Z",
-    "title": "Reminder: \"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in March 2026",
-    "id": "MC1029989",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "\"Require approved client app\" control in Microsoft Entra Conditional Access will be retired in March 2026. Organizations should update their policies to use the \"Require application protection policy\" grant control. For more information, visit the provided link."
-      },
-      {
-        "name": "ExternalLink",
-        "value": "http://aka.ms/RetireApprovedClientApp"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>As mentioned in MC540749, in March 2026, Microsoft Entra ID (formerly known as Azure Active Directory) and Microsoft Intune will retire the Conditional Access “Require approved client app” grant control. Instead we recommend utilizing the \"Require application protection policy\" grant control, which provides the same data loss and protection with additional benefits.</p><p>[How this will affect your organization:]</p><p>If you have a Conditional Access policy with \"Require approved client app\" grant control configured, after this change, you will no longer be able to enforce this control, it will be as if this grant is not selected.</p><p>[What you need to do to prepare:]</p><p>We recommend updating your Conditional Access policy to using the \"Require application protection policy\" grant control. For more information, see <a href=\"https://learn.microsoft.com/azure/active-directory/conditional-access/migrate-approved-client-app\" target=\"_blank\">Migrate approved client app to application protection policy in Conditional Access</a>.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-03-12T23:15:14Z",
     "endDateTime": "2026-07-31T07:00:00Z",
     "lastModifiedDateTime": "2026-03-02T21:53:11.153Z",
@@ -585,38 +551,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Microsoft has identified an issue where audit logon/logoff events in the local policy of the Active Directory Group Policy might not show as enabled on the device even if they are enabled and working as expected. This can be observed in the Local Group Policy Editor or Local Security Policy, where local audit policies show the \"Audit logon events\" policy with security setting of \"No auditing\". An out-of-band (OOB) update has been released today, April 11, 2025, to address this issue.</div><div><br></div><div>Windows home users are unlikely to be affected by this issue, as logon auditing is generally only necessary in enterprise environments. This OOB update is a non-security release, and organizations that are not affected by this issue don’t need to install this update.</div><div><br></div><div>The OOB updates available only on the <a href=\"https://catalog.update.microsoft.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Update Catalog</a> for the Window versions affected by this issue. They are cumulative, so you do not need to apply any previous update before installing them, and they supersede all previous updates. If you haven’t deployed the April 2025 Windows security update yet and you utilize Active Directory Group Policy, we recommend you apply this OOB update instead for the Windows versions listed below:</div><div><br></div><ul><li>Windows 11, versions 23H2 and 22H2 (<a href=\"https://support.microsoft.com/help/5058919\" rel=\"noopener noreferrer\" target=\"_blank\">KB5058919</a>)</li><li>Windows Server 2022 (<a href=\"https://support.microsoft.com/help/5058920\" rel=\"noopener noreferrer\" target=\"_blank\">KB5058920</a>)</li><li>Windows 10 Enterprise LTSC 2019 and Windows Server 2019 (<a href=\"https://support.microsoft.com/help/5058922\" rel=\"noopener noreferrer\" target=\"_blank\">KB5058922</a>)</li><li>Windows 10 LTSB 2016 and Windows Server 2016 (<a href=\"https://support.microsoft.com/help/5058921\" rel=\"noopener noreferrer\" target=\"_blank\">KB5058921</a>)</li><li>Azure Stack HCI, version 22H2&nbsp;(<a href=\"https://support.microsoft.com/help/5058920\" rel=\"noopener noreferrer\" target=\"_blank\">KB5058920</a>) </li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-04-15T00:30:11Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-10-20T17:07:38Z",
-    "title": "(Updated) Microsoft SharePoint Online: We will remove retired DISCO and WSDL web pages",
-    "id": "MC1055555",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft SharePoint Online is removing retired ASP.NET DISCO and WSDL web pages by November 2025. These legacy endpoints, rarely used and outdated since 2013, should be replaced with Microsoft Graph for remote operations. Organizations should verify if these pages are in use internally."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated October 20, 2025: Removal of these pages have started in late October 2025 and will be fully completed by end of November 2025.</p><p>ASP.NET DISCO and WSDL pages were the web service APIs for customers who wanted to create a proxy for their web services. The retirement of ASP.NET web services was announced in 2013 and should not be used. <b>We encourage customers to move away from consuming these pages</b> and use <a href=\"https://learn.microsoft.com/graph/use-the-api\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Microsoft Graph</a> for remote operations where possible.</p><p>Please refer to the following information regarding the DISCO and WSDL endpoints\n</p><ul><li>These  endpoints were originally designed for use with development tools from the early 2000s and were never a preferred or widely adopted method for generating proxy classes in SharePoint development.\n</li><li>&nbsp;These endpoints are not tenant-specific and are not associated with any individual tenant’s configuration or ownership.\n</li><li>Usage across the SharePoint Online service is extremely rare. In fact, most of these endpoints show zero usage.\n</li><li>These endpoints were primarily used in legacy development scenarios and are not required for modern SharePoint development practices.</li><li> If your organization has an internal development team, we recommend consulting with them to confirm whether these endpoints are in use. However, it is extremely unlikely that they are being used in any current development workflows.</li></ul><p>Learn more: <a href=\"https://devblogs.microsoft.com/microsoft365dev/removal-of-deprecated-disco-wsdl-aspx-pages-from-sharepoint-online/\" target=\"_blank\">Removal of deprecated DISCO &amp; WSDL aspx pages from SharePoint Online - Microsoft 365 Developer Blog</a></p><p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>"
     }
   },
   {
@@ -1429,37 +1363,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Microsoft has identified a known issue affecting a small number of Windows 10 devices with&nbsp;Intel Trusted Execution Technology (TXT)&nbsp;enabled on&nbsp;10th generation or later Intel vPro processors. After installing the May 13, 2025, Windows security update (<a href=\"https://support.microsoft.com/topic/may-13-2025-kb5058379-os-builds-19044-5854-and-19045-5854-0a30e9ee-5038-45dd-a5d7-70a8813a5e39\" rel=\"noopener noreferrer\" target=\"_blank\">KB5058379</a>), these systems might experience unexpected termination of&nbsp;lsass.exe, which triggers&nbsp;Automatic Repair. On devices with&nbsp;BitLocker&nbsp;enabled, this results in a prompt for the&nbsp;BitLocker recovery key&nbsp;to proceed.</div><div><br></div><div>To address this issue, an&nbsp;out-of-band (OOB) update&nbsp;has been released today,&nbsp;May 19, 2025 (<a href=\"https://support.microsoft.com/topic/75b27cbd-072e-4c5a-b40e-87e00aaa42dd\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061768</a>). This update is available exclusively via the&nbsp;Microsoft Update Catalog&nbsp;and is cumulative—no previous updates are required before installing it. It supersedes all prior updates. The OOB update is available only for the Windows versions affected by issue: Windows 10, version 22H2, Windows 10 Enterprise LTSC 2021, and Windows 10 IoT Enterprise LTSC 2021.</div><div><br></div><div><b>Important:</b>&nbsp;Consumer devices running Home and Pro editions of Windows 10 are unlikely to be affected, as they typically do not use Intel vPro processors.</div><div><br></div><div>If you have not yet deployed the May 2025 Windows security update (<a href=\"https://support.microsoft.com/topic/may-13-2025-kb5058379-os-builds-19044-5854-and-19045-5854-0a30e9ee-5038-45dd-a5d7-70a8813a5e39\" rel=\"noopener noreferrer\" target=\"_blank\">KB5058379</a>) and your IT environment includes devices with the affected processors, we recommend applying this OOB update instead: <a href=\"https://support.microsoft.com/topic/75b27cbd-072e-4c5a-b40e-87e00aaa42dd\" rel=\"noopener noreferrer\" target=\"_blank\">May 19, 2025—KB5061768 (OS Builds 19044.5856 and 19045.5856) Out-of-band</a>. If your organization is not affected by this issue, you do not need to install this OOB update.</div>"
-    }
-  },
-  {
-    "startDateTime": "2025-05-19T23:43:22Z",
-    "endDateTime": "2026-03-31T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-23T17:49:04.747Z",
-    "title": "(Updated) Microsoft Defender for Cloud Apps: SIEM agents will retire",
-    "id": "MC1077861",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2025-06-18T07:00:00Z",
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Defender for Cloud Apps will retire SIEM agents, with no new agents configurable after June 19, 2025. The rollout is paused, and users are advised to transition to unified APIs and SIEM solutions for alerts and activity data to ensure continuity and enhanced capabilities."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated December 23, 2025: We have paused rollout of this feature. We will announce via Message center when we are ready to proceed. Thank you for your patience.&nbsp;</p><p>As part of our ongoing convergence process for all Microsoft Defender workloads, we planned to retire SIEM (Security Information and Event Management) agents from Microsoft Defender for Cloud Apps in late December 2025 (previously mid-November) and ending early January 2026 (previously late November 2025). We have puased this release and will communicate via Message center when we are ready to proceed. <br><br>We recommend you transition to APIs that support the management of activities and alerts data from multiple workloads.\n</p><p>[How this will affect your organization:]\n</p><p>Existing Microsoft Defender for Cloud Apps SIEM agents will function as is until the SIEM agents retire, but no new SIEM agents can be configured starting June 19, 2025. Microsoft Sentinel agents will remain supported and can still be added.</p><p>Defender for Cloud Apps alerts and activities data currently supported in the SIEM agents are also available in the unified API and SIEM solutions that provide access to alerts and activity data for all Microsoft security products, for cross-workload visibility:</p><ul><li>For alerts and activities, Defender XDR streaming API: <a href=\"https://learn.microsoft.com/defender-xdr/streaming-api\" target=\"_blank\">Stream Microsoft Defender XDR events - Microsoft Defender XDR | Microsoft Learn</a>\n</li><li>For Microsoft Entra ID Protection login events: <a href=\"https://learn.microsoft.com/defender-xdr/advanced-hunting-identitylogonevents-table\" target=\"_blank\">IdentityLogonEvents table in the advanced hunting schema - Microsoft Defender XDR | Microsoft Learn</a>\n</li><li>For alerts, Microsoft Graph security alerts API (v2): <a href=\"https://learn.microsoft.com/graph/api/security-list-alerts_v2?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\">List alerts_v2 - Microsoft Graph v1.0 | Microsoft Learn</a>\n</li><li>We also recommend viewing Defender for Cloud Apps alerts data in the Microsoft Defender XDR incidents API. Learn more: <a href=\"https://learn.microsoft.com/defender-xdr/api-incident\" target=\"_blank\">Microsoft Defender XDR incidents APIs and the incidents resource type - Microsoft Defender XDR | Microsoft Learn</a>\n</li></ul><p>These APIs enhance security monitoring and management and offer additional supported capabilities that utilize data from multiple Microsoft Defender workloads.</p><p>[What you need to do to prepare:]</p><p>To ensure continuity and access to the same data available before this retirement through Microsoft Defender for Cloud Apps SIEM agents, we recommend transitioning to the supported unified API and SIEM solutions. We encourage you to begin planning your migration to these solutions to take advantage of their enhanced capabilities. </p><p>Learn more: <a href=\"https://learn.microsoft.com/defender-cloud-apps/siem\" target=\"_blank\" style=\"font-family: sans-serif; font-weight: 400; background-color: rgb(255, 255, 255);\">Generic SIEM integration - Microsoft Defender for Cloud Apps | Microsoft Learn</a></p>"
     }
   },
   {
@@ -2563,45 +2466,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-15T00:00:02Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-28T17:07:20.013Z",
-    "title": "(Updated) Microsoft Copilot in Teams: Visual Insight for intelligent recap",
-    "id": "MC1115314",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "490052"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Copilot in Teams will soon provide intelligent meeting recaps that include shared-screen content for richer summaries. The rollout starts February 2026 on Desktop and Web, with Mobile following later. This feature requires a Microsoft 365 Copilot license and will be enabled by default without admin action."
-      },
-      {
-        "name": "Platforms",
-        "value": "Android, Desktop, iOS, Mac, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 28, 2026: Note: The February rollout will begin with the Desktop and Web platforms. The Mobile rollout will start later. We will update the timelines when they are available.</p><p>Coming soon for Microsoft Copilot in Teams: Intelligent meeting recap will be able to incorporate content shared on screen into the AI-based summary provided after the meeting, providing a richer and more comprehensive recap of the meeting. Intelligent meeting recap will capture details shown when a participant shares their screen, ensuring those unspoken insights become part of the meeting recap.</p><p>This message applies to Teams for Windows desktop, Teams for Mac desktop, Teams for the web, and Teams for iOS/Android.\n</p><p>This feature requires a Microsoft 365 Copilot license.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=490052\" target=\"_blank\">490052</a>.\n</p><p>[When this will happen:]\n</p><p>Targeted Release: Rollout begins in early February 2026 and completes by mid-February 2026.</p><p>General Availability (Worldwide): Rollout begins in mid-February 2026 and completes by late February 2026.&nbsp;</p><p>[How this will affect your organization:]\n</p><p>Copilot users will receive intelligent recap summaries that incorporate shared-screen content, preserving every detail and its context.\n</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/7bde06de-1fbc-4dec-971d-9a7a4f69c049/47b855a67fcd2be2462653425593013589afff90.png\" style=\"width: 50%;\"><br></p><p>This feature will be available by default with no admin controls.\n</p><p>[What you need to do to prepare:]\n</p><p>This rollout will happen automatically by the specified dates with no admin action required before the rollout. Review your current configuration to assess the impact on your organization. You may want to notify your users about this change and update any relevant documentation.\n</p><p>Learn more: <a href=\"https://learn.microsoft.com/microsoftteams/intelligent-recap-calls-meetings\" target=\"_blank\">Intelligent recap for Teams calls, meetings, and events - Microsoft Teams | Microsoft Learn</a> (will be updated before rollout)</p><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-07-15T17:01:16.23Z",
     "endDateTime": "2026-07-15T17:01:16.183Z",
     "lastModifiedDateTime": "2025-07-15T17:01:17.103Z",
@@ -3165,38 +3029,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated March 2, 2025: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>We're introducing a new Account Manager experience in Outlook for Windows. This feature helps users better manage their Microsoft accounts by providing quick access to account details, displaying their profile picture, and enabling account switching (if permitted by your organization). This update aligns the experience with classic Outlook and enhances user productivity.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=497546\" target=\"_blank\">497546</a></p><p>\n</p><p><b>When this will happen:</b></p><p>General Availability (Worldwide): Rollout will begin in mid-March 2026 (previously early March) and is expected to complete by late March 2026 (previously late January).<br>Targeted Release: Rollout will begin in early February 2026 (previously early December 2025) and is expected to complete by late February 2026 (previously late December 2025).</p><p>\n</p><p><b>How this affects your organization:</b></p><p>Once the rollout is complete, users will see the new Account Manager in the title bar of Outlook for Windows. Key capabilities include:\n</p><ul><li>Displaying the user’s profile picture, automatically synced from their Microsoft account.\n</li><li>Providing access to the Microsoft account page, consistent with the experience in classic Outlook.\n</li><li>Allowing users to add and manage accounts, if permitted by your organization’s policies.\n</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/247488ea-bdb2-41a1-8d3f-dcfa09277cc7/9164161523e2b6d45434c6b5f72210e3161d45b6.png\" width=\"300\" height=\"\"></p><p>This feature is on by default and does not require admin configuration.\n</p><p><b>What you can do to prepare:</b></p><p>No admin action is required. You may wish to inform your helpdesk and users about the new experience to reduce potential confusion.</p><p><b>Compliance considerations:</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-08-05T23:18:10Z",
-    "endDateTime": "2026-03-31T08:00:00Z",
-    "lastModifiedDateTime": "2026-02-11T17:32:30.33Z",
-    "title": "(Updated) Remove toggle for Calendar in Teams",
-    "id": "MC1129730",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The new Microsoft Teams calendar experience will replace the legacy calendar, removing the toggle to switch between them. Deployment is set worldwide from mid-January to late February 2026, excluding GCC, GCCH, DoD, USSec, and USNat for now. No admin action is needed; inform users accordingly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated February 11, 2026: We have updated the timeline. After further review, we will not be rolling this out to GCC, GCCH, DoD, USSec, USNat during the timeline outlined below. We will communicate via Message center in dedicated posts when we are ready to proceed. Thank you for your patience.</p><p>We’re introducing the new Microsoft Teams calendar experience, designed to unify and enhance productivity across Microsoft 365. This calendar integrates familiar features with innovations like Microsoft Copilot and Microsoft Places, enabling seamless collaboration from anywhere. It works consistently across Teams, the new Outlook for Windows, Outlook on the web, and Places. As part of this update, the legacy calendar experience will be deprecated, and the toggle to switch between old and new calendars will be removed.</p>\n<p><b>When this will happen</b></p><ul>\n<li><b>General Availability (Worldwide):</b>&nbsp;Mid-January 2026 to late February 2026 (previously end of January)</li>\n</ul>\n\n<b>How this affects your organization</b><p></p><p>\n</p><p>Once this update is deployed, users accessing the Calendar app in Microsoft Teams will see the new calendar experience by default. The toggle to switch between the old and new calendar will be removed, and only the new Microsoft 365 calendar will be available. This change may impact users accustomed to the legacy calendar interface.</p>\n\n<b>What you can do to prepare</b><p></p><p>\n</p><p>No admin action is required. We recommend informing your users about the upcoming change and updating any internal documentation or training materials that reference the legacy calendar experience.</p>\n<p>For more information about the new calendar experience, visit the <a href=\"https://learn.microsoft.com/microsoftteams/teams-calendar-overview\">Microsoft Teams documentation</a>.</p><p><b>Compliance considerations</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>\n<p></p>"
     }
   },
   {
@@ -4203,47 +4035,6 @@
     }
   },
   {
-    "startDateTime": "2025-09-03T23:25:30Z",
-    "endDateTime": "2026-03-31T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-17T16:54:43.853Z",
-    "title": "(Updated) Microsoft Teams: AI workflows powered by Microsoft 365 Copilot",
-    "id": "MC1147389",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams",
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "500379"
-      },
-      {
-        "name": "Summary",
-        "value": "AI Workflows in the Teams Workflows app use Microsoft 365 Copilot to automate tasks via scheduled prompts and templates, available to licensed users. Rolling out late 2025 to early 2026, the feature is off by default and requires enabling the Workflows app in Teams. Admin controls allow disabling it."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop, Mac"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated October 17, 2025: We have updated the rollout timeline below. Thank you for your patience.</p><p><b>Introduction</b></p><p>AI Workflows in the<i> Workflows app for Microsoft Teams</i> provide users with intelligent automation templates powered by Microsoft 365 Copilot. These workflows are powered by scheduled Copilot prompts through predefined templates for easier setup, helping users automate complex tasks and streamline daily operations. Admins can enable this feature by allowing access to the Workflows app in <i>Teams</i>.</p><p>This feature is available only to users with a Microsoft 365 Copilot license.</p><p>This message applies to Teams for Web and Mac.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=500379\" target=\"_blank\">500379</a>.</p><p><b>When this will happen</b></p><p><b>Targeted Release: </b>Rolling out late September 2025; expected completion by early October 2025.</p><p><b>General Availability (Worldwide): </b>Rolling out late January 2026 (previously mid-October); expected completion by mid-February 2026 (previously late October).</p><p><b>How this affects your organization</b></p><p>Users with a Microsoft 365 Copilot license and access to the Workflows app in <i>Teams</i> will see new workflow templates powered by scheduled Copilot prompts. These templates simplify setup and enhance productivity through intelligent automation.</p><p><i><b>Screenshot 1 </b>- Workflow setup experience showing Copilot-powered workflow:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/b13b7753-1b03-4795-819d-607fad65cf5e/ad7d58e1d1a6b09f4fb27bbb0e47e0083c0ab18b.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i><b>Screenshot 2 </b>- Examples AI workflow templates on the homepage of the new Workflows app in Teams:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/35941ce9-b9b9-4571-810f-e3ca7c6409a0/b41bf391078411dc80fda4912491ca3bf78b2bad.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p>This feature is <b>off by default</b> unless the Workflows app is enabled.</p><p><b>What you can do to prepare</b></p><p>To enable this feature for your users:</p><ol><li>Familiarize yourself with <a href=\"https://learn.microsoft.com/copilot/microsoft-365/scheduled-prompts\" target=\"_blank\">Copilot scheduled prompts</a>.</li><li>Enable the Workflows app in <i>Microsoft Teams</i>.</li></ol><p>If you prefer to disable this feature, use <a href=\"https://config.office.com/officeSettings/officePolicies\" target=\"_blank\">Cloud Policy</a> to set the <b>“Allow the use of additional optional connected experiences in Office”</b> policy to <b>Disabled</b>. This will also disable scheduled prompts in Microsoft 365 Copilot. For more information, see <a href=\"https://learn.microsoft.com/microsoft-365-apps/privacy/optional-connected-experiences#admin-controls-for-optional-connected-experiences\" target=\"_blank\">Admin controls for optional connected experiences</a>. If the Workflows app in <i>Microsoft Teams</i> is available to users, then this will disable AI Workflows powered by Copilot for those users.&nbsp;</p><p>Learn more:&nbsp;</p><ul><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/scheduled-prompts\" target=\"_blank\">Manage scheduled prompts for Microsoft 365 Copilot | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/microsoft-365-apps/privacy/optional-connected-experiences\" target=\"_blank\">Overview of optional connected experiences in Office | Microsoft 365 | Microsoft Learn</a></li></ul><p><b>Compliance considerations</b></p><table class=\"table table-bordered\"><tbody><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. This change introduces scheduled Copilot prompts that interact with user data to automate workflows in Microsoft Teams.</td></tr><tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes. Users can interact with Microsoft 365 Copilot through predefined workflow templates in the Workflows app in Teams.</td></tr></tbody></table>"
-    }
-  },
-  {
     "startDateTime": "2025-09-05T22:01:28Z",
     "endDateTime": "2026-10-30T07:00:00Z",
     "lastModifiedDateTime": "2025-09-05T22:01:57.043Z",
@@ -4423,36 +4214,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Important hardening changes are here. Starting with the September 2025 security update, WSUS running on Windows Server 2025 is removing dependencies on old code that’s no longer supported. This means that Windows operating systems (OS) that reached the end of their lifecycle will no longer qualify to receive extended security updates (ESU), unless you take additional action. Short-term and long-term next steps are available for Windows Server 2012 and Windows Server 2012 R2 that still need to receive ESUs.&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>September 9, 2025&nbsp;</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>Removing certain binaries from WSUS helps ensure the integrity and security of our software supply chain. This specifically applies to dependencies on components that no longer meet our compliance and security standards.&nbsp;</div><div>&nbsp;</div><div>The security benefit of removing these binaries from Windows Server 2025 comes with a potential change for you if you’re using ESU updates for Windows Server 2012. You’ll need to take additional action to resume servicing to these devices.&nbsp;</div><div>&nbsp;</div><div><b>Important</b>: If WSUS is part of a <a href=\"https://learn.microsoft.com/de-de/security-updates/windowsupdateservices/18127542\" rel=\"noopener noreferrer\" target=\"_blank\">hierarchical deployment</a> (such as connected downstream and upstream servers), there is no impact to your environment. Synchronization and update distribution will continue to function as expected.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>Consider the following temporary steps to restore service for ESU updates on Windows Server 2012:&nbsp;</div><ol><li>Choose an older supported version of WSUS. For example, Windows Server 2025 on the August 2025 security update or earlier, or Windows Server 2022.&nbsp;</li><li>Locate the “SelfUpdate” folder on this version of WSUS at <b>%systemdrive%\\Program Files\\Update Services</b>.&nbsp;</li><li>Copy the \"SelfUpdate\" folder and its contents from the chosen older version of WSUS.&nbsp;</li><li>Place it under the WSUS install path on Windows Server 2025 updated with the security update released in or after September 2025.&nbsp;</li><li>Add this folder as virtual directory under WSUS website in Internet Information Services (IIS).&nbsp;</li></ol><div><br></div><div>After completing these steps, service will resume. To be secure in the longer term, we recommend upgrading the legacy OS versions and upgrading to Windows Server 2025.&nbsp;</div><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><ul><li>Read the official information in <a href=\"https://support.microsoft.com/topic/hardening-changes-for-windows-server-update-services-in-windows-server-2025-170eba05-0532-4793-a9c7-0857a62df52f\" rel=\"noopener noreferrer\" target=\"_blank\">Hardening changes for Windows Server Update Services in Windows Server 2025</a>.&nbsp;</li><li>Consult the <a href=\"https://learn.microsoft.com/lifecycle/products/?terms=windows\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Lifecycle Policy search tool</a> and <a href=\"https://learn.microsoft.com/lifecycle/faq/windows#windows-8-1\" rel=\"noopener noreferrer\" target=\"_blank\">Lifecycle FAQ - Windows</a> for your Windows versions.&nbsp;&nbsp;</li><li>Read <a href=\"https://learn.microsoft.com/de-de/security-updates/windowsupdateservices/18127542\" rel=\"noopener noreferrer\" target=\"_blank\">Set Up a Hierarchy of WSUS Servers</a> for a scenario that’s not impacted.&nbsp;</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-09-09T23:10:04Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-09-09T23:10:12.737Z",
-    "title": "Action Required: Update firewall configurations to include new network endpoints",
-    "id": "MC1150664",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": "2025-12-01T08:00:00Z",
-    "services": [
-      "Basic Mobility and Security"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "By December 2, 2025, update firewall allowlists to include Azure Front Door IP addresses or the service tag \"AzureFrontDoor.MicrosoftSecurity\" for Microsoft Intune and Basic Mobility and Security for Microsoft 365. Do not remove existing endpoints; add new ranges from the provided Azure IP range files."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>As part of Microsoft’s ongoing <a href=\"https://www.microsoft.com/trust-center/security/secure-future-initiative\" target=\"_blank\">Secure Future Initiative (SFI)</a>, starting on or shortly after <b>December&nbsp;2, 2025</b>,&nbsp;the network service endpoints for Microsoft Intune  will also use the Azure Front Door IP addresses. Since <b>Basic Mobility and Security for Microsoft 365</b>&nbsp;uses Intune infrastructure, customers may need to add Azure Front Door IP addresses, if using a firewall allowlist that allows outbound traffic based on IP addresses or Azure service tags.</p><p>Do not remove any existing network endpoints required for Basic Mobility and Security for Microsoft 365. Additional network endpoints are documented as part of the Azure Front Door and service tags information referenced in the files linked below:</p><ul><li>Public clouds: <a href=\"https://www.microsoft.com/download/details.aspx?id=56519\" target=\"_blank\">Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center</a>&nbsp;</li><li>Government clouds: <a href=\"https://www.microsoft.com/download/details.aspx?id=57063\" target=\"_blank\">Download Azure IP Ranges and Service Tags – US Government Cloud from Official Microsoft Download Center</a>&nbsp;</li></ul><p>The additional ranges are those listed in the JSON files linked above and can be found by searching for “AzureFrontDoor.MicrosoftSecurity”.</p><p>[How this will affect your organization:]\n</p><p>If you have configured an outbound traffic policy for IP address ranges or Azure service tags for your firewalls, routers, proxy servers, client-based firewalls, VPN or network security groups, you will need to update them to include the new Azure Front Door ranges with the “AzureFrontDoor.MicrosoftSecurity” tag.&nbsp;</p><p>[What you need to do to prepare:]\n</p><p>Ensure that your firewall rules are updated and added to your firewall’s allowlist with the additional IP addresses documented under Azure Front Door by <b>December 2, 2025</b>.&nbsp;</p><p>Alternatively, you may add the service tag “AzureFrontDoor.MicrosoftSecurity” to your firewall rules to allow outbound traffic on port 443 for the addresses in the tag.&nbsp;</p><p>If you are not the IT admin who can make this change, notify your networking team. If you are responsible for configuring internet traffic, refer to the following documentation for more details:</p><ul><li><a href=\"https://learn.microsoft.com/azure/frontdoor/origin-security?tabs=app-service-functions&amp;pivots=front-door-classic\" target=\"_blank\">Azure Front Door</a></li><li><a href=\"https://learn.microsoft.com/azure/virtual-network/service-tags-overview\" target=\"_blank\">Azure service tags</a></li></ul><p>If you have a helpdesk, inform them about this upcoming change. If you need additional assistance, contact <a href=\"https://learn.microsoft.com/microsoft-365/admin/get-help-support?view=o365-worldwide\" target=\"_blank\">Microsoft Support</a> and refer to this message center post.</p>"
     }
   },
   {
@@ -4873,38 +4634,6 @@
     "body": {
       "contentType": "html",
       "content": "Updated October 22, 2025: We have updated the content below. Thank you for your patience.&nbsp;<br><br><b>[Introduction]</b>\n<p>We’re introducing Knowledge Agent, a built-in SharePoint capability that helps organizations prepare content for AI at scale. It unifies fragmented AI features into a single, context-aware interface that adapts to user roles and surfaces intelligent actions directly in the flow of work. This enhancement supports high-quality, trustworthy responses from Microsoft 365 Copilot and custom agents.</p>\n\n<b>[When this will happen:]</b>\n<ul>\n<li><b>Public Preview (Worldwide):</b> Begins mid-September 2025; completes by late February 2026.</li>\n</ul><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b></p>\n<ul>\n<li>Users with a Microsoft 365 Copilot license on tenants opted into Knowledge Agent preview.</li>\n<li>Admins managing SharePoint content and agents.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>A floating button will appear in the lower-right corner of SharePoint surfaces, launching a context-aware menu with intelligent actions.</li>\n<li>Role-based capabilities include:\n  <ul>\n    <li>Content managers can structure, tag, and enrich content using smart metadata and AI recommendations.</li>\n    <li>Site owners can identify stale pages, broken links, and content gaps.</li>\n    <li>Content creators can generate pages and documents using natural language prompts.</li>\n    <li>Collaborators and viewers can surface grounded insights via natural language chat.</li>\n  </ul>\n</li>\n</ul>\n\n<p><b>Impact to SharePoint agents users:</b></p>\n<ul>\n<li>Ready-made SharePoint site agents are now exclusively available to customers with Microsoft 365 Copilot licenses. These agents are no longer accessible through the Microsoft 365 Pay-As-You-Go (PAYG) billing model under the SharePoint agents meter.</li>\n<li>PAYG customers can still create custom-built, no-code SharePoint agents using the same SharePoint agents meter, but they will not have access to the ready-made site agents unless they are Microsoft 365 Copilot licensed.</li>\n<li>The SharePoint ribbon icon has changed from the Copilot logo to a hexagon to indicate Knowledge Agent-enabled sites.</li>\n<li>Agent creation remains available via:\n  <ul>\n    <li>Site homepage</li>\n    <li>Agent chat pane</li>\n    <li><i>AI actions</i>&nbsp;menu in the command bar of a document library</li>\n    <li>Content menu of selected file(s) in a document library</li>\n  </ul>\n</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>Knowledge Agent Public Preview begins September 18, 2025 on a tenant opt-in basis&nbsp;to users with a Microsoft 365 Copilot license.</li>\n<li>Learn more about opting into the preview:&nbsp;<a href=\"https://learn.microsoft.com/sharepoint/knowledge-agent-get-started\">Get started with Knowledge Agent (preview)</a>. If you receive&nbsp;a command not recognized&nbsp;error running the commands , please review <a href=\"https://learn.microsoft.com/troubleshoot/sharepoint/administration/sharepoint-online-powershell-command-does-not-work-correctly\">this article</a>&nbsp;for additional troubleshooting.</li><li>For tenants who have opted in, it is possible to opt out for specific sites.The ability to opt-in for certain types is coming in mid-to-late November.</li><a href=\"https://aka.ms/knowledgeagentoptin\">\n</a><li>No setup is required for individual features.</li>\n<li>Learn more via the <a href=\"http://aka.ms/KnowledgeAgentLaunch\">Knowledge Agent blog</a>.</li></ul><a href=\"https://aka.ms/knowledgeagentblog\"></a>\n\n<b>[Compliance considerations:]</b>\n<table border=\"1\" cellpadding=\"5\" cellspacing=\"0\">\n<tbody><tr><th>Consideration</th><th>Explanation</th></tr>\n<tr><td>Introduces or modifies AI/ML capabilities</td><td>Knowledge Agent introduces new AI-driven features that interact with customer content to provide intelligent actions and insights.</td></tr>\n<tr><td>Provides new user interaction with generative AI</td><td>Users can interact with SharePoint content using natural language prompts and chat.</td></tr>\n<tr><td>Modifies access to existing features</td><td>Changes availability of ready-made SharePoint agents based on licensing.</td></tr>\n<tr><td>Includes admin control</td><td>Admins can opt in/out of preview and manage site-level availability.</td></tr>\n</tbody></table>"
-    }
-  },
-  {
-    "startDateTime": "2025-09-18T23:50:20Z",
-    "endDateTime": "2026-03-31T08:00:00Z",
-    "lastModifiedDateTime": "2025-10-29T17:07:11.66Z",
-    "title": "(Updated) Microsoft Defender for Identity: New recommendations added to Microsoft Secure Score",
-    "id": "MC1155429",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Secure Score will add new improvement actions based on Microsoft Defender for Identity recommendations for PingOne, rolling out from November 2025 to February 2026. These default-enabled actions target PingOne privileged account security, requiring no admin changes but encouraging review and monitoring by organizations with PingOne connectors."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated October 29, 2025: We have updated the timeline. Thank you for your patience.</p><p>[Introduction:]</p><p>We’re enhancing Microsoft Secure Score by introducing new improvement actions based on Microsoft Defender for Identity posture recommendations for PingOne. These updates provide a more accurate reflection of your organization’s identity security posture and help strengthen your overall security configuration.</p><p>[When this will happen:]</p><ul><li>Public Preview: Rollout begins in late November 2025 (previously late October) and completes by mid-December 2025 (previously mid-November).</li><li>General Availability (Worldwide, GCC, GCC High, and DoD): Rollout begins in late January 2026 (previously late November 2025) and completes by late February 2026 (previously mid-December 2025).</li></ul><p>[How this affects your organization:]</p><p>Who is affected: Tenants with a PingOne connector configured for Microsoft Defender for Identity.</p><p>What will happen:</p><p>New posture recommendations will appear in <i>Microsoft Secure Score</i> as improvement actions:</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/96b77189-0b55-41fa-9754-7b6949595fdf/0a89be155db746aa06931f2c4c771ac7d06ec939.png\" style=\"width: 400px;\" alt=\"user settings\"></p><ul><li>Limit the number of PingOne accounts with organization admin role</li><li>Assign multi-factor authentication for PingOne privileged user accounts: <p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/8c587983-6275-4514-bc02-f9ea6141f028/e0c86d3639106eda058b39e358889044819d594f.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Change password for PingOne privileged user accounts</li><li>Remove stale PingOne privileged accounts</li><li>High number of PingOne accounts with a privileged role assigned</li></ul><p>These recommendations are enabled by default and require no configuration changes.</p><p>[What you can do to prepare:]</p><ul><li>No admin action is required before or after rollout.</li><li>Review your current identity configuration to assess potential impact.</li><li>Notify relevant administrators and update internal documentation as needed.</li><li>Regularly review Microsoft Secure Score to monitor and act on new improvement suggestions.</li></ul><p>[Compliance considerations:]</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -5365,37 +5094,6 @@
     }
   },
   {
-    "startDateTime": "2025-10-01T22:32:08Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-10-01T22:32:15.713Z",
-    "title": "Enhancements to the Deep Analysis tab of Email Entity page by Microsoft Defender for Office 365",
-    "id": "MC1163754",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Defender for Office 365 will enhance the Deep Analysis tab on the Email Entity page with a refreshed UI, improved detonation chains, expanded metadata, and detailed behavior insights. Rollout starts October 2025 (preview) and November 2025 (general availability). No user action or compliance impact expected."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We’re excited to share recent enhancements to the <b>Deep Analysis tab</b> on the Email Entity page in <i>Microsoft Defender for Office 365</i>. These updates are designed to provide deeper insights and a more intuitive experience when investigating threats.</p><p></p><p>\n</p><p><b>When this will happen:</b></p><p>Public Preview: We will begin rolling out early Oct 2025 and expect to complete by late Oct 2025.</p><p>General Availability (Worldwide): We will begin rolling out early Nov 2025 and expect to complete by mid-Nov 2025.</p><p></p><p><b>How this will affect your organization:</b></p><p>There will not be any impact on the security investigation and hunting workflow. Post rollout, security teams will have deeper insights from the detonation outcomes to help them make more informed decisions. The enhancements will provide:</p><ul><li>A refreshed and streamlined user interface</li><li>Improved detonation chain with nested entity details for better threat visibility</li><li>Expanded URL and file metadata for better context</li><li>More detailed and exportable behavior insights</li></ul><p>These improvements are designed to empower your security teams with richer, more actionable data to accelerate investigations and response.</p><p><b>URL detonation details:</b></p><p><i>Screenshot URL 1:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/9c91726b-bd4c-42b6-b0ca-4de6623b3b4b/c418b20638b99da9f3f4ae489f51756db14ae2d4.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot URL 2:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/f83cc9cf-e159-4762-a184-d513415de653/f0a815b30199a986be62b643c5604985c17e420e.png\" style=\"width: 400px;\" alt=\"user settings\"><i></i></p><p><i>Screenshot URL 3:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/af403dc5-e671-41b5-9f81-3471ebc47756/282cfce1223a6cb716eb3a343c8377e0ccd250ef.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p></p><p><b>File detonation details:</b></p><p><i>Screenshot File 1:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/de8cf7ec-fb05-48d5-87ff-e606d1ff3fa3/d2be89329982bba1dae51764d632c5cfb26467e9.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot File 2:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/86c701c8-a8cf-420f-b946-64c20efb22dd/1a56a4a28c0d6101e5e1c9adba799de8c0b1b3b6.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot File 3:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ac815947-196d-4996-8494-3a44c8046fa5/4ef7dd164c11fe79b722e56f4ac33045a67566c7.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p></p><p><b>What you need to do to prepare:</b></p><p>No action items needed from users or admin.</p>\n<p></p><p></p><p><b>Compliance considerations:</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-10-01T22:38:12Z",
     "endDateTime": "2026-05-29T08:00:00Z",
     "lastModifiedDateTime": "2026-03-20T16:48:55.237Z",
@@ -5625,39 +5323,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>If you are an IT admin with questions about managing and updating Windows, we want to help. Every third Thursday of the month, we host a live chat-based event on the Tech Community called Windows Office Hours. Members of the Windows, Microsoft&nbsp;Intune, Windows Autopilot, Windows Autopatch, and Windows 365 engineering teams will be standing by to answer your questions. We also have experts from FastTrack, the Customer Acceleration Team, and Microsoft public sector teams.&nbsp;</div><div><br></div><div>Want to attend the October 16 session of Office Hours?&nbsp;<a href=\"https://techcommunity.microsoft.com/t5/s/gxcuf89792/attachments/gxcuf89792/WindowsEvents/6057/1/Windows-Office-Hours-October-16-2025.ics\" rel=\"noopener noreferrer\" target=\"_blank\">Add it to your calendar</a> and select Attend on the <a href=\"https://techcommunity.microsoft.com/event/windowsevents/windows-office-hours-october-16-2025/4426492\" rel=\"noopener noreferrer\" target=\"_blank\">event page</a> to let us know you’re coming.&nbsp;There is no video or live meeting component. Simply visit the event page, log in to the Tech Community, and leave your questions in the Comments section. You can also bookmark&nbsp;<a href=\"https://aka.ms/Windows/OfficeHours\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/Windows/OfficeHours</a>&nbsp;for upcoming dates (and the ability to add this event to your calendar). We look forward to helping you.</div>"
-    }
-  },
-  {
-    "startDateTime": "2025-10-09T23:25:04Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-10-09T23:25:39.69Z",
-    "title": "Microsoft Loop: Copilot experience upgrade",
-    "id": "MC1169068",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 apps",
-      "Microsoft Copilot (Microsoft 365)",
-      "Microsoft 365 Copilot Chat"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Loop is upgrading its Copilot experience to align with Microsoft 365 Copilot Pages, temporarily removing older integrations starting September 9, 2025. The update will provide consistent, improved Copilot features across chat and pages. Users should update training materials accordingly; no compliance changes are expected."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b><br>\nWe’re upgrading the Copilot experience in <i>Microsoft Loop</i> to align with Microsoft 365 Copilot Pages. In the interim, some of the Copilot integrations will be temporarily removed. Once fully completed, this update replaces older Copilot integrations with a consistent, high-quality model—reducing user confusion and improving reliability across chat and page contexts.</p>\n\n<p><b>[When this will happen:]</b><br>\n</p><ul>\n<li>Temporary removal of older Copilot integrations: Rolled out on September 9, 2025.</li>\n<li>Upgraded experience: Currently in development. More details will be shared in a future post.</li>\n</ul><p></p>\n\n<p><b>[How this affects your organization:]</b><br>\n<b>Who is affected:</b> All Microsoft 365 tenants using Microsoft Loop.<br>\n<b>What will happen:</b>\n</p><ul>\n<li>Older Copilot integrations will be removed from Loop.</li>\n<li>Users will see a consistent set of Copilot entry points that match the Microsoft 365 Copilot Pages experience.</li>\n<li>Prompts will return results consistent with Microsoft 365 Copilot Pages.</li>\n<li>During the transition, users can still access Copilot via the chat button or create a Recap on a page, using older integrations.</li>\n<li>Once the upgrade is complete, Copilot Shortcuts, Ask Copilot in the context menu, improved chat performance, and updated model capabilities will be restored.</li>\n</ul><p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>Remove references in training materials to:<ul><li>Slash menu commands like <b>Draft page content</b> or <b>Summarize page</b></li><li>Ask Copilot context menu</li><li>Copilot integration during page creation</li></ul></li><li>Update documentation to reflect that:<ul><ul></ul><li>Page creation and summarization will be fully integrated into the Copilot chat experience.</li><li>Users will be able to interact with Copilot on selected content using Ask Copilot context menu when functionality is restored.</li></ul></li></ul><p></p>\n\n<p><b>[Compliance considerations:]</b><br>No compliance considerations identified, all <a href=\"https://learn.microsoft.com/microsoft-365/loop/cpcn-compliance-summary?view=o365-worldwide\" target=\"_blank\">compliance capabilities</a> will be the same as the <a href=\"https://support.microsoft.com/topic/get-started-with-microsoft-365-copilot-pages-6674bd51-9ff5-42c4-9256-44d9428a726f\" target=\"_blank\">Microsoft 365 Copilot Pages experience</a>.&nbsp;</p><p>&nbsp;</p>"
     }
   },
   {
@@ -7042,47 +6707,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-04T00:52:02Z",
-    "endDateTime": "2026-03-31T08:00:00Z",
-    "lastModifiedDateTime": "2025-12-12T23:00:29.933Z",
-    "title": "(Updated) New Copilot button in file previewer for OneDrive and SharePoint",
-    "id": "MC1182707",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online",
-      "Microsoft OneDrive",
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "513432"
-      },
-      {
-        "name": "Summary",
-        "value": "A new Copilot button will appear in the bottom-right corner of the OneDrive and SharePoint file previewer, replacing the command bar button. It provides access to Copilot chat and contextual prompts for paid Copilot license users. Rollout begins mid-November 2025, excluding GCC, GCCH, and DoD customers."
-      },
-      {
-        "name": "Platforms",
-        "value": "Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated December 12, 2025: We have updated the timeline. We will not be rolling out this feature to GCC, GCCH and DoD customers at this time. We apologize for the inconvenience.&nbsp;</p><p><b>[Introduction]</b></p><p></p><p>We've added a new <i>Copilot button</i> that gives users a quick and visible entry point to Copilot directly within the <i>file previewer</i> in OneDrive and SharePoint. This button appears near the bottom-right corner of the file previewer (instead of in the <i>command bar</i>) and surfaces contextual prompts for Copilot-supported file types. It also provides access to the <i>Copilot chat</i>. This feature will be available to users with a paid Copilot license</p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=513432\" target=\"_blank\">513432</a>.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): We will begin rolling out mid-November 2025 and expect to complete by end of February 2026 (previously December 2025).</p>\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Users who preview files in OneDrive or SharePoint.</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n<li>A new<i> Copilot button</i> will appear in the bottom-right corner of the file previewer.</li><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/ead76838-1d4d-48b8-ac20-09ce4c56d9ce\" style=\"width: 400px;\" alt=\"user settings\">\n<li>This button provides access to <i>Copilot chat</i> and contextual prompts based on the file type.</li>\n<li>The previous <i>Copilot command</i> in the <i>command bar</i> will be removed.</li>\n<li>No changes to admin policies or settings are required.</li>\n<li>This feature is enabled for <b>users with the paid Copilot license add-on</b>.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required at this time.</li>\n<li>Communicate this change to helpdesk or support staff.</li>\n<li>Update internal documentation to reflect the new location of the <i>Copilot button</i>.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-11-04T00:53:13Z",
     "endDateTime": "2026-05-04T07:00:00Z",
     "lastModifiedDateTime": "2025-11-04T03:46:03.49Z",
@@ -7203,38 +6827,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Now that support for Windows 10 has officially ended, it is important that organizations with Windows 10 devices stay as protected as possible through the Windows 10 Extended Security Updates (ESU) program. <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/preparing-commercial-windows-10-devices-for-esus/4465689\" rel=\"noopener noreferrer\" target=\"_blank\">A new guide for Windows 10 ESU customers</a> is now available, offering details on how to find, activate, and verify licenses on devices and endpoints.</div><div>&nbsp;</div><div><b>When will this happen:</b></div><div>Windows 10 reached end of support on October 14, 2025. To continue receiving monthly security updates, Windows 10 devices need to be activated with Windows 10 Extended Security Updates (ESU) licenses before the November 2025 Windows&nbsp;security update.&nbsp;</div><div><br></div><div><b>What you need to do to prepare:</b></div><div><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/preparing-commercial-windows-10-devices-for-esus/4465689\" rel=\"noopener noreferrer\" target=\"_blank\">Follow the steps in the new guide</a> to locate MAK keys, activate ESU licenses on each applicable device, prepare devices used by people with Windows 365 Cloud PC and Azure Virtual Desktop licenses, and verify enrollment.</div><div>&nbsp;</div><div><b>Additional information:</b></div><div>For complete details on how to prepare your Windows 10 devices, see&nbsp;<a href=\"https://learn.microsoft.com/windows/whats-new/enable-extended-security-updates\" rel=\"noopener noreferrer\" target=\"_blank\">Enable Extended Security Updates</a>.</div>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-05T00:18:25Z",
-    "endDateTime": "2026-03-31T08:00:00Z",
-    "lastModifiedDateTime": "2026-02-18T17:33:40.95Z",
-    "title": "(Updated) Introducing simplified admin controls to manage external collaboration in Teams admin center",
-    "id": "MC1183006",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams is introducing a simplified external collaboration admin experience with three modes—Open, Controlled, and Custom—available in the Teams admin center. Public preview starts mid-November 2025, with general availability by late February 2026. Existing settings remain unless changed by admins."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated February 17, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>We’re introducing a simplified external collaboration (EC) admin experience in <i>Microsoft Teams</i> to help administrators manage external collaboration settings more efficiently. This update introduces two predefined collaboration modes—Open and Controlled—as well as a Custom mode for organizations with unique requirements. The new experience provides a streamlined interface in the <i>Teams admin center (TAC)</i> for configuring external collaboration policies across chats, calls, meetings, Teams, and channels (including shared channels).</p>\n\n<p><b>[When this will happen:]</b>\n</p><p><b>Public Preview:</b> Rolling out mid-November 2025; expected completion by mid-November 2025.\n</p><p><b>General Availability (Worldwide):</b> Rolling out late February 2026 (previously mid-February); expected completion by late February 2026 (previously early February).</p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:</b> Admins managing Microsoft Teams external collaboration settings.\n</p><p><b>What will happen:</b>\n</p><ul>\n<li>A new admin experience will be available in <i>Teams admin center (TAC)</i>.</li>\n<li>Admins can choose from three collaboration modes:</li>\n<ul>\n<li><b>Open (Mode 1):</b>\n<ul>\n<li>Enables chats, calls, and meetings with all external domains and Teams personal accounts using federation or external access.</li>\n<li>Allows Teams and channels collaboration with Microsoft and non-Microsoft partners using B2B collaboration and B2B direct connect.</li>\n</ul>\n</li>\n<li><b>Controlled (Mode 2):</b>\n<ul>\n<li>Aligns with current defaults for enterprise and EDU tenants.</li>\n<li>Enables chats, calls, and meetings with all external domains using federation or external access.</li>\n<li>Blocks collaboration in shared channels.</li>\n</ul>\n</li>\n<li><b>Custom:</b>\n<ul>\n<li>Provides full control over each external collaboration setting.</li>\n<li>Allows manual configuration of org-wide external collaboration policies across chats, calls, meetings, Teams, and channels (including shared channels).</li>\n<li>Changes in Custom mode apply only to Global org-wide policies and settings; they do not affect custom policies.</li>\n</ul>\n</li>\n</ul>\n<li>Existing settings will remain unchanged unless modified by the admin.</li></ul><p><i>Screenshot 1 - A new external collab section and overview page that shows external collab settings at a glance:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/41fcff49-a0bd-43e1-b77a-7e07185fbbfb/3832511b91a7cbb2ce2f56a6061c69e7df62a90a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><ul>\n</ul>\n<p></p>\n\n<p><i>Screenshot 2: Manage external collab settings using a guided simple UX:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/fa8a9a5e-2300-4261-9290-dcbe745358d5/cd0133512c1c578e2201406d5e22460b7f1f10a7.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare:]</b>\n</p><p>No action is required at this time.\nAdmins may choose to explore the new interface once available to review and adjust external collaboration settings.\nFor more information, refer to the Teams admin center documentation once the update is live.</p>\n\n<p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -7411,36 +7003,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>A new resource is available to help you understand&nbsp;Known Issue Rollback (KIR).&nbsp;This well-established process automatically rolls back problematic code for a known issue in&nbsp;Windows&nbsp;non-security updates. This rollback applies automatically through Windows Update on non-IT-managed devices. IT-managed devices require a specific Group Policy configuration.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>KIR came together as a functionally complete system beginning in Windows 10, version 2004.&nbsp;Since then, most of the code changes in Windows monthly updates support KIR capability.&nbsp;</div><div>The new resource is&nbsp;now&nbsp;available to learn more about KIR.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>KIR is a robust mitigation technology built into Windows&nbsp;non-security&nbsp;updates to help you safeguard and troubleshoot individual parts of the update.&nbsp;Windows offers KIR capability on all supported versions of Windows Server and client platforms, beginning with Windows Server 2008 SP2.&nbsp;The next time a known issue is resolved via KIR,&nbsp;you’ll&nbsp;better understand&nbsp;the resolution.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>Download the&nbsp;Group Policy&nbsp;template&nbsp;from the Download Center&nbsp;and follow the steps in <a href=\"https://learn.microsoft.com/troubleshoot/windows-client/group-policy/use-group-policy-to-deploy-known-issue-rollback\" rel=\"noopener noreferrer\" target=\"_blank\">How to use Group Policy to deploy a Known Issue Rollback</a>.&nbsp;</div><div>&nbsp;</div><div>For domain-joined&nbsp;devices, the Group Policy refresh happens at certain regular intervals. To make sure that the Group Policy settings take effect, take one of the following actions:&nbsp;</div><ul><li>Wait for Group Policy to&nbsp;refresh in&nbsp;the background, then restart the affected devices.&nbsp;</li><li>To force a single device to update its Group Policy settings, open a Command Prompt window on the device, and then run gpupdate&nbsp;/force. After the command runs, restart the device.&nbsp;</li></ul><div><br></div><div><b>Additional&nbsp;information:</b>&nbsp;</div><div>Learn more about how KIR works, supported scenarios, policy templates, and more at&nbsp;<a href=\"https://learn.microsoft.com/troubleshoot/windows-server/installing-updates-features-roles/known-issue-rollback?context=%2Ftroubleshoot%2Fwindows-client%2Fcontext%2Fcontext\" rel=\"noopener noreferrer\" target=\"_blank\">Known Issue Rollback.</a>&nbsp;</div><div><br></div><div>Here's&nbsp;where you can look for known issues and KIR mitigations:&nbsp;</div><ul><li>Windows&nbsp;release&nbsp;notes on the Windows update history sites, such as the <a href=\"https://aka.ms/Windows11/25H2/UpdateHistory\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a>, <a href=\"https://support.microsoft.com/topic/windows-10-update-history-8127c2c6-6edf-4fdf-8b9f-0f7be1ef3562\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 10</a>, and <a href=\"https://support.microsoft.com/topic/windows-server-2025-update-history-10f58da7-e57b-4a9d-9c16-9f1dcd72d7d7\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Server</a> update history pages. Scroll down to the <b>Known issues in this update</b> section.&nbsp;</li><li><a href=\"https://learn.microsoft.com/windows/release-health/\" rel=\"noopener noreferrer\" target=\"_blank\">Windows release health</a> dashboard. This site provides links to all Windows release notes for currently supported Windows versions.&nbsp;</li><li>Windows release health section on the <a href=\"https://admin.microsoft.com/Adminportal/Home#/homepage\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft 365 admin center</a>. You can also sign up for <a href=\"https://learn.microsoft.com/windows/deployment/update/check-release-health\" rel=\"noopener noreferrer\" target=\"_blank\">Windows release health notifications</a>.&nbsp;</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-06T00:00:18Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-06T00:00:30.397Z",
-    "title": "Reminder: Update firewall configurations to include new network endpoints",
-    "id": "MC1183282",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": "2025-12-02T08:00:00Z",
-    "services": [
-      "Basic Mobility and Security"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "By December 2, 2025, update firewall allowlists to include Azure Front Door IP addresses tagged “AzureFrontDoor.MicrosoftSecurity” for Microsoft Intune and Basic Mobility and Security. Do not remove existing endpoints. Use the consolidated Intune endpoint list; previous scripts are outdated. Notify your networking team if needed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>As mentioned in MC1150664, as part of Microsoft’s ongoing <a href=\"https://www.microsoft.com/trust-center/security/secure-future-initiative\" target=\"_blank\">Secure Future Initiative (SFI)</a>, starting on or shortly after <b>December&nbsp;2, 2025</b>,&nbsp;the network service endpoints for Microsoft Intune will also use the Azure Front Door IP addresses. Since <b>Basic Mobility and Security for Microsoft 365</b>&nbsp;uses Intune infrastructure, customers may need to add Azure Front Door IP addresses, if using a firewall allowlist that allows outbound traffic based on IP addresses or Azure service tags.</p><p>Do not remove any existing network endpoints required for Basic Mobility and Security for Microsoft 365. Additional network endpoints are documented as part of the Azure Front Door and service tags information referenced in the files linked below:</p><ul><li>Public clouds: <a href=\"https://www.microsoft.com/download/details.aspx?id=56519\" target=\"_blank\">Download Azure IP Ranges and Service Tags – Public Cloud from Official Microsoft Download Center</a>&nbsp;</li><li>Government clouds: <a href=\"https://www.microsoft.com/download/details.aspx?id=57063\" target=\"_blank\">Download Azure IP Ranges and Service Tags – US Government Cloud from Official Microsoft Download Center</a>&nbsp;</li></ul><p>The additional ranges are those listed in the JSON files linked above and can be found by searching for “AzureFrontDoor.MicrosoftSecurity”.</p><p>[How this will affect your organization:]\n</p><p>If you have configured an outbound traffic policy for IP address ranges or Azure service tags for your firewalls, routers, proxy servers, client-based firewalls, VPN or network security groups, you will need to update them to include the new Azure Front Door ranges with the “AzureFrontDoor.MicrosoftSecurity” tag.&nbsp;</p><p><b>Note:</b> The previously available PowerShell scripts for retrieving Microsoft Intune endpoint IP addresses and FQDNs no longer returns accurate data from the Office 365 Endpoint service. Instead, use the <a href=\"https://learn.microsoft.com/intune/intune-service/fundamentals/intune-endpoints#consolidated-endpoint-list\" target=\"_blank\">consolidated list</a> provided in the Intune endpoints documentation. Using the original scripts or endpoint lists from the Office 365 Endpoint service is insufficient and may lead to incorrect configurations.</p><p>[What you need to do to prepare:]\n</p><p>Ensure that your firewall rules are updated and added to your firewall’s allowlist with the additional IP addresses documented under Azure Front Door by <b>December 2, 2025</b>.&nbsp;</p><p>Alternatively, you may add the service tag “AzureFrontDoor.MicrosoftSecurity” to your firewall rules to allow outbound traffic on port 443 for the addresses in the tag.&nbsp;</p><p>If you are not the IT admin who can make this change, notify your networking team. If you are responsible for configuring internet traffic, refer to the following documentation for more details:</p><ul><li><a href=\"https://learn.microsoft.com/azure/frontdoor/origin-security?tabs=app-service-functions&amp;pivots=front-door-classic\" target=\"_blank\">Azure Front Door</a></li><li><a href=\"https://learn.microsoft.com/azure/virtual-network/service-tags-overview\" target=\"_blank\">Azure service tags</a></li></ul><p>For network best practices, make sure to check out the blog: <a href=\"https://techcommunity.microsoft.com/blog/intunecustomersuccess/support-tip-aligning-network-policy-with-microsoft-intune-and-zero-trust/4466688\" target=\"_blank\">Support tip: Aligning network policy with Intune and Zero Trust</a></p><p>If you have a helpdesk, inform them about this upcoming change. If you need additional assistance, contact <a href=\"https://learn.microsoft.com/microsoft-365/admin/get-help-support?view=o365-worldwide\" target=\"_blank\">Microsoft Support</a> and refer to this message center post.</p>"
     }
   },
   {
@@ -7635,46 +7197,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-10T16:06:57Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-09T19:18:56.997Z",
-    "title": "(Updated) Microsoft 365 Copilot for Android: Preview and chat with Word, Excel, and PowerPoint files in the Copilot app",
-    "id": "MC1184413",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 Copilot Chat"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "518290"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft 365 Copilot for Android now allows previewing Word, Excel, and PowerPoint files with Copilot Chat, but editing requires switching to standalone apps. Offline access and advanced file management move to standalone apps. Tenant admins should prepare by deploying these apps and updating user communications."
-      },
-      {
-        "name": "Platforms",
-        "value": "Android"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 9, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b>\n</p><p>We're introducing a <b>new preview experience </b>in the <i>Microsoft 365 Copilot app for Android</i> that allows users to open Word, Excel, and PowerPoint files and interact with them using Copilot Chat. For editing actions, the Microsoft 365 Copilot app will transition to the fully featured standalone Word, Excel, or PowerPoint apps. This change positions Microsoft 365 Copilot as your AI-first productivity assistant, bringing together activity across Word, Excel, PowerPoint, Outlook, and other Microsoft 365 apps.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=518290\" target=\"_blank\">518290</a>.</p>\n\n<p><b>[When this will happen]</b>&nbsp;</p><ul><li><b>Mid-November 2025: </b>Users may begin seeing prompts to install the standalone Word, Excel, or PowerPoint apps when attempting to edit those file types in Copilot.</li><li><b>Mid-December 2025 – End of January 2026: </b>Previewer experience rollout begins and is expected to complete by end of January 2026 (previously mid-January).</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected:</i>&nbsp;</p><ul><li>All users of the Microsoft 365 Copilot app on <i>Android</i>. </li><li>Tenant admins responsible for app deployment and mobile productivity.\n</li></ul><p><i>What will happen:</i>&nbsp;</p><ul><li><b>Copilot Preview Experience</b>: Users can open Word, Excel, and PowerPoint files in the <i>Copilot app on Android </i>and use Copilot Chat for summaries and insights.</li><li><b>Editing Files</b>: Editing will require switching to the standalone Word, Excel, or PowerPoint apps. Users will be prompted to install or open these apps.</li><li><b>Teams, OneDrive, Outlook app integration</b>: These apps on <i>Android</i> will continue to show users previews of Office files. Editing will redirect users to the respective standalone apps. The Microsoft 365 Copilot app will no longer handle file open and edit operations from Teams, OneDrive or Outlook.\n</li><li><b>File Management</b>: File search remains available in <i>Copilot</i>. Advanced management will require the standalone OneDrive app.</li><li><b>Document creation</b>: Users can create documents via chat in <i>Copilot</i>. Viewing remains in-app; editing transitions to standalone apps.</li><li><b>Offline access</b>: Offline viewing will only be available in the standalone Word, Excel, PowerPoint, and OneDrive apps. “<i>Make Available Offline</i>” is being removed from Copilot.</li><li><b>PDF workflows</b>: No changes; PDF handling continues as before.</li><li><b>Folder browsing</b>: Folder browsing from OneDrive, SharePoint, or third-party hosts will no longer be supported in <i>Copilot</i>.</li><li><b>Protocol URLs</b>: Opening documents via protocol URLs will require the standalone apps.</li><li><b>Third-Party hosts</b>: Adding third-party host accounts to Copilot will no longer be supported.</li></ul>\n\n<p><b>[What you can do to prepare]</b>\n</p><p>Tenant admins should: </p><ul><li>Plan deployment of the standalone Word, Excel, and PowerPoint apps to support file editing. </li><li>Deploy the standalone OneDrive app to enable file and library management. </li><li>Communicate to users that editing and template creation will require switching to standalone apps. </li><li>Update internal documentation to reflect this workflow change.</li></ul>\n\n<p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td>Compliance Area</td><td>Impact</td></tr><tr><td><p>Does the change provide end users any new way of interacting with generative AI?&nbsp;</p></td><td><p>Users can interact with Word, Excel, and PowerPoint files via M365 Copilot Chat for summaries and insights. Preview and Copilot chat functionality for documents is accessible to users on Android.</p></td></tr><tr><td><p>Does the change modify, interrupt, or disable any of the following capabilities (Purview)?</p></td><td><p>Editing Word, Excel, and PowerPoint files will no longer be available in the M365 Copilot app; users must use standalone apps for editing. Make available offline capability has been removed from M365 Copilot. OneDrive file management capabilities have been removed from M365 Copilot.  Changing support for third party hosts as listed above.</p></td></tr><tr><td><p>Does the change include an admin control and, can it be controlled through Entra ID group membership?</p></td><td><p>Admins can manage app deployment and access via Entra ID and MDM policies. The M365 Copilot app should remain in managed app stores for enterprise environments.</p></td></tr></tbody></table><p></p>"
-    }
-  },
-  {
     "startDateTime": "2025-11-11T00:36:32Z",
     "endDateTime": "2026-08-01T07:00:00Z",
     "lastModifiedDateTime": "2026-01-05T21:46:12.697Z",
@@ -7738,39 +7260,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated February 5, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>As part of the Microsoft Secure Future Initiative (SFI) and in alignment with the “Secure by Default” principle, we’re <b>retiring the legacy IDCRL </b>(Identity Client Run Time Library) <b>authentication protocol</b> in<i> SharePoint Online</i> and <i>OneDrive for Business</i>. This change helps strengthen your organization’s security posture by enforcing modern authentication standards—OpenID Connect and OAuth—which reduce exposure to outdated and vulnerable authentication methods.</p>\n\n<p><b>[When this will happen:]</b>\n</p><ul>\n<li><b>Starting February 16, 2026:</b> Legacy client authentication will be blocked by default. Organizations may temporarily re-enable it using PowerShell until April 30, 2026.</li>\n<li><b>Starting May 1, 2026:</b> Legacy client authentication will be permanently blocked and cannot be re-enabled.</li>\n</ul><p></p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:</b>\n</p><ul>\n<li>Organizations using clients, scripts, or applications that rely on the legacy IDCRL authentication protocol to access SharePoint Online or OneDrive for Business.</li>\n</ul>\n<b>What will happen:</b>\n<ul>\n<li>Legacy authentication calls using IDCRL will be <b>blocked by default starting February 16, 2026</b>.</li>\n<li><b>Temporary re-enablement is possible via PowerShell </b>until April 30, 2026.</li>\n<li>After May 1, 2026, IDCRL authentication will be permanently retired and cannot be re-enabled.</li>\n<li>Applications using IDCRL will fail to authenticate unless updated to use modern protocols.</li>\n</ul><p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><p>We recommend <b>migrating from legacy authentication protocols to modern authenticatio</b>n as soon as possible.&nbsp;</p><p>To prepare for this retirement:</p><ul>\n<li><a href=\"https://devblogs.microsoft.com/microsoft365dev/migrating-from-idcrl-authentication-to-modern-authentication-in-sharepoint/\" target=\"_blank\">Migrate all clients, scripts, and applications</a> to use OpenID Connect or OAuth protocols.&nbsp;</li>\n<li>Review current configurations for IDCRL authentication.</li>\n<li>Notify IT admins, app owners, and security teams about the upcoming retirement.</li>\n<li>Updat<b>e</b> internal documentation to reflect the new authentication defaults.</li><li>Use telemetry to identify usage of legacy authentication protocols and monitor migration progress.</li>\n<li>Use PowerShell to manage legacy authentication settings if needed:\n<ul>\n<li>Set <code>AllowLegacyAuthProtocolsEnabledSetting</code> and <code>LegacyAuthProtocolsEnabled</code> to <code>TRUE</code> to temporarily allow legacy authentication until April 30, 2026.</li></ul></li><li>Learn more:<ul><li><a href=\"https://devblogs.microsoft.com/microsoft365dev/migrating-from-idcrl-authentication-to-modern-authentication-in-sharepoint/\" target=\"_blank\">Migrating from IDCRL authentication to modern authentication in SharePoint | Microsoft 365 Developer Blog | Microsoft Dev Blogs</a></li><li><a href=\"https://learn.microsoft.com/powershell/module/microsoft.online.sharepoint.powershell/set-spotenant?view=sharepoint-ps#-legacyauthprotocolsenabled\" target=\"_blank\">Set-SPOTenant (Microsoft.Online.SharePoint.PowerShell) | Microsoft Learn</a></li></ul></li></ul><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-11T00:40:49Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-11T19:58:55.863Z",
-    "title": "(Updated) Microsoft 365 Copilot: Configure connected agents for Researcher and other agents",
-    "id": "MC1184654",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)",
-      "Microsoft 365 Copilot Chat"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft 365 Copilot will support connected agents, allowing one agent to query others for data, starting with Researcher in Q4 2025. Rolling out mid-November 2025 to February 2026, admins can manage connected agents, users can enable/disable them per conversation, and up to 10 connected agents are allowed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p></p><p>Updated November 11, 2025: We have updated the timeline. Thank you for your patience.</p><p>Microsoft 365 Copilot is introducing <b>support for connected agents</b>, allowing one agent to query another for additional context or data. For example, the Researcher agent may request sales or inventory data from other enterprise software agents. This enhancement helps agents deliver more comprehensive and informed responses.</p>\n\n<b>[When this will happen:]</b>\n<ul>\n<li><b>Public Preview:</b>&nbsp;We will begin rolling out in mid-November 2025 and expect to complete by late February 2026.</li>\n</ul>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b>&nbsp;Admins managing Microsoft 365 Copilot agents in the <i>Microsoft 365 admin center</i>. This applies to all licenses that include Microsoft 365 Copilot Chat, including both the free and paid versions.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Agents will be able to query other agents for additional information</li>\n    <li>The Agents page in the <i>Copilot hub</i> will show which connected agents are configured</li>\n    <li>Admins can modify connected agents if allowed by the developer</li>\n    <li>Users must acquire both the primary and connected agents to use this functionality</li>\n    <li>Users will be able to enable or disable acquired agents per conversation</li>\n    <li>The first agent to support this feature is Researcher, starting Q4 2025</li>\n    <li>Up to 10 connected agents can be configured per agent:</li></ul></li></ul><p></p><p><i>Screenshot 1 - Early draft UI (experience subject to change closer to rollout):&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ff67c9c5-1913-4b76-b68c-72d6d51367b0/f67aa5d507609a9ed34c21998fd7217625e94f0a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot 2 - A second view of early draft UI (experience subject to change closer to rollout):&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d86a13b8-4020-4c63-a754-d32a29a4f754/25d9779526abf467d128f26a7c5fdbc5d4e7ec49.png\" style=\"width: 400px;\" alt=\"user settings\"><i></i></p><p><i></i></p><p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>Review the Agent inventory in the <i>Copilot hub</i> to view and manage connected agents</li>\n<li>Ensure users are allowed to acquire agents if you want them to use connected functionality</li>\n<li>Communicate this change to helpdesk staff</li>\n<li>Update internal documentation if you detail agent capabilities</li>\n<li>No changes to existing admin controls are required</li></ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide\" target=\"_blank\">Manage Microsoft 365 Copilot Agents - Microsoft 365 admin | Microsoft Learn</a></p><ul>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n<tbody><tr>\n<th>Question</th>\n<th>Answer</th>\n</tr>\n<tr>\n<td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td>\n<td>Yes. This change enables Microsoft 365 Copilot agents to query other agents for additional data, expanding the scope of AI-driven interactions with customer data.</td>\n</tr>\n<tr>\n<td>Does the change allow a user to enable and disable the feature themselves?</td>\n<td>Yes. Users will be able to enable or disable acquired agents per conversation, giving them control over agent behavior.</td>\n</tr>\n<tr>\n<td>Does the change include an admin control and can it be controlled through Entra ID group membership?</td>\n<td>Yes. Admins can configure which agents are available and which connected agents are permitted. These controls respect existing agent acquisition permissions, which can be scoped using Entra ID group membership.</td>\n</tr>\n</tbody></table><p></p>"
     }
   },
   {
@@ -8403,45 +7892,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated March 17, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>The Microsoft 365 Copilot app now features a simpler, cleaner navigation experience. We’ve flattened the menu and grouped features logically so it’s easier for users to find what matters most.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=518222\" target=\"_blank\">518222</a>.</p>\n\n<p><b>[When this will happen:]</b>\n</p><ul>\n<li><b>Targeted Release:</b> Rollout begins in&nbsp;<b>mid-November 2025</b> and is expected to complete by<b> late November 2025</b>.</li>\n<li><b>General Availability (Worldwide):</b> Rollout begins in <b>December 2025 </b>and is expected to complete by <b>end of March 2026</b> (previously&nbsp;end of February).</li>\n</ul><p></p>\n\n<p><b>[How this will affect your organization:]</b>\n</p><ul>\n<li><b>Who is affected:</b> Users of the Microsoft 365 Copilot app for Web, Windows, and Mac.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Navigation is simplified with a flattened menu and logical grouping of features.</li>\n<li>For users with a Microsoft 365 Copilot license, the Apps entry point is now located in the navigation footer, next to <i>Settings</i>.</li></ul></li></ul><p><i>Screenshot: Comparison of current (left) and refreshed (right) M365 Copilot navigation. The new design groups agents, notebooks, and recent chats directly in the left rail. Features shown may vary by license type and admin settings.</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/03991ca6-f00d-47d0-afd1-d1d07abfa6d7/98b5317879109d6ca04a17de072f05373f7c6333.png\" style=\"width: 400px;\" alt=\"user settings\"><i></i></p><p></p><ul>\n</ul><p></p><ul>\n</ul><p></p>\n\n<p><b>[What you need to do to prepare:]</b>\n</p><ul>\n<li>No admin action is required.</li>\n<li>Rollout will begin for users starting in December and complete in the following weeks.</li>\n<li>To learn more about managing the Microsoft 365 Copilot app, review&nbsp;<a href=\"https://learn.microsoft.com/copilot/microsoft-365/microsoft-365-copilot-app-admin-settings\">Microsoft 365 Copilot app settings for IT admins | Microsoft</a>.</li><a href=\"https://learn.microsoft.com\">\n</a></ul><p></p><a href=\"https://learn.microsoft.com\"></a>\n\n<p><b>[Compliance considerations:]</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-18T16:20:25Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-18T16:21:05.003Z",
-    "title": "Microsoft Teams: Protection against tenant-owned domain impersonation in Teams chat",
-    "id": "MC1187679",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "526780"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams will soon detect and warn users of tenant-owned domain impersonation in external chats, displaying high-risk alerts when suspicious. This feature, enabled by default for organizations allowing external access, launches December 2025 across all platforms with no admin controls or required actions."
-      },
-      {
-        "name": "Platforms",
-        "value": "Android, Desktop, iOS, Mac, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction:]</b></p><p>Coming soon to <b>Microsoft Teams</b>: A new security feature to enhance external collaboration. If your organization allows external domains to contact users in <i>Teams</i>, we will identify if an external user is impersonating a domain owned by your tenant during their initial contact through Teams chat. If we detect potential impersonation, we will show a high-risk alert to the user, notifying them to check for suspicious name/email and proceed with caution.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=526780\" target=\"_blank\">526780</a>.</p><p><b>[When this will happen:]</b></p><p><b>General Availability: </b>Begins in <b>early December 2025</b> and expected to complete by <b>mid-December 2025</b>.</p><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b> Organizations that have enabled Teams external access.</p><p><b>What will happen:</b></p><ul><li><b>Before rollout: </b>Teams only scanned for brand impersonation risks.</li><li><b>After rollout:</b> Teams will <b>check for both brand</b> and <b>tenant-owned domain impersonation attempts</b>.</li><li>When impersonation is detected, users will see the warning: <b><i>“This looks like a spam or phishing attempt” </i></b>and must preview and validate the sender before accepting the chat invitation.</li><li>The feature will be <b>ON by default</b> for all tenants that <b>allow external access</b> in <i>Teams</i>.</li><li>There are no admin controls to manage this functionality; admins cannot disable this feature.</li><li>No admin configuration changes are required.</li><li><b>Platform availability: </b>Android, Desktop, iOS, Mac, Web</li></ul><p></p><p><i>Screenshot 1 - User sees this warning when the sender is detected as a potential impersonator of the tenant’s own domain. In this example, the sender’s domain is “fabrikarn.com”, which looks like the recipient tenant’s own domain “fabrikam.com”:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/4105468b-f756-49df-b376-675c04ee3eb3/bac775bd1b3f8e1c984a6726b58c6bd88bab5918.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p></p><p><i></i></p><p><i>Screenshot 2 - When user clicks on “Preview their messages safely”, they can see the message from the sender, and make the decision of “Accept” or “Block”:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/ffb28b49-06e7-44d5-948d-8f958efd235f/98775e9eedc72d4a2e9f7573b6cdc847c219a5a7.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p></p><p><i></i></p><p><i></i></p><p><i>Screenshot 3 - If the user decides to accept, they will be prompted again to check the sender’s legitimacy and confirm that they are not phishing, before the chat is officially accepted:</i></p><p><i></i><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/de1a9fbb-69d8-4238-8381-c2bda1aa8637/a233ec46919c97d1ffbea7e8857bf20b092a4602.png\" style=\"width: 400px;\" alt=\"user settings\"><i>&nbsp;</i></p><p><b>[What you can do to prepare:]</b></p><ul><li>No action is required; this security check is automatic.</li><li>Admins can review audit logs for impersonation attempts detected.</li></ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/microsoftteams/security-compliance-overview\" target=\"_blank\">Security and compliance in Microsoft Teams | Microsoft Teams | Microsoft Learn</a></p><p></p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p><p></p>"
     }
   },
   {
@@ -10959,37 +10409,6 @@
     }
   },
   {
-    "startDateTime": "2026-01-06T05:49:07Z",
-    "endDateTime": "2026-03-31T08:00:00Z",
-    "lastModifiedDateTime": "2026-03-24T16:30:04.81Z",
-    "title": "(Updated) Microsoft Purview | Data lifecycle Management cmdlet connectivity change",
-    "id": "MC1213770",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Purview"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting January 31, 2026, admins using Data Lifecycle Management cmdlets must use Exchange Online PowerShell v3.9.0+ and include the -EnableSearchOnlySession parameter with Connect-IPPSession for improved security. This change affects specific cmdlets and does not impact portal users. Certificate-Based Authentication remains unsupported."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated March 24, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>Introduction</b></p>\n<p>Connectivity changes between cmdlets and Microsoft 365 services like SharePoint and Exchange now require a new parameter for improved security and modern authentication. Starting Jan 31, 2026, Admins must use <a href=\"https://learn.microsoft.com/powershell/exchange/exchange-online-powershell-v2?view=exchange-ps\" target=\"_blank\">Exchange Online PowerShell v3.9.0</a> or later and include the <code>-EnableSearchOnlySession</code> parameter when running <code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/connect-ippssession?view=exchange-ps\" target=\"_blank\">Connect-IPPSession</a></code> to execute Data Lifecycle Management cmdlets.</p>\n\n<p><b>When this will happen:</b></p>\n<p>Enforcement begins January 31, 2026.</p>\n\n<p><b>How this affects your organization:</b></p>\n<ul>\n<li><b>Who is affected:</b> Admins using Data Lifecycle Management cmdlets in Security &amp; Compliance PowerShell.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>You must use Exchange Online PowerShell v3.9.0 or later.</li>\n<li>You must include the <code>-EnableSearchOnlySession</code> parameter when running <code>Connect-IPPSession</code>.</li>\n<li>This applies to the following cmdlets:\n<ul>\n<li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/new-retentioncompliancepolicy?view=exchange-ps\" target=\"_blank\">New-RetentionCompliancePolicy</a></code></li>\n<li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/set-retentioncompliancepolicy?view=exchange-ps\" target=\"_blank\">Set-RetentionCompliancePolicy</a></code></li>\n<li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/new-retentioncompliancerule?view=exchange-ps\" target=\"_blank\">New-RetentionComplianceRule</a></code></li>\n<li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/set-retentioncompliancerule?view=exchange-ps\" target=\"_blank\">Set-RetentionComplianceRule</a></code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/new-compliancetag?view=exchange-ps\">New-ComplianceTag</a>\n</code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/set-compliancetag?view=exchange-ps\">Set-ComplianceTag</a>\n</code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/remove-compliancetag?view=exchange-ps\">Remove-ComplianceTag</a>\n</code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/new-complianceretentionevent?view=exchange-ps\">New-ComplianceRetentionEvent</a>\n</code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/set-complianceretentioneventtype?view=exchange-ps\">Set- ComplianceRetentionEvent</a>\n</code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/remove-complianceretentioneventtype?view=exchange-ps\">Remove- ComplianceRetentionEvent</a>\n</code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/new-complianceretentioneventtype?view=exchange-ps\">New-ComplianceRetentionEventType</a>\n</code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/set-complianceretentioneventtype?view=exchange-ps\">Set-ComplianceRetentionEventType</a>\n</code></li><li><code><a href=\"https://learn.microsoft.com/powershell/module/exchangepowershell/remove-complianceretentioneventtype?view=exchange-ps\">Remove- ComplianceRetentionEventType</a></code></li>\n</ul>\n</li>\n<li>No impact for users accessing Data Lifecycle Management through the Purview portal.</li>\n<li>Cmdlets remain incompatible with <b>Certificate-Based Authentication (CBA)</b>.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>Update scripts and workflows to include the <code>-EnableSearchOnlySession</code> parameter.</li>\n<li>Ensure your organization is using Exchange Online PowerShell version 3.9.0 or later.</li>\n<li>For more information, visit: <a href=\"https://learn.microsoft.com/microsoft-365/compliance/data-lifecycle-management\">Learn about Data Lifecycle Management solutions in Microsoft Purview</a>.</li>\n</ul>\n\n<p><b>Compliance considerations:</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-01-06T05:58:16Z",
     "endDateTime": "2026-04-07T07:00:00Z",
     "lastModifiedDateTime": "2026-01-13T17:11:14.56Z",
@@ -11027,35 +10446,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>\n</p><p>Updated January 13, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b>\n<p>We’re introducing a new <b>Slack to Microsoft Teams migration tool</b> to help organizations seamlessly transition collaboration from Slack to Teams. This tool enables administrators to migrate content from Slack public and private channels into Teams shared, public, and private channels, reducing complexity and improving continuity.</p>\n\n<b>[When this will happen:]</b>\n<ul>\n<li>Targeted Release: Rollout begins in late January (previously early December) and completes by late January 2026.</li>\n<li>General Availability (Worldwide): Rollout begins in late January 2026 and completes by early March 2026.</li>\n</ul>\n\n<b>[How this affects your organization:]</b>\n<p><b style=\"\">Who is affected: </b>Microsoft 365 administrators managing Teams and Slack migrations.</p>\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n<li>A new Slack to Teams migration tool will appear in the Migration and imports page of the Microsoft admin center.</li><p>Screenshot 1: <i>On the setup page, users can specify a Slack export file and select a workspace to migrate.</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/5e248b36-29a4-4735-8ad6-e50bc827c0e8\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot 2: On the migration page, users can run migration tasks and monitor their execution status.</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/a3bb7b88-5a8d-44f1-ad35-ac96bc3f1cd1\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>Admins can:\n<ul>\n<li>Review Slack channels eligible for migration.</li>\n<li>Migrate Slack channel content to Teams channels.</li>\n</ul>\n</li>\n<li>Initial release supports Slack channel content only; future updates will expand to other Slack content types.</li>\n<li>No changes to existing Teams functionality.</li>\n<li>Feature is available by default; no opt-in required.</li>\n</ul>\n\n<b>[What you can do to prepare:]</b>\n<ul>\n<li>No action is required before rollout.</li>\n<li>If planning a migration:\n<ul>\n<li>Review Slack channels for migration readiness.</li>\n<li>Communicate this change to IT and helpdesk teams.</li></ul></li></ul><p>Learn more: <a href=\"https://learn.microsoft.com/MicrosoftTeams/slack-to-teams-migration-tool\" target=\"_blank\">Migrating from Slack to Microsoft Teams - Microsoft Teams | Microsoft Learn</a></p><p></p><ul></ul><p></p><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified; review as appropriate for your organization.</p>\n</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-01-06T06:00:01Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-06T06:00:06.107Z",
-    "title": "Plan for Change: New Managed Home Screen RBAC permissions added to School Admin and Help Desk Operator built-in roles",
-    "id": "MC1213781",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Intune's February release adds two new Managed Home Screen RBAC permissions—TemporarilySuspendManagedHomeScreen and RestoreManagedHomeScreen—to the School Administrator and Help Desk Operator roles, enhancing Android device management. No admin action is needed, but reviewing role assignments and updating documentation is recommended."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Expected with Intune's February (2602) service release, we are introducing two new <a href=\"https://learn.microsoft.com/intune/intune-service/fundamentals/role-based-access-control\" target=\"_blank\">role-based access control (RBAC)</a> permissions for Managed Home Screen to enhance role capabilities and streamline device management workflows. Additionally, these roles will be included in the <b>School Administrator</b>&nbsp;and <b>Help Desk Operator</b> built-in roles:\n</p><ul><li>TemporarilySuspendManagedHomeScreen\n</li><li>RestoreManagedHomeScreen</li></ul><p>[How this will affect your organization:]\n</p><p>Admins assigned to the School Administrator and Help Desk Operator roles will automatically gain access to the two new RBAC permissions. This may expand their ability to manage Android devices using Managed Home Screen, depending on how your organization uses these roles.</p><p>[What you need to do to prepare:]\n</p><p>No admin action is required. However, we recommend reviewing your role assignments and informing admins of the expanded permissions. Update any internal documentation or training materials as needed.\n</p><p>If you want to take advantage of the new permissions to add granularity to your roles, stay tuned to <a href=\"https://aka.ms/IntuneWN\" target=\"_blank\">What’s new in Intune</a> for the release.</p><p>\n</p>"
     }
   },
   {
@@ -12919,37 +12309,6 @@
     }
   },
   {
-    "startDateTime": "2026-01-29T00:37:09Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-29T00:37:16.74Z",
-    "title": "Microsoft Teams: View code blocks on mobile",
-    "id": "MC1223820",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams mobile app will support improved viewing of code blocks with syntax highlighting, line numbers, and scrollable containers starting February 2026. This feature is enabled by default, requires no admin action, and allows users to view code blocks sent from desktop or web clients on iOS and Android devices."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re introducing<b> improved support for viewing code blocks</b> in the <i>Microsoft Teams mobile app for iOS and Android</i>. This update responds to customer feedback from technical and developer-focused teams who rely on accurate, readable code formatting when collaborating on the go.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview: </b>We will begin rolling out in <b>early February 2026</b> and expect to complete by <b>mid-February 2026</b>.</li><li><b>General Availability (Worldwide): </b>We will begin rolling out in<b>&nbsp;mid-February 2026</b> and expect to complete by<b> late February 2026</b>.</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i>: All users of the Microsoft Teams mobile app on iOS and Android.</p><p><i>What will happen</i>:</p><ul><li>Users will be able to view code blocks sent from Teams desktop or web clients directly on mobile devices.</li><li>Code blocks will appear as a message object (similar to a file preview) optimized for small screens:<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/9336bb19-bf3c-4b2e-8fbe-151654d1a18a/47b8bdb4c36e456538cd3b0b084e102007e16024.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Tapping the preview will open a full-screen reader that includes:<ul><li>Syntax highlighting</li><li>Line numbers</li><li>Scrollable containers for long snippets</li></ul></li><li>No admin controls are added with this update.</li><li>This feature is <b>enabled by default </b>and requires no configuration.</li><li>There is no impact to existing messaging workflows or policies.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>No admin action is required. The feature will roll out automatically.</li><li>Optional actions:<ul><li>Notify developer or technical user groups who may benefit from this improvement.</li><li>Update internal documentation if you maintain guidance on using code blocks in<i> Teams</i>.</li></ul></li><li>Review <a href=\"https://support.microsoft.com/office/use-code-blocks-in-microsoft-teams-3b8f43ee-86bd-479b-8ad6-6f52661b21e3\" target=\"_blank\">Microsoft Teams documentation</a> for more about code block formatting.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-01-29T00:37:39Z",
     "endDateTime": "2026-06-19T07:00:00Z",
     "lastModifiedDateTime": "2026-03-27T21:44:51.803Z",
@@ -13018,67 +12377,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>We are introducing <b>new AI workflows</b> in the <i>Workflows app for Microsoft Teams</i>, powered by Microsoft 365 Copilot. These workflow templates use scheduled Copilot prompts to automate routine or complex tasks with guided setup. This update is designed to help users streamline daily operations and improve productivity through intelligent automation. Admins can control availability through existing Teams app management settings.</p><p>This feature is available only to <b>users with a Microsoft 365 Copilot license</b> and applies to Teams for Web and Teams for Mac.</p><p>This message corresponds to Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=500379\" target=\"_blank\">500379</a>.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide): </b>Rolling out <b>in late January 2026</b> and expected to complete by <b>mid‑February 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected:</i></p><ul><li>Users who have a Microsoft 365 Copilot license</li><li>Users with access to the Workflows app in <i>Microsoft Teams</i></li><li>Users on Teams for Web or Teams for Mac</li></ul><p><i>What will happen:</i></p><ul><li>Users will see <b>new AI workflow templates</b> in the <i>Workflows app</i> powered by scheduled Copilot prompts.</li><li>Templates help automate recurring or complex tasks with simplified setup.</li><li>The feature is <b>off by default </b>unless the Workflows app is enabled for your organization.</li><li>Existing admin policies for Teams app availability and optional connected experiences continue to apply.</li><li>There is <b>no impact</b> for users who are not assigned a Copilot license or who do not have access to the Workflows app.</li></ul><p><i>Screenshot 1- Workflow setup experience:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/0aabc216-a10a-48db-ac12-95c7ef309510/04a7c4bfd496b5fb48e246ff030b733eab7c01d0.png\" style=\"width: 400px;\"></p><p><i></i></p><p><i><br></i></p><p><i>Screenshot 2 - Workflow templates in the Workflows app</i>:</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/0cd40824-1214-4795-8fb3-9be7bde3eb4c/297451eee57a0850b932024070c120bb35e72651.png\" style=\"width: 400px;\"></p><p></p><p><b>[What you can do to prepare]</b></p><p>If you want users to access this feature:</p><ul><li>Review how scheduled prompts work in Microsoft 365 Copilot.</li><li>Ensure the <b>Workflows </b>app is enabled in the <i>Teams admin center</i>.</li><li>If you prefer to disable this functionality:<ul><li>Use Cloud Policy to set <b>Allow the use of additional optional connected experiences in Office</b> to <b>Disabled</b>.</li><li>This also disables scheduled prompts in Microsoft 365 Copilot across apps.</li></ul></li></ul><p>Learn more:</p><ul><li>Manage scheduled prompts for Microsoft 365 Copilot</li><li>Overview of optional connected experiences in <i>Office</i></li></ul><p>If you do not plan to use this feature, no action is required.</p><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. AI workflow templates use scheduled Copilot prompts that interact with user data to automate workflow steps.</td></tr><tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes. Users can initiate and run intelligent workflows through Copilot‑powered templates in the <i>Workflows app</i>.</td></tr></tbody></table><p></p>"
-    }
-  },
-  {
-    "startDateTime": "2026-01-29T00:39:43Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-29T00:39:56.84Z",
-    "title": "Open PDFs within Copilot",
-    "id": "MC1223823",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting mid-February 2026, Microsoft 365 Copilot will open PDFs directly within its interface by default, enhancing user experience without requiring admin changes. This applies to all licensed Copilot users, with existing PDF policies remaining in effect. No action is needed, though notifying support teams is optional."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>Introduction</b></p>\n<p>\nMicrosoft is improving the reading and review experience in Microsoft 365 Copilot by enabling PDFs to open directly within Copilot when users click them. This update streamlines content access and reduces context switching based on customer feedback.</p>\n\n<p><b>When this will happen:</b></p>\n<p>\nGeneral Availability (Worldwide): rollout will begin in <b>mid-February 2026</b> and is expected to complete by <b>late February 2026</b>.</p>\n\n<p><b>How this affects your organization:</b></p>\n\n<p>&nbsp;&nbsp; <b>Who is affected:</b></p>\n<ul>\n  <li>All Microsoft 365 users who interact with PDFs in Microsoft 365 Copilot.</li><li>A Microsoft 365 Copilot license is required to use this feature.</li>\n</ul>\n\n<p>&nbsp;&nbsp; <b>What will happen:</b></p>\n<ul>\n  <li>Users who click a PDF inside Copilot will have it open directly within the Copilot interface.</li>\n  <li>The feature is enabled by default for all tenants.</li>\n  <li>No admin configuration changes are required.</li>\n  <li>Existing Purview policies for PDFs continue to apply.</li></ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n  <li>No action is required from administrators.</li>\n  <li>Optionally notify helpdesk/support teams of the updated PDF experience.</li>\n  <li>Update internal documentation if it describes Copilot PDF behavior.</li>\n</ul>\n\n<p><b>Compliance considerations:</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-01-29T00:40:18Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-29T00:40:37.367Z",
-    "title": "Open Outlook emails directly in Copilot chat",
-    "id": "MC1223826",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)",
-      "Microsoft 365 Copilot Chat"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting mid-February 2026, users can open Outlook emails directly within Microsoft 365 Copilot chat, viewing emails side-by-side without changing permissions or admin settings. This feature is enabled by default, requires no admin action, and aims to reduce context switching."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>We’re introducing a new capability that enables users to open Outlook emails directly within any full‑app Microsoft 365 Copilot experience, including Copilot chat. This enhancement helps reduce context switching by allowing users to view referenced emails alongside their Copilot interaction.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide): rollout begins <b>mid-February 2026</b> and is expected to complete by <b>late February 2026</b>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b style=\"\">Who is affected:</b></p>\n<ul>\n  <li>All users who access Microsoft 365 Copilot full‑app experiences, including Copilot chat.</li>\n</ul>\n\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n  <li>Users will be able to open Outlook emails directly from references or sources shown in Copilot chat.</li>\n  <li>Emails will open side‑by‑side within the Copilot experience.</li>\n  <li>The feature is enabled by default.</li>\n  <li>Existing Microsoft 365 permissions and data access models remain unchanged.</li>\n  <li>No changes are made to Outlook, Exchange Online, or Copilot admin controls.</li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n\n<ul>\n  </ul><ul><li>No administrator action is required.</li><li>Update internal documentation if needed.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -15703,37 +15001,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>We’re introducing updated access controls for quarantined messages in Microsoft Defender for Office 365. These updates add a new permission that provides more granular control over who can view quarantined email content, helping organizations better protect sensitive email data.</p><p>These changes affect permissions assigned through <b>Defender XDR Unified RBAC</b>.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): We will begin rolling out <b>late&nbsp;March 2026</b> and expect to complete by <b>mid-April 2026</b>.</p><p><b>[How this will affect your organization:]</b></p><p><b>Who is affected:</b></p><ul><li>Microsoft 365 administrators and security operators who are assigned permissions to access quarantined messages in Microsoft Defender for Office 365</li><li>Only those using <b>Microsoft Defender XDR Unified role-based access control (URBAC);</b> this change does not apply to legacy role-based access control.</li><li>Microsoft 365 administrators who are assigned <b>Security operations</b>, <b>Security data</b>, <b>Email and collaboration quarantine (manage)</b>, or <b>Security data basics (read)</b> permissions today, which provide access to preview and download quarantined content.</li></ul><p><b>What will happen:</b></p><ul><li>A new permission, <b>Email and collaboration content: Quarantine emails (read)</b>, is being introduced to control access to quarantined message content.</li><li>To view and download the content of quarantined email messages, admins must have the new permission.</li><li>Admins without this permission will continue to see metadata only and will not be able to preview or download quarantined message content.</li><li>This update does not change threat detection, verdict, or mail flow behavior. It only affects access to message content after items are quarantined.</li><li>There is no impact to <b>user quarantine </b>experiences.</li><li>To maintain parity, admins with existing access permissions (including <b>Email and collaboration quarantine (manage)</b> or <b>Security data basics (read)</b>) will automatically be assigned this new permission.</li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>Review which administrators in your organization require access to quarantined message content.</li><li>Validate that you were auto assigned this new permission (if applicable).</li><li>Update role assignments as needed in the <b>Microsoft Defender portal</b> under <b>Roles </b>and <b>Role assignments</b>.</li><li>Communicate this change to security operations and helpdesk teams that investigate quarantined messages.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-admin-manage-messages-files\" target=\"_blank\">Manage quarantined messages and files as an admin - Microsoft Defender for Office 365 | Microsoft Learn</a>&nbsp;(will be updated before rollout)</li><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-policies\" target=\"_blank\">Quarantine policies - Microsoft Defender for Office 365 | Microsoft Learn</a>&nbsp;(will be updated before rollout)</li></ul><p><b>[Compliance considerations:]</b></p><p>No additional compliance considerations were identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-02-18T18:45:16Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-18T18:45:21.65Z",
-    "title": "Search feedback experience update: Legacy Search",
-    "id": "MC1234570",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 suite"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The legacy Search & Intelligence Feedback portal is retired, consolidating Microsoft Search feedback into the Microsoft 365 Product feedback experience. Users now submit simpler thumbs up/down feedback, and admins access it in the Microsoft 365 admin center under Product feedback with improved policy alignment. No admin action needed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We have <b>retired the legacy Search &amp; Intelligence Feedback portal</b> and consolidated all Microsoft Search feedback into the standard Product feedback experience in<i> Microsoft 365</i>. This change simplifies how feedback is collected, aligns Search feedback with other Microsoft 365 products, and improves policy compliance across services.</p><p><b>[When this will happen]</b></p><p><i>We apologize that this retirement was not communicated in advance, and we are continuing to improve our processes to provide more proactive communication.</i></p><p>This retirement has already been completed and is now fully in effect.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All Microsoft 365 tenants that use Microsoft Search</li><li>Users who submit Microsoft Search feedback</li><li>Admins who review or analyze feedback</li></ul><p><i>What will happen</i></p><ul><li>Users:<ul><li>There was no change to Microsoft Search functionality.</li><li>The feedback workflow was simplified.</li><li>Previously, users selected from multiple detailed feedback categories.</li><li>Users now submit feedback using a thumbs up or thumbs down interaction that collects product level feedback only.</li></ul></li><li>Admins:<ul><li>Search feedback now appears in the <i>Microsoft 365 admin center (MAC) </i>under <i><b>Product feedback</b></i> with filtering available using <i><b>Product = Search</b></i>.</li><li>Feedback management now aligns with the <a href=\"https://learn.microsoft.com/microsoft-365-apps/admin-center/overview-cloud-policy\" target=\"_blank\">Cloud Policy Service for Microsoft 365</a>, which improves consistency and policy enforcement.</li><li>No admin action was required. The change applied automatically.</li></ul></li></ul><p><b>[What you can do to prepare]</b></p><p>You may want to:</p><ul><li>Update internal documentation or helpdesk materials that reference the retired Search &amp; Intelligence feedback portal.</li><li>Inform admins who monitor feedback that Search feedback now appears under <i><b>Product feedback</b></i> in the <i>Microsoft 365 admin center (MAC)</i>.</li><li>Review the Microsoft Learn documentation:&nbsp;<a href=\"https://learn.microsoft.com/microsoftsearch/manage-feedback\" target=\"_blank\">Managing user feedback | Get insights | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -23082,7 +22349,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557975\":[{\"RoadmapId\":557975,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-31T06:37:19.3165532Z\",\"LatestRing\":null},{\"RoadmapId\":557975,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-31T06:37:19.3165534Z\",\"LatestRing\":null}]}"
+        "value": "{\"557975\":[{\"RoadmapId\":557975,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-31T08:31:03.83884Z\",\"LatestRing\":null},{\"RoadmapId\":557975,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-31T08:31:03.8388402Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23134,36 +22401,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p>\n<p>We are improving the <b>Microsoft Teams</b> meeting experience when the active meeting window is minimized. This update helps users stay engaged in meetings while multitasking across other apps. With this change, users can perform key in-meeting actions—such as raising their hand and sending reactions—without restoring the full Teams meeting window. Users can also <b>choose between two different minimized views</b>, depending on how much meeting context they want to keep visible while they work.</p>\n<p>This change does not affect the experience when users are sharing their screen in a Teams meeting.</p>\n\n<p>This message applies to Teams for Windows desktop and Teams for Mac desktop. It is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557179\" target=\"_blank\">557179</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li><b style=\"\">Targeted Release:</b> Rollout begins mid-April 2026 and is expected to complete by mid-April 2026.</li>\n  <li><b style=\"\">General Availability (Worldwide):</b> Rollout begins late April 2026 and is expected to complete by early May 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>All users who join and participate in <b>Microsoft Teams meetings</b>.</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n  <li>When users minimize a Teams meeting window, a new minimized meeting experience appears automatically.</li>\n  <li>Users can raise their hand and send reactions without restoring the full Microsoft Teams meeting window.</li><li>Users can choose between two minimized views:</li><ul>\n      <li><b>Expanded view:</b> Displays up to four participant videos.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/5af44188-1c35-4da5-8b04-4965b63d9258\" style=\"width: \n400px;\" alt=\"user settings\"></p>\n      <li><b>Compact view:</b> Does not display participant video and takes up less screen space.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/c98d5573-1e56-4f52-8705-80ed34423709\" style=\"width: \n400px;\" alt=\"user settings\"></p>\n    </ul>\n  \n  <li>The feature is <b>enabled by default </b>and does not require any admin configuration.</li>\n  <li>There is no change to the meeting experience while screen sharing.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No action is required.</li>\n  <li>Consider notifying users and helpdesk staff about the new minimized meeting views in Microsoft Teams.</li>\n  <li>Update internal training or support documentation if it references Teams meeting window behavior.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2023-04-13T00:00:49Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2023-04-13T00:00:54.207Z",
-    "title": "Plan for Change: \"Require approved client app\" control in Azure AD Conditional Access will be retired in March 2026",
-    "id": "MC540749",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "ExternalLink",
-        "value": "http://aka.ms/RetireApprovedClientApp"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>In March 2026, Azure Active Directory (Azure AD) and Microsoft Intune will retire the Conditional Access “Require approved client app” grant control. Instead we recommend utilizing the \"Require application protection policy\" grant control, which provides the same data loss and protection with additional benefits.</p><p>[How this will affect your organization:]</p><p>If you have a Conditional Access policy with \"Require approved client app\" grant control configured, after this change, you will no longer be able to enforce this control, it will be as if this grant is not selected.</p><p>[What you need to do to prepare:]</p><p>We recommend updating your Conditional Access policy to using the \"Require application protection policy\" grant control. For more information, see <a href=\"https://learn.microsoft.com/azure/active-directory/conditional-access/migrate-approved-client-app\" target=\"_blank\">Migrate approved client app to application protection policy in Conditional Access</a>.</p>"
     }
   },
   {
@@ -23416,50 +22653,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated November 11, 2025: We are updating this post to serve as a reminder of this change.&nbsp;</p><p>We are dedicated to providing our customers with the tools they need to achieve what matters, in their work and life. In order to focus on new benefits, we occasionally remove features and products.</p><p>In October 2026, Microsoft Publisher will reach its end of life. After that time, it will no longer be included in Microsoft 365 and existing on-premises suites will no longer be supported. Until then, support for Publisher will continue and users can expect the same experience as today.\n</p><p>As we look ahead to the retirement of Microsoft Publisher, we are exploring modern ways to achieve other common Publisher scenarios across applications like Microsoft Word, PowerPoint, and Designer.  We will update as we have more to share.&nbsp;&nbsp;</p><p>[When this will happen:]</p><p>October 13, 2026</p><p>[How this will affect your organization:]</p><p>You can continue to use Publisher with its current functionality until October 2026. \n</p><p>Support for the perpetual version of Publisher will end in October 2026, when Office LTSC 2021 reaches end of support. Microsoft 365 customers will not be able to access Publisher from that date forward. \n</p><p>[What you need to do to prepare:]<br></p><p>No action is required at this time. This notice is to allow you sufficient time to plan. We will share additional updates as the date approaches.\n</p>"
-    }
-  },
-  {
-    "startDateTime": "2024-04-08T23:33:52Z",
-    "endDateTime": "2026-03-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-28T21:08:45.827Z",
-    "title": "(Updated) Microsoft Teams: Shorter meeting URLs",
-    "id": "MC772556",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "381953"
-      },
-      {
-        "name": "FeatureStatusJson",
-        "value": "{\"381953\":[{\"RoadmapId\":381953,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704295Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192473Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4704293Z\",\"LatestRing\":null},{\"RoadmapId\":381953,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192477Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192479Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":381953,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7192484Z\",\"LatestRing\":\"StandardRelease\"}]}"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams is rolling out shorter meeting URLs starting early 2025, improving link usability and security by removing extra parameters. New links expire 60 days after meeting end or creation. Old links remain valid. No admin action is needed, but users should update integrations and inform organizers about expired links."
-      },
-      {
-        "name": "Platforms",
-        "value": "Android, Desktop, iOS, Mac, TeamsAndSurfaceDevices, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 20, 2026: We’ve updated how Teams meeting join links appear in meeting invites. As part of the broader rollout of the new, shorter meeting URL format, meeting invites now display the full join link directly instead of a labeled “Join the meeting now” hyperlink. This improves link consistency, reliability across clients and email applications, and makes copying and sharing the link easier. This update does not change meeting functionality or attendee experience. Existing Teams and Outlook clients continue to support the new link format.</p><p>Please note that information about meeting link expiry changes related to this rollout has been added.</p><p>We are reducing the length of Microsoft Teams meeting URLs for easier sharing. This rollout applies to all Microsoft Teams platforms (Teams for iOS, Android, Mac, Teams devices, desktop, and web).</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=381953\" target=\"_blank\">381953</a>.\n</p><p>[When this will happen:]\n</p><p>Targeted Release: We will begin rolling out mid-February 2025 (previously mid-January) and expect to complete by late February 2025 (previously late January). Only Meet Now use cases (except Meet Now in chats and channels) will be affected in this timeframe. There will be no impact on the scheduled meetings in this phase.</p><p>General Availability (Worldwide, GCC): We will begin rolling out January 2026 (previously mid-May 2025) and expect to complete by end of January 2026 (previously late May 2025).&nbsp;&nbsp;</p><p>General Availability (GCC High, DoD):&nbsp; We will begin rolling out February 2026 (previously early August 2025) and expect to complete by end of February 2026 (previously late October 2025).</p><p>[How this will affect your organization:]\n</p><p>The new URL syntax is: https://teams.microsoft.com/meet/&lt;meeting_id&gt;?p=&lt;HashedPasscode&gt; \n</p><p>To make meeting URL shorter, we are removing several parameters such as tenant ID, conversation ID etc. This change serves two main goals: 1) improving usability of URL during sharing and 2) making the URL more secure and less susceptible to malicious attacks. \n</p><p>Here are some details about how meeting links work and when they expire: \n</p><ol><li>In case the meeting organizer gets removed from the tenant, the links to the meetings scheduled by them automatically expire. \n</li><li>&nbsp;MeetNow meetings expire 60 days after creation. Learn more about expiration timelines for different types of meetings. \n</li></ol><p>With the Short Meeting URL release, expiration limit will be applied to all newly created links. \n</p><p>Once the change to Short Meeting URL is released, all newly created meetings will expire as described in the documentation: 60 days after meeting ends for scheduled meetings and 60 days after creation for MeetNow meetings. Once this expiry period is over, in case someone clicks the link (e.g. outside of Teams app OR in the meeting details inside Teams calendar section), they will be unable to join the meeting.</p><p>Note: Old links created before short meeting URL release will continue working as it previously was (user will be able to join even after the documented expiry limits).</p><p>The reason why we are making this change is simple: security is our topmost priority. Maintaining a high security level is essential to protect sensitive data, prevent financial losses, ensure business continuity, and meet compliance and legal obligations. It is a critical aspect of modern digital life and business operations. This adjustment is designed to enhance the security of Teams meeting links, thereby better safeguarding the customer tenant. We want to be on par with modern security standards, that’s why the new behavior is a step in the right direction that we must take. It’s not possible to keep the current behavior. If you think it breaks some of your business processes, please leave comment to the MC post and describe your case there. \n</p><p>Recommendations in case the meeting link has expired:  \n</p><p>For meeting organizer: We recommend scheduling a new meeting. If the meeting organizer got removed from the tenant someone else should reschedule their meetings from scratch. \n</p><p>For participant: Please reach out to the meeting organizer and ask them to reschedule the meeting or send you an updated link.</p><p>[What you need to do to prepare:]\n</p><p>You may want to check if you have any integrations that use parameters from URL. After the rollout, the URL will only contain the meeting ID. Parameters such as tenant ID, organizer ID, conversation ID and message ID will not be in the URL. \n</p><p>You may inform meeting organizers from your tenant who use expired meeting links, or you may want to make a tenant-wide announcement about this change. \n</p><p>This rollout will happen automatically by the specified date with no admin action required. You may want to notify your users about this change and update any relevant documentation as appropriate.</p>"
     }
   },
   {
