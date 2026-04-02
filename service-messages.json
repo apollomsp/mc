@@ -8043,6 +8043,46 @@
     }
   },
   {
+    "startDateTime": "2025-11-19T23:43:37Z",
+    "endDateTime": "2026-04-30T08:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T21:18:25.15Z",
+    "title": "(Updated) Microsoft 365 Copilot: Manage and deploy user-level connectors in Microsoft 365 admin center",
+    "id": "MC1188234",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "501585"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot introduces federated connectors enabling real-time access to external apps like Notion and Canva within Copilot. Admins control connector visibility, compliance, and staged rollout via the Microsoft 365 admin center. The feature requires a Copilot license and will roll out starting February 9, 2026."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p></p><p>Updated April 2, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>We’re introducing <b>federated Copilot connectors</b>&nbsp;in Microsoft 365 Copilot, enabling users to securely connect external apps such as Notion, Canva, or Hubspot directly within Copilot experiences like Researcher. Unlike traditional indexed connectors, federated connectors use the Model Context Protocol (MCP) to access data in real time. This allows users to fetch and read information from connected sources using their own credentials, while maintaining admin-level visibility, control, and governance in the Microsoft 365 admin center.</p><p>This feature will be available on the web platform.</p><p>A Microsoft 365 Copilot license is required to use this feature.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=501585\" target=\"_blank\">501585</a>.</p>\n\n<b>When this will happen:</b>\n<p>Public Preview: Rollout will begin February 9, 2026 (previously January 12).</p><p>Targeted Release: Rollout began mid-February 2026 and completed end of March 2026.&nbsp;</p><p><br></p><table class=\"table table-bordered\"><tbody><tr><td>Date</td><td>Activity</td></tr><tr><td>Feb 9th onwards</td><td>Admin Experience get rolled out. As soon as Admins see federated Copilot connectors they review them. These will be toggled on but not yet visible to end-users. Admins can leave them as it or stage them or disable them.</td></tr><tr><td>Feb 16th onwards</td><td>User Experience rollout starts, honoring Admin actions taken.</td></tr></tbody></table><p><br></p>\n\n<b>How this affects your organization:</b>\n<ul>\n<li><b>Who is affected:</b> All tenants using Microsoft 365 Copilot with access to the Microsoft 365 admin center.</li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>End users will be able to connect to Microsoft-published federated connectors (such as Canva, HubSpot, Linear, Intercom, Google calendar, Google contacts, Notion) directly within Copilot experiences to search or fetch live data.</li><li>Admins will have visibility and control from the <i><b>Copilot &gt; Connectors</b></i> section, where they can<ul><li>View all default Federated copilot connectors enabled by Microsoft.</li><li>Disable any connectors that are not relevant or compliant for their organization.</li><li>Use staged rollout to enable these connectors for a limited group of users </li></ul></li><li>Admin can also create and manage custom MCP based federated copilot connectors for internal or specialized data sources using an MCP endpoint.</li></ul></li></ul><p><i>Screenshot 1 - Admin experience:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/e1015547-bfd7-47ba-a2d2-8cc5aca16492/1e38cbe2927023b3e6d61b0294052e199838a656.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Screenshot 2 - User experience:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/c240befe-2458-4716-af9d-33f81134d98e/2ca49f700c381c72767c7aa5f447309b1b9e013c.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><ul>\n      </ul>\n    <p></p><ul>\n</ul>\n\n<b>What you can do to prepare:</b><p></p><p>When a Microsoft-published federated Copilot connector first appears in the Microsoft 365 admin center (Copilot &gt; Connectors&gt; Your connections), it will remain admin-only for 7 days&nbsp;before it can be used by end users.</p><p>During this seven-day review window, admins can:</p><ul><li>Review newly available federated connectors</li><li>Disable connectors that are not relevant or compliant for their organization</li><li>Use <b>staged rollout</b>&nbsp;to limit availability to specific Entra ID groups</li><li>Any connector <b>disabled during this window will not be rolled out to end users</b>.</li></ul><p>Additional steps:<br>\n</p><ul>\n<li>Review the list of default connectors that will appear in your tenant under <i><b>Copilot &gt; Connectors &gt; Your Connections</b></i>. List includes: Canva, HubSpot, Linear, Intercom, Google calendar, Google contacts, Notion and more. You can find them with type ‘MCP’</li>\n<li>Ensure all available connectors align with your organization’s data and compliance policies. Disable any that do not meet requirements directly from the admin center.</li>\n<li>For custom connectors, configure your MCP endpoints with the required tools (search and fetch) and proper authentication (OAuth2).</li>\n<li>Communicate this change to helpdesk staff and update internal documentation as needed.</li>\n</ul>\n\n<b>Compliance considerations:</b>\n<table border=\"1\">\n<tbody><tr><th>Question</th><th>Answer</th></tr>\n<tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. Federated connectors allow Copilot to fetch live data using user credentials, introducing new real-time AI interactions.</td></tr>\n<tr><td>Does the change add any integration to 3rd party software products, and if so what?</td><td>Yes. It enables connections to external apps such as Canva, HubSpot, Linear, Intercom, Google calendar, Google contacts.</td></tr>\n<tr><td>Does the change include an admin control and can it be controlled through Entra ID group membership?</td><td>Yes. Admins can manage connector availability and rollout via the Microsoft 365 admin center, and staged rollout can be configured using Entra ID group membership.</td></tr>\n<tr><td>Does the change allow a user to enable and disable the feature themselves?</td><td>Yes. Users can connect or disconnect federated connectors within Copilot experiences.</td></tr>\n</tbody></table><p></p>"
+    }
+  },
+  {
     "startDateTime": "2025-11-20T22:15:26.307Z",
     "endDateTime": "2026-11-20T22:15:26.26Z",
     "lastModifiedDateTime": "2025-11-20T22:15:27.027Z",
@@ -14536,13 +14576,14 @@
   },
   {
     "startDateTime": "2026-02-18T18:44:05Z",
-    "endDateTime": "2026-05-18T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-18T18:44:52.5Z",
-    "title": "Microsoft Defender for Office 365 quarantine content read permission update",
+    "endDateTime": "2026-06-22T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T21:03:29.33Z",
+    "title": "(Updated) Microsoft Defender for Office 365 quarantine content read permission update",
     "id": "MC1234569",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "Feature update",
       "Admin impact"
     ],
@@ -14556,12 +14597,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "Microsoft Defender for Office 365 will introduce a new permission for viewing quarantined email content via Defender XDR Unified RBAC, rolling out late March to mid-April 2026. Admins need this permission to access message content; others see metadata only. Existing eligible admins will be auto-assigned this permission."
+        "value": "Microsoft Defender for Office 365 will introduce a new permission for granular access to quarantined email content via Defender XDR Unified RBAC. Rolling out mid-April to mid-May 2026, admins need this permission to view/download quarantined emails; others see metadata only. Existing eligible admins get it automatically."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re introducing updated access controls for quarantined messages in Microsoft Defender for Office 365. These updates add a new permission that provides more granular control over who can view quarantined email content, helping organizations better protect sensitive email data.</p><p>These changes affect permissions assigned through <b>Defender XDR Unified RBAC</b>.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): We will begin rolling out <b>late&nbsp;March 2026</b> and expect to complete by <b>mid-April 2026</b>.</p><p><b>[How this will affect your organization:]</b></p><p><b>Who is affected:</b></p><ul><li>Microsoft 365 administrators and security operators who are assigned permissions to access quarantined messages in Microsoft Defender for Office 365</li><li>Only those using <b>Microsoft Defender XDR Unified role-based access control (URBAC);</b> this change does not apply to legacy role-based access control.</li><li>Microsoft 365 administrators who are assigned <b>Security operations</b>, <b>Security data</b>, <b>Email and collaboration quarantine (manage)</b>, or <b>Security data basics (read)</b> permissions today, which provide access to preview and download quarantined content.</li></ul><p><b>What will happen:</b></p><ul><li>A new permission, <b>Email and collaboration content: Quarantine emails (read)</b>, is being introduced to control access to quarantined message content.</li><li>To view and download the content of quarantined email messages, admins must have the new permission.</li><li>Admins without this permission will continue to see metadata only and will not be able to preview or download quarantined message content.</li><li>This update does not change threat detection, verdict, or mail flow behavior. It only affects access to message content after items are quarantined.</li><li>There is no impact to <b>user quarantine </b>experiences.</li><li>To maintain parity, admins with existing access permissions (including <b>Email and collaboration quarantine (manage)</b> or <b>Security data basics (read)</b>) will automatically be assigned this new permission.</li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>Review which administrators in your organization require access to quarantined message content.</li><li>Validate that you were auto assigned this new permission (if applicable).</li><li>Update role assignments as needed in the <b>Microsoft Defender portal</b> under <b>Roles </b>and <b>Role assignments</b>.</li><li>Communicate this change to security operations and helpdesk teams that investigate quarantined messages.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-admin-manage-messages-files\" target=\"_blank\">Manage quarantined messages and files as an admin - Microsoft Defender for Office 365 | Microsoft Learn</a>&nbsp;(will be updated before rollout)</li><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-policies\" target=\"_blank\">Quarantine policies - Microsoft Defender for Office 365 | Microsoft Learn</a>&nbsp;(will be updated before rollout)</li></ul><p><b>[Compliance considerations:]</b></p><p>No additional compliance considerations were identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated April 2, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re introducing updated access controls for quarantined messages in Microsoft Defender for Office 365. These updates add a new permission that provides more granular control over who can view quarantined email content, helping organizations better protect sensitive email data.</p><p>These changes affect permissions assigned through <b>Defender XDR Unified RBAC</b>.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): We will begin rolling out <b>mid-April 2026</b> (previously&nbsp;late&nbsp;March)&nbsp;and expect to complete by <b>mid-May 2026</b> (previously&nbsp;mid-April).</p><p><b>[How this will affect your organization:]</b></p><p><b>Who is affected:</b></p><ul><li>Microsoft 365 administrators and security operators who are assigned permissions to access quarantined messages in Microsoft Defender for Office 365</li><li>Only those using <b>Microsoft Defender XDR Unified role-based access control (URBAC);</b> this change does not apply to legacy role-based access control.</li><li>Microsoft 365 administrators who are assigned <b>Security operations</b>, <b>Security data</b>, <b>Email and collaboration quarantine (manage)</b>, or <b>Security data basics (read)</b> permissions today, which provide access to preview and download quarantined content.</li></ul><p><b>What will happen:</b></p><ul><li>A new permission, <b>Email and collaboration content: Quarantine emails (read)</b>, is being introduced to control access to quarantined message content.</li><li>To view and download the content of quarantined email messages, admins must have the new permission.</li><li>Admins without this permission will continue to see metadata only and will not be able to preview or download quarantined message content.</li><li>This update does not change threat detection, verdict, or mail flow behavior. It only affects access to message content after items are quarantined.</li><li>There is no impact to <b>user quarantine </b>experiences.</li><li>To maintain parity, admins with existing access permissions (including <b>Email and collaboration quarantine (manage)</b> or <b>Security data basics (read)</b>) will automatically be assigned this new permission.</li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>Review which administrators in your organization require access to quarantined message content.</li><li>Validate that you were auto assigned this new permission (if applicable).</li><li>Update role assignments as needed in the <b>Microsoft Defender portal</b> under <b>Roles </b>and <b>Role assignments</b>.</li><li>Communicate this change to security operations and helpdesk teams that investigate quarantined messages.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-admin-manage-messages-files\" target=\"_blank\">Manage quarantined messages and files as an admin - Microsoft Defender for Office 365 | Microsoft Learn</a>&nbsp;(will be updated before rollout)</li><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-policies\" target=\"_blank\">Quarantine policies - Microsoft Defender for Office 365 | Microsoft Learn</a>&nbsp;(will be updated before rollout)</li></ul><p><b>[Compliance considerations:]</b></p><p>No additional compliance considerations were identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -15578,28 +15619,6 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to create inputs from existing conversations in Microsoft Copilot Studio. This feature will reach general availability on March 31, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature enables users to generate evaluation inputs directly from real production conversations by converting past customer interactions into reusable structure inputs. By using actual customer interactions, users can create evaluations that reflect real usage patterns, uncover quality gaps, validate fixes, and improve agent behavior.<br><br>   \n\nThis feature supports generating test sets from themes, question lists, or reactions, and automatically selects up to 100 recent questions when working with large datasets.<br><br> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-02-26T20:44:53Z",
-    "endDateTime": "2026-04-02T20:44:00Z",
-    "lastModifiedDateTime": "2026-02-26T20:46:50.563Z",
-    "title": "Dynamics 365 Customer Insights – Journeys – Automatic activation of bot protection",
-    "id": "MC1239861",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "On April 1, 2026, <a target=\"_blank\" href=\"https://aka.ms/ADO14140\">bot protection</a> will be enabled in all Customer Insights - Journeys environments.<br><br><b>How does this affect me?</b><br>This change is being made to improve the accuracy of your channel telemetry and ensure reliable data analytics. Interactions identified as bot generated will be filtered out by default.<ul><li><b>If you already have bot protection enabled:</b><br>You will not experience any behavioral changes. The feature toggle will no longer appear in Settings, as the feature is now permanently enabled.</li><li><b>If you currently have bot protection disabled:</b><br>The feature will be activated automatically. The toggle for this feature will no longer appear in Settings. You may also notice a minor decrease in interaction metrics as bot-generated interactions across channels will be filtered out.</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
     }
   },
   {
@@ -21724,7 +21743,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557975\":[{\"RoadmapId\":557975,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T20:15:27.0498517Z\",\"LatestRing\":null},{\"RoadmapId\":557975,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T20:15:27.0498518Z\",\"LatestRing\":null}]}"
+        "value": "{\"557975\":[{\"RoadmapId\":557975,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T22:14:35.2568601Z\",\"LatestRing\":null},{\"RoadmapId\":557975,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T22:14:35.2568604Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22432,6 +22451,245 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to get integrated inbound and outbound calling with Sales Hub dialer in Dynamics 365 Sales. This feature will reach general availability on May 1, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis Sales Hub dialer allows users to place outbound calls, handle incoming calls, take notes, view customer history, and automatically capture conversation intelligence. This feature allow users to perform these actions without switching apps or losing context. Key capabilities of this feature include:<ul>\n    <li><b>Embedded dialer in Sales Hub</b>: Use a native calling panel across Contacts, Leads, Opportunities, and Accounts to stay in the Sales Hub while handling calls.</li>\n    <li><b>Click to call and manual dialing</b>: Click any phone number to call instantly, search COLA entities, or manually dial using the built in keypad.</li>\n    <li><b>Inbound call handling</b>: Get clear, actionable notifications when calls come in, with customer match and context surfaced right away.</li>\n    <li><b>Automatic call logging</b>: All calls, both inbound and outbound, are saved automatically as phone call activities with duration, direction, and record association.</li>\n    <li><b>Modern calling controls</b>: Use familiar controls like mute, hold, resume, consult, and transfer on a single streamlined surface.</li>\n    <li><b>AI powered conversation intelligence</b>: Get real-time and post-call summaries, transcription, sentiment, action items, and key topics powered by the latest LLMs.</li>\n    <li><b>Call recording and playback</b>: Record calls and review them with speaker separation and jump to insight navigation.</li>\n</ul>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO14436\"target=\"_blank\">Get integrated inbound and outbound calling with Sales Hub dialer</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-04-02T20:33:16Z",
+    "endDateTime": "2026-06-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T20:33:33.357Z",
+    "title": "Improved secure file preview experience in OneDrive for iOS and iPadOS",
+    "id": "MC1268909",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft OneDrive"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "OneDrive for iOS and iPadOS will offer secure in-app preview of Word, Excel, and PowerPoint files without downloading, respecting existing Microsoft 365 security and compliance policies. This rollout begins in April 2026, is enabled by default, requires no action, and does not change file permissions or sharing."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We're introducing an improved secure file preview experience for Word, Excel, and PowerPoint files in the OneDrive mobile app for iOS and iPadOS. With this experience, users can preview files directly within the OneDrive app without downloading them to their device or opening them in standalone Microsoft 365 apps. Existing Microsoft 365 security, compliance, and access policies continue to be enforced, helping organizations maintain protection while improving mobile productivity.</p>\n<!-- Image placeholder -->\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide): We will begin rolling out in <b>early April 2026</b> and expect to complete the rollout by <b>late April 2026</b>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p style=\"margin-left:20px;\"><b>Who is affected:</b></p>\n<ul style=\"margin-left:40px;\">\n  <li>All users who access OneDrive files using the OneDrive mobile app on iOS and iPadOS</li>\n</ul>\n\n<p style=\"margin-left:20px;\"><b>What will happen:</b></p>\n<ul style=\"margin-left:40px;\">\n  <li>Users can preview Word, Excel, and PowerPoint files directly within the OneDrive mobile app.</li>\n  <li>Files are previewed securely without being downloaded or stored locally on the device.</li>\n  <li>The experience is <b>enabled by default</b>.</li>\n  <li>Existing Microsoft 365 security, compliance, sensitivity labels, Conditional Access, and access controls are respected.</li>\n  <li>There is no change to file permissions, sharing behavior, or audit logging.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No action is required.</li>\n  <li>Optionally, inform your helpdesk and users about the improved secure preview experience for mobile access.</li>\n  <li>Review existing Conditional Access or mobile app protection policies if you have strict mobile access requirements.</li>\n</ul>\n\n<p><b>Learn more: </b><a href=\"https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9\" target=\"_blank\">Apply sensitivity labels to your files | Microsoft Support</a></p><p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-02T20:35:45Z",
+    "endDateTime": "2026-06-15T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T20:35:58.06Z",
+    "title": "Microsoft Teams: Badging updates to help users find messages that count",
+    "id": "MC1268911",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "559612"
+      },
+      {
+        "name": "FeatureStatusJson",
+        "value": "{\"559612\":[{\"RoadmapId\":559612,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T22:14:35.2566078Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T22:14:35.256608Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T22:14:35.2566083Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T22:14:35.2566087Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T22:14:35.2566089Z\",\"LatestRing\":null}]}"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will update badge counts starting mid-April 2026 to show unread, unmuted chats, personal mentions, followed threads, and tag mentions with clearer visual indicators. The feature is enabled by default, requires no admin action, and aims to simplify message notifications for all desktop and mobile users."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, Desktop, iOS, Mac"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We’re updating how Microsoft Teams calculates and displays badge counts to make it easier for users to find and clear messages that contribute to their unread count. A badge count is the number displayed on the Teams app and navigation that shows how many unread messages or notifications require user attention. This update introduces clearer visual indicators and simplifies the chat and channels list.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/da0d6c16-7d27-4e44-909d-7b51889a67c0\" style=\"width: 300px;\" alt=\"user settings\"></p>\n\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=559612\" target=\"_blank\">559612</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li>Targeted Release (Worldwide): Rollout will begin in <b>mid-April 2026</b> and is expected to complete by <b>early May 2026</b>.</li>\n  <li>General Availability (Worldwide): Rollout will begin in <b>early May 2026</b> and is expected to complete by <b>mid-May 2026</b>.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>All users of Microsoft Teams on desktop and mobile.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Users may notice a change in their overall Teams badge count.</li>\n  <li>Users may notice a change in chat badge counts (and Teams badge counts when using split-app mode).</li>\n  <li>The new badge count is calculated as the sum of:\n    <ul>\n      <li>Unread, unmuted chats</li>\n      <li>Unread personal mentions</li>\n      <li>Unread followed threads</li>\n      <li>Unread tag mentions</li>\n    </ul>\n  </li>\n  <li>Unread, unmuted chats in the chat list will display a purple dot to indicate they contribute to the badge count.</li>\n  <li>In Quick views, Mentions, Followed threads, and Tag mentions will display a purple number showing how many unread items contribute to the badge count.</li>\n  <li>Mention charms and Important charms will be removed from the chat and channels list to simplify the experience.</li>\n  <li>The feature is <b>enabled by default</b> and does not require admin configuration.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li><b>No admin action</b> is required.</li>\n  <li>Consider informing users about how badge counts are calculated to reduce confusion or helpdesk inquiries.</li>\n  <li>For followed threads, users can adjust their preferences by going to <b>Settings &gt; Chats and channels</b> and updating <b>Automatically follow threads in channels</b>.</li>\n  <li>Update internal training or helpdesk documentation if you reference Teams badge behavior.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified; review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-02T20:58:01Z",
+    "endDateTime": "2026-06-15T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T20:58:10.897Z",
+    "title": "Microsoft Defender XDR: Email summary powered by Security Copilot on the email entity page",
+    "id": "MC1268924",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Defender XDR will add an AI-powered Email summary via Security Copilot on the Email entity page, launching in public preview mid-April 2026 and generally available by mid-May 2026. It provides concise threat insights, timeline analysis, URL and attachment assessments, requiring Security Copilot access and SCUs."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re introducing <b>Email summary powered by Security Copilot</b> on the <i><b>Email Entity page</b></i> in <i>Microsoft Defender XDR</i>. This AI-driven capability helps security teams quickly understand and respond to email threats by summarizing email detection data into clear, actionable insights. This feature is designed to reduce investigation time and improve analyst efficiency by presenting key signals and analysis in one place.</p><p><b>[When this will happen]</b></p><ul><li><b>Public preview: </b>Rollout begins in <b>mid-April 2026 </b>and is expected to complete by <b>late April 2026</b>.</li><li><b>General availability (Worldwide): </b>Rollout begins in <b>early May 2026 </b>and is expected to complete by <b>mid-May 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p>Who is affected</p><ul><li>Security teams and admins using <b>Microsoft Defender XDR</b></li><li>Microsoft 365 tenants with <b>Security Copilot access</b> and <b>provisioned Security Compute Units (SCUs)</b></li></ul><p>What will happen</p><ul><li>A<b> new Email summary section</b> will appear on the <i><b>Email entity page</b></i> in <i>Microsoft Defender XDR:&nbsp;</i><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/2275eb24-7d67-4382-bd76-3f425b1591ea/abedc7237725eaca9bc876c0546099212589827a.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Security Copilot will generate <b>AI-driven summaries</b> that include:<ul><li><b>Email overview: </b>A concise summary of detected threats, actions taken, overrides, and key indicators:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/37b41389-eeaf-4e3e-a7e3-bd21773ea4af/bfbbccd5c1a64011d6f38b0a133d693259b49792.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li><b>Timeline event analysis: </b>A chronological view of actions and outcomes across the email lifecycle:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/c9b06ef5-a3d6-486a-afc8-c7e2b8ed052d/3d02fea344bd95cdb2d6ae4f0b46ae2361fe7a61.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li><b>URL analysis: </b>Assessment of URLs extracted from the email to identify known malicious behavior.</li><li><b>Attachment analysis: </b>Insights into attachments, highlighting suspicious or harmful files and associated risks.</li></ul></li><li>This feature <b>requires Security Copilot access</b> and SCUs and is<b> not enabled by default</b>.</li><li>Existing security policies, permissions, and investigation workflows are respected; no policy changes are required.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Ensure <b>Security Copilot Security Compute Units (SCUs)</b> are provisioned in your tenant.</li><li>Verify that intended users have access to <b>Security Copilot</b>.</li><li>Review and update internal investigation workflows or documentation, if applicable.</li><li>Inform security analysts about the new Email summary experience so they can incorporate it into daily investigations.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/copilot/security/get-started-security-copilot\" target=\"_blank\">Get started with onboarding to Microsoft Security Copilot | Security Copilot | Security | Microsoft Learn</a>\n</li><li><a href=\"https://learn.microsoft.com/copilot/security/security-copilot-inclusion\" target=\"_blank\">Learn about Security Copilot for Microsoft 365 E5 included customers | Security Copilot | Security | Microsoft Learn</a>\n</li><li><a href=\"https://learn.microsoft.com/defender-xdr/security-copilot-in-microsoft-365-defender\" target=\"_blank\">Microsoft Security Copilot in Microsoft Defender | Microsoft Defender XDR | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed (for example, emails, detections, URLs, or attachments)?</td><td>Yes. This change alters how existing email detection data in Microsoft Defender XDR is processed by using Security Copilot to generate AI-based summaries from existing signals, metadata, and analysis results. No new customer data is stored, and existing data retention, residency, and access controls remain unchanged.</td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. This change introduces a generative AI capability through Security Copilot that summarizes existing Microsoft Defender XDR email data to provide contextual insights for security analysts. The AI output is derived from existing data and does not replace underlying security signals or detections.</td></tr><tr><td>Does the change provide end users any new way of interacting with generative AI, if so how?</td><td>Yes. Security analysts can view AI-generated summaries on the Email entity page, providing read-only insights generated by Security Copilot. The feature respects existing role-based access controls and does not grant access to data beyond what users are already permitted to view.</td></tr><tr><td>Does the change include an admin control, and can it be controlled through Entra ID group membership?</td><td>Yes. Access to this capability is controlled through Security Copilot licensing and the provisioning of Security Compute Units (SCUs). Administrative access can be managed using existing access controls, including Entra ID–based role assignments.</td></tr></tbody></table><p><b></b></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-02T20:58:31Z",
+    "endDateTime": "2026-06-19T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T20:58:41.29Z",
+    "title": "Microsoft Teams: Enhanced media quality for Direct Guest Join",
+    "id": "MC1268925",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "558922"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will enhance Direct Guest Join media quality by mid-May 2026, supporting up to 16 participant videos in a 4×4 grid and improving video reliability via simulcast streaming for Zoom, Google Meet, and Cisco device users. The update is enabled by default with no admin action needed."
+      },
+      {
+        "name": "Platforms",
+        "value": "TeamsAndSurfaceDevices"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><p><b>[Introduction]</b></p>\nMicrosoft Teams is enhancing media quality for <b>Direct Guest Join (DGJ) </b>to improve cross‑platform meeting experiences. These updates deliver higher video fidelity and more reliable performance when users join Teams meetings from Zoom, Google Meet, or Cisco devices.</p><p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558922\" target=\"_blank\">558922</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  </ul><p>General Availability (Worldwide): Rollout will begin in<b> mid‑May 2026</b> and is expected to complete by <b>mid‑May 2026</b>.</p><ul>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations hosting Microsoft Teams meetings with participants joining via <b>Direct Guest Join</b> from <b>Zoom, Google Meet, or Cisco devices</b>.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Meetings joined through Direct Guest Join will support<b> up to 16 participant videos</b> in a <b>4×4 video grid</b>.</li><li><b>Simulcast streaming</b> will improve video quality and reliability across heterogeneous meeting platforms.</li><li>The enhancement is <b>enabled by default</b>.</li><li>No changes are required to existing Teams policies or meeting workflows.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No admin action is required.</li>\n  <li>Inform users about upcoming improvements to cross‑platform meeting quality.</li>\n  <li>Update internal documentation or helpdesk guidance if applicable.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\nNo compliance considerations identified; review as appropriate for your organization.<p></p>\n</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-02T20:59:02Z",
+    "endDateTime": "2026-07-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T20:59:13.51Z",
+    "title": "Microsoft AutoUpdate (MAU) CDN Endpoint Update for Mac",
+    "id": "MC1268926",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": "2026-05-31T07:00:00Z",
+    "services": [
+      "Microsoft 365 suite"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft AutoUpdate for Mac will switch to a new CDN endpoint by June 1, 2026, improving update reliability and security. Organizations must ensure network access to res.public.onecdn.static.microsoft and update MAU settings if needed. The legacy endpoint will be decommissioned by August 1, 2026."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We’re updating the content delivery network (CDN) endpoint used by Microsoft AutoUpdate (MAU) to download updates for Microsoft apps on macOS. This change is part of an infrastructure upgrade to improve the reliability, performance, and security of update delivery by standardizing downloads on Microsoft’s latest CDN endpoint.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li>September 2025: MAU version 4.80 is released. MAU defaults to downloading updates from the new CDN endpoint unless configured to use a custom update location.</li>\n  <li>Through May 31, 2026: Updates are published to both the legacy and new CDN endpoints.</li>\n  <li>June 1, 2026: Updates are published only to the new CDN endpoint.</li>\n  <li>August 1, 2026: The legacy CDN endpoint is fully decommissioned.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations with macOS devices that use Microsoft AutoUpdate (MAU) to receive updates for Microsoft apps.</li>\n  <li>Administrators who restrict outbound internet access (for example, firewall rules, proxy rules, or domain allowlists).</li>\n  <li>Administrators who override the MAU update location using custom configuration (for example, Custom update channel, ManifestServer, or UpdateCache preferences).</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Starting June 1, 2026, MAU will download updates only from the new CDN endpoint: <ul><li><code>res.public.onecdn.static.microsoft</code><b></b></li></ul></li>\n  <li>The legacy endpoint <ul><li><code>officecdnmac.microsoft.com</code><b></b> </li><li>will no longer host newly released update packages after June 1, 2026.</li></ul></li>\n  <li>If access to the new endpoint is blocked, MAU may fail to download updates, which could result in devices remaining on older versions or missing security updates.</li>\n  <li>There are no changes to MAU app behavior, update channels, update schedules, or how updates are installed or managed.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>If your organization restricts outbound network access, review firewall, proxy, or allowlist rules to ensure managed Mac devices can access <ul><li><code>res.public.onecdn.static.microsoft</code><b></b></li></ul></li>\n  <li>Review MAU preferences to confirm they do not reference <ul><li><code>officecdnmac.microsoft.com</code><b></b></li></ul></li>\n  <li>No action is required if your organization allows outbound internet access and does not configure a custom MAU update location.</li>\n  <li>For more information, review MAU preferences documentation: <a href=\"https://learn.microsoft.com/microsoft-365-apps/mac/mau-preferences\">Microsoft AutoUpdate preferences for macOS</a>.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-02T21:02:05Z",
+    "endDateTime": "2026-08-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T21:02:13Z",
+    "title": "Microsoft Viva: Manage data sharing exclusions for Viva Glint and Viva Insights",
+    "id": "MC1268931",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Viva introduces a centralized exclusion list in Viva Feature Access Management, allowing admins to exclude specific users or groups from sharing Viva Insights data with Viva Glint. This feature, rolling out mid-May to late June 2026, enhances privacy controls without disabling the entire integration."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We’re improving the Viva Glint and Viva Insights integration by introducing a centralized <b>exclusion list</b> in <b>Viva Feature Access Management</b>. This update allows Viva Glint admins to exclude specific users or groups from having their Viva Insights data shared with Viva Glint without having to disable the entire integration. This simplifies configuration and supports consistent, privacy-conscious data-sharing controls.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li>General Availability (Worldwide): Rollout begins <b>mid-May 2026</b> and is expected to complete by <b>late June 2026</b>.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Tenants using Viva Insights workplace metrics in Viva Glint&nbsp;</li>\n  <li>Viva Glint and Global admins managing Viva Feature Access Management</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>If you previously kept the Viva Glint and Viva Insights integration disabled because certain users or groups should not have their Viva Insights metrics shared with Viva Glint, you can now exclude those users or groups and turn on the integration.</li><li>A new setting appears under Viva Glint: “Allow data sharing from Viva Insights.”</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/1a785d53-dacf-419b-9e63-7dc57b97c857\" style=\"width: 400px;\" alt=\"user settings\"></p>\n  <li>Admins can exclude specific Entra ID users or groups from data sharing.</li>\n  <li>Excluded users’ Viva Insights metrics will not be shared with Viva Glint.</li>\n  <li>The integration remains unchanged unless admins configure this setting.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>Review whether your organization has users or groups whose Viva Insights data should not be shared with Viva Glint</li><li>No action is required if you want Viva Insights data shared with Viva Glint for all eligible users.</li><li>If you have users or groups whose Viva Insights metrics should not be shared with Viva Glint, you can configure exclusions using the new setting once it becomes available.</li><ul><li>Go to <b>Viva Feature Access Management</b></li><li>Select <b>Viva Glint</b></li><li>Open <b>Allow data sharing from Viva Insights</b></li><li>Choose <b>Off </b>→ <b>Specific people and groups</b></li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/33bb77c7-b758-4f66-a771-145e6cbc6a7c\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Add the relevant Entra ID users or groups</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/29755551-2073-4081-8949-ef23771c8a77\" style=\"width: 400px;\" alt=\"user settings\"></p></ul>\n  <li>Update internal privacy or data‑sharing documentation if applicable</li><li>Inform HR, analytics, or insights teams of the new control to avoid duplicate or manual workarounds</li></ul><p><b>Learn more: </b><a href=\"https://learn.microsoft.com/viva/insights/advanced/admin/export-insights-data-glint\" target=\"_blank\">Export Viva Insights data to Viva Glint | Microsoft Learn</a>&nbsp;(will be updated before rollout)</p><p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"5\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Compliance area</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>Processing or access to existing customer data</td>\n    <td>Admins can exclude selected users or groups so their Viva Insights metrics are not shared with Viva Glint, changing how existing data is accessed across services.</td>\n  </tr>\n  <tr>\n    <td>Admin controls and Entra ID group support</td>\n    <td>The feature introduces a new admin control in Viva Feature Access Management that supports excluding Microsoft Entra ID users and groups.</td>\n  </tr>\n  <tr>\n    <td>Compliance monitoring and reporting</td>\n    <td>Centralized exclusion management improves consistency and auditability of privacy and data-sharing controls across Viva services.</td>\n  </tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-02T21:02:30Z",
+    "endDateTime": "2026-05-29T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-02T21:02:36.207Z",
+    "title": "Viva Engage: Pinned resources and related communities in Teams for iOS",
+    "id": "MC1268933",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "559107"
+      },
+      {
+        "name": "Summary",
+        "value": "Viva Engage in Microsoft Teams for iOS will add pinned resources and related communities by late April 2026, matching other platforms. This enhances content access and community discovery, is enabled by default, requires no admin action, and affects users and community admins."
+      },
+      {
+        "name": "Platforms",
+        "value": "iOS"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We're improving the Viva Engage experience in Microsoft Teams for iOS by bringing <b>pinned resources</b> and <b>related communities</b> into the Teams mobile app. Pinned resources highlight important links and files within a community, while related communities help users discover other relevant Viva Engage communities. These are two separate features that work together to improve information access and community discovery.</p><p>This update aligns the iOS experience with Engage on the web, the Engage mobile app, and Teams for Android, helping users discover important content and related communities more easily—especially those who rely on Teams on iOS as their primary communication tool.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=559107\" target=\"_blank\">559107</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>General Availability (Worldwide):</b> Rollout begins in <b>late April 2026</b> and is expected to complete by <b>late April 2026</b>.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Users who access Viva Engage communities in Microsoft Teams on iOS</li>\n<li><b>Community admins</b> who manage Viva Engage communities</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>Users will see<b> pinned resources</b> for a community directly within Teams on iOS.</li>\n<li>Users will see <b>related communities</b> surfaced within the community experience.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8aca528a-aaf3-414f-9c52-19fa98f32dcb\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>The experience will match what is already available in the Viva Engage mobile app, Viva Engage on the web, and Teams for Android.</li>\n<li>The feature is <b>enabled by default</b>.</li>\n<li>There are no changes to existing admin policies or configurations.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<p>No admin action is required.</p>\n<ul>\n<li>Communicate this update to end users who use Teams on iOS.</li>\n<li>Encourage Viva Engage <b>community admins</b> to review pinned resources and related communities.</li>\n<li>Update internal documentation or helpdesk guidance, if applicable.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
