@@ -2595,7 +2595,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"491632\":[{\"RoadmapId\":491632,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786498Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786496Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786501Z\",\"LatestRing\":null}]}"
+        "value": "{\"491632\":[{\"RoadmapId\":491632,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786496Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786498Z\",\"LatestRing\":null},{\"RoadmapId\":491632,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T04:43:05.5786501Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -3053,45 +3053,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Windows PowerShell 2.0 is removed from Windows 11, version 24H2 starting with the August 2025 non-security update. It’s also removed from Windows Server 2025 starting with the September 2025 security update. Windows Insider preview builds already reflect this change as of July 2025. Windows PowerShell 2.0 is over 14 years old, lacks many security enhancements of the later versions, and has been deprecated since 2017. By using the newer and supported PowerShell 7 or PowerShell 5.1, you can help ensure that scripts run safer. If you have legacy scripts or software that explicitly depend on PowerShell 2.0, you’ll need to either update them or use a workaround to prevent disruptions.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><ul><li>2017: PowerShell 2.0 was <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">deprecated</a>.&nbsp;</li><li>July 2025: PowerShell 2.0 is removed from <a href=\"https://blogs.windows.com/windows-insider/2025/07/03/announcing-windows-11-insider-preview-build-27891-canary-channel/\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Insider preview builds</a>.&nbsp;</li><li>August 2025 Windows non-security update: PowerShell 2.0 is removed from Windows 11, version 24H2 and later.&nbsp;</li><li>September 2025 Windows security update: PowerShell 2.0 is removed from Windows Server 2025 and later.&nbsp;</li></ul><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>This removal is part of a <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">broader effort</a> to clean up legacy code, reduce the complexity of the PowerShell ecosystem, and improve Windows security. For most users and organizations, this change will be uneventful – newer versions of PowerShell (5.1 and 7.x) continue to be available and supported. However, if you have legacy scripts or software that explicitly depends on PowerShell 2.0, you will need to take action (update them or use a workaround) to prevent any disruptions.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><ul><li>Recommended: Migrate scripts and tools to newer PowerShell versions. Microsoft primary guidance is to update anything using PowerShell 2.0 to use PowerShell 5.1 or PowerShell 7. PowerShell 5.x introduced many improvements and is backward-compatible for almost all commands and modules. The PowerShell team <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/#i%E2%80%99m-a-powershell-expert-just-give-me-the-quick-version\" rel=\"noopener noreferrer\" target=\"_blank\">article</a> provides a guide for this migration.&nbsp;</li><li>Update or replace outdated software. In some cases, the fix might be to upgrade the software that needed PowerShell 2.0. For example, if an old installer fails, look for a newer version of that product.&nbsp;</li><li>See Additional information for more resources.&nbsp;</li></ul><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><ul><li>Read <a href=\"https://support.microsoft.com/topic/fe6d1edc-2ed2-4c33-b297-afe82a64200a\" rel=\"noopener noreferrer\" target=\"_blank\">PowerShell 2.0 removal in Windows</a> for further details.&nbsp;</li><li>Developers’ <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/#i%E2%80%99m-a-powershell-expert-just-give-me-the-quick-version\" rel=\"noopener noreferrer\" target=\"_blank\">quick guide</a> to PowerShell migration.&nbsp;</li><li>Consult the comprehensive list of <a href=\"https://learn.microsoft.com/windows/whats-new/deprecated-features\" rel=\"noopener noreferrer\" target=\"_blank\">deprecated features for Windows client</a>.&nbsp;</li><li>Visit the <a href=\"https://devblogs.microsoft.com/powershell/windows-powershell-2-0-deprecation/\" rel=\"noopener noreferrer\" target=\"_blank\">original 2017 deprecation announcement</a>.&nbsp;</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-08-12T23:04:26Z",
-    "endDateTime": "2026-04-02T07:00:00Z",
-    "lastModifiedDateTime": "2025-08-12T23:04:31.967Z",
-    "title": "Outlook for iOS and Android: Send button relocated to reduce accidental sends",
-    "id": "MC1134176",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Exchange Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "499900"
-      },
-      {
-        "name": "Summary",
-        "value": "The Send button in Outlook mobile (iOS and Android) will move from the bottom toolbar to the top header in the compose view to reduce accidental sends. This change, rolling out from September 2025 to March 2026, is enabled by default and does not affect desktop or web clients."
-      },
-      {
-        "name": "Platforms",
-        "value": "Android, iOS"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>Introduction</b></p><p>To help reduce accidental message sends, Outlook mobile is updating the placement of the Send button in the compose view. The button will move from the bottom toolbar to the header area, placing it in a less crowded location. This change supports a more intentional and error-free messaging experience for mobile users by minimizing the likelihood of accidental taps.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=499900\" target=\"_blank\">499900</a>.</p><p><b>When this will happen</b></p><p><b>General Availability (Worldwide, GCC, GCC High, and DoD):&nbsp;</b>We will begin rolling out in early September 2025 and expect to complete by early March 2026.</p><p><b>How this will affect your organization</b></p><p>Once this change is deployed, users on <b>Outlook mobile clients (Android and iOS)</b> will see the Send button relocated to the top of the compose view. This update is designed to reduce accidental taps and improve usability. The feature will be <b>enabled by default</b>.</p><p>The following screenshots illustrate the updated Send button placement in the compose view on Outlook mobile.</p><p><i>Image 1 - New Send button placement in Outlook for iOS – full compose view:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/c33e40e1-d34f-486a-896a-1d5c7ee1ff7b/09c2ffc6070adc243487147ca8cc483802da9856.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Image 2 - New Send button placement in Outlook for iOS – small compose view:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/58e48622-30d3-44ab-8a7e-b5a4892c0892/45010350909549feed85806c99cd2f43b101a58c.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Image 3 - New Send button placement in Outlook for Android – full compose view:&nbsp;</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/6511f543-36b4-495a-be61-6ce85eea12e6/e146f0b843e6e9ca7f73bc3b4bbbaf8af87d43a9.png\" alt=\"user settings\" style=\"width: 400px;\"></p><p>\n</p><p>This change does <b>not affect Outlook on the web or desktop clients</b>.</p><ul><li><b>Add-ins and customizations: </b>This change does not affect existing add-ins or customizations in the compose view.\n</li><li><b>Accessibility tools and keyboard shortcuts:</b> There will be no impact.\n</li><li><b>Consistency: </b>The new placement is consistent across screen sizes and supported browsers.</li></ul><p><b>What you can do to prepare</b></p><p>No admin action is required.\n</p><p>We recommend notifying your users about this change and updating any relevant training materials or documentation to reflect the new button placement.</p><p>If applicable, test any custom add-ins or UI extensions in the compose view to ensure compatibility, although no known impact is expected.</p><p><b>Compliance considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -3677,7 +3638,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191546Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191549Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191551Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191553Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191551Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191549Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191546Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191553Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -4266,7 +4227,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842871Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190177Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190181Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190177Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842871Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190181Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -4887,7 +4848,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"515169\":[{\"RoadmapId\":515169,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837718Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837717Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837716Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837715Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837719Z\",\"LatestRing\":null}]}"
+        "value": "{\"515169\":[{\"RoadmapId\":515169,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837715Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837716Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837717Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837718Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837719Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -6141,7 +6102,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564191Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.0878497Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2025-06-26T13:52:00.08785Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2025-07-17T00:32:39.564192Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -6227,39 +6188,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated&nbsp;February 4, 2026: We have updated the timeline.&nbsp;Thank you for your patience.</p><p><b>[Introduction]</b></p>\n<p>Teams users in tenants with open collaboration policies have long been able to start a chat with anyone who has an email address. However, recipients without a Teams account were previously asked to sign up for one before being able to collaborate. We're introducing a new capability in Microsoft Teams for certain tenants (see ‘Who is affected’ below) that allows these recipients to <b>join the chat as a guest— no account needed</b>, and as long as it is <b>allowed by the tenant’s existing policy configuration</b>.</p><p>This feature will be available across Windows, Mac, Web, iOS, and Android platforms.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=513271\" target=\"_blank\">513271</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Targeted Release:</b>&nbsp;Rollout for users with the aforementioned licenses begun in early November 2025 and was completed in mid-November 2025</li>\n<li><b>General Availability (Worldwide):</b>&nbsp;May 2026 (previously February)</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p><p>This capability is currently available only to small and medium business customers enrolled in public preview with a Teams Essentials, Business Basic, Business Standard, or Business Premium license. It also only affects organizations with guest chat enabled and that do not limit guest collaboration to specific domains. Organizations without users enrolled in public preview or without users with these licenses may still see this post even if they are not affected.</p>\n<p><b>What will happen for those who are affected:</b></p>\n<ul>\n<li>After Teams users start a chat with someone who is not on Teams, the recipient will receive an email inviting them to join the chat as a guest. Only Teams users in your organization can start the chat, as users without Teams accounts cannot initiate chats.</li>\n<li>Chats will remain within your organization’s boundary.</li>\n<li>This feature is <b>enabled by default</b> but will be governed by your organization’s Entra B2B Guest policies and Teams Admin Center Guest Access policies. It will not override any existing policy configurations.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Update internal documentation to reflect this new capability.</li>\n<li>Inform helpdesk and support teams about the change.</li><li>Review the documentation here: <a href=\"https://learn.microsoft.com/microsoftteams/chat-with-people-not-using-teams\">Chat with anyone not using Teams - Microsoft Teams | Microsoft Learn</a></li><li>To disable the feature, set the <b>UseB2BInvitesToAddExternalUsers </b>attribute of TeamsMessagingPolicy to<b> false</b>. <a href=\"https://learn.microsoft.com/powershell/module/microsoftteams/set-csteamsmessagingpolicy?view=teams-ps#-useb2binvitestoaddexternalusers\" target=\"_blank\">Set-CsTeamsMessagingPolicy documentation here</a>.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-03T17:57:02Z",
-    "endDateTime": "2026-04-02T07:00:00Z",
-    "lastModifiedDateTime": "2025-12-03T18:09:27.98Z",
-    "title": "(Updated) Retirement of Visio Data Visualizer Add-in for Microsoft Excel",
-    "id": "MC1182535",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": "2025-12-07T08:00:00Z",
-    "services": [
-      "Microsoft 365 for the web",
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The Visio Data Visualizer add-in for Excel will be removed from the add-in store, templates, and ribbon in January 2026, with its service shutting down on March 2, 2026. Users should save diagrams as Visio (.vsdx) files before then; no admin action is required."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated December 3, 2025: The previously announced date of December 8, 2025 for removing the Visio Data Visualizer add-in from the Excel add-in store, templates, and ribbon has been extended until at least January 2026. Exact revised date will be shared in a future update. The service shutdown date remains unchanged. Admins should NOT turn off the add-in on December 8, 2025 (or take any other action) so that users can continue using the add-in until the revised removal date and the service shutdown. Furthermore, no admin action is required for this retirement moving forward, regardless of whether centralized deployment of add-ins is used. </p><p>Thank you for your patience.&nbsp;<br></p><p><b>Retirement of Visio Data Visualizer Add-in for Excel</b></p>\n<p>We’re retiring the Visio Data Visualizer add-in for Excel to streamline diagramming experiences and focus development efforts on Visio Plan 2 and the Visio desktop app. This change aligns with our commitment to delivering more robust, data-connected diagramming capabilities through supported platforms.</p>\n\n<p><b>When this will happen:</b></p>\n<ul>\n<li><b>January 2026</b>: The Visio Data Visualizer add-in will be removed from the Excel add-in store, templates, and ribbon.&nbsp;</li>\n<li><b>March 2, 2026</b>: The service powering the add-in will be shut down. Existing diagrams created with the add-in will no longer render or refresh.</li>\n</ul>\n\n<p><b>How this affects your organization:</b></p>\n<p><b>Who is affected:</b> All Microsoft 365 users who use the Visio Data Visualizer add-in in Excel, and admins managing centralized deployment of Office add-ins.</p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Starting January 2026, the add-in will be removed from the Excel add-in store, templates, and ribbon. Users will no longer be able to create new Data Visualizer diagrams using the add-in.</li>\n<li>By March 2, 2026, the service powering the add-in will be shut down. Existing Data Visualizer add-in diagrams embedded in Excel will no longer load or refresh after this date, though the underlying Excel table data will remain intact.</li>\n<li>In November, users will start seeing a business bar in the Data Visualizer add-in frame notifying them of the upcoming retirement. The business bar will include a link to a detailed, user-facing article explaining how to save their diagrams as Visio (.vsdx) files.</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>If your tenant does not use centralized deployment of add-ins, no action is required. The change will be applied automatically on the specified dates</li><li>Inform your users about this change and its timelines.</li>\n<li>Encourage users to save any existing Data Visualizer diagrams as Visio (.vsdx) files before March 2, 2026. After that date, diagrams embedded in Excel will no longer be accessible or refreshable.</li>\n<li>Update any relevant user documentation to reflect that the add-in will no longer be available after January 2026 and that the service will be fully decommissioned on March 2, 2026.</li>\n<li>Share information about alternate options, such as <a href=\"https://www.microsoft.com/microsoft-365/visio/visio-plan-2\" target=\"_blank\">Visio Plan 2</a> and <a href=\"https://support.microsoft.com/office/create-a-data-visualizer-diagram-17211b46-d144-4ca2-9ea7-b0f48f0ae0a6\" target=\"_blank\">creating data-backed diagrams via the Visio desktop app</a>.</li>\n</ul>\n\n<p><b>Steps for users (Microsoft 365 subscribers):</b></p>\n<ul>\n<li>Open the Excel file containing the Data Visualizer diagram.</li>\n<li>In the diagram area, select the More options menu (…) and choose <b>Open in web</b>.</li>\n<li>If prompted, sign in with a Microsoft 365 work or school account.</li>\n<li>A Visio (.vsdx) file corresponding to the diagram will be created and saved to OneDrive or Visio for the web.</li>\n<li>After March 2, 2026, the data connection and refresh features will no longer function, but the saved Visio file will remain accessible.</li><li>Learn more: <a href=\"https://aka.ms/visio-dv-add-in-retirement\" target=\"_blank\">Retirement of the Visio Data Visualizer add-in for Excel and next steps</a></li></ul>\n\n<p><b>Compliance considerations:</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization</p>"
     }
   },
   {
@@ -6976,7 +6904,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1562998Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563002Z\",\"LatestRing\":null}]}"
+        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1562998Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563002Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -7784,38 +7712,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated March 9, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction:]</b>\n</p><p>Microsoft Edge for Business will soon support summarization and contextual grounding with Microsoft 365 Copilot Chat. This enhancement enables users to ask Copilot questions about multiple open browser tabs, Microsoft 365 documents (such as Word, Excel, PowerPoint), and YouTube videos directly from the Edge side pane.\n</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=496364\" target=\"_blank\">496364</a>, <a href=\"https://www.microsoft.com/en-us/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=499423\" target=\"_blank\">499423</a>, and <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=499424\" target=\"_blank\">499424</a>.</p>\n\n<p><b>[When this will happen:]</b>\n</p><p><b>General Availability (Worldwide): </b>We will begin rolling out in late April (previously mid-March).</p>\n\n<p><b>[How this affects your organization:]</b>\n</p><p><b>Who is affected:</b>&nbsp;Users signed in to Microsoft Edge for Business with their Entra ID and who have access to Microsoft 365 Copilot.</p><p><b>What will happen:</b>\n</p><ul>\n<li>Users will be able to ask Copilot questions about open browser tabs, Microsoft 365 documents, and YouTube videos.</li>\n<li>The feature will be<b> off by default</b>.</li>\n<li>If Copilot is restricted from accessing page content via <a href=\"https://learn.microsoft.com/DeployEdge/edge-learnmore-copilot-page-summary-results#blocking-copilot-chat-in-edge-for-business-access-to-page-content-through-dlp\" target=\"_blank\">Data Loss Prevention (DLP)</a> or the <a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-policies#edgeentracopilotpagecontext\" target=\"_blank\">EdgeEntraCopilotPageContext policy</a>, it will be suppressed to maintain DLP integrity.</li>\n<li>Existing DLP and policy configurations will be respected.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b>\n</p><ul>\n<li>This rollout will happen automatically by the specified date; no admin action is required before rollout.\n</li><li>Ensure users who need this capability have access to Microsoft 365 Copilot.</li><li>Ensure your tenant is configured to support Microsoft 365 Copilot and that eligible users meet all licensing prerequisites, including Entra ID sign-in and applicable Microsoft 365 service plans.</li><li>Review your current DLP and Edge policy configurations to determine potential impact.</li><li>Notify users about this upcoming capability.\n</li><li>Update internal documentation if needed.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/DeployEdge/edge-learnmore-copilot-page-summary-results\" target=\"_blank\">Microsoft 365 Copilot Chat in Edge and Access to Page Content | Microsoft Edge | Microsoft Learn</a><br></li><li><a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-policies\" target=\"_blank\">Microsoft Edge - Policies | Microsoft Edge | Microsoft Learn</a><br></li></ul><p></p><p><b>[Compliance considerations:]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td><td>Yes. Microsoft 365 Copilot introduces contextual grounding and summarization using generative AI across browser tabs, Microsoft 365 documents, and YouTube videos.</td></tr><tr><td>Does the change provide end users any new way of interacting with generative AI?</td><td>Yes. Users can now ask Copilot questions about open browser tabs and documents directly from the Edge sidepane, enabling real-time summarization and contextual responses.</td></tr><tr><td>Does the change modify Data Loss Prevention (DLP) policies or enforcement?</td><td>Yes. If DLP or the EdgeEntraCopilotPageContext policy restricts access, Copilot will be suppressed from accessing page content to maintain DLP integrity.</td></tr><tr><td>Does the change include an admin control, and can it be controlled through Entra ID group membership?</td><td>Yes. Admins can manage access to Copilot’s contextual grounding capabilities via DLP settings and Edge policy configurations, which can be scoped using Entra ID group membership.</td></tr></tbody></table><p><br></p>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-18T20:34:29Z",
-    "endDateTime": "2026-04-02T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-18T20:36:39.09Z",
-    "title": "New experiences for Copilot management in Microsoft 365 admin center",
-    "id": "MC1187780",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "Admin impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 suite",
-      "Microsoft 365 apps",
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The Microsoft 365 Admin Center will feature a redesigned Copilot landing page with success metrics, actionable insights, a Security pivot for Purview, and a Usage pivot. Rollout starts mid-November 2025 for targeted release and late January 2026 for general availability, requiring no extra setup."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>The newly refreshed landing page for Copilot in the MAC (Microsoft 365 Admin Center) allows you to get an at-a-glance view of the Copilot journey across Chat, Agents, and M365 Copilot. We have added <b>Success metrics</b> for each pillar and new metrics like <b>Chat active users</b>, <b>Assisted hours</b> for licensed users, and <b>Satisfaction rate</b>. Each pillar also has multi-signal actionable, personalized insights to unblock and accelerate adoption leveraging data from configuration, readiness, security, usage, adoption, and engagement. We are also introducing a <b>Security pivot</b> where you can see insights into Purview capabilities and actions needed. And we are centralizing usage reports related to Copilot under the new <b>Usage pivot</b>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Targeted Release</b>: Rollout will begin mid-November 2025; expected to complete by early December 2025.</li>\n<li><b>General Availability:</b>&nbsp;Rollout will begin late January 2026; expected to complete by late February 2026.</li>\n</ul>\n\n<p><b>How this affects your organization:</b></p>\n<ul>\n<li><b>Who is affected:</b> Microsoft 365 admins managing Copilot services.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Redesigned <b>Overview page</b> for Copilot in the Admin Center.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/5263a6e3-6ffa-4fd4-9e46-20006cde34fa\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li><b>Success metrics</b> for each Copilot pillar (Chat, Agents, M365 Copilot), including:\n<ul>\n<li><b>Chat active users</b></li>\n<li><b>Assisted hours</b> for licensed users</li>\n<li><b>Satisfaction rate</b></li>\n</ul>\n</li>\n<li>Multi-signal actionable insights leveraging configuration, readiness, security, usage, and engagement data.</li>\n<li>New <b>Security pivot</b> for Purview-related insights and recommended actions.</li>\n<li>Centralized usage reports under the new <b>Usage pivot</b>.</li>\n<li>Feature is on by default; no additional configuration required.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>Review the new <b>Overview page</b> and pivots to monitor adoption and security posture.</li>\n<li>Use actionable insights to unblock configuration and accelerate readiness.</li>\n<li>No additional setup is required.</li></ul><p>Before rollout, we will update this post with new documentation.</p><ul>\n</ul><p><b>Compliance considerations:</b></p>\n<p>No compliance considerations identified; review as appropriate for your organization.</p>"
     }
   },
   {
@@ -8647,7 +8543,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
+        "value": "{\"528930\":[{\"RoadmapId\":528930,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268208Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.426821Z\",\"LatestRing\":null},{\"RoadmapId\":528930,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-27T10:07:56.4268211Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -8880,7 +8776,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"506750\":[{\"RoadmapId\":506750,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T14:38:32.287941Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":506750,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T14:38:32.2879406Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":506750,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T14:38:32.2879413Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"506750\":[{\"RoadmapId\":506750,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T14:38:32.2879406Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":506750,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T14:38:32.287941Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":506750,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T14:38:32.2879413Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -10660,7 +10556,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561667Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561671Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561672Z\",\"LatestRing\":null}]}"
+        "value": "{\"537279\":[{\"RoadmapId\":537279,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561671Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561667Z\",\"LatestRing\":null},{\"RoadmapId\":537279,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561672Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11013,7 +10909,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5008007Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5008007Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11152,7 +11048,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101498Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101506Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101498Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101506Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -11371,7 +11267,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"543239\":[{\"RoadmapId\":543239,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010333Z\",\"LatestRing\":null},{\"RoadmapId\":543239,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010331Z\",\"LatestRing\":null},{\"RoadmapId\":543239,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010335Z\",\"LatestRing\":null}]}"
+        "value": "{\"543239\":[{\"RoadmapId\":543239,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010331Z\",\"LatestRing\":null},{\"RoadmapId\":543239,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010333Z\",\"LatestRing\":null},{\"RoadmapId\":543239,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010335Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -12708,7 +12604,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"513272\":[{\"RoadmapId\":513272,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561984Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561987Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561989Z\",\"LatestRing\":null}]}"
+        "value": "{\"513272\":[{\"RoadmapId\":513272,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561987Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561984Z\",\"LatestRing\":null},{\"RoadmapId\":513272,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1561989Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -13532,44 +13428,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p><b>Outlook on iPad</b> is adding the ability to <b>expand a calendar event into a full‑screen view</b>. This provides more space to review and edit event information.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=554939#Roadmap\" target=\"_blank\">554939</a>.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide, GCC, GCCH, and DoD)</b>: We will begin rolling out in <b>early March 2026</b> and expect to complete by<b> late March 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>: Users who access their Outlook calendar on iPad.</p><p><i>What will happen</i>:</p><ul><li>Users will be able to expand a calendar event to full‑screen:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/bf198075-0dc9-4bab-85a8-b041fee860b4/cba7c975d13bc439673d17ea7b1e48f54c22829a.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>The full‑screen view provides more room to read and edit event details:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/234fe12b-0f7b-4f13-874d-8563174c0cf4/a4c2210e5bfa06b85b2049afa6a6b7d695916744.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Users can collapse the full‑screen view back to the previous view by tapping the back button.</li><li>The feature is<b> enabled by default</b>.</li><li>Existing admin settings and policies remain unchanged.</li><li>There is no impact to other Outlook clients.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action is required.</p><p>Optional steps:</p><ul><li>Inform helpdesk staff of the updated event experience on iPad.</li><li>Update internal documentation if you track client-specific UI behavior.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-02-06T23:27:41Z",
-    "endDateTime": "2026-04-02T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-06T23:27:49.357Z",
-    "title": "Dark mode support in SharePoint Admin Center",
-    "id": "MC1228330",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "552593"
-      },
-      {
-        "name": "Summary",
-        "value": "Dark mode support is coming to the SharePoint admin center, allowing admins to switch between light and dark themes starting mid-February 2026. This optional feature improves visual comfort without affecting settings or end users, requiring no preparation or compliance changes."
-      },
-      {
-        "name": "Platforms",
-        "value": "Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>\nTo align with accessibility preferences and improve visual comfort for administrators, dark mode support is now coming to the SharePoint admin center. This update brings a consistent dark-themed experience similar to other Microsoft 365 admin portals.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=552593#Roadmap\" target=\"_blank\">552593</a>.</p>\n\n<p><b>[When this will happen:]</b></p><p>\nGeneral Availability (Worldwide, GCC):<b> </b>Rollout begins <b>mid-February 2026</b> and is expected to complete by <b>late February 2026</b>.</p><p><b>[How this affects your organization:]</b></p>\n<p><b style=\"\">Who is affected:</b></p><p>\nSharePoint administrators who use the SharePoint admin center.</p>\n\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n<li>A new dark mode option will become available in the SharePoint admin center.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/f8db2974-0a86-4cbf-af13-5fde3920a334\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>Admins can switch between light and dark themes at any time.</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/24efd76f-7a52-43bb-9248-591930908085\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>This is an optional experience; the default theme remains unchanged.</li>\n<li>No settings or controls are removed, and there is no impact to SharePoint end users.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p><p>\nNo preparation is required.&nbsp;</p>\n\n<p><b style=\"\">How to enable dark mode in the SharePoint admin center:</b></p>\n<ul>\n<li>Open the <b>SharePoint admin center</b> from the <b>Microsoft 365 admin portal</b>.</li>\n<li>Select the <b>Dark Mode </b>switch located on the top right.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -14455,7 +14313,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557184\":[{\"RoadmapId\":557184,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190712Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190713Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190714Z\",\"LatestRing\":null}]}"
+        "value": "{\"557184\":[{\"RoadmapId\":557184,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190713Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190712Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190714Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -15891,7 +15749,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554925\":[{\"RoadmapId\":554925,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913858Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913856Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.891386Z\",\"LatestRing\":null}]}"
+        "value": "{\"554925\":[{\"RoadmapId\":554925,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913856Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913858Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.891386Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -15976,7 +15834,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554933\":[{\"RoadmapId\":554933,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916868Z\",\"LatestRing\":null},{\"RoadmapId\":554933,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916866Z\",\"LatestRing\":null},{\"RoadmapId\":554933,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916869Z\",\"LatestRing\":null}]}"
+        "value": "{\"554933\":[{\"RoadmapId\":554933,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916866Z\",\"LatestRing\":null},{\"RoadmapId\":554933,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916868Z\",\"LatestRing\":null},{\"RoadmapId\":554933,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916869Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18838,7 +18696,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101354Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101353Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-27T14:26:24.8942664Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-03-27T14:26:24.8942672Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-27T14:26:24.8942664Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101353Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101354Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-03-27T14:26:24.8942672Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -19070,7 +18928,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558544\":[{\"RoadmapId\":558544,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.010114Z\",\"LatestRing\":null},{\"RoadmapId\":558544,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101138Z\",\"LatestRing\":null},{\"RoadmapId\":558544,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101141Z\",\"LatestRing\":null}]}"
+        "value": "{\"558544\":[{\"RoadmapId\":558544,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101138Z\",\"LatestRing\":null},{\"RoadmapId\":558544,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.010114Z\",\"LatestRing\":null},{\"RoadmapId\":558544,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0101141Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19626,7 +19484,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554927\":[{\"RoadmapId\":554927,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103996Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103995Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103994Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103993Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103991Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103997Z\",\"LatestRing\":null}]}"
+        "value": "{\"554927\":[{\"RoadmapId\":554927,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103991Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103993Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103994Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103995Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103996Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103997Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20584,7 +20442,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554932\":[{\"RoadmapId\":554932,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T10:25:09.6034218Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T10:25:09.6034216Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T10:25:09.603422Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"554932\":[{\"RoadmapId\":554932,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T10:25:09.6034216Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T10:25:09.6034218Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-03-26T10:25:09.603422Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -21889,7 +21747,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557975\":[{\"RoadmapId\":557975,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T06:35:20.6834578Z\",\"LatestRing\":null},{\"RoadmapId\":557975,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T06:35:20.6834582Z\",\"LatestRing\":null}]}"
+        "value": "{\"557975\":[{\"RoadmapId\":557975,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T08:28:43.3976896Z\",\"LatestRing\":null},{\"RoadmapId\":557975,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-02T08:28:43.3976899Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22611,7 +22469,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190853Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190856Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190858Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190861Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190858Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190856Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190853Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7190861Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -22913,7 +22771,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191546Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191549Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191551Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191553Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191551Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191549Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191546Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-02-18T20:16:54.7191553Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
