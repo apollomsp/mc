@@ -4848,7 +4848,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"515169\":[{\"RoadmapId\":515169,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837718Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837715Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837716Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837717Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837719Z\",\"LatestRing\":null}]}"
+        "value": "{\"515169\":[{\"RoadmapId\":515169,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837715Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837716Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837717Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837718Z\",\"LatestRing\":null},{\"RoadmapId\":515169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-11-10T04:12:26.1837719Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -6844,37 +6844,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>A new resource is available to help you understand&nbsp;Known Issue Rollback (KIR).&nbsp;This well-established process automatically rolls back problematic code for a known issue in&nbsp;Windows&nbsp;non-security updates. This rollback applies automatically through Windows Update on non-IT-managed devices. IT-managed devices require a specific Group Policy configuration.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>KIR came together as a functionally complete system beginning in Windows 10, version 2004.&nbsp;Since then, most of the code changes in Windows monthly updates support KIR capability.&nbsp;</div><div>The new resource is&nbsp;now&nbsp;available to learn more about KIR.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>KIR is a robust mitigation technology built into Windows&nbsp;non-security&nbsp;updates to help you safeguard and troubleshoot individual parts of the update.&nbsp;Windows offers KIR capability on all supported versions of Windows Server and client platforms, beginning with Windows Server 2008 SP2.&nbsp;The next time a known issue is resolved via KIR,&nbsp;you’ll&nbsp;better understand&nbsp;the resolution.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>Download the&nbsp;Group Policy&nbsp;template&nbsp;from the Download Center&nbsp;and follow the steps in <a href=\"https://learn.microsoft.com/troubleshoot/windows-client/group-policy/use-group-policy-to-deploy-known-issue-rollback\" rel=\"noopener noreferrer\" target=\"_blank\">How to use Group Policy to deploy a Known Issue Rollback</a>.&nbsp;</div><div>&nbsp;</div><div>For domain-joined&nbsp;devices, the Group Policy refresh happens at certain regular intervals. To make sure that the Group Policy settings take effect, take one of the following actions:&nbsp;</div><ul><li>Wait for Group Policy to&nbsp;refresh in&nbsp;the background, then restart the affected devices.&nbsp;</li><li>To force a single device to update its Group Policy settings, open a Command Prompt window on the device, and then run gpupdate&nbsp;/force. After the command runs, restart the device.&nbsp;</li></ul><div><br></div><div><b>Additional&nbsp;information:</b>&nbsp;</div><div>Learn more about how KIR works, supported scenarios, policy templates, and more at&nbsp;<a href=\"https://learn.microsoft.com/troubleshoot/windows-server/installing-updates-features-roles/known-issue-rollback?context=%2Ftroubleshoot%2Fwindows-client%2Fcontext%2Fcontext\" rel=\"noopener noreferrer\" target=\"_blank\">Known Issue Rollback.</a>&nbsp;</div><div><br></div><div>Here's&nbsp;where you can look for known issues and KIR mitigations:&nbsp;</div><ul><li>Windows&nbsp;release&nbsp;notes on the Windows update history sites, such as the <a href=\"https://aka.ms/Windows11/25H2/UpdateHistory\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a>, <a href=\"https://support.microsoft.com/topic/windows-10-update-history-8127c2c6-6edf-4fdf-8b9f-0f7be1ef3562\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 10</a>, and <a href=\"https://support.microsoft.com/topic/windows-server-2025-update-history-10f58da7-e57b-4a9d-9c16-9f1dcd72d7d7\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Server</a> update history pages. Scroll down to the <b>Known issues in this update</b> section.&nbsp;</li><li><a href=\"https://learn.microsoft.com/windows/release-health/\" rel=\"noopener noreferrer\" target=\"_blank\">Windows release health</a> dashboard. This site provides links to all Windows release notes for currently supported Windows versions.&nbsp;</li><li>Windows release health section on the <a href=\"https://admin.microsoft.com/Adminportal/Home#/homepage\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft 365 admin center</a>. You can also sign up for <a href=\"https://learn.microsoft.com/windows/deployment/update/check-release-health\" rel=\"noopener noreferrer\" target=\"_blank\">Windows release health notifications</a>.&nbsp;</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-06T00:20:03Z",
-    "endDateTime": "2026-04-03T07:00:00Z",
-    "lastModifiedDateTime": "2025-11-06T00:20:24.447Z",
-    "title": "Microsoft Entra: Soft deletion and restoration for cloud security groups",
-    "id": "MC1183299",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Entra"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Entra introduces soft deletion and restoration for cloud security groups, allowing recovery within 30 days while preserving settings, ownership, and membership. Rollout begins in late October 2025 (preview) and February 2026 (general availability). Deleted groups remove access until restored; audit logs track actions."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>To help organizations recover from accidental or malicious deletions, <b>Microsoft Entra</b> is introducing <b>soft deletion and restoration for cloud security groups</b>. This feature allows deleted groups to be restored within 30 days, preserving their settings, ownership, and membership—reducing the need to rebuild access models from scratch.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li><b>Public preview: </b>Rollout began in late in October 2025 and is expected to complete by early November 2025.</li>\n<li><b>General availability (Worldwide): </b>Rollout begins in late February 2026 and is expected to complete by early March 2026.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><i>Who is affected:</i></p>\n<ul>\n<li>Admins managing Microsoft Entra cloud security groups.</li>\n<li>Users whose access is governed by security groups.</li>\n</ul>\n\n<p><i>What will happen:</i></p>\n<ul>\n<li>Deleted cloud security groups will enter a soft deleted state and appear in the <i>Deleted groups blade</i>.</li>\n<li>During soft deletion:\n  <ul>\n    <li>Access granted via the group is removed.</li>\n    <li>The group is restorable for up to 30 days.</li>\n  </ul>\n</li>\n<li>After 30 days, the group is permanently deleted.</li>\n<li>Restoration recovers:\n  <ul>\n    <li>Group properties (name, description, type)</li>\n    <li>Settings (roles, policies)</li>\n    <li>Ownership and membership (assigned and dynamic)</li>\n  </ul>\n</li>\n<li>Admin tools supported:\n  <ul>\n    <li>Microsoft Entra admin center</li>\n    <li>Microsoft Graph</li>\n    <li>PowerShell</li>\n  </ul>\n</li>\n<li>Audit logs will capture deletion, restoration, and hard delete actions.</li>\n<li>Users lose access via the group during soft deletion; restoring the group reapplies access based on the group’s previous configuration.\n</li><li>If a resource (for example, a SharePoint site, app, or policy scope) is protected by a soft deleted group, affected users immediately lose access via that group. If users had direct or alternate access paths, those remain unchanged.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>Identify critical groups:<ul><li>Inventory and tag critical security groups that gate access to sensitive resources.</li></ul></li>\n<li>Update admin runbooks:<ul><li>Add steps to restore a deleted group before attempting to rebuild it.</li></ul></li>\n<li>Test in a pilot (after preview reaches your tenant):<ul>\n    <li>Create a test security group, grant it access to a nonproduction resource, soft delete, validate access removal, then restore and confirm access returns as expected</li>\n    <li>If you automate group management, validate your automation handles soft deleted objects and does not immediately hard delete them.</li>\n  </ul>\n</li>\n<li>Communicate to helpdesk and resource owners:\n  <ul>\n    <li>Create guidelines on how to check deleted groups, how to restore, and when to escalate before recreating a group.</li></ul></li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/entra/architecture/recover-from-deletions\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Recover from deletions in Microsoft Entra ID - Microsoft Entra | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/entra/architecture/recoverability-overview\" target=\"_blank\">Recoverability best practices in Microsoft Entra ID | Azure Docs | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/entra/identity/users/groups-restore-deleted\" target=\"_blank\">Restore a deleted Microsoft 365 group - Microsoft Entra ID | Microsoft Learn</a></li></ul><p><b>MS Graph documentation:</b></p><ul><li><a href=\"https://learn.microsoft.com/graph/api/group-delete?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\">Delete group - Microsoft Graph API - Microsoft Graph v1.0 | Microsoft Learn</a>\n</li><li><a href=\"https://learn.microsoft.com/graph/api/directory-deleteditems-list?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\">List deleted items (directory objects) - Microsoft Graph v1.0 | Microsoft Learn</a>\n</li><li><a href=\"https://learn.microsoft.com/graph/api/directory-deleteditems-restore?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\">Restore deleted directory object item - Microsoft Graph v1.0 | Microsoft Learn</a>\n</li><li><a href=\"https://learn.microsoft.com/graph/api/directory-deleteditems-delete?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\">Permanently delete an item (directory object) - Microsoft Graph v1.0 | Microsoft Learn</a></li></ul><p></p><ul>\n  </ul>\n<p></p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -9959,45 +9928,6 @@
     }
   },
   {
-    "startDateTime": "2025-12-22T21:38:30Z",
-    "endDateTime": "2026-04-03T07:00:00Z",
-    "lastModifiedDateTime": "2025-12-22T21:38:57.517Z",
-    "title": "Agent Mode in Excel for Windows and Mac",
-    "id": "MC1202968",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "542182"
-      },
-      {
-        "name": "Summary",
-        "value": "Agent Mode in Microsoft 365 Copilot for Excel (Windows and Mac) enables natural language interaction to build and edit workbooks, integrates web search for updated data, and supports Claude AI models. It rolls out worldwide from mid-January to early March 2026, requires no admin action, and respects existing data access settings."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop, Mac"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<b>[Introduction]</b>\n<p><b>Agent Mode</b> in <i>Microsoft 365 Copilot for Excel</i>, available in Excel for Windows and Excel for Mac, introduces a new way for users to work with Copilot in <i>Excel</i>. It uses natural language to build and edit workbooks, keeps content editable, and ensures users stay up to date with the latest changes. Agent Mode can search the web to pull in trusted, up-to-date information to complement Excel data, answer questions, provide context, and enrich analysis without leaving the workbook. It also supports working with Claude AI models from Anthropic to build workbooks directly in <i>Excel</i>.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=542182\" target=\"_blank\">542182</a>.</p>\n\n<b>[When this will happen]</b>\n<p><b>General Availability (Worldwide):</b> Rollout will begin in&nbsp;<b>mid-January 2026</b> and is expected to complete by <b>early March 2026</b>.</p>\n\n<b>[How this will affect your organization]</b>\n<ul>\n<li><b>Who is affected:</b> All Microsoft 365 users licensed for Copilot who use Excel.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Users will be able to access Agent Mode in Excel from the M365 Copilot Chat pane by selecting it from the Tools menu.</li>\n<li>Agent Mode will be available by default for eligible users.</li>\n<li>The feature supports Excel capabilities such as editing tables, charts, PivotTables, formulas, and more.</li>\n<li>No changes to existing admin policies are required.</li>\n<li>Some geographies may receive access later in the rollout window.</li>\n</ul>\n</li>\n</ul>\n\n<b>[What you need to do to prepare]</b>\n<ul>\n<li>No admin action is required.</li>\n<li>Agent Mode respects your Admin Center <a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide\" target=\"_blank\">data access settings for Copilot web search</a>.</li>\n<li>Agent Mode in Excel is a method for using M365 Copilot Chat to interact with your active workbook and is <a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/manage-copilot-agents-integrated-apps?view=o365-worldwide\" target=\"_blank\">not a Microsoft 365 Copilot agent</a> that needs to be managed from the Admin Center.</li>\n<li>You may wish to:\n<ul>\n<li>Inform helpdesk and support teams about the availability of Agent Mode.</li>\n<li>Update internal documentation or training materials to reflect this new capability.</li>\n</ul>\n</li>\n</ul>\n<p>Learn more:</p>\n<ul>\n<li><a href=\"https://support.microsoft.com/office/agent-mode-in-excel-a2fd6fe4-97ac-416b-b89a-22f4d1357c7a\" target=\"_blank\">Agent Mode in Excel | Microsoft Support</a></li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/connect-to-ai-subprocessor\" target=\"_blank\"> Anthropic as a subprocessor for Microsoft Online Services | Microsoft Learn</a></li>\n<li><a href=\"https://support.microsoft.com/topic/use-claude-with-agent-mode-frontier-in-excel-b2c3b3ec-154b-484b-84d0-914a80df395a\" target=\"_blank\">Use Claude with Agent Mode (Frontier) in Excel | Microsoft Support</a></li>\n</ul>\n\n<b>[Compliance considerations]</b>\n<p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2025-12-29T22:48:48Z",
     "endDateTime": "2026-07-13T07:00:00Z",
     "lastModifiedDateTime": "2026-03-19T16:21:35.117Z",
@@ -11365,38 +11295,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated March 27, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p>To help admins detect unusual or potentially risky interactions with external organizations, Microsoft Teams is introducing the <b>External domains anomalies report</b>. This report analyzes cross-tenant communication patterns for your tenant and highlights sudden spikes or abnormal engagement activity. These insights support proactive investigation and help protect your organization while enabling secure external collaboration.</p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=536572\" target=\"_blank\">536572</a>.</p>\n\n<p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rolling out in mid-May 2026 (previously early April) and expected to complete by late May 2026 (previously mid-April)<b>.</b></li></ul>\n\n<p><b>[How this affects your organization]</b></p>\n<p><i>Who is affected:</i></p>\n<ul>\n  <li>Teams administrators can view this report for their Microsoft 365 tenant if their organization collaborates with external organizations.</li>\n</ul>\n<p><i>What will happen:</i></p>\n<ul>\n  <li>A new <b>External domains anomalies</b> report will be available in the <i>Microsoft Teams admin center </i>under <b><i>Protection reports.</i></b></li><li>Admins can select <b><i>Communication anomalies</i></b>, choose a<b> date range</b>, and run the report to view results:</li>\n  <li>Insights include external domains with unusual communication activity:\n    <ul>\n      <li>External domain name</li>\n      <li>Total anomalies detected</li>\n      <li>New 1:1 threads created by that domain</li>\n      <li>New group threads created by that domain</li></ul></li>\n  <li>A <b>Block</b> option is available directly in the report for managing external domains:</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/3b9607ca-0255-48f4-b670-5b4c45f5a286/b6faeef66287e4ee62807914dfbd9502fba13ebb.png\" style=\"width: 400px;\" alt=\"user settings\"> </p>\n</ul>\n\n<p><b>[What you can do to prepare]</b></p>\n<p>No action is required to access the report.</p>\n<p>To receive proactive alerts:</p>\n<ul>\n  <li>Enable External domains anomalies alerts in the <i>Teams admin center</i>:\n    <ul>\n      <li>Go to <i><b>Notifications &amp; alerts &gt; Rules</b>.</i></li>\n      <li>Select <b>External domains anomalies</b>.</li>\n      <li>Set status to<i><b> Active</b>.</i></li></ul></li>\n  <li>Specify a Teams channel for notifications if desired.</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/9ad57cb9-0d08-4e38-aa7c-a3213842d9fc/7e3c6952108e25e277b19d30e6d4658702bcd571.png\" style=\"width: 400px;\" alt=\"user settings\"> </p>\n  <li>Daily alerts will summarize the top five domains with unusual activity.</li><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/5fc6166e-8770-43a2-aa91-2e97c304ea21/2c1ce3c197cd2a658f634efd0ceaaf648b3a46b8.png\" style=\"width: 400px;\" alt=\"user settings\"> </p>\n</ul>\n\n<p><b>[Compliance considerations]</b></p>\n<p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-01-21T00:39:52Z",
-    "endDateTime": "2026-04-03T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-22T17:56:28.567Z",
-    "title": "(Updated) Microsoft 365 Copilot: Proactively RSVP to meetings and remove canceled meetings in Outlook",
-    "id": "MC1219796",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft 365 Copilot will proactively RSVP to new meetings and remove canceled ones in Outlook for licensed users. Users can set custom calendar instructions, receive notifications of actions, and keep calendars organized. The feature rolls out worldwide from late January to early March 2026, requiring no admin changes."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 22, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>With this release, users with a Microsoft 365 Copilot license will be able to set up custom calendar instructions so that Copilot will proactively RSVP to new meeting requests and remove canceled meetings on their behalf. For example, users will be able to instruct Copilot to “Always accept meetings from /name if my calendar is free,” “Always follow meetings after 5pm,” or “Always remove canceled meetings from my calendar,” helping keep their calendars up to date and clutter free. After instructions are set, Copilot will monitor relevant calendar events and take the appropriate action. All actions will appear in notifications in the <i>Copilot button</i> on the Outlook calendar, helping reduce calendar clutter, resolve untriaged invites, and keep users focused on the meetings that matter. </p><p>This feature will be available only in new Outlook and Outlook for web, in English language.</p><p>The first-run experience for calendar instructions will roll out later and will be the primary way users discover this feature.</p>\n\n<p><b>[When this will happen]</b></p>\n<p><b>General Availability (Worldwide): </b>We will begin rolling out worldwide in<b> late January 2026</b> and expect to complete by <b>early March 2026</b>.</p>\n\n<p><b>[How this will affect your organization]</b></p>\n\n<p><i>Who is affected:</i></p>\n<ul>\n  <li>Users with a Microsoft 365 Copilot license using the new Outlook or Outlook for web.</li>\n</ul>\n\n<p><i>What will happen:</i></p>\n<ul>\n  <li>Users can set custom calendar instructions that allow Copilot to automatically respond to incoming meeting invites.</li><li>Users can create an instruction for Copilot to always remove canceled meetings from their calendars.</li><li>Copilot will monitor relevant calendar events and perform actions proactively after instructions are set.</li><li>Users will receive notifications and activity logs for all calendar actions Copilot completes.</li><li>No admin policies will change; the feature is available to licensed users as part of Copilot’s calendar capabilities.</li><li>A first-run experience that introduces users to calendar instructions will roll out later to help users discover the feature.</li>\n</ul>\n\n<p><b>[What you can do to prepare]</b></p>\n<ul>\n  <li>Ensure users who need this capability have a Microsoft 365 Copilot license.</li>\n  <li>Inform helpdesk staff or update internal documentation as needed.</li>\n  <li>No additional admin configuration is required.</li>\n</ul>\n\n<p><b>[Compliance considerations]</b></p>\n<p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -16868,35 +16766,6 @@
     }
   },
   {
-    "startDateTime": "2026-03-06T21:22:39Z",
-    "endDateTime": "2026-04-03T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-18T16:01:40.29Z",
-    "title": "Prevent/Fix: Microsoft Baseline Security Mode has automatically trigger Entra Conditional Access policy creation",
-    "id": "MC1246002",
-    "category": "preventOrFixIssue",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Entra"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Between November 2025 and February 2026, Microsoft Baseline Security Mode automatically created two disabled draft Entra Conditional Access policies in some tenants. This is not a security issue, requires no action, and a fix will remove unintended drafts and prevent automatic creation."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Problem detected: Microsoft Baseline Security Mode has automatically triggers Entra Conditional Access policy creation</p><p>Customers who accessed Baseline Security Mode in Microsoft 365 between November 2025 and early February 2026 might see two draft Microsoft Entra ID Conditional Access policies created in their tenant in a Disabled state. These policies are associated with Baseline Security Mode and might appear as created by the administrator who signed in to the Microsoft Baseline Security Mode page.<br></p><p>[How this will affect your organization:]</p><p>This behavior doesn't represent a security incident and has no effect on tenant security. The policies are in a disabled draft state.&nbsp;<br></p><p>[What you need to do to prepare:]</p><p>There's no action needed to prepare. A fix has rolled out to ensure policies are created only through explicit administrator action. Any unintentionally created policy drafts will be removed as part of addressing this issue.&nbsp;</p><p>[Learn more about Microsoft Baseline Security Mode]<br>Baseline Security Mode: https://learn.microsoft.com/en-us/microsoft-365/baseline-security-mode/baseline-security-mode-settings?view=o365-worldwide</p>"
-    }
-  },
-  {
     "startDateTime": "2026-03-06T21:23:22Z",
     "endDateTime": "2026-04-12T07:00:00Z",
     "lastModifiedDateTime": "2026-03-06T21:23:29.92Z",
@@ -21744,7 +21613,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557975\":[{\"RoadmapId\":557975,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T06:34:01.7555721Z\",\"LatestRing\":null},{\"RoadmapId\":557975,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T06:34:01.7555724Z\",\"LatestRing\":null}]}"
+        "value": "{\"557975\":[{\"RoadmapId\":557975,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T08:24:00.3663737Z\",\"LatestRing\":null},{\"RoadmapId\":557975,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T08:24:00.3663738Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22510,7 +22379,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559612\":[{\"RoadmapId\":559612,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T06:34:01.7557634Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T06:34:01.7557636Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T06:34:01.7557638Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T06:34:01.7557639Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T06:34:01.7557641Z\",\"LatestRing\":null}]}"
+        "value": "{\"559612\":[{\"RoadmapId\":559612,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T08:24:00.3662578Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T08:24:00.366258Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T08:24:00.3662581Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T08:24:00.3662582Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-03T08:24:00.3662583Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
