@@ -289,78 +289,6 @@
     }
   },
   {
-    "startDateTime": "2025-04-08T17:54:37.797Z",
-    "endDateTime": "2026-04-08T17:54:37.75Z",
-    "lastModifiedDateTime": "2025-04-08T17:54:39.17Z",
-    "title": "KB5057784: Protections for CVE-2025-26647 (Kerberos Authentication)",
-    "id": "MC1050816",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>The Windows security updates released on or after April 8, 2025, contain protections for a vulnerability with Kerberos authentication. To learn more about this vulnerability, please see <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26647\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2025-26647</a>.</div><div>&nbsp;</div><div><b>When will this happen:</b></div><div><b>April 8, 2025: Initial Deployment phase – Audit mode</b></div><ul><li>The initial deployment phase starts with the updates released on April 8, 2025. These updates add new behavior that detects the elevation of privilege vulnerability described in <a href=\"https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fmsrc.microsoft.com%2Fupdate-guide%2Fvulnerability%2FCVE-2025-26647&amp;data=05%7C02%7Cv-throbe%40microsoft.com%7C62ad3eb06894400fccd208dd716280a6%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638791390063741074%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=DbHsYmf81oTk7Dlb5MitLbMS8Wma%2B4J3tK8sTG1D000%3D&amp;reserved=0\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2025-26647</a> but does not enforce it.</li><li>To enable the new behavior and be secure from the vulnerability, you must ensure all Windows domain controllers are updated and the <b>AllowNtAuthPolicyBypass</b> registry key setting is set to <b>2</b>.</li></ul><div class=\"ql-indent-1\"><br></div><div><b>July 8 2025: Enforced by Default phase</b></div><ul><li>Updates released on or after July 8, 2025, will enforce the NTAuth Store check by default. The AllowNtAuthPolicyBypass registry key setting will still allow customers to move back to Audit mode if needed. However, the ability to completely disable this security update will be removed.</li></ul><div class=\"ql-indent-1\"><br></div><div><b>October 14, 2025: Enforcement mode</b></div><ul><li>Updates released on or after October 14, 2025, will discontinue Microsoft support for the <b>AllowNtAuthPolicyBypass</b> registry key. At this stage, all certificates must be issued by authorities that are a part of NTAuth store.</li></ul><div><b>&nbsp;</b></div><div><b>How this will affect your organization:</b></div><div>You are at risk when a certificate authority (CA) is part of the Windows root store but not the NTAuth store and a Subject Key Identifier (SKI) is present in a privileged account. To mitigate the risks, you must apply the protections described in <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-26647\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2025-26647</a>.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><ol><li><b>UPDATE</b> all domain controllers with a Windows update released on or after April 8, 2025.</li><li><b>MONITOR</b> new events that will be visible on domain controllers to identify affected certificate authorities.</li><li><b>ENABLE</b> Enforcement mode once your environment is no longer using certificates issued by authorities that are not in the NTAuth store.</li></ol><div>&nbsp;</div><div><b>Additional information:</b></div><ul><li><a href=\"https://support.microsoft.com/topic/5f5d753b-4023-4dd3-b7b7-c8b104933d53\" rel=\"noopener noreferrer\" target=\"_blank\">KB5057784: Protections for CVE-2025-26647 (Kerberos Authentication)</a></li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-04-08T17:01:51.287Z",
-    "endDateTime": "2026-04-08T17:01:51.287Z",
-    "lastModifiedDateTime": "2025-04-08T17:01:58.413Z",
-    "title": "Immediate Action: Enforce PAC Validation for CVE-2024-26248 & CVE-2024-29056",
-    "id": "MC1050817",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>Last year, Windows updates released on and after April 9, 2024 added new behaviors that start the process of addressing a security risk in the <a href=\"https://learn.microsoft.com/openspecs/windows_protocols/ms-apds/82b7b7c6-413d-4d66-b6b7-4a9224549782\" rel=\"noopener noreferrer\" target=\"_blank\">Kerberos PAC Validation Protocol</a>.</div><div><br></div><div>Starting today, the <b>Enforcement phase</b> of deployment begins. After installing the April 2025 Windows security update and later updates on all Windows domain controllers and Windows clients, support for <b>Compatibility</b> mode will be removed, and the new secure behavior will be enabled by default. This will properly mitigate the vulnerabilities described in&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26248\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-26248</a> and <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29056\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-29056</a>.</div><div><br></div><div><b>When will this happen?</b></div><div>The <b>Enforcement phase</b> starts today<b>&nbsp;</b>with the release of the April 2025 Windows security update.</div><div><br></div><div><b>How will this affect your organization?</b></div><div>To mitigate the risks described in <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26248\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-26248</a> and <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29056\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-29056</a>, you must update your entire Windows environment. This must include all Windows domain controllers and Windows clients. Environments that are not up to date will not recognize the new request structure and security checks will fail.</div><div>&nbsp;</div><div><b>What do you need to do to prepare?</b></div><div>Install the April 2025 Windows security update on all Windows domain controllers and Windows clients. <b>Enforcement </b>mode will be fully enabled in your environment. This will properly mitigate the vulnerabilities described in&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-26248\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-26248</a> and <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2024-29056\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2024-29056</a>.</div><div><br></div><div><b>Additional information:</b></div><ul><li><a href=\"https://support.microsoft.com/help/5037754\" rel=\"noopener noreferrer\" target=\"_blank\">KB5037754: How to manage PAC Validation changes related to CVE-2024-26248 and CVE-2024-29056</a></li><li><a href=\"https://support.microsoft.com/help/5020805\" rel=\"noopener noreferrer\" target=\"_blank\">KB5020805: How to manage Kerberos protocol changes related to CVE-2022-37967</a></li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2025-04-08T17:01:51.287Z",
-    "endDateTime": "2026-04-08T17:01:51.287Z",
-    "lastModifiedDateTime": "2025-04-08T17:02:01.087Z",
-    "title": "Notice: The Scan Cab for the April 2025 Windows monthly security update is delayed",
-    "id": "MC1050818",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div><b>NOTE: </b>This notice only affects environments where Scan Cab is used to check for update compliance.</div><div>&nbsp;</div><div>The Scan Cab for the April 2025 Windows monthly security update, known as the 4B release, is delayed. No Scan Cab has yet been made available for this release.</div><div>&nbsp;</div><div>We are working as fast as possible to provide a release. We will communicate an update as more information becomes available. Thank you for your patience.</div><div>&nbsp;</div><div><b>How this affects your organization:</b></div><div>IT administrators who rely on Scan Cab to check for update compliance can track our communications. Progress of the availability of this month's Scan Cab will be communicated whenever information is available.</div><div>&nbsp;</div><div>No action is required on environments where Scan Cab is not employed. However, please note that there might be non-Microsoft applications which utilize Scan Cab. Review the documentation for any software and update deployment tools which might be in use for your organization to understand if this is applicable in your environment.</div><div><b>&nbsp;</b></div><div><b>Additional information:</b></div><ul><li>Learn more about the Scan Cab process: <a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-a-smaller-wsus-scan-cab/ba-p/2928256?msclkid=256145ccd0c011ec9266b53af8d0aca1\" rel=\"noopener noreferrer\" target=\"_blank\">Announcing a smaller WSUS Scan Cab</a></li><li>Use Windows Update Agent (WUA) to scan computers for security updates without connecting to Windows Update: <a href=\"https://learn.microsoft.com/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline\" rel=\"noopener noreferrer\" target=\"_blank\">Using WUA to Scan for Updates Offline - Win32 apps</a></li><li>Documentation on the Catalog Site used to import updates and drivers: <a href=\"https://learn.microsoft.com/windows-server/administration/windows-server-update-services/manage/wsus-and-the-catalog-site\" rel=\"noopener noreferrer\" target=\"_blank\">WSUS and the Catalog Site</a></li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-04-09T20:59:12.973Z",
     "endDateTime": "2026-04-09T20:59:12.927Z",
     "lastModifiedDateTime": "2025-04-09T20:59:14.29Z",
@@ -509,7 +437,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487432\":[{\"RoadmapId\":487432,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703628Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703625Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470363Z\",\"LatestRing\":null}]}"
+        "value": "{\"487432\":[{\"RoadmapId\":487432,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703625Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703628Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470363Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -958,7 +886,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"488091\":[{\"RoadmapId\":488091,\"Platform\":\"Android\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7814578Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":488091,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7814582Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"488091\":[{\"RoadmapId\":488091,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5484657Z\",\"LatestRing\":null},{\"RoadmapId\":488091,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.548466Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -2673,8 +2601,8 @@
   },
   {
     "startDateTime": "2025-08-01T23:19:24Z",
-    "endDateTime": "2026-06-01T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-25T22:03:52.45Z",
+    "endDateTime": "2026-07-06T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-08T16:32:28.727Z",
     "title": "(Updated) Microsoft 365 Copilot: Content Sources in Copilot Chat",
     "id": "MC1127230",
     "category": "planForChange",
@@ -2698,7 +2626,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft 365 Copilot will allow licensed users to select specific content sources for Copilot Chat responses, enhancing relevance and control. This feature, enabled by default with no admin action needed, will roll out worldwide starting April 2026. No compliance issues or policy changes are expected."
+        "value": "Microsoft 365 Copilot will let licensed users select specific content sources for Copilot Chat responses, improving relevance and control. Rolling out worldwide from May 2026, this feature is enabled by default, requires no admin action, and does not affect existing settings or compliance."
       },
       {
         "name": "Platforms",
@@ -2707,7 +2635,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated February 25, 2026: We have updated the timeline. Thank you for your patience.\n</p><p>&nbsp;<b>What and Why</b></p><p>We’re introducing a new capability that allows users with a Microsoft 365 Copilot license to scope and control Copilot Chat responses by selecting specific content sources. This enhancement is designed to improve the relevance and accuracy of Copilot responses by limiting them to user-selected sources, aligning with customer feedback for more transparent and customizable AI interactions.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=496596\" target=\"_blank\">496596</a></p><p><b>Rollout Schedule</b></p><p><b>General Availability (Worldwide):</b> Rollout will begin April 2026 (previously end of February).</p><p><b>Impact on Your Organization</b></p><ul>\n<li><b>Who is affected:</b> <ul><li>Users with a Microsoft 365 Copilot license.</li></ul></li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Users will see a new option to select content sources when using Copilot Chat.</li>\n    <li>Copilot responses will be scoped only to the selected sources, improving control and precision.</li>\n    <li>This feature will follow a standard rollout and is enabled by default.</li>\n    <li>There is no impact to admin settings or policies.</li>\n    <li>No changes to existing Copilot behavior unless users actively select sources.</li></ul></li></ul><p></p><ul></ul><p></p><p><b>Action Required/Recommendations</b></p><ul>\n  <li>No admin action is required.</li>\n  <li>This feature does not impact admin controls or require configuration.</li>\n  <li>We recommend:\n    <ul>\n      <li>Informing helpdesk staff of this new user-facing capability.</li>\n      <li>Updating internal documentation if you provide guidance on Copilot usage.</li></ul></li></ul><p></p><ul></ul><p></p><p><b>Compliance Considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+      "content": "<p>Updated April 8, 2026: We have updated the timeline. Thank you for your patience.\n</p><p>&nbsp;<b>What and Why</b></p><p>We’re introducing a new capability that allows users with a Microsoft 365 Copilot license to scope and control Copilot Chat responses by selecting specific content sources. This enhancement is designed to improve the relevance and accuracy of Copilot responses by limiting them to user-selected sources, aligning with customer feedback for more transparent and customizable AI interactions.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?rtc=1%26filters%3D&amp;searchterms=496596\" target=\"_blank\">496596</a></p><p><b>Rollout Schedule</b></p><p><b>General Availability (Worldwide):</b> Rollout will begin May 2026 (previously April).</p><p><b>Impact on Your Organization</b></p><ul>\n<li><b>Who is affected:</b> <ul><li>Users with a Microsoft 365 Copilot license.</li></ul></li>\n<li><b>What will happen:</b>\n  <ul>\n    <li>Users will see a new option to select content sources when using Copilot Chat.</li>\n    <li>Copilot responses will be scoped only to the selected sources, improving control and precision.</li>\n    <li>This feature will follow a standard rollout and is enabled by default.</li>\n    <li>There is no impact to admin settings or policies.</li>\n    <li>No changes to existing Copilot behavior unless users actively select sources.</li></ul></li></ul><p></p><ul></ul><p></p><p><b>Action Required/Recommendations</b></p><ul>\n  <li>No admin action is required.</li>\n  <li>This feature does not impact admin controls or require configuration.</li>\n  <li>We recommend:\n    <ul>\n      <li>Informing helpdesk staff of this new user-facing capability.</li>\n      <li>Updating internal documentation if you provide guidance on Copilot usage.</li></ul></li></ul><p></p><ul></ul><p></p><p><b>Compliance Considerations</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -3475,7 +3403,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7813721Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7813726Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.781373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7813735Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483194Z\",\"LatestRing\":null},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483197Z\",\"LatestRing\":null},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.54832Z\",\"LatestRing\":null},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483204Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -4025,7 +3953,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7820684Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842871Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7820698Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5488869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842871Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5488879Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -5900,7 +5828,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816531Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816535Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.781654Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816544Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5482676Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.548268Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5482684Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.548269Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -8552,7 +8480,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"506750\":[{\"RoadmapId\":506750,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7812219Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":506750,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7812225Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":506750,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7812229Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"506750\":[{\"RoadmapId\":506750,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5489079Z\",\"LatestRing\":null},{\"RoadmapId\":506750,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5489082Z\",\"LatestRing\":null},{\"RoadmapId\":506750,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5489086Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10638,7 +10566,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5008007Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5008007Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10777,7 +10705,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.781416Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7814173Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5485441Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5485452Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11040,7 +10968,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817937Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817941Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"536572\":[{\"RoadmapId\":536572,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5484793Z\",\"LatestRing\":null},{\"RoadmapId\":536572,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5484796Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -13944,7 +13872,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557184\":[{\"RoadmapId\":557184,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817328Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817332Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817336Z\",\"LatestRing\":null}]}"
+        "value": "{\"557184\":[{\"RoadmapId\":557184,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5486308Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5486311Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5486315Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -14017,7 +13945,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557169\":[{\"RoadmapId\":557169,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816124Z\",\"LatestRing\":null},{\"RoadmapId\":557169,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816127Z\",\"LatestRing\":null}]}"
+        "value": "{\"557169\":[{\"RoadmapId\":557169,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483823Z\",\"LatestRing\":null},{\"RoadmapId\":557169,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483826Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18060,7 +17988,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816801Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816805Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816809Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816813Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5485214Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5485217Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5485221Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5485226Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18849,7 +18777,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554927\":[{\"RoadmapId\":554927,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7819218Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103993Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103994Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103995Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103996Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103997Z\",\"LatestRing\":null}]}"
+        "value": "{\"554927\":[{\"RoadmapId\":554927,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5486595Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103993Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103994Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103995Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103996Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103997Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19667,7 +19595,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"553590\":[{\"RoadmapId\":553590,\"Platform\":\"Android\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7813402Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":553590,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7813407Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"553590\":[{\"RoadmapId\":553590,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483559Z\",\"LatestRing\":null},{\"RoadmapId\":553590,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483564Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19778,7 +19706,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554932\":[{\"RoadmapId\":554932,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7815181Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7815186Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.781519Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"554932\":[{\"RoadmapId\":554932,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5482058Z\",\"LatestRing\":null},{\"RoadmapId\":554932,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5482064Z\",\"LatestRing\":null},{\"RoadmapId\":554932,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5482068Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22435,7 +22363,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559605\":[{\"RoadmapId\":559605,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7820007Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663201Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663202Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663203Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663204Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663205Z\",\"LatestRing\":null}]}"
+        "value": "{\"559605\":[{\"RoadmapId\":559605,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5487837Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663201Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663202Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663203Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663204Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663205Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22811,6 +22739,91 @@
     }
   },
   {
+    "startDateTime": "2026-04-08T16:31:01Z",
+    "endDateTime": "2026-05-25T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-08T16:31:12.59Z",
+    "title": "SharePoint Advanced Management: Delegate management of Restricted Access Control (RAC) to site admins",
+    "id": "MC1274323",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "SharePoint now allows delegation of Restricted Access Control (RAC) management to site admins, requiring justification for changes. This feature, needing a premium license, is off by default and can be enabled by SharePoint admins to reduce overhead while maintaining security and auditability. Rollout completes by April 2026."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re introducing the ability for SharePoint admins to <b>delegate management of Restricted Access Control (RAC) policies to site admins</b>. This change provides more flexibility while maintaining strong security and governance. By allowing site admins to manage RAC directly on their sites—with required justification for changes—organizations can reduce administrative overhead while improving accountability and auditability.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide, GCC, GCC High, DoD): We began rolling out in <b>mid-March 2026</b> and expect to complete by <b>late April 2026</b>.</p><p><b>[How this affects your organization:]</b></p><p><b>Who is affected:</b></p><ul><li>SharePoint Online admins</li><li>Site admins in tenants where delegation is enabled</li><li>A <b>Microsoft 365 Copilot (Premium)</b> or <b>SharePoint Advanced Management license </b>is required to use this feature.</li></ul><p><b>What will happen:</b></p><ul><li>By default, <b>delegation of\nRAC management is turned off</b>. </li><li>When enabled by a SharePoint admin:<ul><li>Site admins can manage Restricted Access Control directly from the <b>Site information</b> panel.</li><li>Site admins must provide a justification when updating RAC policies.</li></ul></li><li>RAC continues to restrict site access to a defined set of users using:<ul><li>Microsoft 365 groups, or</li><li>Microsoft Entra security groups</li></ul></li><li>No changes occur to existing sites or policies unless delegation is explicitly enabled.</li></ul>\n<p><b>What you can do to prepare:</b></p>\n<ul>\n  <li>No action is required to receive this update.</li><li>SharePoint admins should consider the following steps to prepare for their organization:&nbsp;</li><ol>\n  <li>Evaluate whether delegation aligns with your security model.</li>\n  <li>Enable delegation using <code>Set-SPOTenant -DelegateRestrictedAccessControlManagement $true</code>.</li>\n  <li>Verify delegation status at any time by running: <code>Get-SPOTenant | Select-Object DelegateRestrictedAccessControlManagement</code></li></ol><li>Update internal documentation and communicate expectations to site admins.</li></ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/sharepoint/restricted-access-control#delegate-management-of-restricted-access-control-to-site-admins\" target=\"_blank\">Delegate Management of Restricted Access Control to Site Admins | Microsoft Learn</a></p><p><b>[Compliance considerations:]</b></p><table>\n  <tbody><tr>\n    <th>Compliance area</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>Alteration of how existing customer data is accessed</td>\n    <td>RAC management can now be delegated to site admins, changing who can control access to existing SharePoint site content.</td>\n  </tr>\n  <tr>\n    <td>Admin monitoring or compliance reporting impact</td>\n    <td>Required justification for RAC changes improves auditability and governance tracking.</td>\n  </tr>\n  <tr>\n    <td>Change to admin control or governance model</td>\n    <td>The feature is controlled by a tenant-level admin setting and is not enabled by default.</td>\n \n</tr></tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-08T16:33:04Z",
+    "endDateTime": "2026-08-17T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-08T16:33:20.367Z",
+    "title": "Upcoming change: Microsoft 365 Apps SAEC and MEC will unify",
+    "id": "MC1274325",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting July 14, 2026, Microsoft will unify the Semi-Annual Enterprise Channel (SAEC) and Monthly Enterprise Channel (MEC) for Microsoft 365 Apps into a single enterprise update channel, simplifying update management without changing existing policies or user workflows. No action is required."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>Beginning in July 2026, Microsoft will unify the <b>Semi-Annual Enterprise Channel (SAEC)</b> and <b>Monthly Enterprise Channel (MEC)</b> into a single enterprise-focused update channel for Microsoft 365 Apps. This change is designed to simplify update management while continuing to provide a predictable, enterprise-ready servicing experience.\n</p><p>Over time, SAEC and MEC have both served customers who want an enterprise-focused experience with timely updates. Unifying these channels reduces complexity and overlap, helping organizations adopt new capabilities, security updates, and quality improvements more quickly. This unified approach also supports more consistent update expectations across devices and user groups, while maintaining Microsoft’s commitment to quality, manageability, and predictable servicing.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  </ul><p>General Availability (Worldwide, GCC, GCC High, and DoD): These changes will go into effect on <b>July 14, 2026</b>, with the Patch Tuesday update release.</p><ul>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li><b>Microsoft 365 administrators </b>managing update channels for Microsoft 365 Apps\n</li><li>Organizations currently using the <b>Semi-Annual Enterprise Channel (SAEC) \n</b></li><li>There is no change or impact for devices on other channels such as <b>Monthly Enterprise Channel (MEC)</b>, <b>Current Channel (CC),</b> or associated preview channels</li>\n</ul>\n\n<p><b>What will happen:</b></p><ul><li>Devices currently configured for SAEC will receive the same feature and security updates as published to MEC.</li><li>Existing update policies and configurations will continue to be respected.</li><li>There is no change to Microsoft’s commitment to predictable servicing, quality, and enterprise manageability.</li><li>Users are not expected to experience workflow changes as a result of this update.</li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li><b>No action is required.</b>&nbsp;If your organization currently uses SAEC, updates will continue to be published on a monthly basis.</li>\n  </ul><p><b>Optional:</b> </p><ul><li>Validate your servicing workflows. Confirm that your pilot, broad deployment, and rollback processes continue to meet your organization’s requirements.</li>\n</ul>\n<p><b>Learn more: </b></p><ul><li><a href=\"https://learn.microsoft.com/microsoft-365-apps/updates/overview-update-channels\" target=\"_blank\">Overview of update channels for Microsoft 365 Apps | Microsoft Learn</a>&nbsp;</li><li>\nAs we get closer to rollout, we will share additional details about how this change will appear in admin experiences and documentation.</li></ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>Microsoft 365 Apps update channel selection remains an admin-managed configuration. This change simplifies channel options by unifying feature updates published to SAEC and MEC. (<b>Note: </b>Entra ID group-based control is not introduced by this change; scoping depends on how you deploy policy today, such as Intune group assignments.)</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-08T17:16:01.437Z",
+    "endDateTime": "2027-04-08T17:16:01.437Z",
+    "lastModifiedDateTime": "2026-04-08T17:16:02.43Z",
+    "title": "ESR management is moving to Windows Backup for Organizations",
+    "id": "MC1274349",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Starting&nbsp;May&nbsp;2026,&nbsp;Enterprise State Roaming (ESR) management will transition to <a href=\"https://learn.microsoft.com/windows/configuration/windows-backup/?tabs=intune\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Backup for Organizations</a>. Windows Backup for Organizations is the enterprise‑grade solution for backing up and restoring Windows user settings and Microsoft Store app&nbsp;list.&nbsp;It’s&nbsp;designed to support device refresh, replacement, and upgrade scenarios (for example, moving to&nbsp;the latest version of&nbsp;Windows 11).&nbsp;ESR settings&nbsp;remain&nbsp;the same&nbsp;in scope. The&nbsp;only&nbsp;change&nbsp;is&nbsp;in&nbsp;how&nbsp;you manage these settings.</div><div>&nbsp;</div><div>This change aligns ESR‑managed settings with Windows Backup for Organizations <a href=\"https://learn.microsoft.com/windows/configuration/windows-backup/?tabs=intune#configure-windows-backup-for-organizations\" rel=\"noopener noreferrer\" target=\"_blank\">policies</a>. You can now manage and synchronize user settings with&nbsp;a policy‑based experience through Microsoft Intune or other&nbsp;mobile device management (MDM)&nbsp;providers.</div><div>&nbsp;</div><div><b>When will this happen:</b></div><div>This change&nbsp;begins&nbsp;May&nbsp;2026.&nbsp;You can manage ESR settings&nbsp;through&nbsp;both&nbsp;the&nbsp;Microsoft&nbsp;Entra portal and Windows Backup for Organizations policies for two months,&nbsp;until&nbsp;the end of&nbsp;June&nbsp;2026.&nbsp;After that&nbsp;point,&nbsp;policies will be the only management&nbsp;option.</div><div>&nbsp;</div><div><b>How this will affect your organization:</b></div><div>If you&nbsp;currently rely on&nbsp;ESR&nbsp;to synchronize user settings,&nbsp;plan to&nbsp;start&nbsp;managing&nbsp;ESR settings&nbsp;through Windows Backup for Organizations policies.</div><div><em>&nbsp;</em></div><div>Windows&nbsp;Backup for&nbsp;Organizations supports a broader set of Windows settings and is&nbsp;optimized&nbsp;for backup and restore scenarios.&nbsp;These scenarios include&nbsp;device replacement, reimaging,&nbsp;and&nbsp;OS upgrades.&nbsp;Users&nbsp;can&nbsp;pick up where they left off on a new or refreshed device,&nbsp;and&nbsp;you&nbsp;get&nbsp;clearer policy control and visibility.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><ul><li>Review your current use of Enterprise State Roaming.</li><li>Understand how&nbsp;to configure and manage&nbsp;Windows&nbsp;Backup for&nbsp;Organizations&nbsp;through Microsoft Intune or other MDM providers.</li><li>To continue syncing users’ settings, configure the Windows Backup for Organizations backup policy in Microsoft Intune or another MDM provider.</li><li>If you take no action, Windows will honor both ESR and&nbsp;Group Policy (GPO) or&nbsp;MDM roaming controls for one year (prioritizing&nbsp;GPO/MDM).&nbsp;After that, ESR will no longer work,&nbsp;and&nbsp;you’ll&nbsp;have to manage&nbsp;roaming&nbsp;through Windows Backup for Organizations policies.</li></ul><div><em>&nbsp;</em></div><div>No action is&nbsp;required&nbsp;if&nbsp;your organization&nbsp;doesn’t&nbsp;use ESR or&nbsp;doesn’t&nbsp;require backup and restore of user settings and Microsoft Store app&nbsp;list.</div><div>&nbsp;</div><div><b>Additional&nbsp;information:</b></div><div>For more details, review the Windows&nbsp;Backup for&nbsp;Organizations <a href=\"https://learn.microsoft.com/windows/configuration/windows-backup/?tabs=intune\" rel=\"noopener noreferrer\" target=\"_blank\">official documentation</a>&nbsp;to understand supported settings, storage behavior, and restore experiences. Additionally, see:</div><ul><li><a href=\"https://learn.microsoft.com/windows/configuration/windows-backup/faq#what-s-the-difference-between-enterprise-state-roaming-and-windows-backup-for-organizations\" rel=\"noopener noreferrer\" target=\"_blank\">Differences between Enterprise State Roaming and Windows Backup for Organizations</a></li><li><a href=\"https://learn.microsoft.com/windows/configuration/windows-backup/?tabs=intune#configure-windows-backup-for-organizations\" rel=\"noopener noreferrer\" target=\"_blank\">How to configure backup and restore policies in Microsoft Intune</a></li></ul>"
+    }
+  },
+  {
     "startDateTime": "2023-04-17T18:48:40Z",
     "endDateTime": "2026-05-26T07:00:00Z",
     "lastModifiedDateTime": "2026-03-02T18:09:11.943Z",
@@ -22942,7 +22955,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817079Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817082Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817086Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7817091Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5486104Z\",\"LatestRing\":null},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5486107Z\",\"LatestRing\":null},{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.548611Z\",\"LatestRing\":null},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5486114Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23161,7 +23174,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"394274\":[{\"RoadmapId\":394274,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816297Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":394274,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7816301Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"394274\":[{\"RoadmapId\":394274,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5484325Z\",\"LatestRing\":null},{\"RoadmapId\":394274,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.548433Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23244,7 +23257,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7813721Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7813726Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.781373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-07T06:39:13.7813735Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483194Z\",\"LatestRing\":null},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483197Z\",\"LatestRing\":null},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.54832Z\",\"LatestRing\":null},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T18:33:54.5483204Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
