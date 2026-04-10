@@ -269,30 +269,6 @@
     }
   },
   {
-    "startDateTime": "2025-04-10T16:59:19.19Z",
-    "endDateTime": "2026-04-10T16:59:19.127Z",
-    "lastModifiedDateTime": "2025-04-10T16:59:20.313Z",
-    "title": "Windows Office Hours: April 17, 2025",
-    "id": "MC1052675",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>If you are an IT admin with questions about managing and updating Windows, we want to help. Every third Thursday of the month, we host a live chat-based event on the Tech Community called Windows Office Hours. Members of the Windows, Intune, Windows Autopilot, Windows Autopatch, and Windows 365 engineering teams will be standing by to answer your questions. We also have experts from FastTrack, the Customer Acceleration Team, and Microsoft public sector teams.&nbsp;</div><div><br></div><div>Want to attend the April 17 session of Office Hours?&nbsp;<a href=\"https://techcommunity.microsoft.com/t5/s/gxcuf89792/attachments/gxcuf89792/WindowsEvents/5822/2/Windows%20Office%20Hours_%20April%2017,%202025.ics\" rel=\"noopener noreferrer\" target=\"_blank\">Add it to your calendar</a> and select Attend on the <a href=\"https://techcommunity.microsoft.com/event/windowsevents/windows-office-hours-april-17-2025/4391588\" rel=\"noopener noreferrer\" target=\"_blank\">event page</a> to let us know you’re coming.&nbsp;There is no video or live meeting component. Simply visit the event page, log in to the Tech Community, and leave your questions in the Comments section. You can also bookmark&nbsp;<a href=\"https://aka.ms/Windows/OfficeHours\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/Windows/OfficeHours</a>&nbsp;for upcoming dates (and the ability to add this event to your calendar). We look forward to helping you.</div>"
-    }
-  },
-  {
     "startDateTime": "2025-04-11T21:56:48.72Z",
     "endDateTime": "2026-04-11T21:56:48.66Z",
     "lastModifiedDateTime": "2025-04-11T21:56:49.773Z",
@@ -22948,6 +22924,30 @@
     "body": {
       "contentType": "html",
       "content": "<p>We&#39;ve released updates to the following update channel for Microsoft 365 Apps:</p>\r\n<ul><li>Current Channel</li></ul>\r\n<p>[When this will happen:]</p>\r\n<p>We&#39;ll be gradually rolling out this update of Microsoft 365 Apps to users on that update channel starting April 9th, 2026 (PST).</p>\r\n<p>[How this will affect your organization:]</p>\r\n<p>If your Microsoft 365 Apps clients are configured to automatically update from the Office Content Delivery Network (CDN), then no action is required.</p>\r\n<p>If you manage updates directly you can now download this latest update and begin deployment.</p>\r\n<p>[What you need to do to prepare:]</p>\r\n<p>To get more details about this update view the following release notes:</p>\r\n<ul><li><a href=\"https://docs.microsoft.com/officeupdates/current-channel#version-2603-april-09\" target=\"_blank\" rel=\"noopener noreferrer\">Current Channel</a></li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-10T17:12:59.223Z",
+    "endDateTime": "2027-04-10T17:12:59.223Z",
+    "lastModifiedDateTime": "2026-04-10T17:13:01.053Z",
+    "title": "Windows Deployment Services (WDS): Hands-free deployment hardening (Phase 2)",
+    "id": "MC1276259",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>As announced in January 2026, the <a href=\"https://learn.microsoft.com/windows-hardware/manufacture/desktop/update-windows-settings-and-scripts-create-your-own-answer-file-sxs\" rel=\"noopener noreferrer\" target=\"_blank\">unattend.xml</a> file used in hands‑free deployment poses a vulnerability when transmitted over an unauthenticated RPC channel. Beginning with the April 2026 security update, the <a href=\"https://support.microsoft.com/topic/windows-deployment-services-wds-hands-free-deployment-hardening-guidance-related-to-cve-2026-0386-0daa3a3c-f3cd-4291-9147-a459c290c462\" rel=\"noopener noreferrer\" target=\"_blank\">second phase of hardening</a> for <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-0386</a> is now in effect. These changes make hands‑free deployment <b>disabled by default</b> to enforce secure behavior. After this update, hands‑free deployment no longer works unless explicitly overridden with registry settings.</div><div><br></div><div><b>When will this happen:</b></div><div>Starting with the April 2026 security update, Windows Deployment Services (WDS) enforces secure‑by‑default behavior by automatically disabling hands‑free deployment.</div><div><br></div><div><b>How this will affect your organization:</b></div><div>After installing the April 2026 security update, hands‑free deployment is blocked to prevent unauthenticated access to unattend.xml, enforcing the hardening requirements for <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-0386</a>. Any workflows that rely on unattend.xml‑based deployment will no longer function unless overridden with registry settings.</div><div><br></div><div><b>What you need to do to prepare:</b></div><div>Organizations that still require hands‑free deployment after installing the April 2026 security update must explicitly override the secure default by setting the <em>AllowHandsFreeFunctionality</em> registry value to <b>1</b>, which keeps unattend.xml‑based deployments operational but reintroduces the security risks associated with <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-0386</a>. When this override is used, devices will log diagnostic messages indicating that they are operating in an insecure mode. Because this configuration is not recommended for long‑term use, IT admins should plan to migrate to alternate deployment solutions and return to secure‑by‑default behavior.</div><div><br></div><div><b>Additional information:</b></div><ul><li>Read the full hardening guidance:&nbsp;<a href=\"https://support.microsoft.com/topic/windows-deployment-services-wds-hands-free-deployment-hardening-guidance-related-to-cve-2026-0386-0daa3a3c-f3cd-4291-9147-a459c290c462\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Deployment Services (WDS) Hands-Free Deployment Hardening Guidance related to CVE-2026-0386.</a></li><li>Learn more about the related vulnerability:&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-0386\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-0386</a>.</li><li>See deployment alternatives:&nbsp;<a href=\"https://learn.microsoft.com/windows/deployment/wds-boot-support\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Deployment Services (WDS) boot.wim support</a>.</li><li>Explore cloud-based solutions:&nbsp;<a href=\"https://learn.microsoft.com/autopilot/\" rel=\"noopener noreferrer\" target=\"_blank\">Windows Autopilot and Windows Autopilot device preparation documentation</a>.</li></ul>"
     }
   },
   {
