@@ -3254,7 +3254,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -17833,13 +17833,14 @@
   },
   {
     "startDateTime": "2026-03-18T22:29:15Z",
-    "endDateTime": "2026-05-16T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-18T22:29:29.65Z",
-    "title": "Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
+    "endDateTime": "2026-06-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-13T21:27:44.247Z",
+    "title": "(Updated) Microsoft Edge for Business: Cross-tenant support using Intune Mobile Application Management (MAM)",
     "id": "MC1255405",
     "category": "planForChange",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "Admin impact"
     ],
@@ -17857,7 +17858,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Edge for Business will support cross-tenant Intune Mobile Application Management (MAM) policies, enabling data protection on devices managed by different tenants. This opt-in feature, rolling out from February to April 2026, secures corporate data without extra enrollment or disrupting user experience."
+        "value": "Microsoft Edge for Business now supports cross-tenant Intune Mobile Application Management (MAM) policies, enabling data protection on devices managed by different tenants. This opt-in feature enforces app protection, redirects downloads to OneDrive, and activates leak controls, enhancing security for contractors and partners without disrupting users."
       },
       {
         "name": "Platforms",
@@ -17866,7 +17867,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>Microsoft Edge for Business now supports <b>cross-tenant Intune Mobile Application Management (MAM) </b>policies. This update allows organizations to apply Intune App Protection Policies to Edge work profiles even when the device is managed by another tenant. This capability helps protect corporate data in cross-tenant scenarios such as contractors, partners, or mergers, without requiring additional device enrollment or disrupting the end-user experience.</p>\n\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557187\" target=\"_blank\">557187</a>.</p>\n\n<p><b>[When this will happen:]</b></p><ul><li>Public Preview (Worldwide): We will begin rolling out <b>mid-February 2026</b> and expect to complete by <b>early April 2026</b>.</li><li>General Availability (Worldwide): We will begin rolling out <b>early April 2026</b> and expect to complete by <b>mid-April 2026</b>.</li></ul><p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations using Microsoft Edge for Business</li>\n  <li>Admins configuring Intune App Protection Policies&nbsp;</li>\n  <li>Users accessing corporate data on devices managed by another tenant</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>This feature is <b>off by default </b>and <b>opt-in only</b></li>\n  <li>Intune MAM policies are enforced within the Edge work profile</li>\n  <li>When enabled, protected downloads are redirected to OneDrive for Business instead of local storage, and leak controls for screenshots and DevTools activate when data protection settings are applied. </li><li>This approach secures cross-tenant scenarios like contractors or mergers without requiring additional apps or disrupting the user experience.</li>\n  <li>No impact to personal browsing or unmanaged profiles</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<p>No action is required before rollout.</p>\n<ul>\n  <li>Review existing Intune App Protection Policies</li>\n  <li>Determine whether to enable cross-tenant MAM for Edge</li>\n  <li>Notify security and helpdesk teams as appropriate</li>\n  <li>Update internal documentation if needed</li>\n</ul>\n\n<p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-cross-tenant-support-using-intune-mam\">Cross-tenant support using Intune MAM | Microsoft Learn</a></p>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"5\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Compliance area impacted</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>Customer data storage</td>\n    <td>When protected downloads are enabled by the admin, downloads are redirected to OneDrive for Business instead of local storage, changing where corporate data is stored.</td>\n  </tr>\n  <tr>\n    <td>Processing and access of existing customer data</td>\n    <td>Corporate data accessed through Edge work profiles is processed under Intune App Protection Policies even when the device is managed by another tenant.</td>\n  </tr>\n  <tr>\n    <td>Tenant-to-tenant interaction</td>\n    <td>This change enables cross-tenant enforcement of Intune MAM policies, allowing one tenant to govern data protection on devices managed by another tenant.</td>\n  </tr>\n  <tr>\n    <td>Data Loss Prevention (Purview)</td>\n    <td>Intune MAM leak controls such as clipboard restrictions, screenshot protection, and DevTools blocking are enforced within the Edge work profile.</td>\n  </tr>\n  <tr>\n    <td>Admin controls</td>\n    <td>The capability is opt-in and controlled through Intune App Protection Policies, allowing admins to decide whether and how cross-tenant MAM enforcement applies.</td>\n  </tr>\n</tbody></table>"
+      "content": "<p>Updated April 13, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p>Microsoft Edge for Business now supports <b>cross-tenant Intune Mobile Application Management (MAM) </b>policies. This update allows organizations to apply Intune App Protection Policies to Edge work profiles even when the device is managed by another tenant. This capability helps protect corporate data in cross-tenant scenarios such as contractors, partners, or mergers, without requiring additional device enrollment or disrupting the end-user experience.</p>\n\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557187\" target=\"_blank\">557187</a>.</p>\n\n<p><b>[When this will happen:]</b></p><ul><li>Public Preview (Worldwide): We will begin rolling out <b>mid-February 2026</b> and expect to complete by <b>early April 2026</b>.</li><li>General Availability (Worldwide): We will begin rolling out <b>late April 2026 </b>(previously&nbsp;early April)&nbsp;and expect to complete by <b>end of April 2026</b> (previously&nbsp;mid-April).</li></ul><p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations using Microsoft Edge for Business</li>\n  <li>Admins configuring Intune App Protection Policies&nbsp;</li>\n  <li>Users accessing corporate data on devices managed by another tenant</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>This feature is <b>off by default </b>and <b>opt-in only</b></li>\n  <li>Intune MAM policies are enforced within the Edge work profile</li>\n  <li>When enabled, protected downloads are redirected to OneDrive for Business instead of local storage, and leak controls for screenshots and DevTools activate when data protection settings are applied. </li><li>This approach secures cross-tenant scenarios like contractors or mergers without requiring additional apps or disrupting the user experience.</li>\n  <li>No impact to personal browsing or unmanaged profiles</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<p>No action is required before rollout.</p>\n<ul>\n  <li>Review existing Intune App Protection Policies</li>\n  <li>Determine whether to enable cross-tenant MAM for Edge</li>\n  <li>Notify security and helpdesk teams as appropriate</li>\n  <li>Update internal documentation if needed</li>\n</ul>\n\n<p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/deployedge/microsoft-edge-cross-tenant-support-using-intune-mam\">Cross-tenant support using Intune MAM | Microsoft Learn</a></p>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"5\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Compliance area impacted</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>Customer data storage</td>\n    <td>When protected downloads are enabled by the admin, downloads are redirected to OneDrive for Business instead of local storage, changing where corporate data is stored.</td>\n  </tr>\n  <tr>\n    <td>Processing and access of existing customer data</td>\n    <td>Corporate data accessed through Edge work profiles is processed under Intune App Protection Policies even when the device is managed by another tenant.</td>\n  </tr>\n  <tr>\n    <td>Tenant-to-tenant interaction</td>\n    <td>This change enables cross-tenant enforcement of Intune MAM policies, allowing one tenant to govern data protection on devices managed by another tenant.</td>\n  </tr>\n  <tr>\n    <td>Data Loss Prevention (Purview)</td>\n    <td>Intune MAM leak controls such as clipboard restrictions, screenshot protection, and DevTools blocking are enforced within the Edge work profile.</td>\n  </tr>\n  <tr>\n    <td>Admin controls</td>\n    <td>The capability is opt-in and controlled through Intune App Protection Policies, allowing admins to decide whether and how cross-tenant MAM enforcement applies.</td>\n  </tr>\n</tbody></table>"
     }
   },
   {
@@ -22879,6 +22880,81 @@
     }
   },
   {
+    "startDateTime": "2026-04-13T21:33:36Z",
+    "endDateTime": "2026-06-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-13T21:36:12.64Z",
+    "title": "Queues app on Microsoft Teams mobile",
+    "id": "MC1279071",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "559386"
+      },
+      {
+        "name": "FeatureStatusJson",
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-13T22:21:33.6715203Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-13T22:21:33.6715207Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-13T22:21:33.6715209Z\",\"LatestRing\":null}]}"
+      },
+      {
+        "name": "Summary",
+        "value": "The Queues app on Microsoft Teams mobile (iOS and Android) will allow calling representatives and supervisors to manage call queues, view queue details, and call history on the go. Rolling out worldwide from mid- to late May 2026, it is enabled by default for licensed Teams Phone and Teams Premium users."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, iOS"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>The<b> Queues app on Microsoft Teams mobile (iOS and Android) </b>allows calling representatives and supervisor leads to manage call queues and handle customer calls while away from their desks. This update extends existing Queues functionality to the Teams mobile app, enabling users to manage queue participation and review call activity from a mobile device.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=559386\" target=\"_blank\">559386</a><a href=\"https://www.microsoft.com/en-us/microsoft-365/roadmap?filters=&amp;searchterms=559386\" target=\"_blank\"></a>.</p>\n\n<p><b>[When this will happen:]</b></p><p>\nGeneral Availability (Worldwide): We will begin rolling out in <b>mid-May 2026</b> and expect to complete rollout by <b>late May 2026</b>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations using <b>Microsoft Teams Phone</b></li>\n  <li>Users licensed with <b>Teams Phone and Teams Premium</b></li>\n  <li>Calling representatives and supervisor leads managing <b>call queues</b></li>\n  <li><b>Teams mobile app users (iOS and Android)</b></li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Calling representatives and supervisor leads will be able to:<ul><li>View the call queues they are assigned to directly from the Teams mobile app.</li><li>Review queue details, including the full list of queue members.</li><li>View queue-related call history on mobile devices.</li></ul></li><li>Calling representatives will be able to:<ul><li>Opt in or opt out of queue call routing while on the go.</li></ul></li><li>Supervisor leads will be able to:<ul><li>Bulk manage queue participation for their teams from mobile</li></ul></li><li>The experience:<ul><li>Is <b>enabled by default</b> for eligible users.</li><li>Respects existing licensing, policies, and administrative controls.</li><li>Matches the governance model of the desktop Queues app.</li></ul></li></ul><p></p><ul></ul><p></p><p>This mobile access helps teams respond faster, manage calls more efficiently, and maintain a consistent customer experience regardless of location.</p><p>Screenshot 1: <i>Queues home view:</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/62e47785-92b7-4b84-b3c3-a4e0a34473bf\" style=\"width: 300px;\" alt=\"user settings\"></p><p>Screenshot 2: <i>Queue details view:</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/8fcfa55e-d5fe-47a3-bedd-97a268ce7a43\" style=\"width: 300px;\" alt=\"user settings\"></p>\n\n<p><b>[What you can do to prepare:]</b></p><p>\nNo action is required.</p>\n\n<p>You may optionally:</p><ul><li>Ensure impacted users are licensed with <b>Teams Phone and Teams Premium</b>.</li><li>Inform calling representatives and supervisor leads who rely on <b>mobile-first workflows </b>about this new capability.</li><li>Update internal helpdesk or user documentation to reference mobile queue management.</li></ul><p><b>Learn more: </b><a href=\"https://learn.microsoft.com/microsoftteams/manage-queues-app\" target=\"_blank\">Manage Queues app for Microsoft Teams - Microsoft Teams | Microsoft Learn</a>&nbsp;(will be updated before rollout)</p><p><b>[Compliance considerations:]</b></p><p>\n</p><table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Area</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>New ways of communicating between users</td>\n    <td>\n      This change extends existing call queue communication workflows to the Microsoft Teams mobile app. \n      Calling representatives and supervisor leads can manage queue participation.\n    </td>\n  </tr>\n  <tr>\n    <td>User ability to enable or disable the feature themselves</td>\n    <td>\n      Calling representatives can opt in or opt out of call queue participation directly from the Teams \n      mobile app. This behavior is consistent with existing queue participation controls available on \n      desktop and does not bypass admin policies or licensing requirements.\n    </td>\n  </tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-13T21:36:25Z",
+    "endDateTime": "2026-06-02T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-13T21:36:59.083Z",
+    "title": "Microsoft 365 Copilot Chat: Use prepaid Copilot Credits without Pay‑As‑You‑Go billing",
+    "id": "MC1279072",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 suite",
+      "Microsoft 365 Copilot Chat"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Starting April 20, 2026, Microsoft 365 Copilot Chat will support using prepaid Copilot Credits without Pay-As-You-Go billing. Administrators can create Copilot Credit Policies to allocate credits by department or group, managing usage from a shared prepaid pool with no automatic policy changes or impact on end users."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are introducing support for standalone capacity pack usage for Microsoft 365 Copilot Chat, enabling organizations to consume prepaid Copilot Credits without requiring Pay‑As‑You‑Go (PAYG) billing. With this update, administrators will be able to create<b> Copilot Credit Policies</b> to allocate prepaid Copilot Credits to specific departments or user groups, enabling departmental billing scenarios and policy‑based management of Copilot capacity from a shared pool of prepaid credits.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rollout will begin on<b>&nbsp;April 20, 2026,</b> and is expected to complete by<b> early May 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft 365 tenant administrators who manage Copilot capacity packs</li><li>Organizations using or planning to use prepaid Copilot Credits</li></ul><p><i>What will happen</i></p><ul><li>Prepaid Copilot capacity packs will be usable without enabling PAYG billing for M365 Copilot Chat.</li><li>Administrators will be able to create Copilot Credit Policies to allocate prepaid Copilot Credits to departments or user groups.</li><li>Copilot usage:<ul><li>Will be governed by administrator‑defined policies</li><li>Will consume capacity from a shared pool of prepaid Copilot Credits.</li><li>Will not exceed prepaid capacity when PAYG is not enabled.</li></ul></li><li>By default:<ul><li>No Copilot Credit Policies will be created automatically.</li><li>Existing Copilot capacity packs will remain unchanged.</li></ul></li><li>There will be no change to the Copilot end‑user experience unless usage is scoped through a policy.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required before rollout.</p><p>After the feature becomes available, administrators may choose to:</p><ul><li>Review existing Copilot capacity pack allocations.</li><li>Create Copilot Credit Policies to scope usage by department or team.</li><li>Update internal governance, billing, or chargeback documentation as needed.</li></ul><p><b>Learn more:</b> [to be updated closer to GA rollout]&nbsp;<a href=\"https://learn.microsoft.com/microsoft-365/copilot/pay-as-you-go/copilot-capacity-packs\" target=\"_blank\">Use Copilot Studio prepaid capacity packs for Microsoft 365 Copilot Chat and SharePoint agents | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change include an admin control and can it be controlled through Entra ID group membership?</td><td>Yes. This change will introduce Copilot Credit Policies that allow administrators to control how prepaid Copilot Credits are allocated and consumed. Policies can be scoped to user groups, including Entra ID groups.</td></tr></tbody></table><p></p>"
+    }
+  },
+  {
     "startDateTime": "2023-04-17T18:48:40Z",
     "endDateTime": "2026-05-26T07:00:00Z",
     "lastModifiedDateTime": "2026-03-02T18:09:11.943Z",
@@ -23312,7 +23388,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
