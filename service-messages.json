@@ -13240,31 +13240,6 @@
     }
   },
   {
-    "startDateTime": "2026-02-11T23:33:44Z",
-    "endDateTime": "2026-04-13T23:59:00Z",
-    "lastModifiedDateTime": "2026-02-11T23:36:40.037Z",
-    "title": "Dynamics 365 Project Operations – Modern architecture for existing legal entities with additional transactions support",
-    "id": "MC1230895",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps",
-      "Microsoft Dataverse"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to use the modern architecture for Project Operations Integrated with ERP scenarios on the Microsoft Dataverse platform in Dynamics 365 Project Operations. This feature will reach general availability on March 13, 2026.<br><br><b>How does this affect me?</b><br>The following changes will be made when this feature is enabled:<ul><li>Admins can use modern architecture for existing legal entities with additional transaction support, including project procurement documents and item requirements.</li><li>This feature allows the parallel use of projects from both deployment types, enabling long-running projects to enter transactions and create invoices.</li><li>Customers using the stocked deployment type are not impacted unless transitioning to the Project Operations Integrated with ERP deployment type, which does not require reimplementation of the existing legal entity.</li><li>Legacy functions in both deployment types, such as resource management and project work breakdown structures, will be removed or set to read-only in the finance and operations user interface for the Project Operations Integrated deployment type.</li><li>Projects created using modern architecture will use <b>Unified Resource Scheduling</b> for resource scheduling and <b>Project for the Web</b> for project planning.</li></ul>Please note that modern architecture can be tested in a test environment prior to full implementation.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a href=\"https://aka.ms/13958\" target=\"_blank\">Move to the modern architecture</a>."
-    }
-  },
-  {
     "startDateTime": "2026-02-12T18:04:11.863Z",
     "endDateTime": "2027-02-12T18:04:11.8Z",
     "lastModifiedDateTime": "2026-02-12T18:04:13.257Z",
@@ -22906,7 +22881,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-13T22:21:33.6715203Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-13T22:21:33.6715207Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-13T22:21:33.6715209Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-14T00:50:59.9229438Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-14T00:50:59.9229441Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-14T00:50:59.9229444Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22952,6 +22927,68 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>We are introducing support for standalone capacity pack usage for Microsoft 365 Copilot Chat, enabling organizations to consume prepaid Copilot Credits without requiring Pay‑As‑You‑Go (PAYG) billing. With this update, administrators will be able to create<b> Copilot Credit Policies</b> to allocate prepaid Copilot Credits to specific departments or user groups, enabling departmental billing scenarios and policy‑based management of Copilot capacity from a shared pool of prepaid credits.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rollout will begin on<b>&nbsp;April 20, 2026,</b> and is expected to complete by<b> early May 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft 365 tenant administrators who manage Copilot capacity packs</li><li>Organizations using or planning to use prepaid Copilot Credits</li></ul><p><i>What will happen</i></p><ul><li>Prepaid Copilot capacity packs will be usable without enabling PAYG billing for M365 Copilot Chat.</li><li>Administrators will be able to create Copilot Credit Policies to allocate prepaid Copilot Credits to departments or user groups.</li><li>Copilot usage:<ul><li>Will be governed by administrator‑defined policies</li><li>Will consume capacity from a shared pool of prepaid Copilot Credits.</li><li>Will not exceed prepaid capacity when PAYG is not enabled.</li></ul></li><li>By default:<ul><li>No Copilot Credit Policies will be created automatically.</li><li>Existing Copilot capacity packs will remain unchanged.</li></ul></li><li>There will be no change to the Copilot end‑user experience unless usage is scoped through a policy.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required before rollout.</p><p>After the feature becomes available, administrators may choose to:</p><ul><li>Review existing Copilot capacity pack allocations.</li><li>Create Copilot Credit Policies to scope usage by department or team.</li><li>Update internal governance, billing, or chargeback documentation as needed.</li></ul><p><b>Learn more:</b> [to be updated closer to GA rollout]&nbsp;<a href=\"https://learn.microsoft.com/microsoft-365/copilot/pay-as-you-go/copilot-capacity-packs\" target=\"_blank\">Use Copilot Studio prepaid capacity packs for Microsoft 365 Copilot Chat and SharePoint agents | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change include an admin control and can it be controlled through Entra ID group membership?</td><td>Yes. This change will introduce Copilot Credit Policies that allow administrators to control how prepaid Copilot Credits are allocated and consumed. Policies can be scoped to user groups, including Entra ID groups.</td></tr></tbody></table><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-13T22:52:56Z",
+    "endDateTime": "2026-06-18T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-13T22:53:19Z",
+    "title": "Microsoft Entra: Passkeys in registration campaigns update",
+    "id": "MC1279092",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Entra"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Entra updates Passkeys (FIDO2) support in Authentication Methods Registration Campaigns, delaying Enabled state availability and introducing Passkeys in Microsoft-managed state for eligible tenants starting mid-May 2026. Eligible tenants will see automatic campaign setting changes; no immediate action is required."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are making an update to Passkeys (FIDO2) support within Microsoft Entra Authentication Methods Registration Campaigns.</p><p>Based on ongoing improvements to passkey registration nudge logic and user experience behavior, Passkeys (FIDO2) will no longer move forward to General Availability as the targeted authentication method for Registration Campaigns in the<b> Enabled state</b> as previously communicated in <a href=\"https://portal.prod.iridias.microsofticm.com/messagecenter?id=1253746\" target=\"_blank\">MC1253746.&nbsp;</a></p><p>Instead, we are continuing to refine the eligibility logic that determines when users receive passkey registration nudges during sign-in. In the interim, Passkey (FIDO2) will move forward as the targeted authentication method for Registration Campaigns in the <b>Microsoft Managed state </b>for tenants that meet our in-scope criteria.&nbsp;</p><p><b></b></p><p><b> [When this will happen]</b></p><ul><li><b>General Availability (Worldwide)</b>: Rollout will begin in <b>mid‑May 2026 </b>to Microsoft Managed state&nbsp;and is expected to complete by<b> late June 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft Entra tenants using <b>Authentication Methods Registration Campaigns</b></li><li>Tenants with <b>Passkeys (FIDO2) </b>enabled</li><li>Only tenants that meet the Microsoft‑managed eligibility criteria described below</li></ul><p><i>What will happen</i></p><p><b>Enabled state</b></p><ul><li>Passkeys (FIDO2) will <b>not</b> be supported as the targeted authentication method for Registration Campaigns in the <i><b>Enabled</b></i> state at this time.</li><li>We are continuing to improve registration campaign nudge behavior and eligibility logic to better align with passkey configuration and profile scope.</li><li>Further updates will be shared when support for the Enabled state becomes available.</li></ul><p><b>Microsoft‑managed state</b></p><ul><li>Passkeys (FIDO2) will be introduced as the targeted authentication method in the<b> Microsoft‑managed</b> state for eligible tenants.</li></ul><p>Tenants are impacted when <b>all </b>of the following conditions are met:</p><ul><li>The <b>Passkeys (FIDO2) </b>authentication method policy is<b> <i>Enabled</i></b>.</li><li><b>Allow self‑service setup</b> is<b><i> Enabled</i></b>.</li><li><b>Target specific AAGUIDs </b>is <b>not </b>selected (no AAGUID restrictions configured).</li><li>The Authentication Methods Registration Campaign state is set to <b>Microsoft‑managed</b>.</li><li>The tenant has at least one user enabled for <b>both synced passkeys and device‑bound passkeys</b>.</li></ul><p>Only users who are enabled for <b>both synced and device‑bound passkeys</b>, with&nbsp;<b>no passkey profile restrictions </b>configured<b>&nbsp;</b>(for example, attestation enforcement or AAGUID restrictions), will receive a passkey registration nudge during sign‑in.</p><p>For impacted tenants, the following Registration Campaign settings will be automatically updated:</p><ul><li><b>Targeted authentication method</b> changes from Microsoft Authenticator to Passkeys (FIDO2).</li><li><b>Days allowed to snooze</b> changes from 3 days to 1 day (no longer configurable).</li><li><b>Limited number of snoozes </b>changes from<i><b> </b>Enabled </i>to <i style=\"\">Disabled</i> (no longer configurable).</li><li><b>Default user targeting </b>changes from voice call or text message users to all MFA‑capable users.</li></ul><p>After these changes take effect, targeted users will begin receiving passkey registration nudges during sign‑in <b>after completing multifactor authentication</b>.</p><p>Rollout will occur incrementally across eligible Microsoft Entra tenants.</p><p><b>[What you can do to prepare]</b></p><p>No action is required at this time.</p><p>If you plan to enable passkey registration nudges in the future:</p><ul><li>Ensure users are enabled for <b>both synced and device‑bound passkeys</b>.</li><li>Remove any <b>passkey profile restrictions </b>(such as AAGUID or attestation requirements).</li><li>Set your Authentication Methods Registration Campaign to <b>Microsoft‑managed</b>.</li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change include an admin control, and can it be controlled through Microsoft Entra settings?</td><td>Yes. This change is governed by existing Microsoft Entra Authentication Methods policies and Authentication Methods Registration Campaign configuration. Administrators control whether passkey registration nudges are delivered by enabling passkeys, configuring self‑service setup, and setting the registration campaign to the Microsoft‑managed state.</td></tr></tbody></table><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-13T22:54:05Z",
+    "endDateTime": "2026-09-18T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-13T22:54:19.833Z",
+    "title": "Microsoft Defender for Office 365: Enhancing how we handle promotional mail",
+    "id": "MC1279093",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Defender XDR"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Defender for Office 365 will tag promotional emails as \"promotions\" and can auto-move them to a Promotions folder, learning from user actions to improve sorting. Rollout begins mid-April 2026 (preview) and July 2026 (general availability) worldwide, affecting all tenants with configurable admin controls."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are enhancing how <b>Microsoft Defender for Office 365</b> identifies and manages promotional email. Promotional messages will be tagged as “promotions” (previously “Bulk” in preview) and can be moved automatically to a new Promotions folder. The system learns from user actions, such as moving messages into or out of the <i><b>Promotions folder</b></i> and applies those preferences to future messages. These improvements reduce inbox clutter and help users stay focused while still receiving promotional content they want.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview (Worldwide): </b>We will begin rolling out in <b>mid-April 2026</b>&nbsp;and expect to complete by<b> late April 2026</b>.</li><li><b>General Availability (Worldwide): </b>We will begin rolling out in<b> early July 2026 </b>and expect to complete by <b>late July 2026</b>.</li><li><b>General Availability (DoD, GCC, GCC High): </b>We will begin rolling out in <b>early July 2026</b> and expect to complete by&nbsp;<b>mid-August 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All organizations that use <b>Microsoft Defender for Office 365</b> across Worldwide, GCC, GCC High, and DoD clouds</li></ul><p><i>What will happen</i></p><ul><li>Incoming promotional messages will be tagged as “<i><b>promotions</b></i>.”</li><li>If the <b>Bulk Moves Enabled setting</b> is turned on, tagged messages will automatically move to a <b>Promotions folder</b> created in user mailboxes.</li><li>The system will learn from user actions when they move messages into or out of the Promotions folder. Future messages will follow the learned behavior.</li><li>Users will be able to <b>create inbox rules that reference the promotions tag</b>.</li><li><b>During the Public Preview:</b>&nbsp;<b></b><ul><li><b>Tagging will be opt-in</b> and configured using Exchange transport rules.</li><li>Folder routing will be enabled through anti-spam policy settings (“Bulk moves enabled”). </li><li>Both features will be able to be scoped to pilot security groups for a staged rollout.</li></ul></li><li><b>At Worldwide General Availability, tagging will be enabled by default for all tenants.</b></li></ul><p><i>Figure one - Admin configuration for tagging using exchange transport rule (required for public preview opt-In):</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/110e041c-9767-4ff6-b95a-b37dc4815cdc/8a8a6f9d519799822a0259a099b17f2aaf5f39b3.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Figure two - Admin configuration for Bulk moves enabled to provision the promotions folder:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a815915f-989a-4391-b135-19e188ee232d/05e417e5652a87e20081358693796972210ab83e.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Figure three - System tagging of “Promotions” in outlook client and promotions folder:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/6680f473-9df6-4ed8-8c16-ecbc69c42fb6/88c6582e0698b7b767ac961bf617cce0e1b00d3d.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><i>Figure four - User inbox rules using the promotions” tag:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/62e24477-b653-432f-8840-edbc788b00e5/7acb536715ce421af5ac3ff77a913e3ba596384f.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><ul><li>No action is required at this time.</li><li>Review your internal mailbox and message handling guidance and update training materials if needed.</li><li>If you plan to participate in the Public Preview, review your Exchange transport rule and anti-spam policy configurations to determine if you want to opt-in.</li><li>Monitor the product documentation. A link will be added to this post when it becomes available.</li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td><b>Does the change alter how existing customer data is processed, stored, or accessed?</b></td><td><b>Yes. </b>Incoming email will receive the promotions classification and may be moved automatically to the Promotions folder depending on admin configuration.</td></tr><tr><td><p><b>Does the change introduce or significantly modify AI or ML that interacts with customer data?</b></p></td><td><b>Yes. </b>The system learns from user actions when they move messages and applies that learning to future similar messages.</td></tr><tr><td><b>Does the change include an admin control, and can it be controlled through Entra ID group membership?</b></td><td><b>Yes. </b>Admins can enable or disable Bulk Moves Enabled and can opt in to tagging during Public Preview. These controls can be scoped using existing admin delegation models.</td></tr><tr><td><b>Does the change allow a user to enable or disable the feature themselves?</b></td><td><b>Yes. </b>Users can override tagging behavior by moving messages in or out of the Promotions folder, which trains the ML model and adjusts future message handling.</td></tr></tbody></table><p><b></b></p>"
     }
   },
   {
