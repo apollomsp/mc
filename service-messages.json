@@ -5586,8 +5586,8 @@
   },
   {
     "startDateTime": "2025-10-31T23:03:55Z",
-    "endDateTime": "2026-06-01T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-12T19:33:42.617Z",
+    "endDateTime": "2026-06-29T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-15T18:51:40.427Z",
     "title": "(Updated) Migration update for Office 365 connectors retirement in Teams – webhook URL support",
     "id": "MC1181996",
     "category": "planForChange",
@@ -5608,12 +5608,12 @@
     "details": [
       {
         "name": "Summary",
-        "value": "The Office 365 Connectors retirement migration deadline in Teams is extended to March 31, 2026. By December 2025, Workflows webhooks will support messageCard payloads and posting to shared/private channels. Organizations should plan their transition accordingly. No compliance issues identified."
+        "value": "Office 365 Connectors in Teams will be disabled May 18–22, 2026. Migration to Workflows webhooks is required, supporting MessageCard payloads and private channels. Limitations include no bot icon customization and no interactive buttons for MessageCards. Begin migration early and test workflows before the deadline."
       }
     ],
     "body": {
       "contentType": "html",
-      "content": "<p></p><p>Updated February 12, 2026: We have updated the timeline and content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b>\n</p><p>We’ve extended the migration deadline to give organizations more time to transition. The following capabilities are now supported with Workflows webhooks:</p><ol><li>Posting messages using MessageCard‑formatted payloads (no reformatting required; however, button rendering will not be supported)</li><li>Posting messages to shared channels\n</li></ol><p><b>These updates significantly reduce migration friction for customers currently using Office 365 Connectors.</b></p>\n\n<b>[When this will happen:]</b>\n<p>The migration deadline is extended to <b>April 30, 2026</b> (previously&nbsp;March 31).&nbsp;</p>\n\n<b>[How this affects your organization:]</b>\n<ul>\n<li><b>Who is affected:</b> Organizations using Office 365 Connectors in Microsoft Teams</li></ul><p><b>[What’s Coming Next:]</b></p><p>Additional details and enhancements — including support for private channels — will be later this month.</p><ul>\n</ul>\n\n<b>[What you can do to prepare:]</b><p></p><p>If you are currently using Office 365 Connectors in Microsoft Teams:</p><p></p><ul>\n<li>Review your existing Office 365 Connector usage.</li><li>Begin migrating to Workflows webhooks as soon as possible.</li><li>Complete migration by April 30, 2026 to avoid service disruption.</li>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>\n<p></p><p></p>"
+      "content": "<p></p><p></p><p>Updated April 15, 2026: We have updated the timeline, added known limitations, and confirmed private channel support. Thank you for your patience.</p><p><b>[Introduction]</b>\n</p><p>We’ve extended the migration deadline to give organizations more time to transition. The following capabilities are now supported with Workflows webhooks:</p><ol><li>Posting messages using MessageCard‑formatted payloads (no reformatting required; however, button rendering will not be supported)</li><li>Posting messages to shared channels\n</li></ol><p><b>These updates significantly reduce migration friction for customers currently using Office 365 Connectors.</b></p><p><b>New — April 2026: </b>Private channels are now supported for Workflows webhooks through the Power Automate portal. Selection of private channels directly within the Workflows app in Teams is rolling out fully by April 20, 2026.</p>\n\n<b>[When this will happen:]</b><p></p><p>Office 365 Connectors will be permanently disabled on the following schedule:&nbsp;</p><ul><li>Deprecation rollout starts: <b>May 18, 2026</b></li><li>Deprecation rollout completes: <b>May 22, 2026</b></li></ul><p>This is the final deprecation timeline. All connector-based webhooks must be migrated to Workflows before <b>May 18, 2026</b>.</p><p><b>[How this affects your organization:]</b><b><br></b></p><p><b>Who is affected:</b> Organizations using Office 365 Connectors in Microsoft Teams</p><p><b>[Known Limitations:]</b></p><p>When using Workflows webhooks, please be aware of the following limitations:</p><ul><li>Bot icon and name customization is not available when posting Adaptive Cards via webhook. Messages will display with the default Workflows bot (Flow bot) identity. Custom icons and display names are not supported for Adaptive Card payloads.</li><li>Interactive cards are not supported for MessageCard-formatted payloads. If your scenario requires interactive elements such as actionable buttons or input fields, you will need to use Adaptive Cards instead of MessageCards. MessageCard-formatted payloads will render content but will not support button rendering or other interactive components.</li>\n</ul>\n\n<b>[What you can do to prepare:]</b><p></p><p>If you are currently using Office 365 Connectors in Microsoft Teams:</p><p></p><ul>\n<li>Review your existing Office 365 Connector usage.</li><li>Begin migrating to Workflows webhooks as soon as possible.</li><li>Complete migration before <b>May 18, 2026</b> to avoid service disruption.</li><li>If your workflows rely on interactive card elements, update your payloads to use Adaptive Cards.</li><li>Test your migrated workflows to ensure they function as expected.</li>\n</ul>\n\n<b>[Compliance considerations:]</b>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>\n<p></p><p></p><p></p>"
     }
   },
   {
@@ -16750,7 +16750,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6289945Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6289947Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.628995Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6289952Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6289954Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4940333Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4940334Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4940335Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4940336Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4940337Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22549,7 +22549,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6286104Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6286106Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6286108Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4939482Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4939486Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4939488Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23072,7 +23072,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6291566Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T18:31:44.6291568Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4941269Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-15T20:16:24.4941271Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
