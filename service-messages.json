@@ -64,7 +64,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
+        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -12686,38 +12686,6 @@
     }
   },
   {
-    "startDateTime": "2026-02-10T23:05:09Z",
-    "endDateTime": "2026-04-16T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-10T23:06:00.37Z",
-    "title": "Context IQ retirement in the new Outlook and Outlook on the web",
-    "id": "MC1230455",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2026-02-15T08:00:00Z",
-    "services": [
-      "Microsoft 365 for the web",
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Context IQ will be retired in the new Outlook and Outlook on the web starting March 16, 2026, removing “/” suggestions for inserting files. Users can still attach files via paste, drag-and-drop, or Insert > Attach file. No admin action is needed; update training accordingly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We are <b>retiring Context IQ </b>in the<i> new Outlook</i> and <i>Outlook on the web</i>. This feature currently allows users to insert suggested files and other content by typing the “/” character while composing an email. We are retiring this capability to streamline the compose experience and reduce duplication with other supported attachment and editor workflows.</p><p><b>[When this will happen]</b></p><p>We will retire Context IQ<b> </b>from the new Outlook and Outlook on the web <b>starting March 16, 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Users who compose email in the <i>new Outlook for Windows</i> and <i>Outlook on the web</i> and currently use Context IQ’s “/” suggestions.</li></ul><p><i>What will happen</i></p><ul><li>Context IQ suggestions invoked with “/” during email composition will be <b>removed</b>.</li><li>Users will continue to add files and content using existing methods:<ul><li>Paste a file or URL directly into the message body.</li><li>Drag and drop files into the compose window.</li><li>Use<i><b> Insert &gt; Attach file</b></i>&nbsp;to see suggested files, browse, and attach content.</li></ul></li><li>The<b> Editor feature remains available</b> via the button in the<i> lower-right of the compose area</i> and in the <i>ribbon</i>.</li><li>There is <b>no change</b> to attachment storage, file handling, or Editor capabilities.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action is required.</p><p>To prepare for this change, we recommend the following:</p><ul><li>Inform your users about the <b>retirement of Context IQ</b>.</li><li>Update internal training or documentation that references Context IQ or “/” suggestions.</li><li>Share guidance on how to attach files using supported methods:<ul><li>Paste</li><li>Drag and drop</li><li><b><i>Insert &gt; Attach file</i></b></li></ul></li><li>Direct users to these Microsoft Support resources:</li><li style=\"margin-left: 25px;\"><a href=\"https://support.microsoft.com/office/add-pictures-or-attach-files-to-emails-in-outlook-bdfafef5-792a-42b1-9a7b-84512d7de7fc\" target=\"_blank\">Add pictures or attach files to email in Outlook | Microsoft Support</a></li><li style=\"margin-left: 25px;\"><a href=\"https://support.microsoft.com/office/check-spelling-before-sending-a-message-620b24fc-9cc5-4a2f-a26b-9ff4e02cc193\" target=\"_blank\">Check spelling before sending a message | Microsoft Support</a></li></ul><p>If you track feature usage and want to identify which users interact with compose‑related features, you can use usage reporting available in the <i>Microsoft 365 admin center</i> (for example, Outlook usage reports). Dedicated Context IQ usage reporting is not available.</p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-02-10T23:06:15Z",
     "endDateTime": "2026-06-29T07:00:00Z",
     "lastModifiedDateTime": "2026-03-30T15:52:09.557Z",
@@ -13440,37 +13408,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated April 2, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re introducing updated access controls for quarantined messages in Microsoft Defender for Office 365. These updates add a new permission that provides more granular control over who can view quarantined email content, helping organizations better protect sensitive email data.</p><p>These changes affect permissions assigned through <b>Defender XDR Unified RBAC</b>.</p><p><b>[When this will happen:]</b></p><p>General Availability (Worldwide): We will begin rolling out <b>mid-April 2026</b> (previously&nbsp;late&nbsp;March)&nbsp;and expect to complete by <b>mid-May 2026</b> (previously&nbsp;mid-April).</p><p><b>[How this will affect your organization:]</b></p><p><b>Who is affected:</b></p><ul><li>Microsoft 365 administrators and security operators who are assigned permissions to access quarantined messages in Microsoft Defender for Office 365</li><li>Only those using <b>Microsoft Defender XDR Unified role-based access control (URBAC);</b> this change does not apply to legacy role-based access control.</li><li>Microsoft 365 administrators who are assigned <b>Security operations</b>, <b>Security data</b>, <b>Email and collaboration quarantine (manage)</b>, or <b>Security data basics (read)</b> permissions today, which provide access to preview and download quarantined content.</li></ul><p><b>What will happen:</b></p><ul><li>A new permission, <b>Email and collaboration content: Quarantine emails (read)</b>, is being introduced to control access to quarantined message content.</li><li>To view and download the content of quarantined email messages, admins must have the new permission.</li><li>Admins without this permission will continue to see metadata only and will not be able to preview or download quarantined message content.</li><li>This update does not change threat detection, verdict, or mail flow behavior. It only affects access to message content after items are quarantined.</li><li>There is no impact to <b>user quarantine </b>experiences.</li><li>To maintain parity, admins with existing access permissions (including <b>Email and collaboration quarantine (manage)</b> or <b>Security data basics (read)</b>) will automatically be assigned this new permission.</li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>Review which administrators in your organization require access to quarantined message content.</li><li>Validate that you were auto assigned this new permission (if applicable).</li><li>Update role assignments as needed in the <b>Microsoft Defender portal</b> under <b>Roles </b>and <b>Role assignments</b>.</li><li>Communicate this change to security operations and helpdesk teams that investigate quarantined messages.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-admin-manage-messages-files\" target=\"_blank\">Manage quarantined messages and files as an admin - Microsoft Defender for Office 365 | Microsoft Learn</a>&nbsp;(will be updated before rollout)</li><li><a href=\"https://learn.microsoft.com/defender-office-365/quarantine-policies\" target=\"_blank\">Quarantine policies - Microsoft Defender for Office 365 | Microsoft Learn</a>&nbsp;(will be updated before rollout)</li></ul><p><b>[Compliance considerations:]</b></p><p>No additional compliance considerations were identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-02-18T18:46:39Z",
-    "endDateTime": "2026-04-16T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-18T18:47:17.847Z",
-    "title": "AMR‑WB codec support added to Teams Direct Routing SIP interface",
-    "id": "MC1234572",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams Direct Routing will support the AMR-WB codec starting early March 2026, enhancing audio quality in non-media-bypass SIP calls. This automatic update affects organizations using Teams Direct Routing and SBCs, with no required configuration changes. SBC admins should verify AMR-WB support and update documentation accordingly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>Microsoft will <b>add support for the Adaptive Multi‑Rate Wideband (AMR‑WB) codec </b>to improve audio quality for calls placed through Teams Direct Routing. This enhancement will introduce wideband audio capabilities when supported by your Session Border Controller (SBC) and will apply to non‑media‑bypass scenarios where the Session Initiation Protocol (SIP) interface negotiates codecs with the Teams service.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide):</b> Rollout will begin in <b>early March 2026 </b>and is expected to complete by <b>mid‑March 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>:</p><ul><li>Organizations using <b>Teams Direct Routing</b> for PSTN connectivity.</li><li>SBC administrators managing <b>non‑media‑bypass</b> SIP call flows with the Teams SIP interface.</li></ul><p><i>What will happen</i>:</p><ul><li>Outbound calls from Teams to the SBC <b>will include </b>AMR‑WB and DTMF/1600 in the codec offer.</li><li>Inbound calls from the SBC <b>will prefer and select </b>AMR‑WB when the SBC includes it in the offer.</li><li>AMR‑WB support <b>will be enabled automatically</b>; no configuration changes will be required in the Teams admin center.</li><li>Existing codecs (such as SILK and G.711) <b>will remain supported</b>; this is an additive enhancement.</li></ul><p><b>[What you can do to prepare]</b></p><p>Most organizations will not need to take action.</p><p>Recommended steps for SBC administrators:</p><ul><li>Verify that your SBC software version <b>supports AMR‑WB</b>.</li><li>Review SBC vendor documentation to<b> ensure AMR‑WB is enabled or allowed</b> in your configuration.</li><li>Communicate the upcoming codec support to your helpdesk, if they support Teams Phone or Direct Routing.</li><li>Update internal documentation or topology diagrams if you track codec behavior for call flows.</li><li>For technical details, review&nbsp;<a href=\"https://learn.microsoft.com/microsoftteams/direct-routing-whats-new#amr-wb-will-be-enabled-for-direct-routing-trunks-on-non-bypass-calls\" target=\"_blank\">What's new for Direct Routing | Microsoft Teams | Microsoft Learn</a>.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -16750,7 +16687,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.7853048Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.7853049Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.785305Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.785305Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.7853051Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2713367Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2713368Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2713369Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.271337Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2713371Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -16764,37 +16701,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>AI‑powered meeting assistant bots—such as transcription and summarization services—are increasingly used to enhance productivity in online meetings. While these tools can be valuable, some bots may access meetings without the knowledge or consent of the meeting organizer or the hosting tenant, which can create data security, privacy, and compliance risks.</p><p>To help organizations protect meeting content and increase visibility into automated participants, Microsoft Teams is introducing a new capability that <b>detects external meeting assistant bots</b> as they attempt to join meetings. This update gives organizers <b>greater awareness and control </b>and <b>provides administrators with clear controls</b>&nbsp;to manage how detected bots are handled in meetings hosted across the organization.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558107\" target=\"_blank\">558107</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release:</b> We will begin rolling out in <b>mid-May 2026</b> and expect to complete by<b> early June 2026</b>.</li><li><b>General Availability (Worldwide): </b>We will begin rolling out in<b> early June 2026</b> and expect to complete by <b>mid-June 2026</b>.</li><li><b>General Availability (GCC)</b>: We will begin rolling out in<b> early June 2026</b> and expect to complete by <b>mid-June 2026.</b></li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>All organizations using Microsoft Teams meetings, including GCC tenants</li><li>Meeting organizers and Teams administrators</li></ul><p><i>What will happen</i></p><ul><li>Teams will detect external meeting bots as they attempt to join meetings hosted by your organization.</li><li>When detected, bots will be <b>clearly labeled</b> in the <i>meeting lobby experience.</i><p></p><ul><li><b>Note:</b> There might still be bots that are undetected by the system due to their intrinsic behavior. Please inform your users to report them out directly from the app/meeting. This will help us improve our detection system.</li></ul></li><li><b>Organizers will be able to</b>:<ul><li><b>approve or deny</b> detected bots from the meeting lobby.</li><li><b>see clearly&nbsp;</b>which participants have been identified as bots.</li><li><b>remove</b> detected bots during the meeting if necessary.</li></ul></li><li>These organizer controls are designed to help ensure that bot participation in <i>meetings</i> is an intentional and informed decision.</li><li>A new meeting policy will be available in the <i>Teams admin center</i> that allows admins to configure how detected bots are handled (do not detect bots, require approval). In the future, we intend to provide more granular controls to admins, as appropriate.</li><li>Bot detection will be <b>enabled&nbsp;by default for all tenants</b>.</li><li>Teams will continue improving detection accuracy; however, some bots may not be detected in all scenarios.</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d26db94f-4c29-47b4-be0b-b0ba6dd55c11/be8d0b8cc99c17858107b52e66401f803ffbfbd2.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/f0d137a6-2ac7-4f55-b61e-2290f762d10d/3f0e1e0c229c7d44a5fd74cd9d13157ab3d38378.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><p>No action is required at this time.</p><p>However, we <b>recommend </b>that Teams admins:</p><ul><li><b>Review the new meeting policy</b> in the <i>Teams admin center </i>once it becomes available.</li><li><b>Keep the default setting</b>, which requires organizers to approve detected bots before they join meetings (recommended).</li><li><b>Choose a stricter or more permissive option</b> based on your organization’s collaboration and compliance requirements.</li><li><b>Inform meeting organizers</b> that they may see <b>new indicators and approval prompts </b>when detected bots attempt to join meetings.</li><li>Update internal helpdesk or governance documentation if your organization documents meeting join or lobby controls behavior.</li><li>Monitor future Message center updates for expanded administrative controls.</li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td><b>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to your data?</b></td><td><b>Yes. </b>This change introduces detection logic that analyzes meeting join metadata to identify external automated bots attempting to join meetings.</td></tr><tr><td><p><b>Does the change provide a new way of communicating between users, tenants, or subscriptions?</b></p></td><td><b>No. </b>The feature only changes how external meeting assistant bots are surfaced to organizers during the meeting join process, increasing visibility of automated external participants. There is no change in the way participants can communicate with these bots or vice versa.</td></tr><tr><td><p><b>Does the change include an admin control, and can it be controlled through Entra ID group membership?</b></p></td><td><b>Yes. </b>The change introduces a new meeting policy in the<i> Teams admin center</i> that allows admins to define how detected bots are handled. It cannot be controlled through Entra ID group membership at this time.</td></tr></tbody></table><p><b></b></p><p><b></b></p>"
-    }
-  },
-  {
-    "startDateTime": "2026-03-13T22:53:07Z",
-    "endDateTime": "2026-04-16T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-13T22:53:15.13Z",
-    "title": "Microsoft Secure Score: New recommendations for Microsoft Defender for Endpoint",
-    "id": "MC1251207",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "New Microsoft Secure Score recommendations for Microsoft Defender for Endpoint will roll out in public preview from late February to mid-March 2026. They include SMB server hardening and blocking file transfer over RDP. Recommendations are off by default and require admin action to enable."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re adding <b>new Microsoft Secure Score recommendations</b> for <b>Microsoft Defender for Endpoint (MDE) </b>to help your organization strengthen endpoint security and proactively reduce exposure to common attack techniques. These recommendations support more robust security baselines and help you assess and improve protection across your devices.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview: </b>Rollout began at the <b>end of February 2026</b> and is expected to complete by <b>mid‑March 2026</b>.</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Admins who manage Microsoft Defender for Endpoint and Microsoft Secure Score.</li></ul><p><i>What will happen</i></p><p>Customers in Public Preview will see the following new Microsoft Secure Score recommendations:</p><ul><li>SMB server security hardening against authentication relay attacks:<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/7dfe5605-456e-4fc9-9882-666b0b790a1f/e4d8281b09b9c842b0077abc3f1ae53bd620e98e.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Block file transfer over Remote Desktop Protocol (RDP):<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/32baa8e3-72e9-49c5-aca6-8d68bc89493d/ca230c018d61b3c79a933eac61ec83671bddcc85.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li></ul><p>As these recommendations become available:</p><ul><li>Secure Score will update based on your organization’s implementation of the recommended actions.</li><li>No changes will be made to your existing configurations unless you choose to enable the recommended settings.</li><li>These recommendations are<b> off by default </b>and require admin action to adopt.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Review the new recommendations in <a href=\"https://learn.microsoft.com/defender-xdr/microsoft-secure-score?view=o365-worldwide\" target=\"_blank\">Microsoft Secure Score</a> as they become available.</li><li>Complete the recommended actions to strengthen your endpoint security posture.</li><li>Communicate these changes to your security and endpoint management teams.</li><li>Update internal documentation if you track Secure Score or MDE configuration standards.</li><li><b>Learn more: </b><a href=\"https://learn.microsoft.com/defender-xdr/microsoft-secure-score?view=o365-worldwide\" target=\"_blank\">Microsoft Secure Score | Microsoft Defender XDR | Microsoft Defender | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -22550,7 +22456,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-16T06:47:10.7849666Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.7849668Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.784967Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2716691Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2716692Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2716693Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23073,7 +22979,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.7853966Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T06:47:10.7853967Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2712193Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T08:42:04.2712196Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
