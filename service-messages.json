@@ -5568,7 +5568,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338551Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338547Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338549Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338554Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"492625\":[{\"RoadmapId\":492625,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338547Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":492625,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338549Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338551Z\",\"LatestRing\":null},{\"RoadmapId\":492625,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338554Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -16718,7 +16718,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2797344Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2797345Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2797346Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2797347Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2797348Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9173182Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9173184Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9173185Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9173187Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9173189Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -16732,56 +16732,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>AI‑powered meeting assistant bots—such as transcription and summarization services—are increasingly used to enhance productivity in online meetings. While these tools can be valuable, some bots may access meetings without the knowledge or consent of the meeting organizer or the hosting tenant, which can create data security, privacy, and compliance risks.</p><p>To help organizations protect meeting content and increase visibility into automated participants, Microsoft Teams is introducing a new capability that <b>detects external meeting assistant bots</b> as they attempt to join meetings. This update gives organizers <b>greater awareness and control </b>and <b>provides administrators with clear controls</b>&nbsp;to manage how detected bots are handled in meetings hosted across the organization.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558107\" target=\"_blank\">558107</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release:</b> We will begin rolling out in <b>mid-May 2026</b> and expect to complete by<b> early June 2026</b>.</li><li><b>General Availability (Worldwide): </b>We will begin rolling out in<b> early June 2026</b> and expect to complete by <b>mid-June 2026</b>.</li><li><b>General Availability (GCC)</b>: We will begin rolling out in<b> early June 2026</b> and expect to complete by <b>mid-June 2026.</b></li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>All organizations using Microsoft Teams meetings, including GCC tenants</li><li>Meeting organizers and Teams administrators</li></ul><p><i>What will happen</i></p><ul><li>Teams will detect external meeting bots as they attempt to join meetings hosted by your organization.</li><li>When detected, bots will be <b>clearly labeled</b> in the <i>meeting lobby experience.</i><p></p><ul><li><b>Note:</b> There might still be bots that are undetected by the system due to their intrinsic behavior. Please inform your users to report them out directly from the app/meeting. This will help us improve our detection system.</li></ul></li><li><b>Organizers will be able to</b>:<ul><li><b>approve or deny</b> detected bots from the meeting lobby.</li><li><b>see clearly&nbsp;</b>which participants have been identified as bots.</li><li><b>remove</b> detected bots during the meeting if necessary.</li></ul></li><li>These organizer controls are designed to help ensure that bot participation in <i>meetings</i> is an intentional and informed decision.</li><li>A new meeting policy will be available in the <i>Teams admin center</i> that allows admins to configure how detected bots are handled (do not detect bots, require approval). In the future, we intend to provide more granular controls to admins, as appropriate.</li><li>Bot detection will be <b>enabled&nbsp;by default for all tenants</b>.</li><li>Teams will continue improving detection accuracy; however, some bots may not be detected in all scenarios.</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d26db94f-4c29-47b4-be0b-b0ba6dd55c11/be8d0b8cc99c17858107b52e66401f803ffbfbd2.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/f0d137a6-2ac7-4f55-b61e-2290f762d10d/3f0e1e0c229c7d44a5fd74cd9d13157ab3d38378.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><p>No action is required at this time.</p><p>However, we <b>recommend </b>that Teams admins:</p><ul><li><b>Review the new meeting policy</b> in the <i>Teams admin center </i>once it becomes available.</li><li><b>Keep the default setting</b>, which requires organizers to approve detected bots before they join meetings (recommended).</li><li><b>Choose a stricter or more permissive option</b> based on your organization’s collaboration and compliance requirements.</li><li><b>Inform meeting organizers</b> that they may see <b>new indicators and approval prompts </b>when detected bots attempt to join meetings.</li><li>Update internal helpdesk or governance documentation if your organization documents meeting join or lobby controls behavior.</li><li>Monitor future Message center updates for expanded administrative controls.</li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td><b>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to your data?</b></td><td><b>Yes. </b>This change introduces detection logic that analyzes meeting join metadata to identify external automated bots attempting to join meetings.</td></tr><tr><td><p><b>Does the change provide a new way of communicating between users, tenants, or subscriptions?</b></p></td><td><b>No. </b>The feature only changes how external meeting assistant bots are surfaced to organizers during the meeting join process, increasing visibility of automated external participants. There is no change in the way participants can communicate with these bots or vice versa.</td></tr><tr><td><p><b>Does the change include an admin control, and can it be controlled through Entra ID group membership?</b></p></td><td><b>Yes. </b>The change introduces a new meeting policy in the<i> Teams admin center</i> that allows admins to define how detected bots are handled. It cannot be controlled through Entra ID group membership at this time.</td></tr></tbody></table><p><b></b></p><p><b></b></p>"
-    }
-  },
-  {
-    "startDateTime": "2026-03-16T18:34:00Z",
-    "endDateTime": "2026-04-16T18:34:00Z",
-    "lastModifiedDateTime": "2026-03-16T18:38:50.17Z",
-    "title": "Dynamics 365 Sales - Get additional Dataverse storage capacity",
-    "id": "MC1253515",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing additional Dataverse storage capacity for Dynamics 365 Sales. This change will reach general availability on April 15, 2026.<br><Br><b>How does this affect me?</b><br>As a Dynamics 365 Sales Premium license holder, you will automatically receive an increase in their Dataverse storage capacity. The default per-tenant storage capacity will be increased from 30 GB to 45 GB, and capacity accrued per user subscription license will be increased from 250 MB to 500MB. In addition, Dataverse file capacity will be increased from 40 GB to 60 GB.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-03-16T19:07:15Z",
-    "endDateTime": "2026-04-16T19:07:15Z",
-    "lastModifiedDateTime": "2026-03-25T14:15:06.74Z",
-    "title": "Power Platform - Information regarding the end of support for Global Discovery Service (GDS) API",
-    "id": "MC1253577",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<b>Update:</b> End of support date of this API has been updated.<br><br>\nOn June 19, 2026, the Global Discovery Service (GDS) API will have reached end of support.<br><br><b>How does this affect me?</b><br>The legacy Global Discovery Service (GDS) REST API endpoints hosted at <i>globaldisco.crm.dynamics.com</i> will no longer be available.<br><br>Deprecated GDS endpoints:<ol><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances</i></li><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v2.0/Instances</i></li><li><i>https://globaldisco.crm.dynamics.com/api/discovery/v1.0/Instances({id})</i></li></ol>This change impacts listing and retrieval of Dataverse organizations. There is no impact to service performance or availability for your environment(s).\n<br><br><b>What action do I need to take?</b><br><ol><li>Identify any applications or scripts that call <i>globaldisco.crm.dynamics.com</i> REST API endpoints.</li><li>Update your applications to use the\n<a target=\"_blank\" href=\"https://aka.ms/ADO14316\">Power Platform List Environments API</a> instead of the GDS endpoints.</li><li>Test your updated integrations against the new endpoints to verify compatibility.</li></ol>Please note that the Power Platform API uses a different token audience than GDS. You will need to update your authentication to request tokens with the scope (<i>https://api.powerplatform.com/.default</i>) and register the Power Platform API (app ID <i>8578e004-a5c6-46e7-913e-12f58912df43</i>) as an API permission in your Microsoft Entra app registration. For detailed setup instructions, see\n<a target=\"_blank\" href=\"https://aka.ms/ADO14316_1\">Power Platform API Authentication</a>.<br><br>To avoid a disruption in service, please migrate to the Power Platform List Environments API before June 19, 2026.<br><br>If you need additional assistance, please contact Microsoft Support."
     }
   },
   {
@@ -22367,7 +22317,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2795769Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2795771Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2795772Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9170263Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9170266Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9170268Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22890,7 +22840,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2798275Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T18:33:01.2798276Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9174806Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-16T20:21:16.9174807Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
