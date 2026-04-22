@@ -63,10 +63,6 @@
         "value": "476488"
       },
       {
-        "name": "FeatureStatusJson",
-        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
-      },
-      {
         "name": "Summary",
         "value": "Microsoft Teams will send separate event invite emails based on participant roles (Attendee, Presenter, Co-organizer) starting mid-2026. Organizers receive role-specific emails, enabling distinct invites for town hall attendees. Rollout is automatic; no admin action is needed, but user notification is recommended."
       },
@@ -12755,37 +12751,6 @@
     }
   },
   {
-    "startDateTime": "2026-02-18T18:20:53Z",
-    "endDateTime": "2026-04-22T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-18T18:21:24.57Z",
-    "title": "Retirement of “Suspected identity theft (pass-the-ticket)” classic alert",
-    "id": "MC1234542",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2026-03-16T07:00:00Z",
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The “Suspected identity theft (pass-the-ticket)” classic alert will retire between March 18-22, 2026, replaced by the “Pass-the-Ticket (PtT) attack” XDR alert. Existing alerts remain accessible. No admin action is required, but update workflows, alert tuning, and documentation accordingly. No compliance issues noted."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>To streamline our alert catalog and focus investment on our unified Microsoft Defender XDR detection capabilities, we’re retiring the “Suspected identity theft (pass‑the‑ticket)” classic alert (External ID: 2018). This retirement aligns with our move toward consolidated XDR alerting and improved detection fidelity. </p><p>We recommend using the “Pass‑the‑Ticket (PtT) attack” alert (Detector ID: xdr_PassTheTicketAttack), where ongoing development and enhancements will continue.</p><p><b>[When this will happen]</b></p><p>We’ll retire the classic alert between <b>March 18, 2026</b> and <b>March 22, 2026</b>.</p><p><b>[How this affects your organization]</b></p><p>Who is affected:</p><ul><li>Organizations using Microsoft Defender for Identity within Microsoft Defender XDR services.</li><li>Security operations teams and administrators who rely on classic alerting.</li></ul><p>What will happen:</p><ul><li>The “Suspected identity theft (pass‑the‑ticket)” classic alert (External ID: 2018) will stop generating new alerts after retirement.</li><li>Existing historical alerts will remain accessible in your environment.</li><li>The “Pass‑the‑Ticket (PtT) attack” XDR detector (ID: xdr_PassTheTicketAttack) will continue to operate and should be used going forward.</li><li>No changes will be made to user experiences outside security operations.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action is required for this change, but we recommend the following to ensure continuity in your security workflows:</p><ul><li>Update alert triage processes, workflows, and automation to reference the XDR detector IDs.</li><li>Reconfigure alert exclusions or tuning rules using<b> XDR Alert Tuning</b>.</li><li>Notify security and operations teams of the upcoming retirement.</li><li>Update internal documentation to reference the new alert name and detector ID.</li><li>Review Microsoft documentation for configuring XDR Alert Tuning.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-02-18T18:29:19Z",
     "endDateTime": "2026-06-01T07:00:00Z",
     "lastModifiedDateTime": "2026-02-24T17:35:23.167Z",
@@ -16216,7 +16181,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9061964Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9061965Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9061966Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9061968Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9061969Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.9933676Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.9933677Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.9933679Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.993368Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.9933681Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21650,7 +21615,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9061529Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9061532Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9061533Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-22T08:43:34.993238Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.9932382Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.9932383Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22174,7 +22139,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9062913Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T06:47:14.9062914Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.9934421Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-22T08:43:34.9934422Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
