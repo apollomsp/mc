@@ -63,6 +63,10 @@
         "value": "476488"
       },
       {
+        "name": "FeatureStatusJson",
+        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
+      },
+      {
         "name": "Summary",
         "value": "Microsoft Teams will send separate event invite emails based on participant roles (Attendee, Presenter, Co-organizer) starting mid-2026. Organizers receive role-specific emails, enabling distinct invites for town hall attendees. Rollout is automatic; no admin action is needed, but user notification is recommended."
       },
@@ -16229,7 +16233,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.297913Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2979132Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2979133Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2979134Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2979135Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8334335Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8334336Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8334337Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8334338Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8334339Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -17138,30 +17142,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Microsoft has identified an issue affecting <a href=\"https://learn.microsoft.com/windows/release-health/status-windows-11-25h2#3360msgdesc\" rel=\"noopener noreferrer\" target=\"_blank\">signing in to apps using a Microsoft account</a>. After installing the March 2026 Windows security update, some users might be unable to sign in to Microsoft apps and services. During sign‑in, users might see a “no internet” error even when the device has a working internet connection. This issue affects only Microsoft account sign‑in scenarios; organizations using Microsoft <a href=\"https://learn.microsoft.com/entra/fundamentals/what-is-entra\" rel=\"noopener noreferrer\" target=\"_blank\">Entra ID</a> for app authentication are not affected.</div><div><br></div><div>An out-of-band (OOB) update was released today, March 21, 2026, to address this issue. This cumulative update includes all protections and improvements from the March 2026 Windows security update released March 10, 2026.</div><div><br></div><div>This OOB update is available for Windows 11, versions 25H2 and 24H2 devices that receive standard Windows updates. It can be installed through Windows Update or the Microsoft Update Catalog. For more information, refer to the KB article <a href=\"https://support.microsoft.com/help/5085516\" rel=\"noopener noreferrer\" target=\"_blank\">KB5085516 (OS Builds 26200.8039 and 26100.8039) Out-of-band</a>.</div>"
-    }
-  },
-  {
-    "startDateTime": "2026-03-23T21:01:28Z",
-    "endDateTime": "2026-04-23T21:01:28Z",
-    "lastModifiedDateTime": "2026-03-23T21:02:24.78Z",
-    "title": "Power Platform admin center – New alert metrics available in the Monitor section",
-    "id": "MC1259775",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing new metrics available for alerts in the Monitor section of the Power Platform admin center. This feature is available in public preview as of March 11, 2026.<br><br><b>How does this affect me?</b><br>\nWith this feature, users can configure alert rules on the data request success rate and data request latency canvas app metrics. In addition to existing metrics, users can now set up alerts based on the following:<ul><li>Data request success rate – Monitor the percentage of successful data requests made by canvas apps and get notified when the rate drops below your defined threshold.</li><li>Data request latency – Monitor how long data requests take in your canvas apps and get notified when latency exceeds your defined threshold.</li></ul>Alert rules are configured in the Monitor section of the Power Platform admin center and can be scoped to a specific managed environment. Alerts are evaluated every 24 hours, and users can choose to receive email notifications when an alert is triggered.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>For additional information about creating alerts for your resources, please review the <a target=\"_blank\" href=\"https://aka.ms/ADO14278\">Create alerts for your resources</a> learn article."
     }
   },
   {
@@ -21626,7 +21606,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2980026Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2980027Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2980028Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8335232Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8335233Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8335234Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22151,7 +22131,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2978322Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2978324Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8333533Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8333535Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23384,7 +23364,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.2979608Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T20:25:56.297961Z\",\"LatestRing\":null}]}"
+        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8334786Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-23T22:20:07.8334787Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
