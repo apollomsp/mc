@@ -2959,7 +2959,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -4211,31 +4211,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction:]</b></p><p>To streamline AI credit management and align with the broader Copilot strategy, Microsoft is transitioning from AI Builder service credits to <b>Copilot Credits</b>. This change simplifies licensing, improves predictability, and enables a unified experience across Power Platform and Dynamics 365.&nbsp;</p><p><b>[When this will happen:]</b></p><p><b>General Availability (Production/Worldwide, GCC and GCCH): </b>Rollout begins on November 1st, 2025.</p><ul><li>November 1, 2025: End of sale for AI Builder service credits add-ons</li><li>November 1, 2025: End of AI Builder service credits included in eligible SKUs (seeded credits) for new customers</li><li>November 1, 2026: End of frozen amount of seeded AI Builder service credits for current customers</li></ul><p><b>[How this affects your organization:]</b></p><p>Who is affected: Admins managing Power Apps, Power Automate, and Dynamics 365 Finance environments that currently include or purchase AI Builder service credits.</p><p>What will happen:</p><p><b>Licensing and credit transition</b></p><ul><li>AI Builder service credits will no longer be available for purchase after November 1, 2025. AI tools and capabilities (AI Builder) will now use Copilot Studio capacity.<ul><li> Copilot Studio capacity is available via the Copilot Studio prepaid Copilot Credits subscription or Copilot Studio pay-as-you-go.</li></ul></li><li>Existing paid AI Builder service credits (purchased in AI Builder capacity packs) can continue to be used until expiration or renewal.<ul><li>Current customers must purchase Copilot Studio capacity to continue using AI tools and capabilities once their AI Builder service credits expire.</li></ul></li><li>New customers must purchase Copilot Studio capacity to use AI tools and capabilities (AI Builder)</li><li>Makers can access, train and test models in AI Builder pages in Power Automate and Power Apps portals without additional licensing checks.</li><li>AI Builder trials (200,000 credits for 30 days) will be discontinued after November 1, 2025.</li><li>Admins can allow or block drawing from available Copilot Credits capacity through Power Platform admin center Licensing.</li></ul><b>SKU and overage changes</b><ul><li>Existing seeded AI Builder service credit amounts will be frozen on November 1, 2025: this capacity will be renewed each month until November 1, 2026.</li><li>For new purchases, seeding of AI Builder service credits will end on November 1, 2025, for the following SKUs:<ul><li>Power Apps per app</li><li>Power Apps Premium</li><li>Power Automate Premium</li><li>Power Automate Process</li><li>Power Automate Unattended RPA add-on</li><li>Power Automate Hosted RPA add-on</li><li>Dynamics 365 Finance</li><li>Dynamics 365 Finance Premium</li></ul></li><li>Overage management will be simplified starting November 1, 2025:<ul><li>In case of overage or unavailability of AI Builder service credits, events using AI Builder service credits will try to fall back to Copilot Credits.</li><li>Extension requests for AI Builder overages will no longer be supported.</li><li>The “important overage” designation will be retired: fallback to Copilot Credit happens when AI Builder service credits capacity is consumed. Features will then be blocked when Copilot Credit capacity is exhausted.</li></ul></li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>Review your current AI Builder service credit usage in the Power Platform admin center and plan for transition to Copilot Credits.</li><li>Communicate this change to your internal stakeholders and helpdesk teams.</li><li>Update internal documentation to reflect the new consumption model and overage policy.</li><li>Inform makers and admins about the upcoming AI Builder page access and fallback mechanisms.</li></ul><p>Learn more:&nbsp;</p><ul><li>New licensing documentation:&nbsp;<a href=\"https://go.microsoft.com/fwlink/?linkid=2337019\" target=\"_blank\">Copilot Credits based licensing | AI Builder | Power Platform| Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/microsoft-copilot-studio/billing-licensing\" target=\"_blank\">Copilot Studio licensing | Microsoft Copilot Studio | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/ai-builder/credit-management\" target=\"_blank\">Licensing and AI Builder credits | AI Builder | Power Platform | Microsoft Learn</a></li></ul><p><b>[Compliance considerations:]</b></p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-10-02T15:57:53Z",
-    "endDateTime": "2026-04-30T15:57:00Z",
-    "lastModifiedDateTime": "2025-10-23T19:08:14.443Z",
-    "title": "Microsoft 365 Copilot for Sales - Autonomously grow your pipeline with Sales Agent",
-    "id": "MC1164255",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Platform"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<b>Update:</b> Release of this feature has been updated.<br><br>We are announcing the ability to autonomously grow your pipeline with Sales Agent in Microsoft 365 Copilot for Sales. This feature will reach general availability on March 31, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThe sales agent works like a new sales rep instead of working on behalf of an existing sales rep. It engages your prospects in a two-way conversation and leads them to a meeting or purchase using the following capabilities:<ul>\n    <li>Research prospects deeply.</li>\n    <li>Send hyper-personalized emails to leads.</li>\n    <li>Send outreach emails to a list of prospects from CRM or a CSV file.</li>\n    <li>Follow up with leads if it doesn't receive a response.</li>\n    <li>Respond to questions, handle objections, and ask qualification questions</li>\n    <li>Hand-off leads to sales reps.</li>\n</ul>\nThe sales operations manager is the primary persona for the sales agent, and decides the criteria, knowledge, and behavior the sales agent presents.<br><br>\n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit the <a href=\"https://aka.ms/ADO12137\" target=\"_blank\">Autonomously grow your pipeline with Sales Agent</a> article."
     }
   },
   {
@@ -15284,7 +15259,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3958158Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.395816Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3958162Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3958163Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3958165Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0208916Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0208918Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0208919Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.020892Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0208921Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18211,30 +18186,6 @@
     }
   },
   {
-    "startDateTime": "2026-03-31T15:34:17Z",
-    "endDateTime": "2026-04-30T15:34:17Z",
-    "lastModifiedDateTime": "2026-03-31T15:38:01.787Z",
-    "title": "Dynamics 365 Sales - Connect Fabric Lakehouse data to AI‑powered sales research",
-    "id": "MC1266582",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to connect Microsoft Fabric Lakehouse data to AI-powered sales research in Dynamics 365 Sales. This feature will reach general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>This feature enables AI-powered experiences to combine sales activity data with trusted operational data in a single, coherent view for users. The Microsoft Fabric Lakehouse connector provides an integration between Dynamics 365 Sales research experiences and data stored in Microsoft Fabric (OneLake). Key capabilities of this feature allow users to:<ul><li>Connect to Microsoft Fabric Lakehouse tables without manual exports or data replication.</li><li>Allow AI-powered agents to query and reason across Dynamics 365 Sales (Dataverse) and Lakehouse data together.</li>\n\n<li>Add support for operational and financial datasets, including:\n    <ul>\n      <li>Revenue actuals</li>\n      <li>Targets and budgets</li>\n      <li>Invoicing and backlog</li>\n    </ul>\n</li>\n  </li>\n <li>View sales and sales operations insights seamlessly within AI-powered research and analysis experiences</li>\n</ul>\n</ul>\n<b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>\nIf you would like more information about this feature, please visit<a href=\" https://aka.ms/ADO14418\"> Connect Fabric lakehouse data to AI powered sales research</a>."
-    }
-  },
-  {
     "startDateTime": "2026-03-31T17:13:55Z",
     "endDateTime": "2026-04-30T17:13:55Z",
     "lastModifiedDateTime": "2026-03-31T17:33:21.63Z",
@@ -20505,7 +20456,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3956666Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3956669Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3956671Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0206886Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0206889Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.020689Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20970,7 +20921,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3959841Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3959844Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0209907Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0209908Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22235,7 +22186,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3957472Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3957474Z\",\"LatestRing\":null}]}"
+        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0207367Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0207369Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -22528,7 +22479,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557170\":[{\"RoadmapId\":557170,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3958433Z\",\"LatestRing\":null},{\"RoadmapId\":557170,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T14:48:20.3958436Z\",\"LatestRing\":null}]}"
+        "value": "{\"557170\":[{\"RoadmapId\":557170,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0209082Z\",\"LatestRing\":null},{\"RoadmapId\":557170,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-30T16:37:12.0209083Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23853,6 +23804,453 @@
     }
   },
   {
+    "startDateTime": "2026-04-30T14:42:11Z",
+    "endDateTime": "2026-06-01T14:42:00Z",
+    "lastModifiedDateTime": "2026-04-30T15:05:52.107Z",
+    "title": "Microsoft Power Automate - Support for normalized schema import for data ingestion",
+    "id": "MC1296281",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Power Automate"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to ingest data in a normalized data structure format for process mining in Power Automate. This feature will reach general availability on May 31, 2026.<br><br>\n<b>How does this affect me?</b><br>\nWith this feature, Power Automate Process Mining supports the case-event entity-based data structure in addition to a normalized form of attributes. This accelerates the ingestion process and reduces storage capacity needed for the transformation and import to process model phases.<br><br>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T15:20:34Z",
+    "endDateTime": "2026-06-02T15:20:00Z",
+    "lastModifiedDateTime": "2026-04-30T15:26:21.333Z",
+    "title": "Dynamics 365 Project Operations - Add support for Lookups on custom columns",
+    "id": "MC1296292",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to add Lookup data type fields as enterprise task custom columns within the task grid in Dynamics 365 Project Operations. This feature will reach general availability on May 31, 2026. <br><br>\n<b>How does this affect me?</b><br>\nUsers will be able to add Lookup data type fields as enterprise task custom columns. This makes it easier to surface relational data directly in the task grid, eliminating the need for task form customizations.<br><br>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/14970/1\" target=\"_blank\">Add support for Lookups on custom columns</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T15:30:44Z",
+    "endDateTime": "2026-05-31T15:30:00Z",
+    "lastModifiedDateTime": "2026-04-30T15:35:40.73Z",
+    "title": "Microsoft Copilot Studio – CLI support for Microsoft Copilot Studio",
+    "id": "MC1296434",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Power Platform)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to support agent-driven development workflows by using an extension for the Microsoft Power Platform CLI for Microsoft Copilot Studio. This feature will reach general availability on May 31, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis extension integrates with the Microsoft Power Platform CLI, allowing admins to support agent-driven development workflows in Microsoft Copilot Studio. This extension also allows for updating and deploying agent definitions to the cloud.<br><br> \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T15:52:10Z",
+    "endDateTime": "2026-05-30T15:52:10Z",
+    "lastModifiedDateTime": "2026-04-30T15:54:30.173Z",
+    "title": "Dynamics 365 Sales - Clone and share Sales Development agent configuration across teams",
+    "id": "MC1296464",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to clone and share Sales Development agent configuration across teams in Dynamics 365 Sales. This feature will reach general availability on June 1, 2026.<br><br><b>How does this affect me?</b><br>This feature enables you to configure a Sales Development agent once and share or clone it across your organization. When you create an agent with specific guidelines, guardrails, and settings, you can distribute that configuration to other business units, ensuring consistency across your sales teams.<br><br>Key functionality of this feature includes:<ul><li><b>Establishing baseline guidelines and guardrails:</b> You can define standard operating procedures, compliance rules, and best practices within an agent configuration. These guardrails ensure that all cloned or shared agents maintain your organization's standards for prospect engagement.</li><li><b>Cloning agents:</b> You can duplicate an existing Sales Development agent to create a new instance with identical capabilities and settings. This allows you to quickly deploy multiple agents with the same configuration across different territories, product lines, or business units without manual reconfiguration.</li><li><b>Sharing and re-assigning agents:</b> You can transfer ownership or share access to configured agents with other people in your organization. This enables centralized configuration management where subject matter experts can set up agents that others will use for outreach. </li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T15:58:58Z",
+    "endDateTime": "2026-06-02T15:58:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:06:37.393Z",
+    "title": "Dynamics 365 Customer Service - Use shadow mode for Case Management Agent predictions",
+    "id": "MC1296468",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to use shadow mode for Case Management Agent predictions in Dynamics 365 Customer Service. This feature will reach general availability on May 31, 2026. \n<br><br> \n<b>How does this affect me?</b><br> \nThis feature enables you to evaluate predicted actions from Case Management Agent on live cases without sending emails or updating records.<br><br>\nPredicted outcomes include:\n<ul>\n<li>Identified customer intent</li>\n<li>Drafted response content</li>\n<li>Proposed field updates</li>\n<li>Recommended follow-up or resolution actions</li>\n</ul>\nAdministrators can review predicted actions from Case Management Agent to compare recommendations with actual human actions, identify mismatches and gaps, high improvement opportunities, and assess readiness for partial or full automation.<br><br>\nThis extension integrates with the Microsoft Power Platform CLI, allowing admins to support agent-driven development workflows in Microsoft Copilot Studio. This extension also allows for updating and deploying agent definitions to the cloud.<br><br> \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T15:56:10Z",
+    "endDateTime": "2026-06-01T15:56:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:07:23.75Z",
+    "title": "Dynamics 365 Supply Chain Management - Run Planning Optimization on Azure operated by 21Vianet",
+    "id": "MC1296469",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability for companies in China running Dynamics 365 Supply Chain Management on Azure operated by 21Vianet to run Planning Optimization in Dynamics 365 Supply Chain Management. This feature will reach general availability on June 1, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \nPlanning Optimization is a fast, scalable, cloud-based planning engine for Microsoft Dynamics 365 Supply Chain Management that enhances master planning efficiency and responsiveness to empower planners with faster, more dynamic insights.<br><br> \nPlanning Optimization offers the following benefits:<ul> \n<li>Offloads master planning from the main ERP database, reducing SQL load and system contention during planning runs.</li>  \n\n<li>Boosts performance, turning hours-long runs into minutes, even for large datasets, by leveraging a scalable, multi-tenant cloud service.</i> \n\n<li>Supports ad-hoc and on-demand planning, enabling near real-time updates during business hours instead of waiting for nightly batch jobs.</li></ul> \n<b>What action do I need to take?</b><br> \nThis message is for awareness, and no action is required.<br><br> \n\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO15010\"target=\"_blank\">Run Planning Optimization on Azure operated by 21Vianet</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:10:36Z",
+    "endDateTime": "2026-06-04T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:10:43.887Z",
+    "title": "Microsoft 365 Copilot: New AI Reader role for Agent 365 (read-only access)",
+    "id": "MC1296473",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 suite",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot introduces the AI Reader role for Agent 365, providing read-only access to usage, health, and configuration without admin rights. Available from early May 2026, it enables monitoring and reporting while maintaining security and separation of duties. Role assignment is manual and does not affect existing permissions."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are introducing the <b>AI Reader </b>role for <b>Agent 365</b> in<i> Microsoft 365 Copilot</i>. This role provides read-only access to agent usage, health, and configuration without requiring Global Administrator permissions. It enables administrators to monitor and report on Agent 365 while maintaining separation of duties and preventing configuration changes.</p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide):</b> We will begin rolling out this feature in <b>early May 2026</b> and expect to complete by <b>early May 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft 365 tenants using Agent 365</li><li>Users assigned the <b>AI Reader</b> role</li><li>Administrators who manage role assignments for Agent 365</li></ul><p><i>What will happen</i></p><ul><li>A new <b>AI Reader</b> role will be available in the <i>Microsoft 365 admin center</i>.</li><li>Users assigned this role can view agent usage, health, and configuration.</li><li>Users assigned this role cannot make changes or perform administrative actions.</li><li>The AI Reader role is <b>not assigned by default </b>and must be explicitly assigned.</li><li>Existing roles, permissions, and policies are not changed.</li><li>There is no impact to user workflows.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required if your organization does not need read-only visibility into Agent 365.</p><p>If you plan to use this role:</p><ul><li>Identify users who need <b>read-only visibility,</b> <b>monitoring, or reporting access</b> without administrative privileges.</li><li>Assign the <b>AI Reader </b>role to those users.</li></ul><p>To manage role assignments:</p><ol><li>Sign in to the <a href=\"https://admin.cloud.microsoft/\" target=\"_blank\">Microsoft 365 admin center</a>&nbsp;using a Global Administrator or User Administrator account.</li><li>Go to <b><i>Roles &gt; Role assignments</i></b>.</li><li>Select <b><i>AI Reader</i></b>.</li><li>Review current assignments and add or remove users as needed.</li></ol><p><b>Learn more: </b><a href=\"https://learn.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide\" target=\"_blank\">About administrator roles in the Microsoft 365 admin center | Microsoft 365 admin center | Microsoft 365 | Microsoft Learn</a>&nbsp;</p><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities (for example, through Purview or admin reporting)?</td><td>Yes. This change introduces the AI Reader role, which provides a new read-only method for administrators or designated users to monitor and report on Agent 365 usage, health, and configuration without granting administrative or modification privileges.</td></tr></tbody></table><p><b></b></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:11:29Z",
+    "endDateTime": "2026-07-04T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:11:58.323Z",
+    "title": "New dedicated License Requests page in Microsoft 365 Admin Center",
+    "id": "MC1296475",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 suite"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Admin Center will add a new License Requests page by late May to early June 2026, enabling admins to centrally view and manage Microsoft 365 Copilot license requests. The feature is on by default, requires no action, and does not affect existing permissions or custom workflows."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p>\n<p>We are introducing a new dedicated <b>License Requests</b> page in the Microsoft 365 admin center to help administrators more easily discover, review, and manage Microsoft 365 Copilot license requests submitted by users. This update improves visibility and discoverability of license requests.</p><p><b>[When this will happen:]</b></p>\n<ul>\n<li>Targeted Release (Worldwide): We will begin rolling out in <b>mid-May 2026</b> and expect to complete by <b>late May 2026</b>.</li><li>General Availability (Worldwide): We will begin rolling out in <b>late May 2026</b> and expect to complete by <b>early June 2026</b>.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Global admins</li>\n<li>License admins</li>\n<li>User admins</li>\n<li>Organizations using <b>Microsoft 365 Copilot license</b> request workflows via Microsoft 365 Admin Center</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>A new page will be available at: <b>Microsoft 365 admin center &gt; Billing &gt; License requests.</b></li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/d91c224c-0c72-4bec-be1c-96afbc5d7f8d\" style=\"width: 400px;\" alt=\"user settings\"></p>\n<li>Admins can also find the page via global search using “License requests.”</li>\n<li>Admins will be able to:\n<ul>\n<li>View submitted Microsoft 365 Copilot license requests.</li>\n<li>Review and manage requests in a centralized location.</li>\n</ul>\n</li>\n<li>The feature will be <b>on by default</b> after rollout.</li>\n<li>There are no changes to:\n<ul>\n<li>Existing role-based access or permissions.</li>\n<li>User request submission experience.</li>\n<li>Custom license request policies.</li>\n</ul>\n</li>\n<li>Organizations using custom policies that redirect requests to external systems:\n<ul>\n<li>Will continue using their existing workflows.</li>\n<li>Will not see those requests in the new page.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No action is required.</li>\n<li>After rollout:\n<ul>\n<li>Navigate to <b>Billing &gt; License requests </b>in the Microsoft 365 admin center.</li>\n<li>Review internal processes for handling license requests.</li>\n<li>Optionally update internal admin documentation or helpdesk guidance.</li>\n</ul>\n</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<ul>\n</ul><p>Introduces a new centralized page that improves visibility into license request activity, which may support admin tracking and reporting workflows.</p><ul>\n</ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:16:55Z",
+    "endDateTime": "2026-07-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:17:17Z",
+    "title": "Microsoft Teams: Retirement of Together mode",
+    "id": "MC1296478",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact",
+      "Retirement"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will retire Together mode in meetings starting early June 2026, completing by late June 2026. Together mode and custom scenes will be removed, with gallery view as the primary layout. No admin action is needed, but users should be notified and documentation updated accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We are retiring the <b>Together mode </b>meeting view in <i>Microsoft Teams</i>. This retirement reduces the number of available meeting layouts and allows Microsoft to focus development on the Teams gallery. The gallery is the default meeting view across Teams clients and will remain the primary multi-participant layout for meetings.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide, GCC, GCC High, DoD): </b>Retirement will begin in <b>early June 2026</b> and is expected to complete by <b>late June 2026</b>.</li></ul><p>Dates are subject to change based on safe deployment progress.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft Teams tenant administrators</li><li>Meeting organizers and participants who currently use Together mode</li><li>Organizations using custom Together mode scenes</li></ul><p><i>What will happen</i></p><ul><li>The<i><b> Together mode</b></i> option will be removed from the <b>View</b> menu in<i> Teams meetings</i>.</li><li><b>Custom Together mode scenes</b> and <b>seat assignment </b>functionality <b>will be retired</b>.</li><li>The <b>gallery view </b>will be the primary multi-participant layout for meetings.</li><li>There is no admin policy or setting available to retain or re-enable Together mode.</li><li>There is no impact to meeting creation, joining, or core meeting functionality aside from the removal of Together mode.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action is required for this change. We recommend the following steps:</p><ul><li>Notify meeting organizers and users who regularly use Together mode about the retirement.</li><li>If your organization uses branded meeting visuals, deploy organization-approved background images through the Teams admin center.</li><li>Update internal documentation or training materials that reference Together mode to recommend alternative layouts such as gallery, pin, or spotlight.</li><li>Prepare helpdesk staff to address user questions related to the removal of Together mode.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:17:30Z",
+    "endDateTime": "2026-07-22T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:17:41.997Z",
+    "title": "Microsoft Purview | Data Security Investigations: Introducing new custom examination focus areas",
+    "id": "MC1296479",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "560598"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Purview Data Security Investigations will support custom examination focus areas from mid-May 2026, allowing admins to tailor AI-powered investigations to prioritize specific sensitive information. This feature respects existing permissions, requires no pre-rollout action, and enhances investigation efficiency without changing data storage or access."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p><b>Microsoft Purview Data Security Investigations (DSI)</b> is adding support for <b>custom examination focus areas</b>. This feature will empower admins to tailor examinations to their specific needs based on the type of investigation being performed and the types of information they want to prioritize. This capability extends DSI’s existing AI‑powered deep content analysis used to identify data security risks.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=560598\" target=\"_blank\">560598</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview:</b> Rollout begins in <b>mid‑May 2026</b> and is expected to complete by <b>mid‑June 2026</b>.</li><li><b>General Availability (Worldwide):</b> Rollout begins in <b>mid‑June 2026</b> and is expected to complete by <b>late June 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft 365 admins and investigators using Microsoft Purview Data Security Investigations</li><li>Tenants with access to DSI</li></ul><p><i>What will happen</i></p><ul><li>Admins can create<b> custom examination focus areas</b> when running Data Security Investigations.</li><li>Custom focus areas allow investigations to prioritize specific types of sensitive information relevant to the investigation.</li><li>AI-powered deep content analysis uses these focus areas to surface potential data security risks more efficiently.</li><li>The feature is <b>available by default </b>to eligible tenants once rolled out.</li><li>Existing DSI permissions, policies, and workflows are respected.</li><li>There is no change to user workflows unless an admin runs an investigation using custom focus areas.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required before this feature rolls out.</p><p>You may want to:</p><ul><li>Review how your organization currently uses Data Security Investigations.</li><li>Update internal investigation playbooks or documentation to include custom examination focus areas.</li><li>Inform security and compliance teams about the new capability.</li></ul><p><b>Learn more:&nbsp;</b></p><ul><li><a href=\"https://learn.microsoft.com/purview/data-security-investigations\" target=\"_blank\">Learn about Data Security Investigations | Microsoft Purview | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/purview/data-security-investigations-ai-analysis#use-examination-tools\" target=\"_blank\">Use examination tools - Use AI analysis in Data Security Investigations | Microsoft Purview | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. Admins can define custom examination focus areas that influence how AI-powered analysis prioritizes and examines existing data during an investigation. This does not change where data is stored or who can access it.</td></tr><tr><td>Does the change introduce or significantly modify AI/ML capabilities that interact with customer data?</td><td>Yes. This feature extends existing AI-powered deep content analysis by allowing admins to configure custom focus areas that guide how AI analyzes investigation data.</td></tr><tr><td>Does the change alter how admins monitor, report on, or demonstrate compliance activities?</td><td>Yes. Admins can configure investigations with custom focus areas, which may change how investigations are conducted, but reporting, audit logs, and compliance evidence remain unchanged.</td></tr><tr><td>Does the change include an admin control, and can it be managed through Entra ID group membership?</td><td>Yes. The feature is available to admins and investigators with appropriate Microsoft Purview permissions. Access continues to be governed by existing role‑based access controls.</td></tr></tbody></table><p><b></b></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:18:01Z",
+    "endDateTime": "2026-07-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:18:17.95Z",
+    "title": "Microsoft 365 Copilot will use private community and event content as grounding sources",
+    "id": "MC1296480",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "515144"
+      },
+      {
+        "name": "Summary",
+        "value": "Starting May 2026, Microsoft 365 Copilot will use private community and event content as grounding sources to generate responses, respecting existing permissions and sensitivity labels. This feature is enabled by default, cannot be disabled, and affects all Microsoft 365 tenants using Copilot. No action is required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p><b>Microsoft 365 Copilot</b> will begin using content from private communities and private events as <b>grounding sources</b> to generate responses. This change helps Copilot provide more relevant and context-aware answers by incorporating content that users already have access to, while continuing to respect existing permissions and security controls.</p><p> </p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=515144#Roadmap\" target=\"_blank\">515144</a></b>.</p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide):&nbsp;</b>We will begin rolling out this feature in<b>&nbsp;May 2026</b> and expect to complete the rollout by <b>late June 2026</b>.</p><p><b>[How this affects your organization]</b></p><p>Who is affected:</p><p style=\"margin-left: 25px;\">All Microsoft 365 tenants using <b>Microsoft 365 Copilot</b></p><p>What will happen</p><ul><li>Microsoft 365 Copilot may reference content from private communities and private events when generating responses.</li><li>Users will only see content they already have permission to access:<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/1bba4121-80c7-45e2-86b9-1dd457595cc0/e4ebeaf6fe64eba81cbc3b5e4fb1108b423d31b7.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Sensitivity labels applied to the source content will be displayed alongside Copilot citations, when applicable.</li><li>The feature is <b>enabled by default </b>and <b>cannot be turned off</b>.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>You may want to inform administrators, compliance teams, or helpdesk staff that Copilot can now reference private community and event content while continuing to honor existing permissions and sensitivity labels.</p><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. Existing private community and event content may now be accessed by Microsoft 365 Copilot as a grounding source, while respecting current permissions.</td></tr><tr><td>Does the change introduce or significantly modify AI/ML capabilities that interact with customer data?</td><td>Yes. Microsoft 365 Copilot expands its grounding sources to include private community and private event content.</td></tr><tr><td>Does the change provide end users a new way of interacting with generative AI?</td><td>Yes. Copilot responses may now include insights derived from private community and event content the user can already access.</td></tr><tr><td>Does the change modify or interact with Information Protection labels?</td><td>Yes. Sensitivity labels applied to the source content are displayed alongside Copilot citations.</td></tr></tbody></table><p><b></b></p><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:18:38Z",
+    "endDateTime": "2026-06-13T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:18:48.983Z",
+    "title": "Microsoft Teams: Change of default file open preference",
+    "id": "MC1296482",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams will change the default file open preference for Word, Excel, and PowerPoint from Teams to Desktop or Web app starting early May 2026. No admin action is needed; users can revert preferences anytime. This update improves file reliability and aligns with customer feedback."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>To improve file reliability and alignment with common customer workflows, <b>Microsoft Teams </b>is <b>updating the default file open preference</b> for <b>Word</b>, <b>Excel</b>, and <b>PowerPoint</b> files. Users who previously selected Teams as their default file opening option will now default to Desktop app or Web app instead. This change reflects customer feedback and ongoing improvements to file performance and consistency across Microsoft 365.</p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide, GCC, GCC High, DoD): </b>We will begin rolling out in<b> early May 2026 </b>and expect to complete by <b>mid-May 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p style=\"margin-left: 25px;\">Users in<i> Microsoft 365 tenants </i>who previously set Teams as their default app for opening Word, Excel, or PowerPoint files.</p><p><i>What will happen</i></p><ul><li>The<b> default file open preference</b> will change from<b> Teams</b> to <b>Desktop app</b> or <b>Web app</b>.</li><li>This change applies automatically; no admin configuration is required.</li><li>Users can manually change their file open preference back to Teams at any time from their Teams settings.</li><li>There is no change to file storage location or permissions.</li></ul><p><i>First run experience dialog shown to users when the updated default file open preference takes effect:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/71d26cb8-6322-46be-aba4-b90f8bb6d8ee/e9f1ce170f196b5a1cc15ffbefe44749216fb44a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><ul><li><b>No admin action is required.</b></li><li>Consider notifying helpdesk staff and end users about the change to reduce support requests.</li><li>Optional internal message you can reuse:<ul><li>“<i>If you notice Office files opening in Desktop or Web instead of Teams, this is an expected update. You can change your preference anytime in Teams settings.</i>”</li></ul></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change allow a user to enable or disable the feature themselves?</td><td>Yes. Users can change their default file open preference at any time from Microsoft Teams settings to open Word, Excel, and PowerPoint files in<i> Teams</i>, the desktop app, or the web app.</td></tr></tbody></table><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:19:11Z",
+    "endDateTime": "2026-06-07T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:19:19.95Z",
+    "title": "Teams Rooms Pro Management Portal: AI Assistant now available to all portal roles with RBAC-scoped data access",
+    "id": "MC1296484",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "The Teams Rooms Pro Management Portal's AI Assistant is now available to all portal roles with RBAC-enforced data access, expanding beyond Global Admins. Rolling out from late April to early May 2026, it provides inventory insights and guidance within existing permissions, with no configuration or remediation capabilities at launch."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re expanding access to the <b>AI Assistant</b> in the <i>Teams Rooms Pro Management Portal</i> so more IT admins can quickly get answers about their rooms and devices. Previously available only to Global Admins, the AI Assistant will now be accessible to <b>all portal roles</b> while continuing to enforce existing <b>role-based access control (RBAC)</b>. This helps admins get faster insights without increasing access or visibility beyond what they already manage. This update is rolling out as a Public Preview starting the week of April 23, 2026, with General Availability planned for May 2026.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview: </b>Rolling out in<b> late April 2026</b>, with completion expected by <b>early May 2026</b>.</li><li><b>General Availability (Worldwide): </b>Rolling out in <b>late April&nbsp;2026</b>, with completion expected in&nbsp;<b>early May 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>IT admins and operators with access to the <b>Teams Rooms Pro Management Portal</b></li><li>Microsoft 365 tenants using<b> Teams Rooms Pro</b></li></ul><p><i>What will happen</i></p><ul><li>The AI Assistant will be available to <b>all Teams Rooms Pro Management Portal roles</b>, not just Global Admins.</li><li>The feature is <b>enabled by default </b>for eligible tenants.</li><li>AI Assistant responses are <b>RBAC-enforced</b>, meaning:<ul><li>Users only see data for rooms and devices they already have permission to manage.</li><li>No cross-scope or elevated visibility is introduced.</li></ul></li><li>No changes are made to existing portal roles or permissions.</li></ul><p><b>What the AI Assistant can do at launch:</b></p><ul><li>Answer questions about room and device inventory (for example, firmware versions or device counts).</li><li>Provide tenant-level summaries and reporting-style insights within the user’s permitted scope.</li><li>Offer product knowledge and setup guidance (for example, how-to questions).</li></ul><p><b>What the AI Assistant does not do at launch:</b></p><ul><li>Make configuration changes or take actions on devices.</li><li>Run multi-step diagnostics or automated troubleshooting.</li><li>Automatically remediate issues.</li><li>These capabilities are planned for future phases.</li></ul><p style=\"margin-left: 50px;\"><i>Additional capabilities are planned for future updates.</i></p><p><b>[What you can do to prepare]</b></p><ul><li>No action required.&nbsp;</li><li>Review existing Teams Rooms Pro portal role assignments if you want to control who can access the AI Assistant.</li><li>Consider informing helpdesk or operations teams that AI Assistant access is expanding to additional portal roles.</li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with customer data?</td><td>Yes. The AI Assistant is being made available to additional admin roles. It queries existing Teams Rooms Pro management data and returns results scoped by RBAC. No new data sources are introduced.</td></tr><tr><td>Does the change allow admins to monitor, report on, or demonstrate compliance activities differently?</td><td>Yes. More portal roles can query inventory and reporting-style data using the AI Assistant, within their existing permissions.</td></tr><tr><td>Does the change include an admin control and can it be controlled through Entra ID group membership?</td><td>Yes. Access is governed by existing Teams Rooms Pro Management Portal roles, which are typically assigned via Entra ID.</td></tr></tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:20:55Z",
+    "endDateTime": "2026-06-29T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:21:12.433Z",
+    "title": "Microsoft 365 Copilot (Premium): Teams meetings as a reference in Copilot Notebooks",
+    "id": "MC1296488",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot (Premium) will integrate Teams meeting content—transcripts, chats, and shared files—into Copilot Notebooks, enhancing context-based insights. Rolling out from April to May 2026, it respects existing permissions and governance, requires no admin setup, and is enabled by default for licensed users."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>[<b>Introduction]</b></p>\n<p><b>Meetings as references in Copilot Notebooks</b> bring Microsoft Teams meeting content<b> </b>into the notebook experience, enabling users to ground Copilot on the discussions, decisions, and context that drive their work. By adding meetings as knowledge sources, users can connect transcripts, notes, chats, and shared content directly to their projects—enriching notebooks beyond files alone and improving downstream outputs such as presentations and briefs. This enhances productivity and decision-making by connecting conversational context with existing documents, while continuing to respect existing access controls and organizational data governance policies. Available in Copilot Notebooks for licensed Microsoft 365 Copilot (Premium) users.</p>\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li>Public Preview (Worldwide): We began rolling out in <b>late&nbsp;April 2026</b> and expect to complete by <b>mid-May 2026</b>.</li>\n<li>General Availability (Worldwide): We will begin rolling out in <b>mid-May 2026</b> and expect to complete by <b>late May 2026</b>.</li>\n</ul>\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Users with access to <b>Copilot Notebooks in Microsoft 365</b></li>\n<li>Organizations using Microsoft Teams meetings with transcription or recording enabled</li><li>A <b>Microsoft 365 Copilot (Premium)</b> license is required to use this feature</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n<li>Users can incorporate Teams meeting content (for example, transcripts, chat, and shared materials) into Copilot Notebooks as references.</li>\n<li>Copilot will generate insights and content grounded in meeting context.</li>\n<li>The feature will be <b>on by default </b>where Copilot Notebooks are available.</li>\n<li>Access to meeting content will respect existing user permissions for the meeting and related files.</li>\n<li>Existing Teams meeting policies, retention settings, and organizational data governance controls are respected.</li>\n<li>There is no change to user workflow unless meetings are added as references.</li>\n</ul>\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No additional admin setup is required.</li><li>Admins should ensure <b>Teams transcription and recording policies</b> and <b>meeting access permissions</b> are configured appropriately for their organization’s governance requirements.</li>\n<li>Confirm meeting access permissions align with organizational governance policies.</li>\n<li>Communicate this change to helpdesk staff and Copilot users.</li>\n<li>Update internal documentation for Copilot Notebooks usage, if applicable.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/microsoftteams/meeting-recording\" target=\"_blank\">Manage Teams recording policies for meetings and events - Microsoft Teams | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/microsoftteams/meeting-transcription-captions\" target=\"_blank\">Admins- Manage transcription and captions for Teams meetings | Microsoft Learn</a></li><li>Before General Availability rollout, we will update this post with new documentation.</li></ul><p><b>[Compliance considerations:]</b></p>\n\n<table>\n<tbody><tr>\n<td><b>Compliance area</b></td>\n<td><b>Explanation</b></td>\n</tr>\n<tr>\n<td>Does the change alter how existing customer data is processed, stored, or accessed (e.g. documents, emails, chats, etc.)?</td>\n<td>Copilot Notebooks can reference existing Microsoft Teams meeting artifacts (such as transcripts, chat, and shared files) to generate grounded outputs based on meeting context.</td>\n</tr>\n<tr>\n<td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?</td>\n<td>Microsoft Copilot will use meeting content as contextual grounding for generative AI responses within Copilot Notebooks.</td>\n</tr>\n<tr>\n<td>Does the change provide users any new way of interacting with generative AI?</td>\n<td>Users can include Teams meeting content as knowledge sources for Copilot-generated insights and content.</td>\n</tr>\n<tr>\n<td>Does the change allow a user to enable and disable the feature themselves?</td>\n<td>Users can choose to add or remove meeting references within Copilot Notebooks.</td>\n</tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-04-30T16:21:25Z",
+    "endDateTime": "2026-06-29T07:00:00Z",
+    "lastModifiedDateTime": "2026-04-30T16:21:40.44Z",
+    "title": "Microsoft 365 Copilot: Anthropic models available when editing Word documents",
+    "id": "MC1296489",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps",
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "558440"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot will add Anthropic AI models as an option for Word document editing, available worldwide by late May 2026. Enabled by default outside the EU, EFTA, and UK, and disabled by default within these regions, admins can control this setting while existing security and compliance standards remain."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>Microsoft will expand AI model options in <i>Microsoft 365 Copilot</i>. With this change, organizations will be able to enable <b>Anthropic models</b> alongside OpenAI models when users edit documents with Copilot in <i>Microsoft Word</i>. This update provides administrators with additional configuration options for AI model providers while maintaining Microsoft’s existing security, privacy, and compliance commitments.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558440\" target=\"_blank\">558440</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide):</b><ul><li>Rollout will begin in<b> mid-May 2026</b>.</li><li>Rollout will complete by<b> late May 2026</b>.</li></ul></li><li><b>Regional availability and default state</b><ul style=\"\"><li style=\"\"><b style=\"font-weight: bold;\">EU, EFTA, and UK: </b>Anthropic models will be available but<b> disabled by default</b> and must be explicitly enabled by an administrator.</li><li style=\"\"><b style=\"font-weight: bold;\">All other regions: </b>Anthropic models will be <b>enabled by default</b>.</li></ul></li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft 365 tenants using <b>Microsoft 365 Copilot (Premium)</b></li><li>Users who edit documents in <b>Microsoft Word using Copilot</b></li><li>Administrators who manage Copilot and AI provider settings</li></ul><p><i>What will happen</i></p><ul><li>Anthropic will be available as an<b> AI provider operating as a Microsoft subprocessor</b>.</li><li>Users will be able to select Anthropic models in addition to OpenAI models when using Copilot in <i>Word:</i><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/0cdd4c8a-15af-4f23-b000-e5dcdf4de90a/f834daccee386454df728748cb157d04b922c7af.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>For tenants<b> outside the EU, EFTA, and the UK,</b> Anthropic models will be<b> enabled by default</b>.</li><li>For tenants <b>in the EU, EFTA, and the UK</b>, the feature will be<b>&nbsp;off by default</b> and require explicit admin enablement.</li><li>Administrators can enable or disable Anthropic at any time at the tenant level.</li><li>Existing Microsoft 365 Copilot security, compliance, and governance controls will continue to apply.</li><li>There is no change to the user experience unless Anthropic is enabled (or remains enabled by default, depending on region).</li></ul><p><b>[What you can do to prepare]</b></p><ul><li><b>If your tenant is in the EU, EFTA, or the UK and you plan to enable Anthropic:</b><ul><li>Review your organization’s AI governance, privacy, and compliance requirements.</li></ul></li><li>If you want to manage or change availability of Anthropic models:<ul><li>In the<i> Microsoft 365 admin center</i>, go to <b><i>Copilot → Settings → View all</i></b>.</li><li>Select <i><b>AI providers operating as Microsoft subprocessors</b></i>.</li><li>Under <i><b>Available subprocessors for your organization</b></i>, choose&nbsp;<i><b>Anthropic</b></i> and select&nbsp;<i><b>Enable </b>or <b>Disable</b>.</i></li></ul></li><li>Communicate this upcoming change to your security, compliance, and helpdesk teams.</li><li>Update any internal documentation related to Copilot AI model usage.</li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td>Question</td><td>Answer</td></tr><tr><td>Does the change alter how existing customer data is processed?</td><td>Yes. When Anthropic is enabled, Copilot in <i>Word</i> will process document content using Anthropic models to generate responses.</td></tr><tr><td>Does the change introduce or modify AI or machine learning capabilities interacting with customer data?</td><td>Yes. Anthropic large language models will be introduced as an additional AI option for Copilot in <i>Word</i>.</td></tr><tr><td>Does the change provide end users with a new way to interact with generative AI?</td><td>Yes. Users will be able to choose Anthropic models when using Copilot in <i>Word</i>, if enabled by an administrator.</td></tr><tr><td>Does the change add integration with third‑party software products?</td><td>Yes. Anthropic will operate as a third‑party AI provider acting as a Microsoft subprocessor.</td></tr><tr><td>Does the change include an admin control?</td><td>Yes. Administrators will be able to enable or disable Anthropic at the tenant level through the Microsoft 365 admin center.</td></tr></tbody></table><p><b></b></p><p><b></b></p>"
+    }
+  },
+  {
     "startDateTime": "2023-04-17T18:48:40Z",
     "endDateTime": "2026-05-26T07:00:00Z",
     "lastModifiedDateTime": "2026-03-02T18:09:11.943Z",
@@ -24243,7 +24641,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
