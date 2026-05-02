@@ -226,7 +226,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"482747\":[{\"RoadmapId\":482747,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.989506Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9895063Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9895065Z\",\"LatestRing\":null}]}"
+        "value": "{\"482747\":[{\"RoadmapId\":482747,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9765243Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9765245Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9765247Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -9418,37 +9418,6 @@
     }
   },
   {
-    "startDateTime": "2026-01-22T00:44:04Z",
-    "endDateTime": "2026-05-02T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-22T00:44:11.917Z",
-    "title": "MTA-STS and SMTP DANE mode on connectors",
-    "id": "MC1220759",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Exchange Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Exchange Online will let admins control MTA-STS and SMTP DANE validation modes on outbound connectors starting late February 2026. Modes include Opportunistic (default), None (disables validation), and Mandatory (enforces SMTP DANE). No action is needed unless changes to validation behavior are desired."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b>\n</p><p>This feature provides admin's control over Outbound MTA-STS and SMTP DANE validations for emails sent over outbound connectors in <i>Exchange Online</i>, allowing organizations to choose how strictly the service enforces MTA-STS and SMTP DANE when sending mail to external domains. \n</p><p>Admins will be able to configure each outbound connector to use the following modes: \n</p><ol><li><b>Opportunistic [default]</b>, applies to both MTA-STS and SMTP DANE. Opportunistic Mode means Exchange Online will attempt to perform validations for both MTA-STS and SMTP DANE but still sends the message if the destination doesn't support either protocol.\n</li><li><b>None</b>, which applies to both MTA-STS and SMTP DANE and disables the validation entirely, therefore <b>reducing the security of emails sent over that connector</b> by removing MTA-STS and/or SMTP DANE protections designed to prevent downgrade attacks and spoofed MX redirection.\n</li><li><b>Mandatory</b>, applies only to SMTP DANE and enforces full SMTP DANE and DNSSEC validation, requiring the destination to support Inbound SMTP DANE with DNSSEC and queueing mail if the validation does not succeed.\n</li></ol><p><b>[When this will happen]\n</b></p><p><b>General Availability (Worldwide):</b> We will begin rolling out in<b> late February 2026</b> and expect to complete by<b> late March 2026</b>.</p><p><b>[How this will affect your organization]\n</b></p><p>Connectors will default to Opportunistic Mode. Opportunistic Mode is already the default behavior for Exchange Online outbound connectors.&nbsp;</p><p><b>[What you need to do to prepare]\n</b></p><p>If you do not want to change the MTA-STS and/or SMTP DANE validation behavior for your outbound connectors, there is no action you need to take and you can ignore this post.\n</p><p>If you do want to change the MTA-STS and/or SMTP DANE validation behavior for your outbound connectors, review the documentation on this feature which will be updated and provided in this post prior to release.&nbsp; </p><p><b>[Compliance considerations]</b>\n</p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-01-22T00:46:54Z",
     "endDateTime": "2027-03-03T08:00:00Z",
     "lastModifiedDateTime": "2026-01-28T17:09:23.54Z",
@@ -10304,44 +10273,6 @@
     }
   },
   {
-    "startDateTime": "2026-02-02T23:50:34Z",
-    "endDateTime": "2026-05-02T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-02T23:50:44.307Z",
-    "title": "Viva Engage: New option to hide a user's messages",
-    "id": "MC1226225",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Viva"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "513276"
-      },
-      {
-        "name": "Summary",
-        "value": "Viva Engage will introduce a new feature allowing users to hide messages from specific individuals, reducing unwanted interactions. Rolling out worldwide from late February to late March 2026, the feature is on by default but can be disabled by admins. Some roles cannot be hidden. No admin action required."
-      },
-      {
-        "name": "Platforms",
-        "value": "Android, iOS, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>\nWe’re introducing a new end-user moderation control in Viva Engage: <b>Hide a user’s messages</b>. This feature allows users to reduce visibility of messages from specific individuals, helping minimize unwanted or distracting interactions while preserving community engagement.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=513276#Roadmap\" target=\"_blank\">513276</a>.</p>\n\n<p><b>[When this will happen:]</b></p><p>\nGeneral Availability (Worldwide): Rolling out <b>late February 2026</b> and completing by <b>late March 2026</b>.</p><p>\n\n</p><p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p><p>\nAll Viva Engage users.</p>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>The feature is <b>on by default</b>.</li>\n<li>Admins can <b>turn this feature off</b> in the Engage admin center.</li><li>Users will have a new option to hide another user’s messages from:<ul><li>Any message in Viva Engage</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/f238f09d-56ec-4bd1-85da-76c04b46a993\" style=\"width: 400px;\" alt=\"user settings\"></p><li>A user’s profile page</li><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/4b915ef7-a4ae-48f2-bd4e-233628410b3a\" style=\"width: 400px;\" alt=\"user settings\"></p></ul></li><li>When a user is hidden:<ul><li>Their threadstarters will no longer appear in Home Feed or email digests.</li><li>In communities and other locations, their threadstarters will appear collapsed with a click‑to‑reveal option.</li><li>In all surfaces, comments appear collapsed with a click-to-reveal option.</li></ul></li><li>Some roles cannot be hidden, including:<ul><li><b>Designated leaders </b>(requires the <b>Viva Communications &amp; Communities</b> or <b>Viva Suite</b> license)</li><li><b>Corporate communicators</b></li><li><b>Network/verified admins</b></li><li><b>Engage admins</b></li></ul>\n\n</li></ul>\n\n<p><b>[What you can do to prepare:]</b></p><p>\nNo admin action is required.</p>\n<p>We recommend:</p>\n<ul>\n<li>Informing users about this new moderation option.</li>\n<li>Updating internal documentation or guidance, as needed.</li>\n<li>Using the Engage admin center if you wish to disable the feature.</li></ul><p>Before rollout, we will update this post with new documentation.</p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><p>\nNo compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-02-03T15:24:06Z",
     "endDateTime": "2026-10-31T23:59:00Z",
     "lastModifiedDateTime": "2026-04-01T04:20:23.163Z",
@@ -10536,37 +10467,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Catch up on important changes and evolving standards that will help strengthen the security of the Windows ecosystem across client, cloud, and server with <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-news-you-can-use-january-2026/4473282\" rel=\"noopener noreferrer\" target=\"_blank\">Windows news you can use</a> for January 2026. Learn about new tools to help with Secure Boot certificate updates and a new command-line tool for Windows app developers. Explore features and enhancements that will start gradually rolling out in February, which include improvements to Cross-Device Resume, Narrator, Voice Access, MIDI support, and the Settings home page.</div><div>&nbsp;</div><div><b>When will this happen:</b></div><div>Some improvements summarized in this monthly recap are already available, while others are rolling out gradually.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><div>Read <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-news-you-can-use-january-2026/4473282\" rel=\"noopener noreferrer\" target=\"_blank\">January’s recap</a>, which includes links to resources to help you start benefiting from the latest improvements.</div><div>&nbsp;</div><div><b>Additional information:</b></div><div>To keep up with new capabilities and features as they are announced, follow the <a href=\"https://techcommunity.microsoft.com/category/windows/blog/windows-itpro-blog\" rel=\"noopener noreferrer\" target=\"_blank\">Windows IT Pro Blog</a>, <a href=\"https://www.microsoft.com/security/blog/?msockid=0a62a344849c68fe1290b07a85ff6967\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Security Blog</a>, and <a href=\"https://support.microsoft.com/topic/windows-11-version-25h2-update-history-99c7f493-df2a-4832-bd2d-6706baa0dec0\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 update history</a>.</div>"
-    }
-  },
-  {
-    "startDateTime": "2026-02-04T23:59:39Z",
-    "endDateTime": "2026-05-02T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-19T23:41:02.083Z",
-    "title": "(Updated) Files in Outlook for iOS will open in Word, Excel or Powerpoint app on iPad",
-    "id": "MC1227071",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting early to mid-February 2026, Outlook for iOS on iPads will open Word, Excel, and PowerPoint attachments directly in their respective apps if installed, replacing the in-app previewer. Users without these apps will still use the previewer. No admin action is needed."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated February 19, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>Introduction</b></p>\n<p>We’re changing how Word, Excel, and PowerPoint file attachments open in Outlook for iOS. For <b>iPad users only, </b>these files will open directly in the Word, Excel, or PowerPoint apps when they are installed, instead of using the in-app previewer.</p>\n\n<p><b>When this will happen:</b></p>\n<p>General Availability (Worldwide, GCC, GCCH, DoD): We will begin rolling this out in <b>early to mid-February 2026</b> and expect to complete the rollout by&nbsp;<b>late March 2026</b>.</p>\n\n<p><b>How this affects your organization:</b></p>\n<p><b style=\"\">Who is affected:</b></p>\n<ul>\n<li>Users on <b>iPad devices</b> running Outlook who have the Word, Excel, or PowerPoint apps installed.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>iPad users will find that Word, Excel, and PowerPoint attachments open directly in the corresponding app.\n</li><li>Users without the Office apps installed will continue to use the in-app previewer.</li>\n<li>No admin configuration is required.</li>\n</ul>\n\n<p><b>What you can do to prepare:</b></p>\n<ul>\n<li>No action is required.</li>\n<li>You may choose to notify iPad users or update internal help documentation.</li>\n</ul>\n\n<p><b>Compliance considerations:</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
     }
   },
   {
@@ -13022,37 +12922,6 @@
     }
   },
   {
-    "startDateTime": "2026-03-04T01:19:08Z",
-    "endDateTime": "2026-05-02T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-04T01:20:50.317Z",
-    "title": "Microsoft 365 Copilot: Retirement of the Skills agent from Frontier",
-    "id": "MC1243548",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": "2026-03-15T07:00:00Z",
-    "services": [
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The Skills agent in Microsoft 365 Copilot will retire by the end of March 2026, with removal from new installations by March 16, 2026. Skills data is now integrated directly in Copilot and available via the Learning and Workforce Insights agents. Users should transition and reconfigure delegation accordingly."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We are retiring the Skills agent (currently in Frontier) in Microsoft 365 Copilot as part of an evolution to streamline the Copilot experience. \n</p><p>\n</p><p>Skills data and capabilities are now available directly in Microsoft 365 Copilot and through two agents available now in Frontier: the Learning agent and the Workforce Insights agent.<br>Frontier agents help us learn what users value most and how they want to experience M365 Copilot. Skills agent feedback provided by Frontier customers has directly shaped our broader approach to improving people experiences in Copilot. Integrating current skills capabilities directly into Copilot, the Learning agent, and the Workforce Insights agent, gives organizations consistent access to skills data while supporting broader scenarios for employees and leaders.&nbsp;</p><p><b>&nbsp;[When this will happen]</b></p><ul><li>Skills data is already available for people-based queries in M365 Copilot. The Learning agent and Workforce Insights agent are <b>available now</b> for testing through the <a href=\"https://adoption.microsoft.com/copilot/frontier-program/\" target=\"_blank\">Frontier program</a>.</li><li>The Skills agent will be removed from the agent store for new installations on <b>March 16, 2026</b>.</li><li>The Skills agent will be fully retired at the <b>end of March 2026</b>, at which point existing users will lose access.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations currently using the Skills agent in Microsoft 365 Copilot through the Frontier program.</li><li>Leaders who previously used the Skills agent for organization-wide skills insights or delegated access.</li></ul><p><i>What will happen</i></p><ul><li>The Skills agent will no longer be available for installation <b>after March 16, 2026</b>.</li><li>Existing users will lose access when the retirement is complete at the <b>end of March 2026</b>.</li><li><b>Skills-based experiences will continue</b> through:<ul><li><b>Microsoft 365 Copilot</b>, which now surfaces skills and people discovery through natural, chat-based queries.\n</li><li><b>Learning agent</b>, which provides personalized skill-based learning paths and recommendations.</li><li><b>Workforce Insights agent</b>, which provides organizational insights including team structure, skills mix, and talent visibility.</li></ul></li><li>Delegation settings previously configured in the Skills agent <b>will not carry over </b>and must be reconfigured in the Workforce Insights agent.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li><b>Begin transitioning your users</b> from the Skills agent to Microsoft 365 Copilot, the Learning agent, or the Workforce Insights agent<b> before March 16, 2026</b>.</li><li>If leaders in your organization relied on delegation within the Skills agent, reconfigure delegation in the Workforce Insights agent. Manage delegation:&nbsp;<a href=\"https://learn.microsoft.com/copilot/microsoft-365/workforce-insights-agent#manage-delegation-policies\" target=\"_blank\" style=\"font-family: sans-serif; font-weight: 400; background-color: rgb(255, 255, 255);\">Manage delegation policies - Workforce Insights agent</a></li><li>Review internal documentation and update any references to the Skills agent.</li><li>Visit the<a href=\"https://adoption.microsoft.com/ai-agents/agents-in-microsoft-365/\" target=\"_blank\"> Agents in Microsoft 365 Adoption site</a> and the <a href=\"https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-new-microsoft-365-copilot-agents-to-drive-workforce-transformation/4470689\" target=\"_blank\">Ignite 2025 announcement blog</a> for the latest information about the new Copilot agents.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://adoption.microsoft.com/ai-agents/agents-in-microsoft-365/\" target=\"_blank\">Agents in Microsoft 365 | AI Agents Hub | Microsoft Adoption</a></li><li><a href=\"https://adoption.microsoft.com/copilot/frontier-program/\" target=\"_blank\">Frontier program - Microsoft Adoption</a>&nbsp;</li><li><a href=\"https://techcommunity.microsoft.com/blog/Microsoft365CopilotBlog/introducing-new-microsoft-365-copilot-agents-to-drive-workforce-transformation/4470689\" target=\"_blank\">Introducing new Microsoft 365 Copilot agents to drive workforce transformation | Microsoft 365 Copilot Blog</a></li><li><a href=\"https://learn.microsoft.com/copilot/microsoft-365/workforce-insights-agent#manage-delegation-policies\" target=\"_blank\">Manage delegation policies - Workforce Insights agent | Microsoft 365 Copilot | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-03-04T01:21:32Z",
     "endDateTime": "2026-10-01T07:00:00Z",
     "lastModifiedDateTime": "2026-03-04T18:27:32.183Z",
@@ -14460,37 +14329,6 @@
     }
   },
   {
-    "startDateTime": "2026-03-12T23:46:41Z",
-    "endDateTime": "2026-05-02T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-12T23:47:06.46Z",
-    "title": "Sensitivity labels available soon for Viva Engage communities",
-    "id": "MC1250283",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Viva"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting late March 2026, Viva Engage communities will support Microsoft Purview sensitivity labels applied to Microsoft 365 groups and SharePoint sites, synchronizing access controls across these platforms. Admins must manually apply labels to existing communities and prepare accordingly for this update."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>Starting March 31, 2026, Viva Engage communities will support <b>Microsoft Purview sensitivity labels</b> applied to Microsoft 365 groups and their connected SharePoint sites. This update aligns Engage community privacy and governance with existing Microsoft 365 labeling capabilities, helping organizations apply consistent privacy and access controls across all three surfaces.</p><p><b>[When this will happen]</b></p><p><b>General availability (Worldwide): </b>We will begin rolling out in<b> late March 2026 </b>and expect to complete by <b>early April 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Admins managing Viva Engage communities, Microsoft 365 groups, and SharePoint sites</li><li>Organizations that use sensitivity labels or classification labels today</li></ul><p><i>What will happen</i></p><ul><li>Viva Engage communities will support Microsoft Purview sensitivity labels assigned to the underlying Microsoft 365 group and connected SharePoint site:<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/07c08097-e91a-47bf-a8c3-54ed1078df74/433182bae71dcab8081aec9edfb8ccf56e47c903.png\" style=\"width: 400px;\" alt=\"user settings\"> </p></li><li>Labels and their access restrictions will synchronize across all three surfaces: Viva Engage, Microsoft 365 groups, and SharePoint.</li><li>Existing Engage communities will not automatically receive sensitivity labels.</li><li>Existing Engage classification labels in your tenant will not be automatically disabled.</li><li>Tenant admins must manually apply labels to existing communities if they want to use this capability.</li></ul><p><b>[What you can do to prepare]</b></p><p>Admin checklist:</p><ul><li>Review existing Viva Engage communities to determine the appropriate sensitivity label for each.</li><li>Assess whether to continue using existing Engage classification labels or transition communities to sensitivity labels.</li><li>Prepare PowerShell scripts to assign sensitivity labels to existing communities’ connected SharePoint sites once rollout completes.</li><li>Notify helpdesk or governance teams that support labeling, provisioning, or access‑control workflows.</li><li>Update internal documentation where you manage community governance or label usage.</li></ul><p><b>Learn more:&nbsp;</b><a href=\"https://learn.microsoft.com/purview/sensitivity-labels-teams-groups-sites#use-powershell-to-apply-a-sensitivity-label-to-multiple-sites\" target=\"_blank\"><b>Use PowerShell to apply a sensitivity label to multiple sites</b> - Use sensitivity labels to protect content in Microsoft Teams, Microsoft 365 groups, and SharePoint sites | Microsoft Purview | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-03-13T03:42:00Z",
     "endDateTime": "2026-09-30T03:37:00Z",
     "lastModifiedDateTime": "2026-03-13T04:06:18.5Z",
@@ -14622,7 +14460,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9897686Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9897687Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9897688Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9897689Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.989769Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9767314Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9767315Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9767317Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9767318Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9767319Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19608,7 +19446,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9898766Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9898768Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9898769Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9768621Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9768622Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9768624Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20073,7 +19911,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9896458Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9896459Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9765881Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9765883Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21340,7 +21178,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9898218Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.989822Z\",\"LatestRing\":null}]}"
+        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9767959Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9767961Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21633,7 +21471,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557170\":[{\"RoadmapId\":557170,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9897523Z\",\"LatestRing\":null},{\"RoadmapId\":557170,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T06:47:43.9897524Z\",\"LatestRing\":null}]}"
+        "value": "{\"557170\":[{\"RoadmapId\":557170,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.976713Z\",\"LatestRing\":null},{\"RoadmapId\":557170,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-02T08:37:43.9767132Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
