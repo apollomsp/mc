@@ -226,7 +226,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"482747\":[{\"RoadmapId\":482747,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6926577Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6926578Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6926579Z\",\"LatestRing\":null}]}"
+        "value": "{\"482747\":[{\"RoadmapId\":482747,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5300442Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5300443Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5300443Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11818,8 +11818,8 @@
   },
   {
     "startDateTime": "2026-02-26T00:20:37Z",
-    "endDateTime": "2026-05-11T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-19T23:03:23.253Z",
+    "endDateTime": "2026-06-22T07:00:00Z",
+    "lastModifiedDateTime": "2026-05-05T23:13:46.24Z",
     "title": "(Updated) Outlook: Delimiter setting admin policy",
     "id": "MC1239176",
     "category": "stayInformed",
@@ -11844,7 +11844,7 @@
       },
       {
         "name": "Summary",
-        "value": "A new Exchange Online admin policy will allow admins to set a tenant-wide default for using commas as recipient separators in Outlook, rolling out worldwide in April 2026. Users can override unless locked by policy. No automatic changes; admins can configure via PowerShell if desired."
+        "value": "A new Exchange Online admin policy will allow admins to set a tenant-wide default for using commas as recipient separators in Outlook mail compose and reply. Rollout starts early April 2026, completing by mid-May. Users can override unless locked by admin. No automatic changes occur without admin action."
       },
       {
         "name": "Platforms",
@@ -11853,7 +11853,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated March 19, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re adding a new Exchange Online admin policy that gives admins more control over the default Mail Compose and Reply setting that determines whether commas are used as recipient separators.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557676\" target=\"_blank\">557676</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General availability (Worldwide): </b>Rollout will begin in <b>early April 2026</b> and complete by <b>mid‑April 2026</b>.</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Exchange Online administrators in New Outlook for Windows and Outlook for Web</li><li>All users composing or replying to email in <i>Outlook</i> where no per‑user override is configured</li></ul><p><i>What will happen</i></p><ul><li>A new admin policy will be available to set the tenant‑wide default for “<i><b>Use commas as recipient separators</b></i>.”</li><li>Admins can choose whether the default is on or off for all users.</li><li>Users may still change this setting in their <i>Outlook client </i>unless an admin enforces a policy that locks it:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d53d4d89-2cf9-4b09-8916-ad98fa64e98e/51360c8601e14324e4cd6d6a0a45e002a951a767.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>This update is especially useful for organizations whose contacts commonly use “Last name, First name” formats.</li><li>No changes will occur automatically—tenants will retain existing behavior unless an admin modifies the policy.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required. If desired, you may configure the new admin policy after rollout if you want to establish a consistent default.&nbsp;You can set this value&nbsp;via Powershell with the command \"Set-Organization Config -RecipientDelimeters&nbsp;&lt;Boolean&gt;.\"</p><p>You may also consider the following actions:&nbsp;</p><ul><li>Review your organization’s preferred recipient formatting conventions.</li><li>Update internal documentation if your helpdesk or user‑training materials reference this setting.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated May 5, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re adding a new Exchange Online admin policy that gives admins more control over the default Mail Compose and Reply setting that determines whether commas are used as recipient separators.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557676\" target=\"_blank\">557676</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General availability (Worldwide): </b>Rollout will begin in <b>early April 2026</b> and complete by <b>mid-May 2026</b> (previously&nbsp;mid‑April).</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Exchange Online administrators in New Outlook for Windows and Outlook for Web</li><li>All users composing or replying to email in <i>Outlook</i> where no per‑user override is configured</li></ul><p><i>What will happen</i></p><ul><li>A new admin policy will be available to set the tenant‑wide default for “<i><b>Use commas as recipient separators</b></i>.”</li><li>Admins can choose whether the default is on or off for all users.</li><li>Users may still change this setting in their <i>Outlook client </i>unless an admin enforces a policy that locks it:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d53d4d89-2cf9-4b09-8916-ad98fa64e98e/51360c8601e14324e4cd6d6a0a45e002a951a767.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>This update is especially useful for organizations whose contacts commonly use “Last name, First name” formats.</li><li>No changes will occur automatically—tenants will retain existing behavior unless an admin modifies the policy.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required. If desired, you may configure the new admin policy after rollout if you want to establish a consistent default.&nbsp;You can set this value&nbsp;via Powershell with the command \"Set-Organization Config -RecipientDelimeters&nbsp;&lt;Boolean&gt;.\"</p><p>You may also consider the following actions:&nbsp;</p><ul><li>Review your organization’s preferred recipient formatting conventions.</li><li>Update internal documentation if your helpdesk or user‑training materials reference this setting.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -12182,7 +12182,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554925\":[{\"RoadmapId\":554925,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913858Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913856Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.891386Z\",\"LatestRing\":null}]}"
+        "value": "{\"554925\":[{\"RoadmapId\":554925,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913856Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913858Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.891386Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -14097,7 +14097,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6925337Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6925339Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6925339Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6925341Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6925342Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5299296Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5299298Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5299299Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5299301Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5299303Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18454,7 +18454,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6924505Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6924508Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6924509Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5298642Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5298644Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5298645Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18919,7 +18919,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6926442Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6926443Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5300309Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5300311Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20187,7 +20187,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6924866Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6924867Z\",\"LatestRing\":null}]}"
+        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5297292Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5297295Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20481,7 +20481,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557170\":[{\"RoadmapId\":557170,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6925522Z\",\"LatestRing\":null},{\"RoadmapId\":557170,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-05T22:25:30.6925524Z\",\"LatestRing\":null}]}"
+        "value": "{\"557170\":[{\"RoadmapId\":557170,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5299474Z\",\"LatestRing\":null},{\"RoadmapId\":557170,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T00:52:49.5299476Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23239,6 +23239,189 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>We’re announcing the <b>public preview</b> of the <b>Change Optics report for Exchange Online</b>, which is now available for all customers. This report helps Exchange administrators proactively identify email traffic that may be affected by upcoming service changes, enabling investigation and remediation ahead of enforcement.</p><p><b>[When this will happen]</b></p><ul><li><b>Public preview: </b>The report is now rolled out for all customers. We plan to conduct the public preview for at least one month.&nbsp;</li><li><b>General availability (Worldwide): </b>Depending on feedback from the public preview, we may announce GA as <b>early as June 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p style=\"margin-left: 25px;\">Exchange Online administrators</p><p><i>What will happen</i></p><ul><li>A new <b>Change Optics report </b>will appear in <i>Exchange Online reporting</i> during public preview.</li><li>The report provides<b>&nbsp;visibility</b> into a sample set of messages that match characteristics expected to be impacted by<b> future Exchange Online transport changes</b>.</li><li>At launch, the report includes the following scenarios:<ul><li><b>OMC (onmicrosoft.com external traffic)</b>: Identifies <b>onmicrosoft.com traffic</b> being sent externally so organizations can address this usage to avoid throttling.</li><li><b>DRS (Direct Send traffic)</b>: Identifies <b>Direct Send traffic </b>being received by the tenant to help organizations prepare to enable the <b>Reject Direct Send</b> setting.</li></ul></li><li>The report <b>does not modify mail flow</b>, enforcement behavior, or tenant configuration.</li><li>The report is <b>enabled by default</b> for Exchange Online tenants.</li><li>There is <b>no impact to users</b>.</li></ul><p><b>[What you need to do to prepare]</b></p><p>No action is required to prepare.</p><p>However, Exchange administrators may want to:</p><ul><li>Review the <b>Change Optics report</b> once it becomes available during public preview.</li><li>Use the report findings to:</li><ul><li>Identify and reduce reliance on <b>onmicrosoft.com external email usage</b>.</li><li>Assess <b>Direct Send traffic </b>and plan for enabling <b>Reject Direct Send</b> if appropriate.</li></ul><li>Update internal documentation or operational guidance related to mail flow best practices.</li></ul><p><b>Learn more: </b><a href=\"https://techcommunity.microsoft.com/blog/exchange/change-optics-report-released-into-public-preview-to-showcase-messages-impacted-/4513047\" target=\"_blank\">Change Optics Report released into Public Preview to showcase messages impacted by future changes | Exchange Team Blog</a></p><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td><td><b>Yes.</b> The Change Optics report introduces new<b> read-only administrative reporting</b> that provides visibility into message patterns related to future transport enforcement scenarios. No enforcement or policy changes occur.</td></tr></tbody></table><p><b></b></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-05-05T23:00:12.513Z",
+    "endDateTime": "2026-05-19T23:00:12.513Z",
+    "lastModifiedDateTime": "2026-05-05T23:00:15.39Z",
+    "title": "Updates available for Microsoft 365 Apps for Current Channel",
+    "id": "MC1301824",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "ExternalLink",
+        "value": "https://docs.microsoft.com/officeupdates/"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p>We&#39;ve released updates to the following update channel for Microsoft 365 Apps:</p>\r\n<ul><li>Current Channel</li></ul>\r\n<p>[When this will happen:]</p>\r\n<p>We&#39;ll be gradually rolling out this update of Microsoft 365 Apps to users on that update channel starting May 5th, 2026 (PST).</p>\r\n<p>[How this will affect your organization:]</p>\r\n<p>If your Microsoft 365 Apps clients are configured to automatically update from the Office Content Delivery Network (CDN), then no action is required.</p>\r\n<p>If you manage updates directly you can now download this latest update and begin deployment.</p>\r\n<p>[What you need to do to prepare:]</p>\r\n<p>To get more details about this update view the following release notes:</p>\r\n<ul><li><a href=\"https://docs.microsoft.com/officeupdates/current-channel##version-2604-2605\" target=\"_blank\" rel=\"noopener noreferrer\">Current Channel</a></li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-05-05T23:07:03.087Z",
+    "endDateTime": "2027-05-05T23:07:03.087Z",
+    "lastModifiedDateTime": "2026-05-05T23:07:04.043Z",
+    "title": "Upgrade to Windows Server 2025, now via Windows Update",
+    "id": "MC1301827",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>Windows Update can be used to perform an in-place upgrade of Windows Server without installation media. This Windows Server feature update can help move Windows Server 2022 or Windows Server 2019 installations to Windows Server 2025,&nbsp;following the same process used to download monthly updates through Windows Update.</div><div><br></div><div>Upgrading helps keep your servers secure, supported, and able to use the latest features and performance improvements. Plan your installation and learn about the in-place upgrade paths by version, prerequisites, and restrictions, at <a href=\"https://techcommunity.microsoft.com/blog/windowsservernewsandbestpractices/opt-in-windows-server-2025-feature-update-from-the-ws-2022-and-ws-2019-settings-/4515961\" rel=\"noopener noreferrer\" target=\"_blank\">Opt-In Windows Server 2025 Feature Update from the WS 2022 and WS 2019 Settings Dialog</a>.</div><div><br></div><div><b>When will this happen:</b></div><div>This feature update path is available now. To see the Windows Server 2025 offer in <b>Settings &gt; Windows Update</b>, servers must meet these update baselines:</div><ul><li><b>Windows Server 2022:</b>&nbsp;March 2026 Cumulative Update (<a href=\"https://support.microsoft.com/help/5078766\" rel=\"noopener noreferrer\" target=\"_blank\"><b>KB5078766</b></a>) or later.</li><li><b>Windows Server 2019:</b>&nbsp;March 2026 Cumulative Update (<a href=\"https://support.microsoft.com/help/5078752\" rel=\"noopener noreferrer\" target=\"_blank\"><b>KB5078752</b></a>) or later.</li></ul><div><br></div><div>As always, we recommend you install the latest security update for your device as it contains important improvements and issue resolutions.</div><div><br></div><div>Please note that additional steps are required to display the upgrade offer. See the resources in the Additional Information section.</div><div><br></div><div><b>How this will affect your organization:</b></div><div>In-place upgrade is ideal for when you want the fastest path to a newer version on the same hardware. It keeps you on the same hardware, and you can avoid re-installing applications and services after only a device restart.</div><div><br></div><div>Once the manual steps to enable this upgrade path have been completed, an upgrade banner appears in Windows Update. An administrator must manually click <b>Download and Install</b>&nbsp;to trigger the upgrade.</div><div><br></div><div><b>What you need to do to prepare:</b></div><div>If you're considering the in-place upgrade for your organization, note that there are also prerequisites and restrictions to consider. Ensure you have a valid product key and activation method for the target version. Also, note that not all roles support in-place upgrade. Additionally, an opt-in registry key must be added to enable this upgrade path on qualifying devices. Study the information in the Additional Information links for complete details.</div><div><br></div><div><b>Additional information:</b></div><ul><li><a href=\"https://techcommunity.microsoft.com/blog/windowsservernewsandbestpractices/opt-in-windows-server-2025-feature-update-from-the-ws-2022-and-ws-2019-settings-/4515961\" rel=\"noopener noreferrer\" target=\"_blank\">Opt-In Windows Server 2025 Feature Update from the WS 2022 and WS 2019 Settings Dialog</a></li><li><a href=\"https://learn.microsoft.com/windows-server/get-started/install-upgrade-migrate?tabs=windows-update\" rel=\"noopener noreferrer\" target=\"_blank\">Plan your Windows Server upgrade</a></li><li><a href=\"https://learn.microsoft.com/windows-server/get-started/upgrade-in-place?tabs=windows-update\" rel=\"noopener noreferrer\" target=\"_blank\">Perform an in-place upgrade of Windows Server</a></li></ul>"
+    }
+  },
+  {
+    "startDateTime": "2026-05-05T23:32:03Z",
+    "endDateTime": "2026-08-27T07:00:00Z",
+    "lastModifiedDateTime": "2026-05-05T23:32:21.857Z",
+    "title": "Microsoft Purview: Data Security Investigations – Introducing optical character recognition (OCR) support",
+    "id": "MC1301831",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Purview"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "561489"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Purview Data Security Investigations will add OCR support by mid-2026, enabling automatic text extraction from images to enhance detection of sensitive information. This feature is enabled by default, requires no workflow changes, and improves investigation accuracy while respecting existing policies. No action is needed before rollout."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>\nMicrosoft Purview <b>Data Security Investigations (DSI) </b>is expanding its AI-powered investigation capabilities by adding<b> optical character recognition (OCR)</b>. This enhancement enables DSI to extract and analyze text from images, helping organizations identify sensitive information embedded in visual content. This improves the accuracy and depth of data security investigations.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=561489\" target=\"_blank\">561489</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n<li>Public Preview (Worldwide): We will begin rolling out in<b> late May 2026</b> and expect to complete by <b>early June 2026</b>.</li>\n<li>General Availability (Worldwide): We will begin rolling out in <b>mid-July 2026</b> and expect to complete by<b> late July 2026</b>.</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Admins and analysts using <b>Microsoft Purview Data Security Investigations (DSI)</b></li>\n<li>Organizations investigating data security risks using Purview</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>OCR will be <b>enabled by default</b> in Data Security Investigations.</li>\n<li>DSI will automatically extract text from image-based content (for example: images, screenshots, embedded visuals in files).</li><li>Extracted text will be incorporated into investigation datasets to improve search, analysis, and risk detection.</li><li>Existing investigation workflows will require no changes.</li><li>This can help improve detection of sensitive information that may be embedded in visual content.</li><li>Existing Purview policies and controls (such as sensitivity labels and DLP) continue to be respected.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n</ul><p>No action is required prior to rollout.</p><p>You may consider the following:</p><ul><li>Inform your security and compliance teams about improved detection capabilities involving image-based content.</li><li>Review internal investigation procedures to account for insights derived from OCR.</li><li>Update any internal documentation or training materials that reference Data Security Investigations capabilities.</li></ul><p><b>Learn more:</b></p><ul>\n<li><a href=\"https://learn.microsoft.com/purview/data-security-investigations-ai-analysis\" target=\"_blank\">Use AI analysis in Data Security Investigations | Microsoft Learn</a></li>\n<li><a href=\"http://aka.ms/dsidocs\" target=\"_blank\">Learn about Data Security Investigations | Microsoft Learn </a></li></ul><p><b>[Compliance considerations:]</b></p>\n<table>\n<tbody><tr>\n<td><b>Consideration</b></td>\n<td><b>Explanation</b></td>\n</tr>\n<tr>\n<td>Alters how existing customer data is processed</td>\n<td>OCR introduces additional processing of image-based content in Data Security Investigations by extracting text for analysis.</td>\n</tr>\n<tr>\n<td>Introduces or modifies AI/ML capabilities</td>\n<td>AI-powered OCR is added to analyze visual content and enhance investigation insights.</td>\n</tr>\n<tr>\n<td>Alters admin monitoring, reporting, or compliance visibility</td>\n<td>OCR-enriched data improves investigation depth, which may impact reporting and how compliance activities are reviewed.</td>\n</tr>\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-05-05T23:32:35Z",
+    "endDateTime": "2026-08-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-05-05T23:32:44.84Z",
+    "title": "Microsoft 365 Copilot Cowork: Plugins, connectors, and partner integrations (Frontier)",
+    "id": "MC1301832",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot Cowork is expanding with plugins, connectors, and partner integrations for Frontier participants starting May 2026. It enables secure access to Microsoft and third-party services, respects existing permissions and security, supports custom plugins, and is available on web, desktop, and mobile devices."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>As recently <a href=\"https://techcommunity.microsoft.com/blog/microsoft365copilotblog/cowork-in-progress/4511672\" target=\"_blank\">announced</a>, Microsoft is expanding <b>Microsoft 365 Copilot Cowork</b> with support fo<b>r plugins, connectors, and selected partner integrations</b>. This change enables Copilot Cowork to securely access additional Microsoft and third‑party services using existing permissions, helping users complete tasks across systems without changing current security or compliance controls. These updates are based on early customer feedback from Microsoft 365 Copilot Frontier participants and are designed to improve extensibility and productivity while maintaining tenant governance.</p><p>Copilot Cowork is available through the Microsoft 365 Copilot app on web, desktop, and supported mobile devices (iOS and Android) for Frontier participants.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview: </b>Rollout begins in <b>early May 2026 </b>and is expected to complete in&nbsp;<b>early May 2026</b>.<ul><li>These capabilities are rolling out gradually as part of the <b>Microsoft 365 Copilot Frontier program</b>.&nbsp;</li><li>There is no general availability date announced at this time.</li></ul></li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations enrolled in the <b>Microsoft 365 Copilot <a href=\"https://www.microsoft.com/microsoft-365-copilot/frontier-program\" target=\"_blank\">Frontier program</a></b></li><li>Users who have access to <b>Microsoft 365 Copilot Cowork</b></li></ul><p><i>What will happen</i></p><ul><li>Copilot Cowork can be extended through<b> plugins</b>, which may include connectors, skills, or both.</li><li><b>Native Microsoft connectors</b> allow Copilot Cowork to read (and where supported, write) data from services such as <b>Dynamics 365</b> and <b>Microsoft Fabric</b>, including <b>Power BI</b>.</li><li><b>Partner plugins will roll out over the coming weeks</b>, including integrations with <b>LSEG (London Stock Exchange Group), Miro, monday.com, and S&amp;P Global Energy</b>, with additional partners planned.</li><li>Organizations can <b>create custom plugins</b> to connect Copilot Cowork to internal systems or workflows.</li><li><b>Copilot Cowork is available</b> through the <b>Microsoft 365 Copilot app on web</b>, <b>desktop</b>, and <b>supported mobile devices (iOS and Android)</b> for Frontier participants.</li><li>Existing Microsoft 365 permissions, policies, and audit controls are respected. Tenant security boundaries do not change.</li><li>This feature is <b>available only to Frontier participants</b> and is not enabled for non‑Frontier tenants by default.&nbsp;</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required if your organization is not enrolled in the Microsoft 365 Copilot Frontier program.</p><p>If you are participating in Frontier:</p><ul><li>Review whether plugin and connector access aligns with your organization’s governance and data access policies.</li><li>Decide whether to allow or restrict<b> custom plugin creation</b>.</li><li>Inform helpdesk staff or pilot users that Copilot Cowork may surface data from additional Microsoft and partner services based on existing access.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/microsoft-365/copilot/cowork/cowork-plugin-development\" target=\"_blank\">Build plugins for Copilot Cowork (Frontier) | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://techcommunity.microsoft.com/blog/microsoft365copilotblog/cowork-in-progress/4511672\" target=\"_blank\">(Co)work in Progress | Microsoft 365 Copilot Blog</a></li><li><a href=\"https://www.microsoft.com/microsoft-365-copilot/frontier-program\" target=\"_blank\">Frontier program - Microsoft Adoption</a></li><li><a href=\"https://learn.microsoft.com/microsoft-365/copilot/cowork/cowork-manage-plugins\" target=\"_blank\">Manage plugins for Copilot Cowork (Frontier) | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/microsoft-365/copilot/cowork/cowork-plugins\" target=\"_blank\">Use plugins with Copilot Cowork (Frontier) | Microsoft 365 Copilot | Microsoft 365 | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. Copilot Cowork can access existing customer data from connected Microsoft and third‑party services through plugins and connectors, based on the user’s existing permissions.</td></tr><tr><td>Does the change introduce or significantly modify AI, machine learning, or agent capabilities that interact with customer data?</td><td>Yes. This change introduces extensibility that allows AI‑driven task execution across Microsoft and third‑party services using existing permissions.</td></tr><tr><td>Does the change provide end users with a new way of interacting with generative AI?</td><td>Yes. Users can extend Copilot Cowork with plugins and connectors to complete tasks across additional Microsoft and partner services, including from mobile devices.</td></tr><tr><td>Does the change add any integration with third‑party software products?</td><td>Yes. Partner integrations include LSEG (London Stock Exchange Group), Miro, monday.com, and S&amp;P Global Energy, with additional partners planned.</td></tr></tbody></table><p><b></b></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-05-05T23:33:04Z",
+    "endDateTime": "2026-06-22T07:00:00Z",
+    "lastModifiedDateTime": "2026-05-05T23:33:15.577Z",
+    "title": "Track notifications delivery for Storyline Announcements in Viva Engage",
+    "id": "MC1301833",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Viva"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "A new Notifications Delivery Tracker for Storyline Announcements in Viva Engage will launch worldwide in mid-May 2026, providing real-time delivery status across email, Teams, Viva Engage, and mobile push. It enhances visibility in Conversation Analytics without changing publishing workflows or compliance data."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>\nA new <b>Notifications Delivery Tracker</b> is now available for <b>Storyline Announcements in Viva Engage</b>. Storyline in Viva Engage is a personal publishing and communications experience that allows leaders and employees to share updates and announcements directly with their audience across Microsoft 365.</p>\n\n<p>This new capability provides communicators with real-time visibility into the delivery status of announcement notifications—helping ensure critical updates are delivered as expected and improving confidence in communications reach. With this tracker, communicators can monitor when notifications are preparing, sending, and have completed delivery after an announcement is published.</p>\n\n<p><b>[When this will happen:]</b></p><p>\nGeneral Availability (Worldwide): Rollout will begin in<b> mid-May 2026</b> and is expected to complete by <b>late May 2026</b>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected:</b></p>\n<ul>\n<li>Communicators and leaders publishing Storyline announcements in Viva Engage</li>\n<li>Admins monitoring usage and adoption of Viva Engage analytics</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>A new <b>Notifications Delivery Tracker</b> will be available in <b>Conversation Analytics</b>&nbsp;page for Storyline announcements.</li>\n<li>The tracker will display real-time notification delivery status (preparing, sending, completed).</li><li>The tracker is accessible on the Conversation Analytics page after publishing an announcement.</li><li>It reflects notification delivery progress, including:<ul><li>When an announcement is posted.</li><li>When notifications are processed.</li><li>When notifications are successfully delivered.</li></ul></li>\n<li>Delivery visibility will include multiple channels:\n<ul>\n<li><b>Email</b></li>\n<li><b>Microsoft Teams</b></li>\n<li><b>Viva Engage</b></li>\n<li><b>Mobile push notifications</b></li>\n</ul>\n</li>\n<li>There is no change to user publishing workflows—this enhances visibility post-publish.</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n<li>No admin action is required.</li>\n<li>Inform communicators and leaders in your organization about this new visibility feature.</li>\n<li>Update internal documentation or training materials related to Viva Engage Storyline announcements (if applicable).</li>\n<li>Review <b>Conversation Analytics</b> to understand how this feature can support communication effectiveness.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><p>The feature enhances reporting visibility in Viva Engage by adding delivery tracking to Conversation Analytics. This is an additive reporting capability and does not change underlying compliance data handling.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-05-05T23:33:35Z",
+    "endDateTime": "2026-05-24T07:00:00Z",
+    "lastModifiedDateTime": "2026-05-05T23:33:55.717Z",
+    "title": "Microsoft Teams Rooms on Android: License-based management aligned to Teams Rooms Pro",
+    "id": "MC1301834",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams Rooms on Android will adopt license-based management controls aligned with Teams Rooms Pro licenses starting April 23, 2026. Changes affect admin portal features based on Basic, Standard, or Pro licenses, with no impact on user meeting experience or non-Android devices. Admins should review license assignments accordingly."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[Introduction]</b></p><p>We’re introducing<b> license-based management controls</b> for <b>Microsoft Teams Rooms on Android (MTRA)</b> and other Android-based Teams devices managed through the Teams Rooms Pro Management Portal. This update aligns management capabilities with existing Teams Rooms license entitlements (Basic, Standard, and Pro), helping admins clearly understand which monitoring and management features are available based on their licenses. This change improves transparency and ensures the portal experience reflects current licensing.</p><p style=\"margin-left: 50px;\"><i><b>Note:</b> These changes apply only to Android devices currently synced via Device Management (DM) services. IoT-based Android management convergence is still in progress and not yet generally available.</i></p><p><b>[When this will happen]</b></p><p><b>Global rollout:</b></p><ul><li><b>Start: </b>April 23, 2026</li><li><b>Completion: </b>Late April 2026</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft 365 admins managing <b>Microsoft Teams Rooms on Android </b>or other Android-based Teams devices</li><li>Applies only to devices synced through <b>Device Management (DM) services</b></li><li>No impact to Windows-based Teams Rooms or iOS devices</li></ul><p><i>What will happen</i></p><ul><li>There is <b>no change to the in-room meeting experience</b> for users.</li><li>Changes apply only to the <b>admin experience</b> in the <i>Teams Rooms Pro Management Portal</i>.</li></ul><p><b>After rollout, portal capabilities will reflect license entitlements as follows:</b></p><p><b>Teams Rooms Pro (Android):</b></p><ul><li>Full advanced monitoring, diagnostics, and management capabilities remain available.</li></ul><p><b>Teams Rooms Standard (Android):</b></p><ul><li>Device inventory information (for example, firmware and app versions) remains visible.</li><li>Advanced management and diagnostic features are restricted.</li><li>Upgrade prompts may appear where advanced features are accessed.</li></ul><p><b>Teams Rooms Basic (Android):</b></p><ul><li>Devices remain visible in Rooms and Inventory views.</li><li>Advanced monitoring, diagnostics, and configuration features are not available.</li></ul><p>This update enforces existing license entitlements and clearly separates inventory visibility from advanced management functionality.</p><p><b>[What you can do to prepare]</b></p><ul><li>Review license assignments for Android-based Teams Rooms devices.</li><li>If you rely on advanced monitoring or management features, ensure those devices are licensed with <b>Teams Rooms Pro</b>.</li><li><b>No action is required</b> if you’re using <b>Basic</b> or <b>Standard</b> licenses and <b>do not need advanced management features</b>.</li><li>Consider notifying helpdesk or operations teams about potential upgrade prompts in the management portal.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
