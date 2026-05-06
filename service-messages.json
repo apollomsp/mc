@@ -226,7 +226,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"482747\":[{\"RoadmapId\":482747,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.739204Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7392042Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7392044Z\",\"LatestRing\":null}]}"
+        "value": "{\"482747\":[{\"RoadmapId\":482747,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6021167Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.602117Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6021172Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -2821,7 +2821,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -9226,38 +9226,6 @@
     }
   },
   {
-    "startDateTime": "2026-01-24T00:01:00Z",
-    "endDateTime": "2026-05-06T08:00:00Z",
-    "lastModifiedDateTime": "2026-02-25T21:31:38.527Z",
-    "title": "(Updated) Message Trace support on Graph API is now in Public Preview",
-    "id": "MC1221939",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": "2026-04-05T07:00:00Z",
-    "services": [
-      "Exchange Online",
-      "Microsoft 365 suite"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Message Trace support on Microsoft Graph API is now in Public Preview, replacing legacy Reporting Web Service endpoints starting April 8, 2026. Admins and developers should migrate scripts and automation to the new RESTful API before retirement begins. General Availability rollout starts late January 2026."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated February 25, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re introducing<b>&nbsp;Message Trace support</b>&nbsp;on <i>Microsoft Graph</i> to provide a modern, REST‑based API experience for tracing email across your Exchange Online organization. This update aligns with our ongoing effort to move message trace support from the legacy Reporting Web Service to Microsoft Graph. Public Preview is now available, and General Availability roll-out begins January-end.</p><p><b>[When this will happen]</b></p><p><b>Public preview (worldwide): </b>Available now.</p><p><b>General availability (worldwide): </b>Rollout begins in late&nbsp;<b>January 2026</b> and is expected to complete by <b>early</b> <b>February 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>: Admins and developers who use automated or programmatic message trace capabilities in <i>Exchange Online</i>. Admins and developers who use Reporting Web Service for message trace.</p><p><i>What will happen</i>:</p><ul><li><b>Message trace and message trace detail functionality</b> is now available through<b>&nbsp;Microsoft Graph API</b>.</li><li>The API provides a modern, RESTful experience for querying message trace data.</li><li>This <b>feature will replace</b> the <b>message trace and message trace detail endpoints </b>in the <i>legacy Reporting Web Service</i>.</li><li>Retirement of the Reporting Web Service message trace endpoints begins<b> April 8, 2026</b>.</li><li>New Exchange Online organizations already do not have access to message trace support via the Reporting Web Service.</li><li>No user impact: this change affects admin and developer tooling only.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Review any scripts, automation, or integrations that use the Reporting Web Service for message trace.</li><li>Plan your migration to the Microsoft Graph message trace API <b>before April 8, 2026</b>, when retirement begins.</li><li>Update internal documentation where message trace automation or reporting is referenced.</li><li>Share this update with your dev/ops teams or helpdesk if they rely on trace automation.</li><li>For API details and migration guidance, refer to <a href=\"https://techcommunity.microsoft.com/blog/exchange/message-trace-support-using-graph-api-is-now-in-public-preview/4488587\" target=\"_blank\">Message Trace support using Graph API is now in Public Preview | Exchange team blog | Exchange | Microsoft Community Hub</a>.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-01-26T18:54:24.627Z",
     "endDateTime": "2027-01-26T18:54:24.597Z",
     "lastModifiedDateTime": "2026-01-26T18:54:26.787Z",
@@ -14027,7 +13995,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7384349Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7384355Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7384359Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7384362Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7384365Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6028323Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6028325Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6028328Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.602833Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6028331Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18355,7 +18323,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7385773Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7385776Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7385778Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6027132Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6027134Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6027137Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18820,7 +18788,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7382541Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7382544Z\",\"LatestRing\":null}]}"
+        "value": "{\"559387\":[{\"RoadmapId\":559387,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6029494Z\",\"LatestRing\":null},{\"RoadmapId\":559387,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6029495Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20088,7 +20056,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7384883Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7384886Z\",\"LatestRing\":null}]}"
+        "value": "{\"559611\":[{\"RoadmapId\":559611,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6027633Z\",\"LatestRing\":null},{\"RoadmapId\":559611,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6027636Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20382,7 +20350,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557170\":[{\"RoadmapId\":557170,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7383414Z\",\"LatestRing\":null},{\"RoadmapId\":557170,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T07:04:50.7383415Z\",\"LatestRing\":null}]}"
+        "value": "{\"557170\":[{\"RoadmapId\":557170,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6028593Z\",\"LatestRing\":null},{\"RoadmapId\":557170,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-06T08:57:27.6028595Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23652,7 +23620,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
