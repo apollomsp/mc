@@ -574,54 +574,6 @@
     }
   },
   {
-    "startDateTime": "2025-05-14T17:00:26.31Z",
-    "endDateTime": "2026-05-14T17:00:26.263Z",
-    "lastModifiedDateTime": "2025-05-14T17:00:27.893Z",
-    "title": "Hotpatch for client: Frequently asked questions",
-    "id": "MC1073823",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>Have you prepared your organizational devices for the May 2025 hotpatch update? Hotpatching offers faster compliance for devices running Windows 11 Enterprise or Education, version 24H2.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><div>The May 2025 hotpatch update for Windows 11, version 24H2 and the selection of frequently asked questions and answers are already available.&nbsp;</div><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>The new FAQ article can help you understand how to use and manage hotpatching for eligible Windows 11, version 24H2 devices.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>Read Additional information to find answers to any questions you may have in the following categories:&nbsp;</div><ul><li>Hotpatch update definitions&nbsp;</li><li>Eligibility and availability of hotpatch updates&nbsp;</li><li>Hotpatching on Arm64 devices&nbsp;</li><li>Technical information about hotpatch updates&nbsp;</li><li>Testing and error information&nbsp;</li><li>Additional resources&nbsp;</li></ul><div><br></div><div><b>Additional information:</b>&nbsp;</div><div>Read today’s article, <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-for-client-frequently-asked-questions/4413582\" rel=\"noopener noreferrer\" target=\"_blank\">Hotpatch for client: Frequently asked questions</a>.</div>"
-    }
-  },
-  {
-    "startDateTime": "2025-05-14T18:14:14.033Z",
-    "endDateTime": "2026-05-14T18:14:13.987Z",
-    "lastModifiedDateTime": "2025-05-14T18:14:15.29Z",
-    "title": "An updated version of the May 2025 Scan Cab is available",
-    "id": "MC1073882",
-    "category": "preventOrFixIssue",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div><b>IMPORTANT</b>: This notice is only relevant for environments where:</div><ul><li>Windows Server 2008 and Windows Server 2008 R2 updates are deployed under the Premium Assurance program</li><li>Scan Cab is used to check for update compliance</li><li>The May 2025 Scan Cab (released May 13, 2025 at 10:00 AM PT) was deployed before 11:00 AM PT on May 14, 2025.</li></ul><div>&nbsp;</div><div>An updated version of the May 2025 Scan Cab was made available at 11:00 AM PT on May 14, 2025. This Scan Cab includes new metadata corresponding to new updates for the following Windows versions:</div><ul><li>Windows Server 2008 R2</li><li>Windows Server 2008</li></ul><div>&nbsp;</div><div>The new Windows updates for&nbsp;these server versions released May 13, 2025 at 6:00 PM PT included additional protections to address&nbsp;<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32709\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2025-32709</a>, a security vulnerability in the Windows Ancillary Function Driver (AFD) for WinSock. The AFD component is akernel-mode driver that provides support for the WinSock API and is contained in the afd.sys file. The afd.sys driver manages the Winsock TCP/IP communications protocol. See the additional information section of this message for details.</div><div><br></div><div><b>How this affects your organization:</b></div><div>IT administrators who downloaded the Scan Cab between 10:00 AM PT on May 13, 2025, and 11:00 AM PT on May 14, 2025 should re-acquire and re-deploy their Scan Cab if it is used to assess updates for Windows Server 2008 or Windows Server 2008 R2.</div><div>&nbsp;</div><div>No action is required on environments where Scan Cab is not employed and do not have Windows Server 2008 or Windows Server 2008 R2 devices enrolled in the Premium Assurance program. However, please note that there might be non-Microsoft applications which utilize Scan Cab. Review the documentation for any software and update deployment tools which might be in use for your organization, to understand if this is applicable in your environment.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><div>Administrators can re-deploy the updated Scan Cab via their usual processes. For detailed guidance, see the Additional information section below.</div><div>&nbsp;</div><div><b>Additional information:</b></div><ul><li><a href=\"https://go.microsoft.com/fwlink/?LinkID=74689\" rel=\"noopener noreferrer\" target=\"_blank\">Updated Scan Cab: Download the new Scan Cab here</a></li><li><a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2025-32709\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2025-32709</a>: Windows Ancillary Function Driver for WinSock Elevation of Privilege Vulnerability</li><li>Windows Server 2008 R2:&nbsp;<a href=\"https://support.microsoft.com/topic/fbf5f586-94fc-4ac4-9b4f-6f307f7e033e\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061195 Out-of-band (Security-only update)</a></li><li>Windows Server 2008 R2:&nbsp;<a href=\"https://support.microsoft.com/topic/fb75f183-4c3c-4e48-a586-ca0ee89d2af1\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061196 Out-of-band (Monthly Rollup)</a></li><li>Windows Server 2008:&nbsp;<a href=\"https://support.microsoft.com/topic/b3157f07-78c4-4617-9a4c-29c62a5d39be\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061197 Out-of-band (Security-only update)</a></li><li>Windows Server 2008:&nbsp;<a href=\"https://support.microsoft.com/topic/59fcbbd7-7f20-470a-9241-f03282ca045d\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061198 Out-of-band (Monthly Rollup)</a></li><li><a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-a-smaller-wsus-scan-cab/ba-p/2928256?msclkid=256145ccd0c011ec9266b53af8d0aca1\" rel=\"noopener noreferrer\" target=\"_blank\">Announcing a smaller WSUS Scan Cab - Microsoft Tech Community</a>: Learn more about WSUS and the Scan Cab process</li><li><a href=\"https://learn.microsoft.com/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline?tabs=vbscript\" rel=\"noopener noreferrer\" target=\"_blank\">Using WUA to Scan for Updates Offline - Win32 apps | Microsoft Docs</a>: Windows Update Agent (WUA) can be used to scan computers for security updates without connecting to Windows Update</li><li><a href=\"https://learn.microsoft.com/windows-server/administration/windows-server-update-services/manage/wsus-and-the-catalog-site\" rel=\"noopener noreferrer\" target=\"_blank\">WSUS and the Catalog Site | Microsoft Docs</a>: The Catalog Site used by WSUS to import updates and drivers</li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-05-15T23:00:10Z",
     "endDateTime": "2026-06-30T07:00:00Z",
     "lastModifiedDateTime": "2026-02-24T17:17:21.52Z",
@@ -17248,7 +17200,7 @@
   {
     "startDateTime": "2026-04-09T16:06:40Z",
     "endDateTime": "2026-07-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-04-29T16:42:51.32Z",
+    "lastModifiedDateTime": "2026-05-14T16:47:18.207Z",
     "title": "(Updated) Microsoft Teams: AI meeting recap without transcript to meet compliance policies",
     "id": "MC1275312",
     "category": "planForChange",
@@ -17273,7 +17225,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams will offer AI meeting recaps without saving transcripts or recordings for M365 Copilot (Premium) users, starting mid-June 2026. Organizers can enable or disable this feature, which complies with policies restricting transcript retention, and is controlled by tenant-level AI settings."
+        "value": "Microsoft Teams will offer AI meeting recaps without saving transcripts or recordings, supporting compliance policies. Available mid-2026 for M365 Copilot Premium users, admins control AI features tenant-wide, and organizers can enable/disable recaps before or during meetings. Summaries are stored temporarily in OneDrive."
       },
       {
         "name": "Platforms",
@@ -17282,7 +17234,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated April 29, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p><b>Recap without saving transcript</b> provides an optional way for Copilot to generate a meeting summary using live meeting context, without saving a meeting transcript or recording.</p>\n<p>This capability is intended for scenarios where organizations want AI‑generated recaps but have policies that limit or prohibit the retention of transcripts or recordings. When disabled, no AI recap is generated. Existing Copilot licensing and tenant‑level AI controls continue to apply.</p><p>This feature will be available to users with an M365 Copilot (Premium) license across platforms, including desktop (Windows and Mac), web, and mobile.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558286\" target=\"_blank\">558286</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li>Targeted Release: We will begin rolling out <b>early June 2026</b> (previously&nbsp;mid-May)&nbsp;and expect to complete by <b>mid-June 2026 </b>(previously&nbsp;late May).\n</li><li>General Availability (Worldwide): We will begin rolling out <b>mid-June 2026</b> (previously&nbsp;early June)&nbsp;and expect to complete by <b>late June 2026 </b>(previously&nbsp;mid-June).</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Microsoft Teams meeting organizers and participants with an <b>M365 Copilot (Premium) license</b></li>\n  <li>Microsoft 365 administrators managing Copilot and AI controls</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Meeting organizers with a Copilot license can enable or disable Recap without saving transcript in meeting options under <b style=\"\">Copilot and other AI </b>before the meeting, and organizers or participants with a Copilot license can manage the AI toggle during the meeting through the AI mode dropdown (top‑left indicator).</li><li>During a meeting, <b>organizers and participants with a Copilot license</b> can enable or disable this option.</li><li>When enabled, <b>Intelligent Recap will generate an AI summary</b> even if recording and transcription are not turned on.</li><li>No transcript or recording is saved as part of this experience.</li><li>This feature is <b>controlled by the existing AI toggle</b>. If AI is disabled at the tenant level, this experience is not available.</li><li>The feature is <b>on by default</b> for tenants where Copilot and AI experiences are enabled.</li>\n</ul><p><b>[What you can do to prepare:]</b></p><ul><li>Review your organization’s <b>AI and Copilot governance policies</b> to determine whether this experience aligns with your compliance posture.</li><li>If you want to opt out, <b>disable the AI toggle</b> in your tenant settings to prevent Recap without saving transcript from being used.</li><li>Update internal guidance and helpdesk documentation to reflect that meeting recaps may be generated <b>without recordings or transcripts</b>.</li><li>Communicate this change to meeting organizers, especially in regulated environments.</li></ul><p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" width=\"100%\">\n  <tbody><tr>\n    <th align=\"left\">Compliance area</th>\n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>AI/ML interaction with customer data</td>\n    <td>Copilot generates AI-based meeting recaps using live meeting context even when recording and transcription are not enabled. No meeting transcript or recording is saved.</td>\n  </tr>\n  <tr>\n    <td>New way for users to interact with generative AI</td>\n    <td>Users can receive AI-generated Intelligent Recap without starting or saving a meeting recording or transcript.</td>\n  </tr>\n  <tr>\n    <td>Admin controls available</td><td>This capability is governed by the existing tenant-level AI toggle. Disabling AI prevents Recap without saving transcript from being used.</td>\n  </tr>\n  <tr>\n    <td>User enable/disable capability</td>\n    <td>Meeting organizers can enable or disable the feature before the meeting, and organizers or participants with Copilot licenses can toggle it during the meeting.</td>\n  </tr>\n</tbody></table>"
+      "content": "<p>Updated May 14, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p><b>Recap without saving transcript</b> provides an&nbsp;alternative now for Copilot users to generate a meeting summary using live meeting context, in case where saving a meeting transcript or recording is not preferred or allowed.</p>\n<p>This capability is intended for scenarios where organizations want AI‑generated recaps but have policies that limit or prohibit the retention of transcripts or recordings. When disabled, no AI recap is generated. Existing Copilot licensing and tenant‑level AI controls continue to apply.</p><p>This feature will be available to users with an M365 Copilot (Premium) license across platforms, including desktop (Windows and Mac), web, and mobile.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558286\" target=\"_blank\">558286</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li>Targeted Release: We will begin rolling out <b>early June 2026</b> (previously&nbsp;mid-May)&nbsp;and expect to complete by <b>mid-June 2026 </b>(previously&nbsp;late May).\n</li><li>General Availability (Worldwide): We will begin rolling out <b>mid-June 2026</b> (previously&nbsp;early June)&nbsp;and expect to complete by <b>late June 2026 </b>(previously&nbsp;mid-June).</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Microsoft Teams meeting organizers and participants with an <b>M365 Copilot (Premium) license</b></li>\n  <li>Microsoft 365 administrators managing Copilot and AI controls</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Teams admin center - Tenant admins will have control to opt in or out for AI features (e.g. Copilot, Intelligent Recap) for the meeting under the tenant. This feature is controlled by AI toggle/setting in the admin center. If AI is disabled at the tenant level, this experience is not available.</li><li>Meeting options (before meeting) - Meeting organizers with a Copilot license can enable or disable Recap without saving transcript in meeting options under Copilot and other AI before the meeting\n</li><li>In-Meeting controls (during meeting) – Meeting organizers with a Copilot license can enable or disable Recap without saving transcript anytime during the meeting via the AI toggle (appears at top-left). Participants can see whether AI is being turned on/off, while participants cannot change this setting.\n</li><li>Post-meeting AI summary - When enabled, Intelligent Recap will generate an AI summary even if recording and transcription are not turned on. Meeting attendees with Copilot license can view the AI summary after the meeting. No transcript or recording is saved as part of this experience.\n</li><li>Storage – When enabled, a doc will be stored in organizer’s OneDrive for default 120days, and it will be configurable in admin center for longer/shorter days as needed.\n</li><li>Deletion – For post-meeting AI summary, organizer can choose to delete the content from the Recap page, and it will result in the deletion of the doc in organizer’s OneDrive, and vice versa.</li>\n</ul><p><b>[What you can do to prepare:]</b></p><ul><li>Review your organization’s <b>AI and Copilot governance policies</b> to determine whether this experience aligns with your compliance posture.</li><li>If you want to opt out, <b>disable the AI toggle</b> in your tenant settings to prevent Recap without saving transcript from being used.</li><li>Update internal guidance and helpdesk documentation to reflect that meeting recaps may be generated <b>without recordings or transcripts</b>.</li><li>Communicate this change to meeting organizers, especially in regulated environments.</li></ul><p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\" width=\"100%\">\n  <tbody><tr>\n    <th align=\"left\">Compliance area</th>\n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>AI/ML interaction with customer data</td>\n    <td>Copilot generates AI-based meeting recaps using live meeting context even when recording and transcription are not enabled. No meeting transcript or recording is saved.</td>\n  </tr>\n  <tr>\n    <td>New way for users to interact with generative AI</td>\n    <td>Users can receive AI-generated Intelligent Recap without starting or saving a meeting recording or transcript.</td>\n  </tr>\n  <tr>\n    <td>Admin controls available</td><td>This capability is governed by the existing tenant-level AI toggle. Disabling AI prevents Recap without saving transcript from being used.</td>\n  </tr>\n  <tr>\n    <td>User enable/disable capability</td>\n    <td>Meeting organizers can enable or disable the feature before the meeting, and organizers or participants with Copilot licenses can toggle it during the meeting.</td>\n  </tr>\n</tbody></table>"
     }
   },
   {
@@ -17662,7 +17614,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T16:29:14.6019569Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-14T16:29:14.6019572Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-14T16:29:14.6019574Z\",\"LatestRing\":null}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T18:44:22.3132139Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-14T18:44:22.3132142Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-14T18:44:22.3132144Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24248,7 +24200,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560547\":[{\"RoadmapId\":560547,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T16:29:14.6022645Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T16:29:14.6022647Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T16:29:14.6022648Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"Android\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T16:29:14.6022649Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T16:29:14.6022651Z\",\"LatestRing\":null}]}"
+        "value": "{\"560547\":[{\"RoadmapId\":560547,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T18:44:22.3136581Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T18:44:22.3136583Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T18:44:22.3136586Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"Android\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T18:44:22.3136587Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-14T18:44:22.3136588Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24774,6 +24726,30 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing Dynamics 365 Contact Center certification for Windows 365 virtual PCs in Dynamics 365 Contact Center. This feature will reach public preview on May 30, 2026.<br><br> \n<b>How does this affect me?</b><br> \nThis feature certifies Dynamics 365 Contact Center for use on Windows 365 virtual PCs, ensuring the solution delivers a reliable and supported experience when accessed from cloud-based Windows desktops. This certification provides the following capabilities:<ul> \n<li>Organizations can deploy Dynamics 365 Contact Center on Windows 365 virtual PCs with confidence. </li> \n<li>Customer service representatives can securely access the Contact Center solution from a managed, cloud-hosted Windows environment without requiring physical devices. </li> \n<li>IT teams benefit from centralized device management, improved security posture, and streamlined provisioning and offboarding. </li></ul> \n<b>What action do I need to take? </b><br> \nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-05-14T17:10:13.693Z",
+    "endDateTime": "2027-05-14T17:10:13.693Z",
+    "lastModifiedDateTime": "2026-05-14T17:10:14.873Z",
+    "title": "Windows Office Hours: May 21, 2026",
+    "id": "MC1310552",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>If you are an IT admin with questions about managing and updating Windows, we want to help. Every third Thursday of the month, we host a live chat-based event on the Tech Community called Windows Office Hours. Members of the Windows, Microsoft&nbsp;Intune, Windows Autopilot, Windows Autopatch, and Windows 365 engineering teams will be standing by to answer your questions.</div><div><br></div><div>Want to attend the May 21 session of Office Hours?&nbsp;<a href=\"https://techcommunity.microsoft.com/t5/s/gxcuf89792/attachments/gxcuf89792/WindowsEvents/6445/1/Windows-Office-Hours-May-21-2026.ics\" rel=\"noopener noreferrer\" target=\"_blank\">Add it to your calendar</a> and select Attend on the <a href=\"https://techcommunity.microsoft.com/event/windowsevents/windows-office-hours-may-21-2026/4458464\" rel=\"noopener noreferrer\" target=\"_blank\">event page</a> to let us know you’re coming.&nbsp;There is no video or live meeting component. Simply visit the event page, log in to the Tech Community, and leave your questions in the Comments section. You can also bookmark&nbsp;<a href=\"https://aka.ms/Windows/OfficeHours\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/Windows/OfficeHours</a>&nbsp;for upcoming dates (and the ability to add this event to your calendar). We look forward to helping you.</div>"
     }
   },
   {
