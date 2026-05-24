@@ -16707,30 +16707,6 @@
     }
   },
   {
-    "startDateTime": "2026-04-10T21:04:17Z",
-    "endDateTime": "2026-05-24T21:04:00Z",
-    "lastModifiedDateTime": "2026-04-24T20:48:30.687Z",
-    "title": "Dynamics 365 Contact Center - Use Service Operations Agent to simplify setup tasks",
-    "id": "MC1276450",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing Service Operations Agent in Dynamics 365 Contact Center. This feature will reach public preview on April 24, 2026.<br><br><b>How does this affect me?</b><br>This feature allows administrators to set up channels, routing, queues, AI agents, voice configurations, Teams Phone extensibility, and knowledge sources through a single guided assistant. Key capabilities of the Service Operations Agent in Copilot Service admin center include:<ul><li>Generate configurations</li><li>Validate setups</li><li>Run simulations</li><li>Surface diagnostics</li><li>Explain the rationale behind recommendations</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
-    }
-  },
-  {
     "startDateTime": "2026-04-10T22:23:16Z",
     "endDateTime": "2026-07-25T07:00:00Z",
     "lastModifiedDateTime": "2026-04-10T22:23:39.133Z",
@@ -18769,35 +18745,6 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to explore sales insights using the Sales Research Agent in Dynamics 365 Sales. This feature reached general availability on April 30, 2026.<br><br><b>How does this affect me?</b><br>The Sales Research Agent in Dynamics 365 Sales enables users to explore complex business questions through natural language conversations with your data. It leverages multi-modal and multi-agent architecture to reason over intricate, customized schemas with sales domain expertise. Key capabilities of this feature allow you to:<ul><li>Create multi‑branch research journeys across Dynamics 365 Sales data and Microsoft Fabric lakehouse data and analyze local files such as Excel and PDF.</li><li>Start quickly with AI‑suggested, role‑optimized research topics, or ask your own questions using natural language.</li><li>Use the AI cursor to start conversations, analyze findings, adjust visualizations, or add new data sources.</li><li>View the reasoning behind research outcomes to understand how insights were derived.</li><li>Save research workspaces, refresh them with new data, and regenerate blueprints or research findings as your business evolves.</li><li>Define custom business functions with your own schemas, acronyms, and domain context to tailor analysis to your organization.</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-04-24T21:40:33Z",
-    "endDateTime": "2026-05-24T21:40:33Z",
-    "lastModifiedDateTime": "2026-04-24T21:41:14.027Z",
-    "title": "Plan for Change: Intune introduces support for Multiple Managed Accounts in supported MAM-enabled apps",
-    "id": "MC1290818",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Intune will roll out Multiple Managed Accounts (MMA) in supported MAM-enabled apps like Teams and Outlook for iOS from June to July 2026. Users can sign in with multiple managed accounts, with app protection policies applied per account. Admins should review app support, policy settings, and inform users about mixed-view impacts."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p></p><p>Intune is introducing <a href=\"https://aka.ms/Intune/MMA_WN\" target=\"_blank\">Multiple Managed Accounts (MMA)</a> for Intune mobile application management (MAM) in supported apps. This capability allows users to sign in with more than one managed account within the same app, while ensuring app protection policies are enforced independently per account. This update is designed to support scenarios such as consultants working across organizations, mergers and acquisitions, and users managing multiple mailboxes within the same tenant.</p><p>[When this will happen:]</p><p>We will begin slowly rolling out this feature starting early-June 2026 and expect to complete the rollout by early-July 2026. The initial rollout of MMA will be available for the Microsoft Teams and Microsoft Outlook for iOS apps. Stay tuned to <a href=\"https://aka.ms/IntuneWN\" target=\"_blank\">What’s new in Intune</a> for more release information.</p><p>[How this will affect your organization:]</p><p>Once available, users will be able to add and use multiple managed accounts in MMA supported apps. App protection policies will be applied per account, based on admin configuration. Admins should be aware of the following behaviors:</p><p></p><ul><li>Only apps that explicitly support MMA can use this capability; wrapped apps are not supported.</li><li>On apps with mixed-views, such as Outlook inbox or calendar showing data from multiple accounts, Intune enforces the most restrictive data protection behavior, including blocking copy/paste and screenshots.</li><li>This mixed-view behavior can also impact users who have a single managed account combined with unmanaged accounts in supported apps. For example, Microsoft Outlook inbox or calendar in mixed view with data from both managed and unmanaged accounts.</li></ul><p></p><p>[What you need to do to prepare:]</p><p>No action is required to enable MMA. However, we recommend that admins:</p><ul><li>Review app support and version requirements for MMA supported apps.</li><li>There are currently no admin controls to explicitly enable or disable MMA. However, existing settings that control account sign‑in eligibility or app‑level enforcement may indirectly block MMA behavior. To ensure MMA functions as expected, we recommend reviewing your existing app protection policy settings that may restrict multiple managed account sign-in, such as allowed account configurations on <a href=\"https://learn.microsoft.com/intune/app-management/configuration/configure-managed-ios#allow-only-configured-organization-accounts-in-apps\" target=\"_blank\">iOS</a> or <a href=\"https://learn.microsoft.com/intune/app-management/configuration/configure-managed-android#allow-only-configured-organization-accounts-in-apps\" target=\"_blank\">Android</a>.</li><li>Notify users about the new capability and how this may affect mixed-view scenarios.</li></ul>Stay tuned to <a href=\"https://aka.ms/IntuneWN\" target=\"_blank\">What’s new in Intune</a> for the release and additional documentation."
     }
   },
   {
@@ -25652,7 +25599,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"561550\":[{\"RoadmapId\":561550,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-24T20:25:50.6820387Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-24T20:25:50.6820391Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":561550,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-24T20:25:50.6820393Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-24T20:25:50.6820395Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"561550\":[{\"RoadmapId\":561550,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-24T22:24:42.4230758Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-24T22:24:42.4230762Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":561550,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-24T22:24:42.4230764Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-24T22:24:42.4230767Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
