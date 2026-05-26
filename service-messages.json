@@ -5195,7 +5195,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1562998Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563002Z\",\"LatestRing\":null}]}"
+        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1562998Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563002Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -17669,36 +17669,6 @@
     }
   },
   {
-    "startDateTime": "2026-04-21T22:48:34Z",
-    "endDateTime": "2026-05-26T07:00:00Z",
-    "lastModifiedDateTime": "2026-04-21T22:48:59.31Z",
-    "title": "Updated timeline: Windows 10 22H2 gallery images in Windows 365",
-    "id": "MC1287363",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Windows 10 22H2 gallery images in Windows 365 will be retired by mid-July 2026, with rollout starting in late April 2026. Users should transition to Windows 11 or create custom Windows 10 images. Extended Security Updates for Windows 10 Cloud PCs continue automatically at no extra cost."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>[Introduction]</p><p></p><p>As previously communicated in MC1150114, we shared that\nWindows 10 22H2 gallery images in Windows 365 would be retired. We’re extending\nthe availability timeline to mid-July 2026 to provide additional time to move to supported alternatives (such as Windows\n11 or custom images).&nbsp;</p><p>[When this will happen:]</p><p>Global: We will begin rolling out on late April 2026 and expect to complete by late April 2026.</p><p>[How this will affect your organization:]</p><p></p><p></p><li><ul><li>Provisioning policies that use Windows 365 versions of Windows 10 22H2 gallery images (with or without Microsoft 365 Apps) will continue to work until mid-July 2026 (approximately July 15, 2026). After that date, these images will be retired and no longer available within Intune or from <a href=\"https://marketplace.microsoft.com/product/microsoftwindowsdesktop.windows-ent-cpc?OCID=AIDcmmm9t2wfa3_SEM__k_CjwKCAjwtIfPBhAzEiwAv9RTJoz5h_2hcHXO6vkTh97AEwhdYgyPY3TUJeBvWooCEatGG4uiriBYtBoCFyYQAvD_BwE_k_&amp;tab=Overview\">Microsoft Marketplace</a> to capture and import as a custom image.</li><li>The final monthly update to the Windows 365 Windows 10 gallery images was the Windows 10 October 2025 Update.</li><li>After mid-July 2026, these images will transition to an unsupported state and provisioning using them will no longer be available. For more information on the image lifecycle in Windows 365, see:&nbsp;<a href=\"https://learn.microsoft.com/windows-365/enterprise/windows-10-end-of-support\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">End of support for Windows operating system on Cloud PCs.</a>&nbsp;</li><li>Windows 365 Cloud PCs on Windows 10 will continue receiving Extended Security Updates (ESU) at no additional cost. No administrative action is needed for existing Cloud PCs to start receiving these updates, and they are applied automatically after a Cloud PC is deployed. <a href=\"https://learn.microsoft.com/windows-365/enterprise/windows-10-extended-security-updates\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Learn more about ESU for Windows 10.</a>&nbsp;</li></ul></li><p>[What you need to do to prepare:]</p><p></p><p>Plan to adopt Windows 11 &nbsp;</p><ul>\n <li>Microsoft\n     recommends updating provisioning policies to Windows 11 25H2 or newer\n     gallery images. &nbsp;</li>\n <li>This\n     ensures your users have access to the latest Windows features (including <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-for-windows-client-now-available/4399808\">Hotpatch</a>)\n     and the most secure Windows 365 experience. &nbsp;</li></ul><p>If you need to continue using Windows 10 after mid-July\n2026 &nbsp;</p><ul><li>Create\na custom image using the standard Windows 10 Enterprise 22H2 image, available\nfrom Azure Marketplace, MSDN, or Volume Licensing downloads until 2028 (end of\nESU support).&nbsp;</li></ul><ul>\n <li>Note:\n     These images do not include Microsoft 365 Apps or customizations. See <a href=\"https://support.microsoft.com/office/what-windows-end-of-support-means-for-office-and-microsoft-365-34e28be4-1e4f-4928-b210-3f45d8215595\">Windows\n     end of support and Microsoft 365 apps for more details</a>. &nbsp;</li></ul><p>If you use Windows 10 22H2 images without customization &nbsp;</p><ul>\n <li>Be\n     aware these images will become outdated with Windows Updates. &nbsp;</li>\n <li>We\n     recommend creating a custom image to ensure Windows, other apps, and\n     components remain current. &nbsp;</li></ul><p>When This Will Happen &nbsp;<br></p><p>This is an informational update; there is no phased rollout. Dates referenced reflect the retirement timeline.</p><p></p><ul>\n <li>Windows\n     10 end of support: October 14, 2025 &nbsp;</li>\n <li>Final\n     Windows 365 Windows 10 gallery image update: October 2025 &nbsp;</li></ul><ul><li>Retirement\nof Windows 365 Windows 10 22H2 gallery images: mid-July 2026 (approximately July 15, 2026)&nbsp;</li></ul><p></p><p>Additional Resources:&nbsp;</p><ul>\n <li><a href=\"https://learn.microsoft.com/windows/whats-new/extended-security-updates\">Extended\n     Security Updates (ESU) program for Windows 10</a> &nbsp;</li>\n <li><a href=\"https://support.microsoft.com/office/what-windows-end-of-support-means-for-office-and-microsoft-365-34e28be4-1e4f-4928-b210-3f45d8215595\">What\n     Windows end of support means for Office and Microsoft 365</a> &nbsp;</li>\n <li><a href=\"https://learn.microsoft.com/lifecycle/faq/windows#windows-10\">Lifecycle\n     FAQ Windows 10</a> &nbsp;</li>\n <li><a href=\"https://learn.microsoft.com/windows/whats-new/enable-extended-security-updates\">Enable\n     Extended Security Updates (ESU) End of support for Windows operating\n     system on Cloud PCs</a>&nbsp;</li>\n <li><a href=\"https://learn.microsoft.com/windows-365/enterprise/end-of-support\">End\n     of support for Windows operating system on Cloud PCs</a>&nbsp;</li></ul>"
-    }
-  },
-  {
     "startDateTime": "2026-04-21T22:49:21Z",
     "endDateTime": "2026-07-31T07:00:00Z",
     "lastModifiedDateTime": "2026-05-01T18:01:07.687Z",
@@ -25245,7 +25215,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"561550\":[{\"RoadmapId\":561550,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-26T05:28:10.5858409Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-26T05:28:10.5858412Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":561550,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-26T05:28:10.5858413Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-26T05:28:10.5858414Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"561550\":[{\"RoadmapId\":561550,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-26T07:24:17.8055538Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-26T07:24:17.8055543Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":561550,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-26T07:24:17.8055545Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-26T07:24:17.8055547Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -25358,40 +25328,6 @@
     "body": {
       "contentType": "html",
       "content": "On June 19, 2026, we will begin updating our Dynamics 365 apps infrastructure in your region which will change the ingress IPs for Dataverse Environments. This update will impact outbound traffic to Dataverse for environments that do not follow best practices for Dataverse configuration.<br><br><b>What action do I need to take?</b><br>Please review the <a target=\"_blank\" href=\"https://aka.ms/14687-1\">Power Platform URLs and IP address ranges</a> and ensure your environment has the service tag IP ranges added to the allowed list. For Dataverse Tabular Data Stream (TDS) connections, please review <a target=\"_blank\" href=\"https://aka.ms/14687-2\">port redirect from non-SSL to SSL</a> and ensure your connections do not fail due to port redirection by adding Dataverse TDS communication on web proxies using IP ranges to the allowed list.<br><br>When configuring outbound firewall rules, allow list the necessary PowerPlatformInfra regional service tag(s) from the following list:<br><br><style> table, td, tr, th {border: 1px solid #243a5e; border-collapse: collapse;} th {text-align: center; background-color: #243a5e; color: #fff;} </style> <table> <tr> <th><B>CRM Domain</b></th> <th><b>Service Tags</b></th> </tr> <tr> <td>crm.dynamics.com</td> <td>PowerPlatformInfra.EastUS, .EastUS2, .WestUS, .CentralUS</td> </tr> <tr> <td>crm2.dynamics.com</td> <td>PowerPlatformInfra.BrazilSouth </td> </tr> <tr> <td>crm3.dynamics.com</td> <td>PowerPlatformInfra.CanadaCentral, .CanadaEast</td> <tr> <td>crm4.dynamics.com</td> <td>PowerPlatformInfra.WestEurope, .NorthEurope</td> <tr> <td>crm5.dynamics.com</td> <td>PowerPlatformInfra.EastAsia, .SoutheastAsia</td> <tr> <td>crm6.dynamics.com</td> <td>PowerPlatformInfra.AustraliaEast, .AustraliaSoutheast</td> <tr> <td>crm7.dynamics.com</td> <td>PowerPlatformInfra.JapanEast, .JapanWest</td> <tr> <td>crm8.dynamics.com</td> <td>PowerPlatformInfra.CentralIndia, .SouthIndia</td> <tr> <td>crm11.dynamics.com</td> <td>PowerPlatformInfra.UKSouth, .UKWest</td> <tr> <td>crm12.dynamics.com</td> <td>PowerPlatformInfra.FranceCentral, .FranceSouth</td> <tr> <td>crm14.dynamics.com</td> <td>PowerPlatformInfra.SouthAfricaNorth, .SouthAfricaWest</td> <tr> <td>crm15.dynamics.com</td> <td>PowerPlatformInfra.UAENorth, .UAECentral</td> <tr> <td>crm16.dynamics.com</td> <td>PowerPlatformInfra.GermanyWestCentral, .GermanyNorth</td> <tr> <td>crm17.dynamics.com</td> <td>PowerPlatformInfra.SwitzerlandNorth, .SwitzerlandWest</td> <tr> <td>crm19.dynamics.com</td> <td>PowerPlatformInfra.NorwayEast, .NorwayWest</td> <tr> <td>crm20.dynamics.com</td> <td>PowerPlatformInfra.SoutheastAsia</td> <tr> <td>crm21.dynamics.com</td> <td>PowerPlatformInfra.KoreaCentral, .KoreaSouth</td> <tr> <td>crm22.dynamics.com</td> <td>PowerPlatformInfra.SwedenCentral</td> <tr> <td>crm23.dynamics.com</td> <td>PowerPlatformInfra.PolandCentral</td> <tr> <td>crm24.dynamics.com</td> <td>PowerPlatformInfra.ItalyNorth</td> <tr> </table><br>Be aware that these IP ranges are subject to change in the future, so please monitor the service tags located here for any updates: <a target=\"_blank\" href=\"https://aka.ms/14687-3\">Azure service tags overview</a>. <br><br><b>Why is this action needed?</b><br>This upcoming change is intended to support better network isolation by consolidating IP ranges into more narrowly scoped ranges, increasing resiliency. If no action is taken, and you allow list specific IP addresses for Microsoft Dataverse instead of service tag IP ranges as recommended, you may be unable to access your Dataverse TDS endpoints and may potentially be unable to access your environment after June 19, 2026. Inbound traffic from Dataverse will not be affected by this update. <br><br>If you have already reviewed the above recommendations and confirmed you are following best practices for Dataverse configuration, then no further action is required."
-    }
-  },
-  {
-    "startDateTime": "2023-04-17T18:48:40Z",
-    "endDateTime": "2026-05-26T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-02T18:09:11.943Z",
-    "title": "(Updated) SharePoint 2013 workflow retirement",
-    "id": "MC542767",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online",
-      "Microsoft OneDrive",
-      "Project Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "SharePoint 2013 workflows will retire on April 2, 2026, ceasing all functionality. New tenants lost access from April 2, 2024. Organizations must migrate to Power Automate or other solutions, notify users, and prepare support. No extensions will be offered beyond the retirement date."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated March 2, 2026: This update serves as a final reminder that SharePoint 2013 workflow will retire and stop working 1 month from now (April 2, 2026).</p><p>Since the release of SharePoint workflows, Microsoft has evolved workflow orchestration to not only encompass SharePoint, but all the productivity services you use with Microsoft 365 and beyond. With the continued investment in Power Automate as the universal solution to workflow, Microsoft is retiring SharePoint 2013 workflows. \n</p><p>[When this will happen:]</p><ul><li>Starting April 2nd, 2024, SharePoint 2013 workflows will be turned off for any newly created tenants. \n</li><li>Starting <i>April 2nd, 2026</i>, Microsoft will remove the ability to run, or create and execute SharePoint 2013 workflows for existing tenants. \n</li></ul><p>[How this will affect your organization]<br></p><p>If your organization still uses SharePoint 2013 workflows, they will no longer function after April 2nd, 2026. We recommend customers to move to Power Automate or other supported solutions. \n</p><p>[What you need to do to prepare] \n</p><p>You will want to notify your users, workflow developers and site owners. Update your user training and prepare your help desk. \n</p><p>For admins \n</p><ul><li>Use the <a href=\"https://pnp.github.io/pnpassessment/index.html\" target=\"_blank\">Microsoft 365 Assessment tool </a>to scan your tenants for legacy workflow usage. \n</li><li>Review&nbsp;<a href=\"https://learn.microsoft.com/sharepoint/dev/business-apps/power-automate/guidance/migrate-from-classic-workflows-to-power-automate-flows\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Guidance: Migrate from classic workflows to Power Automate flows in SharePoint</a></li><li>Review the <a href=\"https://powerautomate.microsoft.com/\" target=\"_blank\" style=\"\">Power Automate resources</a> as a solution to legacy workflows.</li></ul><p><b>Note:&nbsp;</b>There will not be an option to extend SharePoint 2013 workflow beyond April 2nd 2026.</p><p>  \n</p><p>Learn more:</p><ul><li>Detailed <a href=\"https://aka.ms/sp-workflows-2013support\" target=\"_blank\" style=\"font-family: sans-serif; font-weight: 400;\">support article</a> with additional resources.&nbsp;<br></li></ul><p>\n</p>"
     }
   },
   {
