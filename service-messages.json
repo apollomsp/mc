@@ -64,7 +64,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
+        "value": "{\"476488\":[{\"RoadmapId\":476488,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420304Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420308Z\",\"LatestRing\":null},{\"RoadmapId\":476488,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-02-20T18:08:21.4420309Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -226,7 +226,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"482747\":[{\"RoadmapId\":482747,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7460125Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7460123Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7460126Z\",\"LatestRing\":null}]}"
+        "value": "{\"482747\":[{\"RoadmapId\":482747,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7460123Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7460125Z\",\"LatestRing\":null},{\"RoadmapId\":482747,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7460126Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -299,7 +299,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"487432\":[{\"RoadmapId\":487432,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703628Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703625Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470363Z\",\"LatestRing\":null}]}"
+        "value": "{\"487432\":[{\"RoadmapId\":487432,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703625Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.4703628Z\",\"LatestRing\":null},{\"RoadmapId\":487432,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-04-30T18:10:07.470363Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -653,30 +653,6 @@
     }
   },
   {
-    "startDateTime": "2025-05-27T21:49:10.567Z",
-    "endDateTime": "2026-05-27T21:49:10.503Z",
-    "lastModifiedDateTime": "2025-05-27T21:49:12.043Z",
-    "title": "(Updated) Take Action: Out-of-band update to address issue on devices running Hyper-V on some versions of Windows",
-    "id": "MC1081492",
-    "category": "preventOrFixIssue",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>Updated May 27, 2025:&nbsp;This message was updated to include additional versions of Windows affected by this issue.</div><div><br></div><div>Microsoft has identified an issue where certain confidential virtual machines running on Hyper-V might&nbsp;intermittently stop responding or restart unexpectedly, affecting service availability and requiring manual intervention. This issue primarily affects <a href=\"https://learn.microsoft.com/azure/confidential-computing/confidential-vm-overview\" rel=\"noopener noreferrer\" target=\"_blank\">Azure confidential VMs</a> and is not expected to impact standard in-market Hyper-V deployments, except in rare cases involving preview or pre-production configurations.</div><div><br></div><div>To address this issue, out-of-band (OOB) updates&nbsp;have been released,&nbsp;May 23, 2025 for Windows Server 2022 (<a href=\"https://support.microsoft.com/topic/4ad7e163-1b8d-4774-bb98-d376cae6ea81\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061906</a>) and today, May 27, 2025 for additional versions of Windows affected by this issue. This update is available exclusively via the&nbsp;<a href=\"https://catalog.update.microsoft.com/\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Update Catalog</a>. For more information and installation instructions, refer to the appropriate KB article for your Windows version. If your organization is not affected by this issue, you do not need to install this OOB update.</div><div><br></div><div>If you have not yet deployed the May 2025 Windows security update and your IT environment includes devices running Hyper-V on the versions of Windows listed below, we recommend you apply this OOB update instead:</div><ul><li>Windows 11, version 24H2 (<a href=\"https://support.microsoft.com/topic/may-27-2025-kb5061977-os-build-26100-4066-out-of-band-a15fd6bb-313a-4a24-9e35-21dbcad2aa99\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061977</a>)</li><li>Windows Server 2025 (<a href=\"https://support.microsoft.com/topic/80725b43-c0a1-48a4-9b82-058efffb6228\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061977</a>)</li><li>Windows Server 2022 (<a href=\"https://support.microsoft.com/topic/4ad7e163-1b8d-4774-bb98-d376cae6ea81\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061906</a>)</li><li>Windows 10, version 22H2 (<a href=\"https://support.microsoft.com/help/5061979\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061979</a>)</li><li>Windows 10 Enterprise LTSC 2021 (<a href=\"https://support.microsoft.com/help/5061979\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061979</a>)</li><li>Windows 10 Enterprise LTSC 2019 and Windows Server 2019 (<a href=\"https://support.microsoft.com/help/5061978\" rel=\"noopener noreferrer\" target=\"_blank\">KB5061978</a>)</li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-05-23T23:15:29Z",
     "endDateTime": "2026-06-29T07:00:00Z",
     "lastModifiedDateTime": "2026-03-26T16:06:29.67Z",
@@ -714,30 +690,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated March 26, 2026: We have updated the timeline. Thank you for your patience.</p><p>Coming soon to Microsoft Teams: When users connect to their organization's Wi-Fi, Teams can automatically set their work location to reflect the building they are working in. This makes it easier for users to coordinate work with their coworkers and connect in person.</p><p> This feature is opt-in and requires you to take action to configure it. After you turn it on, end-users remain in control and can choose whether to share their work location with their coworkers.</p><p>This message applies to Teams for Windows desktop and Teams for Mac desktop.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=488800\" target=\"_blank\">488800</a>.\n</p><p>[When this will happen:]\n</p><p>General Availability (Worldwide): We will begin rolling out early May 2026 (previously early April) and expect to complete by late May 2026 (previously mid-April).</p><p>[How this will affect your organization:]\n</p><p>This feature allows you to map Wi-Fi networks and devices to buildings, which allows your users to have their work location automatically updated when they connect. This is a major improvement over the current experience which relies on end-users to manually set their work location. When this feature is configured and enabled, Teams can automatically update the work location of users who connect their laptop to your organization's Wi-Fi network or peripherals. The feature can leverage the mapping between your building names and your Wi-Fi networks to set the work location of your users to the right building. It can also leverage mappings to&nbsp;<a href=\"https://learn.microsoft.com/microsoftteams/rooms/bookable-desks\" target=\"_blank\">specific peripherals</a>, such as monitors. Teams uses the same policy to enable or disable automatic updates of work location for Wi-Fi and peripherals. Learn more: <a href=\"https://learn.microsoft.com/powershell/module/teams/new-csteamsworklocationdetectionpolicy\" target=\"_blank\">New-CsTeamsWorkLocationDetectionPolicy (MicrosoftTeamsPowerShell) | Microsoft Learn</a></p><p>Teams will not update the location of your users if they connect after their working hours (that they can configure in the Microsoft Outlook Calendar). Also, their work location will be cleared at the end of their working hours.</p><p>\n</p><p>[What you need to do to prepare:]</p><p>Automatic update of work location is off by default, but it can greatly improve the experience of your users. We recommend turning it on and configuring it in your tenant.\n</p><p>Before rollout, we will update this post with new documentation.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-05-27T21:04:18.667Z",
-    "endDateTime": "2026-05-27T21:04:18.573Z",
-    "lastModifiedDateTime": "2025-05-27T21:04:19.927Z",
-    "title": "Announcing Windows Backup for Organizations",
-    "id": "MC1083986",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>If part of your job is helping your organization transition to Windows 11, consider the limited public preview of Windows Backup for Organizations. You can back up your organization’s Windows 10 or Windows 11 settings and restore them on a Microsoft Entra joined device. This capability helps reduce migration overhead, minimize user disruption, and strengthen device resilience against incidents. Nominate your organization for this preview as you prepare for the upcoming Windows 10 end of support date on October 14, 2025.&nbsp;</div><div>&nbsp;</div><div><b>When will this happen:</b>&nbsp;</div><ul><li>The limited public preview of Windows Backup for Organizations is available today.&nbsp;</li><li>Windows 10 end of support is coming up on October 14, 2025.&nbsp;</li></ul><div>&nbsp;</div><div><b>How this will affect your organization:</b>&nbsp;</div><div>You can simplify your transition to Windows 11 by backing up settings and restoring them on new or reimaged Windows devices.&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b>&nbsp;</div><div>Check your eligibility to back up settings:&nbsp;</div><ul><li>Microsoft Entra hybrid joined or Microsoft Entra joined devices&nbsp;</li><li>A supported version of Windows 10 or Windows 11&nbsp;</li></ul><div><br></div><div>Check your eligibility to restore settings on new or reimaged Windows devices:&nbsp;</div><ul><li>Windows 11 Microsoft Entra joined devices&nbsp;</li><li>An active Microsoft Intune test tenant&nbsp;</li><li>Microsoft Intune service administrator permissions&nbsp;</li></ul><div><br></div><div>Additionally, if you’re not a current member of Microsoft Management Customer Connection Program (CCP), please opt in: <a href=\"https://aka.ms/JoinMMCCP\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/JoinMMCCP</a>.&nbsp;</div><div>&nbsp;</div><div>Nominate your organization for the limited public preview by completing this <a href=\"https://forms.office.com/r/HLn4cHApxP\" rel=\"noopener noreferrer\" target=\"_blank\">form</a>.&nbsp;</div><div>&nbsp;</div><div><b>Additional information:</b>&nbsp;</div><ul><li>Learn more at <a href=\"https://aka.ms/WindowsBackupForOrganizations/Preview\" rel=\"noopener noreferrer\" target=\"_blank\">Announcing Windows Backup for Organizations</a>.&nbsp;</li><li><a href=\"https://forms.office.com/r/HLn4cHApxP\" rel=\"noopener noreferrer\" target=\"_blank\">Nominate your organization for the limited public preview</a>.&nbsp;</li></ul>"
     }
   },
   {
@@ -2621,7 +2573,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -3132,7 +3084,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842871Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1341302Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1341309Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"500696\":[{\"RoadmapId\":500696,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1341302Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":500696,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842869Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2025-09-25T02:34:06.6842871Z\",\"LatestRing\":null},{\"RoadmapId\":500696,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1341309Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -5250,7 +5202,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1562998Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563002Z\",\"LatestRing\":null}]}"
+        "value": "{\"518218\":[{\"RoadmapId\":518218,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1562998Z\",\"LatestRing\":null},{\"RoadmapId\":518218,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563002Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -8167,7 +8119,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5008007Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
+        "value": "{\"542794\":[{\"RoadmapId\":542794,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1564048Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5008007Z\",\"LatestRing\":null},{\"RoadmapId\":542794,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156405Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -8306,7 +8258,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.133884Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338847Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.133884Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338847Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -8453,7 +8405,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"543239\":[{\"RoadmapId\":543239,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010333Z\",\"LatestRing\":null},{\"RoadmapId\":543239,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010331Z\",\"LatestRing\":null},{\"RoadmapId\":543239,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010335Z\",\"LatestRing\":null}]}"
+        "value": "{\"543239\":[{\"RoadmapId\":543239,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010331Z\",\"LatestRing\":null},{\"RoadmapId\":543239,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010333Z\",\"LatestRing\":null},{\"RoadmapId\":543239,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T16:28:30.5010335Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10393,7 +10345,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557184\":[{\"RoadmapId\":557184,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339945Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339943Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339947Z\",\"LatestRing\":null}]}"
+        "value": "{\"557184\":[{\"RoadmapId\":557184,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339943Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339945Z\",\"LatestRing\":null},{\"RoadmapId\":557184,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339947Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11193,7 +11145,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554925\":[{\"RoadmapId\":554925,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913858Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913856Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.891386Z\",\"LatestRing\":null}]}"
+        "value": "{\"554925\":[{\"RoadmapId\":554925,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913856Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8913858Z\",\"LatestRing\":null},{\"RoadmapId\":554925,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.891386Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11278,7 +11230,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554933\":[{\"RoadmapId\":554933,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916868Z\",\"LatestRing\":null},{\"RoadmapId\":554933,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916866Z\",\"LatestRing\":null},{\"RoadmapId\":554933,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916869Z\",\"LatestRing\":null}]}"
+        "value": "{\"554933\":[{\"RoadmapId\":554933,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916866Z\",\"LatestRing\":null},{\"RoadmapId\":554933,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916868Z\",\"LatestRing\":null},{\"RoadmapId\":554933,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-12T12:19:03.8916869Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -12828,7 +12780,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7458764Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7458763Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.745876Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7458759Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7458766Z\",\"LatestRing\":null}]}"
+        "value": "{\"558107\":[{\"RoadmapId\":558107,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7458759Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.745876Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7458763Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7458764Z\",\"LatestRing\":null},{\"RoadmapId\":558107,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7458766Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -12924,7 +12876,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338697Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338696Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338694Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-08T20:18:32.13387Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338694Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338696Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338697Z\",\"LatestRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-08T20:18:32.13387Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -13464,7 +13416,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554927\":[{\"RoadmapId\":554927,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103996Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103995Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103994Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103993Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1340114Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103997Z\",\"LatestRing\":null}]}"
+        "value": "{\"554927\":[{\"RoadmapId\":554927,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1340114Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103993Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103994Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103995Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103996Z\",\"LatestRing\":null},{\"RoadmapId\":554927,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-03-23T22:12:24.0103997Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -14243,7 +14195,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"554932\":[{\"RoadmapId\":554932,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1337645Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1337642Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1337647Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"554932\":[{\"RoadmapId\":554932,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1337642Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1337645Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":554932,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1337647Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -14478,8 +14430,8 @@
   },
   {
     "startDateTime": "2026-03-27T19:40:28Z",
-    "endDateTime": "2026-07-27T07:00:00Z",
-    "lastModifiedDateTime": "2026-04-22T18:16:29.137Z",
+    "endDateTime": "2026-08-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-05-27T21:37:05.5Z",
     "title": "(Updated) Microsoft Teams: AI-powered live interpretation on Teams Phone devices",
     "id": "MC1263278",
     "category": "stayInformed",
@@ -14504,7 +14456,7 @@
       },
       {
         "name": "Summary",
-        "value": "AI-powered live interpretation will roll out on certified Microsoft Teams Phone devices worldwide from mid to late June 2026 for users with a Microsoft 365 Copilot license. It supports real-time interpretation in various call types, requires policy enabling, and is off by default. Pure PSTN group calls are not supported."
+        "value": "Microsoft Teams will roll out AI-powered live interpretation on certified Teams Phone devices starting mid-July 2026 for users with a Microsoft 365 Copilot license. This feature supports real-time interpreted audio in calls and meetings, requires policy enabling, and is off by default. Pure PSTN group calls are not supported."
       },
       {
         "name": "Platforms",
@@ -14513,7 +14465,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated April 22, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re adding <b>AI-powered live interpretation</b> to <b>Microsoft Teams Phone devices</b> to help organizations support multilingual collaboration during calls and meetings. This update enables users with a Microsoft 365 Copilot license to hear real-time interpreted audio directly on certified Teams Phone hardware, reducing reliance on external interpreters and improving accessibility for globally distributed teams.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=553594\" target=\"_blank\">553594</a></b>.</p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide and GCC): </b>We will begin rolling out in <b>mid-June 2026</b> (previously&nbsp;mid-May)&nbsp;and expect to complete in <b>late June 2026</b> (previously&nbsp;mid-May).</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Users on certified Teams Phone devices (touch and non-touch)</li><li>Users with a Microsoft 365 Copilot license</li><li>Admins managing Teams calling and meeting policies</li></ul><p><i>What will happen</i></p><ul><li>Eligible users will be able to use AI-powered live interpretation during:<ul><li>1:1 VoIP and Public Switched Telephone Network (PSTN) calls</li><li>Group VoIP calls</li><li>VoIP group calls escalated with a PSTN user</li><li>Ad-hoc and scheduled meetings</li></ul></li><li>Pure PSTN group calls are <b>not supported</b>.</li><li>On first use, users will select a preferred interpretation language; preferences and volume levels are saved automatically.</li><li>A visual indicator will appear for all participants when interpretation is active.</li><li>Users will only see the AI Interpreter option when:<ul><li>The tenant has enabled the required calling and meeting policies, and</li><li>The user holds an eligible license.</li></ul></li><li>The feature is<b> off by default</b> and does <b>not </b>change calling experiences for users without the required configuration.</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/fe1d7652-e911-482a-b7a2-3ec068ecd689/36f0c789077c7f8af181642a24d41adf20574476.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><ul><li>Confirm that users who need this capability have a <b>Microsoft 365 Copilot license</b>.</li><li>Enable AI Interpreter in <i>your Teams policies</i>:<ul><li><i><b>Set-CsTeamsCallingPolicy</b></i></li><li><i><b>Set-CsTeamsMeetingPolicy</b></i></li></ul></li><li>Communicate the experience to your helpdesk and affected Teams Phone users.</li><li>Update internal documentation or device usage guides as needed.</li></ul><p><b>Learn more:</b> <a href=\"https://learn.microsoft.com/microsoftteams/interpreter-agent-teams\" target=\"_blank\">Manage Interpreter agent for your organization | Microsoft Teams | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated May 27, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re adding <b>AI-powered live interpretation</b> to <b>Microsoft Teams Phone devices</b> to help organizations support multilingual collaboration during calls and meetings. This update enables users with a Microsoft 365 Copilot license to hear real-time interpreted audio directly on certified Teams Phone hardware, reducing reliance on external interpreters and improving accessibility for globally distributed teams.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=553594\" target=\"_blank\">553594</a></b>.</p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide and GCC): </b>We will begin rolling out in <b>mid-July 2026</b> (previously&nbsp;mid-June)&nbsp;and expect to complete in <b>late July 2026</b> (previously&nbsp;late June).</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Users on certified Teams Phone devices (touch and non-touch)</li><li>Users with a Microsoft 365 Copilot license</li><li>Admins managing Teams calling and meeting policies</li></ul><p><i>What will happen</i></p><ul><li>Eligible users will be able to use AI-powered live interpretation during:<ul><li>1:1 VoIP and Public Switched Telephone Network (PSTN) calls</li><li>Group VoIP calls</li><li>VoIP group calls escalated with a PSTN user</li><li>Ad-hoc and scheduled meetings</li></ul></li><li>Pure PSTN group calls are <b>not supported</b>.</li><li>On first use, users will select a preferred interpretation language; preferences and volume levels are saved automatically.</li><li>A visual indicator will appear for all participants when interpretation is active.</li><li>Users will only see the AI Interpreter option when:<ul><li>The tenant has enabled the required calling and meeting policies, and</li><li>The user holds an eligible license.</li></ul></li><li>The feature is<b> off by default</b> and does <b>not </b>change calling experiences for users without the required configuration.</li></ul><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/fe1d7652-e911-482a-b7a2-3ec068ecd689/36f0c789077c7f8af181642a24d41adf20574476.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><ul><li>Confirm that users who need this capability have a <b>Microsoft 365 Copilot license</b>.</li><li>Enable AI Interpreter in <i>your Teams policies</i>:<ul><li><i><b>Set-CsTeamsCallingPolicy</b></i></li><li><i><b>Set-CsTeamsMeetingPolicy</b></i></li></ul></li><li>Communicate the experience to your helpdesk and affected Teams Phone users.</li><li>Update internal documentation or device usage guides as needed.</li></ul><p><b>Learn more:</b> <a href=\"https://learn.microsoft.com/microsoftteams/interpreter-agent-teams\" target=\"_blank\">Manage Interpreter agent for your organization | Microsoft Teams | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -15125,7 +15077,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559612\":[{\"RoadmapId\":559612,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660776Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660775Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7113814Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559612,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660774Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7113831Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"559612\":[{\"RoadmapId\":559612,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660774Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7113814Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559612,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660775Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660776Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7113831Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -15682,7 +15634,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559605\":[{\"RoadmapId\":559605,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663204Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607172Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559605,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663202Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607167Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559605,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7459146Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":559605,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607179Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"559605\":[{\"RoadmapId\":559605,\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-05-13T12:54:17.7459146Z\",\"LatestRing\":\"TargetedRelease\"},{\"RoadmapId\":559605,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607167Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559605,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663202Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607172Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559605,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6663204Z\",\"LatestRing\":null},{\"RoadmapId\":559605,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607179Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -16131,7 +16083,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557168\":[{\"RoadmapId\":557168,\"Platform\":\"Android\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-27T20:48:51.1944151Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":557168,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-27T20:48:51.1944153Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"557168\":[{\"RoadmapId\":557168,\"Platform\":\"Android\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-27T22:36:59.7587347Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":557168,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-27T22:36:59.758735Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -16572,7 +16524,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112264Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-05-20T22:35:32.5870582Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-20T22:35:32.587059Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-05-20T22:35:32.5870582Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112264Z\",\"LatestRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-20T22:35:32.587059Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18580,30 +18532,6 @@
     "body": {
       "contentType": "html",
       "content": "<div>Microsoft Defender now provides IT teams centralized visibility into Secure Boot 2023 certificate readiness across your device fleet. A new assessment categorizes your devices automatically as exposed, compliant, and not applicable. In the Defender portal, go to <b>Exposure Management</b>&nbsp;&gt; <b>Recommendations </b>&gt; <b>Devices </b>&gt; <b>Misconfigurations</b>.&nbsp;For exposed devices,&nbsp;remediation guidance is directly available through the recommendation.</div><div>&nbsp;</div><div><b>When will this happen:</b></div><ul><li>The new Secure Boot 2023 certificate assessment is now available&nbsp;in Microsoft Defender.</li><li>June 2026: Secure Boot 2011 certificates begin expiring and need to be replaced.</li></ul><div>&nbsp;</div><div><b>How this will affect your organization:</b></div><div>When certificates expire in June 2026, devices that&nbsp;haven't&nbsp;transitioned to the newer&nbsp;Windows UEFI CA 2023 certificates will no longer be able to receive new security protections for the early boot process.&nbsp;&nbsp;</div><div><br></div><div>To help organizations prepare, Microsoft Defender introduced a new recommendation that provides centralized visibility into Secure Boot 2023 certificate readiness across your device fleet.&nbsp;&nbsp;</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><div>From the&nbsp;Microsoft&nbsp;Defender portal, go to <b>Exposure Management</b>&nbsp;&gt; <b>Recommendations </b>&gt; <b>Devices </b>&gt; <b>Misconfigurations</b>. Find the new recommendation “<b>Ensure devices are updated to Secure Boot 2023 certificates and boot manager</b>”.&nbsp;From the recommendation view, you can:</div><ul><li>Drill down into exposed devices and&nbsp;identify&nbsp;exactly which systems require attention.&nbsp;&nbsp;</li><li>Filter by OS platform and device context to prioritize remediation efforts.&nbsp;&nbsp;</li><li>Export device data to share with infrastructure and platform teams.&nbsp;&nbsp;</li><li>Track rollout progress across your organization.&nbsp;&nbsp;</li><li>Integrate findings into existing security posture workflows.&nbsp;</li></ul><div>&nbsp;</div><div><b>Additional&nbsp;information:</b></div><ul><li>Learn more&nbsp;at <a href=\"https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2Fsecureboot-mde&amp;data=05%7C02%7Cv-chwri%40microsoft.com%7Cac2cb8c4554743dd950208dea15580d9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639125585766114171%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=ayrQ4Y5UQfQZgv%2BoQRbcGAH3EvhN%2BrfLxdHjw3aE33I%3D&amp;reserved=0\" rel=\"noopener noreferrer\" target=\"_blank\">Preparing for Secure Boot 2023 with Microsoft Defender</a>.</li><li>Learn more about <a href=\"https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Flearn.microsoft.com%2Fdefender-vulnerability-management%2Ftvm-microsoft-secure-score-devices%3Ftabs%3Dpreview-customers&amp;data=05%7C02%7Cv-chwri%40microsoft.com%7Cac2cb8c4554743dd950208dea15580d9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639125585766123485%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=mpkhH91SOLvgTsMArFA2jP1NWZgaASLgToWLO4KBdNQ%3D&amp;reserved=0\" rel=\"noopener noreferrer\" target=\"_blank\">Microsoft Secure Score for Devices - Microsoft Defender Vulnerability Management</a>.</li><li>Visit the comprehensive Secure Boot guidance at <a href=\"https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2FGetSecureBoot&amp;data=05%7C02%7Cv-chwri%40microsoft.com%7Cac2cb8c4554743dd950208dea15580d9%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C639125585766132713%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=oHdjcquGvRnL2f8MU3bV2a9A1NtCO1gMjSPxhAkZWqY%3D&amp;reserved=0\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/GetSecureBoot</a>.</li></ul>"
-    }
-  },
-  {
-    "startDateTime": "2026-04-27T22:09:18Z",
-    "endDateTime": "2026-05-27T22:09:18Z",
-    "lastModifiedDateTime": "2026-04-27T22:12:06.573Z",
-    "title": "Power Apps- Information regarding the end of support for the preview Analytics experience in Power Apps",
-    "id": "MC1293476",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "On June 8, 2026, the preview Analytics experience in Power Apps, which allows makers to view usage, performance, and error metrics for apps, will have reached end of support.<br><br><b>How does this affect me?</b><br>The <b>Analytics</b> tab located in the App Details experience in <a target=\"_blank\" href=\"https://aka.ms/14897_1\">Power Apps</a> will be removed on June 8, 2026. Following this deprecation, usage metrics will no longer be shown directly within the App Details experience. Performance metrics, reliability metrics, and the number of app sessions remain available through the <a target=\"_blank\" href=\"https://aka.ms/14897_2\">Monitor</a> feature.<br><br>Power Platform admins can continue to view tenant-wide usage in the new <a target=\"_blank\" href=\"https://aka.ms/14897_3\">Usage page</a>.<br><br><b>What action do I need to take?</b><br>Please transition to using the <a target=\"_blank\" href=\"https://aka.ms/14897_4\">Monitor</a> feature. This feature provides makers with detailed information on their app's performance and actionable steps to improve their apps."
     }
   },
   {
@@ -22600,13 +22528,14 @@
   },
   {
     "startDateTime": "2026-05-13T23:08:57Z",
-    "endDateTime": "2026-07-29T07:00:00Z",
-    "lastModifiedDateTime": "2026-05-13T23:09:34.4Z",
-    "title": "Microsoft Teams: Report external users for security concerns",
+    "endDateTime": "2026-09-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-05-27T21:40:45.477Z",
+    "title": "(Updated) Microsoft Teams: Report external users for security concerns",
     "id": "MC1309744",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -22625,11 +22554,11 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560547\":[{\"RoadmapId\":560547,\"Platform\":\"Android\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7115152Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.711515Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7115149Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7115147Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7115154Z\",\"LatestRing\":null}]}"
+        "value": "{\"560547\":[{\"RoadmapId\":560547,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7115147Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"iOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7115149Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.711515Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"Android\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7115152Z\",\"LatestRing\":null},{\"RoadmapId\":560547,\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7115154Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams will enable users to report suspicious external users directly, with reports visible to admins in the Teams admin center for faster security response. This feature, rolling out June 2026, supports chats, meetings, and channels, is enabled by default, and integrates with existing messaging policies."
+        "value": "Microsoft Teams will enable users to report suspicious external users directly, with reports accessible to admins in the Teams admin center for faster security response. This feature, rolling out July–August 2026, is enabled by default, supports multiple Teams experiences, and is governed by existing messaging policies."
       },
       {
         "name": "Platforms",
@@ -22638,7 +22567,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>To help organizations respond more quickly to external security threats, Microsoft Teams will allow users to<b> report suspicious external users directly from Teams</b>. These reports will surface in the<i> Teams admin center</i>, giving admins greater visibility into potentially risky interactions and enabling faster investigation and response. This enhancement will build on existing reporting capabilities and will use user signals as an additional layer of protection against phishing, impersonation, and social engineering attacks.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=560547\" target=\"_blank\">560547</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release: </b>We will begin rolling out in<b> early June 2026 </b>and expect to complete by <b>early June 2026</b>.</li><li><b>General Availability (Worldwide): </b>We will begin rolling out in <b>mid-June 2026 </b>and expect to complete by<b> late June 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All Microsoft 365 tenants using Microsoft Teams</li><li>Users who<b> interact with external users</b> in <i>Teams</i></li><li>Admins managing <b>Teams security and reporting</b> in the<i> Teams admin center</i></li></ul><p><i>What will happen</i></p><ul><li>Users will be able to report suspicious external users directly in<i> Teams</i>, in addition to blocking them:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/612be9d3-a00b-4b04-b88e-ba3bb3562e2f/469f51e14ae0d399ad9b7849290fa86efb6908c1.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Reporting will be available during first time external chat requests and from an external user profile card.</li><li>Reporting will be supported across Teams experiences including chats, meetings, channels, and search results.</li><li>When a user is reported, the submission will appear in the <i>Teams admin center</i> under<b style=\"font-style: italic;\"> Protection reports &gt; User reported security submission report</b><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/14745d08-a774-4e0f-bd07-5b093ce0f3bc/a3ce72933fd59438a18d724e9f5dabe11c42e0a9.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Admins will be able to review reported users and investigate potential phishing, impersonation, or other suspicious activity.</li><li>Additional metadata will be available through report export to support investigation and response workflows.</li><li>This feature will be <b>enabled by default</b> and will respect existing Teams messaging policies.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action will be required if you want to keep user reporting enabled.</p><p>Admins may choose to take the following actions:</p><ul><li>Review current Teams messaging policies and confirm that the <i><b>Report a security concern </b></i>setting<b> remains enabled</b>.</li><li>Familiarize security and helpdesk teams with the <b>User reported security submission report</b> in the <i>Teams admin center</i>.</li><li>Update internal security guidance or user education materials, if applicable.</li><li>If a malicious external user is identified through these reports, block that user at the tenant level using <i><b>External access </b></i>settings to prevent further communication attempts.</li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change store new customer data, and if so, where?</td><td>Yes. Reports submitted by users about external users will be processed and made available to admins for review and investigation, extending existing reporting workflows.</td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. User generated reports about external users are processed and made available to admins for review and investigation, extending existing reporting workflows.</td></tr><tr><td>Does the change provide a new way of communicating between users, tenants, or subscriptions?</td><td>Yes. Users will be able to submit reports about external users, which will be communicated to tenant admins through the Teams admin center reporting experience.</td></tr><tr><td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td><td>Yes. Admins will gain access to a new User reported security submission report in the <i>Teams admin center</i>, which will enhance monitoring and investigation capabilities related to external security threats.</td></tr><tr><td>Does the change include an admin control?</td><td>Yes. The feature will be governed by the existing Report a security concern setting in <i>Teams messaging policies </i>and can be enabled or disabled by admins.</td></tr></tbody></table>"
+      "content": "<p>Updated May 27, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>To help organizations respond more quickly to external security threats, Microsoft Teams will allow users to<b> report suspicious external users directly from Teams</b>. These reports will surface in the<i> Teams admin center</i>, giving admins greater visibility into potentially risky interactions and enabling faster investigation and response. This enhancement will build on existing reporting capabilities and will use user signals as an additional layer of protection against phishing, impersonation, and social engineering attacks.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=560547\" target=\"_blank\">560547</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>Targeted Release: </b>We will begin rolling out in<b>&nbsp;mid-July 2026</b> (previously early June)<b>&nbsp;</b>and expect to complete by <b>late July 2026</b> (previously&nbsp;early June).</li><li><b>General Availability (Worldwide): </b>We will begin rolling out in <b>early August 2026</b> (previously&nbsp;mid-June)<b>&nbsp;</b>and expect to complete by<b>&nbsp;late August 2026 </b>(previously late June).</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All Microsoft 365 tenants using Microsoft Teams</li><li>Users who<b> interact with external users</b> in <i>Teams</i></li><li>Admins managing <b>Teams security and reporting</b> in the<i> Teams admin center</i></li></ul><p><i>What will happen</i></p><ul><li>Users will be able to report suspicious external users directly in<i> Teams</i>, in addition to blocking them:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/612be9d3-a00b-4b04-b88e-ba3bb3562e2f/469f51e14ae0d399ad9b7849290fa86efb6908c1.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Reporting will be available during first time external chat requests and from an external user profile card.</li><li>Reporting will be supported across Teams experiences including chats, meetings, channels, and search results.</li><li>When a user is reported, the submission will appear in the <i>Teams admin center</i> under<b style=\"font-style: italic;\"> Protection reports &gt; User reported security submission report</b><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/14745d08-a774-4e0f-bd07-5b093ce0f3bc/a3ce72933fd59438a18d724e9f5dabe11c42e0a9.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Admins will be able to review reported users and investigate potential phishing, impersonation, or other suspicious activity.</li><li>Additional metadata will be available through report export to support investigation and response workflows.</li><li>This feature will be <b>enabled by default</b> and will respect existing Teams messaging policies.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action will be required if you want to keep user reporting enabled.</p><p>Admins may choose to take the following actions:</p><ul><li>Review current Teams messaging policies and confirm that the <i><b>Report a security concern </b></i>setting<b> remains enabled</b>.</li><li>Familiarize security and helpdesk teams with the <b>User reported security submission report</b> in the <i>Teams admin center</i>.</li><li>Update internal security guidance or user education materials, if applicable.</li><li>If a malicious external user is identified through these reports, block that user at the tenant level using <i><b>External access </b></i>settings to prevent further communication attempts.</li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change store new customer data, and if so, where?</td><td>Yes. Reports submitted by users about external users will be processed and made available to admins for review and investigation, extending existing reporting workflows.</td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. User generated reports about external users are processed and made available to admins for review and investigation, extending existing reporting workflows.</td></tr><tr><td>Does the change provide a new way of communicating between users, tenants, or subscriptions?</td><td>Yes. Users will be able to submit reports about external users, which will be communicated to tenant admins through the Teams admin center reporting experience.</td></tr><tr><td>Does the change alter how admins can monitor, report on, or demonstrate compliance activities?</td><td>Yes. Admins will gain access to a new User reported security submission report in the <i>Teams admin center</i>, which will enhance monitoring and investigation capabilities related to external security threats.</td></tr><tr><td>Does the change include an admin control?</td><td>Yes. The feature will be governed by the existing Report a security concern setting in <i>Teams messaging policies </i>and can be enabled or disabled by admins.</td></tr></tbody></table>"
     }
   },
   {
@@ -24145,7 +24074,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"562413\":[{\"RoadmapId\":562413,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112835Z\",\"LatestRing\":null},{\"RoadmapId\":562413,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112834Z\",\"LatestRing\":null},{\"RoadmapId\":562413,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-20T22:35:32.5871648Z\",\"LatestRing\":null},{\"RoadmapId\":562413,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112836Z\",\"LatestRing\":null}]}"
+        "value": "{\"562413\":[{\"RoadmapId\":562413,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-05-20T22:35:32.5871648Z\",\"LatestRing\":null},{\"RoadmapId\":562413,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112834Z\",\"LatestRing\":null},{\"RoadmapId\":562413,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112835Z\",\"LatestRing\":null},{\"RoadmapId\":562413,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112836Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24686,7 +24615,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560814\":[{\"RoadmapId\":560814,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607537Z\",\"LatestRing\":null},{\"RoadmapId\":560814,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607535Z\",\"LatestRing\":null},{\"RoadmapId\":560814,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607537Z\",\"LatestRing\":null}]}"
+        "value": "{\"560814\":[{\"RoadmapId\":560814,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607535Z\",\"LatestRing\":null},{\"RoadmapId\":560814,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607537Z\",\"LatestRing\":null},{\"RoadmapId\":560814,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4607537Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24728,7 +24657,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560816\":[{\"RoadmapId\":560816,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4606996Z\",\"LatestRing\":null},{\"RoadmapId\":560816,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4606995Z\",\"LatestRing\":null},{\"RoadmapId\":560816,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4606997Z\",\"LatestRing\":null}]}"
+        "value": "{\"560816\":[{\"RoadmapId\":560816,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4606995Z\",\"LatestRing\":null},{\"RoadmapId\":560816,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4606996Z\",\"LatestRing\":null},{\"RoadmapId\":560816,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4606997Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24840,7 +24769,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560815\":[{\"RoadmapId\":560815,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4605065Z\",\"LatestRing\":null},{\"RoadmapId\":560815,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4605064Z\",\"LatestRing\":null},{\"RoadmapId\":560815,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4605066Z\",\"LatestRing\":null}]}"
+        "value": "{\"560815\":[{\"RoadmapId\":560815,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4605064Z\",\"LatestRing\":null},{\"RoadmapId\":560815,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4605065Z\",\"LatestRing\":null},{\"RoadmapId\":560815,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-22T05:28:47.4605066Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25149,7 +25078,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"561550\":[{\"RoadmapId\":561550,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-27T20:48:51.1945226Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-27T20:48:51.1945228Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":561550,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-27T20:48:51.1945229Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-27T20:48:51.1945235Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"561550\":[{\"RoadmapId\":561550,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-27T22:36:59.7589046Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-27T22:36:59.7589047Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":561550,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-27T22:36:59.7589049Z\",\"LatestRing\":null},{\"RoadmapId\":561550,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-27T22:36:59.758905Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -25880,7 +25809,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339812Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.133981Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339808Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339814Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"168524\":[{\"RoadmapId\":168524,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339808Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.133981Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339812Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":168524,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339814Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -26075,7 +26004,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"325780\":[{\"RoadmapId\":325780,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339369Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339371Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339373Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":325780,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1339376Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
