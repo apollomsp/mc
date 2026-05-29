@@ -9156,7 +9156,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"547834\":[{\"RoadmapId\":547834,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-10T05:03:48.5377277Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":547834,\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-10T05:03:48.5377282Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"547834\":[{\"RoadmapId\":547834,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-29T22:35:19.270814Z\",\"LatestRing\":null},{\"RoadmapId\":547834,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-29T22:35:19.2708143Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -26550,7 +26550,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"561912\":[{\"RoadmapId\":561912,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-29T20:53:57.6715569Z\",\"LatestRing\":null},{\"RoadmapId\":561912,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-29T20:53:57.6715571Z\",\"LatestRing\":null},{\"RoadmapId\":561912,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-29T20:53:57.6715573Z\",\"LatestRing\":null}]}"
+        "value": "{\"561912\":[{\"RoadmapId\":561912,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-29T22:35:19.2711023Z\",\"LatestRing\":null},{\"RoadmapId\":561912,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-29T22:35:19.2711024Z\",\"LatestRing\":null},{\"RoadmapId\":561912,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-29T22:35:19.2711025Z\",\"LatestRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -26633,6 +26633,44 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>Microsoft will introduce an <b>enhanced export experience</b> for <b>Viva Glint Heat Map reports</b>. This update will add a new option to export Heat Map reports as fully editable PowerPoint slides, making it easier and faster for managers to customize, share, and present survey insights outside of Viva Glint using native PowerPoint tools.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=560821\" target=\"_blank\">560821</a></b>.</p><p><b>[When this will happen]</b></p><p style=\"margin-left: 25px;\"><b>General Availability (Worldwide and GCC): </b>Rollout will begin in <b>mid-July 2026</b> and is expected to complete by <b>late July 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p style=\"margin-left: 25px;\">Managers and users with <b>access to Heat Map reports</b> in <i>Microsoft Viva Glint </i>across Microsoft 365 tenants (Worldwide and GCC).</p><p>What will happen:</p><ul><li>A new export option, <b><i>Export report to PowerPoint</i></b>, will be added for Heat Map reports.</li><li>Heat Map reports can be exported as<b> native, editable PowerPoint slides</b>, allowing direct editing of text, layout, and visuals using built‑in PowerPoint tools.</li><li>The existing <b><i>Export screenshots to PowerPoint </i></b>option will continue to be available.</li><li>Both export options will appear in the <i>same export dropdown</i>.</li><li>The editable PowerPoint format will improve layout consistency and reduce unnecessary whitespace.</li><li>Export performance will improve, reducing timeouts and increasing reliability.</li><li>The feature will be enabled by default and will respect existing Viva Glint role‑based permissions.</li><li>No admin configuration or policy changes will be required.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required before rollout.</p><p>Optionally:</p><ul><li>Consider notifying managers that a new editable PowerPoint export option will be available for Heat Map reports.</li><li>Update any internal documentation or training materials that reference Viva Glint Heat Map report exports.</li><li>Prepare helpdesk staff for questions about the two available export options.</li></ul><p><b>Learn more [to be updated closer to GA rollout]</b>:&nbsp;<a href=\"https://learn.microsoft.com/viva/glint/reports/export-to-ppt#how-to-export-report-to-powerpoint\" target=\"_blank\">How to Export Report to PowerPoint - Export to PowerPoint | Viva Glint | Microsoft Viva | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?</td><td>Yes. The update introduces an additional export format for existing Heat Map report data, allowing export to editable PowerPoint files. There is no change to underlying data access, storage locations, or permissions.</td></tr></tbody></table><p></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-05-29T21:07:25Z",
+    "endDateTime": "2026-08-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-05-29T21:07:34.747Z",
+    "title": "Notebooks in Microsoft 365 Copilot: Organize work across conversations",
+    "id": "MC1326520",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "562662"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 Copilot app introduces Notebooks to organize chats, content, and references in a persistent workspace synced with OneNote. Rolling out mid-June to late July 2026 for licensed users, it requires no admin action. Notebooks complement existing OneNote features and follow current Copilot policies."
+      },
+      {
+        "name": "Platforms",
+        "value": "Web"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[What and Why:]</b></p><p></p><p>The updated <b>Notebooks experience in the Microsoft 365 Copilot app</b> helps users keep project work organized across conversations. Notebooks bring chats, generated content, and reference materials together in a lightweight, persistent workspace, making it easier to stay in context and move work forward. This update complements the existing <b>Notebooks experience in OneNote</b>, which remains unchanged. Notebooks stay in sync across the Microsoft 365 Copilot app and OneNote, allowing users to move between experiences without losing context.</p><p>This message is associated with Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=562662\" target=\"_blank\">562662</a>.</p><p><b>[Rollout Schedule:]</b></p>\n<ul>\n<li>Public Preview (Worldwide): We will begin rolling out in<b> mid-June 2026</b> and expect to complete by <b>early July 2026</b>.</li><li>General Availability (Worldwide): We will begin rolling out in <b>early July 2026</b> and expect to complete by <b>late July 2026</b>.</li>\n</ul>\n\n<p><b>[Impact on Your Organization:]</b></p>\n<p><b>Who is affected:</b> Users with a Microsoft 365 Copilot (Premium) license</p>\n<p><b>Platforms/Services:</b> </p><ul><li>Microsoft 365 Copilot app (web)</li><li>OneNote</li></ul><p><b>What will happen:</b></p>\n\n<ul>\n<li>Users with a Microsoft 365 Copilot license will see <b>Notebooks </b>in the Microsoft 365 Copilot app once rollout reaches their tenant.</li><p>Screenshot: <i>Notebooks experience in the Microsoft 365 Copilot app:</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/484c93b8-c564-44e8-9b8f-6774280693fa\" style=\"width: 400px;\" alt=\"user settings\"></p><li>The existing Copilot Notebooks offering in the Microsoft 365 Copilot app continues to be referred to as <b>Notebooks</b>; the entry point and existing Notebook data remain in place.</li><li>Notebooks in OneNote are unchanged. Users can continue working with Copilot Notebooks in OneNote.</li><li>Notebooks stay in sync between the Microsoft 365 Copilot app and OneNote, and users can open Notebooks in either experience.</li><li>Content created from a Notebook—including Word documents, PowerPoint presentations, Excel spreadsheets, Copilot Pages, and other supported objects—remains associated with that Notebook.</li><li><b>Default state</b>: On for eligible users once rollout reaches the tenant.</li><li><b>Admin controls</b>: Governed by existing Microsoft 365 Copilot policies; there is no separate admin toggle for Notebooks.</li>\n</ul>\n\n<p><b>[Action Required / Recommendations:]</b></p><p></p><p>No admin action is required.</p><p><b>We recommend that admins:</b></p><ul><li>Inform end users that <b>Notebooks </b>is the workspace name in the Microsoft 365 Copilot app.</li><li>Reinforce that <b>Notebooks in OneNote remain available</b> and unchanged.</li><li>Update internal documentation or helpdesk guidance, if applicable, to reference Notebooks as the organizing workspace in the Copilot app.</li></ul><p>Notebooks in the Microsoft 365 Copilot app are governed by your organization’s existing Microsoft 365 Copilot policies.</p><p>Before rollout, we will update this post with new documentation.</p><p><b>[Compliance considerations:]</b></p><p></p><p>\nThis change introduces a new way for users to interact with generative AI by organizing Copilot chats and outputs in a persistent Notebook workspace. No other compliance impacts were identified.</p>"
     }
   },
   {
