@@ -1305,37 +1305,6 @@
     }
   },
   {
-    "startDateTime": "2025-07-03T23:39:14Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-06T18:03:32.573Z",
-    "title": "(Updated) Changing output format for some database properties in Exchange Online cmdlets",
-    "id": "MC1108848",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "Feature update",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Exchange Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Exchange Online PowerShell cmdlets will update output formats for certain database-related properties starting February 2026, completing by April 2026. This change improves performance and consistency but only affects Exchange Online, not on-premises. No user action is required unless scripts parse these values."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated February 6, 2026: We have updated the content. The scope of the change remains unchanged. Thank you for your patience.</p><p>We're updating the output format of certain properties returned by Exchange Online PowerShell cmdlets to improve performance and align with backend service optimizations. This change reduces unnecessary data retrieval and enhances consistency across services.\n</p><p>[When this will happen:]</p><p>Rollout will begin in February 2026 (previously October 2025) and complete by April 2026 (previously November 2025).\n</p><p>[How this affects your organization:]</p><p>This update changes the string format of specific properties returned by Exchange Online cmdlets. For example, the Database property in the output of Get-Mailbox will change from:\n</p><p><code>Database : APCP153DG038-db080</code>\n</p><p>to:\n</p><p><code>Database : APCP153.PROD.OUTLOOK.COM/7ad9dea1-26b7-4088-ad73-708c219faff6</code>\n</p><p>This change applies only to <i>Exchange Online</i>. On-premises Exchange environments are not affected.\n</p><p>We do not expect organizations to have dependencies on these output formats. These values are informational only and not intended for admin control or automation. No changes to user workflows, admin configurations, or help desk processes are expected.\n</p><p>[What you can do to prepare:]</p><p>No action is required. There are no settings or controls to manage this change. If you have scripts that parse these property values, we recommend reviewing them to ensure compatibility.</p><p><b>The complete list of cmdlets impacted is as follows:&nbsp;</b></p><table><tbody>\n\n<tr><th>Cmdlet </th>\n<th>Output Type</th>\n\n</tr>\n\n<tr>\n<td>Add-DistributionGroupMember</td>\n<td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient</td>\n</tr>\n\n<tr>\n<td>Get-DistributionGroupMember</td>\n<td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient</td>\n</tr>\n\n<tr>\n<td>Get-FederatedOrganizationIdentifier </td>\n<td>Microsoft.Exchange.Data.Directory.Management.FederatedOrganizationIdWithDomainStatus </td>\n</tr>\n\n<tr>\n<td>Get-Mailbox </td>\n<td>Microsoft.Exchange.Data.Directory.Management.Mailbox</td>\n</tr>\n\n<tr>\n<td>New-Mailbox</td>\n<td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td>\n</tr>\n\n<tr>\n<td>Get-MailboxPlan</td>\n<td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td>\n</tr>\n\n<tr>\n<td>Get-MailUser</td>\n<td>Microsoft.Exchange.Data.Directory.Management.MailUser </td>\n</tr>\n\n\n<tr>\n<td>New-MailUser </td>\n<td>Microsoft.Exchange.Data.Directory.Management.MailUser </td>\n</tr>\n\n<tr>\n<td>Get-Recipient</td>\n<td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient </td>\n</tr>\n\n\n<tr>\n<td>Add-RoleGroupMember </td>\n<td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient </td>\n</tr>\n\n\n<tr>\n<td>Get-RoleGroupMember </td>\n<td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient </td>\n</tr>\n\n\n\n<tr>\n<td>New-SyncMailPublicFolder</td>\n<td>Microsoft.Exchange.Data.Directory.Recipient.ADPublicFolder </td>\n</tr>\n\n</tbody></table>\n\n\n\n<p></p><p>The affected properties for each Output Type are as follows: \n\n\n\n\n</p>\n\n\n<table border=\"1\">\n  <thead>\n    <tr>\n      <th>Output Type</th>\n      <th>Property</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailUser</td><td>MailboxMoveSourceArchiveMDB</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Management.MailUser</td><td>MailboxMoveSourceMDB</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Management.MailUser</td><td>MailboxMoveTargetArchiveMDB</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Management.MailUser</td><td>MailboxMoveTargetMDB</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient</td><td>Database</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient</td><td>MailboxMoveSourceArchiveMDB</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient</td><td>MailboxMoveSourceMDB</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient</td><td>MailboxMoveTargetArchiveMDB</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Management.ReducedRecipient</td><td>MailboxMoveTargetMDB</td></tr><tr><td>Microsoft.Exchange.Data.Directory.Recipient.ADPublicFolder</td><td>Database</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Recipient.ADPublicFolder</td><td>HomeMTA</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.FederatedOrganizationIdWithDomainStatus</td><td>DelegationTrustLink</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.Mailbox</td><td>Database</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.Mailbox</td><td>PreviousDatabase</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.Mailbox</td><td>DisabledArchiveDatabase</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.Mailbox</td><td>MailboxMoveTargetMDB</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.Mailbox</td><td>MailboxMoveSourceMDB</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.Mailbox</td><td>MailboxMoveTargetArchiveMDB</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.Mailbox</td><td>MailboxMoveSourceArchiveMDB</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td><td>Database</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td><td>PreviousDatabase</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td><td>DisabledArchiveDatabase</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td><td>MailboxMoveTargetMDB</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td><td>MailboxMoveSourceMDB</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td><td>MailboxMoveTargetArchiveMDB</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailboxPlan</td><td>MailboxMoveSourceArchiveMDB</td></tr>\n    <tr><td>Microsoft.Exchange.Data.Directory.Management.MailUser</td><td>DisabledArchiveDatabase</td></tr></tbody></table>"
-    }
-  },
-  {
     "startDateTime": "2025-07-08T17:02:38.38Z",
     "endDateTime": "2026-07-08T17:02:38.333Z",
     "lastModifiedDateTime": "2025-07-08T17:02:39.083Z",
@@ -5111,38 +5080,6 @@
     }
   },
   {
-    "startDateTime": "2025-11-12T00:10:11Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-08T19:03:19.657Z",
-    "title": "(Updated) Legacy SharePoint Online Content Delivery Network (CDN) domain to be retired—review configurations",
-    "id": "MC1184996",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": "2026-03-30T07:00:00Z",
-    "services": [
-      "SharePoint Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The legacy SharePoint Online CDN domain publiccdn.sharepointonline.com will be retired by late April 2026. Update all hardcoded references to the new domain public-cdn.sharepointonline.com to avoid 404 errors. Validate changes before March 31, 2026, to ensure uninterrupted access to SharePoint resources."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated January 8, 2026: We have updated this post as a reminder. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>As part of ongoing service modernization, Microsoft has migrated the hosting of SharePoint Online static assets to the Microsoft Azure Front Door (AFD) content delivery network (CDN), using the new domain <b>public-cdn.sharepointonline.com</b>. This migration was previously announced in MC1066155 and completed in July 2025.<p></p>\n\n<p>This message is a follow-up notice to retire the legacy CDN domain <b>publiccdn.sharepointonline.com</b>. After this rollout completes, content referenced via the legacy domain will no longer be accessible, and users will receive 404 errors when trying to access resources hosted on the legacy domain.</p><p></p>\n\n<p><b>[When this will happen:]</b></p>\n<b>General Availability (Worldwide):</b> Rollout begins March 31, 2026, and completes by late April 2026.<br><p></p>\n\n<p><b>[How this affects your organization:]</b></p>\n<b>Who is affected:</b>\n<p></p><ul>\n<li>Organizations using SharePoint Online with applications, scripts, or configurations that hardcode the legacy CDN domain.</li>\n<li>Developers using SharePoint Framework (SPFx) with hardcoded <code>cdnBasePath</code> values.</li>\n<li>Admins who have configured domain-based allow lists in their network settings.</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n<li>The legacy domain <b>publiccdn.sharepointonline.com</b> will be retired.</li>\n<li>Any content referenced via the legacy domain will return <b>404 errors</b>.</li>\n<li>The same resources remain available through the new CDN domain <b>public-cdn.sharepointonline.com</b>.</li>\n<li>The legacy domain previously served as an automatic hosting endpoint for SharePoint resources.</li>\n<li>The 404 error does <b>not indicate data loss</b>—only the access path is affected.</li>\n<li>Hardcoded references to the legacy domain will fail once the domain is retired.</li>\n</ul>\n<p></p>\n\n<p><b>[What you can do to prepare:]</b></p>\n<p></p><ul>\n<li>Review your applications, scripts, and configurations for any hardcoded references to <b>publiccdn.sharepointonline.com</b>.</li>\n<li>Update affected components to use supported and dynamic endpoints to ensure continued functionality.</li>\n<li>For SPFx applications:\n  <ul>\n    <li>If using an external CDN, it’s fine to update the <code>cdnBasePath</code>.</li>\n    <li>If relying on automatic hosting through the Microsoft 365 Public CDN, <b>do not hardcode </b><code style=\"\">cdnBasePath</code>—leave it unchanged, shown in the code snippet box below. For more details, refer to <a href=\"https://learn.microsoft.com/sharepoint/dev/spfx/extensions/get-started/hosting-extension-from-office365-cdn#update-your-solution-project-for-the-cdn-urls\" target=\"_blank\">Update your solution project for the CDN URLs</a>.</li></ul></li><p></p>\n\n<pre><code>{\n  \"cdnBasePath\": \"&lt;!-- PATH TO CDN --&gt;\"\n}</code></pre><li>Ensure <b>public-cdn.sharepointonline.com</b> is included in your domain-based allow lists.</li>\n<li>Validate your updates before <b>March 31, 2026</b> to prevent potential service disruptions.</li>\n<li>Monitor network traffic and optionally block requests to the legacy domain to confirm that content hosted through the CDN continues to function properly.</li>\n<li>Learn more: <a href=\"https://learn.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview\" target=\"_blank\">Overview of the SharePoint Framework</a></li></ul>\n\n<p></p>\n\n<p><b>[Compliance considerations]</b></p>No compliance considerations identified, review as appropriate for your organization.<p></p>"
-    }
-  },
-  {
     "startDateTime": "2025-11-12T00:12:03Z",
     "endDateTime": "2026-06-30T08:00:00Z",
     "lastModifiedDateTime": "2026-04-24T16:24:09.043Z",
@@ -6618,36 +6555,6 @@
     }
   },
   {
-    "startDateTime": "2025-12-10T00:19:14Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2025-12-10T00:19:36.507Z",
-    "title": "Microsoft baseline security mode for Office, SharePoint, Exchange, Teams, and Entra",
-    "id": "MC1193689",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "Admin impact"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft 365 suite"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Baseline Security Mode centralizes Microsoft’s recommended security standards for Office, SharePoint, Exchange, Teams, and Entra. Rolling out from November 2025 to March 2026, it provides admins with a dashboard to assess and improve security posture using impact reports and risk-based recommendations, with no immediate user impact."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>Introduction</b></p><b>\nBaseline Security Mode</b> is a centralized experience that helps you meet Microsoft’s recommended security standards across Office, SharePoint, Exchange, Teams, and Entra. It leverages Microsoft’s threat intelligence and insights from two decades of Microsoft Response Center cases to strengthen your organization’s security posture and prepare for evolving AI-driven threats.<p></p>\n\n<p><b>When this will happen:</b></p>\n<ul>\n<li>Public Preview: Rollout begins mid-November 2025 and completes by late January 2026.</li><li>General Availability (Worldwide): Rollout begins mid-November 2025 and completes by late January 2026.</li><li>General Availability (GCC): Rollout begins early January 2026 and completes by late January 2026.</li><li>General Availability (DoD): Rollout begins early February 2026 and completes by late February 2026.</li><li>General Availability (GCCH): Rollout begins early March 2026 and completes by late March 2026.</li>\n</ul><p></p>\n\n<p><b>How this affects your organization:</b></p>\n<b>Who is affected:</b> Global admins and security admins managing Microsoft 365 tenants across Office, SharePoint, Exchange, Teams, and Entra.<p></p>\n<p><b>What will happen:</b></p>\n<ul>\n<li>A new <b>Baseline Security Mode</b> dashboard will be available in the Microsoft 365 admin center.</li>\n<li>Admins can view the tenant’s current security posture compared to Microsoft’s recommended minimum security bar.</li>\n<li>Admins can run <b>impact analysis reports</b> to assess changes before applying them.</li>\n<li>Recommendations will be grouped by risk level, with statuses such as “At risk” or “Meets standards.”</li>\n<li>No immediate user impact unless admins apply changes.</li>\n</ul><p></p>\n\n<p><b>What you can do to prepare:</b></p>\n<ol>\n<li>Navigate to <b>Microsoft 365 admin center</b> &gt; <b>Settings </b>&gt; <b>Org Settings</b> &gt; <b>Security &amp; privacy</b> &gt; <b>Baseline Security Mode</b>.</li>\n<li>Review recommendations marked as “<b>At risk</b>.”</li>\n<li>Initiate an impact report to understand potential changes.</li>\n<li>Apply recommendations to bring your tenant to “<b>Meets standards</b>.”</li>\n\n</ol><p></p>\n<p>Communicate upcoming changes to your helpdesk or security teams.</p><p>Learn more: <a href=\"https://learn.microsoft.com/microsoft-365/baseline-security-mode/baseline-security-mode-settings?view=o365-worldwide\" target=\"_blank\">Baseline security mode settings | Microsoft Learn</a></p>\n<p><b>Compliance considerations:</b></p>\nNo compliance considerations identified; review as appropriate for your organization.<p></p>"
-    }
-  },
-  {
     "startDateTime": "2025-12-10T00:21:08Z",
     "endDateTime": "2026-07-31T08:00:00Z",
     "lastModifiedDateTime": "2026-03-05T21:19:44.117Z",
@@ -7125,38 +7032,6 @@
     "body": {
       "contentType": "html",
       "content": "<b></b>\n<p>Updated March 19, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p>Office for the web in Microsoft 365 now supports applying <b>sensitivity labels with user-defined permissions</b>. This enhancement provides organizations with greater flexibility and control over document access in <i>Word, Excel, and PowerPoint for the web</i>.</p><p>This feature will only be available in tenants that have enabled coauthoring on files encrypted with sensitivity labels:&nbsp;<a href=\"https://learn.microsoft.com/purview/sensitivity-labels-coauthoring\">Enable co-authoring for files encrypted with sensitivity labels</a></p>\n<p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=468888\" target=\"_blank\">468888</a>.</p>\n<b>When this will happen</b><p><b>General Availability</b></p><ul><li><b>Worldwide and GCC:</b>&nbsp;We will begin rolling out in mid-April 2026 (previously mid-March) and expect to complete by early May 2026 (previously early April).</li><li><b>GCCH and DoD:</b> We will begin rolling out in mid-April 2026 (previously mid-March) and expect to complete by early June 2026 (previously early May).</li></ul>\n<b>How this affects your organization</b><ul>\n<li><b>Who is affected:</b> All users of Word, Excel, and PowerPoint for the web in <i>Microsoft 365</i>.</li>\n<li><b>What will happen:</b>\n<ul>\n<li>Users can apply sensitivity labels with user-defined permissions in <i>Office for the web</i>.</li>\n<li>The experience aligns with the modernized permissions dialog in <i>Word, Excel, and PowerPoint for Windows</i>.</li>\n<li>No changes to existing admin policies; feature respects current configurations.</li>\n</ul>\n</li>\n</ul>\n<b>What you can do to prepare</b><p>No action is required. The user interface for applying custom permissions is consistent with the modernized dialog in <i>Office desktop apps</i>.</p><p>Learn more:&nbsp;</p><ul><li><a href=\"https://support.microsoft.com/office/apply-sensitivity-labels-to-your-files-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9#officeversion=web\" target=\"_blank\">Apply sensitivity labels to your files | Microsoft Support</a></li><li><a href=\"https://learn.microsoft.com/purview/encryption-sensitivity-labels#let-users-assign-permissions\" target=\"_blank\">Let users assign permissions - Restrict access to content by using sensitivity labels to apply encryption | Microsoft Purview | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/purview/sensitivity-labels-versions#sensitivity-label-capabilities-in-word-excel-and-powerpoint\" target=\"_blank\"> Sensitivity label capabilities in Word, Excel, and PowerPoint - Minimum versions for sensitivity labels in Office apps | Microsoft Purview | Microsoft Learn</a></li></ul>\n<b>Compliance considerations</b><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-01-03T02:57:54Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-02T15:56:19.73Z",
-    "title": "Microsoft Purview DLM: Retirement of SharePoint online information management and in-place records management features",
-    "id": "MC1211579",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Updated message",
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "SharePoint Online"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting April 2026, Microsoft will retire support for SharePoint Online's Information Management Policies, In-Place Records Management, and deletion-only document policies. Organizations should migrate to Microsoft Purview Data Lifecycle Management and Purview Records Management on their own schedule before support ends."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Updated February 2, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\nWe’re retiring several legacy SharePoint Online features to streamline compliance and data lifecycle management. Starting April 2026, support for the following features will no longer be provided even though the feature will continue to work.<p></p><ul>\n<li>Information Management Policies</li>\n<li>In-Place Records Management</li>\n<li>Document deletion policies (deletion only)</li>\n</ul>\nWe recommend using <b>Microsoft Purview Data Lifecycle Management</b> and <b>Purview Records Management</b>, where we continue to invest in modern, flexible compliance solutions.<p></p>\nFor details on the retirement plan and migration guidance, refer to:&nbsp;<a href=\"https://learn.microsoft.com/sharepoint/use-microsoft-purview-risk-and-compliance-solutions\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Use Microsoft Purview risk and compliance solutions instead of older SharePoint features</a>.<p></p>\n\n<p><b>[When this will happen:]</b></p>Support for the features will no longer be provided starting April 2026<br><p></p>\n\n<p><b>[How this affects your organization:]</b></p>\n<b>Who is affected:</b> Organizations using Information Management Policies, In-Place Records Management, or related deletion policies in SharePoint Online.<p></p>\n<b>What will happen:</b>\n<p></p><ul>\n<li>These features will no longer be supported by Microsoft.</li>\n</ul><p></p>\n\n<p><b>[What you can do to prepare:]</b></p><p>Microsoft won’t automatically migrate your older information management and SharePoint records management features in SharePoint Online. If you choose not to migrate to supported features, the older features will no longer be supported.</p><p>Between now and April 2026, you have the flexibility to migrate your scenarios on your own schedule. To prepare:</p><ul>\n<li>Review current use of legacy features and confirm compliance goals.</li>\n<li>Plan migration to <b>Microsoft Purview Data Lifecycle Management</b> and <b>Purview Records Management</b>.</li>\n<li>Audit retention schedules for duplicates or outdated policies.</li>\n<li>Confirm applicable licenses for Purview features.</li>\n<li>Implement modern features and verify functionality using tools like <b style=\"\">Policy Lookup</b>.</li>\n<li>Communicate this change to your Data Lifecycle and Records Management teams.</li>\n</ul>\nFor detailed migration strategies and feature mapping, refer to:&nbsp;<a href=\"https://learn.microsoft.com/sharepoint/migration-strategies\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">Migration strategies for moving to Microsoft Purview solutions</a>.<p></p>\n\n<p><b>[Compliance considerations:]</b></p>\nNo compliance considerations identified, review as appropriate for your organization.<p></p>"
     }
   },
   {
@@ -8437,46 +8312,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated April 29, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p>\n<p>We’re introducing a new capability that enables users to open Outlook emails directly within any full‑app Microsoft 365 Copilot experience, including Copilot chat. This enhancement helps reduce context switching by allowing users to view referenced emails alongside their Copilot interaction.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide): Rollout begins <b>mid-May 2026</b> (previously&nbsp;late April)&nbsp;and is expected to complete by <b>late May 2026</b> (previously&nbsp;early May).</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b style=\"\">Who is affected:</b></p>\n<ul>\n  <li>All users who access Microsoft 365 Copilot full‑app experiences, including Copilot chat.</li>\n</ul>\n\n<p><b style=\"\">What will happen:</b></p>\n<ul>\n  <li>Users will be able to open Outlook emails directly from references or sources shown in Copilot chat.</li>\n  <li>Emails will open side‑by‑side within the Copilot experience.</li>\n  <li>The feature is enabled by default.</li>\n  <li>Existing Microsoft 365 permissions and data access models remain unchanged.</li>\n  <li>No changes are made to Outlook, Exchange Online, or Copilot admin controls.</li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n\n<ul>\n  </ul><ul><li>No administrator action is required.</li><li>Update internal documentation if needed.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-01-29T00:43:17Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-01-29T00:43:39.14Z",
-    "title": "Microsoft Teams: Report a suspicious call",
-    "id": "MC1223828",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams",
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "536573"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams will introduce a \"Report a Call\" feature by mid-March 2026, allowing users to flag suspicious one-to-one calls. Reports share limited call metadata with organizations and Microsoft, viewable in Microsoft Defender portal or Teams Admin Center. The feature is enabled by default but can be disabled by admins."
-      },
-      {
-        "name": "Platforms",
-        "value": "Desktop, Mac, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>As Microsoft Teams calling adoption continues to grow across organizations, scam and phishing attempts targeting users through voice calls are increasing as well. Currently, users have no simple way to report suspicious calls, leaving organizations without visibility into these threats and without clear guidance on how users should respond.&nbsp;</p><p>To address this gap, we're introducing <b>Report a Call </b>in <i>Microsoft Teams</i>. With this feature, users can flag suspicious or unwanted one-to-one calls directly in<i> Teams</i>, giving your security team actionable intelligence and helping build organization-wide protection against bad actors.&nbsp;</p><p>This message relates to Microsoft 365 Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=536573\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">536573</a>.</p>\n\n<p><b>[When this will happen]</b>\n</p><p><b>Targeted Release: </b>Rollout will begin in&nbsp;<b>mid-March 2026 </b>and will be completed in&nbsp;<b>late March 2026</b>.</p><p><b>General Availability (Worldwide): </b>Rollout will begin in <b>mid-April 2026</b> and is expected to be completed in <b>late April 2026</b>.</p>\n\n<p><b>[How this will affect your organization]</b></p>\n\n<p><i>Who is affected:</i>\nUsers who make or receive calls in <i>Microsoft Teams</i> on Windows, Mac, and Web.</p>\n\n<p><i>What will happen:</i></p>\n<ul>\n  <li>A new <b>Report a Call </b>option will appear in<i> Teams call history </i>for one-to-one calls only (<b>ON by default </b>on the Teams client).</li><li>Users will be able to click <b><i>more options </i></b>next to any call and select <b><i>Report a Call</i></b>.</li><li>Relevant call metadata and limited contextual information will be securely shared with your organization and Microsoft.</li><li>Security teams will view detailed reported instances in the <i>Microsoft Defender portal</i>, which will require Defender for Office 365 (Plan 1 or Plan 2) or Defender XDR.</li><li>Information about user-submitted reports will be available in <i>Teams Admin Center</i> under Protection reports &gt; User-reported security submissions.&nbsp;</li><li>Admins will be able to investigate and take appropriate action.</li>\n</ul>\n\n<p><b>[What you can do to prepare]</b></p><p>While the reporting option is<b> enabled by default </b>on Teams clients, you can configure the Microsoft Defender portal to receive and access these reports or access basic submissions data in <i>Teams admin center</i>.</p><p><b>1. For enhanced reporting, enable the setting in the&nbsp;<i>Microsoft Defender portal</i>:</b></p><ul><li>Navigate to <i><b><a href=\"https://learn.microsoft.com/microsoftteams/end-user-reporting-security\" target=\"_blank\">User reporting settings</a></b></i><a href=\"https://learn.microsoft.com/microsoftteams/end-user-reporting-security\" target=\"_blank\">.</a></li><li>Ensure the Teams <b><i>call reporting setting</i></b> is enabled.</li><li>Without this, detailed reported calls will not appear in the <i><a href=\"https://security.microsoft.com/reportsubmission?viewid=user\" target=\"_blank\">defender portal</a></i><a href=\"https://security.microsoft.com/reportsubmission?viewid=user\" target=\"_blank\">.</a></li></ul><p>Alternatively, you can view reports in the <i>Teams admin center</i>:</p><ul><li>Open <b><i>Teams admin center &gt; Analytics &amp; Reports &gt; Protection Reports.</i></b></li><li>Select <b><i>User-reported security submissions</i></b> from the drop-down.</li><li>Select the desired time period and interaction mode (Calls).</li></ul>\n\n<p><b>2. Prepare user communication:</b></p><ul><li>Inform users about the new<b style=\"\"> Report a Call </b>option before rollout.</li><li>Clarify when to use it: suspicious calls, potential scams, unwanted calls from external parties.</li><li>Set expectations: reporting helps the organization, not just individual complaints.</li></ul><p><b>To disable the experience on the Teams client:</b></p><ul><li>In the <i>Teams admin center</i>, under <i><b>Calling settings</b></i>, disable the <i><b>Report a Call</b></i> toggle.</li></ul><p><b>[Compliance considerations]</b>\n</p><p><b>Data Processing:&nbsp;</b></p><p>Limited call-related metadata is processed when a user submits a report, including:</p><ul><li>Call timestamp and duration</li><li>Caller ID information (if available)</li><li>Teams user IDs for participants</li><li>User's reason for reporting (if provided)</li></ul>"
     }
   },
   {
@@ -10838,37 +10673,6 @@
     }
   },
   {
-    "startDateTime": "2026-02-28T00:08:31Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-28T00:09:35.797Z",
-    "title": "Retiring the Impala connector",
-    "id": "MC1240748",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": "2026-03-31T07:00:00Z",
-    "services": [
-      "Microsoft Power Automate in Microsoft 365"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The Impala connector will be retired and removed from Copilot Studio, Logic Apps, Power Apps, and Power Automate between April 1-14, 2026. Existing connections will stop working, and new ones won't be allowed. Users should migrate to alternative connectors and update related documentation to avoid disruption."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re <b>retiring the Impala connector</b> across Copilot Studio, Logic Apps, Power Apps, and Power Automate. This change aligns with our efforts to streamline our connector catalog, reduce maintenance of legacy components, and focus on modern, widely adopted data connectivity options. After this retirement, the Impala connector will no longer be supported.</p><p><b>[When this will happen]</b></p><ul><li>Retirement begins: <b>April&nbsp;1, 2026</b></li><li>Retirement completed: <b>April 14, 2026</b></li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p>Organizations using the Impala connector in any of the following services:</p><ul><li>Copilot Studio (Premium)</li><li>Logic Apps (Standard)</li><li>Power Apps (Premium)</li><li>Power Automate (Premium)</li></ul><p><i>What will happen</i></p><ul><li>The Impala connector will be retired and removed from Copilot Studio, Logic Apps, Power Apps, and Power Automate.</li><li>Existing connections using the Impala connector will stop functioning after the retirement window.</li><li>New connections using the Impala connector will no longer be allowed.</li><li>The connector and its actions—including Get row, Get rows, and Get tables—will no longer be accessible.</li></ul><p><b>[What you can do to prepare]</b></p><p>To reduce service disruption:</p><ul><li>Review your apps, flows, and Logic Apps that currently use the Impala connector.</li><li>Migrate any dependencies to supported alternative connectivity solutions (for example, connector options that support your organization’s Hadoop‑based environments).</li><li>Notify users and solution owners who rely on this connector.</li><li>Update internal documentation, runbooks, and helpdesk scripts to remove references to the Impala connector.</li><li>Learn more about the connector’s current capabilities and behavior through our documentation:&nbsp;<a href=\"https://learn.microsoft.com/connectors/impala/\" target=\"_blank\">Apache Impala | Connector reference | Connectors | Microsoft Learn</a></li></ul><p>If your apps or flows require ongoing connectivity to Impala endpoints, consult your data platform owners to determine your long‑term connectivity strategy.</p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-03-02T18:00:52.297Z",
     "endDateTime": "2027-03-02T18:00:52.237Z",
     "lastModifiedDateTime": "2026-03-02T18:00:53.65Z",
@@ -11056,37 +10860,6 @@
     }
   },
   {
-    "startDateTime": "2026-03-05T23:34:45Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-05T23:34:58.99Z",
-    "title": "Microsoft Defender for iOS: End of support for iOS 16 devices",
-    "id": "MC1245219",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Defender for iOS will end support for iOS 16 devices on April 30, 2026. Devices on iOS 16 will no longer receive updates or support, while iOS 17 or later devices remain fully supported. Organizations should identify affected devices and encourage upgrades or replacements."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]\n</b></p><p>To align with the iOS platform lifecycle and ensure customers remain protected with the most up‑to‑date security capabilities, <b>Microsoft Defender for iOS will end support for devices running iOS 16</b>. After support ends, Defender on iOS 10 devices will no longer receive feature updates, security fixes, or technical support. Devices running iOS 17 or later will continue to be fully supported.\n</p><p><b>[When this will happen]\n</b></p><p>Support for Microsoft Defender on iOS 16 devices will end on <b>April 30, 2026</b>.\n</p><p><b>[How this affects your organization]</b></p><p><b>Who is affected: </b>Organizations with users or managed devices running iOS 16 and using Microsoft Defender for iOS.\n</p><p><b>What will happen:</b></p><ul><li>Existing installations of Microsoft Defender for iOS 16 devices will continue to function, but:\n<ul><li>They will no longer receive new features.\n</li><li>They will no longer receive security updates.\n</li><li>They will no longer receive technical support.\n</li></ul></li><li>New installations on iOS 16 devices will no longer be available after support ends.\n</li><li>Devices updated to iOS 17 or later will continue to receive full support.\n</li></ul><p><b>[What you can do to prepare]\n</b></p><p>No admin action is required for this change to occur. </p><p>To prepare, you can:\n</p><ul><li>Identify iOS 16 devices using your organization’s device management tools.\n</li><li>Encourage users to upgrade eligible devices to iOS 17 or later.\n</li><li>Replace devices that cannot be upgraded, if necessary.\n</li><li>Update internal documentation and support team guidance.\n</li><li>Notify impacted users about the upcoming end of support.\n</li></ul><p>Learn more:&nbsp;<a href=\"https://learn.microsoft.com/defender-endpoint/minimum-requirements\" target=\"_blank\">Minimum requirements for Microsoft Defender for Endpoint</a></p><p><b>[Compliance considerations]\n</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-03-05T23:35:29Z",
     "endDateTime": "2026-11-30T07:00:00Z",
     "lastModifiedDateTime": "2026-05-04T22:00:22.717Z",
@@ -11195,36 +10968,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated April 29, 2026: After reviewing customer feedback, we have decided to pause rollout of this change at this time. We will communicate via Message center when we are ready to proceed.&nbsp;We apologize for any inconvenience.&nbsp;</p><p><b>Introduction</b></p>\n<p>To reduce notification noise and improve signal quality, Microsoft will disable <b>Teams Meeting Recording (TMR) </b>expiration notification emails. Customer feedback indicates these emails generate high volume with minimal engagement. Only the email notifications are being removed; recording expiration and deletion behavior remains unchanged.</p>\n\n<p><b>When this will happen</b></p>\n<p>We will communicate via Message center when we are ready to proceed.</p>\n\n<p><b>How this affects your organization</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>All Microsoft 365 tenants</li>\n  <li>Users who receive Teams meeting recording expiration emails</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Users will no longer receive email notifications when a Teams meeting recording expires.</li>\n  <li>Recording expiration and deletion policies remain unchanged.</li>\n  <li>No admin action or policy updates are required.</li>\n</ul>\n\n<p><b>What you can do to prepare</b></p>\n<ul>\n  <li>No action is required.</li>\n  <li>Optionally notify users and helpdesk teams of this change.</li>\n  <li>Update internal documentation if it references expiration emails.</li><li>Learn more and reply to our survey: <a href=\"https://techcommunity.microsoft.com/discussions/microsoftteams/upcoming-change-disabling-teams-meeting-recording-expiration-notification-emails/4501038\">Upcoming change: disabling Teams meeting recording expiration notification emails | Tech Community</a></li>\n</ul>\n\n<p><b>Compliance considerations</b></p>\n<p>No compliance considerations identified; review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-03-06T15:46:45Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-06T15:47:33.74Z",
-    "title": "AI Admin RBAC updates",
-    "id": "MC1245636",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Entra"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "The AI Administrator role is updated to support Agent 365, enabling delegated agent management without Global Admin involvement for routine tasks. Rollout starts March 2026. AI Admins gain expanded permissions for agent lifecycle management, tenant-wide consent (excluding Microsoft Graph app permissions), and risk monitoring via Identity Protection, enhancing security and compliance."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>\nWe are updating the <b>AI Administrator</b>&nbsp;role to support <b>Agent 365</b>. This update enables delegated, day-to-day agent management while preserving enterprise security and least-privilege principles.</p>\n\n<p>The AI Admin role is designed for managing agent lifecycles and agentic users. By removing the dependency on <b>Global Administrators</b> for routine, agent-scoped actions, this change helps eliminate operational bottlenecks, supports scale, and maintains clear separation of duties. Global Admin elevation remains required only for rare, high-risk scenarios.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  </ul><p>General Availability: Rollout begins <b>early March 2026</b>; expected completion by <b>late March 2026</b></p><ul>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n\n<p><b>Who is affected</b></p>\n<ul>\n  <li>Microsoft 365 tenants using Agent 365</li>\n  <li>Administrators assigned the <b>AI Administrator role</b></li>\n  <li>Organizations that currently require <b>Global Administrator</b> involvement for routine agent management</li>\n</ul>\n\n<p><b>What will happen</b></p>\n<ul>\n  <li><b>AI Administrators </b>can grant tenant-wide admin consent for apps and agents requesting permissions, except Microsoft Graph application permissions</li>\n  <li>AI Admins can view basic subscription properties</li>\n  <li>AI Admins can view agents flagged as risky through Microsoft Entra Identity Protection. Learn more: <a href=\"https://learn.microsoft.com/entra/id-protection/concept-risky-agents\" target=\"_blank\">ID Protection for agents (Preview)</a>&nbsp;(this article will be updated soon).</li><li>To review existing capabilities of the AI Admin, visit <a href=\"https://learn.microsoft.com/entra/identity/role-based-access-control/permissions-reference#ai-administrator\" target=\"_blank\" style=\"\">AI Administrator</a>.</li>\n  <li>AI Admins can perform full CRUD (create, read, update, delete) operations on agents</li>\n  <li>This includes adding, deleting, and managing agent credentials</li>\n  <li>Agent management is available through the Microsoft 365 admin center, Microsoft Entra admin center, PowerShell, and APIs</li>\n</ul>\n\n<p><b>What is not included</b></p>\n<ul>\n  <li>Apps or agents requiring Microsoft Graph application permissions will continue to require <b>Privileged Role Administrator</b> or <b>Global Administrator</b> approval</li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>Review existing assignments for the <b>AI Administrator</b> role to ensure only appropriate users have access</li>\n  <li>If you want to opt out, remove the AI Admin role from users who should not grant tenant-wide consent or manage agents</li>\n</ul>\n\n<p><b>Review or update role assignments</b></p>\n<ol>\n  <li>Sign in to the Microsoft 365 admin center at <a href=\"https://admin.cloud.microsoft\" target=\"_blank\">admin.cloud.microsoft</a> using a <b>Global Administrator</b> or <b>User Administrator</b> account.</li>\n  <li>Go to <b>Roles </b>&gt; <b>Role assignments</b>.</li>\n  <li>Select <b>AI Administrator</b>.</li>\n  <li>Review the list of users assigned to the role.</li>\n  <li>If needed, remove the role from users or add users who should legitimately manage AI agents.</li>\n</ol>\n\n<p><b>Learn more: </b><a href=\"https://learn.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide\" target=\"_blank\">About administrator roles in the Microsoft 365 admin center - Microsoft 365 admin | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p>\n\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th align=\"left\">Question</th>\n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change alter how existing customer data is processed, stored, or accessed?</td>\n    <td>AI Administrators gain expanded permissions to manage agents and agent credentials, which may indirectly affect how agents access tenant data.</td>\n  </tr>\n  <tr>\n    <td>Does the change introduce or significantly modify AI or agent capabilities that interact with customer data?</td>\n    <td>The update expands AI Administrator authority over agent lifecycles and tenant-wide consent, increasing control over agent behavior and data access.</td>\n  </tr>\n  <tr>\n    <td>Does the change alter how admins can monitor or demonstrate compliance activities?</td>\n    <td>AI Administrators can now view agents flagged as risky through Identity Protection, improving visibility and compliance monitoring.</td>\n  </tr>\n  <tr>\n    <td>Does the change include an admin control, and can it be controlled through Entra ID role membership?</td>\n    <td>All new capabilities are governed by assignment of the AI Administrator role in Microsoft Entra ID.</td>\n  </tr>\n</tbody></table>"
     }
   },
   {
@@ -11916,46 +11659,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated May 13, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re introducing a new <b>Follow</b> option for meetings in <i>Outlook Mobile</i>.&nbsp; This feature helps users stay informed when they cannot attend by prompting organizers to record the meeting and by ensuring followers receive key updates and follow‑up items.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide)</b>: Rollout will begin in <b>mid-June 2026</b> (previously&nbsp;mid-May)&nbsp;and is expected to complete by<b>&nbsp;mid-July 2026 </b>(previously end of May).</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All users who schedule or respond to meetings in <i>Outlook Mobile</i>. Attendees will only see the option to respond with <i><b>Follow</b> </i>if a meeting has two or more participants and when the organizer has requested responses.</li></ul><p><i>What will happen</i></p><ul><li>A new <b>Follow</b> option will appear as the third option in the<i> mobile RSVP menu</i>. To select “Maybe,” tap the three dots ... :&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/e4855fa4-c943-4f9d-b25e-681c0a935288/e305ef8377ec2d56dc39a4f2072368944d7ca288.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>The <b>Maybe RSVP </b>option will move into the overflow menu:\n&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/f27eb372-d0c2-4b15-979d-488465cc82b6/e9a2f6f33704e2b7790195f05b6aec26b4ff96e9.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>The <b>No </b>response option will move to the second position in the RSVP list.</li><li>The feature will be<b> on by default </b>for all tenants.</li><li>Organizers may receive prompts to record the meeting or address follow‑up items when attendees choose to Follow.</li><li>No changes to existing Outlook or Exchange Online admin policies.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action is required.</p><p>Optional steps:</p><ul><li>Notify helpdesk and support teams about the updated RSVP options and UI behavior.</li><li>Update internal end‑user documentation if your organization provides guidance for meeting responses.</li></ul><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/follow-a-meeting-in-outlook-4dd196ec-b4ae-4fca-9577-cb9c297723be\" target=\"_blank\">Follow a meeting in Outlook | Microsoft Support</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-03-10T22:50:56Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-10T22:51:24.637Z",
-    "title": "Microsoft Viva: Satisfaction rate metric for Microsoft 365 Copilot in the Copilot analytics dashboard",
-    "id": "MC1248394",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Viva",
-      "Microsoft Copilot (Microsoft 365)"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "496655"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft 365 Copilot analytics dashboard will add a new satisfaction rate metric aggregating thumbs-up/down feedback from the past 28 days, visible in the Impact tab with filters. It rolls out worldwide March–April 2026, includes a 4-month data backfill, and requires no admin action."
-      },
-      {
-        "name": "Platforms",
-        "value": "TeamsAndSurfaceDevices, Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We are introducing a<b> new satisfaction rate metric</b> in the <i>Microsoft 365 Copilot analytics dashboard</i>. This metric aggregates user-provided thumbs-up and thumbs-down feedback across Microsoft 365 apps over the past 28 days. It helps organizations understand how users perceive Copilot responses and provides improved visibility into sentiment trends. The satisfaction rate will appear in the<i><b> Impact </b>tab</i>, with filtering options for scope, organization, and job function.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=496655#Roadmap\" target=\"_blank\">496655</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>We will begin rolling out in<b>&nbsp;March 2026</b> and expect to complete in <b>April 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i>:</p><ul><li>All Microsoft 365 tenants with users who have access to the Copilot analytics dashboard.</li><li>Admins who manage Copilot feedback visibility or sentiment reporting.</li><li>Users with Microsoft 365 Copilot licenses.</li></ul><p><i>What will happen</i>:</p><p>A new Satisfaction rate metric will appear in the <i>Copilot analytics dashboard</i> under the<b> </b><i><b>Impact </b>tab</i>.</p><ul><li>The metric aggregates all thumbs-up and thumbs-down feedback on Copilot responses from the past 28 days.</li><li>The dashboard will include a<b>&nbsp;4‑month backfill of satisfaction data</b>, going back to Dec 16, 2025.</li><li>Page‑level filters (organization, scope, job function) allow admins to view sentiment in more detail.</li><li>For organizations that have enabled Copilot feedback collection in the <i>Microsoft admin center</i>, aggregated tenant‑level sentiment will appear automatically.</li><li>No changes to user workflow; no admin policy configuration is required.</li></ul><p><i>Screenshot 1 - View of the Satisfaction rate hero card:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/b8547fa6-7815-4f81-94d0-e3589469a544/88021d4697c05f93a10c4f87029213e31cc255d7.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p></p><p><i>Screenshot 2 - View of the Satisfaction rate - 6 month trend:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/13af47d2-b448-4299-a8ac-e7de317f7060/9bd089fa392d703d0e81f166b8f87bdec0f1572a.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><b>[What you can do to prepare]</b></p><p>No action is required.</p><p>However, you may choose to:</p><ul><li>Inform Copilot dashboard users about the new metric and how it can support sentiment analysis.</li><li>Update internal documentation or helpdesk materials to include this new reporting capability.</li><li>Review existing Copilot feedback settings in the <i>Microsoft admin center</i> if you want to manage how user sentiment is collected.</li></ul><p><b>Learn more:&nbsp;</b><a href=\"https://learn.microsoft.com/viva/insights/org-team-insights/copilot-dashboard\" target=\"_blank\">Connect to the Microsoft Copilot Dashboard for Microsoft 365 customers | Viva Insights | Microsoft Viva | Microsoft Learn</a></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -13183,37 +12886,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>We are expanding the <b>Data Security Posture Agent </b>in <i>Microsoft Purview</i> with a <b>new credential scanning capability</b>. This update helps your organization discover exposed credentials and related data security risks across scoped locations. The agent analyzes selected data locations to detect sensitive credential types—including Microsoft Entra user credentials, private keys, and API tokens—and provides risk scores, AI-generated insights, confidence ratings, and credential categories so you can review, confirm, and take action from a single task board view.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558436\" target=\"_blank\">558436</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview:</b> Rollout will begin in<b> late March 2026</b> and complete by <b>early April 2026</b>.</li><li><b>General Availability (Worldwide):</b> Rollout will begin in<b> late June 2026 </b>and complete by <b>early July 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Admins who manage Microsoft Purview and use the Data Security Posture Agent within Microsoft 365 tenants</li></ul><p><i>What will happen</i></p><ul><li>A <b>new credential scanning capability</b> will be added to the Data Security Posture Agent under the <b style=\"font-style: italic;\">Explore Agent </b>tab (<i>figures 1-5</i>):</li></ul><p><i>1.</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/9663e53e-073f-4b44-8c9c-705cd73bf325/4cbc0f7636bfd5503679a77481cb95a28973cd27.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p><i>2.</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/42c1c121-700e-47c5-b852-de7357cfab60/4ab34bc5c0b4fe4501d9fd432c8d65c3d9a0aaaf.png\" alt=\"user settings\" style=\"width: 400px;\"></p><p></p><p><i>3.</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/1e58dd78-b0da-48c2-926e-df7916332ed0/6e085253b45377affdd19ce177abda15776d8074.png\" alt=\"user settings\" style=\"width: 400px;\"></p><p></p><p><i>4.</i></p><p></p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/589bad52-4c1a-47d7-b2e8-a294f527f64f/b84d20fa90bac7432b094e6935ff1e7f0e43f79e.png\" style=\"width: 400px;\" alt=\"user settings\"><p></p><p></p><i>5.</i><p></p><p></p><p></p><p></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a29fe061-81f3-4ee3-956b-d8cf960ef522/3d8a28e26f875ad278ef87316e61657e6a83266c.png\" style=\"width: 400px;\" alt=\"user settings\"></p><ul><li>The feature uses LLM-powered credential detection to:<p></p><ul><li>Scan selected data locations for exposed credentials.</li><li>Detect Entra ID credentials, private keys, API tokens, and other credential types.</li></ul><p></p></li><li>Each finding includes:<ul><li>A risk score</li><li>AI-generated insights</li><li>A confidence score</li><li>A credential category</li></ul></li><li>A task board experience will be available to track progress, review findings, and take action.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>Set up the Data Security Posture Agent in <i><b>Microsoft Purview &gt; Explore Agent</b></i> using the required admin roles.</li><li>Communicate this change to your security and compliance teams.</li></ul><p><b>Learn more:&nbsp;</b></p><ul><li><a href=\"https://learn.microsoft.com/purview/data-security-investigations-posture-agent\" target=\"_blank\">Get started with Microsoft Purview Posture Agent in Data Security Investigations | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/purview/copilot-in-purview-agents-overview\" target=\"_blank\">Security Copilot Agents in Microsoft Purview overview | Microsoft Purview | Microsoft Learn</a></li></ul><p></p><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed?&nbsp;</td><td>The agent discovers exposed credentials and data security risks across scoped locations&nbsp;</td></tr><tr><td>Does the change introduce or significantly modify AI/ML or agent capabilities that interact with or provide access to customer data?&nbsp;</td><td>Introduces LLM-powered discovery and risk assessment.&nbsp;</td></tr><tr><td>Does the change provide users any new way of interacting with generative AI?&nbsp;</td><td>Admins receive GenAI-generated summaries and LLM-assisted tasks.&nbsp;</td></tr><tr><td>Does the change include an admin control and can it be controlled through Entra ID group membership?&nbsp;</td><td>Setup requires admin roles in <i>Microsoft Purview</i>.&nbsp;</td></tr></tbody></table><p></p>"
-    }
-  },
-  {
-    "startDateTime": "2026-03-23T23:31:55Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-23T23:32:03.427Z",
-    "title": "Changes to OneLake operation reporting in Microsoft Fabric",
-    "id": "MC1259829",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Power BI"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Fabric's OneLake introduces storage tiers (hot, cool, cold) and updates operation reporting by including tier names, consolidating proxy/redirect operations, and grouping by workspace in the Capacity Metrics app. Billing rates remain unchanged. Changes start April 1, 2026; item-level details move to OneLake diagnostics."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We're introducing <b>OneLake storage tiers </b>(hot, cool, and cold) in <i>Microsoft Fabric</i>. As part of this rollout, we are updating how OneLake compute operations appear in your capacity billing. These updates improve clarity and align reporting with the new storage tier model. <b>There is no change to billing rates.</b></p><p><i>Key updates include</i></p><ul><li><b>Operation names include the storage tier.</b> For example, “<i>OneLake Read via Proxy</i>” becomes “<i>OneLake Read (Hot)</i>.”</li><li><b>Proxy and Redirect operations are consolidated.</b> Operations previously reported separately will appear under a single operation name. Because consumption rates are the same, this has <b>no billing impact</b>.</li><li><b>Operations are reported at the workspace level.</b> A new OneLake item in the<i> <a href=\"https://learn.microsoft.com/fabric/enterprise/metrics-app-install?tabs=1st\" target=\"_blank\">Fabric Capacity Metrics app</a></i> groups operations by workspace instead of individual items. For item-level detail, use OneLake diagnostics to understand usage across Fabric and non-Fabric workloads.</li></ul><p>Units of measure and consumption rates remain unchanged.</p><p><b>[When this will happen]</b></p><ul><li>Operation name updates <b>begin April 1, 2026</b>.</li><li>Operation consolidation and Metrics app updates will roll out over the following weeks.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All organizations using Microsoft Fabric with OneLake storage and capacity billing</li></ul><p><i>What will happen</i></p><ul><li><b>Operation names</b> will include the applicable storage tier (for example, “Hot”): \n</li><li><b>Proxy and Redirect operations</b> will appear under a single consolidated operation name:\n</li><li><b>OneLake operations</b> will be grouped by workspace under a new OneLake item in the Fabric Capacity Metrics app.\n</li><li><b>Item-level compute reporting</b> will move to OneLake diagnostics.</li></ul><p>The following example illustrates how the report now appears:</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/77a4feaa-4770-46c7-a628-5a5d650a79e2/972c042a60d89aadfd477ff86903c39ba9a98722.png\" alt=\"user settings\" style=\"width: 400px;\"></p><p>There is <b>no change</b> to billing rates or your total costs.</p><p><i>Operation name changes:</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/4c52ee5e-d1c0-479a-8746-c96c0ea66049/d26e2c0b56e2464fae9fab36667cf48c7077337f.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p><br></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/f10be11d-045a-432d-8478-addf69f35e1a/4ff50d53c6bf36681022f47a421e688690a783f9.png\" style=\"width: 400px;\" alt=\"user settings\"> </p><p> </p><p><b>[What you can do to prepare]</b></p><ul><li><b>Review any custom analytics or automation. </b>Update operation names in reports, dashboards, and scripts to align with the new naming convention <b>before April 1, 2026</b>.</li><li><b>Plan for workspace-level reporting. </b>If you rely on item-level operation details in the <i>Capacity Metrics app</i>, <a href=\"https://learn.microsoft.com/fabric/onelake/onelake-diagnostics-overview\" target=\"_blank\">configure OneLake diagnostics</a> to maintain that granularity.</li><li>Review the documentation for <a href=\"https://learn.microsoft.com/fabric/onelake/onelake-consumption\" target=\"_blank\">OneLake compute consumption</a>&nbsp;in <i>Microsoft Fabric</i>.</li><li>Share with your helpdesk and reporting teams if they monitor capacity or cost analytics.</li></ul><p>No other action is required.</p><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/fabric/enterprise/metrics-app-install?tabs=1st\" target=\"_blank\">Install the Microsoft Fabric capacity metrics app | Microsoft Fabric | Microsoft Learn</a><br></li><li><a href=\"https://learn.microsoft.com/fabric/onelake/onelake-consumption\" target=\"_blank\">OneLake compute and storage consumption | OneLake | Microsoft Fabric | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/fabric/onelake/onelake-diagnostics-overview\" target=\"_blank\">OneLake diagnostics | OneLake | Microsoft Fabric | Microsoft Learn</a></li><li><b>OneLake storage tiers </b>- <a href=\"https://roadmap.fabric.microsoft.com/?product=onelake\" target=\"_blank\">Microsoft Fabric Roadmap</a></li><li><a href=\"https://learn.microsoft.com/fabric/onelake/onelake-overview\" target=\"_blank\">OneLake, the OneDrive for data | OneLake | Microsoft Fabric | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p><p><b>[Support]</b></p><p>For assistance, contact your Microsoft account team or visit Microsoft Fabric support.</p>"
     }
   },
   {
@@ -15276,36 +14948,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated April 7, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>Featured conversations&nbsp;in public Viva Engage communities now include the option to promote the message to all network members or only to community members. Featured conversations in private communities remain scoped to members only.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558438\" target=\"_blank\">558438</a></b>.</p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/a3440afb-3fd6-4818-b055-22b50103bd7b/d744f81518d052d94fff02028e7f5ebeea0172cf.png\" style=\"width: 400px;\"><br></p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>We will begin rolling out in <b>late April 2026</b>, and we expect to complete rolling out by<b> early May 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>This change will apply to Microsoft 365 tenants using Viva Engage.</li><li>This change will affect users who feature conversations in <i>public Viva Engage communities</i>.</li><li>This change will not affect featured conversations in<i> private communities</i>.</li></ul><p><i>What will happen</i></p><ul><li>When a conversation is featured in a <i>public community</i>, authors will be able to choose whether it is promoted to<b> all network members</b> or only to <b>community members</b>.</li><li>Featured conversations in <i>private communities</i> will continue to be visible only to members.</li><li>Featured conversations will continue to appear at the <i>top of the Viva Engage home feed</i> and in <i>Viva Engage email digests</i>.</li><li>The feature will be<b> enabled by default</b>.</li><li>Existing permissions and moderation rules will continue to apply.</li></ul><p><b>Learn more:</b> <a href=\"https://support.microsoft.com/office/feature-a-conversation-in-viva-engage-92469ece-8a63-424f-9ad6-802ad90fc5c4\" target=\"_blank\">Feature a conversation in Viva Engage | Microsoft Support</a> (updates coming soon, ahead of rollout)</p><p><b>[What you can do to prepare]</b></p><p>No admin action will be required.</p><p>You may want to:</p><ul><li>Update internal documentation or training materials for community managers</li><li>Communicate this change to users who manage Viva Engage communities.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-04-07T23:24:47Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-04-07T23:24:53.407Z",
-    "title": "Microsoft Teams: Smarter auto suggestions to help you search faster",
-    "id": "MC1273443",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Feature update",
-      "User impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Teams will introduce smarter, personalized Autosuggest in search by mid-April 2026, showing clearer suggestions for people, channels, and chats to improve search speed and relevance. The feature is enabled by default, requires no admin changes, and enhances user experience without affecting data storage or permissions."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re improving the <b>Microsoft Teams search experience</b> with smarter, personalized <b>Autosuggest </b>to make it easier to find what you need as you type. With this update, Teams now shows clear, easy-to-recognize suggestions right in the search dropdown, helping you quickly choose the right direction without needing to retype or refine your query. These suggestions are tailored based on your activity across chats, channels, and the people you interact with.</p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/161b9d2c-cb12-40ec-9038-5d591a199671\" style=\"width:400px;\" alt=\"user settings\"></p><p><b>[When will this happen]</b></p><p>General Availability (Worldwide): Rollout will begin in <b>mid-April 2026 </b>and is&nbsp;expected to complete by <b>late April 2026</b>.</p><p><b>[How this affects your organization]\n</b></p><p><b>Who is affected:</b></p><ul><li>Microsoft Teams users</li></ul><ul>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>As users type in the Teams search box, Autosuggest will surface clearer, easier-to-recognize suggestions such as:</li><ul>\n<li>People</li><li>Channels</li><li>Chats - Group chats, meeting chats</li></ul><li>Selecting a suggestion automatically completes the search text.</li><li>Users can navigate and select suggestions using the keyboard.</li><li>Search results are more relevant, especially for short or informal queries (for example, “Alex release update” or “Jordan meeting preread”).</li><li>The feature is <b>enabled by default</b>.</li><li>No changes are made to existing admin policies.</li></ul><p><b>[What you can do to prepare:]</b></p><ul><li>No action is required. The feature is enabled by default.</li><li>Consider notifying users about the improved search experience to help set expectations and reduce support questions.</li><li>Update internal help documentation or training materials if you reference Teams search behavior.</li></ul><p><b>[Compliance considerations:]</b></p><p>The feature changes how existing Teams data (messages, people, channels) is surfaced during search, but does not change underlying storage, permissions, or data residency.</p>"
     }
   },
   {
@@ -18237,37 +17879,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated April 29, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re <b>updating dynamic distribution groups (DDGs)</b> in <i>Exchange Online</i> so group membership is available sooner after a group is created or its filter is changed. For DDGs whose filter returns 5,000 members or fewer, membership will be populated during the creation or modification operation, eliminating the previous wait of up to two hours.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=560550\" target=\"_blank\">560550</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>We will begin rolling out in<b> late May 2026 </b>and expect rollout to complete by <b>early June 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><p>Exchange Online administrators who create or manage dynamic distribution groups using the Exchange admin center (EAC) or PowerShell</p><p><i>What will happen</i></p><ul><li>For DDGs whose filter returns&nbsp;<b>5,000 members or fewer</b>, membership will be <b>populated as part of the create or modify operation</b>.</li><li>For DDGs whose filter returns&nbsp;<b>more than 5,000 members:</b><ul><li><b>Membership will be populated</b> by a background process <b>within up to 2 hours.</b><p style=\"margin-left: 25px;\"></p></li><li>A <b>warning message</b> will now be shown at creation or modification time, indicating that membership will be populated in the background.<p style=\"margin-left: 25px;\"><i>Warning in PowerShell</i>:</p><p style=\"margin-left: 50px;\"><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/5c399448-a0eb-4d54-a610-11556529b167/369fbd884d330eb49c3c574423187bd28ee1350d.png\" style=\"width: 400px;\" alt=\"admin settings\"></p><p style=\"margin-left: 25px;\"><i>Warning in EAC</i>:</p><p style=\"margin-left: 25px;\"><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/02fe41e9-53cb-4dd7-86e4-178344cc9813/234d80ffc724ab9f248f265e4701a246daf48950.png\" style=\"width: 400px;\" alt=\"admin settings\"></p><p></p></li></ul></li><li><b>For modifications</b>, the DDG <b>continues to use the previous membership list</b> until the background process completes.</li><li><b>The routine 24-hour membership refresh cycle will not be affected.</b></li><li>This behavior will apply to DDGs created or modified using:<ul><li>Exchange admin center (EAC)</li><li>PowerShell (<i><b>New-DynamicDistributionGroup</b></i>, <i><b>Set-DynamicDistributionGroup</b></i>)</li></ul></li></ul><p></p><p><b>Summary of behavior after rollout</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Scenario</b></td><td><b>Members ≤ 5,000&nbsp;</b></td><td><b>Members &gt; 5,000</b></td></tr><tr><td><b>Create new DDG</b></td><td>Membership will be populated immediately as part of the operation.</td><td>Membership will be populated within 2 hours (no change).</td></tr><tr><td><b>Modify DDG filter</b></td><td>Membership will be populated immediately as part of the operation.</td><td><p>Membership will be populated within 2 hours (no change). </p><p>DDG continues to use the previous membership list until background process completes.</p></td></tr><tr><td><b>Routine refresh (every 24 hours)</b></td><td>No change.</td><td>No change.</td></tr></tbody></table><p><b>[What you can do to prepare]</b></p><ul><li>No action is required.</li><li>Update internal documentation or helpdesk guidance that<b> references a 2-hour wait time</b> for DDG membership population after creation or modification.</li><li>Inform administrators that<b> immediate membership availability will apply</b> to DDGs whose filter returns 5,000 members or fewer after rollout.</li></ul><p><b>Learn more</b>:</p><ul><li><a href=\"https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/create-manage-dynamic-distribution-groups\" target=\"_blank\">Create and manage dynamic distribution groups in Exchange Online | Recipients in Exchange Online | Exchange Online | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/exchange/recipients-in-exchange-online/manage-dynamic-distribution-groups/troubleshoot-ddg-membership-issues\" target=\"_blank\">Troubleshoot dynamic distribution group membership issues | Dynamic distribution groups | Recipients in Exchange Online | Exchange Online | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-04-28T22:14:53Z",
-    "endDateTime": "2026-05-31T07:00:00Z",
-    "lastModifiedDateTime": "2026-04-28T22:15:01.717Z",
-    "title": "OneDrive sync supports up to 1 million items on Windows",
-    "id": "MC1294528",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft OneDrive"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "OneDrive sync on Windows will support syncing up to 1 million items per device starting in Public Preview in late April 2026, benefiting users with large libraries. Devices not meeting requirements will remain at the 300,000-item limit. No disruption is expected, and no action is needed unless participating in the preview."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>OneDrive sync on Windows will support <b>syncing up to 1 million items per sync instance per device</b>. This increase is intended to help organizations with large OneDrive and SharePoint libraries sync more content reliably across devices. The capability is planned to be available first in <b>Public Preview</b> (requires the Insiders ring) and later in General Availability.</p><p>Devices that do not meet the minimum hardware and configuration requirements will continue to sync at the existing <b>300,000-item supported limit </b>without disruption.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview: </b>We will begin rolling out in<b> late April 2026</b> and expect to complete by <b>late April 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Users syncing<b>&nbsp;OneDrive (consumer), OneDrive for Business</b> or <b>SharePoint document libraries</b> on <b>Windows</b></li><li>Users with libraries that approach or exceed the current <b>300,000-item</b> supported sync limit</li><li>Preview participants using the<b> Insiders ring</b></li></ul><p><i>What will happen</i></p><ul><li>Eligible Windows devices can sync <b>up to 1 million items per sync instance</b>.</li><li>Devices that do not meet the requirements remain supported up to <b>300,000 items</b> with no change in behavior.</li><li>No disruption is expected for existing sync setups.</li></ul><p style=\"margin-left: 50px;\"><i><b>Note: </b>Performance is not yet optimized for syncing a high volume of read‑only files or for accounts under legal hold. Microsoft is actively working to improve performance and reliability for these scenarios.</i></p><p><b>[What you can do to prepare]</b></p><p>No action is required if you do not plan to use Public Preview.</p><p>If you plan to evaluate or prepare for this capability:</p><ul><li>Identify devices and users likely to benefit from syncing very large libraries.</li><li>Ensure devices meet the <a href=\"https://support.microsoft.com/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa#numberitemscanbesynced\" target=\"_blank\">minimum requirements</a> (supported OS, memory, storage, and processor).</li><li>Verify the recommended <a href=\"https://learn.microsoft.com/sharepoint/ideal-state-configuration\" target=\"_blank\">ideal state configuration</a> for OneDrive and SharePoint sync reliability.</li><li>Inform helpdesk staff and impacted users that <b>Public Preview requires the Insiders ring</b> and that <b>ineligible devices will remain at the current limit</b>.</li></ul><p><b>Learn more:</b>&nbsp;</p><ul><li><a href=\"https://learn.microsoft.com/sharepoint/sync-client-update-process#how-we-release-updates-through-multiple-rings\" target=\"_blank\">How we release updates through multiple rings - The OneDrive sync app update process | SharePoint in Microsoft 365 | SharePoint | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/sharepoint/ideal-state-configuration\" target=\"_blank\">Recommended sync app configuration | SharePoint in Microsoft 365 | SharePoint | Microsoft Learn</a></li><li><a href=\"https://support.microsoft.com/office/restrictions-and-limitations-in-onedrive-and-sharepoint-64883a5d-228e-48f5-b3d2-eb39e07630fa\" target=\"_blank\">Restrictions and limitations in OneDrive and SharePoint | Other issues | Troubleshoot | OneDrive | Microsoft Support</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
