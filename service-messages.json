@@ -9594,8 +9594,8 @@
   },
   {
     "startDateTime": "2026-02-26T00:20:37Z",
-    "endDateTime": "2026-06-22T07:00:00Z",
-    "lastModifiedDateTime": "2026-05-05T23:13:46.24Z",
+    "endDateTime": "2026-08-10T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-02T22:33:33.107Z",
     "title": "(Updated) Outlook: Delimiter setting admin policy",
     "id": "MC1239176",
     "category": "stayInformed",
@@ -9620,7 +9620,7 @@
       },
       {
         "name": "Summary",
-        "value": "A new Exchange Online admin policy will allow admins to set a tenant-wide default for using commas as recipient separators in Outlook mail compose and reply. Rollout starts early April 2026, completing by mid-May. Users can override unless locked by admin. No automatic changes occur without admin action."
+        "value": "A new Exchange Online admin policy will let admins set the tenant-wide default for using commas as recipient separators in Outlook mail compose and reply. Rollout starts April 2026, completing by July. Users can still override the setting. No automatic changes occur without admin action."
       },
       {
         "name": "Platforms",
@@ -9629,7 +9629,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated May 5, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re adding a new Exchange Online admin policy that gives admins more control over the default Mail Compose and Reply setting that determines whether commas are used as recipient separators.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557676\" target=\"_blank\">557676</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General availability (Worldwide): </b>Rollout will begin in <b>early April 2026</b> and complete by <b>mid-May 2026</b> (previously&nbsp;mid‑April).</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Exchange Online administrators in New Outlook for Windows and Outlook for Web</li><li>All users composing or replying to email in <i>Outlook</i> where no per‑user override is configured</li></ul><p><i>What will happen</i></p><ul><li>A new admin policy will be available to set the tenant‑wide default for “<i><b>Use commas as recipient separators</b></i>.”</li><li>Admins can choose whether the default is on or off for all users.</li><li>Users may still change this setting in their <i>Outlook client </i>unless an admin enforces a policy that locks it:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d53d4d89-2cf9-4b09-8916-ad98fa64e98e/51360c8601e14324e4cd6d6a0a45e002a951a767.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>This update is especially useful for organizations whose contacts commonly use “Last name, First name” formats.</li><li>No changes will occur automatically—tenants will retain existing behavior unless an admin modifies the policy.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required. If desired, you may configure the new admin policy after rollout if you want to establish a consistent default.&nbsp;You can set this value&nbsp;via Powershell with the command \"Set-Organization Config -RecipientDelimeters&nbsp;&lt;Boolean&gt;.\"</p><p>You may also consider the following actions:&nbsp;</p><ul><li>Review your organization’s preferred recipient formatting conventions.</li><li>Update internal documentation if your helpdesk or user‑training materials reference this setting.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated June 2, 2026: We have updated the content and timeline. We are in the process of correcting an issue with setting the policy. We expect to complete in early July. Thank you for your patience.&nbsp;&nbsp;</p><p><b>[Introduction]</b></p><p>We’re adding a new Exchange Online admin policy that gives admins more control over the default Mail Compose and Reply setting that determines whether commas are used as recipient separators.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557676\" target=\"_blank\">557676</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General availability (Worldwide): </b>Rollout will begin in <b>early April 2026</b> and complete by <b>early July 2026</b> (previously mid-May).</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Exchange Online administrators in New Outlook for Windows and Outlook for Web</li><li>All users composing or replying to email in <i>Outlook</i> where no per‑user override is configured</li></ul><p><i>What will happen</i></p><ul><li>A new admin policy will be available to set the tenant‑wide default for “<i><b>Use commas as recipient separators</b></i>.”</li><li>Admins can choose whether the default is on or off for all users.</li><li>If the policy is in effect, all users will have their setting default to the admin's choice.</li><li>Users may still toggle this setting in their Outlook client after the policy is set:&nbsp;<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/d53d4d89-2cf9-4b09-8916-ad98fa64e98e/51360c8601e14324e4cd6d6a0a45e002a951a767.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>This update is especially useful for organizations whose contacts commonly use “Last name, First name” formats.</li><li>No changes will occur automatically—tenants will retain existing behavior unless an admin modifies the policy.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required. If desired, you may configure the new admin policy after rollout if you want to establish a consistent default.&nbsp;You can set this value&nbsp;via Powershell with the command \"Set-Organization Config -RecipientDelimeters&nbsp;&lt;Boolean&gt;.\"</p><p>You may also consider the following actions:&nbsp;</p><ul><li>Review your organization’s preferred recipient formatting conventions.</li><li>Update internal documentation if your helpdesk or user‑training materials reference this setting.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -12884,8 +12884,8 @@
   },
   {
     "startDateTime": "2026-03-31T23:04:29Z",
-    "endDateTime": "2026-08-03T07:00:00Z",
-    "lastModifiedDateTime": "2026-05-04T22:20:11.21Z",
+    "endDateTime": "2026-08-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-02T22:29:43.753Z",
     "title": "(Updated) Microsoft 365 Copilot: Intelligent Summaries in Copilot Dashboard",
     "id": "MC1266912",
     "category": "stayInformed",
@@ -12911,7 +12911,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft 365 Copilot Dashboard will automatically provide AI-generated intelligent summaries starting early June 2026, highlighting adoption trends and usage insights for admins. Suggested prompts aid deeper analysis. No configuration or workflow changes are needed; the feature is on by default with existing controls unchanged."
+        "value": "Microsoft 365 Copilot Dashboard will auto-display AI-generated intelligent summaries from early to late July 2026, highlighting adoption trends and usage insights for admins. No configuration is needed, existing controls remain, and there’s no user impact. Admins can notify teams or update documentation as preparation."
       },
       {
         "name": "Platforms",
@@ -12920,7 +12920,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated May 4, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p><b>Intelligent summaries</b> in <i>Copilot Dashboard </i>help you quickly understand what’s driving Copilot adoption in your organization. These AI‑generated insights highlight key usage trends, areas of success, and opportunities where focused attention can accelerate value. Suggested prompts guide deeper exploration of underlying drivers and adoption patterns.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557681\" target=\"_blank\">557681</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rollout will begin in <b>early June 2026</b> (previously&nbsp;late April)&nbsp;and is expected to complete by<b>&nbsp;late June 2026 </b>(previously late May).</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Admins using the<b> Microsoft 365 Copilot Dashboard</b> in <i>Microsoft Viva</i> and <i>Microsoft 365</i></li></ul><p><i>What will happen</i></p><ul><li><b>Intelligent summaries</b> will appear automatically in the <i>Copilot Dashboard</i>:<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/e7d90886-2158-4659-a5f8-d97848bb9ba5/fcc7c2b517f6d6c0e9cbaed53140c658280ed7c4.png\" style=\"width: 400px;\" alt=\"user settings\">&nbsp;</p></li><li>Admins will see <b>AI‑generated insights</b> that highlight adoption trends and key usage patterns.</li><li><b>Suggested prompts </b>will be available to help admins drill into specific drivers and areas of opportunity.</li><li>No configuration changes are required; the feature is <b>on by default </b>for eligible tenants.</li><li>Existing admin controls and permissions remain unchanged.</li><li>There is no user workflow impact.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required before rollout.</p><p>If helpful for your organization, you may:</p><ul><li>Notify helpdesk or training teams about the new summaries.</li><li>Update internal documentation that references the Copilot Dashboard.</li><li>Review updated online documentation, which will be refreshed as rollout begins in late April.</li><li>If you choose not to use this feature, you can roll back by disabling intelligent summaries using available admin controls.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated June 2, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p><b>Intelligent summaries</b> in <i>Copilot Dashboard </i>help you quickly understand what’s driving Copilot adoption in your organization. These AI‑generated insights highlight key usage trends, areas of success, and opportunities where focused attention can accelerate value. Suggested prompts guide deeper exploration of underlying drivers and adoption patterns.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=557681\" target=\"_blank\">557681</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide): </b>Rollout will begin in <b>early July 2026</b> (previously&nbsp;early June)&nbsp;and is expected to complete by<b>&nbsp;late July 2026 </b>(previously late June).</li></ul><p><b>[How this will affect your organization]</b></p><p><i>Who is affected</i></p><ul><li>Admins using the<b> Microsoft 365 Copilot Dashboard</b> in <i>Microsoft Viva</i> and <i>Microsoft 365</i></li></ul><p><i>What will happen</i></p><ul><li><b>Intelligent summaries</b> will appear automatically in the <i>Copilot Dashboard</i>:<p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/e7d90886-2158-4659-a5f8-d97848bb9ba5/fcc7c2b517f6d6c0e9cbaed53140c658280ed7c4.png\" style=\"width: 400px;\" alt=\"user settings\">&nbsp;</p></li><li>Admins will see <b>AI‑generated insights</b> that highlight adoption trends and key usage patterns.</li><li><b>Suggested prompts </b>will be available to help admins drill into specific drivers and areas of opportunity.</li><li>No configuration changes are required; the feature is <b>on by default </b>for eligible tenants.</li><li>Existing admin controls and permissions remain unchanged.</li><li>There is no user workflow impact.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required before rollout.</p><p>If helpful for your organization, you may:</p><ul><li>Notify helpdesk or training teams about the new summaries.</li><li>Update internal documentation that references the Copilot Dashboard.</li><li>Review updated online documentation, which will be refreshed as rollout begins in late April.</li><li>If you choose not to use this feature, you can roll back by disabling intelligent summaries using available admin controls.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -13107,7 +13107,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559612\":[{\"RoadmapId\":559612,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660775Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660776Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660774Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7113814Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559612,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7113831Z\",\"LatestRing\":\"StandardRelease\"}]}"
+        "value": "{\"559612\":[{\"RoadmapId\":559612,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660774Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7113814Z\",\"LatestRing\":\"StandardRelease\"},{\"RoadmapId\":559612,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660775Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-04T12:17:53.6660776Z\",\"LatestRing\":null},{\"RoadmapId\":559612,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7113831Z\",\"LatestRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -24772,6 +24772,205 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[What and Why:]</b></p>\n<p><b><a href=\"https://aka.ms/WorkIQAPI_GA\" target=\"_blank\">Work IQ API is reaching general availability</a>&nbsp;(GA) on June 16,</b> delivering production-ready, enterprise-grade intelligence built for agentic workloads. It provides the data, context, and tools agents need to operate with greater awareness and effectiveness across applications and workflows. At GA, the Work IQ API will be available through<b> consumption-based billing using <a href=\"https://aka.ms/Learn/CopilotCredits\" target=\"_blank\">Copilot Credits</a></b>, see licensing details <a href=\"https://aka.ms/WorkIQ/licensing\" target=\"_blank\">here</a>.  \n</p><p>\n</p><p>Alongside this milestone, we're introducing<b> new cost management controls</b> in the  Microsoft Admin Center, giving IT a single place to turn on credit-based billing for services that consume Copilot Credits, set policy-based limits, and monitor consumption across users, groups, and agents. </p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=559020\" target=\"_blank\" style=\"background-color: rgb(255, 255, 255); font-family: sans-serif; font-weight: 400;\">559020</a>.</p>\n\n<p><b>[Rollout Schedule:]</b></p>\n<ul>\n  <li>General Availability is on June 16, 2026.</li>\n</ul>\n\n<p><b>[Impact on Your Organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations using the Work IQ API through third‑party agents or applications during public preview.</li><li>Organizations planning to use Work IQ API with third‑party solutions after GA.</li></ul><p><b>Who is not affected:</b></p>\n<ul>\n  <li>Organizations using <b>Work IQ only through Microsoft-built apps and agents.</b></li>\n</ul>\n<p><b>Platforms/Services:</b></p>\n<ul>\n  <li>Microsoft 365</li>\n  <li>Work IQ API</li>\n  <li>Microsoft admin center</li>\n  <li>Third-party agents and applications</li>\n</ul>\n<p><b>What will happen:</b></p>\n<ul>\n  <li>The Work IQ API transitions from public preview to general availability.</li><li><b>Consumption‑based billing using Copilot Credits</b> is introduced for Work IQ API usage via third‑party agents and applications.</li><li><b>New cost management controls</b> become available in the Microsoft admin center.</li><li>Existing and new usage through third-party agents or applications will require billing configuration after GA to continue service access.</li></ul><p><b>[Action Required / Recommendations:]</b></p><p><b>Action is required if you use Work IQ API with third‑party agents or applications.</b></p><p>Starting on June 16, administrators should:</p><ul>\n<li>Configure <b>consumption‑based billing</b> for Work IQ API in the <a href=\"http://admin.microsoft.com\" target=\"_blank\">Microsoft admin center</a>.</li><li>Create <b>spend policies</b> for users, groups, and departments.</li><li>Set <b>usage limits and alerts</b> to manage spend.</li><li>Review the <b>Cost Management dashboard</b> to monitor Copilot Credit usage and runway.</li><li>Communicate this change to IT operations and finance teams supporting Copilot or agentic workloads.</li></ul>\n<p><b>Learn more:</b></p><ul><li><a href=\"https://aka.ms/WorkIQAPI_GA\" target=\"_blank\">Work IQ API public preview: Build Copilot powered agents with A2A</a></li><li><a href=\"https://learn.microsoft.com/microsoft-copilot-studio/billing-licensing\" target=\"_blank\">Copilot Studio licensing | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/microsoft-copilot-studio/requirements-messages-management\" target=\"_blank\">Billing rates and management | Microsoft Learn</a></li></ul><p><b>Compliance considerations:</b></p><table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th>Area</th>\n    <th>Explanation</th>\n  </tr>\n  <tr>\n    <td>AI/ML and agent capabilities interacting with customer data</td>\n    <td>The Work IQ API reaches general availability and supports production agentic workloads, enabling AI agents to access organizational context and data through third-party applications.</td>\n  </tr>\n  <tr>\n    <td>Admin monitoring and compliance reporting</td>\n    <td>New cost management and usage monitoring controls are introduced in the Microsoft admin center, allowing administrators to track Copilot Credit consumption and demonstrate governance over AI usage.</td>\n  </tr>\n  <tr>\n    <td>Third-party software integrations</td>\n    <td>The change explicitly supports and governs Work IQ API usage through third-party agents and applications, requiring billing configuration to continue access after general availability.</td>\n  </tr>\n  <tr>\n    <td>Admin controls and group-based governance</td>\n    <td>Administrators can define access policies, usage limits, and alerts for users, groups, and departments, enabling governance through admin-managed controls aligned with Entra ID group membership.</td>\n  </tr>\n\n\n</tbody></table>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-02T22:04:16Z",
+    "endDateTime": "2026-09-03T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-02T22:04:41.377Z",
+    "title": "Microsoft 365 Copilot: Introducing Microsoft Scout, an always-on personal agent",
+    "id": "MC1332811",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Copilot (Microsoft 365)"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft Scout is an always-on personal Autopilot agent integrated across Microsoft 365 apps, acting autonomously within organizational policies. Available now in Frontier preview on Windows and macOS, it requires admin enablement, Intune policy configuration, and GitHub Copilot licensing. It respects security and compliance guardrails."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[What and Why]</b></p><p>We are introducing a new category of agents called Autopilots—always-on agents that work autonomously, with their own identity, and act on your behalf within the permissions and policies you set. <b>Microsoft Scout</b> is our first Autopilot. Integrated across the Microsoft 365 apps your users rely on every day and powered by Work IQ, Microsoft Scout stays connected to user priorities, monitors what matters, and moves work forward across Teams, Outlook, OneDrive, and SharePoint—while respecting the security, identity, and governance guardrails defined by your organization.\n</p><p>Built on OpenClaw open-source technology and enterprise-grade controls, Microsoft Scout is available today through Frontier as an early desktop experience on Windows and macOS—the same experience Microsoft employees have been using—giving enrolled customers a chance to explore how Autopilots fit into their workflows.\n</p><p>Learn more at <a href=\"https://aka.ms/microsoftscout\" target=\"_blank\">Introducing Microsoft Scout: Your always-on personal agent | Microsoft 365 Blog</a>&nbsp;and <a href=\"https://aka.ms/MicrosoftScout-Learn-docs\" target=\"_blank\">Microsoft Scout (Frontier) documentation | Microsoft Learn</a>&nbsp;</p><p><b>[Rollout Schedule]</b></p><ul><li><b>Frontier (Preview):</b> Available now for enrolled customers on Windows and macOS</li><li><b>General availability</b>: Broader rollout timing will be communicated at a later date</li></ul><p><b>[Impact on Your Organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations enrolled in Frontier</li><li>IT admins managing Intune, identity, and access controls</li><li>Microsoft 365 admins</li><li>End users who meet licensing and admin-configured prerequisites</li></ul><p><i>Platforms / Services</i></p><ul><li>Microsoft 365</li><li>Microsoft Scout desktop app (Windows, macOS)</li><li>Microsoft Intune (policy configuration)</li><li>GitHub Copilot (required for AI credit billing)</li></ul><p><i>What will happen</i></p><ul><li>A Microsoft Scout desktop app will be available to tenants enrolled in <i>Frontier</i>.</li><li>The feature is <b>OFF by default </b>and requires admin enablement.</li><li>Users cannot sign in until all required admin prerequisites are completed.</li><li>The Scout app runs locally on the user’s device and uses the user’s identity to operate.</li><li>Access is gated by admin configuration, enrollment, and attestation.</li></ul><p><b>[Action Required / Recommendations]</b></p><p><u>Admin actions (required)</u></p><ul><li>Configure required device and access policies in <a href=\"https://intune.microsoft.com/#home\" target=\"_blank\">Intune</a>.</li><li>Complete the required admin opt-in and attestation (to be provided during setup) before enabling Microsoft Scout. This step is required due to data flows outside Microsoft 365.</li><li>Ensure eligible users have appropriate <a href=\"https://docs.github.com/billing/get-started/introduction-to-billing\" target=\"_blank\">GitHub Copilot licensing</a>.</li></ul><p><u>User actions</u></p><ul><li>Download and install the Microsoft Scout app (Frontier).</li><li>Download Microsoft Scout: <a href=\"https://aka.ms/msscout\" target=\"_blank\">https://aka.ms/msscout</a>&nbsp;</li><li>Sign in with a work account (after admin enablement).</li><li>Sign in with a GitHub account.</li></ul><p><u>Recommendations</u></p><ul><li>Review this feature with security and compliance stakeholders before enabling.</li><li>Inform helpdesk teams that sign-in failures typically indicate missing prerequisites.</li><li>Share enablement guidance with pilot users to set expectations for the Frontier experience.</li></ul><p>Learn more:&nbsp;</p><ul><li><a href=\"https://docs.github.com/billing/get-started/introduction-to-billing\" target=\"_blank\">Introduction to billing and licensing |&nbsp;Get started | Billing and payments | GitHub Docs</a></li><li><a href=\"https://aka.ms/microsoftscout\" target=\"_blank\">Introducing Microsoft Scout: Your always-on personal agent | Microsoft 365 Blog</a></li><li><a href=\"https://learn.microsoft.com/microsoft-scout/\" target=\"_blank\">Microsoft Scout (Frontier) documentation | Microsoft Learn</a><br></li><li><a href=\"https://learn.microsoft.com/intune/fundamentals/deploy-setup-step-1\" target=\"_blank\">Step 1: Set up Microsoft Intune | Microsoft Intune | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change store new customer data? If so, where, and is the data cached or permanently stored?</td><td>Yes. The preview experience includes data paths outside Microsoft 365 (for example, GitHub-based inference), which may involve additional handling of customer data and requires explicit admin attestation.</td></tr><tr><td>Does the change introduce or significantly modify AI or agent capabilities that interact with or provide access to customer data?</td><td>Yes. This change introduces a proactive, agentic experience that can act on behalf of users across content and tasks within defined organizational guardrails.</td></tr><tr><td>Does the change add any integration to third-party software products?</td><td>Yes. Microsoft Scout requires integration with GitHub Copilot for AI credit consumption and billing.</td></tr><tr><td>Does the change include an admin control, and can it be controlled through Entra ID group membership?</td><td>Yes. Access is gated through administrative controls, including Intune configuration, Frontier enrollment, and required admin opt-in and attestation.</td></tr><tr><td>Does the change allow a user to enable and disable the feature themselves?</td><td>Yes. Users can install the application, but they cannot successfully use it unless administrators complete the required enablement and attestation steps.</td></tr></tbody></table><p><b></b></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-02T22:05:07Z",
+    "endDateTime": "2026-08-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-02T22:05:17.733Z",
+    "title": "Action required: Update Teams Rooms app to maintain PowerPoint Live functionality",
+    "id": "MC1332812",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "Updated message",
+      "Retirement"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": "2026-06-30T07:00:00Z",
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Update Teams Rooms apps by June 30, 2026, to maintain PowerPoint Live features. Windows updates are available now; Android updates roll out mid-June to mid-July 2026. Outdated versions may lose synchronized playback and real-time annotation support. No changes to admin policies; ensure all devices comply."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[What and Why]</b></p><p>We are performing planned maintenance to support upcoming updates to <b>PowerPoint Live</b> in <i>Microsoft Teams</i>, which will begin rolling out on <b>June 30, 2026</b>. To keep Teams Rooms aligned with these updates, ensure devices are running the latest supported app versions.</p><p><b>[Rollout Schedule]</b></p><p><b>Teams Rooms on Windows General Availability</b></p><ul><li><b>Worldwide and GCC:&nbsp; </b>Already available now.</li><li><b>GCC High:</b>&nbsp;We will begin rolling out in <b>early June 2026</b> and expect to complete by <b>mid-June 2026</b>.</li><li><b>DoD: </b>We will begin rolling out in <b>early June 2026</b> and expect to complete by<b>&nbsp;mid-June 2026</b>.</li></ul><p><b>Teams Rooms on Android General Availability</b></p><ul><li><b>Worldwide and GCC:</b>  We will begin rolling out in <b>mid-June 2026</b> and expect to complete by<b> late June 2026</b>.\n</li><li><b>GCC High:</b> We will begin rolling out in <b>early July 2026</b> and expect to complete by<b> mid-July 2026</b>.\n</li><li><b>DoD</b>: We will begin rolling out in <b>early July 2026 </b>and expect to complete by<b> mid-July 2026</b>.</li></ul><p><b>[Impact on Your Organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations using Microsoft Teams Rooms devices</li></ul><p><i>Platforms/Services</i></p><p>Microsoft Teams</p><ul><li>Teams Rooms on Windows</li><li>Teams Rooms on Android</li></ul><p><i>What will happen</i></p><ul><li><b>Teams Rooms devices running outdated app versions may not fully support PowerPoint Live experience</b>, including:<ul><li>Synchronized media playback</li><li>Viewing real-time inking and annotation<ul></ul></li></ul></li><li>There is no change to existing admin policies.</li><li>Functionality remains consistent once devices are updated.</li></ul><p><b>[Action Required/Recommendations]</b></p><p>To maintain PowerPoint Live functionality, complete the following:</p><ul><li>Update Teams Rooms devices to supported versions:<ul><li><b>Windows: Version 5.6.135</b> (available now)</li><li><b>Android: Version 1449/1.0.96.2026124903</b> (available mid-June 2026)</li></ul></li><li>Complete updates before<b> June 30, 2026</b>.</li><li>Review device update processes to ensure compliance across all meeting rooms.</li><li>Notify IT support/helpdesk teams of potential functionality impact if devices are not updated.</li></ul><p><b>[Compliance Considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change alter how existing customer data is processed, stored, or accessed (such as documents, emails, chats, etc.)?</td><td><b>Yes. </b>The update to PowerPoint Live functionality may affect how presentation content is synchronized and rendered across Teams clients, but it does not introduce new data storage or retention changes.</td></tr></tbody></table><p><b></b></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-02T22:06:47Z",
+    "endDateTime": "2026-07-30T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-02T22:07:33.783Z",
+    "title": "Microsoft 365 E7: missing Teams events and eCDN service plans – temporary impact and mitigation",
+    "id": "MC1332813",
+    "category": "preventOrFixIssue",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft 365 suite",
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "Microsoft 365 E7 licenses currently lack Teams Events and eCDN service plans, affecting event creation and management. A temporary mitigation with promo codes is available, and automatic backfill of service plans will start in early June 2026, completing by month-end. Admins must then manually assign these plans to users."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[What and Why]</b></p><p>We identified a <b>configuration gap</b> in<i> Microsoft 365 E7 licenses</i> where<b> Teams Events and eCDN service plans</b> are not included. To maintain continuity for customers who rely on event capabilities, we are providing a temporary mitigation while a permanent fix is deployed.</p><p>This update ensures organizations can continue hosting webinars, live events, and town halls during the remediation period and aligns licensing with expected service availability.</p><p><b>[Rollout Schedule]</b></p><ul><li><b>Backfill rollout start: </b>Early June 2026</li><li><b>Expected completion: </b>By the <b>end of June 2026 (Worldwide)</b></li></ul><p><b>[Impact on Your Organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations using or transitioning to <b>Microsoft 365 E7</b></li><li>Admins managing licensing and service plan assignments</li><li>Users who create or manage <b>Teams events</b></li></ul><p><i>Platforms/Services</i></p><ul><li>Microsoft Teams (events, webinars, town halls)</li><li>Teams eCDN</li></ul><p><i>What will happen</i></p><ul><li>Teams Events and eCDN service plans may currently be missing from <b>Microsoft 365 E7 licenses</b>.</li><li>Users with<b> E7 licenses </b>may be<b> unable to create or manage events</b>.</li><li><b>Attendee join experiences are not impacted.</b></li><li>Service plans will be <b>automatically backfilled</b> starting in early June 2026.</li><li>After backfill, admins must <b>manually assign these service plans to users</b>.</li><li>This <b>issue is temporary </b>and will be resolved once the rollout completes.</li></ul><p><b>[Action Required / Recommendations]</b></p><p>If your organization uses Teams Events, take the following actions.</p><p><b>Immediate mitigation (if needed)</b></p><ul><li>Request a <b>Teams Events promo code</b> for temporary access.</li></ul><p><b>After rollout completion</b></p><ul><li><b>No action is required after the rollout completes beyond assigning service plans:</b></li><ul><li>Review Microsoft 365 E7 license configurations.</li><li>Assign Teams Events and eCDN service plans to appropriate users.</li><li>Validate event creation and management functionality.</li></ul></ul><p><b>Recommended license assignment methods</b></p><ul><li>Use <b>group-based licensing</b> in <i>Microsoft Entra admin center</i> (recommended for scale): Learn about <a href=\"https://learn.microsoft.com/entra/fundamentals/licensing\" target=\"_blank\">Entra licensing</a>.</li><li>Use<b> PowerShell for bulk or automated scenarios</b>: <a href=\"https://learn.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide\" target=\"_blank\">Assign licenses with PowerShell</a>.</li><li><b>Assign licenses directly for targeted users</b>: <a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide\" target=\"_blank\">Assign licenses in admin center</a>.</li><li>Use <b>third-party tools</b> (if applicable)<ul><li>Use existing identity or provisioning solutions.</li><li>Common for customers managing licenses outside Microsoft.</li></ul></li></ul><p><b>Learn more:&nbsp;</b></p><ul><li><a href=\"https://learn.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell?view=o365-worldwide\" target=\"_blank\">Assign Microsoft 365 licenses to user accounts with PowerShell | Microsoft 365 for enterprise | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users?view=o365-worldwide\" target=\"_blank\">Assign or unassign licenses for users in the Microsoft 365 admin center | Microsoft 365 for enterprise | Microsoft 365 | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/entra/fundamentals/licensing\" target=\"_blank\">Microsoft Entra licensing | Fundamentals | Microsoft Entra | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review&nbsp;as appropriate for&nbsp;your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-02T22:07:58Z",
+    "endDateTime": "2026-07-23T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-02T22:08:07.61Z",
+    "title": "OneDrive mobile apps will no longer support SharePoint Server on‑premises sign-ins",
+    "id": "MC1332814",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft OneDrive"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "Summary",
+        "value": "OneDrive mobile apps will stop supporting sign-ins with SharePoint Server on-premises accounts starting June 2026 to enhance security and align with modern identity standards. Users must switch to Microsoft 365 or Microsoft Entra ID accounts. This change supports the end of SharePoint Server 2016/2019 support in July 2026."
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[What and Why:]</b></p>\n<p>To strengthen security and align with modern identity standards, <b>OneDrive for iOS and Android will no longer support sign-ins using SharePoint Server on‑premises accounts</b>. This change reflects Microsoft’s continued investment in enterprise-ready security, ensuring mobile access to files is protected by modern authentication, conditional access, and ongoing security updates. Personal Microsoft accounts and Microsoft 365 work or school accounts are not affected.</p><p>This update also aligns with the upcoming <b>end of support for SharePoint Server 2016 and 2019 on July 14, 2026</b>, helping organizations transition to supported, secure platforms.</p><p><b>[Rollout Schedule:]</b></p>\n<ul>\n  <li>General Availability (Worldwide): Rollout begins in<b> early June 2026</b> and is expected to complete by <b>late June 2026</b>.</li>\n</ul>\n\n<p><b>[Impact on Your Organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Organizations with users who sign in to <b>OneDrive mobile apps (iOS or Android) </b>using <b>SharePoint Server on‑premises accounts</b>.</li></ul><p><b>Platforms/Services:</b></p>\n<ul>\n  <li>OneDrive for <b>iOS</b></li>\n  <li>OneDrive for <b>Android</b></li>\n  <li>SharePoint Server on‑premises (2016, 2019)</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>OneDrive mobile apps will <b>block sign-in</b> using SharePoint Server on‑premises credentials.</li><li>Users must sign in with a <b>modern identity</b>:<ul><li>Microsoft 365 (work or school) account</li><li>Microsoft Entra ID (Azure AD) account</li></ul></li><li>Personal Microsoft accounts and existing Microsoft 365 sign-ins are <b>unaffected</b>.</li></ul><p><b>[Action Required / Recommendations:]</b></p>\n<ul>\n  <li>Identify users using OneDrive mobile with on‑premises accounts.</li>\n  <li>Migrate identities to Microsoft 365 or Microsoft Entra ID.</li><li>Plan SharePoint modernization, including migration to SharePoint Online where applicable.</li>\n  <li>Communicate this change to helpdesk staff and end users.</li>\n  <li>Update internal documentation related to OneDrive mobile access.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Compliance area</b></td><td><b>Explanation</b></td></tr><tr><td>Conditional Access policies</td><td>OneDrive mobile sign-in now requires Microsoft Entra ID, enabling enforcement of Conditional Access policies that are not available with on‑premises authentication.</td></tr><tr><td>Authentication and access controls</td><td>Legacy on‑premises authentication is disabled for OneDrive mobile, shifting access control to modern identity platforms.</td></tr></tbody></table><p><br></p>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-02T22:09:27Z",
+    "endDateTime": "2026-10-01T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-02T22:09:37.617Z",
+    "title": "Scoped SharePoint search in Teams (SharePoint app, also called Viva Connections)",
+    "id": "MC1332816",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "SharePoint Online",
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "562015"
+      },
+      {
+        "name": "Summary",
+        "value": "Starting mid-June 2026, Teams' SharePoint app (Viva Connections) search will be scoped to SharePoint content, showing relevant results and suggestions within Teams. The feature respects existing permissions, requires no admin changes, and aims to improve search relevance without leaving Teams. No compliance issues noted."
+      },
+      {
+        "name": "Platforms",
+        "value": "Android, iOS"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[What and Why:]</b></p><p>We’re improving search behavior when users use the <b>SharePoint app inside Microsoft Teams</b>. When users search from Teams while they’re in the SharePoint app (also known as Viva Connections), search results and suggestions will be scoped to SharePoint content, helping users find relevant information faster without leaving Teams.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=562015\" target=\"_blank\">562015</a>.</p><p><b>[Rollout Schedule:]</b></p>\n<ul>\n  <li>General Availability (Worldwide): We will begin rolling out in <b>mid-June 2026</b> and expect to complete by <b>mid-July 2026</b>.</li>\n  <li>General Availability (GCC, GCC High): We will begin rolling out in <b>mid-June 2026</b> and expect to complete by <b>mid-August 2026</b>.</li><li>General Availability (DoD): We will begin rolling out in <b>mid-June 2026</b> and expect to complete by<b> late August 2026</b>.</li>\n</ul>\n\n<p><b>[Impact on Your Organization:]</b></p>\n<ul>\n  </ul><p><b>Who is affected:</b> Users of the SharePoint app in Teams (Viva Connections) across all clouds</p><ul>\n  </ul><p><b>Platforms/Services:</b> </p><ul><li>Microsoft Teams </li><li>SharePoint Online</li><li>Viva Connections</li>\n  </ul><p><b>What will happen:</b>\n    </p><ul>\n      \n    </ul>\n  <p></p><ul><li>When users select the <b>Search icon in Teams while inside the SharePoint app (Viva Connections)</b>, search results are scoped to <b>SharePoint global search</b>.</li><li>SharePoint search suggestions will appear directly in Teams.</li><li>Pressing <b>Enter </b>opens the <b>SharePoint search results page</b> in SharePoint.</li><li>The feature is <b>enabled by default</b>.</li><li>Existing SharePoint permissions and search security trimming are respected.</li><li>No changes are required to existing admin configurations or policies.</li><p>Screenshot: <i>Search results are scoped to SharePoint when search is initiated from within the SharePoint app in Teams:</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/30dd3e69-b827-40db-84f7-c973ab502a37\" style=\"width: 250px;\" alt=\"user settings\"></p>\n</ul>\n\n<p><b>Learn more:&nbsp;</b><a href=\"https://support.microsoft.com/viva/connections/viva-connections-on-mobile-devices\" target=\"_blank\">Viva Connections on mobile devices | Microsoft Support</a>&nbsp;(will be updated before rollout)</p><p><b>[Action Required / Recommendations:]</b></p><p>No action is required from administrators.</p><p>Consider the following recommendations:</p><ul><li>Inform helpdesk and end users that search behavior within the SharePoint app in Teams is becoming more targeted and SharePoint‑specific.</li><li>Update internal documentation or training materials that reference Teams or SharePoint search behavior.</li><li>Review SharePoint search configuration and content hygiene (optional) to ensure optimal results quality.</li></ul>\n\n<p><b>[Compliance considerations:]</b><br>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-02T22:10:00Z",
+    "endDateTime": "2026-08-16T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-02T22:10:07.133Z",
+    "title": "Microsoft Teams Events app: Room availability shown during event creation",
+    "id": "MC1332817",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature",
+      "User impact"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Teams"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "RoadmapIds",
+        "value": "561647"
+      },
+      {
+        "name": "Summary",
+        "value": "Microsoft Teams Events app will show room availability during event creation starting June 2026, enabling organizers to check real-time room status without leaving the app. This improves scheduling accuracy for in-person or hybrid events. No admin action is required."
+      },
+      {
+        "name": "Platforms",
+        "value": "Desktop"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>[What and Why:]</b></p><p>Organizers can now determine whether a selected room or location is available when creating an event. Microsoft Teams Events app now surfaces room availability directly in the event creation experience, allowing organizers to check availability in real time without leaving the flow.</p><p>This message is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=561647\" target=\"_blank\">561647</a>.</p>\n\n<p><b>[Rollout Schedule:]</b></p>\n<ul>\n  <li>Targeted Release (Worldwide):&nbsp;Rollout begins in <b>early June 2026</b> and is expected to complete by<b> late June 2026</b>.</li>\n  <li>General Availability (Worldwide):&nbsp;Rollout begins in<b> late June 2026</b> and is expected to complete by <b>mid‑July 2026</b>.</li>\n</ul>\n\n<p><b>[Impact on Your Organization:]</b></p>\n<p><b>Who is affected: </b>Organizers creating in‑person or hybrid events using the Microsoft Teams Events app</p>\n\n<p><b>Platforms/Services: </b>Microsoft Teams (Events app)</p>\n\n<p><b>What will happen:</b></p><ul>\n  <li>Room availability is visible during the Microsoft Teams Events app event creation flow.</li><p>Screenshot: <i>Scheduling form showing room availability while selecting a location or room for the event:</i></p><p><img src=\" https://cxcs.microsoft.net/file/ccp/en-us/01613e14-749b-46c7-a779-ce8faef3c0e3\" style=\"width: 400px;\" alt=\"user settings\"></p><li>Organizers no longer need to switch tools to check room availability.</li><li>Scheduling conflicts can be identified before events are published.</li><li>Room bookings are more reliable for in‑person and hybrid events.</li>\n</ul>\n\n<p><b>[Action Required / Recommendations:]</b></p>\n<ul>\n  <li>No action is required from admins.</li>\n  <li>Optionally notify organizers about the updated scheduling experience.</li>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p><p>\n</p><p>This change surfaces room availability data in Teams. No new data types, AI capabilities, or compliance controls are introduced.</p>"
     }
   },
   {
