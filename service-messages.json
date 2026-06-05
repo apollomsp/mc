@@ -14249,7 +14249,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112264Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-06-04T22:36:12.02802Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-04T22:36:12.0280209Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"}]}"
+        "value": "{\"559386\":[{\"RoadmapId\":559386,\"Platform\":\"iOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-06-04T22:36:12.02802Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"},{\"RoadmapId\":559386,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-19T22:32:37.7112264Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":559386,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-04T22:36:12.0280209Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -17312,54 +17312,6 @@
     "body": {
       "contentType": "html",
       "content": "We’re introducing a new feature in public preview, <b>Dataverse Agent users</b>, powered by <b>Microsoft Entra Agent ID</b>. Rollout of this feature will start on May 4, 2026, and is expected to reach North America by May 22, 2026.<br><br>This new capability enables organizations to create and manage agent-specific identities that operate securely within Dataverse. Admins will be able to provision agent identities in Entra, map them to Dataverse users, assign security roles, and track all agent actions through audit logs. This new identity model is designed for agentic scenarios and provides clearer governance and separation from traditional users and application identities.<br><br><b>How this will affect your organization:</b><Br>Admins and developers can start evaluating agent-based scenarios using secure, auditable identities. Review your current use of application users and plan for future alignment with agent identities.<br><br><b>What you need to do to prepare:</b><br>No immediate action is required. You can begin testing in non-production environments and provide feedback.<br><br>If you would like more information on this feature please visit <a target=\"_blank\" href=\"https://aka.ms/15106-1\">Create Entra agent users</a> and <a target=\"_blank\" href=\"https://aka.ms/15016-2\">Create an agent user</a>."
-    }
-  },
-  {
-    "startDateTime": "2026-05-05T13:07:45Z",
-    "endDateTime": "2026-06-05T13:07:45Z",
-    "lastModifiedDateTime": "2026-05-05T13:09:28.937Z",
-    "title": "Dynamics 365 Supply Chain Management - Enable precise serial and batch capture in cluster picking",
-    "id": "MC1301473",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to achieve accurate order matching and efficient warehouse operations by capturing serial and batch numbers for items below location level in cluster picking in Dynamics 365 Supply Chain Management. This feature will reach general availability on June 5, 2026. <br><br> \n\n<b>How does this affect me?</b><br>  \n\nThis feature enables you to improve shipment accuracy and reduce picking errors by capturing serial and batch numbers for every order in cluster picking, along with how items are tracked below location level in the reservation hierarchy. In cluster setup, you can choose how numbers are captured by either capturing once before distributing items or capturing separately for each cluster position. In addition, a new Enum in the cluster setup UI makes selecting the preferred strategy simple and helps ensure each serial or batch number is matched to the correct order. <br><br> \n\n<b>What action do I need to take?</b><br>   \n\nThis message is for awareness, and no action is required."
-    }
-  },
-  {
-    "startDateTime": "2026-05-05T13:11:53Z",
-    "endDateTime": "2026-06-05T13:11:53Z",
-    "lastModifiedDateTime": "2026-05-05T13:16:58.487Z",
-    "title": "Dynamics 365 Commerce - Enable associates to use the nearest store payment terminal",
-    "id": "MC1301477",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to select any available payment terminal from a dedicated hardware station, enabling fully mobile store transactions in Dynamics 365 Commerce. This feature will reach general availability on June 5, 2026.<br><br> \n<b>How does this affect me?</b><br>  \nWhen you select a dedicated hardware station (HWS) from the POS, the system now correctly pairs with the payment terminal physically attached to that hardware station, not the terminal attached to the register. This feature is available once dedicated hardware stations are configured. This feature will be available out-of-the-box in Store Commerce once dedicated hardware stations are configured, No additional feature flag is required. <br><br> \nHow to use the feature:  \n<ol> \n<li>The store administrator configures dedicated hardware stations in Headquarters, each with a payment terminal assigned.</li> \n<li>The sales associate enables shared shift on their register, except when the cash drawer is not present, in which case they do not need a shared shift for this feature. </li> \n<li>From the POS, the associate selects the desired dedicated hardware station — typically the one nearest to where they are serving the customer. </li> \n<li>When the customer is ready to pay, the POS routes the payment request to the terminal on the selected hardware station. </li> \n<li>The associate completes the transaction at the customer's location without returning to the register.</li>  \n</ol> \nSetup and configuration:  \n<ul> \n<li>Dedicated hardware stations must be configured by an IT admin or store manager in Headquarters before using.  \n<li>Each hardware station requires an associated payment terminal.<li> \nShared shifts must be enabled on the register.</li> \n</ul> \n<b>What action do I need to take?</b><br>   \nThis message is for awareness, and no action is required."
     }
   },
   {
