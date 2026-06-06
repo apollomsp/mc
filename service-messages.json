@@ -7282,7 +7282,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.133884Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338847Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
+        "value": "{\"541831\":[{\"RoadmapId\":541831,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.156339Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.133884Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":541831,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-02-10T18:30:09.1563392Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":541831,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338847Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10631,36 +10631,6 @@
     }
   },
   {
-    "startDateTime": "2026-03-10T22:45:44Z",
-    "endDateTime": "2026-06-06T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-10T22:46:00.2Z",
-    "title": "Plan for Change: Windows Autopatch is enabling hotpatch updates by default",
-    "id": "MC1248388",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Intune",
-      "Windows Autopatch"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting May 2026, Windows Autopatch will enable hotpatch security updates by default for eligible Intune devices, speeding up security without restarts. An opt-out setting will be available from April 2026. Devices must meet prerequisites like enabling Virtualization-based Security to receive hotpatches."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>Starting with the <b>May 2026 Windows security update</b>, Windows Autopatch is enabling hotpatch security updates by default because they are the quickest way to get secure. This change in default behavior will impact all eligible Intune devices. Additional controls are expected in April.&nbsp;</p><p>[When this will happen:]</p><ul><li>Devices will start receiving hotpatch updates by default with the May 2026 Windows security update.</li><li>A tenant setting to opt out of hotpatch updates is expected to be available on April 1, 2026, or soon after.</li></ul><p>&nbsp;[How this will affect your organization:]\n</p><p>Devices that meet <a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates#prerequisites\" target=\"_blank\">hotpatch prerequisites</a> will get secure faster because full Windows security updates are applied without waiting for a restart. Devices are secured as soon as the update is installed. You do not need to wait for devices to restart, saving on average three to five days. \n</p><p>\n</p><p>Devices will restart during <a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates#release-cycles\" target=\"_blank\">baseline months</a>, which are January, April, July, and October.</p><p>[What you need to do to prepare:]\n</p><p>If you already use Windows Autopatch, no action is needed to get hotpatch updates enabled by default. We recommend keeping hotpatch updates enabled for your devices.</p><p>To maximize the number of devices receiving hotpatch updates, ensure they meet the <a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates#prerequisites\" target=\"_blank\">prerequisites</a>. Most commonly, this means enabling Virtualization-based Security (VBS) for x86 devices.</p><p>If you’re not ready for this change, you can opt out groups of devices using <a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates#enroll-devices-to-receive-hotpatch-updates\" target=\"_blank\">Quality Update policies</a> or the whole tenant.  \n</p><p>[Additional information:]</p><p>Read the announcement in <a href=\"https://aka.ms/HotpatchByDefault\" target=\"_blank\">Securing devices faster with hotpatch updates on by default</a>. \n</p><p>Learn more about hotpatch updates with the following resources:   \n</p><ul><li><a href=\"https://learn.microsoft.com/windows/deployment/windows-autopatch/manage/windows-autopatch-hotpatch-updates\" target=\"_blank\">Hotpatch updates</a> \n</li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-for-windows-client-now-available/4399808\" target=\"_blank\">Hotpatch for Windows client now available </a></li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatching-now-available-for-64-bit-arm-architecture/4430949\" target=\"_blank\">Hotpatching now available for 64-bit Arm architecture </a></li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-for-client-frequently-asked-questions/4413582\" target=\"_blank\">Hotpatch for client: Frequently asked questions </a></li><li><a href=\"https://www.microsoft.com/insidetrack/blog/transforming-security-and-compliance-at-microsoft-with-windows-hotpatch/\" target=\"_blank\">Transforming security and compliance at Microsoft </a></li><li><a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/hotpatch-efficiency-unlocked-smaller-update-size/4460681\" target=\"_blank\">Hotpatch efficiency unlocked: Smaller update size </a></li><li>YouTube: <a href=\"https://www.youtube.com/watch?v=_OBB1F2ZMYs\" target=\"_blank\">Inside hotpatch updates for Windows</a></li><li>YouTube: <a href=\"https://www.youtube.com/watch?v=VpY4R8-NzcY\" target=\"_blank\">Hotpatching 101: Enable virtualization-based security (VBS)</a></li></ul>"
-    }
-  },
-  {
     "startDateTime": "2026-03-10T22:46:28Z",
     "endDateTime": "2026-11-29T08:00:00Z",
     "lastModifiedDateTime": "2026-03-31T18:04:06.4Z",
@@ -11771,45 +11741,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated April 23, 2026: We have updated the content. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>Microsoft is announcing the<b> General Availability (GA)</b> of <b>federated Copilot connectors</b> for Microsoft 365 Copilot. </p><p>Federated Copilot connectors enable users to securely connect Copilot to popular third‑party sources and <b>retrieve data in real time</b> <b>using the</b> <b>Model Context Protocol (MCP)</b>. These connectors do not store or index customer data in <i>Microsoft services</i>; access occurs in real time using the user’s identity, while administrators retain full governance and control through the <b>Microsoft 365 admin center</b>.</p><p>With GA, federated Copilot connectors will be supported in <i>Researcher agent</i>, <i>Microsoft 365 Chat</i>, and <i>Agent Mode in Excel</i>, enabling users to bring external data directly into their workflows.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide):</b>&nbsp;<ul><li>Admins would have started seeing federated Copilot connectors in Microsoft 365 admin center starting on April 20, 2026. Public documentation will be updated in the upcoming weeks.&nbsp;</li><li><b>Rollout for users </b>will begin in<b> late April 2026 </b>and complete by<b> late May 2026</b>.</li></ul></li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Organizations with <b>Microsoft 365 Copilot </b>Premium licenses</li></ul><p><i>What will happen</i></p><ul><li>Microsoft‑published federated Copilot connectors (connector type: <b>MCP</b>) will appear under <b><i>Microsoft 365 admin center → Copilot → Connectors</i> </b>and&nbsp;will be <b>enabled by default</b>.</li><li>Admins will be able to:<ul><li>View all Microsoft‑published federated Copilot connectors in one place.</li><li>Identify federated Copilot connectors by filtering on connector type: <b>MCP</b>.</li><li>Use staged rollout to enable specific connectors for selected users or groups.</li><li>Disable any connectors that do not align with organizational policies.<ul><li>Admins can bulk‑disable all connectors using CLI, then selectively re‑enable individual connectors within the admin center.</li></ul></li></ul></li><li>Users will be able to connect to federated Copilot connectors directly from:<ul><li>Researcher agent</li><li>Microsoft 365 Chat</li><li>Agent Mode in Excel</li></ul></li><li>Public documentation will be updated as the rollout progresses.</li></ul><p><i>Screenshot 1 – Manage federated Copilot connectors:</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/37d2fe06-2795-437b-8470-d3246b8a25b6/97ef9ec61d72add76b251f6cf69c1d4ba2b9069d.png\" style=\"width: 400px;\" alt=\"user settings\"> </p><p></p><p><i>Screenshot 2 – Connect and use federated Copilot connectors:</i></p><p><i>&nbsp;</i><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/c23c834c-c801-4b9f-a8f6-37e836b439b1/343bbf1d5e688e73d80ed7ca75b5565588214c0b.png\" style=\"width: 400px;\" alt=\"user settings\"> </p><p></p><p><b>Microsoft‑published federated Copilot connectors available at GA include:</b></p><ul><li>Canva</li><li>HubSpot</li><li>Linear</li><li>Intercom</li><li>Google Calendar</li><li>Google Contacts</li><li>Notion</li><li>Moody’s</li><li>LSEG</li></ul><p><i><b>Note: </b>Microsoft may initially release a subset of the connectors listed above, with additional Microsoft‑published federated Copilot connectors becoming available over time with prior notice.</i></p><p>The <b>S&amp;P connector</b>, previously part of the announcement, will not be part of the GA release and will now be available at later date.&nbsp;</p><p><b>Create Custom Federated Copilot Connectors</b></p><p>With GA, <b>admins can now create custom federated Copilot connectors</b> for internal or specialized data sources by connecting their own <b>MCP server endpoint</b>.</p><p>This allows organizations to:</p><ul><li>Extend Copilot to proprietary systems or internal tools.</li><li>Control authentication, authorization, and data exposure through their MCP server.&nbsp;</li><li>Provide users secure, real‑time access to internal data without indexing or storage in Microsoft.</li></ul><p>Custom connectors are managed alongside Microsoft‑published connectors in the <b>Admin Center</b>, ensuring consistent governance and lifecycle management.</p>\n\n<p><i>Screenshot 3 – Create custom federated Copilot connectors</i></p><p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/c23298ef-070a-4cd3-a07b-337e83bcc89f/2321d544044f30002ff02cc8c350f5ad2089081f.png\" style=\"width: 400px;\" alt=\"user settings\"> </p>\n<p><b>[What you can do to prepare]</b></p><ul><li>Review available Microsoft‑published federated Copilot connectors in <b><i>Microsoft&nbsp;365 admin center → Copilot → Connectors</i></b>.</li><li><b>Use the 7‑day, admin‑only review window before the connectors become available</b> to users to validate compliance, risk posture, and readiness.</li><li>Plan a staged rollout strategy using <b>Entra ID group targeting</b> if you want to enable connectors gradually.</li><li>Disable any connectors that do not meet your organization’s security or compliance standards.</li><li><b>Review your third‑party provider agreements</b>, including data residency and licensing terms, before enabling federated Copilot connectors.</li><li>Update internal documentation or helpdesk guidance as needed.</li></ul><p><i><b>Note:&nbsp;</b></i><i>By using Microsoft 365 Copilot connectors, you, as the data controller, authorize Microsoft to index third‑party data or otherwise send Customer Data and Personal Data to third‑party services, as well as retrieve third‑party data and import it into your Microsoft 365 tenant according to your configurations.</i></p><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2026-03-23T23:30:56Z",
-    "endDateTime": "2026-06-06T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-23T23:31:05.093Z",
-    "title": "Microsoft Purview: Data Security Investigations – analyze files tied to audit log activities",
-    "id": "MC1259827",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature",
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Purview"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "RoadmapIds",
-        "value": "558548"
-      },
-      {
-        "name": "Summary",
-        "value": "Microsoft Purview's Data Security Investigations will add a new Audit tab for building audit log queries directly within DSI, automatically surfacing related files. This feature, replacing CSV uploads, rolls out April-May 2026, enabling faster, more accurate investigations for admins and investigators without requiring prior configuration."
-      },
-      {
-        "name": "Platforms",
-        "value": "Web"
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p><p>We’re introducing a<b> new audit log querying experience in <i>Data Security Investigations (DSI)</i> in<i> Microsoft Purview</i></b>. This update allows administrators and investigators to build audit log queries directly within DSI by specifying criteria such as date range, users, activities, and keywords. DSI will then automatically surface files associated with those activities. This removes the previous manual process of exporting and reviewing large audit log datasets and makes investigations faster and more accurate.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558548\" target=\"_blank\">558548</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>Public Preview: </b>Rollout will begin in <b>early April 2026</b> and is expected to complete by<b> late April 2026</b>.</li><li><b>General Availability (Worldwide): </b>Rollout will begin in<b> early May 2026 </b>and is expected to complete by<b> early May 2026</b>.</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Admins and investigators who use Data Security Investigations in the Microsoft Purview compliance portal.</li></ul><p><i>What will happen</i></p><ul><li>A <b><i>new Audit tab</i></b> will appear in the<i> DSI search experience </i>alongside the existing Query Builder tab:<p>&nbsp;<img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/8b6a1251-41f9-4221-8adf-9b73bf0d756b/c41af9361a19422f60c985f31fa0741121e1a03a.png\" style=\"width: 400px;\" alt=\"user settings\"></p></li><li>Admins and investigators will be able to enter audit search criteria (date range, users, activities, keywords) directly within DSI.</li><li>Users can view estimated audit query results or add them directly to the investigation scope.</li><li>Associated files identified through the audit query will automatically appear in the investigation.</li><li>This feature is <b>enabled by default </b>and requires no configuration.</li><li>The previous CSV upload option is being removed.</li></ul><p><b>[What you can do to prepare]</b></p><p>No action is required before rollout.</p><p>To prepare, you may want to:</p><ul><li>Update internal documentation for investigation and incident response workflows.</li><li>Inform security teams and administrators who use DSI about this new capability and the removal of CSV upload support.</li><li>Review DSI investigation processes to incorporate audit-based file enrichment.</li></ul><p>Learn more:</p><ul><li><a href=\"https://learn.microsoft.com/purview/audit-log-activities\" target=\"_blank\">Audit log activities | Microsoft Purview | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/purview/data-security-investigations\" target=\"_blank\">Learn about Data Security Investigations | Microsoft Purview | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -16946,36 +16877,6 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to import projects in MPP files into existing projects in Dynamics 365 Project Operations. This feature will reach general availability on May 31, 2026.<br><br><b>How does this affect me? </b><br>This feature allows users to directly import Microsoft Project desktop client (.mpp) files into an existing project. Key capabilities of this feature include:<ul><li>Set calendar hours</li><li>Set the project manager</li><li>Set schedule mode if the import process allows override</li><li>Select the source MPP file</li><li>Select the target project</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a target=\"_blank\" href=\"https://aka.ms/14045\">Import projects in MPP files into existing projects</a>."
-    }
-  },
-  {
-    "startDateTime": "2026-04-30T23:05:03Z",
-    "endDateTime": "2026-06-06T07:00:00Z",
-    "lastModifiedDateTime": "2026-04-30T23:05:15.863Z",
-    "title": "Planned Maintenance: Intune Service",
-    "id": "MC1296865",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": "2026-05-30T07:00:00Z",
-    "services": [
-      "Microsoft Intune"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Intune service maintenance for the North America tenant is scheduled on May 30, 2026, from 4 PM to 11 PM PT, causing downtime affecting admin changes, device enrollment, and app access. Users should avoid updates during this period; a reminder will be sent 5 days prior."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p>We have service maintenance planned that includes downtime for your Intune tenant on <b>North America</b>&nbsp;<b>0601</b>. During this maintenance we will be making improvements to incorporate disaster recovery resilience into our infrastructure. This is a step towards ultimately making Intune more resilient to single datacenter outages. This maintenance is expected to occur:</p><p><b>Starting:</b> Saturday, May 30, 2026, 4 PM PT \n</p><p>\n</p><p><b>Ending:</b> Saturday, May 30, 2026, 11 PM PT</p><p>[How this will affect you organization:]</p><p>This downtime will impact Microsoft Intune admin center and Intune for Education. During this downtime, you will be able to login to these portals, but you will not be able to make any admin changes. We recommend not logging in to Intune during downtime, since data and reports may not be accurately displayed. Services, for example, device check-in, enrollment, mobile application management (MAM), and app installation will not be available.</p><p><b>User impact:</b> Users will not be able to access the Company Portal or enroll their device during this time. Additionally, users who are targeted for MAM Conditional Access, if their grace period expired, they will not have access to managed apps and will not be able to add new MAM apps.</p><p>You should not plan to make any updates or changes during the maintenance window.&nbsp;</p><p>[What you need to do to prepare:]</p><p>This message is a notice that maintenance is being planned around a month from now. We will post another message 5 days before this maintenance, with an exact downtime window for your planning purposes. You can reach out to us at <a href=\"mailto:svcinc@microsoft.com\" target=\"_blank\">svcinc@microsoft.com</a> or through your Microsoft contact if you have any questions or concerns.</p><p>This maintenance is planned outside of normal business hours, to help minimize any impact to your organization. For organizations with users around the globe, we recognize that \"outside of normal business hours\" might affect you differently. We apologize for the impact this may have on your admins or users. We are working hard to improve Intune to minimize these maintenance windows.&nbsp;</p><p>\n</p>"
     }
   },
   {
