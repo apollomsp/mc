@@ -20477,7 +20477,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560813\":[{\"RoadmapId\":560813,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-09T17:01:10.0664405Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-09T17:01:10.0664408Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-09T17:01:10.0664409Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-09T17:01:10.066441Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"560813\":[{\"RoadmapId\":560813,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-09T18:52:35.3377638Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-09T18:52:35.3377641Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-09T18:52:35.3377642Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-09T18:52:35.3377643Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20776,10 +20776,10 @@
     }
   },
   {
-    "startDateTime": "2026-05-21T23:30:59.633Z",
-    "endDateTime": "2027-05-21T23:30:59.633Z",
-    "lastModifiedDateTime": "2026-05-21T23:31:01.26Z",
-    "title": "Take action: Mitigation guidance updated with a new script for CVE 2026 45585",
+    "startDateTime": "2026-06-09T17:28:07.323Z",
+    "endDateTime": "2027-06-09T17:28:07.32Z",
+    "lastModifiedDateTime": "2026-06-09T17:28:09.287Z",
+    "title": "(Updated) Take action: Mitigation guidance updated with a new script for CVE-2026-45585",
     "id": "MC1318295",
     "category": "preventOrFixIssue",
     "severity": "normal",
@@ -20796,7 +20796,7 @@
     "details": [],
     "body": {
       "contentType": "html",
-      "content": "<div>Microsoft has updated the mitigation guidance in <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-45585</a>, a Windows BitLocker security feature bypass vulnerability. The updated guidance replaces previously documented manual mitigation steps with a <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585#faq\" rel=\"noopener noreferrer\" target=\"_blank\">script</a> that helps reduce exposure while a future security update is developed to address this vulnerability. Note that a limited set of Windows versions are affected: Windows 11, versions 26H1, 25H2, and 24H2, and Windows Server 2025.</div><div><br></div><div><b>When will this happen:</b></div><div>The updated mitigation guidance and <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585#faq\" rel=\"noopener noreferrer\" target=\"_blank\">script</a> are available now.</div><div><br></div><div><b>How this will affect your organization:</b></div><div>Windows devices that use BitLocker may be exposed to this vulnerability if mitigations are not applied. Organizational environments that previously implemented the documented manual mitigation steps do not need to take additional action, as the script only simplifies deployment of the existing mitigation.</div><div><br></div><div>Organizations that have not yet taken action should assess their exposure to this vulnerability and determine whether mitigation is appropriate. Microsoft recommends that organizations consider implementing this mitigation if devices and data may be at risk of being compromised or stolen. For example, this may apply if your organization’s employees take their work devices home or on business travel.</div><div><b>&nbsp;</b></div><div><b>What you need to do to prepare:</b></div><div>Organizational environments using BitLocker on affected Windows versions should review the updated guidance in the Microsoft Security Update Guide to determine whether applying the mitigation is necessary.</div><div><br></div><div><b>Additional information:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></div><ul><li><a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-45585: Windows BitLocker Security Feature Bypass Vulnerability</a></li></ul>"
+      "content": "<div>Updated June 9, 2026: This message has been updated to reflect the availability of the June 2026 security update, which addresses CVE‑2026‑45585. If you have applied the temporary mitigations documented prior to this update’s release, you do not need to revert it once you install the update.</div><div><br></div><div>Microsoft has updated the mitigation guidance in <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-45585</a>, a Windows BitLocker security feature bypass vulnerability. The June 2026 security update that addresses this vulnerability is now available. Note that a limited set of Windows versions are affected: Windows 11, versions 26H1, 25H2, and 24H2, and Windows Server 2025.</div><div><br></div><div><b>When will this happen:</b></div><div>The June 2026 security update and the updated mitigation guidance are available now.</div><div><br></div><div><b>How this will affect your organization:</b></div><div>Microsoft recommends applying the June 2026 security update to address this vulnerability. Windows devices that use BitLocker may be exposed if mitigations are not applied. Organizational environments that previously implemented the manual mitigation steps or the mitigation script do not need to take additional action, and the previously applied mitigation does not need to be reverted.</div><div><b>&nbsp;</b></div><div><b>What you need to do to prepare:</b></div><div>Organizational environments using BitLocker on affected Windows versions should review the updated guidance in the Microsoft Security Update Guide to determine the appropriate action for their environment.</div><div><br></div><div><b>Additional information:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></div><ul><li><a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585\" rel=\"noopener noreferrer\" target=\"_blank\">CVE-2026-45585: Windows BitLocker Security Feature Bypass Vulnerability</a></li></ul>"
     }
   },
   {
@@ -25016,6 +25016,60 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[What and Why]</b></p><p>We’re adding <b>search templates</b> to <b>Microsoft Purview Data Security Investigations</b> to provide pre-configured search queries for common data security scenarios such as data exfiltration, compromised mailboxes, personal data exposure, and risky AI interactions. These templates help investigators quickly and consistently scope investigations in just a few clicks instead of manually building queries, reducing setup time and lowering the barrier for less-experienced analysts. Users can select a template, provide minimal inputs (such as a user or site), and begin their investigation.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=560326\" target=\"_blank\">560326</a></b>.</p><p><b>[Rollout Schedule]</b></p><p><b>General Availability (Worldwide): </b>Available now</p><p></p><p><b>[Impact on Your Organization]</b></p><p><i>Who is affected</i></p><p style=\"margin-left: 25px;\">Security analysts and investigators using Microsoft Purview Data Security Investigations</p><p><i>Platforms/Services</i></p><ul><li>Microsoft Purview (web)</li><li>Data Security Investigations solution</li></ul><p><i>What will happen</i></p><ul><li>Investigators can start a new investigation using prebuilt templates instead of creating search queries from scratch.</li><li>Templates cover common data security scenarios and require only minimal inputs (for example, user, mailbox, or SharePoint site) to start an investigation.</li><li>Investigations are automatically scoped and ready to run once inputs are provided.</li><li>This reduces manual setup time and helps standardize investigation workflows.</li><li>Existing investigations and custom queries are not affected.</li><li>The feature will be<b> available by default</b> <b>where Data Security Investigations is enabled</b>.</li></ul><p><i>Screenshot - Creating an investigation from a template in Data Security Investigations:&nbsp;</i></p><p><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/106ab478-cfe2-417c-8ead-06c03e88eee4/e8cb56ba069b8dca705828a14f6e02de0508a2b0.png\" style=\"width: 400px;\" alt=\"user settings\"></p><p></p><p>Typical workflow:</p><ol><li>Create a new investigation in<i> Data Security Investigations</i>.</li><li>Select a template that matches your scenario.</li><li>Provide the required inputs.</li><li>Run the query to open a scoped investigation.</li></ol><p><b>[Action Required/Recommendations]</b></p><p>No admin action is required.</p><p>Recommended actions:</p><ul><li>Inform your security and investigation teams about this capability</li><li>Encourage teams to use templates to standardize investigation workflows</li><li>Review internal investigation procedures and update documentation if needed</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://sip.purview.microsoft.com/dsi/overviewpage?tid=72f988bf-86f1-41af-91ab-2d7cd011db47\" target=\"_blank\">Data Security Investigations | Microsoft Purview</a></li><li><a href=\"https://learn.microsoft.com/purview/data-security-investigations\" target=\"_blank\">Learn about Data Security Investigations | Microsoft Purview | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-09T17:28:07.323Z",
+    "endDateTime": "2027-06-09T17:28:07.323Z",
+    "lastModifiedDateTime": "2026-06-09T17:28:11.23Z",
+    "title": "The June 2026 Windows security update is now available",
+    "id": "MC1385471",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "<div>The June 2026 security update is now available for all supported versions of Windows. We recommend that you install these updates promptly. For more information about the contents of this update, see the release notes, which are easily accessible from the <a href=\"https://support.microsoft.com/help/5094126\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11</a> update history page. To learn more about the different types of monthly quality updates, see <a href=\"https://techcommunity.microsoft.com/blog/windows-itpro-blog/windows-monthly-updates-explained/3573545\" rel=\"noopener noreferrer\" target=\"_blank\">Windows monthly updates explained</a>.</div><div><br></div><div><b>Highlights for the Windows 11, version 25H2 update:</b></div><ul><li>This security update includes improvements that were a part of update <a href=\"https://support.microsoft.com/help/5089573\" rel=\"noopener noreferrer\" target=\"_blank\">KB5089573</a>&nbsp;(released May 26, 2026).</li><li>This update expands high confidence device targeting data, increasing coverage of devices eligible to automatically receive new Secure Boot certificates. Devices receive the new certificates only after demonstrating sufficient successful update signals, maintaining a controlled and phased rollout.</li><li>This update includes a resolution for <a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585\" rel=\"noopener noreferrer\" target=\"_blank\">CVE‑2026‑45585</a> (BitLocker security feature bypass). The mitigation script remains part of the guidance and does not need to be reverted.</li></ul><div><br></div><div>Short on time? Watch our <a href=\"https://aka.ms/Windows11/ReleaseNotes/Video/2606\" rel=\"noopener noreferrer\" target=\"_blank\">Windows 11 release notes video</a> for this month's tips.</div><div><br></div><div>For instructions on how to install this update, see the KB for your operating system listed below:</div><div class=\"ql-indent-1\">• Windows 11, version 26H1: <a href=\"https://support.microsoft.com/help/5095051\" rel=\"noopener noreferrer\" target=\"_blank\">KB5095051</a></div><div class=\"ql-indent-1\">• Windows 11, versions 25H2 and 24H2: <a href=\"https://support.microsoft.com/help/5094126\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094126</a></div><div class=\"ql-indent-1\">• Windows 11, version 23H2: <a href=\"https://support.microsoft.com/help/5093998\" rel=\"noopener noreferrer\" target=\"_blank\">KB5093998</a></div><div class=\"ql-indent-1\">• Windows 11 Enterprise LTSC 2024: Baseline <a href=\"https://support.microsoft.com/topic/db6d2480-f7d1-4359-941d-31645a359632\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094126</a></div><div class=\"ql-indent-1\">• Windows 10, versions 22H2 and 21H2: <a href=\"https://support.microsoft.com/help/5094127\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094127</a></div><div class=\"ql-indent-1\">• Windows 10 Enterprise LTSC 2019 and Windows Server 2019: <a href=\"https://support.microsoft.com/help/5094123\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094123</a></div><div class=\"ql-indent-1\">• Windows 10 LTSB 2016 and Windows Server 2016: <a href=\"https://support.microsoft.com/help/5094122\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094122</a></div><div class=\"ql-indent-1\">• Windows Server 2025: <a href=\"https://support.microsoft.com/help/5094125\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094125</a></div><div class=\"ql-indent-1\">• Windows Server 2025 Datacenter: Azure Edition: Baseline <a href=\"https://support.microsoft.com/topic/c35ea5b5-6e78-4c63-805c-714d1803dc65\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094125</a></div><div class=\"ql-indent-1\">• Windows Server 2022: <a href=\"https://support.microsoft.com/help/5094128\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094128</a></div><div class=\"ql-indent-1\">• Windows Server 2022 Datacenter: Azure Edition: Baseline <a href=\"https://support.microsoft.com/topic/962a0cf6-9fec-4b8a-b309-79bdf68896ec\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094128</a></div><div class=\"ql-indent-1\">• Windows Server 2012 R2: <a href=\"https://support.microsoft.com/help/5094041\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094041</a></div><div class=\"ql-indent-1\">• Windows Server 2012: <a href=\"https://support.microsoft.com/help/5094042\" rel=\"noopener noreferrer\" target=\"_blank\">KB5094042</a></div><div><br></div><div>Note: With recent and upcoming Windows updates over the next few months, a limited number of consumer and business devices might experience one additional restart during installation. This one‑time restart occurs after a Secure Boot certificate update is applied as part of the <a href=\"https://support.microsoft.com/topic/windows-secure-boot-certificate-expiration-and-ca-updates-7ff40d33-95dc-4c3c-8725-a9b95457578e\" rel=\"noopener noreferrer\" target=\"_blank\">Secure Boot update process</a>.</div>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-09T11:00:00Z",
+    "endDateTime": "2026-08-09T11:00:00Z",
+    "lastModifiedDateTime": "2026-06-09T18:23:55.213Z",
+    "title": "June 2026 Windows security update requires restart for hotpatch-enabled devices",
+    "id": "MC1385496",
+    "category": "planForChange",
+    "severity": "normal",
+    "tags": [
+      "User impact",
+      "Admin impact"
+    ],
+    "isMajorChange": true,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Windows"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [
+      {
+        "name": "ExternalLink",
+        "value": "https://learn.microsoft.com/windows/release-health/windows11-release-information#windows-11-hotpatch-calendar"
+      }
+    ],
+    "body": {
+      "contentType": "html",
+      "content": "<p><b>What and why:</b><br/>\nThe June 2026 Windows security update will be released as a [standard update] instead of a [hotpatch update]. As a result, hotpatch-enabled devices will require a restart to complete installation.\n</p><p>\nThis change prioritizes security following public disclosure of a vulnerability outside coordinated disclosure best practices (<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-45585\">CVE-2026-45585</a>).\n</p><p>\n<b>Rollout schedule:</b><ul><li>\n<b>June 2026</b>: Standard update with restart required for hotpatch-enabled devices.</li><li>\n<b>July 2026</b>: Planned baseline update month with restart required.</li><li>\n<b>August 2026</b>: Next hotpatch update expected.</li></ul>\n</p><p>\n<b>Impact on your organization:</b><ul><li>\nHotpatch-enabled devices will require a restart to complete installation of the June 2026 security update.</li><li>\nHotpatch-enabled devices will remain enrolled in hotpatch updates.</li><li>\nNo change for devices not using hotpatch updates (standard updates already require restart).</li></ul>\n</p><p>\n<b>Action required / recommendations:</b></br/>\nNo additional configuration is required to stay enrolled in hotpatch updates.\n</p><p>\n<b>Compliance considerations:</b><ul><li>\nNo compliance action is required.</li><li>\nUpdate installation and restart behavior will be reflected in update history and compliance reports as usual.</li></ul>\n</p><p>\n<b>Additional information:</b><br/>\nYou can track the hotpatch update calendars on the Windows release health site for both <a href=\"https://learn.microsoft.com/windows/release-health/windows11-release-information#windows-11-hotpatch-calendar\">Windows 11</a> and <a href=\"https://learn.microsoft.com/windows/release-health/windows-server-release-info#windows-server-hotpatch-calendar\">Windows Servers</a>.</p>"
     }
   },
   {
