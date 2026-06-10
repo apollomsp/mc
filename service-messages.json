@@ -20477,7 +20477,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560813\":[{\"RoadmapId\":560813,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-10T09:23:57.6608462Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T09:23:57.6608466Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T09:23:57.6608468Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T09:23:57.660847Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"560813\":[{\"RoadmapId\":560813,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-10T11:21:23.4544953Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T11:21:23.4544957Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T11:21:23.4544958Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T11:21:23.4544959Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25278,6 +25278,78 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[What and Why:]</b></p><p>\nWe’re introducing enhanced access policy controls for <b>Organizational Data custom attributes</b> in Microsoft 365. This update provides administrators with more granular control over how and when new organizational attributes are shared. Admins can limit release to a few selected users using the new Staging policy and can better manage access to non-public data shared with Workforce Insights delegates. This change supports stronger data governance while enabling controlled sharing of new attributes.</p><p>This message is associated with Roadmap ID&nbsp;<a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=564805\" target=\"_blank\">564805</a>.</p>\n\n<p><b>[Rollout Schedule:]</b></p>\n<ul>\n  <li>Public Preview (Worldwide): We will begin rolling out in <b>mid-June 2026</b> and expect to complete by <b>mid-July 2026</b>.</li><li>General Availability (Worldwide): We will begin rolling out in <b>mid-July 2026</b> and expect to complete by <b>early August 2026</b>.</li>\n</ul>\n\n<p><b>[Impact on Your Organization:]</b></p>\n<ul>\n  </ul><p><b>Who is affected:</b> Microsoft 365 administrators managing access policies in Organizational Data for Microsoft 365.</p><p><b>Platforms/Services:</b> </p><ul><li>Microsoft 365</li><li>Organizational Data in Microsoft 365</li><li>Workforce Insights</li></ul><p><b>What will happen:</b>\n    </p><ul>\n      \n      \n      \n      \n      \n      \n    </ul>\n  <p></p><ul><li>New <b>granular access controls</b> for custom organizational attributes.</li><li>Admins can:<ul><li>Release new attributes to <b>selected users or groups</b> instead of the entire organization or all managers.</li><li>Control whether<b> leaders can share non-public data</b> with Workforce Insights delegates.</li></ul></li><li>Existing policies are unchanged.</li><li>New attributes default to not shared until explicitly configured.</li><li>No user impact unless enabled by admin.</li>\n  \n  </ul><ul>\n</ul>\n\n<p><b>[Action Required / Recommendations:]</b></p><p><b>No action is required </b>to maintain current behavior.</p><p>Admins may optionally:</p><ul><li>Customize the Staging policy for upcoming custom non-public attributes.</li><li>Update Organizational Data access policies to take advantage of the new granular controls.</li><li>Communicate internally with data owners or analytics teams about the new policy options.</li></ul><p><b>[Compliance Considerations:]</b></p><p>Admin control via policy is impacted due to the introduction of new access controls for Organizational Data custom attributes. No other compliance considerations were identified.</p>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-10T10:43:07Z",
+    "endDateTime": "2026-07-10T10:43:07Z",
+    "lastModifiedDateTime": "2026-06-10T10:45:44.343Z",
+    "title": "Dynamics 365 Customer Insights – Journeys - Automatically update emails with the latest content",
+    "id": "MC1386119",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to automatically update emails with the latest content in Dynamics 365 Customer Insights - Journeys. This feature will reach general availability on July 10, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis feature introduces a new type of content block called Dynamic content block. When a dynamic content block is updated, all emails using that block are automatically refreshed to ensure recipients always receive the most current content.<br><br>Key capabilities of Dynamic content blocks include:<ul>\n    <li>Easily create dynamic content blocks in Content gallery with new content or select existing content in email and save it as a dynamic content block.</li>\n    <li>Mark content block as \"protected\" to prevent content from being modified in the email.</li>\n    <li>Allow personalized content (for example, dynamic text or conditional content).</li>\n    <li>Easily see which emails will be updated when you update content blocks.</li>\n</ul>Dynamic content blocks can be enabled by going to the <b>Settings > Feature switches area</b> and turning on the feature switch <b>Dynamic content block</b>.<br><br>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO15783\"target=\"_blank\">Automatically update emails with the latest content</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-06-10T11:00:52Z",
+    "endDateTime": "2026-07-10T11:00:52Z",
+    "lastModifiedDateTime": "2026-06-10T11:02:02.703Z",
+    "title": "Dynamics 365 Customer Insights - Improve engagement and message timing with Outreach Optimization Agent",
+    "id": "MC1386125",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to improve engagement and message timing with Outreach Optimization Agent in Dynamics 365 Customer Insights - Journeys. This feature will reach public preview on June 25, 2026.<br><br><b>How does this affect me?</b><br>\nThis feature enables you to add the Outreach Optimization Agent to your journey, select the emails you want delivered, and let the agent handle timing and cadence automatically.<br><br>With the Outreach Optimization Agent, you can:<ul><li><b>Start with an intelligent baseline</b>: Outreach Optimization Agent automatically creates a baseline messaging plan for your audience by analyzing overall historical engagement patterns, producing a smart, generic plan that is designed to work well for most customers before any individual optimization is applied.</li><li><b>Listen to incoming interactions and adapt the plan in real time</b>: The agent continuously monitors incoming signals, including engagement and non-responsiveness, and adjusts follow up timing, cadence, or exits the plan based on whether the goal is progressing or has been achieved.</li><li><b>Respect quiet times</b>: The agent enforces quiet time settings as a hard constraint, ensuring that messages are never sent outside approved communication windows, even if engagement data suggests otherwise.</li></ul><b>What action do I need to take?</b><Br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/ADO15353\"target=\"_blank\">Improve engagement and message timing with Outreach Optimization Agent</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-06-10T11:09:41Z",
+    "endDateTime": "2026-07-10T11:09:41Z",
+    "lastModifiedDateTime": "2026-06-10T11:11:01.66Z",
+    "title": "Dynamics 365 Sales - Redesigned Opportunity Research experience",
+    "id": "MC1386128",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Finance and Operations Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing a redesigned Opportunity Research experience in Dynamics 365 Sale. This feature will reach general availability on July 10, 2026.<br><br><b>How does this affect me?</b><br>This new experience will replace the current Opportunity Research page in Dynamics 365 Sales and will offer concise summaries, prioritized insights, and recommended next steps to help you move sales opportunities forward.<br><br>With this feature, users will be able to:<ul><li>Quickly understand opportunity status, risks, and recommended actions.</li><li>Review key deal details including sales stage, deal value, close date, and insight freshness.</li><li>Identify high-priority risks with supporting evidence and business impact.</li><li>Access detailed research sections only when additional context is needed.</li><li>See which data sources contributed to generated insights, including CRM data, emails, meetings, and external signals.</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
     }
   },
   {
