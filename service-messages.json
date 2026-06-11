@@ -633,30 +633,6 @@
     }
   },
   {
-    "startDateTime": "2025-06-11T00:05:12.05Z",
-    "endDateTime": "2026-06-11T00:05:11.987Z",
-    "lastModifiedDateTime": "2025-06-11T00:05:12.82Z",
-    "title": "The June 2025 Scan Cab is available",
-    "id": "MC1091459",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div><b>IMPORTANT</b>: This notice only affects environments where Scan Cab is used to check for update compliance.</div><div><br></div><div>The June 2025 Scan Cab was made available at 5:00 PM PT today, June 10, 2025.&nbsp;The Scan Cab&nbsp;<a href=\"https://learn.microsoft.com/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline\" rel=\"noopener noreferrer\" target=\"_blank\">can help determine</a>&nbsp;whether a Windows device needs to install necessary security updates released by Microsoft without first connecting to the Windows Update service.&nbsp;</div><div><br></div><div><b>How this affects your organization:</b></div><div>The Wsusscn2.cab file is a cabinet file that is signed by Microsoft and contains information about Microsoft security-related updates. Devices that aren't connected to the Internet can be scanned to see whether these security-related updates are present or required. The Wsusscn2.cab file doesn't contain the security updates themselves so you must obtain and install any needed security-related updates through other means.</div><div><br></div><div><b>What you need to do to prepare:</b></div><div>You can download and deploy the June 2025 Scan Cab via the usual processes. For detailed guidance, see the Additional information section below. No action is required on environments where Scan Cab is not deployed. However, please note that there might be non-Microsoft applications which utilize Scan Cab. Review the documentation for any software and update deployment tools used in your organization to understand if this is applicable in your environment.</div><div><br></div><div><b>Additional information:</b></div><ul><li>Updated Scan Cab: <a href=\"https://go.microsoft.com/fwlink/?LinkID=74689\" rel=\"noopener noreferrer\" target=\"_blank\">Download the new Scan Cab here</a></li><li><a href=\"https://techcommunity.microsoft.com/t5/windows-it-pro-blog/announcing-a-smaller-wsus-scan-cab/ba-p/2928256?msclkid=256145ccd0c011ec9266b53af8d0aca1\" rel=\"noopener noreferrer\" target=\"_blank\">Announcing a smaller WSUS Scan Cab:</a> Learn more about WSUS and the Scan Cab process</li><li><a href=\"https://learn.microsoft.com/windows/win32/wua_sdk/using-wua-to-scan-for-updates-offline\" rel=\"noopener noreferrer\" target=\"_blank\">Using WUA to Scan for Updates Offline:</a> Windows Update Agent (WUA) can be used to scan computers for security updates without connecting to Windows Update</li><li><a href=\"https://learn.microsoft.com/windows-server/administration/windows-server-update-services/manage/wsus-and-the-catalog-site\" rel=\"noopener noreferrer\" target=\"_blank\">WSUS and the Catalog Site:</a> The Catalog Site used by WSUS to import updates and drivers</li></ul>"
-    }
-  },
-  {
     "startDateTime": "2025-06-11T17:01:02.787Z",
     "endDateTime": "2026-06-11T17:01:02.707Z",
     "lastModifiedDateTime": "2025-06-11T17:01:03.703Z",
@@ -13238,8 +13214,8 @@
   },
   {
     "startDateTime": "2026-04-03T22:23:30Z",
-    "endDateTime": "2026-06-29T07:00:00Z",
-    "lastModifiedDateTime": "2026-05-12T16:31:47.817Z",
+    "endDateTime": "2026-07-27T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-10T23:21:08.347Z",
     "title": "(Updated) Microsoft Teams: New chat sections for muted and meeting chats",
     "id": "MC1269864",
     "category": "planForChange",
@@ -13268,7 +13244,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams will introduce two new chat sections—Muted chats (enabled by default) and Meeting chats (disabled by default)—to organize conversations. Rollout starts early May 2026, completing by month-end. Users can enable, disable, or reorder these sections; no admin action or controls are required."
+        "value": "Microsoft Teams will introduce two new chat sections—Muted chats (enabled by default) and Meeting chats (disabled by default)—to organize chats. Rollout starts early May 2026, completing by late June. Users can enable/disable and reorder these sections; no admin action or controls are required."
       },
       {
         "name": "Platforms",
@@ -13277,7 +13253,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p>Updated May 12, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p><b>Microsoft Teams</b> is introducing <b>two new system chat sections</b> called <b>Muted chats</b> and <b>Meeting chats</b>. These sections allow users to organize their chat and channels list by grouping muted conversations and meeting chats into dedicated sections that users can turn on or off.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=559605\" target=\"_blank\">559605</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide, GCC, GCC High, DoD): </b>Rollout begins in<b> early May 2026</b> and is expected to complete by<b> end of May 2026</b> (previously<b> </b>mid-May).</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All Microsoft Teams users in Microsoft 365 tenants, including Worldwide, GCC, GCC High, and DoD</li></ul><p><i>What will happen</i></p><p>Users may see up to two new system sections in their Teams chat and channels list:</p><ul><li><b>Muted chats section</b><ul style=\"\"><li style=\"\">Enabled by default.</li><li style=\"\">Muted chats that are not in Favorites or user‑created sections automatically move to this section.</li><li style=\"\">The section appears at the bottom of the chat list.</li><li style=\"\">Unread chats continue to appear bold.</li></ul></li><li><b>Meeting chats section</b><ul style=\"\"><li style=\"\">Disabled by default.</li><li style=\"\">When enabled by the user, meeting chats that are not in Favorites or user‑created sections automatically move to this section.</li><li style=\"\">The section appears below the main chats list.</li><li style=\"\">Unread chats continue to appear bold and contribute to badge counts.</li></ul></li><li style=\"\">Chats in <i>Favorites</i> or <i>user‑created sections</i> are not moved.</li><li style=\"\">Users can drag and drop these sections to reorder them.</li><li style=\"\">There are <b>no admin controls for these sections</b>.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action is required.</p><p>You may want to:</p><ul><li>Inform users that new chat sections are available and that they can turn them on or off.</li><li>Notify helpdesk staff that muted chats may appear in a <i>separate section</i> by default.</li><li>Direct users to <i><b>Settings &gt; Chats and channels </b></i>to manage these sections.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated June 10, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p><b>Microsoft Teams</b> is introducing <b>two new system chat sections</b> called <b>Muted chats</b> and <b>Meeting chats</b>. These sections allow users to organize their chat and channels list by grouping muted conversations and meeting chats into dedicated sections that users can turn on or off.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=559605\" target=\"_blank\">559605</a></b>.</p><p><b>[When this will happen]</b></p><ul><li><b>General Availability (Worldwide, GCC, GCC High, DoD): </b>Rollout begins in<b> early May 2026</b> and is expected to complete by<b>&nbsp;late June 2026 </b>(previously end of May).</li></ul><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>All Microsoft Teams users in Microsoft 365 tenants, including Worldwide, GCC, GCC High, and DoD</li></ul><p><i>What will happen</i></p><p>Users may see up to two new system sections in their Teams chat and channels list:</p><ul><li><b>Muted chats section</b><ul style=\"\"><li style=\"\">Enabled by default.</li><li style=\"\">Muted chats that are not in Favorites or user‑created sections automatically move to this section.</li><li style=\"\">The section appears at the bottom of the chat list.</li><li style=\"\">Unread chats continue to appear bold.</li></ul></li><li><b>Meeting chats section</b><ul style=\"\"><li style=\"\">Disabled by default.</li><li style=\"\">When enabled by the user, meeting chats that are not in Favorites or user‑created sections automatically move to this section.</li><li style=\"\">The section appears below the main chats list.</li><li style=\"\">Unread chats continue to appear bold and contribute to badge counts.</li></ul></li><li style=\"\">Chats in <i>Favorites</i> or <i>user‑created sections</i> are not moved.</li><li style=\"\">Users can drag and drop these sections to reorder them.</li><li style=\"\">There are <b>no admin controls for these sections</b>.</li></ul><p><b>[What you can do to prepare]</b></p><p>No admin action is required.</p><p>You may want to:</p><ul><li>Inform users that new chat sections are available and that they can turn them on or off.</li><li>Notify helpdesk staff that muted chats may appear in a <i>separate section</i> by default.</li><li>Direct users to <i><b>Settings &gt; Chats and channels </b></i>to manage these sections.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
@@ -20486,7 +20462,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560813\":[{\"RoadmapId\":560813,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-10T22:41:00.4460854Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T22:41:00.4460857Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T22:41:00.4460858Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-10T22:41:00.4460859Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"560813\":[{\"RoadmapId\":560813,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-11T01:10:14.4255862Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-11T01:10:14.4255866Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-11T01:10:14.4255868Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-11T01:10:14.425587Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21440,13 +21416,14 @@
   },
   {
     "startDateTime": "2026-05-26T22:13:54Z",
-    "endDateTime": "2026-07-24T07:00:00Z",
-    "lastModifiedDateTime": "2026-05-26T22:15:48.813Z",
-    "title": "Microsoft Teams: Chat panel opens by default in Gallery view on Teams Rooms on Android",
+    "endDateTime": "2026-08-31T07:00:00Z",
+    "lastModifiedDateTime": "2026-06-10T23:17:24.673Z",
+    "title": "(Updated) Microsoft Teams: Chat panel opens by default in Gallery view on Teams Rooms on Android",
     "id": "MC1323268",
     "category": "stayInformed",
     "severity": "normal",
     "tags": [
+      "Updated message",
       "New feature",
       "User impact",
       "Admin impact"
@@ -21466,7 +21443,7 @@
       },
       {
         "name": "Summary",
-        "value": "Microsoft Teams Rooms on Android will open the meeting chat panel by default in Gallery view starting late June 2026. This makes chat immediately visible to in-room participants, with a simplified one-tap toggle. Admins can configure this setting; no action is required but reviewing configurations is recommended."
+        "value": "Microsoft Teams Rooms on Android will open the meeting chat panel by default in Gallery view starting late June 2026. This feature is enabled by default but configurable by admins. Users can close the chat with one tap. No action is required, but review settings and notify users as needed."
       },
       {
         "name": "Platforms",
@@ -21475,7 +21452,7 @@
     ],
     "body": {
       "contentType": "html",
-      "content": "<p><b>[What and Why]</b></p><p>We’re updating <b>Microsoft Teams Rooms on Android</b> to open the meeting chat panel by default when using Gallery view. This change makes the meeting chat immediately visible to in-room participants during meetings. Admins can configure this behavior, and users can close the chat panel in one tap during meetings.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=561604\" target=\"_blank\">561604</a></b>.</p><p><b>[Rollout Schedule]</b></p><ul><li><b>General Availability (Worldwide): </b>Late June 2026 through late June 2026</li><li><b>GCC: </b>Late June 2026 through late June 2026</li><li><b>GCC High: </b>Late June 2026 through late June 2026</li></ul><p><b>[Impact on Your Organization]</b></p><p><i>Who is affected</i></p><p style=\"margin-left: 25px;\">Organizations using<b> Microsoft Teams Rooms</b> on <b>Android devices</b></p><p><i>Platforms/Services</i></p><ul><li>Microsoft Teams</li><li>Teams Rooms on Android devices (meeting room systems)</li></ul><p>What will happen</p><ul><li>The meeting chat panel <b>will open by default</b> <b>in Gallery view</b>.</li><li>In-room participants will see the ongoing meeting chat upon joining.</li><li>Users can close the chat panel at any time using the chat button in the <i>meeting controls</i>.</li><li>The <b>chat toggle experience is simplified to a single tap</b> in the <i>meeting toolbar</i>.</li><li>This feature is <b>enabled by default </b>but can be configured by admins.</li></ul><p><b>[Action Required / Recommendations]</b></p><p>No action is required.</p><p>However, you may want to:</p><ul><li><b>Review your configuration</b> if you prefer chat not to open automatically.</li><li><b>Adjust the setting</b> using one of the following options:<ul><li>On the device:<ul><li><i><b>Settings &gt; Teams Admin Settings &gt; Meetings &gt; Open chat panel by default in Gallery view</b></i></li></ul></li><li>In <i>Teams admin center</i>:<ul><li><i><b>Teams devices &gt; Teams Rooms on Android &gt; Configuration profile &gt; Meetings &gt; Open chat panel by default in Gallery view</b></i></li></ul></li></ul></li><li><b>Notify room users and helpdesk staff </b>about this updated default behavior.</li><li><b>Update internal documentation </b>if you provide guidance for meeting room usage.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
+      "content": "<p>Updated June 10, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[What and Why]</b></p><p>We’re updating <b>Microsoft Teams Rooms on Android</b> to open the meeting chat panel by default when using Gallery view. This change makes the meeting chat immediately visible to in-room participants during meetings. Admins can configure this behavior, and users can close the chat panel in one tap during meetings.</p><p>This message is associated with <b>Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=561604\" target=\"_blank\">561604</a></b>.</p><p><b>[Rollout Schedule]</b></p><ul><li><b>General Availability (Worldwide): </b>Late June 2026 through late June 2026</li><li><b>GCC: </b>Late June 2026 through late June 2026</li><li><b>GCC High: </b>Late June 2026 through late June 2026</li><li><b>DoD:</b>&nbsp;Mid-July 2026 through end of July 2026</li></ul><p><b>[Impact on Your Organization]</b></p><p><i>Who is affected</i></p><p style=\"margin-left: 25px;\">Organizations using<b> Microsoft Teams Rooms</b> on <b>Android devices</b></p><p><i>Platforms/Services</i></p><ul><li>Microsoft Teams</li><li>Teams Rooms on Android devices (meeting room systems)</li></ul><p>What will happen</p><ul><li>The meeting chat panel <b>will open by default</b> <b>in Gallery view</b>.</li><li>In-room participants will see the ongoing meeting chat upon joining.</li><li>Users can close the chat panel at any time using the chat button in the <i>meeting controls</i>.</li><li>The <b>chat toggle experience is simplified to a single tap</b> in the <i>meeting toolbar</i>.</li><li>This feature is <b>enabled by default </b>but can be configured by admins.</li></ul><p><b>[Action Required / Recommendations]</b></p><p>No action is required.</p><p>However, you may want to:</p><ul><li><b>Review your configuration</b> if you prefer chat not to open automatically.</li><li><b>Adjust the setting</b> using one of the following options:<ul><li>On the device:<ul><li><i><b>Settings &gt; Teams Admin Settings &gt; Meetings &gt; Open chat panel by default in Gallery view</b></i></li></ul></li><li>In <i>Teams admin center</i>:<ul><li><i><b>Teams devices &gt; Teams Rooms on Android &gt; Configuration profile &gt; Meetings &gt; Open chat panel by default in Gallery view</b></i></li></ul></li></ul></li><li><b>Notify room users and helpdesk staff </b>about this updated default behavior.</li><li><b>Update internal documentation </b>if you provide guidance for meeting room usage.</li></ul><p><b>[Compliance considerations]</b></p><p>No compliance considerations identified. Review as appropriate for your organization.</p>"
     }
   },
   {
