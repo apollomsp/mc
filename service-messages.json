@@ -10727,7 +10727,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557716\":[{\"RoadmapId\":557716,\"McPostId\":null,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338694Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"McPostId\":null,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338696Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338697Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-08T20:18:32.13387Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
+        "value": "{\"557716\":[{\"RoadmapId\":557716,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338697Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"McPostId\":null,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338694Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"McPostId\":null,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338696Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-08T20:18:32.13387Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19800,7 +19800,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560813\":[{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-13T22:28:38.537087Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-13T22:28:38.5370874Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-13T22:28:38.5370876Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-13T22:28:38.5370878Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"560813\":[{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-14T01:13:44.1767456Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-14T01:13:44.1767461Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-14T01:13:44.1767463Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-14T01:13:44.1767464Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25298,6 +25298,52 @@
     "body": {
       "contentType": "html",
       "content": "<div><b>What and Why</b></div><div>Windows updates released in July 2026 will complete the <a href=\"https://support.microsoft.com/topic/1ebcda33-720a-4da8-93c1-b0496e1910dc#ID0EDBBP\" rel=\"noopener noreferrer\" target=\"_blank\">final deployment phase</a> of protections for a Kerberos information disclosure vulnerability (<a href=\"https://msrc.microsoft.com/update-guide/vulnerability/CVE-2026-20833\" rel=\"noopener noreferrer\" target=\"_blank\">CVE‑2026‑20833</a>). Beginning with this phase, Audit mode is removed, leaving Enforcement mode as the only available option for Kerberos RC4 usage on Windows domain controllers. Environments with remaining RC4 dependencies might experience authentication issues unless those dependencies are remediated or explicitly configured before the July 2026 Windows security update is installed.</div><div><br></div><div><b>Rollout Schedule</b></div><ul><li>April 2026 - Enforcement Phase with manual rollback: With installation of the April 2026 Windows security update, default Kerberos behavior changes so domain controllers use AES‑SHA1-only encryption for accounts without <a href=\"https://learn.microsoft.com/troubleshoot/windows-server/windows-security/kerberos-protocol-registry-kdc-configuration-keys\" rel=\"noopener noreferrer\" target=\"_blank\">explicit encryption type</a> settings, and Enforcement mode is enabled by default on Windows domain controllers. Audit mode remains available as a manual rollback option until July 2026.</li><li>July 2026 – Enforcement Phase: With installation of the July 2026 Windows security update, Audit mode is removed, and Enforcement mode becomes the only available behavior for supported Windows domain controllers.</li></ul><div><br></div><div><b>Impact on Your Organization</b></div><div>With installation of the July 2026 Windows security update, Windows domain controllers will no longer support Audit mode rollback behavior for Kerberos RC4 hardening. Environments with service accounts, applications, appliances, or devices that still rely on RC4-based Kerberos tickets may experience authentication failures unless those dependencies have been remediated or explicitly configured to support continued RC4 usage where required.</div><div><br></div><div>Devices using non-Windows Kerberos implementations might also require additional interoperability testing to ensure continued authentication functionality after the July 2026 Enforcement phase begins.</div><div><br></div><div>Azure Files note: For devices using Azure Files SMB with Active Directory-based authentication, address any RC4 dependencies before installation of the July 2026 Windows security update to reduce the risk of access disruption once Audit mode is removed. Follow the steps in the <a href=\"https://aka.ms/rc4azurefiles\" rel=\"noopener noreferrer\" target=\"_blank\">official documentation</a> to help maintain uninterrupted access to Azure Files and dependent workloads such as Azure Virtual Desktop.</div><div><br></div><div><b>Action Required/Recommendations</b></div><div>Continue monitoring the System event log for Kerberos-related events indicating RC4 dependencies or insecure encryption configurations. If event log data shows RC4 reliance, remediate by moving to AES‑based encryption or explicitly configuring the account’s <b>msds-SupportedEncryptionTypes</b> attribute where RC4 is still required.</div><div><br></div><div>Before deploying the July 2026 Windows security update, validate that service accounts, applications, and non-Windows Kerberos implementations can successfully authenticate without requiring RC4-based Kerberos authentication.</div><div><br></div><div><b>Compliance Considerations</b></div><div>Audit events related to this change are only generated when Active Directory is unable to issue AES‑SHA1 service tickets or session keys. The absence of audit events does not guarantee that all non-Windows devices will successfully accept Kerberos authentication after the July 2026 Enforcement phase begins. Validate interoperability through testing before broadly deploying the July 2026 Windows security update.</div>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-13T23:47:23Z",
+    "endDateTime": "2026-08-15T23:47:00Z",
+    "lastModifiedDateTime": "2026-06-13T23:57:34.717Z",
+    "title": "Dynamics 365 Project Operations - Enable project resources on general journal entries for modern projects",
+    "id": "MC1390347",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to enable project resources on general journal entries for modern projects in Dynamics 365 Project Operations. This feature will reach general availability on June 15, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis feature expands the existing general journal functionality for modern projects.\nA new capability is added so general journal lines can have an associated <b>project resource</b>.<ul>\n<li>Specifying the project resource on a journal line allows for increased tracking and auditability for where organizations want to track expense journals on a detailed per-resource basis instead of in a summary.</li>\n<li>Tracking expenses on a per-resource basis is especially helpful for scenarios around accruals where all expenses aren't approved and posted from the prior period, and organizations want to track as per-resource accruals to reverse in the next month.</li>\n<li>Additional enhancements are being added for an improved user experience. </li></ul>\n<b>What action do I need to take?</b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/16101/enable-project-resources-general-journal-entries-modern-projects\" target=\"_blank\">Enable project resources on general journal entries for modern projects</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-06-13T23:47:27Z",
+    "endDateTime": "2026-08-15T23:47:00Z",
+    "lastModifiedDateTime": "2026-06-13T23:58:12.53Z",
+    "title": "Dynamics 365 Project Operations - Post project invoice proposals using multithreaded batch tasks",
+    "id": "MC1390348",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to post project invoice proposals by parallelizing the work using multithreaded batch tasks in Dynamics 365 Project Operations. This feature will reach general availability on June 15, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis feature significantly improves performance when posting the project invoice proposal and makes the final invoice document available.<br><br>\nThis feature provides the following capabilities:<ul>\n<li>New logic that splits the invoice posting process into multiple threads. This logic distributes the work instead of doing all the work sequentially in a single thread.</li>\n<li>A new project parameter where you configure the number of parallel threads. </li></ul>\n<b>What action do I need to take? </b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/16103/post-project-invoice-proposals-using-multithreaded-batch-tasks\" target=\"_blank\">Post project invoice proposals using multithreaded batch tasks</a>."
     }
   },
   {
