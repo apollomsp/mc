@@ -10552,7 +10552,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338694Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338696Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338697Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-08T20:18:32.13387Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
+        "value": "{\"557716\":[{\"RoadmapId\":557716,\"Platform\":\"Desktop\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338697Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338694Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"Platform\":\"Mac\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-04-08T20:18:32.1338696Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":557716,\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-04-08T20:18:32.13387Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18801,7 +18801,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560813\":[{\"RoadmapId\":560813,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-15T08:21:35.1046051Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T08:21:35.1046057Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T08:21:35.1046058Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T08:21:35.1046059Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"560813\":[{\"RoadmapId\":560813,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-15T12:05:43.8468571Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T12:05:43.8468579Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T12:05:43.846858Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T12:05:43.8468581Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24345,6 +24345,174 @@
     "body": {
       "contentType": "html",
       "content": "We are announcing the ability to post project invoice proposals by parallelizing the work using multithreaded batch tasks in Dynamics 365 Project Operations. This feature will reach general availability on June 15, 2026.<br><br>\n<b>How does this affect me?</b><br>\nThis feature significantly improves performance when posting the project invoice proposal and makes the final invoice document available.<br><br>\nThis feature provides the following capabilities:<ul>\n<li>New logic that splits the invoice posting process into multiple threads. This logic distributes the work instead of doing all the work sequentially in a single thread.</li>\n<li>A new project parameter where you configure the number of parallel threads. </li></ul>\n<b>What action do I need to take? </b><br>\nThis message is for awareness, and no action is required.<br><br>\nIf you would like more information on this feature, please visit <a href=\"https://aka.ms/16103/post-project-invoice-proposals-using-multithreaded-batch-tasks\" target=\"_blank\">Post project invoice proposals using multithreaded batch tasks</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-06-15T11:06:52Z",
+    "endDateTime": "2026-07-15T11:06:52Z",
+    "lastModifiedDateTime": "2026-06-15T11:07:41.457Z",
+    "title": "Dynamics 365 Contact Center - Assign customers to a previously engaged expert",
+    "id": "MC1391874",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to assign customers to a previously engaged expert in Dynamics 365 Contact Center. This feature will reach public preview on June 30, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nThis feature automatically assigns customers to a previous or preferred expert, leading to lower handling times, improved expert efficiency, and more personalized support. By routing repeat or follow up conversations to the most recent or preferred expert within configurable time windows, organizations will observe a reduction in customer repetition, improved continuity, and accelerated resolution. If the previous expert is unavailable, the system intelligently falls back to the next best qualified expert, ensuring service levels are maintained.<br><br> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-06-15T11:11:33Z",
+    "endDateTime": "2026-07-15T11:11:33Z",
+    "lastModifiedDateTime": "2026-06-15T11:12:03.3Z",
+    "title": "Dynamics 365 Contact Center - Automate shift rotations for balanced workforce coverage",
+    "id": "MC1391876",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to automate shift rotations for balanced workforce coverage in Dynamics 365 Contact Center. This feature will public preview on June 30, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nWith this feature, supervisors can create shift rotation policies in Workforce Management to automatically rotate agents across recurring time slots on a configurable cadence.<br><br> \n\nThis feature is enabled by supervisors in Customer Service admin center (CSAC) under Workforce Management &gt; Shift and Scheduling. After enabling the feature, supervisors cab access the Shift Rotations page under Workforce Management in Customer Service workspace (CSW).<br><br> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-06-15T11:16:23Z",
+    "endDateTime": "2026-07-15T11:16:23Z",
+    "lastModifiedDateTime": "2026-06-15T11:17:45.29Z",
+    "title": "Microsoft Power Automate - Connect to local AI models from desktop flows",
+    "id": "MC1391881",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Power Automate"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to connect to local AI models from desktop flows in Microsoft Power Automate. This feature will reach public preview on June 30, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nYou can now add AI to your desktop flows without sending data outside your environment. By running models locally, you'll keep control of your data, meet privacy standards, and cut dependency on external services.<br><br>  \n\nUsers can connect to a locally hosted model by providing the endpoint URL, defining system and user prompts, and optionally include files as input. The action returns the model's response as an output variable, which can be used in subsequent steps of the desktop flow to drive decisions and enrich automation scenarios.<br><br>  \n\nThis capability supports models exposed through APIs compatible with the OpenAI standard, enabling integration with commonly used local model providers such as Ollama, vLLM, and LM Studio.<br><br> \n\n<b>What action do I need to take?</b><br> \n\nThis message is for awareness, and no action is required.<br><br> \n\nIf you would like more information on this feature, please visit, please visit <a href=\"https://aka.ms/15876/1\" target=\"_blank\">Connect to local AI models from desktop flows</a>."
+    }
+  },
+  {
+    "startDateTime": "2026-06-15T11:20:26Z",
+    "endDateTime": "2026-07-15T11:20:26Z",
+    "lastModifiedDateTime": "2026-06-15T11:22:02.613Z",
+    "title": "Power Automate - Enable Process Intelligence Experience in object-centric process mining",
+    "id": "MC1391882",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Power Automate"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the availability of Process Intelligence Experience in object-centric process mining in Power Automate Process Mining. This feature will reach public preview on June 30, 2026.<br><br> \n\n<b>How does this affect me?</b><br> \n\nProcess Intelligence Experience makes process analysis easier and more intuitive. It gives teams one place to explore data, compare scenarios, and uncover insights faster—without jumping between tools. With support for object-centric process mining, you can also analyze complex, connected processes with greater clarity.<br><br>  \n\nWhat you can do with it:<ul> \n\n<li><b>Keep related work together: </b>Use tabs to organize analyses in one workspace, so it’s easier to stay in context as you explore different views or parts of a process. </li> \n\n<li><b>Customize your view: </b>Arrange process maps, charts, tables, and metrics in a layout that works best for your analysis and comparisons. </li> \n\n<li><b>Choose the insights you need: </b>Work with a range of analysis tiles, including process maps, performance metrics, attribute breakdowns, case lists, and statistical views. </li> \n\n<li><b>Filter once, analyze everywhere: </b>Apply a filter one time and use it across your workspace to compare scenarios faster and more consistently. </li> \n\n<li><b>Work with complex processes more easily: </b>Object-centric support helps you analyze connected objects, relationships, and cross-object metrics in one experience.</li></ul> \n\nYou can also save and share workspace configurations, making it easier for teams to reuse analyses and create a more consistent approach to process monitoring.<br><br>  \n\n<b>What action do I need to take? </b><br> \nThis message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-06-15T11:30:18Z",
+    "endDateTime": "2026-07-15T11:30:18Z",
+    "lastModifiedDateTime": "2026-06-15T11:32:13.587Z",
+    "title": "Dynamics 365 Finance - Refresh data frequently in Business performance analytics",
+    "id": "MC1391900",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "Feature update"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Finance and Operations Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to refresh data frequently in Business performance analytics in Dynamics 365 Finance. This feature will reach public preview on June 30, 2026.<br><br><b>How does this affect me?</b><br>With this update, your Business performance analytics data will refresh every hour instead of twice a day. More frequent refreshes provide access to current information with improved accuracy for reporting and analysis, helps you make decisions with greater confidence, and respond faster to changing business conditions. This improves support for time-sensitive processes like month-end close with more up-to-date financial and operational data.<br><br>With this release:<ul><li>Data is refreshed automatically every hour to reduce latency between Dynamics 365 Finance data and analytics.</li><li>Incremental data processing ensures that only new or changed records are updated to minimize refresh time and resource consumption.</li><li>Users can make faster, data-driven decisions based on current operational data to improve agility and responsiveness.</li></ul>Future releases will continue to build on this foundation, offering even greater flexibility and control over refresh schedules.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
+    }
+  },
+  {
+    "startDateTime": "2026-06-15T11:36:19Z",
+    "endDateTime": "2026-07-15T11:36:19Z",
+    "lastModifiedDateTime": "2026-06-15T11:36:48.507Z",
+    "title": "Microsoft Power Automate - Run Python scripts using current Python versions in desktop flows",
+    "id": "MC1391903",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Microsoft Power Automate"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to run Python scripts using current Python versions in desktop flows in Microsoft Power Automate. This feature will reach public preview on June 30, 2026.<br><br><b>How does this affect me?</b><br>Power Automate for desktop now supports running Python scripts using current Python versions in addition to existing legacy scripting capabilities. This enhancement addresses the limitations of the previous IronPython-based implementation and enables you to execute scripts with broader compatibility across libraries. You can run scripts using a locally installed Python environment and specify the Python installation to use, allowing flexibility in selecting the appropriate setup for your automation scenarios.<br><br>Existing scripts will continue to work as before, enabling backward compatibility while allowing you to adopt updated Python capabilities at your own pace.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a href=\"https://aka.ms/15878/1\" target=\"_blank\">Run Python scripts using current Python versions in desktop flows</a>"
+    }
+  },
+  {
+    "startDateTime": "2026-06-15T11:41:04Z",
+    "endDateTime": "2026-07-15T11:41:04Z",
+    "lastModifiedDateTime": "2026-06-15T11:41:43.963Z",
+    "title": "Dynamics 365 Human Resources - Streamline benefits enrollment process",
+    "id": "MC1391907",
+    "category": "stayInformed",
+    "severity": "normal",
+    "tags": [
+      "New feature"
+    ],
+    "isMajorChange": false,
+    "actionRequiredByDateTime": null,
+    "services": [
+      "Dynamics 365 Apps"
+    ],
+    "hasAttachments": false,
+    "viewPoint": null,
+    "details": [],
+    "body": {
+      "contentType": "html",
+      "content": "We are announcing the ability to streamline benefits enrollment process in Dynamics 365 Human Resources. This feature will reach public preview on June 30, 2026.<br><br><b>How does this affect me?</b><br>This feature introduces major enhancements to benefits management:<ul><li><b>Year-round HSA/401(k) contribution changes:</b> Allows employees to modify the HSA/401(k) contribution throughout the year. Today, these details can be modified only during the benefits enrollment period.</li><li><b>Automatic basic life insurance enrollment:</b> All employees are automatically enrolled in a basic life insurance plan, with the option to add supplemental life insurance if desired. Currently, the basic life insurance is assigned but also prompts for a beneficiary, which shouldn't be required for the basic plan. Additionally, if an employee doesn't manually check out or select the basic life insurance, it should still be automatically marked as their chosen plan.</li><li><b>Enablement and configuration:</b> Both features are enabled by admins in Feature management for organizations using the updated Benefits module. HR admins can manage settings in the Benefits management configuration area, where they can choose to allow year-round contribution changes and set rules for automatic life insurance enrollment. Admins can disable either feature from Feature management.</li></ul><b>What action do I need to take?</b><br>This message is for awareness, and no action is required.<br><br>If you would like more information on this feature, please visit <a href=\"https://aka.ms/15877/1\" target=\"blank\">Streamline benefits enrollment process</a>."
     }
   },
   {
