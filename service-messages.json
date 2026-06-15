@@ -16060,30 +16060,6 @@
     }
   },
   {
-    "startDateTime": "2026-04-30T22:43:58Z",
-    "endDateTime": "2026-06-14T22:43:00Z",
-    "lastModifiedDateTime": "2026-04-30T22:45:33.43Z",
-    "title": "Dynamics 365 Sales - Stay on track at every deal stage with delta-first guidance in Sales Close Agent (preview)",
-    "id": "MC1296860",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to stay on track at every deal stage with delta-first guidance in Sales Close Agent in Dynamics 365 Sales. This feature will be available for preview on May 15, 2026.<br><br>\n<b>How does this affect me?</b><br>\nUsers will receive stage-aligned guidance and updates within opportunities, helping them focus on what has changed and what actions to take next:<ul>\n<li><b>Stage-aware guidance: </b>See insights and next actions prioritized by the current business process flow stage and substage signals, so guidance matches the selling motion. </li>\n<li><b>Delta-first updates: </b>Lead with what changed since the last review, why it matters for this stage, and the next best actions to take. </li>\n<li><b>Always-visible critical risks: </b>Keep urgent cross-stage risks visible when they require immediate attention. </li>\n<li><b>Out-of-the-box stage coverage: </b>Get built-in guidance across Qualify, Develop, Propose, and Close, with support for customer variations. </li>\n</ul>\n<b>What action do I need to take? </b><br>\nThis message is for awareness, and no action is required."
-    }
-  },
-  {
     "startDateTime": "2026-04-30T22:53:46Z",
     "endDateTime": "2026-06-30T22:53:00Z",
     "lastModifiedDateTime": "2026-04-30T22:54:11.157Z",
@@ -17043,30 +17019,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>[Introduction]</b></p><p>To strengthen security for federated authentication, Microsoft Entra will update the default behavior of<b> federatedTokenValidationPolicy</b>. This policy governs how Microsoft Entra validates federated authentication tokens and determines whether sign-ins are allowed when the <b>internalDomainFederation</b> does not match the user’s UPN domain. Previously, enforcing this behavior required explicit tenant configuration, but it will now be applied by default to reduce the risk of unintended cross-domain sign-ins caused by misconfigured or overly permissive federation trust relationships.</p><p><b>[When this will happen]</b></p><p><b>General Availability (Worldwide, GCC, GCCH, and DoD): </b>We will begin rolling out in <b>mid-August 2026</b> and expect to complete by <b>mid-August 2026</b>.</p><p><b>[How this affects your organization]</b></p><p><i>Who is affected</i></p><ul><li>Microsoft 365 tenants using <b>federated authentication</b> in <i>Microsoft Entra</i></li><li>Admins managing federated domains that were configured <b>before December 2025</b></li><li>Applies only to federated domains that have an<b> internalDomainFederation</b> object</li></ul><p><i>What will happen</i></p><ul><li>By default, federated sign-ins will be <b>blocked </b>when the<b>&nbsp;internalDomainFederation</b> does not match the user’s UPN domain.</li><li>The<b> internalDomainFederation </b>object is typically created automatically during federation setup with Active Directory Federation Services (AD FS) or other identity providers (IdPs).</li><li>This <b>stricter default behavior </b>of the <b>federatedTokenValidationPolicy is already enforced</b> for federated domains added <b>since December 2025</b>.</li><li>After this change, the same behavior will apply to <b>all existing federated domains</b> with an <b><a href=\"https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\">internalDomainFederation</a></b> object.</li><li>Impacted sign-ins will fail with the error:</li></ul><p style=\"margin-left: 75px;\"><b>AADSTS5000820: Sign-in blocked by Federated Token Validation policy. Contact your administrator for details.</b></p><ul><li>There is <b>no change to the user experience </b>unless cross-domain federated sign-ins are currently occurring.</li></ul><p><b>[What you can do to prepare]</b></p><ul><li>No action is required for most organizations.</li><li>Cross-domain federated sign-ins will be blocked automatically as part of this security improvement.</li><li>Organizations that rely on cross-domain federated sign-ins should review their existing federation configurations before rollout.</li><li>(<b>Strongly discouraged</b>) If required for business continuity, Security Administrators, Hybrid Identity Administrators, or External Identity Provider Administrators can use <b>Microsoft Graph</b> to create a custom <b><a href=\"https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta&amp;tabs=http\" target=\"_blank\">federatedTokenValidationPolicy</a></b> with <b><a href=\"https://learn.microsoft.com/graph/api/resources/validatingdomains?view=graph-rest-beta\" target=\"_blank\">rootDomains</a> = none</b> to allow cross-domain sign-ins.</li><li>Communicate this change to identity and helpdesk teams to reduce support escalations.</li></ul><p><b>Learn more:</b></p><ul><li><a href=\"https://learn.microsoft.com/graph/api/federatedtokenvalidationpolicy-get?view=graph-rest-beta&amp;tabs=http\" target=\"_blank\">Get federatedTokenValidationPolicy | Microsoft Graph | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/graph/api/internaldomainfederation-get?view=graph-rest-1.0&amp;tabs=http\" target=\"_blank\">Get internalDomainFederation | Microsoft Graph | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/graph/graph-explorer/graph-explorer-overview\" target=\"_blank\">Use Graph Explorer to try Microsoft Graph APIs | Microsoft Graph | Microsoft Learn</a></li><li><a href=\"https://learn.microsoft.com/graph/api/resources/validatingdomains?view=graph-rest-beta\" target=\"_blank\">validatingDomains resource type | Microsoft Graph | Microsoft Learn</a></li></ul><p><b>[Compliance considerations]</b></p><table class=\"table table-bordered\"><tbody><tr><td><b>Question</b></td><td><b>Answer</b></td></tr><tr><td>Does the change include an admin control, and can it be controlled through Microsoft Entra ID group membership?</td><td>Yes. Administrators can configure a custom <b>federatedTokenValidationPolicy</b> using Microsoft Graph to override the default behavior, although this is strongly discouraged due to security risks.</td></tr><tr><td>Does the change modify, interrupt, or disable Purview capabilities such as Data Loss Prevention, Information Protection, Conditional Access, audit logging, eDiscovery, encryption, or retention policies?</td><td>Yes. This change affects authentication enforcement behavior in Microsoft Entra, which may indirectly influence how Conditional Access policies evaluate federated sign-ins.</td></tr></tbody></table><p><b></b></p>"
-    }
-  },
-  {
-    "startDateTime": "2026-05-08T00:18:51Z",
-    "endDateTime": "2026-06-15T00:18:00Z",
-    "lastModifiedDateTime": "2026-05-08T00:19:20.89Z",
-    "title": "Microsoft Power Automate - Compare flow versions",
-    "id": "MC1303745",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Power Automate"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to compare flow versions in Microsoft Power Automate. This feature will reach general availability on May 15, 2026.<br><br><b>How does this affect me?</b><br>Users will be able to view two versions of a desktop flow side by side to identify changes. The comparison will highlight added, modified, and deleted actions with color indicators. Users will also see differences in variables, UI elements, images, and can expand steps to review detailed modifications. This will help users troubleshoot issues, review updates before publishing, and better understand how flows have changed over time.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
     }
   },
   {
@@ -18156,30 +18108,6 @@
     }
   },
   {
-    "startDateTime": "2026-05-14T22:32:31Z",
-    "endDateTime": "2026-06-14T22:32:31Z",
-    "lastModifiedDateTime": "2026-05-14T22:33:12.267Z",
-    "title": "Dynamics 365 Customer Service - Unlock Workforce Engagement capabilities with Customer Service Enterprise license",
-    "id": "MC1310832",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "New feature"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Dynamics 365 Apps"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "We are announcing the ability to unlock Workforce Engagement capabilities with the Customer Service Enterprise license in Dynamics 365 Customer Service. This feature will reach general availability on May 29, 2026.<br><br><b>How does this affect me?</b><br>Workforce Engagement capabilities are now included in the Dynamics 365 Customer Service Enterprise license, removing the prior dependency on higher-tier stock-keeping unit (SKU) subscriptions.<br><br>These new engagement capabilities include:<ul> \n\n<li><b>Workforce Management (WFM):</b> Forecast demand, schedule service representatives, and manage intraday operations to standardize workforce planning. \n<ul> \n\n<li>Please visit the following documentation to learn more: <a target=\"_blank\" href=\"https://aka.ms/15479_1\">Package Installation</a>, <a target=\"_blank\" href=\"https://aka.ms/15479_2\">Forecasting</a>, <a target=\"_blank\" href=\"https://aka.ms/15479_3\">Capacity Planning</a>, <a target=\"_blank\" href=\"https://aka.ms/15479_4\">Shift Planning</a>, <a target=\"_blank\" href=\"https://aka.ms/15479_5\">Adherence Tracker</a>, <a target=\"_blank\" href=\"https://aka.ms/15479_6\">Time Off Management</a>.</li> \n\n</ul> \n\n</li> \n\n<li><b>Quality Evaluation:</b> Use configurable evaluation forms and structured scoring to assess customer interactions and improve service representative performance through detailed feedback. \n\n<ul> \n\n<li>Please visit: <a target=\"_blank\" href=\"https://aka.ms/15479_7\">Manage Quality Evaluation Agent</a> to learn more.</li> \n\n</ul> \n\n</li> \n\n<li><b>Screen Recording:</b> Gain visibility into service representative desktop activity during customer interactions, supporting compliance, training, and quality reviews. \n\n<ul> \n\n<li>Please visit: <a target=\"_blank\" href=\"https://aka.ms/15479_8\">Configure screen recording with desktop companion application in Dynamics 365 Contact Center and Dynamics 365 Customer Service</a> to learn more.</li> \n\n</ul> \n\n</ul><br> \n\nPlease note that agent capabilities within the Workforce Engagement offering will continue to be charged under a pay-as-you-go model, allowing organizations to adopt AI-driven enhancements based on their usage needs.<br><br><b>What action do I need to take?</b><br>This message is for awareness, and no action is required."
-    }
-  },
-  {
     "startDateTime": "2026-05-15T23:09:07Z",
     "endDateTime": "2026-08-07T07:00:00Z",
     "lastModifiedDateTime": "2026-05-15T23:09:14.763Z",
@@ -19255,7 +19183,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560813\":[{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-14T22:30:59.8347853Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-14T22:30:59.8347858Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-14T22:30:59.834786Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-14T22:30:59.8347862Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"560813\":[{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-15T01:16:29.2624855Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T01:16:29.2624859Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T01:16:29.2624861Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-15T01:16:29.2624863Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
