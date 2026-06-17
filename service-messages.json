@@ -8247,37 +8247,6 @@
     }
   },
   {
-    "startDateTime": "2026-02-11T23:14:05Z",
-    "endDateTime": "2026-06-17T07:00:00Z",
-    "lastModifiedDateTime": "2026-02-11T23:14:31.58Z",
-    "title": "Teams on the web – Browser Update Required by May 15, 2026",
-    "id": "MC1230888",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "User impact",
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Teams"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Starting May 15, 2026, Microsoft Teams on the web will require browsers compliant with ECMAScript 2022. Unsupported browsers will show reminders until then, after which access will be blocked. Desktop and mobile clients are unaffected. Organizations should update browsers and inform users to ensure compliance."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>Introduction</b></p>\n<p>To maintain security, performance, and long-term compatibility, Microsoft Teams on the web will require modern browser standards. Beginning <b>May 15, 2026</b>, Teams on the web will only be supported on browsers that are compliant with <b>ECMAScript 2022 (ES2022)</b>.</p>\n\n<p><b>When this will happen</b></p>\n<ul>\n  <li><b>Now through May 14, 2026:</b> Users on unsupported browsers will see reminder banners.</li>\n  <li><b>Beginning May 15, 2026:</b> Teams on the web will be blocked on non-compliant browsers.</li>\n</ul>\n\n<p><b>How this affects your organization</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>All tenants using <b>Teams on the web</b></li>\n  <li>Users accessing Teams through <b>unsupported browser versions</b></li><li>IT administrators responsible for browser standards and endpoint management</li></ul>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Reminder banners will appear before enforcement.</li>\n  <li>Blocking page will appear starting<b> May 15, 2026</b> until the browser is updated.</li>\n  <li>The change is <b>enabled by default</b> and cannot be disabled.</li><li>Desktop and mobile Teams clients are <b>not impacted</b>.</li></ul>\n\n<p><b>What you can do to prepare</b></p>\n<ul>\n  <li>Inventory browser versions used to access Microsoft 365 web apps.</li>\n  <li>Ensure users are on<b> supported browsers and versions</b>.</li>\n  <li>Notify helpdesk staff and end users ahead of enforcement.</li></ul><p><b>Browser compatibility guidance</b></p><p>All currently supported versions of Microsoft Edge, Google Chrome, Mozilla Firefox, and Safari are <b>ECMAScript 2022 (ES2022)</b> compliant. Browsers that are out of vendor support should be assumed non‑compliant. A browser is considered “out of vendor support” when its publisher no longer provides updates or security fixes; these browsers should be assumed unsupported for Teams on the web.</p><ul>\n</ul>\n\n<p><b>Compliance considerations</b></p>\n<p>Conditional Access policies may be impacted if users attempt access with unsupported browsers.</p>"
-    }
-  },
-  {
     "startDateTime": "2026-02-11T23:14:50Z",
     "endDateTime": "2026-08-24T07:00:00Z",
     "lastModifiedDateTime": "2026-04-22T20:39:52.663Z",
@@ -10769,36 +10738,6 @@
     "body": {
       "contentType": "html",
       "content": "<p>Updated April 30, 2026: We have updated the timeline. Thank you for your patience.&nbsp;</p><p><b>[Introduction]</b></p><p>We’re introducing a new slash command, <b>/createworkflow</b>, in the Microsoft Teams message compose box. A workflow is an automated process that handles repetitive tasks for users, such as sending notifications, creating tasks, or starting approvals when something happens in Teams. With this update, users can type <b>/createworkflow</b> while composing a message to quickly begin creating an automation, instead of navigating through menus. This change is designed to make workflow creation faster, easier to discover, and more accessible directly from chats and channels.</p><p>This message applies to Teams for Windows desktop, Teams for Mac desktop, and Teams for the web. It is associated with Microsoft 365 Roadmap ID <a href=\"https://www.microsoft.com/microsoft-365/roadmap?filters=&amp;searchterms=558544\" target=\"_blank\">558544</a>.</p>\n\n<p><b>[When this will happen:]</b></p>\n<ul>\n  <li><b>Targeted Release (Worldwide):</b>&nbsp;We will begin rollout in <b>late April 2026</b> and expect to complete by<b> late April 2026</b>.</li>\n  <li><b>General Availability (Worldwide):</b>&nbsp;We will begin rollout in <b>mid-May 2026</b> (previously&nbsp;late April)&nbsp;and expect to complete by complete by<b> late May 2026</b> (previously&nbsp;mid-May).</li>\n</ul>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b><br>\nAll Microsoft Teams users.</p>\n\n<p><b>What will happen:</b></p>\n<ul>\n  <li>Users can create workflows directly from the compose box using the <b>/createworkflow</b> slash command.</li><p>Screenshot: <i>Example of the <b>/createworkflow</b> slash command appearing in the Teams message compose box</i></p><p><img src=\"https://cxcs.microsoft.net/file/ccp/en-us/6e0f2c01-af84-46cb-b498-013e2b05646a\" style=\"width: 300px;\" alt=\"user settings\"></p></ul><ul>\n  <li>The feature is <b>enabled by default</b>.</li>\n  <li>No existing admin policies are changed.</li>\n  <li>Workflow creation is faster with fewer clicks.</li><li>If the Workflows app is blocked for users, they will see the Create Workflow slash command, however they will not be able to use it and will see the following dialogue:<br><img src=\"https://cxcs.microsoft.net/static/public/messagecenter/neutral/08549fec-968c-4d01-8aed-810b9ba20c3f/a829476c354517bb036397bec2b0acf9cd059396.png\" style=\"width: 50%;\" alt=\"user settings\"></li>\n</ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No action is required.</li>\n  <li>Optionally inform users about the new slash command.</li>\n  </ul><p>Learn more:&nbsp;<a href=\"https://support.microsoft.com/office/use-commands-in-microsoft-teams-88f61508-284d-417f-a53d-9e082164050b\" target=\"_blank\">Use commands in Microsoft Teams | Microsoft Support</a>&nbsp;(will be updated before rollout)</p><ul>\n</ul>\n\n<p><b>[Compliance considerations:]</b></p>\n<table border=\"1\" cellpadding=\"6\" cellspacing=\"0\">\n  <tbody><tr>\n    <th align=\"left\">Question</th>\n    <th align=\"left\">Explanation</th>\n  </tr>\n  <tr>\n    <td>Does the change allow a user to enable and disable the feature themselves?</td>\n   \n    <td>The /createworkflow slash command provides users with a new, self-initiated entry point to create workflows directly from the Teams compose box. The feature is enabled by default, and usage is initiated by end users without admin action.</td>\n  </tr>\n</tbody></table>"
-    }
-  },
-  {
-    "startDateTime": "2026-03-17T22:47:38Z",
-    "endDateTime": "2026-06-17T07:00:00Z",
-    "lastModifiedDateTime": "2026-03-17T22:47:59.337Z",
-    "title": "Upcoming retirement of select threat detections in Microsoft Defender for Cloud Apps",
-    "id": "MC1254554",
-    "category": "planForChange",
-    "severity": "normal",
-    "tags": [
-      "Admin impact",
-      "Retirement"
-    ],
-    "isMajorChange": true,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Microsoft Defender XDR"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [
-      {
-        "name": "Summary",
-        "value": "Microsoft Defender for Cloud Apps will retire select IaaS and PaaS threat detections by mid-May 2026 due to low impact, focusing on identity-related threats. Affected alerts and policies will be removed, but historical data remains accessible. No admin action is required, though updating related processes is recommended."
-      }
-    ],
-    "body": {
-      "contentType": "html",
-      "content": "<p><b>[Introduction]</b></p>\n<p>Microsoft Defender for Cloud Apps is retiring a small set of <b>Infrastructure as a Service (IaaS)</b> and <b>Platform as a Service (PaaS) threat detections</b>. These detections no longer align with the current threat protection scope of Defender for Cloud Apps, which is focused on<b> identity-related threats across Entra, on‑premises, and SaaS environments</b>.</p>\n<p>Following internal review, these detections are being retired due to low prevalence and low customer impact, allowing us to focus engineering investment on higher-value and more common threat scenarios.</p>\n\n<p><b>[When this will happen:]</b></p>\n<p>General Availability (Worldwide, GCC, GCC High, DoD): Retirement begins <b>early May 2026</b> and is expected to complete by <b>mid‑May 2026</b>.</p>\n\n<p><b>[How this affects your organization:]</b></p>\n<p><b>Who is affected:</b></p>\n<ul>\n  <li>Administrators using <b>Microsoft Defender for Cloud Apps</b></li>\n  <li>Organizations that rely on the affected IaaS and PaaS detections</li>\n</ul>\n\n<p><b>What will happen:</b></p>\n<p><b>Alerts</b></p>\n<ul>\n  <li>Suspicious creation activity for cloud region</li>\n  <li>Suspicious change of CloudTrail logging service</li>\n  <li>Multiple storage deletion activities</li>\n</ul>\n\n<p><b>Behaviors</b></p>\n<ul>\n  <li>Multiple virtual machine (VM) creation activities</li>\n  <li>Multiple delete VM activities</li>\n</ul>\n\n<p><b>After the phase‑out</b></p>\n<ul>\n  <li>These detections will no longer generate alerts or behaviors.</li>\n  <li>The related built‑in policies will be removed from the <b>Policy management</b> page.</li>\n  <li>Alerts and behaviors already generated will <b>not be deleted</b> and will remain available in:<ul><li><b>Alerts </b>and <b>Incidents </b>pages</li><li><b>Advanced Hunting</b> tables (for historical investigation and auditing)</li></ul></li><li>Any existing alert links that previously pointed to these policies will indicate that the policy has been deleted.</li></ul>\n\n<p><b>[What you can do to prepare:]</b></p>\n<ul>\n  <li>No admin action is required.</li><li>If you currently reference these detections in operational processes, playbooks, or documentation, we recommend reviewing and updating those materials ahead of the removal date.</li></ul><p><b>[Compliance considerations:]</b></p>\n<p>This change modifies how admins can monitor and report on specific Defender for Cloud Apps detections. Historical alert and hunting data remains available for auditing.</p>"
     }
   },
   {
@@ -18744,7 +18683,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"560813\":[{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-17T05:47:40.7211262Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-17T05:47:40.7211265Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-17T05:47:40.7211266Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-17T05:47:40.7211268Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"560813\":[{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Web\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-06-17T08:04:18.7438859Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-17T08:04:18.7438863Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-17T08:04:18.7438865Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":560813,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-17T08:04:18.7438867Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19339,7 +19278,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"561550\":[{\"RoadmapId\":561550,\"McPostId\":null,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-28T07:32:57.0427141Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":561550,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-05-28T07:32:57.0427144Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":561550,\"McPostId\":null,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-28T07:32:57.0427146Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":561550,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-28T07:32:57.0427147Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
+        "value": "{\"561550\":[{\"RoadmapId\":561550,\"McPostId\":null,\"Platform\":\"iOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-28T07:32:57.0427141Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":561550,\"McPostId\":null,\"Platform\":\"Desktop\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-06-17T08:04:18.7439604Z\",\"LatestRing\":\"TargetedRelease\",\"TenantRolloutRing\":\"TargetedRelease\"},{\"RoadmapId\":561550,\"McPostId\":null,\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-05-28T07:32:57.0427146Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":561550,\"McPostId\":null,\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-06-17T08:04:18.7439613Z\",\"LatestRing\":\"TargetedRelease\",\"TenantRolloutRing\":\"TargetedRelease\"}]}"
       },
       {
         "name": "Summary",
