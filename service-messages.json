@@ -754,7 +754,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1183611\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260668Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1183611\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260669Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1183611\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260671Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1183611\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260672Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1183611\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650885Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1183611\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650886Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1183611\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650887Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1183611\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650888Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -957,30 +957,6 @@
     "body": {
       "contentType": "html",
       "content": "<p><b>Introduction</b>\n</p><p>Starting October 2027 and ending November 2027, we <b>will retire</b> the<code> isAttestationEnforced</code> and <code>keyRestrictions</code>properties from the existing<b> </b><a href=\"https://learn.microsoft.com/graph/api/resources/fido2authenticationmethodconfiguration?view=graph-rest-1.0\" target=\"_blank\">fido2AuthenticationMethodConfiguration API </a>schema. This change aligns with the latest update to the passkey policy API schema, which introduces support for granular group-based configurations with passkey profiles.</p>\n<p>During the retirement period,<code> isAttestationEnforced</code> and <code>keyRestrictions </code>will remain in sync with their counterparts <code>attestationEnforcement</code> and <code>keyRestrictions</code> within the Default passkey profile.</p>\n\n<p><b>When this will happen</b>&nbsp;</p><p>Retirement begins in mid-October 2027 and is expected to complete by early November 2027.</p>\n\n<p><b>How this affects your organization:</b></p><p>You are receiving this message because our reporting indicates your organization may be using this feature.\n</p><p><b>Who is affected:</b> Admins managing FIDO2 authentication configurations and any custom automations or third-party integrations using these properties.\n</p><p><b>What will happen</b></p><ul>\n<li><code>isAttestationEnforced</code> and <code>keyRestrictions </code>properties <b>will be retired</b>.</li>\n<li>New properties are available in the <i>updated passkey policy API schema</i>.</li>\n<li>Existing properties will sync with new ones during the transition period.</li>\n<li>Automations or integrations using retired properties will stop working after the change.</li>\n</ul>\n<p></p>\n\n<p><b>What you can do to prepare</b></p><ul>\n<li>Review your current configuration.</li>\n<li>Update any custom automations and third-party integrations to support the new schema.</li>\n<li>Notify your admins and update internal documentation.</li></ul><p><i>Screenshot - The read arrows indicate the properties to be retired:</i></p><p><img src=\"https://support.microsoft.com/en-us/customercomms/media/messagecenter/2025/11/19213-1-passkey-api-retirement.png\" style=\"width: 400px;\" alt=\"user settings\"></p><ul>\n</ul><p>Learn more: <a href=\"https://learn.microsoft.com/graph/api/resources/fido2authenticationmethodconfiguration?view=graph-rest-1.0\">fido2AuthenticationMethodConfiguration resource type | Microsoft Graph | Microsoft Learn</a></p><p><b>Compliance considerations:</b>\n</p><p>No compliance considerations identified, review as appropriate for your organization.</p>"
-    }
-  },
-  {
-    "startDateTime": "2025-11-26T18:09:18.753Z",
-    "endDateTime": "2026-11-26T18:09:18.707Z",
-    "lastModifiedDateTime": "2025-11-26T18:09:19.643Z",
-    "title": "Ask the Windows experts at Tech Community Live",
-    "id": "MC1190119",
-    "category": "stayInformed",
-    "severity": "normal",
-    "tags": [
-      "Admin impact"
-    ],
-    "isMajorChange": false,
-    "actionRequiredByDateTime": null,
-    "services": [
-      "Windows"
-    ],
-    "hasAttachments": false,
-    "viewPoint": null,
-    "details": [],
-    "body": {
-      "contentType": "html",
-      "content": "<div>On December 2, Tech Community Live presents three hours of live, Windows-focused Ask Microsoft Anything (AMA) sessions. This is a free online event. Members of the Windows engineering team will be answering questions, offering tips, and providing additional insights on the announcements made at Microsoft Ignite. Topics will include: managing Windows updates, managing AI and agents in Windows, Windows backup and restore options, and Windows accessibility in the enterprise.</div><div>&nbsp;</div><div><b>When will this happen:</b></div><div>The live streams will begin at 8:00 AM PST (3:00 PM UTC) and conclude at 11:00 AM PST (6:00 PM UTC). All sessions will be recorded and available on demand. The ability to post questions on the Tech Community will be open until Friday, December 5. Closed captions will be AI-generated during the live event. Human-generated closed captions and text-based transcripts will be available later in the week.</div><div>&nbsp;</div><div><b>What you need to do to prepare:</b></div><div>Save the date for the full event and add individual sessions to your calendar. Questions can be posted in advance. To post a question, sign in to the Tech Community, scroll to the bottom of the session page, and select Comment. We encourage you to post each question as a separate comment to ensure they are each seen and addressed.</div><div>&nbsp;</div><div><b>Additional information:</b></div><div>Visit <a href=\"https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Faka.ms%2FTCL%2FWindows&amp;data=05%7C02%7Cv-chwri%40microsoft.com%7C33dcc76ee3e74e86d56208de2d13bd12%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C638997759956900922%7CUnknown%7CTWFpbGZsb3d8eyJFbXB0eU1hcGkiOnRydWUsIlYiOiIwLjAuMDAwMCIsIlAiOiJXaW4zMiIsIkFOIjoiTWFpbCIsIldUIjoyfQ%3D%3D%7C0%7C%7C%7C&amp;sdata=moI44rzuyjD2zR7J1IKZSh2cTLJgZmlSIufifo%2B%2Bris%3D&amp;reserved=0\" rel=\"noopener noreferrer\" target=\"_blank\">https://aka.ms/TCL/Windows</a> to add this event to your calendar, see the hour-by-hour agenda, and find details on how to participate.</div>"
     }
   },
   {
@@ -2409,7 +2385,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260078Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260079Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726008Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260081Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260082Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260084Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650387Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650388Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650388Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650389Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165039Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1239927\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650391Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -2684,7 +2660,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1247896\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261726Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1247896\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261727Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1247896\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651758Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1247896\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651758Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -2879,7 +2855,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259616Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259617Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259618Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259619Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.725962Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649931Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649932Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649933Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649934Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1251206\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649934Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -2946,7 +2922,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1253752\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260936Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1253752\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260937Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1253752\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260947Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1253752\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260951Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1253752\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651096Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1253752\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651097Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1253752\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651097Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1253752\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.16511Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -3054,7 +3030,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1256307\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259829Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1256307\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.725983Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1256307\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650111Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1256307\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650112Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -3200,7 +3176,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1261595\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261353Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1261595\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261354Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1261595\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261355Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1261595\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651444Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1261595\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651445Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1261595\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651445Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -5025,7 +5001,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1317836\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261684Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1317836\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261685Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1317836\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261686Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1317836\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651721Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1317836\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651722Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1317836\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651723Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -5154,7 +5130,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1323270\",\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260357Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1323270\",\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260358Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1323270\",\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260359Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1323270\",\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650627Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1323270\",\"Platform\":\"Mac\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650628Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1323270\",\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650629Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -5330,7 +5306,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1330891\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260803Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1330891\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260805Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1330891\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260806Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1330891\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650979Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1330891\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165098Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1330891\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650981Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -6163,7 +6139,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1404321\",\"Platform\":\"IOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259366Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1404321\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259367Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1404321\",\"Platform\":\"IOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649711Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1404321\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649713Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -6588,7 +6564,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1419798\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7262075Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1419798\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7262077Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1419798\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7262078Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1419798\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165207Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1419798\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1652071Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1419798\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1652072Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -6912,7 +6888,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1429012\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260847Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1429012\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260848Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1429012\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260849Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1429012\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651017Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1429012\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651018Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1429012\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651019Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -7544,7 +7520,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1442614\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261259Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1442614\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726126Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1442614\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651361Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1442614\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651361Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -7629,7 +7605,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1443517\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261806Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443517\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261808Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443517\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261808Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1443517\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651832Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443517\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651832Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443517\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651833Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -7669,7 +7645,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261995Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261996Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261997Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261998Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261999Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651998Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651999Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1652Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1652001Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443518\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1652001Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -7713,7 +7689,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1443520\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259116Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443520\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259118Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443520\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.725912Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1443520\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649376Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443520\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649379Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1443520\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649381Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -7935,7 +7911,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1446797\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261863Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1446797\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261864Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1446797\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651878Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1446797\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651879Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -8083,7 +8059,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1447682\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259472Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1447682\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259474Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1447682\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259475Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1447682\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649798Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1447682\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649799Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1447682\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.16498Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -8553,7 +8529,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261168Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726117Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261171Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261172Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261173Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651288Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651289Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165129Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651291Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1454114\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651293Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -8958,7 +8934,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1455014\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261135Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1455014\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261136Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1455014\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165126Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1455014\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651261Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10615,7 +10591,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1465768\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260219Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1465768\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726022Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1465768\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260221Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1465768\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650521Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1465768\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650522Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1465768\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650522Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10786,7 +10762,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261589Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726159Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261591Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261592Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261593Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261595Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651644Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651645Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651646Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651646Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651648Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466296\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651649Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -10861,7 +10837,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1466307\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259875Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466307\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259876Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466307\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259877Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1466307\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650139Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466307\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165014Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1466307\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650141Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11138,7 +11114,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1467357\",\"Platform\":\"IOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261774Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1467357\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261775Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1467357\",\"Platform\":\"IOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651804Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1467357\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651805Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -11534,7 +11510,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260449Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726045Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260451Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260452Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260453Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260455Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650702Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650703Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650703Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650704Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650705Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1470410\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650706Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -14533,7 +14509,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1484013\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261004Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1484013\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261005Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1484013\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261006Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1484013\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261007Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1484013\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651157Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1484013\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651158Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1484013\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651158Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1484013\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651159Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -14637,7 +14613,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1485056\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261456Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1485056\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261457Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1485056\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261458Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1485056\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261459Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1485056\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651535Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1485056\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651536Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1485056\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651537Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1485056\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651538Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -16482,7 +16458,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1506734\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261292Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1506734\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261293Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1506734\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261294Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1506734\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165139Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1506734\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651391Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1506734\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651391Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -16812,7 +16788,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259965Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259967Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259968Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259969Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.725997Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259972Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650285Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650286Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650286Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650287Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650288Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1509787\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650293Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18192,7 +18168,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259702Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259703Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259704Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259705Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259707Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649989Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.164999Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"IOS\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649991Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649992Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1519866\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649993Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18678,7 +18654,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1523086\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259585Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1523086\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259586Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1523086\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649894Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1523086\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649895Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -18720,7 +18696,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1523087\",\"Platform\":\"IOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259794Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"},{\"RoadmapId\":0,\"McPostId\":\"MC1523087\",\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259795Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1523087\",\"Platform\":\"IOS\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165006Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"},{\"RoadmapId\":0,\"McPostId\":\"MC1523087\",\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650061Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -18793,7 +18769,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1523090\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260312Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1523090\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260313Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1523090\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.16506Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1523090\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650601Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -19991,7 +19967,7 @@
     "details": [
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1530611\",\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260725Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530611\",\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260731Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530611\",\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260732Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1530611\",\"Platform\":\"Desktop\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650932Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530611\",\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650933Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530611\",\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650933Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20062,7 +20038,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1530613\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726108Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530613\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261082Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530613\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261083Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1530613\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651215Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530613\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651216Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530613\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651217Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20106,7 +20082,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1530615\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261409Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530615\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726141Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530615\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261411Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1530615\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651498Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530615\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651499Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1530615\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.16515Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -20841,7 +20817,7 @@
     "details": [
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1535647\",\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259917Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1535647\",\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259918Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1535647\",\"Platform\":\"Web\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650255Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1535647\",\"Platform\":\"All\",\"Status\":\"Launched\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650257Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21022,7 +20998,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1536056\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261527Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1536056\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261528Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1536056\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261529Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1536056\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651589Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1536056\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165159Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1536056\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651591Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -21198,7 +21174,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1536065\",\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259545Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"},{\"RoadmapId\":0,\"McPostId\":\"MC1536065\",\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259546Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1536065\",\"Platform\":\"Web\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649859Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"},{\"RoadmapId\":0,\"McPostId\":\"MC1536065\",\"Platform\":\"All\",\"Status\":\"InRollout\",\"LastUpdateTime\":\"2026-11-26T18:12:19.164986Z\",\"LatestRing\":\"StandardRelease\",\"TenantRolloutRing\":\"StandardRelease\"}]}"
       },
       {
         "name": "Summary",
@@ -22044,7 +22020,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1540349\",\"Platform\":\"Android\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260279Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1540349\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726028Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1540349\",\"Platform\":\"Android\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165056Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1540349\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650561Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23293,7 +23269,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1552390\",\"Platform\":\"IOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260403Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1552390\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260404Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1552390\",\"Platform\":\"IOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650676Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1552390\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1650677Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23372,7 +23348,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1552392\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260903Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1552392\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7260905Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1552392\",\"Platform\":\"Android\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651068Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1552392\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651069Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -23761,7 +23737,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1556098\",\"Platform\":\"IOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261897Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1556098\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261898Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1556098\",\"Platform\":\"IOS\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165191Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1556098\",\"Platform\":\"All\",\"Status\":\"Scheduled\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651911Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -24763,7 +24739,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1559642\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259409Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1559642\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.725941Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1559642\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7259411Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1559642\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649746Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1559642\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649747Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1559642\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1649747Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25401,7 +25377,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1562278\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726194Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562278\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261941Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562278\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261942Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562278\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7261943Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1562278\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651953Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562278\",\"Platform\":\"Linux\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651954Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562278\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651954Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562278\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1651955Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
@@ -25443,7 +25419,7 @@
       },
       {
         "name": "FeatureStatusJson",
-        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1562279\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7262129Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562279\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.726213Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562279\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T16:11:15.7262131Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
+        "value": "{\"0\":[{\"RoadmapId\":0,\"McPostId\":\"MC1562279\",\"Platform\":\"Desktop\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.165212Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562279\",\"Platform\":\"Mac\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1652121Z\",\"LatestRing\":null,\"TenantRolloutRing\":null},{\"RoadmapId\":0,\"McPostId\":\"MC1562279\",\"Platform\":\"All\",\"Status\":\"FeatureRolloutStatusNotSupported\",\"LastUpdateTime\":\"2026-11-26T18:12:19.1652121Z\",\"LatestRing\":null,\"TenantRolloutRing\":null}]}"
       },
       {
         "name": "Summary",
